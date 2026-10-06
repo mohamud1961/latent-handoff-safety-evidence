@@ -1,0 +1,39 @@
+{
+  "base_rq6_preflight_status": "resolved_ready_for_reviewed_inference",
+  "blockers": [
+    {
+      "detail": "--rq6-gate-path must be supplied on the command line",
+      "id": "cli_rq6_gate_path_required"
+    },
+    {
+      "detail": "--rq6-gate-sha256 must be supplied on the command line",
+      "id": "cli_rq6_gate_sha256_required"
+    },
+    {
+      "detail": "--w1-choice-path must be supplied on the command line",
+      "id": "cli_w1_choice_path_required"
+    },
+    {
+      "detail": "--w1-choice-sha256 must be supplied on the command line",
+      "id": "cli_w1_choice_sha256_required"
+    },
+    {
+      "detail": "A protocol-pinned RQ6 gate JSON is not available.",
+      "id": "rq6_pass_gate_unavailable"
+    },
+    {
+      "detail": "A protocol-pinned sealed W1_CHOICE.json is not available.",
+      "id": "sealed_w1_choice_unavailable"
+    }
+  ],
+  "gate_json_schema_contract": "rq6_gate_result_v1",
+  "gate_json_schema_frozen_in_design": false,
+  "launch_allowed": false,
+  "modal_launched": false,
+  "model_imported": false,
+  "protocol_schema": "pcs6_protocol_v1",
+  "schema": "pcs6b_preflight_v1",
+  "scientific_data_opened": false,
+  "status": "BLOCKED",
+  "track": "6b"
+}

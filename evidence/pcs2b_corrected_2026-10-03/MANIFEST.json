@@ -1,0 +1,118 @@
+{
+  "experiment": "PCS2B_CORRECTED_CONTINUATION",
+  "date_utc": "2026-10-03",
+  "classification": "POSITIVE_SUPERVISED_NEURAL_STATE_TRANSFER",
+  "kaggle_kernel": "kaggle-user/pcs2b-corrected-continuation",
+  "source_repo_commit": "a86176ba49725694b67929185f1a8db60ac5c8e3",
+  "source_model": "Qwen/Qwen3-4B",
+  "receiver_model": "Qwen/Qwen3-1.7B",
+  "train_interventions": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "heldout_interventions": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "artifacts": {
+    "pcs2b_corrected_bridge.py": {
+      "bytes": 28412,
+      "sha256": "752a974664ee690380468e07b18de5c366bdb164bd8be1128df4fe6c09d0f314"
+    },
+    "pcs2b_results_core.json": {
+      "bytes": 811416,
+      "sha256": "96eda9f7fbb0ef017714510d101268524d24fa1d5ce911e3f4ce42ef015a176e"
+    },
+    "pcs2b_reasoning_baselines.json": {
+      "bytes": 523010,
+      "sha256": "470150bc312cb1a89c9d1dc2ec7ddcf4b27509ea6dd6458a9f554c1b9c787a23"
+    },
+    "pcs2b_bridge.pt": {
+      "bytes": 44373461,
+      "sha256": "e4e8cfda91b6f8f82e480dfe6ae8d4cc61333741e94e2a99d5921f103c4d1574"
+    },
+    "pcs2b_source_cache.pt": {
+      "bytes": 83210742,
+      "sha256": "2c3f8daf202d537745192a56cf925d464ad48b37b9840faa41d38756c496afb7"
+    },
+    "PCS2B_DECISION.json": {
+      "bytes": 3809,
+      "sha256": "03d2be23e3531877d561fca65ca0a5262b697267cd297f802c3b818fb6da08b3"
+    },
+    "PCS2B_RECEIVER_GATE.json": {
+      "bytes": 116,
+      "sha256": "35883df4924637fb3ab900d077fada61bd2e86a06d1ad2f877c0cdec2b3d8cc6"
+    },
+    "PCS2B_SOURCE_GATE.json": {
+      "bytes": 75,
+      "sha256": "70c85cc946f54631110cb6d8ac43ba433e40476a4b2a9cc4306f478e0fcde976"
+    },
+    "PCS2B_WARMUP_GATE.json": {
+      "bytes": 30,
+      "sha256": "b28772cc4bea25f0a4ed0b80ded96c4557fc1c9055bbcc4fbe7a45b66c262a12"
+    }
+  },
+  "headline": {
+    "n_states": 256,
+    "n_records": 2304,
+    "pcs_fidelity": 0.5759548611111112,
+    "pcs_objective": 0.5503472222222222,
+    "restart_fidelity": 0.1328125,
+    "readback_fidelity": 1,
+    "state_specific_fidelity": [
+      0.498119212962963,
+      0.46817129629629634,
+      0.5289351851851852
+    ],
+    "heldout_pcs_fidelity": 0.37734375,
+    "heldout_state_specific_fidelity": [
+      0.26171875,
+      0.22057291666666667,
+      0.3041666666666667
+    ],
+    "source_wrong_states": 13,
+    "excess_wrong_belief_fidelity": 0.50997150997151
+  },
+  "claim_boundary": [
+    "source state captured after source emitted belief digit",
+    "training used explicit source-belief supervision / receiver-native explicit-state teachers",
+    "held-out future intervention values were unseen during bridge training",
+    "not yet pre-answer or schema-free cognition transfer"
+  ],
+  "independent_auditor": "scripts/pcs2b_corrected_audit.py",
+  "result_authority": "PCS2B_CORRECTED_POSITIVE_RESULT_2026-10-03.md",
+  "security_passive_leakage": {
+    "classification": "PASSIVE_NUISANCE_LEAKAGE_CONFIRMED",
+    "robust_audit": {
+      "path": "evidence/pcs2b_corrected_2026-10-03/PCS2B_PASSIVE_LEAKAGE_ROBUST.json",
+      "bytes": 32253,
+      "sha256": "a7e09baab07506068a9efd72f24a58c0db4859f9d0a0f5f1dfe45ce83486eacd"
+    },
+    "nested_permutation": {
+      "path": "evidence/pcs2b_corrected_2026-10-03/PCS2B_LEAKAGE_NESTED_PERMUTATION_CONTROL.json",
+      "bytes": 920,
+      "sha256": "beb7bc6ca320d0120d3728054510c019e46db47ca0746e5e842ac85c7917a527"
+    },
+    "headline": {
+      "init_a_prefix_balanced_accuracy": 0.43611874465697553,
+      "init_a_semantic_baseline_balanced_accuracy": 0.07654044467387797,
+      "init_a_nested_perm_p": 0.001996007984031936,
+      "init_b_prefix_balanced_accuracy": 0.2604544670990357,
+      "init_b_semantic_baseline_balanced_accuracy": 0.11399989615933888,
+      "init_b_nested_perm_p": 0.001996007984031936,
+      "trace_token_prefix_r2": 0.23829330410560723,
+      "trace_token_prefix_pearson_r": 0.5792309586444058
+    },
+    "claim_boundary": [
+      "passive decodability, not adversarial covert communication",
+      "source_correctness leakage inconclusive due severe imbalance",
+      "initial c and operator-count leakage not established"
+    ],
+    "authority": "PCS_SECURITY_PASSIVE_LEAKAGE_RESULT_2026-10-03.md"
+  }
+}

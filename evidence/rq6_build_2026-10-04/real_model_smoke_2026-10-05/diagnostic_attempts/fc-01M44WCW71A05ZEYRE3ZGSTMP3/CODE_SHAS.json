@@ -1,0 +1,24 @@
+{
+  "gsm8k": {
+    "config": "main",
+    "dataset": "openai/gsm8k",
+    "local_files_only": true,
+    "revision": "740312add88f781978c0658806c59bc2815b9866"
+  },
+  "modal_rq6_qualification.py": "5bfbfe37478b3ea6cb5d319c12e17847700538c03372a9f8e31fb002df0f0c23",
+  "model_custody": {
+    "local_files_only": true,
+    "receiver_model": "Qwen/Qwen3-1.7B",
+    "receiver_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "receiver_tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "source_model": "Qwen/Qwen3-4B",
+    "source_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "source_tokenizer_revision": "1cfa9a7208912126459214e8b04321603b3df60c"
+  },
+  "pcs4v2_source_preflight.py": "e41f4b562c6ac444d8661bb547f3a9cd885d8c5e74f466d56acc7a64c146ac63",
+  "pcs6a_continuation.py_gate_verifier": "adee075be2afea0a7b115586486c2dd734575a65e259511341baa95f6c311ce8",
+  "pcs6b_gsm8k.py_gate_consumer": "e342b0c27e7647f7f2d2ad7253501e7863b0bfad81284b4d16fa0f8b23469a49",
+  "protocol_sha256": "6abfa7ee974f1a463a935aa6738a7d54899575ca198431e87c2e1c406327aeaf",
+  "rq6_qualification.py": "2df41605792821bca48e5bdfcdf56926833ab7deb8d5ed56bfd844ed63905a07",
+  "test_rq6_qualification.py": "7f2aa01c9a7315bc3a9862b5b77c0071c143d069c5b3a8d677c853ad9d3b3d10"
+}

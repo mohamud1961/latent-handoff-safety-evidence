@@ -1,0 +1,8 @@
+n=3000  A's belief right on 92.5%
+accuracy by A's belief:  T right-belief  17.4% [ 16.0, 18.8] | wrong-belief  12.5% [  8.5, 17.0]
+C right-belief  10.5% [  9.4, 11.7] | C wrong-belief   9.8% [  6.2, 13.8] | Rcal-free R right-belief  10.5% [  9.3, 11.7]
+P(answer == A's state value S_state)  [a copy of A's belief; never the right answer]:
+   C  11.9% [ 10.8, 13.1] | C_mm mean  11.9% [ 10.8, 13.0] | R  12.1% [ 10.9, 13.2] | T  70.1% [ 68.5, 71.7]
+P(answer == true state X):  C  12.3% [ 11.2, 13.5] | C_mm mean  12.3% [ 11.1, 13.4] | R  12.3% [ 11.1, 13.5]
+T (text handoff) uses the value: P(T == (S_state+m)%10) =  17.3% [ 15.9, 18.7]
+C vs R agreement  52.2% [ 50.4, 54.0] | C vs C_mm0  92.6% [ 91.6, 93.5] (the bridge changes B's answer on ~half the items, and wrong caches change it the same way)

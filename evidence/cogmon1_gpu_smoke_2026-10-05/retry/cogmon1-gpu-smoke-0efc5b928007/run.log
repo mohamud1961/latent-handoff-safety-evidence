@@ -1,0 +1,2 @@
+$ /usr/local/bin/python /root/scripts/cogmon1.py --out-dir /artifacts/cogmon1-gpu-smoke-0efc5b928007 --gpu-smoke
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.77s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.44s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.79s/it]

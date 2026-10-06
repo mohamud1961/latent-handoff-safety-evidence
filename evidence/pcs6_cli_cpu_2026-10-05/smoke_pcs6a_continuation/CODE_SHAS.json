@@ -1,0 +1,40 @@
+{
+  "files": {
+    "build_questions.md": {
+      "path": "<tmp>",
+      "sha256": null
+    },
+    "build_spec.md": {
+      "path": "<tmp>",
+      "sha256": null
+    },
+    "pcs3c_confirm.py": {
+      "path": "<tmp>",
+      "sha256": "6e0aeaff77ef5f76e68442a429a4dd575bce5ddded450cd48360b46912938aa1"
+    },
+    "pcs6_executor.py": {
+      "path": "<tmp>",
+      "sha256": "8c43053c06822ef443b2346065d12981aa81165c88025e1f3a8588466cd0d8d8"
+    },
+    "pcs6_freeze.md": {
+      "path": "<tmp>",
+      "sha256": null
+    },
+    "pcs6a_continuation.py": {
+      "path": "<tmp>",
+      "sha256": "d0b6fb266b0d3ff173f9f0d63b5c74dfe3415bd656b9eb9e08e50783e149ffc7"
+    },
+    "rq6_qualification.py": {
+      "path": "<tmp>",
+      "sha256": "46a360f4049153268b47fb5f76835778a7c800f963d8cddf0838ed31c698016d"
+    },
+    "test_pcs6a_continuation.py": {
+      "path": "<tmp>",
+      "sha256": null
+    }
+  },
+  "modal_launched": false,
+  "model_imported": false,
+  "schema": "pcs6_code_shas_v1",
+  "scientific_data_opened": false
+}

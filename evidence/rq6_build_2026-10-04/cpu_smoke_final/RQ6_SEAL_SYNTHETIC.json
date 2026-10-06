@@ -1,0 +1,9 @@
+{
+  "code_shas_json_sha256": "7c01b152e7701b5d0292f693770eb58ff91e77d77d9b08cb804782a8e1d9628f",
+  "evidence_kind": "synthetic_cpu_smoke_only",
+  "gate_result_sha256": "4381a56edab42d75fee67feabd18c30298fc90b59784f2ee9769b0a3daf912e9",
+  "protocol_sha256": "9880291e2ed842882f50fa63ab8a1ff60509ccef85c153e4cb778228b9fb8704",
+  "raw_records_sha256": "ffb3fa9256547e7736f49ae6d26d23d142c092e1af9ce7d364eece4e97336091",
+  "schema": "rq6_seal_v1",
+  "summary_sha256": "e43d6a542ded7ebe445a52eba05e0fd4b2b37b9460e4da23d1ca5f262177193e"
+}

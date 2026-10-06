@@ -1,0 +1,7 @@
+PCS1 pilot post-hoc diagnostics (computed from pcs1_pilot/kaggle_out/results.json; items regenerated with the notebook's seeded generator)
+pilot wall 372 s; nonfinite 0
+d=1 S_state k_step=1 (x=y+z): n=28 acc=53.6%
+d=1 S_state k_step in 2..4: n=62 acc=14.5%
+d=1 S_state k_step in 5..9: n=110 acc=20.9%
+S_state answer marginals (all depths): 0:.008 1:.016 2:.276 3:.135 4:.020 5:.011 6:.324 7:.051 8:.141 9:.018
+true X marginals: 0:.208 1:.067 2:.118 3:.060 4:.113 5:.085 6:.108 7:.059 8:.117 9:.065

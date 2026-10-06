@@ -1,0 +1,103 @@
+{
+  "assets": {
+    "bridge_sha256": "317b1ff3f234d503e402c7e0715c81ffdc9bd99ca385d61291a995b2819970cd",
+    "handoff_sha256": "90e479c5cb40992ac6a8f32ec63dac6d0f4c3e0d44939ba002a3dda5127c2880",
+    "source_bundle_sha256": "23d098530252c59bc9b8d7039731213f2c55cac288c18e32670a7bd601d18999",
+    "w1_choice_sha256": "d85909b93dea9f42e89dc98eb8f048344ae82723ebca6e70d9429ca7b9e60937"
+  },
+  "criteria": {
+    "intervene_cluster_ci_lower_gt_0": true,
+    "intervene_delta_ge_0_30": true,
+    "intervene_edit_ge_0_40": true,
+    "intervene_exact_mcnemar_p_lt_0_05": true,
+    "intervene_rand_le_0_10": true,
+    "off_target_edit_preservation_ge_0_80": false,
+    "off_target_edit_within_0_10_of_rand": false,
+    "predict_accuracy_ge_0_65": false,
+    "predict_cluster_ci_lower_above_a_value_baseline": false,
+    "read_each_register_balanced_accuracy_ge_0_50": true,
+    "read_joint_accuracy_ge_0_25": true,
+    "read_mean_balanced_accuracy_ge_0_60": true
+  },
+  "elapsed_seconds": 154.20509314537048,
+  "evidence_kind": "confirmatory_scientific_run",
+  "interpretation": "Only if all criteria pass: behaviourally relevant state crossing this one latent handoff is readable, predictable before B acts, and individually editable while preserving the other two registers.",
+  "intervene": {
+    "edit_minus_rand": 0.4132777198470629,
+    "edit_minus_rand_cluster_bootstrap": {
+      "ci95_high": 0.4330900243309002,
+      "ci95_low": 0.3931178310740355,
+      "n_clusters": 959,
+      "point": 0.41327771984706296,
+      "replicates": 10000,
+      "seed": 0,
+      "unit": "source_state_id"
+    },
+    "edit_target_success_rate": 0.46228710462287104,
+    "edit_vs_rand_exact_mcnemar": {
+      "a_only_correct": 1230,
+      "b_only_correct": 41,
+      "discordant_pairs": 1271,
+      "p_two_sided_exact": 1.4754616006291645e-305
+    },
+    "off_target_edit_minus_rand_cluster_bootstrap": {
+      "ci95_high": -0.30517900590893293,
+      "ci95_low": -0.3359402155022593,
+      "n_clusters": 959,
+      "point": -0.3202989224887035,
+      "replicates": 10000,
+      "seed": 0,
+      "unit": "source_state_id"
+    },
+    "off_target_preservation_edit": 0.47636426833507123,
+    "off_target_preservation_rand": 0.7966631908237748,
+    "rand_target_success_rate": 0.049009384775808136
+  },
+  "limits": [
+    "one sealed PCS3c bridge",
+    "toy three-register state",
+    "linear readout and mean-difference interventions",
+    "no adversarial states"
+  ],
+  "models": {
+    "receiver": {
+      "id": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+    },
+    "source": {
+      "id": "Qwen/Qwen3-4B",
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c"
+    }
+  },
+  "n_test_states": 959,
+  "predict": {
+    "a_value_baseline_accuracy": 0.5797705943691345,
+    "accuracy": 0.5033020507473063,
+    "accuracy_minus_a_value_baseline_cluster_bootstrap": {
+      "ci95_high": -0.05213764337851928,
+      "ci95_low": -0.1007994438651373,
+      "n_clusters": 959,
+      "point": -0.07646854362182827,
+      "replicates": 10000,
+      "seed": 0,
+      "unit": "source_state_id"
+    },
+    "p_only_baseline_accuracy": 0.26312130691692737
+  },
+  "read": {
+    "all_three_joint_accuracy": 0.38790406673618355,
+    "balanced_accuracy_by_register": {
+      "a": 0.6198639152731251,
+      "b": 0.6243084549430554,
+      "c": 0.625395137267037
+    },
+    "mean_balanced_accuracy": 0.6231891691610726
+  },
+  "schema": "cogmon1_result_v1",
+  "status": "MIXED",
+  "train_val_test": {
+    "test": 959,
+    "train": 512,
+    "val": 128
+  }
+}

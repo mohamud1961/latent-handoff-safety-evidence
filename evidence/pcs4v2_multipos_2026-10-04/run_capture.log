@@ -1,0 +1,137 @@
+LOCATE 0 / 896
+LOCATE 200 / 896
+LOCATE 400 / 896
+LOCATE 600 / 896
+LOCATE 800 / 896
+RECON {
+ "experiment": "pcs4v2",
+ "n_items": 896,
+ "checkpoint_reconstruction_match_rate": 1.0,
+ "n_checkpoint_match": 896,
+ "located_rate": 1.0,
+ "n_located": 896,
+ "exclusion_reasons": {},
+ "located_and_ckpt_match": 896,
+ "positions": [
+  "s0_line_end",
+  "s1_line_end",
+  "s2_line_end",
+  "s3_line_end",
+  "s4_line_end",
+  "s5_line_end",
+  "s6_line_end",
+  "s7_line_end",
+  "s8_line_end",
+  "checkpoint"
+ ],
+ "first_mismatches_id_newlen_origlen": []
+}
+Fetching 3 files:   0%|          | 0/3 [00:00<?, ?it/s]Fetching 3 files:  33%|███▎      | 1/3 [00:02<00:04,  2.31s/it]Fetching 3 files:  67%|██████▋   | 2/3 [00:42<00:21, 21.02s/it]Fetching 3 files: 100%|██████████| 3/3 [00:43<00:00, 14.41s/it]Fetching 3 files: 100%|██████████| 3/3 [00:43<00:00, 14.41s/it]
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:05<00:11,  5.50s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:09<00:04,  4.57s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:09<00:00,  2.53s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:09<00:00,  3.17s/it]
+CAPTURE 8 / 896
+CAPTURE 168 / 896
+CAPTURE 328 / 896
+CAPTURE 488 / 896
+CAPTURE 648 / 896
+CAPTURE 808 / 896
+SAVED /artifacts/pcs4v2-multipos-2aedd7129e4e/PCS4V2_MULTIPOS_FEATURES.pt (896, 10, 9, 2560)
+PCS4V2_PER_POS s0_line_end 6
+PCS4V2_PER_POS s1_line_end 9
+PCS4V2_PER_POS s2_line_end 11
+PCS4V2_PER_POS s3_line_end 9
+PCS4V2_PER_POS s4_line_end 10
+PCS4V2_PER_POS s5_line_end 6
+PCS4V2_PER_POS s6_line_end 4
+PCS4V2_PER_POS s7_line_end 4
+PCS4V2_PER_POS s8_line_end 4
+PCS4V2_PER_POS checkpoint 4
+GATE {
+ "per_position_passing_counts": {
+  "s0_line_end": 6,
+  "s1_line_end": 9,
+  "s2_line_end": 11,
+  "s3_line_end": 9,
+  "s4_line_end": 10,
+  "s5_line_end": 6,
+  "s6_line_end": 4,
+  "s7_line_end": 4,
+  "s8_line_end": 4,
+  "checkpoint": 4
+ },
+ "concatenated_passing_ge_80": 17,
+ "concatenated_passing_properties": [
+  "s0_a",
+  "s0_b",
+  "s0_c",
+  "s1_a",
+  "s1_b",
+  "s1_c",
+  "s2_a",
+  "s2_b",
+  "s2_c",
+  "s3_a",
+  "s3_b",
+  "s3_c",
+  "s4_c",
+  "s5_c",
+  "s6_c",
+  "s7_c",
+  "s8_c"
+ ],
+ "union_of_per_position_passing_count_info_only": 27,
+ "passing_registers": [
+  "a",
+  "b",
+  "c"
+ ],
+ "passing_distinct_states": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8
+ ],
+ "sealed_test_mistake_instances_on_passing": 98,
+ "sealed_test_mistake_episodes_on_passing": 24,
+ "gate": {
+  "ge_18_of_27": false,
+  "all_three_registers": true,
+  "ge_6_distinct_states": true,
+  "mistakes_ge_25": true,
+  "mistake_episodes_ge_10": true,
+  "located_rate_ge_90": true
+ },
+ "located_rate_ge_90": true,
+ "decodability_gate_pass": false,
+ "full_gate_pass": false,
+ "reconstruction": {
+  "experiment": "pcs4v2",
+  "n_items": 896,
+  "checkpoint_reconstruction_match_rate": 1.0,
+  "n_checkpoint_match": 896,
+  "located_rate": 1.0,
+  "n_located": 896,
+  "exclusion_reasons": {},
+  "located_and_ckpt_match": 896,
+  "positions": [
+   "s0_line_end",
+   "s1_line_end",
+   "s2_line_end",
+   "s3_line_end",
+   "s4_line_end",
+   "s5_line_end",
+   "s6_line_end",
+   "s7_line_end",
+   "s8_line_end",
+   "checkpoint"
+  ],
+  "first_mismatches_id_newlen_origlen": [],
+  "n_used": 896,
+  "used_rate": 1.0
+ },
+ "seconds": 294.3442451953888
+}

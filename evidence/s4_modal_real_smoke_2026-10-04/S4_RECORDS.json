@@ -1,0 +1,3842 @@
+[
+  {
+    "id": 1,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "a",
+    "A_belief": 4,
+    "truth": 4,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "a",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "a",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 0,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "a",
+    "A_belief": 8,
+    "truth": 8,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "a",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 5,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "a",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "a",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "a",
+    "A_belief": 8,
+    "truth": 8,
+    "A_correct": true,
+    "prediction": 9,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "a",
+    "A_belief": 4,
+    "truth": 4,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "a",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "a",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "a",
+    "A_belief": 8,
+    "truth": 8,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "a",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "a",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "a",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "a",
+    "A_belief": 8,
+    "truth": 8,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "a",
+    "A_belief": 4,
+    "truth": 4,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "a",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 9,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "a",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 0,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "a",
+    "A_belief": 8,
+    "truth": 8,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "a",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 9,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "a",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 9,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "a",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "a",
+    "A_belief": 8,
+    "truth": 8,
+    "A_correct": true,
+    "prediction": 9,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "a",
+    "A_belief": 4,
+    "truth": 4,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "a",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 7,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "a",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 0,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "a",
+    "A_belief": 8,
+    "truth": 8,
+    "A_correct": true,
+    "prediction": 8,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "a",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 0,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "a",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 8,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "a",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "a",
+    "A_belief": 8,
+    "truth": 8,
+    "A_correct": true,
+    "prediction": 9,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "b",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "b",
+    "A_belief": 9,
+    "truth": 9,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "b",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "b",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "b",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 0,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "b",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 9,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "b",
+    "A_belief": 4,
+    "truth": 4,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "b",
+    "A_belief": 5,
+    "truth": 5,
+    "A_correct": true,
+    "prediction": 9,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "b",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "b",
+    "A_belief": 9,
+    "truth": 9,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "b",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "b",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "b",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "b",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "b",
+    "A_belief": 4,
+    "truth": 4,
+    "A_correct": true,
+    "prediction": 0,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "b",
+    "A_belief": 5,
+    "truth": 5,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "b",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "b",
+    "A_belief": 9,
+    "truth": 9,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "b",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 7,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "b",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "b",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 0,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "b",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "b",
+    "A_belief": 4,
+    "truth": 4,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "b",
+    "A_belief": 5,
+    "truth": 5,
+    "A_correct": true,
+    "prediction": 5,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "b",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "b",
+    "A_belief": 9,
+    "truth": 9,
+    "A_correct": true,
+    "prediction": 7,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "b",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 2,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "b",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 8,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "b",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 0,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "b",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "b",
+    "A_belief": 4,
+    "truth": 4,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "b",
+    "A_belief": 5,
+    "truth": 5,
+    "A_correct": true,
+    "prediction": 5,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "c",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 5,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "c",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "c",
+    "A_belief": 5,
+    "truth": 5,
+    "A_correct": true,
+    "prediction": 5,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "c",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "c",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "c",
+    "A_belief": 1,
+    "truth": 1,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "c",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "c",
+    "filter": "F-LEACE",
+    "selector": "c",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 9,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "c",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "c",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "c",
+    "A_belief": 5,
+    "truth": 5,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "c",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "c",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "c",
+    "A_belief": 1,
+    "truth": 1,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "c",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 0,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "c",
+    "filter": "F-train",
+    "selector": "c",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "c",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "c",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "c",
+    "A_belief": 5,
+    "truth": 5,
+    "A_correct": true,
+    "prediction": 5,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "c",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "c",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 9,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "c",
+    "A_belief": 1,
+    "truth": 1,
+    "A_correct": true,
+    "prediction": 2,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "c",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "c",
+    "filter": "F-rand",
+    "selector": "c",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 5,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "c",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 2,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "c",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 3,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "c",
+    "A_belief": 5,
+    "truth": 5,
+    "A_correct": true,
+    "prediction": 5,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "c",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 3,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "c",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 0,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "c",
+    "A_belief": 1,
+    "truth": 1,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "c",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 3,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "c",
+    "filter": "none",
+    "selector": "c",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 5,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "a",
+    "A_belief": 4,
+    "truth": 4,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "a",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 9,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "a",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "a",
+    "A_belief": 8,
+    "truth": 8,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "a",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "a",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 9,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "a",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "a",
+    "A_belief": 8,
+    "truth": 8,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "a",
+    "A_belief": 4,
+    "truth": 4,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "a",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "a",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "a",
+    "A_belief": 8,
+    "truth": 8,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "a",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "a",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "a",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "a",
+    "A_belief": 8,
+    "truth": 8,
+    "A_correct": true,
+    "prediction": 0,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "a",
+    "A_belief": 4,
+    "truth": 4,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "a",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 9,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "a",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 0,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "a",
+    "A_belief": 8,
+    "truth": 8,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "a",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 9,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "a",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 9,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "a",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "a",
+    "A_belief": 8,
+    "truth": 8,
+    "A_correct": true,
+    "prediction": 9,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "a",
+    "A_belief": 4,
+    "truth": 4,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "a",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 7,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "a",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 0,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "a",
+    "A_belief": 8,
+    "truth": 8,
+    "A_correct": true,
+    "prediction": 8,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "a",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 0,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "a",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 8,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "a",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "a",
+    "A_belief": 8,
+    "truth": 8,
+    "A_correct": true,
+    "prediction": 9,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "b",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "b",
+    "A_belief": 9,
+    "truth": 9,
+    "A_correct": true,
+    "prediction": 9,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "b",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 2,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "b",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "b",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "b",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 5,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "b",
+    "A_belief": 4,
+    "truth": 4,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "b",
+    "A_belief": 5,
+    "truth": 5,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "b",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "b",
+    "A_belief": 9,
+    "truth": 9,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "b",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "b",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "b",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 0,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "b",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "b",
+    "A_belief": 4,
+    "truth": 4,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "b",
+    "A_belief": 5,
+    "truth": 5,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "b",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "b",
+    "A_belief": 9,
+    "truth": 9,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "b",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 7,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "b",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "b",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 0,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "b",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "b",
+    "A_belief": 4,
+    "truth": 4,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "b",
+    "A_belief": 5,
+    "truth": 5,
+    "A_correct": true,
+    "prediction": 5,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "b",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "b",
+    "A_belief": 9,
+    "truth": 9,
+    "A_correct": true,
+    "prediction": 7,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "b",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 2,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "b",
+    "A_belief": 6,
+    "truth": 6,
+    "A_correct": true,
+    "prediction": 8,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "b",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 0,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "b",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "b",
+    "A_belief": 4,
+    "truth": 4,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "b",
+    "A_belief": 5,
+    "truth": 5,
+    "A_correct": true,
+    "prediction": 5,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "c",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 2,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "c",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 3,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "c",
+    "A_belief": 5,
+    "truth": 5,
+    "A_correct": true,
+    "prediction": 5,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "c",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "c",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "c",
+    "A_belief": 1,
+    "truth": 1,
+    "A_correct": true,
+    "prediction": 3,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "c",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 3,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "a",
+    "filter": "F-LEACE",
+    "selector": "c",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 6,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "c",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "c",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "c",
+    "A_belief": 5,
+    "truth": 5,
+    "A_correct": true,
+    "prediction": 0,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "c",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "c",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 0,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "c",
+    "A_belief": 1,
+    "truth": 1,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "c",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "a",
+    "filter": "F-train",
+    "selector": "c",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 0,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "c",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "c",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "c",
+    "A_belief": 5,
+    "truth": 5,
+    "A_correct": true,
+    "prediction": 5,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "c",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "c",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 9,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "c",
+    "A_belief": 1,
+    "truth": 1,
+    "A_correct": true,
+    "prediction": 2,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "c",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 4,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "a",
+    "filter": "F-rand",
+    "selector": "c",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 5,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 1,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "c",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 2,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 2,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "c",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 3,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 3,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "c",
+    "A_belief": 5,
+    "truth": 5,
+    "A_correct": true,
+    "prediction": 5,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 4,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "c",
+    "A_belief": 3,
+    "truth": 3,
+    "A_correct": true,
+    "prediction": 3,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 6,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "c",
+    "A_belief": 0,
+    "truth": 0,
+    "A_correct": true,
+    "prediction": 0,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 7,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "c",
+    "A_belief": 1,
+    "truth": 1,
+    "A_correct": true,
+    "prediction": 1,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 10,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "c",
+    "A_belief": 2,
+    "truth": 2,
+    "A_correct": true,
+    "prediction": 3,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": 11,
+    "target_register": "a",
+    "filter": "none",
+    "selector": "c",
+    "A_belief": 7,
+    "truth": 7,
+    "A_correct": true,
+    "prediction": 5,
+    "wrong_partner_ids": [
+      null,
+      null,
+      null
+    ],
+    "wrong_predictions": [
+      null,
+      null,
+      null
+    ]
+  }
+]

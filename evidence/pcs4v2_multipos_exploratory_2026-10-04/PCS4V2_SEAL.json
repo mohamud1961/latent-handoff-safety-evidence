@@ -1,0 +1,24 @@
+{
+  "label": "EXPLORATORY",
+  "written_utc": "2026-10-04T06:17:24Z",
+  "written_before_probe_instantiation": true,
+  "bridge_sha256": {
+    "neural_F": "01c31d66f4cbe599137e37ab2c37589d3b1fb105cbc76eb6ef5e849529a40b09",
+    "neural_T": "c8986e12fb52a89a38d566ef2b995a2e2891fabad2dce1e40abcc57b29311476",
+    "ti_F": "401e5bbf3f9a1cea13baa19716164c72c7b5f52537f721db9ee018618b8f4b76",
+    "ti_T": "479d2d48855dd1efed6a02f64586ff1200e2071d5ed7708735374abc503cc7dc"
+  },
+  "probe_domain": "PCS4V2_PROBE_V1|",
+  "probe_seed_hash": "bc974c8da3dd2a7350ed2269df74d7db03538a1d72b78f7ac48c3a1fe47c704e",
+  "deviation_record_sha256": "42151e0f40b3708ce008429996d5f3eda54fecd4b931db069b1d2625c4d2a7b9",
+  "features_sha256": "5a3648d1f563133159ac935833bc6ac76afd3595e69e7bb75c54e2435dc523a2",
+  "code_shas": {
+    "/root/orch.py": "095d34455c788e384ccd183cf55882e6e59e7f84f4ae0ae922d7606e82aaf6ec",
+    "/root/stage_b.py": "c5f7edf517a9e2e2d285feeb47c0496d00cf8a8408f4d0ef9564dd23dd8cdfc1",
+    "/root/stage_c.py": "32947d2cb80aa106a3230b66daacd3214ac32abb0c601cb1b48ab8ce0949ba59",
+    "/root/adapt.py": "7f9abccb66126380d465c63d292bd5880d6073b37ba824b614c3fbf9262eceb9",
+    "/root/GATE.json": "1c9eec29a37837293fad392a8045dda10a7ed54aa442d377314902f074df35e1",
+    "/root/STAGE_A.json": "f70d1ad0d61488f9f258299701f6ddb22f36c0808e6cf49374455a3069af294f",
+    "/root/DEVIATION.md": "42151e0f40b3708ce008429996d5f3eda54fecd4b931db069b1d2625c4d2a7b9"
+  }
+}

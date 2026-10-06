@@ -1,0 +1,36 @@
+{
+  "procedure": "Prefix residualized by train (A_X,target_var) centroid. Null permutes nuisance labels within the same semantic class and split, redoing validation lambda selection.",
+  "n_permutations": 500,
+  "targets": {
+    "init_a": {
+      "observed_balanced_accuracy": 0.4823826578774105,
+      "selected_lambda_observed": 10.0,
+      "null_mean": 0.10025234170460556,
+      "null_sd": 0.020027062301428096,
+      "null_p95": 0.13580920864354148,
+      "null_p99": 0.1461777977921906,
+      "max_null": 0.16497164421452276,
+      "empirical_p_ge_observed": 0.001996007984031936
+    },
+    "init_b": {
+      "observed_balanced_accuracy": 0.27259774122070524,
+      "selected_lambda_observed": 10.0,
+      "null_mean": 0.10216488497742368,
+      "null_sd": 0.01874135407329171,
+      "null_p95": 0.13356095303867546,
+      "null_p99": 0.14559929131319962,
+      "max_null": 0.16048226151537498,
+      "empirical_p_ge_observed": 0.001996007984031936
+    },
+    "init_c": {
+      "observed_balanced_accuracy": 0.18341849936523189,
+      "selected_lambda_observed": 10.0,
+      "null_mean": 0.09778691722511547,
+      "null_sd": 0.018942630284284053,
+      "null_p95": 0.13083474146601845,
+      "null_p99": 0.14156340600796152,
+      "max_null": 0.15370273970084358,
+      "empirical_p_ge_observed": 0.001996007984031936
+    }
+  }
+}

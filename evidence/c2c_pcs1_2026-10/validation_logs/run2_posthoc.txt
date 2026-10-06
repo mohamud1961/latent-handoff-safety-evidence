@@ -1,0 +1,44 @@
+tie-out with the notebook's pre-registered numbers: acc R 0.6660 Rcal 0.6635 C 0.6120 Ccal 0.6575 (n=2000)
+
+[P1] accuracy by benchmark (all scored items; C_mm on items with a partner)
+bench      n      R   Rcal      S      C   C_mm   Ccal   C-R [95% CI]            C-Cmm [95% CI]
+mmlu    1000   60.6   60.1   61.2   54.2   53.0   60.4   -0.064 [-0.091,-0.037]   +0.014 [+0.003,+0.026]
+arc      600   76.5   76.7   70.2   71.8   72.0   74.8   -0.047 [-0.073,-0.020]   -0.002 [-0.008,+0.003]
+obqa     400   66.8   66.5   61.8   62.7   62.5   65.5   -0.040 [-0.075,-0.007]   +0.003 [-0.013,+0.018]
+
+[P2] where does C2C lose accuracy? letter shift
+true-letter share : {'A': np.float64(0.24), 'B': np.float64(0.248), 'C': np.float64(0.25), 'D': np.float64(0.262)}
+R     answer share: {'A': 0.293, 'B': 0.267, 'C': 0.203, 'D': 0.238}
+Rcal  answer share: {'A': 0.299, 'B': 0.253, 'C': 0.214, 'D': 0.234}
+S     answer share: {'A': 0.159, 'B': 0.184, 'C': 0.261, 'D': 0.397}
+C     answer share: {'A': 0.436, 'B': 0.271, 'C': 0.149, 'D': 0.143}
+C_mm  answer share: {'A': 0.448, 'B': 0.265, 'C': 0.148, 'D': 0.139}
+Ccal  answer share: {'A': 0.19, 'B': 0.249, 'C': 0.254, 'D': 0.306}
+accuracy by TRUE letter (R -> C): {'A': '74->87', 'B': '69->66', 'C': '59->48', 'D': '65->45'}
+(calibrated)               (Rcal -> Ccal): {'A': '74->57', 'B': '67->66', 'C': '61->66', 'D': '64->73'}
+
+[P3] how much of what C2C changes is independent of the sharer's content?
+C != R on 20.8% of items (417); of those, with a partner: C_mm gives the SAME changed answer on 94.9%
+C != C_mm on 57 items (2.9% of items with a partner):  acc(C) 49.1% vs acc(C_mm) 24.6%;  C moves onto S's answer on 29 items, C_mm onto S's on 9
+   sign test, items where exactly one of C / C_mm is correct: C right 28 | C_mm right 14
+
+[P4] calibration: accuracy-after-calibration comparisons on D (S != R) and all items (paired 95% CI)
+  Ccal - Rcal, all     -0.006 [-0.022,+0.010]
+  Ccal - Rcal, D       +0.032 [-0.001,+0.067]
+  Ccal - Cmmcal, D     +0.009 [-0.005,+0.024]
+  Ccal - Cmmcal, all   +0.005 [-0.002,+0.012]
+  Ccal - R, all        -0.009 [-0.025,+0.007]
+  S - R, all           -0.026 [-0.051,-0.002]
+  note: S (sharer alone) is not calibrated here; Scal: 63.6%
+
+[P5] disagreement-set composition under the two receivers
+  A (S right, R wrong)   n= 280   acc(C)   9.3%  acc(C_mm)   7.4%  Inh(C)   9.3%  Inh(C_mm)   7.4%
+  B (S wrong, R right)   n= 332   acc(C)  81.6%  acc(C_mm)  81.2%  Inh(C)   5.7%  Inh(C_mm)   4.8%
+  W (both wrong)         n= 162   acc(C)  16.7%  acc(C_mm)  18.1%  Inh(C)   3.1%  Inh(C_mm)   3.1%
+
+[P6] comparison with run 1 on the items both runs scored (different receiver / sharer / fuser, so descriptive only)
+  common items: 2000
+  run 1 (0.6B <- 0.5B): R 38.4%  S 42.9%  C 47.9%   C-R +0.095 [+0.070,+0.119]
+  run 2 (1.7B <- 1.5B): R 66.6%  S 64.0%  C 61.2%   C-R -0.054 [-0.071,-0.037]
+  run 1: share of 'A' answers  R 73%  C 30%
+  run 2: share of 'A' answers  R 29%  C 44%

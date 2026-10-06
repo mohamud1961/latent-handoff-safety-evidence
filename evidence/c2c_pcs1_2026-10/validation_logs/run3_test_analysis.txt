@@ -1,0 +1,57 @@
+--- run 1 tests: Part B inheritance analysis (PREREG.md decision table)
+PASS  belief carrier               cells={'A': 682, 'B': 557, 'W': 549, 'B+W': 1106}  E_B=+0.542  E_A=+0.509  ->  BELIEF TRANSFER: receiver abandons a corre
+PASS  truth-biased helper          cells={'A': 640, 'B': 552, 'W': 546, 'B+W': 1098}  E_B=-0.007  E_A=+0.486  ->  TRUTH-BIASED HELPER: follows the sharer wh
+PASS  non-specific perturbation    cells={'A': 683, 'B': 523, 'W': 540, 'B+W': 1063}  E_B=+0.000  E_A=+0.006  ->  NON-SPECIFIC PERTURBATION: inheritance is 
+PASS  A+B+W partition D (1746 == 1746)
+PASS  bootstrap CI brackets the mean (0.667 [0.613,0.713])
+
+--- run 3 tests: K wrong states, calibration, numeric task, decision rule (PREREG_run3)
+PASS  2-fold split partitions the items evenly [300, 300]
+PASS  calibrated answer = argmax(lp - mean lp of the OTHER fold), checked by hand
+PASS  calibration is label-free
+      content        acc R/Rcal/C/meanCmm = 0.457/0.509/0.557/0.507  Delta +0.051 [+0.031,+0.070]  C-Rcal +0.048 [+0.029,+0.068]  Kcomplete 2307/2400
+      calibration    acc R/Rcal/C/meanCmm = 0.457/0.509/0.505/0.507  Delta -0.003 [-0.007,+0.001]  C-Rcal -0.004 [-0.010,+0.001]  Kcomplete 2307/2400
+      partial        acc R/Rcal/C/meanCmm = 0.457/0.509/0.519/0.507  Delta +0.013 [+0.005,+0.021]  C-Rcal +0.010 [+0.001,+0.019]  Kcomplete 2307/2400
+      one_bad_state  acc R/Rcal/C/meanCmm = 0.457/0.509/0.505/0.457  Delta +0.047 [+0.041,+0.053]  C-Rcal -0.004 [-0.010,+0.001]  Kcomplete 2307/2400
+PASS  content scenario: MC criteria met; without numeric corroboration the rule returns PARTIAL (not CONTENT-SPECIFIC)
+PASS  calibration scenario -> NON-SPECIFIC
+PASS  partial scenario: 0 < lower CI of Delta < +0.02 -> PARTIAL
+PASS  calibration scenario: Delta ~ 0 raw and calibrated
+PASS  calibration lifts a biased receiver
+PASS  calibration scenario: C agrees with every C_mm,k (> 95%)
+PASS  content scenario: C disagrees with every C_mm,k more
+PASS  spread across k exposes the one harmful wrong state (range 0.154)
+PASS  per-k differences are reported separately
+PASS  Delta_specific equals the mean over k of the per-k differences
+PASS  spread statistics (sd, 3 pairwise agreements)
+PASS  K-complete coverage reported (0.961); any-partner coverage is higher (1.000)
+PASS  every per-k comparison uses exactly the K-complete items
+PASS  D restriction
+PASS  rule: specific MC + numeric positive
+PASS  rule: lower CI exactly +0.02, beats calR, numeric positive
+PASS  rule: lower CI +0.019, numeric positive -> partial
+PASS  rule: specific MC, numeric null -> partial (tasks disagree)
+PASS  rule: specific MC, numeric negative -> partial
+PASS  rule: specific MC, numeric not run -> partial
+PASS  rule: 0 < lower CI < 0.02 -> partial
+PASS  rule: Delta >= +0.02 lower CI but C not above calibrated R -> partial
+PASS  rule: non-specific MC but numeric positive -> partial
+PASS  rule: non-specific: CI includes 0, |C-Rcal| = 0.02
+PASS  rule: non-specific with numeric negative / unavailable
+PASS  rule: CI includes 0 but C-Rcal = 0.03 -> mixed
+PASS  rule: Delta CI excludes 0 negatively -> mixed
+PASS  rule: no wrong-state data -> no claim
+PASS  PARTIAL reading states the magnitudes
+PASS  content scenario + numeric positive -> CONTENT-SPECIFIC
+PASS  calibration scenario + numeric null -> NON-SPECIFIC
+PASS  numeric null scenario: verdict null, inheritance excess ~ 0
+PASS  numeric scenario where C is better than C_mm: verdict positive (+0.317 [+0.263,+0.370])
+PASS  numeric inheritance detects a bridge that copies the sharer's wrong number (+0.317 [+0.238,+0.405])
+PASS  leak check: C_mm copying the PARTNER's sharer number is flagged (+0.543 [+0.490,+0.600]), none in the null
+PASS  N < 60 -> numeric verdict unavailable
+PASS  numeq tolerance and None handling
+PASS  unparsed outputs are counted, not crashed on
+PASS  extract_number / is_correct agree with C2C's GSM8KEvaluator on formats it accepts (and reject wrong / missing answers)
+PASS  gen readout mismatched-sharer statistics match a hand computation
+
+RESULT: ALL TESTS PASSED

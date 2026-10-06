@@ -1,0 +1,113 @@
+{
+  "arm_f_sha256": "c11ea1aa69e4b050e41f312605e0b686bcf858a3e1bd31dc5fcf16b139e5e505",
+  "bootstrap_method": "source-episode clusters sampled with replacement; all rows in sampled clusters pooled; percentile interval",
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 17173316734399332216,
+  "bootstrap_seed_source": "stage_c_probe_seed_u64",
+  "categories": {
+    "derived_random": {
+      "additional_arms": {
+        "arm_t": {
+          "accuracy": 0.18098958333333334,
+          "bootstrap_resamples": 10000,
+          "bootstrap_seed": 17173316734399332216,
+          "cluster_ci95_high": 0.09027777777777778,
+          "cluster_ci95_low": 0.01779513888888889,
+          "minus_mean_wrong_accuracy": 0.053385416666666664
+        },
+        "ti_arm_f": {
+          "accuracy": 0.10286458333333333,
+          "bootstrap_resamples": 10000,
+          "bootstrap_seed": 17173316734399332216,
+          "cluster_ci95_high": 0.01171875,
+          "cluster_ci95_low": -0.060329861111111105,
+          "minus_mean_wrong_accuracy": -0.024739583333333332
+        },
+        "ti_arm_t": {
+          "accuracy": 0.17447916666666666,
+          "bootstrap_resamples": 10000,
+          "bootstrap_seed": 17173316734399332216,
+          "cluster_ci95_high": 0.08203125,
+          "cluster_ci95_low": 0.012152777777777778,
+          "minus_mean_wrong_accuracy": 0.046875
+        }
+      },
+      "arm_f_accuracy": 0.12630208333333334,
+      "arm_f_minus_mean_wrong_accuracy": -0.0013020833333333148,
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 17173316734399332216,
+      "mean_wrong_accuracy": 0.12760416666666666,
+      "n_probes": 768,
+      "n_source_episodes": 256,
+      "probe_level_delta_point": -0.001302083333333332,
+      "state_cluster_bootstrap_ci95_high": 0.007378472222222224,
+      "state_cluster_bootstrap_ci95_low": -0.010416666666666666,
+      "wrong0_accuracy": 0.12890625,
+      "wrong1_accuracy": 0.13020833333333334,
+      "wrong2_accuracy": 0.12369791666666667
+    },
+    "source_mistake": {
+      "additional_arms": {
+        "arm_t": {
+          "accuracy": 0.12244897959183673,
+          "bootstrap_resamples": 10000,
+          "bootstrap_seed": 17173316734399332216,
+          "cluster_ci95_high": 0.10101010101010101,
+          "cluster_ci95_low": -0.2380952380952381,
+          "minus_mean_wrong_accuracy": -0.07142857142857142
+        },
+        "ti_arm_f": {
+          "accuracy": 0.14285714285714285,
+          "bootstrap_resamples": 10000,
+          "bootstrap_seed": 17173316734399332216,
+          "cluster_ci95_high": 0.127536231884058,
+          "cluster_ci95_low": -0.23809523809523808,
+          "minus_mean_wrong_accuracy": -0.05102040816326531
+        },
+        "ti_arm_t": {
+          "accuracy": 0.22448979591836735,
+          "bootstrap_resamples": 10000,
+          "bootstrap_seed": 17173316734399332216,
+          "cluster_ci95_high": 0.2236842105263158,
+          "cluster_ci95_low": -0.140893470790378,
+          "minus_mean_wrong_accuracy": 0.030612244897959183
+        }
+      },
+      "arm_f_accuracy": 0.17346938775510204,
+      "arm_f_minus_mean_wrong_accuracy": -0.020408163265306117,
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 17173316734399332216,
+      "mean_wrong_accuracy": 0.19387755102040816,
+      "n_probes": 98,
+      "n_source_episodes": 24,
+      "probe_level_delta_point": -0.02040816326530612,
+      "state_cluster_bootstrap_ci95_high": 0.022222222222222227,
+      "state_cluster_bootstrap_ci95_low": -0.05454545454545454,
+      "wrong0_accuracy": 0.1836734693877551,
+      "wrong1_accuracy": 0.1836734693877551,
+      "wrong2_accuracy": 0.21428571428571427
+    }
+  },
+  "classification": "PCS4V4_L3_NULL",
+  "frozen_l3_checks": {
+    "derived_random_cluster_ci95_lower_gt_zero": false,
+    "source_mistake_cluster_ci95_lower_gt_zero": false,
+    "source_mistake_episodes_ge_10": true,
+    "source_mistake_probes_ge_25": true
+  },
+  "n_stage_c_records": 1378,
+  "pcs4v3_l3_reached": false,
+  "pcs4v4_l3_reached_exploratory": false,
+  "pcs6_d1": {
+    "basis": {
+      "pcs4v3_l3_reached": false,
+      "pcs4v4_l3_reached_exploratory": false
+    },
+    "claim": "state-supervised reasoning continuation",
+    "objective": "D1-b",
+    "training_objective": "PCS4v3 information-weighted loss plus readback auxiliary (lambda=0.25)"
+  },
+  "probe_seed_u64": 16381188880247769587,
+  "receiver_model": "Qwen/Qwen3-1.7B",
+  "source_model": "Qwen/Qwen3-4B"
+}

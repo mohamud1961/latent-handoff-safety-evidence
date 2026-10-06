@@ -1,0 +1,81 @@
+=== custody: sha256 of decompressed raw results vs hashes recorded at custody time ===
+  OK  run1/results.json.gz  8572a2789496b2df...
+  OK  run2/results.json.gz  5fc8bb8deed710bd...
+  OK  run3/results.json.gz  923360d0d7bd65ec...
+  OK  pcs1_pilot_v1/results.json.gz  cd71ef7b80f05320...
+  OK  pcs1_pilot_v2/results.json.gz  22aa9d71cb74f019...
+  OK  pcs1/results.json.gz  4e9ee7aff8c41b62...
+
+=== run 1 (Qwen2.5-0.5B -> Qwen3-0.6B): 2000 items ===
+  acc R       38.4%  (n=2000)
+  acc S       42.9%  (n=2000)
+  acc C       47.9%  (n=2000)
+  acc Rcal    48.5%  (independent re-implementation)
+  C - C_mm   -0.2 [-1.1, +0.6] pts  | same answer 97.3%  (n=851)
+
+=== run 2 (Qwen2.5-1.5B -> Qwen3-1.7B): 2000 items ===
+  acc R       66.6%  (n=2000)
+  acc S       64.0%  (n=2000)
+  acc C       61.2%  (n=2000)
+  acc Rcal    66.7%  (independent re-implementation)
+  C - C_mm   +0.7 [+0.1, +1.4] pts  | same answer 97.1%  (n=1975)
+
+=== run 3 (Qwen3-4B -> Qwen3-0.6B): 2800 items ===
+  acc R       37.7%  (n=2800)
+  acc S       77.0%  (n=2800)
+  acc C       51.8%  (n=2800)
+  acc Rcal    47.6%  (independent re-implementation)
+  C - C_mm0  +4.0 [+2.8, +5.2] pts  | same answer 84.9%  (n=2763)
+  C - C_mm1  +5.8 [+4.7, +7.0] pts  | same answer 84.6%  (n=2719)
+  C - C_mm2  +6.0 [+4.8, +7.3] pts  | same answer 84.2%  (n=2685)
+
+=== run 3 paired statistics (requested by the 2026-10-02 independent review) ===
+items with C, R, S and all three wrong-state controls: 2685
+Delta_specific = C - mean(C_mm,k): +5.4 [+4.4, +6.4] pts
+
+exact McNemar, C vs each wrong state:
+  control  C right/mm wrong  C wrong/mm right  net  p (two-sided)
+  C_mm0                 197                86  +111  3.50e-11
+  C_mm1                 222                64  +158  1.38e-21
+  C_mm2                 223                61  +162  7.43e-23
+
+flip table vs receiver alone (R -> C):
+  R right -> C right: 728
+  R right -> C wrong: 289
+  R wrong -> C right: 672
+  R wrong -> C wrong: 996
+  same for wrong states (R wrong->mm right, R right->mm wrong): {'C_mm0': (571, 299), 'C_mm1': (543, 318), 'C_mm2': (539, 318)}
+
+C - Rcal (paired, independent calibration): +5.0 [+3.1, +6.9] pts
+Ccal - mean(C_mm,k cal): +5.1 [+4.2, +6.1] pts
+
+splits (Delta_specific = acc difference; excess P(=S) = agreement with the sharer's answer beyond wrong states):
+  source right                       n= 2071  Delta_specific +7.2 [+6.1, +8.4]  | excess P(=S) +7.2 [+6.1, +8.4]
+  source wrong                       n=  614  Delta_specific -1.0 [-3.0, +0.8]  | excess P(=S) +4.6 [+2.7, +6.6]
+  receiver-alone right               n= 1017  Delta_specific +2.2 [+0.7, +3.8]  | excess P(=S) +3.7 [+2.2, +5.2]
+  receiver-alone wrong               n= 1668  Delta_specific +7.3 [+6.0, +8.6]  | excess P(=S) +8.5 [+7.1, +9.8]
+  source right, receiver wrong       n= 1219  Delta_specific +9.7 [+8.1, +11.3]  | excess P(=S) +9.7 [+8.1, +11.3]
+  source wrong, receiver right       n=  165  Delta_specific -5.5 [-9.7, -1.2]  | excess P(=S) +3.4 [+0.4, +6.7]
+  benchmark mmlu                     n= 1687  Delta_specific +4.8 [+3.6, +6.1]  | excess P(=S) +6.5 [+5.3, +7.8]
+  benchmark arc                      n=  599  Delta_specific +6.2 [+4.1, +8.5]  | excess P(=S) +7.1 [+5.0, +9.4]
+  benchmark obqa                     n=  399  Delta_specific +6.3 [+4.0, +8.7]  | excess P(=S) +6.3 [+3.9, +8.9]
+  true answer A                      n=  625  Delta_specific +0.6 [-1.3, +2.7]  | excess P(=S) +3.2 [+1.3, +5.1]
+  true answer B                      n=  668  Delta_specific +6.2 [+4.4, +8.1]  | excess P(=S) +5.6 [+3.9, +7.4]
+  true answer C                      n=  700  Delta_specific +9.3 [+7.3, +11.4]  | excess P(=S) +9.6 [+7.5, +11.7]
+  true answer D                      n=  692  Delta_specific +4.7 [+2.7, +6.8]  | excess P(=S) +7.8 [+5.7, +9.9]
+
+Note: the Part A paper-reproduction number (~55.5%, OBQA N=200, generation readout) is a different subset and readout from the main audit number above; they are reported separately on purpose.
+
+=== PCS1 main: 3000 items ===
+  acc R       10.5%
+  acc S_full  22.7%
+  acc C       10.5%
+  acc C_mm0   10.5%
+  acc C_mm1   10.7%
+  acc C_mm2   10.4%
+  acc T       17.0%
+  A's belief (S_state == X): 92.5%
+  Delta_specific: -0.1 [-0.4, +0.3] pts
+  McNemar C vs C_mm0: 21 vs 23, p=0.88
+  McNemar C vs C_mm1: 17 vs 23, p=0.43
+  McNemar C vs C_mm2: 21 vs 20, p=1.00

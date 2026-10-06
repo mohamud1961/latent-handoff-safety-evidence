@@ -1,0 +1,68 @@
+mode: main (SMOKE) | depths [1, 2] x 6 | Qwen/Qwen3-0.6B <- Qwen/Qwen3-4B | out=<tmp>
+{'transformers': '4.52.4', 'tokenizers': '0.21.4', 'huggingface_hub': '0.34.3', 'datasets': '5.0.1', 'numpy': '2.2.6'}
+C2C commit: 3ca0e98020bac1f36000623afcb8dfc6f8c29bdf
+torch 2.6.0 | transformers 4.52.4 | device cpu (cpu, cc (0, 0)) | native bf16: False
+
+Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]
+Fetching 30 files: 100%|██████████| 30/30 [00:00<00:00, 5225.90it/s]
+fuser dir: <local>/.cache/huggingface/hub/models--nics-efc--C2C_Fuser/snapshots/f01fc3258b305e280e04c7238f4f2cf31b7dc70d/qwen3_0.6b+qwen3_4b_Fuser/final | files: 30
+Model Qwen/Qwen3-0.6B already has a chat template.
+fp32 reference on cpu: 6/6 probe items in 9s
+Model Qwen/Qwen3-0.6B already has a chat template.
+fp16 gate: {'R': {'finite': True, 'argmax_agree': 0.0, 'mean_abs_dprob': 0.0232}, 'S': {'finite': True, 'argmax_agree': 0.167, 'mean_abs_dprob': 0.0103}, 'C': {'finite': True, 'argmax_agree': 0.0, 'mean_abs_dprob': 0.0214}}
+Model Qwen/Qwen3-0.6B already has a chat template.
+models ready in 25s | dtype: fp32 (fp16 failed gate)
+items: 12 | fused-section tokens median 53 (min 46, max 61) | total tokens median 93
+example fused section:
+Track the variables below. All arithmetic is mod 10.
+a = 0
+b = 4
+c = 5
+b = (c * 1 + a) % 10
+tail U: Now e = (b * 9 + 3) % 10. What is e? Answer with a single digit. | queried b = X 5 -> U-answer 8
+run finished: all items processed | 62s since start
+
+=== PCS1 main: depths [1, 2], items scored 12 (A's belief wrong on 11) ===
+pooled U-answer accuracy (chance 10%)  [95% CI]            
+-----------------------------------------------------------
+R                                       16.7% [  0.0, 41.7]
+Rcal                                     8.3% [  0.0, 25.0]
+S_full                                  16.7% [  0.0, 41.7]
+S_state                                  8.3% [  0.0, 25.0]
+C                                       16.7% [  0.0, 41.7]
+C_mm_mean                               16.7% [  0.0, 41.7]
+T                                       16.7% [  0.0, 41.7]
+Ccal                                    16.7% [  0.0, 41.7]
+paired difference   [95% CI]              
+------------------------------------------
+Delta_specific      +0.000 [+0.000,+0.000]
+Delta_specific_cal  +0.000 [+0.000,+0.000]
+C_minus_Rcal        +0.083 [-0.167,+0.333]
+C_minus_R           +0.000 [-0.250,+0.250]
+C_minus_T           +0.000 [-0.250,+0.250]
+T_minus_Rcal        +0.083 [-0.167,+0.333]
+C_minus_Sfull       +0.000 [-0.333,+0.333]
+  depth 1: n=6 | R  16.7% [  0.0, 42.1] | Rcal   0.0% [  0.0,  0.0] | S_full   0.0% [  0.0,  0.0] | S_state   0.0% [  0.0,  0.0] | C  16.7% [  0.0, 50.0] | C_mm_mean  16.7% [  0.0, 50.0] | T  16.7% [  0.0, 42.1] | Ccal  16.7% [  0.0, 50.0] | Delta +0.000 [+0.000,+0.000] | C-Rcal +0.167 [+0.000,+0.500]
+  depth 2: n=6 | R  16.7% [  0.0, 50.0] | Rcal  16.7% [  0.0, 42.1] | S_full  33.3% [  0.0, 83.3] | S_state  16.7% [  0.0, 42.1] | C  16.7% [  0.0, 50.0] | C_mm_mean  16.7% [  0.0, 50.0] | T  16.7% [  0.0, 50.0] | Ccal  16.7% [  0.0, 50.0] | Delta +0.000 [+0.000,+0.000] | C-Rcal +0.000 [-0.333,+0.500]
+
+FIDELITY on items where A's belief is wrong (n=11); g = U-answer implied by A's wrong belief; chance 0.10
+quantity                            [95% CI]              
+----------------------------------------------------------
+P(C == g)                             0.0% [  0.0,  0.0]  
+P(C_mm == g), mean over k             0.0% [  0.0,  0.0]  
+EXCESS P(C==g) - mean P(C_mm,k==g)  +0.000 [+0.000,+0.000]
+P(C == g) - 0.10                    -0.100 [-0.100,-0.100]
+P(R == g)                             9.1% [  0.0, 27.3]  
+P(Rcal == g)                          0.0% [  0.0,  0.0]  
+P(T == g) text handoff                9.1% [  0.0, 27.3]  
+by depth excess: {1: '+0.000 [+0.000,+0.000]', 2: '+0.000 [+0.000,+0.000]'}
+wrong-cache following: {'P_Cmm_eq_g_mm_mean': '  8.3% [  0.0, 16.7]', 'P_C_eq_g_mm_mean': '  8.3% [  0.0, 16.7]'}
+agreement C vs C_mm,k: ['100.0% [100.0,100.0]', '100.0% [100.0,100.0]', '100.0% [100.0,100.0]'] | C vs R:   0.0% [  0.0,  0.0] | projection-off == receiver: 1.0
+digit marginals: {'truth_U': {'0': 0.083, '1': 0.083, '2': 0.083, '3': 0.167, '4': 0.083, '5': 0.167, '6': 0.083, '7': 0.0, '8': 0.167, '9': 0.083}, 'R': {'0': 0.0, '1': 0.0, '2': 0.0, '3': 0.0, '4': 0.0, '5': 0.0, '6': 0.0, '7': 0.0, '8': 1.0, '9': 0.0}, 'Rcal': {'0': 0.083, '1': 0.25, '2': 0.083, '3': 0.0, '4': 0.083, '5': 0.0, '6': 0.083, '7': 0.083, '8': 0.167, '9': 0.167}, 'C': {'0': 0.5, '1': 0.0, '2': 0.0, '3': 0.0, '4': 0.5, '5': 0.0, '6': 0.0, '7': 0.0, '8': 0.0, '9': 0.0}, 'C_mm0': {'0': 0.5, '1': 0.0, '2': 0.0, '3': 0.0, '4': 0.5, '5': 0.0, '6': 0.0, '7': 0.0, '8': 0.0, '9': 0.0}, 'T': {'0': 0.0, '1': 0.0, '2': 0.0, '3': 0.0, '4': 0.0, '5': 0.0, '6': 0.0, '7': 0.0, '8': 1.0, '9': 0.0}}
+
+READING (PREREG_pcs1): NULL: both CIs include 0. Delta_specific +0.000 [+0.000,+0.000]; C-Rcal +0.083 [-0.167,+0.333]; fidelity excess +0.000 [+0.000,+0.000] {'new_deduction_supported(Delta lowerCI>=+0.02 and C-Rcal lowerCI>0)': False, 'fidelity_supported(excess lowerCI>0)': False, 'both_CIs_include_0': True}
+
+saved <tmp> (0.0 MB). Total wall time 1.0 min.
+DEVIATIONS:
+  - fp16 failed the gate {'R': {'finite': True, 'argmax_agree': 0.0, 'mean_abs_dprob': 0.0232}, 'S': {'finite': True, 'argmax_agree': 0.167, 'mean_abs_dprob': 0.0103}, 'C': {'finite': True, 'argmax_agree': 0.0, 'mean_abs_dprob': 0.0214}}; fell back to fp32
+EXIT 0

@@ -1,0 +1,93 @@
+{
+  "procedure": "Subtract train centroid for exact intended-state class (A_X,target_var), then probe residual prefix.",
+  "n_train": 512,
+  "n_val": 128,
+  "n_test": 256,
+  "semantic_classes_train": 30,
+  "targets": {
+    "init_a": {
+      "lambda": 10.0,
+      "val_balanced_accuracy": 0.49998015873015866,
+      "test_accuracy": 0.4765625,
+      "test_balanced_accuracy": 0.4823826578774105,
+      "test_macro_f1": 0.4670511976855728,
+      "test_class_counts": {
+        "0": 23,
+        "1": 23,
+        "2": 27,
+        "3": 20,
+        "4": 28,
+        "5": 29,
+        "6": 29,
+        "7": 21,
+        "8": 26,
+        "9": 30
+      },
+      "nested_permutation": {
+        "n": 500,
+        "null_mean": 0.09948235974421987,
+        "null_sd": 0.018343503049475098,
+        "null_p95": 0.13063547136853587,
+        "null_p99": 0.14190523758453052,
+        "max_null": 0.16281310798665607,
+        "empirical_p_ge_observed": 0.001996007984031936
+      }
+    },
+    "init_b": {
+      "lambda": 10.0,
+      "val_balanced_accuracy": 0.3076903651903652,
+      "test_accuracy": 0.26953125,
+      "test_balanced_accuracy": 0.27259774122070524,
+      "test_macro_f1": 0.2639002120389008,
+      "test_class_counts": {
+        "0": 19,
+        "1": 26,
+        "2": 23,
+        "3": 27,
+        "4": 22,
+        "5": 34,
+        "6": 22,
+        "7": 26,
+        "8": 33,
+        "9": 24
+      },
+      "nested_permutation": {
+        "n": 500,
+        "null_mean": 0.10099109705241537,
+        "null_sd": 0.019352406310047206,
+        "null_p95": 0.13151251443143122,
+        "null_p99": 0.14976249104046924,
+        "max_null": 0.17187845408104027,
+        "empirical_p_ge_observed": 0.001996007984031936
+      }
+    },
+    "init_c": {
+      "lambda": 10.0,
+      "val_balanced_accuracy": 0.2735404872904873,
+      "test_accuracy": 0.19140625,
+      "test_balanced_accuracy": 0.18341849936523189,
+      "test_macro_f1": 0.184250653313848,
+      "test_class_counts": {
+        "0": 33,
+        "1": 25,
+        "2": 29,
+        "3": 24,
+        "4": 23,
+        "5": 17,
+        "6": 28,
+        "7": 26,
+        "8": 23,
+        "9": 28
+      },
+      "nested_permutation": {
+        "n": 500,
+        "null_mean": 0.10107981544719968,
+        "null_sd": 0.019264169558546377,
+        "null_p95": 0.13352843603067385,
+        "null_p99": 0.1493526874587157,
+        "max_null": 0.16632651787571695,
+        "empirical_p_ge_observed": 0.001996007984031936
+      }
+    }
+  }
+}

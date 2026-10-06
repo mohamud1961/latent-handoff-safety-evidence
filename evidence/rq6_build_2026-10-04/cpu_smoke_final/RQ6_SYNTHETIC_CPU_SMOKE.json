@@ -1,0 +1,49 @@
+{
+  "continuation_parse_ok": true,
+  "evidence_kind": "synthetic_cpu_smoke_only",
+  "experiment_performed": false,
+  "gsm8k_checkpoint": {
+    "char_end": 42,
+    "checkpoint_fraction": 0.6,
+    "checkpoint_prefix_tokens": 6,
+    "checkpoint_sentence_index": 1,
+    "sentence_count": 4,
+    "text": "First sentence. Second sentence is longer.",
+    "total_solution_tokens": 10
+  },
+  "gsm8k_normalized_answer": 1234.5,
+  "modal_launched": false,
+  "models_loaded": false,
+  "network_or_dataset_access": false,
+  "resolved_protocol": {
+    "blocking_protocol_questions": [],
+    "experiment_ready": true,
+    "external_services_used": false,
+    "gsm8k_revision": "740312add88f781978c0658806c59bc2815b9866",
+    "modal_launched": false,
+    "model_loading_performed": false,
+    "model_revisions": {
+      "Qwen/Qwen3-1.7B": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "Qwen/Qwen3-4B": "1cfa9a7208912126459214e8b04321603b3df60c"
+    },
+    "protocol_path": "<local>/Downloads/pcs-wt-codex-mon2/evidence/rq6_build_2026-10-04/RQ6_PROTOCOL.json",
+    "protocol_sha256": "9880291e2ed842882f50fa63ab8a1ff60509ccef85c153e4cb778228b9fb8704",
+    "resolved_by": "design_L2_L4/RESOLUTIONS_1_OPUS.md#RQ6-PCS6",
+    "schema": "rq6_protocol_preflight_v1",
+    "status": "resolved_ready_for_reviewed_inference"
+  },
+  "schema": "rq6_synthetic_cpu_smoke_v1",
+  "six_a_gate_helpers_pass_synthetic_fixture": true,
+  "six_b_gate_helpers_pass_synthetic_fixture": true,
+  "source_final_from_state_s11": [
+    1,
+    2,
+    3
+  ],
+  "source_trace_parse_ok": true,
+  "split_counts": {
+    "test": 500,
+    "train": 900,
+    "val": 200
+  }
+}

@@ -1,0 +1,49 @@
+PASS  nbformat valid, 16 cells
+PASS  all 15 code cells byte-compile
+PASS  no IPython magics/shell escapes (cells are plain Python)
+PASS  module rosetta.model.wrapper exists in clone
+PASS  rosetta.model.wrapper.RosettaModel defined
+PASS  module rosetta.model.projector exists in clone
+PASS  rosetta.model.projector.load_projector defined
+PASS  module rosetta.utils.evaluate exists in clone
+PASS  rosetta.utils.evaluate.build_prompt defined
+PASS  rosetta.utils.evaluate.get_option_token_ids defined
+PASS  rosetta.utils.evaluate.extract_answer_from_content defined
+PASS  rosetta.utils.evaluate.set_default_chat_template defined
+PASS  module rosetta.utils.matheval exists in clone
+PASS  rosetta.utils.matheval.GSM8KEvaluator defined
+PASS  call build_prompt(): keywords ['dataset', 'locale', 'question', 'choices', 'use_cot', 'use_template'] all accepted
+PASS  call build_prompt(): positional count ok
+PASS  call set_default_chat_template(): keywords [] all accepted
+PASS  call set_default_chat_template(): positional count ok
+PASS  ROS.load_projector_config(): keywords [] all accepted
+PASS  ROS.load_projector_config(): positional count ok
+PASS  RosettaModel.load_projector_config exists
+PASS  call load_projector(): keywords ['override_args'] all accepted
+PASS  call load_projector(): positional count ok
+PASS  call get_option_token_ids(): keywords [] all accepted
+PASS  call get_option_token_ids(): positional count ok
+PASS  ROS.forward(): keywords ['kv_cache_index', 'input_ids', 'attention_mask', 'position_ids'] all accepted
+PASS  ROS.forward(): positional count ok
+PASS  RosettaModel.forward exists
+PASS  ROS.forward(): keywords ['kv_cache_index', 'input_ids', 'attention_mask', 'position_ids', 'use_cache'] all accepted
+PASS  ROS.forward(): positional count ok
+PASS  RosettaModel.forward exists
+PASS  ROS.generate(): keywords ['kv_cache_index', 'input_ids', 'attention_mask', 'position_ids', 'do_sample', 'max_new_tokens'] all accepted
+PASS  ROS.generate(): positional count ok
+PASS  RosettaModel.generate exists
+PASS  RosettaModel.generate exists
+PASS  call extract_answer_from_content(): keywords [] all accepted
+PASS  call extract_answer_from_content(): positional count ok
+PASS  RosettaModel(...): keywords ['model_list', 'base_model_idx', 'projector_list'] all accepted
+PASS  RosettaModel(...): positional count ok
+PASS  RosettaModel.projector_dict set in __init__/methods
+PASS  RosettaModel.model_list set in __init__/methods
+PASS  RosettaModel.kv_cache_dict set in __init__/methods
+PASS  notebook reads RosettaModel.projector_dict (checked above)
+PASS  MMLU-Redux subject list identical to C2C's (57 subjects)
+PASS  mmlu_redux_key matches C2C parse_answer on 240 synthetic cases
+PASS  gsm8k_prompt identical to C2C _format_math_problem_example on 3 questions
+PASS  gsm8k_gold identical to C2C parse_answer on 6 synthetic answers
+
+RESULT: ALL CHECKS PASSED

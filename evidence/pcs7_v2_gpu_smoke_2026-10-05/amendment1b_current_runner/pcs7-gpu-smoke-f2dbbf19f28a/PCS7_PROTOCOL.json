@@ -1,0 +1,162 @@
+{
+  "answer_readout": {
+    "anchor": "\nThe answer is ",
+    "base100_digits": 2,
+    "base100_zero_padded": true,
+    "base10_digits": 1,
+    "free_answer_tokens_before_first_digit": 0,
+    "method": "argmax restricted to standalone digit-token logits"
+  },
+  "arms": [
+    "PCS",
+    "PCS_wrong_1",
+    "PCS_wrong_2",
+    "PCS_wrong_3",
+    "zero",
+    "random_norm_matched",
+    "B_restart",
+    "B_restart_reason",
+    "text_handoff",
+    "oracle",
+    "token_identity_ceiling"
+  ],
+  "bridge": {
+    "architecture": "PCS2b StateToPrefixBridge: shared source LayerNorm, shared 128-wide slice projection, flatten 18 slices, GELU MLP hidden=1024, four target-native prefix slots",
+    "bridge_hidden": 1024,
+    "epochs": 40,
+    "gradient_clip": 1.0,
+    "k_slots": 4,
+    "learning_rate": 0.0003,
+    "objective": "D1-b; 0.75 digit-restricted CE on (A parsed answer + m) mod base, 0.25 digit-restricted CE readback of A parsed answer; base100 targets use two zero-padded digits; no objective-correctness loss",
+    "optimizer": "AdamW; gradient norm clipped to 1.0",
+    "receiver_frozen": true,
+    "selection": "minimum validation D1-b loss; no held-out m in training or selection",
+    "source_proj": 128,
+    "train_batch": 4,
+    "weight_decay": 0.01
+  },
+  "bridge_config_source": "PCS2b canonical architecture; no sealed W1_CHOICE.json is present in the checkout",
+  "claim": "silent source cognition transfers through a continuous neural state and is used on a new step, including source mistakes",
+  "code_shas": {
+    "files": {
+      "PCS2B_PREANSWER_STATE_REALIZATION_FREEZE_2026-10-03.md": "a98a113455074d8b741570125bd8eaf1af4d45351ac223ac3ffcf8b2751824f8",
+      "PCS4V3_INFORMATION_WEIGHTED_OBJECTIVE_FREEZE_2026-10-04.md": "97e9023e117f3e2d64265c3c1fa681cad39645c0ccdf887e2bd22a5ec0b8099d",
+      "design_L2_L4/02_PCS4V4_CONTINGENCY_FREEZE.md": "7e237f3a9da1023c42fcbfad37d7f627fe72606d85ce815286db346321247fec",
+      "design_L2_L4/05_BUILD_SPEC_FOR_IMPLEMENTER.md": "0a892adeda8fbdb89532010510e0e6dafbb7c968afb917bb20c0f16d995e9c3a",
+      "design_L2_L4/09_PCS7_SILENT_COGNITION_FREEZE.md": "8dfdf664087e2e781802319ef4c8bf45f3de4a10a6262513f1124319c804043b",
+      "design_L2_L4/BUILD_QUESTIONS.md": "ee3c5e07f6a94211e1b4722ca2ec2189444e94ed7b950e2a11ce1ad7d7b70fa6",
+      "design_L2_L4/RESOLUTIONS_1_OPUS.md": "3de67dd567cbf3bd2d45b88d677c0c0755cd1027929418c0b934611b4947e61c",
+      "design_L2_L4/RQ7_AMENDMENT_1B_PROMPT_OPUS.md": "9b1d556d211b4696cab1ee2d9970f8a57277e3df3cacd2b49bf4b119209ce4e2",
+      "design_L2_L4/RQ7_AMENDMENT_1_READOUT_OPUS.md": "b62fc1b58befa58218513b3eb5102c34ebdd8f485e19f53919278c4000650054",
+      "evidence/c2c_pcs1_2026-10/pcs1_pilot_v2/pcs1_pilot.ipynb": "7128fe7e512b8118f92b5f59c27e03945a6396221cf32dca7f8be8dc9a0a0f80",
+      "evidence/pcs4v3_2026-10-04/RESULT.md": "7feb02402eeba4c44c9fa0f12f679bc0bf97d2bd7a8285cbc5aeefa3650dcea6",
+      "evidence/pcs4v4_build_2026-10-04/reducer_smoke_summary.json": "aceb0a8cd17adf9e5eb7bc761b6e9c51cc5c3795314c225526b56f0cafc8e03a",
+      "scripts/modal_pcs7_silent.py": "544650e7739cf68809c31571d3767506db16e63e84149cea92e8e3b8f3baaccf",
+      "scripts/modal_rq7_qualification.py": "75656e8d7ddd6de4225c69a62a2708e29f30149b35983ad83ec37c72824834af",
+      "scripts/pcs2b_corrected_bridge.py": "752a974664ee690380468e07b18de5c366bdb164bd8be1128df4fe6c09d0f314",
+      "scripts/pcs7_silent.py": "f2dbbf19f28ac3b3393faba6eea83e9e77e773f2b2d5de742c3c5b70e5a7c18d",
+      "scripts/rq7_qualification.py": "0b49742adbbf8d5d1b7c5c6edc81587c78347db7c2a2f90998c5308815b74cee"
+    },
+    "model_and_tokenizer_revisions": {
+      "A": {
+        "id": "Qwen/Qwen3-4B",
+        "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+        "tokenizer_revision": "1cfa9a7208912126459214e8b04321603b3df60c"
+      },
+      "B": {
+        "id": "Qwen/Qwen3-1.7B",
+        "model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+        "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+      }
+    }
+  },
+  "controls": {
+    "oracle": "P_B + Intermediate result: v = A parsed answer + explicit post-handoff query; P_B omits A's final question",
+    "random_prefix": "Gaussian prefix, rescaled per example to the L2 norm of the PCS prefix; seed 0",
+    "text_handoff": "identical user content and rendered chat prompt to B_restart; exact equality asserted",
+    "token_identity_ceiling": "deterministic one-hot-style answer computation from A parsed answer; descriptive upper bound, no receiver call",
+    "wrong_states": "3 distinct test partners with a valid A answer different from current A answer; nearest source prompt token length, ties by episode index"
+  },
+  "criteria": {
+    "beats_restart_min": 0.2,
+    "heldout_m_fidelity_min": 0.5,
+    "silence_verified": "100% of included episodes have zero source answer tokens before the prompt checkpoint",
+    "silent_mistake_excess_min": 0.25,
+    "silent_mistake_min_episodes": 20,
+    "specificity_cluster_ci_lower_min_exclusive": 0.0,
+    "specificity_min": 0.3,
+    "swap_follow_min": 0.4,
+    "train_m_fidelity_min": 0.6
+  },
+  "d1_decision": {
+    "basis": "RESOLUTIONS_1_OPUS.md default D1-b; PCS4v3 RESULT records L3 not reached and available PCS4v4 reducer evidence is explicitly synthetic smoke, not reviewed scientific L3 evidence",
+    "l3_reviewed_evidence_available": false,
+    "selected": "D1-b"
+  },
+  "gates": [
+    "verified passing sealed RQ7 v2 choice and full raw/result/gate/protocol/code-sha chain",
+    "source digit-readout parse valid for at least 95% of records in each split",
+    "at least 400 parsed sealed test rows",
+    "at least 20 parsed source-wrong test episodes",
+    "invalid test source rows remain in evaluation denominators as failures",
+    "seal bridge sha and probe seed commitment before building wrong/random evaluation controls"
+  ],
+  "interventions": {
+    "heldout_m": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "operation": "e = (v + m) % base",
+    "test_schedule": "one deterministic m from 1..4 and one from 5..9 per sealed source state",
+    "training_m": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "training_schedule": "one training m per source state per epoch, cycling deterministically through 1..4; each state sees all four over each four epochs"
+  },
+  "mode": "real_model_gpu_smoke",
+  "pool": 1600,
+  "prompt_amendment": "RQ7 Amendment 1b; every B arm uses P_B (task statement without A's final question); restart and PCS arms state v explicitly before the future query",
+  "protocol": "pcs7_silent_v2",
+  "receiver_model": {
+    "id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+  },
+  "seed": 20261010,
+  "smoke_only": {
+    "qualification_data_applicable": false,
+    "qualification_outcome_emitted": false,
+    "real_models_loaded": true,
+    "synthetic_cpu": false
+  },
+  "source": {
+    "chat_template": "Qwen apply_chat_template(enable_thinking=False); fixed answer anchor appended before the first answer digit",
+    "features": "prompt-only last 2 answer-anchor token positions; layers 4,8,...,36 in layer-major then position order; no generated answer token enters features",
+    "generation": "digit-restricted argmax; one digit for base 10 and two zero-padded digits for base 100; B_restart_reason is capped at 256 reasoning tokens before the anchored digit readout",
+    "generator": "RQ7 generate_episode(selected_cell, index, seed=20261010)",
+    "prompt_user_content": "P + newline + newline + base-specific numeric instruction; assistant turn is prefilled with newline + 'The answer is '.",
+    "silence_check": "A has zero free generation tokens before its first answer digit by construction; source checkpoint is the final answer-anchor token"
+  },
+  "source_model": {
+    "id": "Qwen/Qwen3-4B",
+    "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "tokenizer_revision": "1cfa9a7208912126459214e8b04321603b3df60c"
+  },
+  "split": {
+    "method": "Random(20261010).shuffle(indexes); first 900 train, next 200 validation, remaining 500 sealed test",
+    "test": 500,
+    "train": 900,
+    "validation": 200
+  },
+  "uncertainty": {
+    "interval": "percentile 95% cluster bootstrap over source episode ids",
+    "resamples": 10000,
+    "state_cluster_bootstrap_seed": 0
+  }
+}

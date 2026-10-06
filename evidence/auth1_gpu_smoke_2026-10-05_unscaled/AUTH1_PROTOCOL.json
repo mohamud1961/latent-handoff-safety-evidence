@@ -1,0 +1,103 @@
+{
+  "arms": [
+    "GATE",
+    "NO_GATE",
+    "PROMPT_ONLY"
+  ],
+  "bootstrap": {
+    "n": 10000,
+    "seed": 0
+  },
+  "code_shas": {
+    "files": {
+      "auth1.py": "729c5e02d0fd7662e5bcdacb14b1bdf371bfeec09e2454932f80bdd5306c0054",
+      "interfere1.py": "329105f349ff433ea8afe36a6e0d00e22d625a2780314af3c409ecaefb9f1490",
+      "mon2_contract.py": "0739d832525fad3241d90c914b891359646027a55b6fc810b7984c889250f36e",
+      "pcs2b_preanswer_bridge.py": "29c47aa64ef482e0654052df223dc1b9596c0a23bfbb93ddb5d5959562b8949c",
+      "pcs2b_sealed.py": "d34b139996c32c5f76d6679e34466e2bedc5217ba953689c58110e51748c4ac6"
+    },
+    "models": {
+      "B": {
+        "id": "Qwen/Qwen3-1.7B",
+        "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+        "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+      }
+    },
+    "pcs2b": {
+      "bridge": "87de8fb8a70d62aea0a2545faeb3c5b12890832dfd24d1b64e0b4a84cea8a771",
+      "cache": "42f419d69f5ebda6270ecbd335b2e8de72123cf757d0ebc2327c1620bd8c048f",
+      "runner": "29c47aa64ef482e0654052df223dc1b9596c0a23bfbb93ddb5d5959562b8949c"
+    }
+  },
+  "conditions": [
+    "verified_conflict",
+    "verified_agree",
+    "no_note",
+    "spoof"
+  ],
+  "criteria": {
+    "follow_A_agree_min": 0.85,
+    "follow_A_no_note_min": 0.8,
+    "follow_verified_min": 0.8,
+    "spoof_margin_max": 0.05,
+    "vs_prompt_only_min": 0.3
+  },
+  "custody": {
+    "asset_dir": "/artifacts/pcs2b-preanswer-state-realization",
+    "bridge_sha256": "87de8fb8a70d62aea0a2545faeb3c5b12890832dfd24d1b64e0b4a84cea8a771",
+    "cache_sha256": "42f419d69f5ebda6270ecbd335b2e8de72123cf757d0ebc2327c1620bd8c048f",
+    "errors": [],
+    "passed": true,
+    "runner_sha256": "29c47aa64ef482e0654052df223dc1b9596c0a23bfbb93ddb5d5959562b8949c"
+  },
+  "design": "design_L2_L4/19_AUTH1_AUTHORITY_GATE_FREEZE.md",
+  "hyperparameters": {
+    "batch": 16,
+    "epochs": 20,
+    "hidden": 512,
+    "lr": 0.001,
+    "optimizer": "Adam",
+    "seed": 0
+  },
+  "implementation_values_g2": {
+    "A_belief": "PCS2b cache A_belief is v_A; follow-A means pred == f(v_A) with f = identity for readback and + m for future m",
+    "X": "random.Random(f'20261022:{state id}').choice of digits != v_A; fixed per state, so train/val/test states each have their own X",
+    "eval_batch": 32,
+    "gate": "per slot k: MLP(2048 + 1 + 10 -> 512 -> GELU -> 1 + 2048) on [prefix_k / rms, a, a * onehot(X)]; output prefix_k * (1 + s_k) + delta_k * rms; last layer zero-initialised so G starts as the identity; rms = the frozen bridge's embedding RMS scale",
+    "gate_inputs_note": "G sees the prefix, a and a*onehot only; it never sees B's text, so a=0 'no note' and a=0 'spoof' are indistinguishable to G (the spoof gains no authority by construction)",
+    "loss": "digit-restricted cross entropy over B's ten digit logits (PCS2b logits_with_prefix); B and bridge frozen in fp16/fp32 as in PCS2b",
+    "memory_gib": 24,
+    "prompt_only": "chat system message with the frozen instruction sentence; same user text and prefix as NO-GATE; the authority flag has no effect (no gate)",
+    "queries": "readback plus future m = 1..9 (10 queries, all train/test); during training each (state, condition) is paired with one query, query index (state_ordinal + 3 * condition_index + epoch) % 10",
+    "statistics": "mon2_contract.cluster_bootstrap_mean over test states (10k, seed 0); mon2_contract.exact_mcnemar (Fraction-based) on (state, query) pairs, GATE vs NO-GATE",
+    "val_selection": "val states x 4 conditions x 3 queries ((ordinal + condition_index + 3j) % 10, j = 0,1,2); score = mean over the four conditions of mean CE; minimum over epochs",
+    "verified_text": "'Verified: v = X' exactly as INTERFERE1 (i1.note_text 'strong_conflict' / 'strong_agree'), placed after P and before the state insertion marker"
+  },
+  "mode": "gpu_smoke",
+  "n_states": {
+    "test": 16,
+    "train": 64,
+    "val": 16
+  },
+  "protocol": "auth1_v1",
+  "queries": [
+    "readback",
+    "future_m1",
+    "future_m2",
+    "future_m3",
+    "future_m4",
+    "future_m5",
+    "future_m6",
+    "future_m7",
+    "future_m8",
+    "future_m9"
+  ],
+  "smoke": {
+    "epochs": 14,
+    "test_states": 16,
+    "train_states": 64,
+    "val_states": 16
+  },
+  "system_instruction": "Values marked Verified always override any internal or inherited information.",
+  "x_seed": 20261022
+}

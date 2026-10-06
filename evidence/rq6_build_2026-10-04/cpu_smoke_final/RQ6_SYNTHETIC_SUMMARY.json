@@ -1,0 +1,6 @@
+{
+  "evidence_kind": "synthetic_cpu_smoke_only",
+  "passed": false,
+  "raw_records_count": 2,
+  "schema": "rq6_summary_v1"
+}

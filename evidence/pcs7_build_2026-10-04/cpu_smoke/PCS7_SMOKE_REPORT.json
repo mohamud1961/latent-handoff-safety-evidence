@@ -1,0 +1,148 @@
+{
+  "bridge_sha256": "f41ed5791fd1ee28c68eb7e711d321a57fcdd1d65a7219f8e86ac8c9b0046f0b",
+  "classification": "SMOKE_ONLY_NO_QUALIFICATION",
+  "code_shas": {
+    "files": {
+      "PCS2B_PREANSWER_STATE_REALIZATION_FREEZE_2026-10-03.md": "a98a113455074d8b741570125bd8eaf1af4d45351ac223ac3ffcf8b2751824f8",
+      "PCS4V3_INFORMATION_WEIGHTED_OBJECTIVE_FREEZE_2026-10-04.md": "97e9023e117f3e2d64265c3c1fa681cad39645c0ccdf887e2bd22a5ec0b8099d",
+      "design_L2_L4/02_PCS4V4_CONTINGENCY_FREEZE.md": "7e237f3a9da1023c42fcbfad37d7f627fe72606d85ce815286db346321247fec",
+      "design_L2_L4/05_BUILD_SPEC_FOR_IMPLEMENTER.md": "0a892adeda8fbdb89532010510e0e6dafbb7c968afb917bb20c0f16d995e9c3a",
+      "design_L2_L4/09_PCS7_SILENT_COGNITION_FREEZE.md": "8dfdf664087e2e781802319ef4c8bf45f3de4a10a6262513f1124319c804043b",
+      "design_L2_L4/BUILD_QUESTIONS.md": "ee3c5e07f6a94211e1b4722ca2ec2189444e94ed7b950e2a11ce1ad7d7b70fa6",
+      "design_L2_L4/RESOLUTIONS_1_OPUS.md": "3de67dd567cbf3bd2d45b88d677c0c0755cd1027929418c0b934611b4947e61c",
+      "evidence/c2c_pcs1_2026-10/pcs1_pilot_v2/pcs1_pilot.ipynb": "7128fe7e512b8118f92b5f59c27e03945a6396221cf32dca7f8be8dc9a0a0f80",
+      "evidence/pcs4v3_2026-10-04/RESULT.md": "7feb02402eeba4c44c9fa0f12f679bc0bf97d2bd7a8285cbc5aeefa3650dcea6",
+      "evidence/pcs4v4_build_2026-10-04/reducer_smoke_summary.json": "aceb0a8cd17adf9e5eb7bc761b6e9c51cc5c3795314c225526b56f0cafc8e03a",
+      "scripts/modal_pcs7_silent.py": "ad70c194d3a42bdd79c40a655cf9232e36475a1a0d8290a8667180c1d40ab1c6",
+      "scripts/modal_rq7_qualification.py": "2718688ffbc50333d0a349e64685647b2518e3de596173ac279766a9c3e5e532",
+      "scripts/pcs2b_corrected_bridge.py": "752a974664ee690380468e07b18de5c366bdb164bd8be1128df4fe6c09d0f314",
+      "scripts/pcs7_silent.py": "4335e9102c4101dc035c2c6080e9ff8f2939737e89a874af74a7ae58bea1ab4a",
+      "scripts/rq7_qualification.py": "502ffc8155f5a0ad00803a7aca974f9842ec55e99cd1ce1fc68d9c9ae746d570"
+    },
+    "model_and_tokenizer_revisions": {
+      "A": {
+        "id": "Qwen/Qwen3-4B",
+        "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+        "tokenizer_revision": "1cfa9a7208912126459214e8b04321603b3df60c"
+      },
+      "B": {
+        "id": "Qwen/Qwen3-1.7B",
+        "model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+        "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+      }
+    }
+  },
+  "criteria_evaluated_for_pipeline_only": {
+    "classification": "PCS7_NOT_POSITIVE",
+    "criteria": {
+      "beats_restart": false,
+      "heldout_m_fidelity": false,
+      "silence_verified": true,
+      "silent_mistake_excess": false,
+      "silent_mistake_n": false,
+      "specificity_cluster_ci": false,
+      "specificity_point": false,
+      "swap": false,
+      "train_m_fidelity": false
+    },
+    "passed": false
+  },
+  "elapsed_seconds": 3.036793499995838,
+  "evaluation_seal": {
+    "bridge_sha256": "f41ed5791fd1ee28c68eb7e711d321a57fcdd1d65a7219f8e86ac8c9b0046f0b",
+    "commitment_rule": "sha256(bridge_sha256_hex || 'PCS7')",
+    "probe_seed": 0,
+    "probe_seed_commitment": "007d6800f07f7bab264645a4fd71d7b2dc4232be8051d404c43b857a7cca7cf8",
+    "protocol": "pcs7_eval_seal_v1",
+    "written_before_evaluation_controls": true
+  },
+  "fit": {
+    "epochs": 2,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 5.425955390930175,
+        "validation_loss": 5.412153561909993
+      },
+      {
+        "epoch": 2,
+        "train_loss": 5.426197624206543,
+        "validation_loss": 5.412153561909993
+      }
+    ],
+    "selected_validation_loss": 5.412153561909993,
+    "selection": "minimum validation D1-b loss"
+  },
+  "metrics": {
+    "A_wrong_test_source_episodes": 3,
+    "B_restart_accuracy": 0.0,
+    "B_restart_follows_A_rate": 0.0,
+    "B_restart_reason_follows_A_rate": 0.0,
+    "PCS_follows_A_rate": 0.0,
+    "PCS_minus_B_restart": 0.0,
+    "PCS_minus_B_restart_objective_accuracy": 0.0,
+    "PCS_minus_mean_wrong_specificity": 0.0,
+    "PCS_objective_accuracy": 0.0,
+    "exact_mcnemar": {
+      "PCS_vs_wrong_1": {
+        "discordant_n": 0,
+        "pcs_only_correct": 0,
+        "two_sided_exact_binomial_p": 1.0,
+        "wrong_only_correct": 0
+      },
+      "PCS_vs_wrong_2": {
+        "discordant_n": 0,
+        "pcs_only_correct": 0,
+        "two_sided_exact_binomial_p": 1.0,
+        "wrong_only_correct": 0
+      },
+      "PCS_vs_wrong_3": {
+        "discordant_n": 0,
+        "pcs_only_correct": 0,
+        "two_sided_exact_binomial_p": 1.0,
+        "wrong_only_correct": 0
+      }
+    },
+    "m_partition_fidelity": {
+      "held_out": {
+        "PCS_follows_A_rate": 0.0,
+        "PCS_objective_accuracy": 0.0,
+        "n": 12
+      },
+      "train": {
+        "PCS_follows_A_rate": 0.0,
+        "PCS_objective_accuracy": 0.0,
+        "n": 12
+      }
+    },
+    "mean_matched_wrong_follows_A_rate": 0.0,
+    "n_source_test_states": 12,
+    "n_test_queries": 24,
+    "oracle_follows_A_rate": 0.0,
+    "silence_verified_rate": 1.0,
+    "silent_mistake_PCS_follow_rate": 0.0,
+    "silent_mistake_excess": 0.0,
+    "silent_mistake_mean_wrong_state_follow_rate": 0.0,
+    "specificity_state_cluster_ci": {
+      "clusters": 12,
+      "estimate": 0.0,
+      "lower_95": 0.0,
+      "resamples": 10000,
+      "seed": 0,
+      "upper_95": 0.0
+    },
+    "swap_follow_rate_by_wrong_state": {
+      "PCS_wrong_1": 0.0,
+      "PCS_wrong_2": 0.0,
+      "PCS_wrong_3": 0.0
+    },
+    "swap_follow_rate_mean": 0.0,
+    "token_identity_ceiling_follows_A_rate": 1.0
+  },
+  "mode": "synthetic_cpu_smoke",
+  "note": "Toy receiver and synthetic source states exercise the training/evaluation code path; this report is not qualification evidence.",
+  "protocol": "pcs7_silent_v1",
+  "qualification_claim": false,
+  "rq7_choice_required": false,
+  "synthetic_source_n": 36
+}

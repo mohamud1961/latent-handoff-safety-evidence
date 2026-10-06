@@ -1,0 +1,191 @@
+{
+  "schema": "rq6_protocol_v1",
+  "status": "resolved",
+  "authority": "design_L2_L4/04_PCS6_REASONING_CONTINUATION_FREEZE.md; design_L2_L4/05_BUILD_SPEC_FOR_IMPLEMENTER.md; design_L2_L4/RESOLUTIONS_1_OPUS.md#RQ6-PCS6",
+  "profile": "modal-account-B",
+  "model_custody": {
+    "source_model": "Qwen/Qwen3-4B",
+    "source_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "source_tokenizer_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "receiver_model": "Qwen/Qwen3-1.7B",
+    "receiver_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "receiver_tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "local_files_only": true
+  },
+  "six_a": {
+    "source_generator": "scripts/pcs4v2_source_preflight.py:gen_episode",
+    "seed": 20261006,
+    "pool_n": 1600,
+    "generation_order": "ascending_episode_index",
+    "generator_rng_namespace": "pcs4v2:{seed}:{episode_index}",
+    "depth": 11,
+    "registered_retry": {
+      "trigger": "6A gate 3 or 4 fails at M=3",
+      "once_only": true,
+      "depth": 10,
+      "seed": 20261006,
+      "handoff_step": 8,
+      "continuation_steps": 2
+    },
+    "grammar": {
+      "state_line": "STATE sK: a=<digit>, b=<digit>, c=<digit>",
+      "states": "s0 through sD inclusive; s0 follows initial assignments",
+      "terminal": "FINAL_SUMMARY: followed by one short final sentence",
+      "prompt_source": "PCS4v2 amendment-1 compact source prompt generalized only for D+1 state blocks and terminal step index",
+      "parser_source": "PCS4v2 amendment-1 state-line grammar generalized to requested step indices"
+    },
+    "a_final_triple": "strict STATE sD triple equality to symbolic truth; unparsed episodes count incorrect",
+    "checkpoint_positions": {
+      "6a_w": [
+        "end of STATE s6 line newline",
+        "end of STATE s7 line newline",
+        "end of STATE s8 line newline"
+      ],
+      "6a_u": [
+        "end of STATE s6 line newline",
+        "end of STATE s7 line newline",
+        "immediately before the first generated token whose decoded span contains the first STATE s8 value digit"
+      ],
+      "location_rate": "complete required positions divided by parseable traces"
+    },
+    "capture_layers": [
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36
+    ],
+    "capture_deduplication": "shared STATE s6 and s7 end positions captured once",
+    "receiver": {
+      "chat_template": "PCS4v2 source-preflight chat helper with enable_thinking=false",
+      "decoding": "greedy",
+      "max_new_tokens": 120,
+      "continuation_instruction_template": "The supplied state is after update 8. STATE sK means the state after update K, with s0 after the initial assignments. Apply only updates 9 through {depth} from the program in order; do not restart or repeat the supplied state. For every update, write one short calculation line followed by one state line formatted exactly as: STATE sK: a=<digit>, b=<digit>, c=<digit>. Include one state line for each of s9 through s{depth}. After the last state, write FINAL_SUMMARY: followed by one short sentence. Do not add a preamble or other explanation.",
+      "program_rendering": "B's copy of the program numbers each update line as 'Update K: <line>' (K=1..D in order); the initial assignments stay unnumbered; A's source prompt is unchanged",
+      "restart_content": "no handoff content; program plus instruction",
+      "partial_text_content": "Previous model's working so far:\\n---\\n<trace through checkpoint, verbatim>\\n---",
+      "oracle_state_content": "State after step 8: a=X b=Y c=Z",
+      "primary_qualification_checkpoint": "6A-W",
+      "eligible_rows": "all parseable source episodes",
+      "fidelity": "strict STATE sD triple agreement with A",
+      "amendment_2_ladder": {
+        "design": "design_L2_L4/RQ6_AMENDMENT_2_RECEIVER_OPUS.md",
+        "outcome": "STOP_RECEIVER_INCAPABLE (final, after Amendment 3 rung R4; no further rungs)",
+        "rungs_probed": {
+          "R1": "oracle 0/30 (fidelity), parse 0%, call fc-01M451F3V2XFW0YCKZSJ8QVC7P",
+          "R2": "oracle 0/32, parse 0%, call fc-01M451P9XGGZWMFTAD0MYSV3GR",
+          "R3": "oracle 0/32, parse 0%, call fc-01M451WNN5RNQZTSZ0AGBE9G5T",
+          "R4": "oracle 7/32 (21.9%), oracle parse 53%, restart 0%, call fc-01M45308KARBSWP2HS4BEZXKG8 (RQ6 Amendment 3, final rung)"
+        },
+        "pinned_rung": null,
+        "evidence": "evidence/rq6_build_2026-10-04/receiver_probe_2026-10-05/AMENDMENT3_R4_REPORT.md"
+      }
+    },
+    "gate_order": [
+      "generate and parse the ordered 1600-episode pool",
+      "evaluate A competence, receiver oracle/partial, and restart on all eligible episodes; malformed A traces count incorrect for A final accuracy",
+      "shuffle all episode indices with random.Random(20261006); train=900, val=200, test=remaining 500",
+      "count parseable A-s8 mistakes in the test split",
+      "fit linear probes on train and select regularization by validation accuracy; test features and labels are not used"
+    ],
+    "split": {
+      "shuffle": "Python random.Random(20261006).shuffle(indices)",
+      "train": 900,
+      "validation": 200,
+      "test": 500
+    },
+    "linear_probe": {
+      "implementation": "scripts/pcs4v2_source_preflight.py:standardize and ridge_map",
+      "regularization_candidates": [
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0,
+        100.0
+      ],
+      "feature_order": "checkpoint position order, then layer order",
+      "standardization": "train mean/std; validation transformed with train values",
+      "selection": "maximum validation accuracy; canonical helper's first lambda on ties",
+      "targets": "A's written s8 a, b, and c digits"
+    },
+    "thresholds": {
+      "source_final_triple_accuracy": 0.75,
+      "source_parse_rate": 0.95,
+      "checkpoint_location_each_variant": 0.98,
+      "a_s8_mistakes_pool": 40,
+      "a_s8_mistakes_test": 15,
+      "oracle_state_fidelity": 0.7,
+      "partial_text_fidelity": 0.7,
+      "restart_maximum": "min(oracle_state_fidelity, partial_text_fidelity) - 0.30",
+      "6a_w_each_register_decodability": 0.8,
+      "6a_u_each_register_decodability": 0.7
+    }
+  },
+  "six_b": {
+    "dataset": "openai/gsm8k",
+    "config": "main",
+    "revision": "740312add88f781978c0658806c59bc2815b9866",
+    "local_files_only": true,
+    "shuffle_seed": 20261006,
+    "shuffle_algorithm": "separate Python random.Random(20261006).shuffle for train and test row indices",
+    "selected_rows": {
+      "train": 3000,
+      "test": 500
+    },
+    "source_prompt_prefix": "Use plain text, with no Markdown.",
+    "source_prompt_suffix": "Solve step by step. End with a final line 'Answer: <number>'.",
+    "answer_normalization": "strip commas, dollar signs, and spaces; parse float; equal when absolute difference <= 1e-6",
+    "sentence_split_regex": "(?<=[.!?])\\s+|\\n+",
+    "checkpoint": {
+      "selection": "sentence end with cumulative tokenizer token count closest to 50 percent of solution tokens",
+      "tie": "earlier sentence end",
+      "minimum_sentences_before": 2,
+      "minimum_sentences_after": 1,
+      "fraction": "token count through checkpoint divided by total solution token count"
+    },
+    "wrong_prefix_partner": {
+      "eligible": "different test problem with a different normalized A final answer and checkpoint fraction within 0.10",
+      "selection": "nearest fraction difference, then lowest stable test problem id",
+      "count": 3
+    },
+    "qualification_arms": [
+      "restart",
+      "partial_text"
+    ],
+    "receiver_max_new_tokens": 420,
+    "thresholds": {
+      "a_accuracy": 0.75,
+      "a_wrong_test_problems": 60,
+      "partial_text_lift_over_restart_overall": 0.1,
+      "partial_text_lift_over_restart_on_a_wrong": 0.1
+    }
+  },
+  "executor": {
+    "gpu": "L4",
+    "memory_mib": 24576,
+    "full_run_timeout_seconds": 14400,
+    "real_model_smoke_timeout_seconds": 600,
+    "smoke_subprocess_timeout_seconds": 570,
+    "source_batch": 8,
+    "receiver_batch": 32,
+    "source_max_new_tokens": 420,
+    "receiver_max_new_tokens": 120,
+    "gsm8k_source_max_new_tokens": 768,
+    "gsm8k_receiver_max_new_tokens": 420,
+    "torch": "2.6.0",
+    "transformers": "4.52.4",
+    "datasets": "3.3.2"
+  },
+  "artifact": {
+    "schema": "rq6_gate_result_v1",
+    "raw_records": "RQ6_RAW_RECORDS.jsonl",
+    "summary": "RQ6_SUMMARY.json",
+    "seal": "RQ6_SEAL.json",
+    "status_semantics": "passed means the complete inference/gate artifact was produced and integrity verified; each qualification decision is represented by its separate boolean"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "cap1": {
+    "completion_handoff": {
+      "path": "/artifacts/pcs3c-eval-only-f1394f83c8ec/CAP1_PCS3C_HANDOFF.json",
+      "sha256": "90e479c5cb40992ac6a8f32ec63dac6d0f4c3e0d44939ba002a3dda5127c2880"
+    },
+    "pcs3c_bridge": {
+      "path": "/artifacts/pcs3c-confirm-003cdc273016/neural/PCS3_BRIDGE.pt",
+      "sha256": "317b1ff3f234d503e402c7e0715c81ffdc9bd99ca385d61291a995b2819970cd"
+    },
+    "pcs3c_features": {
+      "path": "/artifacts/pcs3c-confirm-003cdc273016/PCS3C_SOURCE_BUNDLE.pt",
+      "sha256": "23d098530252c59bc9b8d7039731213f2c55cac288c18e32670a7bd601d18999"
+    },
+    "pcs3c_split_manifest": {
+      "path": "/artifacts/pcs3c-eval-only-f1394f83c8ec/CAP1_PCS3C_HANDOFF.json",
+      "sha256": "90e479c5cb40992ac6a8f32ec63dac6d0f4c3e0d44939ba002a3dda5127c2880"
+    }
+  },
+  "note": "pins for S4-confirm and CAP1; the bridge and bundle stay in the immutable source run dir",
+  "s4_confirm": {
+    "bridge": {
+      "path": "/artifacts/pcs3c-confirm-003cdc273016/neural/PCS3_BRIDGE.pt",
+      "sha256": "317b1ff3f234d503e402c7e0715c81ffdc9bd99ca385d61291a995b2819970cd"
+    },
+    "features": {
+      "path": "/artifacts/pcs3c-confirm-003cdc273016/PCS3C_SOURCE_BUNDLE.pt",
+      "sha256": "23d098530252c59bc9b8d7039731213f2c55cac288c18e32670a7bd601d18999"
+    },
+    "pcs3c_result": {
+      "path": "/artifacts/pcs3c-eval-only-f1394f83c8ec/PCS3C_RESULT.json",
+      "sha256": "9cc8035ee0e18a7496ad7223ef3c669006c55e67ab53a0f3c8752109868f813f"
+    },
+    "split_manifest": {
+      "path": "/artifacts/pcs3c-eval-only-f1394f83c8ec/CAP1_PCS3C_HANDOFF.json",
+      "sha256": "90e479c5cb40992ac6a8f32ec63dac6d0f4c3e0d44939ba002a3dda5127c2880"
+    }
+  },
+  "schema": "pcs3c_downstream_inputs_v1"
+}

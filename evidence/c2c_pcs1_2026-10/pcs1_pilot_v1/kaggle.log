@@ -1,0 +1,66 @@
+[{"stream_name":"stderr","time":8.897854878,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.897900396,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.897907034,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.897911617,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.544011441,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.544059375,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.544064595,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.544069077,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":10.755272948,"data":"mode: pilot | depths [1, 2, 3, 4, 6] x 200 | Qwen/Qwen3-0.6B \u003c- Qwen/Qwen3-4B | out=/kaggle/working\n"}
+,{"stream_name":"stdout","time":10.821712173,"data":"GPU: ('Tesla T4', 7.5, '15360 MiB')\n"}
+,{"stream_name":"stdout","time":10.821739598,"data":"$ /usr/bin/python3 -m pip install -q transformers==4.52.4 tokenizers==0.21.4 huggingface_hub==0.34.3\n"}
+,{"stream_name":"stdout","time":14.611417116,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.5/10.5 MB 86.1 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":14.670512913,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 74.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":14.710603935,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 558.8/558.8 kB 25.0 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":14.813195636,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.5/10.5 MB 86.1 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":14.813220623,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 74.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":14.813226866,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 558.8/558.8 kB 25.0 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":28.080151832,"data":"{'transformers': '4.52.4', 'tokenizers': '0.21.4', 'huggingface_hub': '0.34.3', 'datasets': '5.0.0', 'numpy': '2.0.2'}\n"}
+,{"stream_name":"stdout","time":28.096468011,"data":"$ git init -q /tmp/C2C\n"}
+,{"stream_name":"stdout","time":28.143880286,"data":"$ git -C /tmp/C2C remote add origin https://github.com/thu-nics/C2C\n"}
+,{"stream_name":"stdout","time":28.150908656,"data":"$ git -C /tmp/C2C fetch -q --depth 1 origin 3ca0e98020bac1f36000623afcb8dfc6f8c29bdf\n"}
+,{"stream_name":"stdout","time":29.331318824,"data":"$ git -C /tmp/C2C checkout -q FETCH_HEAD\n"}
+,{"stream_name":"stdout","time":29.367713278,"data":"C2C commit: 3ca0e98020bac1f36000623afcb8dfc6f8c29bdf\n"}
+,{"stream_name":"stdout","time":67.859713292,"data":"torch 2.10.0+cu128 | transformers 4.52.4 | device cuda:0 (Tesla T4, cc (7, 5)) | native bf16: False\n"}
+,{"stream_name":"stdout","time":69.951790103,"data":"Model Qwen/Qwen3-0.6B already has a chat template.\n"}
+,{"stream_name":"stdout","time":126.527951079,"data":"models ready in 58s | dtype: torch.float16 (pilot: no gate, finite-checked)\n"}
+,{"stream_name":"stdout","time":126.528009688,"data":"GPU memory after load: 8.7 GiB of 14.6\n"}
+,{"stream_name":"stdout","time":127.398350734,"data":"items: 1000 | fused-section tokens median 76 (min 46, max 121) | total tokens median 116\n"}
+,{"stream_name":"stdout","time":127.398387468,"data":"example fused section:\n"}
+,{"stream_name":"stdout","time":127.3983927,"data":"Track the variables below. All arithmetic is mod 10.\n"}
+,{"stream_name":"stdout","time":127.398397491,"data":"a = 5\n"}
+,{"stream_name":"stdout","time":127.3984019,"data":"b = 6\n"}
+,{"stream_name":"stdout","time":127.39840633,"data":"c = 1\n"}
+,{"stream_name":"stdout","time":127.398410745,"data":"a = (c * 3 + b) % 10\n"}
+,{"stream_name":"stdout","time":127.398415497,"data":"tail U: Now e = (a * 9 + 1) % 10. What is e? Answer with a single digit. | queried a = X 9 -\u003e U-answer 2\n"}
+,{"stream_name":"stdout","time":151.565321725,"data":"  100/1000  24s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":175.054365311,"data":"  200/1000  48s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":198.782305477,"data":"  300/1000  71s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":223.115570652,"data":"  400/1000  96s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":248.41096684,"data":"  500/1000  121s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":275.447442562,"data":"  600/1000  148s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":303.019999148,"data":"  700/1000  176s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":330.049881589,"data":"  800/1000  203s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":356.491020815,"data":"  900/1000  229s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":382.992284192,"data":"  1000/1000  256s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":383.021722364,"data":"run finished: all items processed | 372s since start\n"}
+,{"stream_name":"stdout","time":383.500720099,"data":"depth  n    R (P+U)               Rcal (P+U)            R_state (P only)      S_full (P+U)          S_state (P only)      S_state - R  qualifies\n"}
+,{"stream_name":"stdout","time":383.500755574,"data":"------------------------------------------------------------------------------------------------------------------------------------------------\n"}
+,{"stream_name":"stdout","time":383.500767885,"data":"1      200    7.0% [  3.5, 11.0]    8.5% [  5.0, 12.5]   14.5% [ 10.0, 19.5]   15.0% [ 10.0, 20.0]   23.5% [ 18.0, 29.5]  +16.5        no       \n"}
+,{"stream_name":"stdout","time":383.500773632,"data":"2      200   13.5% [  9.0, 18.5]   17.5% [ 12.5, 23.0]   15.0% [ 10.0, 20.0]   14.5% [ 10.0, 19.5]   14.5% [ 10.0, 19.5]  +1.0         no       \n"}
+,{"stream_name":"stdout","time":383.500778967,"data":"3      200   18.0% [ 12.5, 23.5]   19.0% [ 13.5, 24.5]    8.5% [  5.0, 12.5]    7.5% [  4.0, 11.5]    9.5% [  5.5, 13.5]  -8.5         no       \n"}
+,{"stream_name":"stdout","time":383.500785223,"data":"4      200   17.0% [ 12.0, 22.5]   19.0% [ 13.5, 24.5]    8.5% [  5.0, 12.5]   13.0% [  8.5, 18.0]   13.5% [  9.0, 18.5]  -3.5         no       \n"}
+,{"stream_name":"stdout","time":383.500790485,"data":"6      200   16.0% [ 11.0, 21.0]   22.0% [ 16.5, 28.0]    6.5% [  3.5, 10.0]   10.0% [  6.0, 14.5]   14.0% [  9.5, 19.0]  -2.0         no       \n"}
+,{"stream_name":"stdout","time":383.500795737,"data":"\n"}
+,{"stream_name":"stdout","time":383.500800495,"data":"QUALIFYING depths (S_state - R \u003e= 20 pts and S_state \u003e= 60%): NONE\n"}
+,{"stream_name":"stdout","time":383.500806505,"data":"\n"}
+,{"stream_name":"stdout","time":383.500812105,"data":"saved /kaggle/working/results.json (0.9 MB). Total wall time 6.2 min.\n"}
+,{"stream_name":"stderr","time":389.885295939,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":389.885329005,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":390.085270106,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":390.085298493,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":390.769971311,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":391.204795533,"data":"[NbConvertApp] Writing 283524 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":393.662944652,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":394.800447669,"data":"[NbConvertApp] Writing 716194 bytes to __results__.html\n"}
+]

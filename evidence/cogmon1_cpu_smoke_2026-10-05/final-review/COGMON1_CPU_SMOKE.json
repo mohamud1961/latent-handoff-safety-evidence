@@ -1,0 +1,14 @@
+{
+  "confirmatory_result_emitted": false,
+  "pca_components": 8,
+  "schema": "cogmon1_cpu_smoke_v1",
+  "status": "PASS",
+  "synthetic": true,
+  "target_legality_checked": true,
+  "target_seed": 20261023,
+  "train_val_test": {
+    "test": 30,
+    "train": 120,
+    "val": 30
+  }
+}

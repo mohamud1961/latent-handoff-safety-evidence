@@ -1,0 +1,31 @@
+{
+  "files": {
+    "PCS2B_PREANSWER_STATE_REALIZATION_FREEZE_2026-10-03.md": "a98a113455074d8b741570125bd8eaf1af4d45351ac223ac3ffcf8b2751824f8",
+    "PCS4V3_INFORMATION_WEIGHTED_OBJECTIVE_FREEZE_2026-10-04.md": "97e9023e117f3e2d64265c3c1fa681cad39645c0ccdf887e2bd22a5ec0b8099d",
+    "design_L2_L4/02_PCS4V4_CONTINGENCY_FREEZE.md": "7e237f3a9da1023c42fcbfad37d7f627fe72606d85ce815286db346321247fec",
+    "design_L2_L4/05_BUILD_SPEC_FOR_IMPLEMENTER.md": "0a892adeda8fbdb89532010510e0e6dafbb7c968afb917bb20c0f16d995e9c3a",
+    "design_L2_L4/09_PCS7_SILENT_COGNITION_FREEZE.md": "8dfdf664087e2e781802319ef4c8bf45f3de4a10a6262513f1124319c804043b",
+    "design_L2_L4/BUILD_QUESTIONS.md": "ee3c5e07f6a94211e1b4722ca2ec2189444e94ed7b950e2a11ce1ad7d7b70fa6",
+    "design_L2_L4/RESOLUTIONS_1_OPUS.md": "3de67dd567cbf3bd2d45b88d677c0c0755cd1027929418c0b934611b4947e61c",
+    "evidence/c2c_pcs1_2026-10/pcs1_pilot_v2/pcs1_pilot.ipynb": "7128fe7e512b8118f92b5f59c27e03945a6396221cf32dca7f8be8dc9a0a0f80",
+    "evidence/pcs4v3_2026-10-04/RESULT.md": "7feb02402eeba4c44c9fa0f12f679bc0bf97d2bd7a8285cbc5aeefa3650dcea6",
+    "evidence/pcs4v4_build_2026-10-04/reducer_smoke_summary.json": "aceb0a8cd17adf9e5eb7bc761b6e9c51cc5c3795314c225526b56f0cafc8e03a",
+    "scripts/modal_pcs7_silent.py": "ad70c194d3a42bdd79c40a655cf9232e36475a1a0d8290a8667180c1d40ab1c6",
+    "scripts/modal_rq7_qualification.py": "2718688ffbc50333d0a349e64685647b2518e3de596173ac279766a9c3e5e532",
+    "scripts/pcs2b_corrected_bridge.py": "752a974664ee690380468e07b18de5c366bdb164bd8be1128df4fe6c09d0f314",
+    "scripts/pcs7_silent.py": "1c59a7865ef65b95d01dbf117d430090f02a4e49564c4f798e3a559936587fdf",
+    "scripts/rq7_qualification.py": "502ffc8155f5a0ad00803a7aca974f9842ec55e99cd1ce1fc68d9c9ae746d570"
+  },
+  "model_and_tokenizer_revisions": {
+    "A": {
+      "id": "Qwen/Qwen3-4B",
+      "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "tokenizer_revision": "1cfa9a7208912126459214e8b04321603b3df60c"
+    },
+    "B": {
+      "id": "Qwen/Qwen3-1.7B",
+      "model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+    }
+  }
+}

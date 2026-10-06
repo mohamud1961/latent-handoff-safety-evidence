@@ -1,0 +1,63 @@
+[{"stream_name":"stderr","time":6.567126875,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.567169967,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.5671765650000005,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.567181373,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.186005853,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.186040557,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.186046196,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.186050204,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":8.278156853,"data":"mode: pilot | depths [0, 1, 2, 3] x 200 | Qwen/Qwen3-0.6B \u003c- Qwen/Qwen3-4B | out=/kaggle/working\n"}
+,{"stream_name":"stdout","time":8.341747232,"data":"GPU: ('Tesla T4', 7.5, '15360 MiB')\n"}
+,{"stream_name":"stdout","time":8.341776332,"data":"$ /usr/bin/python3 -m pip install -q transformers==4.52.4 tokenizers==0.21.4 huggingface_hub==0.34.3\n"}
+,{"stream_name":"stdout","time":11.693033324,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.5/10.5 MB 83.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":11.752690411,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 77.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":11.793001196,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 558.8/558.8 kB 23.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":11.89538093,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.5/10.5 MB 83.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":11.895410723,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 77.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":11.895415932,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 558.8/558.8 kB 23.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":25.062912922,"data":"{'transformers': '4.52.4', 'tokenizers': '0.21.4', 'huggingface_hub': '0.34.3', 'datasets': '5.0.0', 'numpy': '2.0.2'}\n"}
+,{"stream_name":"stdout","time":25.078432936,"data":"$ git init -q /tmp/C2C\n"}
+,{"stream_name":"stdout","time":25.111832761,"data":"$ git -C /tmp/C2C remote add origin https://github.com/thu-nics/C2C\n"}
+,{"stream_name":"stdout","time":25.116724954,"data":"$ git -C /tmp/C2C fetch -q --depth 1 origin 3ca0e98020bac1f36000623afcb8dfc6f8c29bdf\n"}
+,{"stream_name":"stdout","time":25.958744684,"data":"$ git -C /tmp/C2C checkout -q FETCH_HEAD\n"}
+,{"stream_name":"stdout","time":25.995047995,"data":"C2C commit: 3ca0e98020bac1f36000623afcb8dfc6f8c29bdf\n"}
+,{"stream_name":"stdout","time":57.918343999,"data":"torch 2.10.0+cu128 | transformers 4.52.4 | device cuda:0 (Tesla T4, cc (7, 5)) | native bf16: False\n"}
+,{"stream_name":"stdout","time":60.220036297,"data":"Model Qwen/Qwen3-0.6B already has a chat template.\n"}
+,{"stream_name":"stdout","time":115.135969289,"data":"models ready in 57s | dtype: torch.float16 (pilot: no gate, finite-checked)\n"}
+,{"stream_name":"stdout","time":115.136051688,"data":"GPU memory after load: 8.7 GiB of 14.6\n"}
+,{"stream_name":"stdout","time":115.72873435,"data":"items: 800 | fused-section tokens median 49 (min 31, max 70) | total tokens median 86\n"}
+,{"stream_name":"stdout","time":115.728772723,"data":"example fused section:\n"}
+,{"stream_name":"stdout","time":115.728778965,"data":"Track the variables below. All arithmetic is mod 10.\n"}
+,{"stream_name":"stdout","time":115.728784061,"data":"a = 5\n"}
+,{"stream_name":"stdout","time":115.728788818,"data":"b = 1\n"}
+,{"stream_name":"stdout","time":115.728793056,"data":"c = 1\n"}
+,{"stream_name":"stdout","time":115.728797041,"data":"c = (a + 9) % 10\n"}
+,{"stream_name":"stdout","time":115.728803093,"data":"tail U: Now e = (c + 4) % 10. What is e? Answer with a single digit. | queried c = X 4 -\u003e U-answer 8\n"}
+,{"stream_name":"stdout","time":138.552400964,"data":"  100/800  23s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":160.804569052,"data":"  200/800  45s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":183.222072457,"data":"  300/800  67s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":205.641441211,"data":"  400/800  90s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":228.609301479,"data":"  500/800  113s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":252.243649739,"data":"  600/800  136s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":275.914542926,"data":"  700/800  160s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":299.51350161,"data":"  800/800  184s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":299.536927014,"data":"run finished: all items processed | 291s since start\n"}
+,{"stream_name":"stdout","time":299.946327804,"data":"depth  n    R (P+U)               Rcal (P+U)            R_state (P only)      S_full (P+U)          S_state (P only)      S_state - R  qualifies\n"}
+,{"stream_name":"stdout","time":299.946375965,"data":"------------------------------------------------------------------------------------------------------------------------------------------------\n"}
+,{"stream_name":"stdout","time":299.946383312,"data":"0      200   42.5% [ 35.5, 49.5]   49.5% [ 42.5, 56.5]   99.0% [ 97.5,100.0]   95.5% [ 92.5, 98.0]  100.0% [100.0,100.0]  +57.5        sanity   \n"}
+,{"stream_name":"stdout","time":299.946389074,"data":"1      200    7.5% [  4.0, 11.5]    8.5% [  5.0, 12.5]   17.0% [ 12.0, 22.5]   18.5% [ 13.5, 24.0]   93.0% [ 89.5, 96.5]  +85.5        YES      \n"}
+,{"stream_name":"stdout","time":299.946394471,"data":"2      200   13.0% [  8.5, 18.0]   15.0% [ 10.0, 20.0]    9.5% [  5.5, 13.5]   11.5% [  7.0, 16.0]   18.0% [ 13.0, 23.5]  +5.0         no       \n"}
+,{"stream_name":"stdout","time":299.946418473,"data":"3      200   11.5% [  7.5, 16.0]    8.5% [  5.0, 12.5]    9.5% [  5.5, 14.0]   11.5% [  7.0, 16.0]   15.0% [ 10.5, 20.0]  +3.5         no       \n"}
+,{"stream_name":"stdout","time":299.94642423,"data":"\n"}
+,{"stream_name":"stdout","time":299.946430397,"data":"QUALIFYING depths (S_state - R \u003e= 20 pts and S_state \u003e= 60%): [1]\n"}
+,{"stream_name":"stdout","time":299.946437682,"data":"\n"}
+,{"stream_name":"stdout","time":299.946444282,"data":"saved /kaggle/working/results.json (0.7 MB). Total wall time 4.9 min.\n"}
+,{"stream_name":"stderr","time":306.477615942,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":306.477650288,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":306.6462101,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":306.646240952,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":307.295959976,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":307.6995429,"data":"[NbConvertApp] Writing 283582 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":310.266759363,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":311.458951004,"data":"[NbConvertApp] Writing 717231 bytes to __results__.html\n"}
+]

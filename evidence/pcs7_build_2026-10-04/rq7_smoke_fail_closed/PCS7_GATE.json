@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "run_gate": false
+  },
+  "details": {
+    "error": "missing RQ7_CHOICE.json: evidence/rq7_gpu_smoke_2026-10-04/real-model-gpu-smoke/RQ7_CHOICE.json"
+  },
+  "failed_checks": [
+    "run_gate"
+  ],
+  "passed": false,
+  "protocol": "pcs7_silent_v1",
+  "stage": "rq7_choice_verification"
+}

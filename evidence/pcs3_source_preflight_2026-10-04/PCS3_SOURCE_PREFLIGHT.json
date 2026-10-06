@@ -1,0 +1,39 @@
+{
+  "parse_rate": 0.9990909090909091,
+  "checkpoint_rate_given_parse": 1.0,
+  "train_val_strict_triple_accuracy": 0.959375,
+  "sealed_test_strict_triple_accuracy_report_only": 0.9765625,
+  "decodability": {
+    "a": {
+      "lambda": 0.01,
+      "val_accuracy": 0.359375
+    },
+    "b": {
+      "lambda": 0.1,
+      "val_accuracy": 0.359375
+    },
+    "c": {
+      "lambda": 1.0,
+      "val_accuracy": 0.4453125
+    }
+  },
+  "control_coverage": {
+    "overall_ge1": 0.8450520833333334,
+    "overall_ge3": 0.5013020833333334,
+    "by_selector": {
+      "a": {
+        "ge1": 0.8359375,
+        "ge3": 0.46875
+      },
+      "b": {
+        "ge1": 0.828125,
+        "ge3": 0.5390625
+      },
+      "c": {
+        "ge1": 0.87109375,
+        "ge3": 0.49609375
+      }
+    }
+  },
+  "passed": false
+}

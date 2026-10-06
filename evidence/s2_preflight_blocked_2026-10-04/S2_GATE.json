@@ -1,0 +1,8 @@
+{
+  "schema": "s2_gate_v1",
+  "status": "BLOCKED_BEFORE_MODELS",
+  "reason": "ProtocolError: scientific S2 requires --protocol-json, --cache, --bridge",
+  "models_loaded": false,
+  "training_started": false,
+  "scientific_inputs_consumed": false
+}

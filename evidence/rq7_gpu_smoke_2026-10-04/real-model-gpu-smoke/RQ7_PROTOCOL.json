@@ -1,0 +1,142 @@
+{
+  "cells": [
+    {
+      "cell_id": "F1_add_depth1",
+      "description": "PCS1 pilot-v2 addition-only mod-10 chain",
+      "difficulty": 1,
+      "family": "F1"
+    },
+    {
+      "cell_id": "F1_add_depth2",
+      "description": "PCS1 pilot-v2 addition-only mod-10 chain",
+      "difficulty": 2,
+      "family": "F1"
+    },
+    {
+      "cell_id": "F2_add_mod100",
+      "description": "two-digit single addition mod 100",
+      "difficulty": "+",
+      "family": "F2"
+    },
+    {
+      "cell_id": "F2_multiply_mod100",
+      "description": "two-digit single multiplication mod 100",
+      "difficulty": "×",
+      "family": "F2"
+    },
+    {
+      "cell_id": "F3_lookup_depth1",
+      "description": "random digit-map lookup",
+      "difficulty": 1,
+      "family": "F3"
+    },
+    {
+      "cell_id": "F3_lookup_depth2",
+      "description": "random digit-map composition",
+      "difficulty": 2,
+      "family": "F3"
+    }
+  ],
+  "choice_rule": "Among passing cells maximize B_oracle - B_restart; exact ties prefer fewer A silent errors, then frozen cell order; if no cells pass, STOP.",
+  "code_shas": {
+    "files": {
+      "design_L2_L4/09_PCS7_SILENT_COGNITION_FREEZE.md": "8dfdf664087e2e781802319ef4c8bf45f3de4a10a6262513f1124319c804043b",
+      "design_L2_L4/RESOLUTIONS_1_OPUS.md": "3de67dd567cbf3bd2d45b88d677c0c0755cd1027929418c0b934611b4947e61c",
+      "evidence/c2c_pcs1_2026-10/pcs1_pilot_v2/pcs1_pilot.ipynb": "7128fe7e512b8118f92b5f59c27e03945a6396221cf32dca7f8be8dc9a0a0f80",
+      "scripts/modal_rq7_qualification.py": "0c712ce4b536bc7caab1d49c44ab00638182e0d435d6bc51a7ba7e868e5c103d",
+      "scripts/pcs2b_corrected_bridge.py": "752a974664ee690380468e07b18de5c366bdb164bd8be1128df4fe6c09d0f314",
+      "scripts/rq7_qualification.py": "502ffc8155f5a0ad00803a7aca974f9842ec55e99cd1ce1fc68d9c9ae746d570"
+    },
+    "model_and_tokenizer_revisions": {
+      "A": {
+        "id": "Qwen/Qwen3-4B",
+        "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+        "tokenizer_revision": "1cfa9a7208912126459214e8b04321603b3df60c"
+      },
+      "B": {
+        "id": "Qwen/Qwen3-1.7B",
+        "model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+        "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+      }
+    }
+  },
+  "episode_order": "frozen cell order, then index 0..N-1 within each cell",
+  "execution_choices_G2": {
+    "batching": "PCS2b corrected runner pattern; source batch 32, receiver batch 24",
+    "dtype": "float16 on CUDA; float32 for CPU synthetic path",
+    "reasoning_baseline_cap": "128 tokens; descriptive arm only",
+    "source_token_cap": "8, enough for the two-digit answer and short enough to expose non-numeric output",
+    "transformers_generation": "do_sample=False; model/tokenizer revisions pinned below"
+  },
+  "experiment": "RQ7 silent cognition qualification",
+  "families": {
+    "F1": "PCS1 pilot-v2 addition-only mod-10 chain, depths 1 and 2; original answer-exclusion constraint retained",
+    "F2": "uniform integer operands in [10, 99], separately fixed + or ×, modulo 100",
+    "F3": "random 10-entry digit map g:{0..9}->{0..9}, depth 1 asks g(d), depth 2 asks g(g(d))"
+  },
+  "gates": {
+    "A_format_valid_min": 0.95,
+    "A_mistakes_projected_min": 30.0,
+    "A_silent_min": 0.8,
+    "B_oracle_min": 0.7,
+    "oracle_minus_restart_min": 0.25
+  },
+  "gpu_smoke": {
+    "episodes_per_cell": 2,
+    "qualification_choice_enabled": false,
+    "timeout_seconds_max": 600
+  },
+  "mode": "gpu_smoke",
+  "n_per_cell": 2,
+  "post_handoff": {
+    "held_out_m": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "m_domain": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "m_selection": "one deterministic uniform draw from 1..9 per episode; record partition per episode",
+    "operation": "e = (v + m) % base",
+    "train_m": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "projected_source_mistake_gate": {
+    "min_projected_errors": 30,
+    "observed_n": 2,
+    "project_to_n": 1600
+  },
+  "protocol": "rq7_qualification_v1",
+  "receiver_prompts": {
+    "B_oracle": "chat(P + Intermediate result: v = A parsed answer + U + Answer with only the number), greedy, at most 4 new tokens",
+    "B_restart": "chat(P + U + Answer with only the number), greedy, at most 4 new tokens",
+    "B_restart_reason": "chat(P + U + permission to reason briefly + final integer instruction), greedy, 128-token descriptive cap",
+    "accuracy_target": "true task answer (v_true + m) % base; also record whether B_oracle follows the A-implied answer",
+    "invalid_A_oracle": "do not issue an oracle prompt; record missing prediction as incorrect in the N denominator"
+  },
+  "rng_derivation": "random.Random(f'{seed}:RQ7:{cell_id}:{idx}:{purpose}'); F1 uses purpose program:<attempt>, F2/F3 use task; m is drawn from the same episode RNG",
+  "seed": 20261009,
+  "source_prompt": {
+    "chat_template": "Qwen tokenizer apply_chat_template with enable_thinking=False",
+    "do_sample": false,
+    "malformed_or_wrong": "counts as an A_silent error",
+    "max_new_tokens": 8,
+    "strict_parser": "full response must match optional whitespace + decimal digits + optional whitespace; integer must be in [0, base)",
+    "user_content": "P + newline + newline + Answer with only the number."
+  }
+}

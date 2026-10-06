@@ -1,0 +1,35 @@
+S4_SMOKE_OK
+{
+  "mode": "synthetic_cpu_not_model_validation",
+  "seed": 20261004,
+  "split_counts": {
+    "train": 48,
+    "val": 16,
+    "test": 16
+  },
+  "filters_exercised": [
+    "F-LEACE",
+    "F-train",
+    "F-rand",
+    "none"
+  ],
+  "leace_rank": 8,
+  "random_control_rank": 8,
+  "ridge_probe_test_accuracy": 0.125,
+  "mlp_probe_test_accuracy": 0.1875,
+  "f_train": {
+    "best_epoch": 2,
+    "validation_selection": "lowest_task_minus_adversary_cross_entropy",
+    "best_validation_score": 21.551794052124023,
+    "adversary_validation_accuracy": 0.125,
+    "adversary_validation_balanced_accuracy": 0.15,
+    "adversary_validation_n_classes_present": 10
+  },
+  "synthetic_decoder_shape": [
+    16,
+    2,
+    3
+  ],
+  "synthetic_metric_records": 384,
+  "finite_shape_and_rank_checks": true
+}

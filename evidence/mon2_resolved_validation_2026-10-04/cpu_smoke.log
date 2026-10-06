@@ -1,0 +1,22 @@
+MON2_SMOKE {
+  "classification": "SMOKE_ONLY_NOT_SCIENTIFIC_RESULT",
+  "provider_or_model_started": false,
+  "synthetic_records": 24,
+  "paired_clusters": 12,
+  "auroc": 1.0,
+  "firewall_calibration": {
+    "threshold": 0.5000000000000001,
+    "n_clean_calibration": 20,
+    "max_clean_fpr": 0.05,
+    "allowed_false_alarms": 1,
+    "false_alarms": 0,
+    "calibration_fpr": 0.0,
+    "tie_policy": "strictly_above_cutoff_score"
+  },
+  "template_split_counts": {
+    "train": 720,
+    "val": 180,
+    "test": 300
+  },
+  "note": "CPU-only fixture path; does not load A, B, or the PCS2b bridge."
+}

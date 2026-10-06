@@ -1,0 +1,218 @@
+{
+  "checkpoint": "s=(a+b+c)%10",
+  "checkpoint_cardinality": 10,
+  "depth": 10,
+  "episode_counts": {
+    "test": 256,
+    "train": 512,
+    "val": 256
+  },
+  "episodes_sha256": "27f5b19c34955bf46e12cd655efd296c1c27356588653eb610093b10c1eff3fb",
+  "excluded_degenerate_coeff": [
+    1,
+    1,
+    1
+  ],
+  "family_stats": {
+    "holdout": {
+      "answer_only_bayes_accuracy": 0.30584716796875,
+      "answer_only_gap": 0.69415283203125,
+      "coeff_count": 16,
+      "qualified_fraction": 1.0,
+      "qualified_probes": 16384,
+      "total_probe_candidates": 16384,
+      "wrong_count_max": 108,
+      "wrong_count_mean": 35.660888671875,
+      "wrong_count_min": 5
+    },
+    "train": {
+      "answer_only_bayes_accuracy": 0.31731770833333334,
+      "answer_only_gap": 0.6826822916666666,
+      "coeff_count": 15,
+      "qualified_fraction": 1.0,
+      "qualified_probes": 15360,
+      "total_probe_candidates": 15360,
+      "wrong_count_max": 108,
+      "wrong_count_mean": 35.15403645833333,
+      "wrong_count_min": 3
+    }
+  },
+  "hidden_state_cardinality": 1000,
+  "holdout_future_coeffs": [
+    [
+      1,
+      1,
+      2
+    ],
+    [
+      1,
+      3,
+      2
+    ],
+    [
+      2,
+      2,
+      3
+    ],
+    [
+      3,
+      3,
+      1
+    ],
+    [
+      1,
+      5,
+      4
+    ],
+    [
+      4,
+      3,
+      1
+    ],
+    [
+      2,
+      4,
+      7
+    ],
+    [
+      7,
+      1,
+      4
+    ],
+    [
+      3,
+      5,
+      2
+    ],
+    [
+      5,
+      2,
+      4
+    ],
+    [
+      6,
+      1,
+      3
+    ],
+    [
+      3,
+      6,
+      1
+    ],
+    [
+      8,
+      2,
+      3
+    ],
+    [
+      2,
+      8,
+      1
+    ],
+    [
+      4,
+      7,
+      1
+    ],
+    [
+      7,
+      4,
+      2
+    ]
+  ],
+  "minimum_same_split_same_checkpoint_divergent_donors": 3,
+  "probe_counts_by_split_family": {
+    "test__holdout": 4096,
+    "test__train": 3840,
+    "train__holdout": 8192,
+    "train__train": 7680,
+    "val__holdout": 4096,
+    "val__train": 3840
+  },
+  "probes_sha256": "c96bb75d33ecadc2e9f26b0c9cacccbda53568585a3c6c6740e67c1d6b943794",
+  "schema": "pcs2c_multireg_collision_v1",
+  "seed": 20261003,
+  "split_overlaps": {
+    "test__train": 0,
+    "test__val": 0,
+    "train__val": 0
+  },
+  "train_future_coeffs": [
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      2,
+      1,
+      4
+    ],
+    [
+      3,
+      2,
+      1
+    ],
+    [
+      1,
+      4,
+      2
+    ],
+    [
+      2,
+      3,
+      5
+    ],
+    [
+      3,
+      1,
+      2
+    ],
+    [
+      4,
+      2,
+      3
+    ],
+    [
+      1,
+      3,
+      7
+    ],
+    [
+      2,
+      5,
+      1
+    ],
+    [
+      5,
+      1,
+      3
+    ],
+    [
+      3,
+      4,
+      2
+    ],
+    [
+      7,
+      2,
+      1
+    ],
+    [
+      2,
+      7,
+      3
+    ],
+    [
+      4,
+      1,
+      7
+    ],
+    [
+      5,
+      3,
+      2
+    ]
+  ],
+  "validated_probes": 31744
+}

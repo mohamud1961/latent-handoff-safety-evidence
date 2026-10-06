@@ -1,0 +1,195 @@
+{
+  "arm": "neural",
+  "best_epoch_zero_based": 0,
+  "best_validation_loss": 2.9958587884902954,
+  "canonical_evaluate_called": true,
+  "canonical_runner_sha256": "20b0191e0d87bef269256aa5fb5cdb290d330d2d4c899dce9bccc193a3e8f49f",
+  "checkpoint_sha256": "3cff5f21dd60381127c6b5c6fce1951560d910d6bf10b05e9ac52c35f29a5857",
+  "converter_sha256": "04394d115bab08f18f42c9f855caf28f66480f4f26d59fd0f1169b87ec2a15f3",
+  "elapsed_seconds": 21.807,
+  "features_sha256": "ea51473126045f3d898f0de4ddc50a63198585d7e5819de277a6aa26bfbb7bc0",
+  "model": {
+    "repo_id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "role": "PCS3 writer-sweep receiver",
+    "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+  },
+  "note": "One real pinned B model load and canonical bridge train/evaluate pass on eight sealed train plus eight sealed val rows. Smoke-only configuration and gate bypass; not a W1 sweep or scientific result.",
+  "official_w1_choice_written": false,
+  "raw_records_path": "W1_GPU_SMOKE_RAW_RECORDS.json",
+  "receiver_preflight_measured_with_smoke_only_threshold_bypass": {
+    "by_selector": {
+      "a": 1.0,
+      "b": 1.0,
+      "c": 1.0
+    },
+    "bypass_reason": "The fixed 8-row validation subset is too small to enforce PCS3 scientific receiver thresholds; measured metrics are retained for diagnostics.",
+    "overall": 1.0,
+    "passed": true,
+    "smoke_only_threshold_bypass": true
+  },
+  "schema": "w1_gpu_smoke_summary_v1",
+  "scientific_result": false,
+  "smoke_subset": [
+    {
+      "cache_index": 0,
+      "id": 1006,
+      "split": "train"
+    },
+    {
+      "cache_index": 1,
+      "id": 373,
+      "split": "train"
+    },
+    {
+      "cache_index": 2,
+      "id": 381,
+      "split": "train"
+    },
+    {
+      "cache_index": 3,
+      "id": 366,
+      "split": "train"
+    },
+    {
+      "cache_index": 4,
+      "id": 896,
+      "split": "train"
+    },
+    {
+      "cache_index": 5,
+      "id": 258,
+      "split": "train"
+    },
+    {
+      "cache_index": 6,
+      "id": 16,
+      "split": "train"
+    },
+    {
+      "cache_index": 7,
+      "id": 565,
+      "split": "train"
+    },
+    {
+      "cache_index": 512,
+      "id": 1091,
+      "split": "val"
+    },
+    {
+      "cache_index": 513,
+      "id": 840,
+      "split": "val"
+    },
+    {
+      "cache_index": 514,
+      "id": 890,
+      "split": "val"
+    },
+    {
+      "cache_index": 515,
+      "id": 668,
+      "split": "val"
+    },
+    {
+      "cache_index": 516,
+      "id": 454,
+      "split": "val"
+    },
+    {
+      "cache_index": 517,
+      "id": 229,
+      "split": "val"
+    },
+    {
+      "cache_index": 518,
+      "id": 66,
+      "split": "val"
+    },
+    {
+      "cache_index": 519,
+      "id": 93,
+      "split": "val"
+    }
+  ],
+  "smoke_subset_counts": {
+    "train": 8,
+    "val": 8
+  },
+  "smoke_subset_selection": "first 8 train and first 8 val rows in sealed feature artifact order",
+  "test_only_extra_features_mounted": false,
+  "test_split_scored": false,
+  "train_bridge_called": true,
+  "train_val_source_counts_before_smoke_subset": {
+    "train": 512,
+    "val": 128
+  },
+  "training_config": {
+    "batch_size": 4,
+    "bridge_hidden": 128,
+    "c_dim": 16,
+    "c_dropout": 0.0,
+    "epochs": 1,
+    "eval_batch": 8,
+    "k_slots": 4,
+    "lr": 0.0003,
+    "max_source_tokens": 260,
+    "min_checkpoint_rate": 0.98,
+    "min_one_wrong_coverage": 0.9,
+    "min_parse_rate": 0.9,
+    "min_receiver_oracle": 0.0,
+    "min_source_coord_decode": 0.7,
+    "min_source_triple_acc": 0.8,
+    "min_three_wrong_coverage": 0.7,
+    "out_dir": "/__modal/volumes/vo-r16ZpvZh4htF666voiY29E/w1-gpu-smoke-f49f19039167/gpu_smoke_neural",
+    "pool_n": 1100,
+    "seed": 117,
+    "source_batch": 8,
+    "source_proj": 32,
+    "test_n": 256,
+    "text_batch": 8,
+    "train_n": 512,
+    "val_n": 128,
+    "weight_decay": 0.01
+  },
+  "validation_coverage": {
+    "a": {
+      "ge1": 0.25,
+      "ge3": 0.0
+    },
+    "b": {
+      "ge1": 0.0,
+      "ge3": 0.0
+    },
+    "c": {
+      "ge1": 0.0,
+      "ge3": 0.0
+    }
+  },
+  "validation_metrics": {
+    "by_selector": {
+      "a": {
+        "correct": 0,
+        "fidelity": 0.0,
+        "fidelity_pct": 0.0,
+        "n": 8
+      },
+      "b": {
+        "correct": 0,
+        "fidelity": 0.0,
+        "fidelity_pct": 0.0,
+        "n": 8
+      },
+      "c": {
+        "correct": 2,
+        "fidelity": 0.25,
+        "fidelity_pct": 25.0,
+        "n": 8
+      }
+    },
+    "fidelity": 0.08333333333333333,
+    "fidelity_pct": 8.333333333333334,
+    "n_records": 24,
+    "n_states": 8
+  }
+}

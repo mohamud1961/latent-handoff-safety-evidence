@@ -1,0 +1,7 @@
+{"volume":"pcs-core-artifacts (profile modal-account-A)",
+ "features":{"path":"pcs3-multipos-2aedd7129e4e/PCS3_MULTIPOS_FEATURES.pt","sha256":"ea51473126045f3d898f0de4ddc50a63198585d7e5819de277a6aa26bfbb7bc0","shape":[896,4,9,2560]},
+ "extra_test_features":{"path":"pcs3-multipos-7996da43f49d/PCS3_MULTIPOS_EXTRA_TEST_FEATURES.pt","sha256":"4f8bfac52505180983e0ecca817a29acf38e26940d056cffb5206afb44fa4a2a","n":203},
+ "input_cache":"pcs3-20b0191e0d87/PCS3_SOURCE_CACHE.pt","runner_sha256":"20b0191e0d87bef269256aa5fb5cdb290d330d2d4c899dce9bccc193a3e8f49f",
+ "capture_script_sha256_used_for_features":"2aedd7129e4ec9f2cf3659d16c1b5da631df1c3f6304e949f78a8cd089426006",
+ "capture_script_sha256_committed_final":"7996da43f49d6053ec3317886bf2e72ecf0d95812d414d5521b627ac34ba4a22",
+ "note":"final script = the features-run script plus the additive --enlarge-pcs3 mode (added after the decodability result; capture/gate code unchanged). Enlarge run reproduced 896/896 selected traces byte-identically."}

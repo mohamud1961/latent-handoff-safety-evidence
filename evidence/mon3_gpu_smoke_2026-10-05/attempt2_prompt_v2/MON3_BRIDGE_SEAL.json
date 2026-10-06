@@ -1,0 +1,7 @@
+{
+  "bridge_sha256": "4e8b1c2a2e1ea0bc2a7cd4d4c521b238ecae92ed4ca9cc615239dac60301447a",
+  "probe_seed": 0,
+  "probe_seed_commitment": "11cedc8fd443df10111458d9a3e41264663f88eb2cc9ca603a61c7da01fa44e3",
+  "schema": "mon3_bridge_seal_v1",
+  "written_before_test": true
+}

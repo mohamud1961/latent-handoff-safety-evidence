@@ -1,0 +1,82 @@
+{
+  "blockers": [
+    {
+      "detail": "No reviewed pcs3c_protocol_v1 JSON was supplied.",
+      "id": "reviewed_protocol_absent"
+    },
+    {
+      "detail": "Scientific choices need an explicit review record before execution.",
+      "id": "protocol_review_missing"
+    },
+    {
+      "detail": "The sealed W1_CHOICE.json required by Part B is not available at a protocol-pinned path.",
+      "id": "w1_choice_unavailable"
+    },
+    {
+      "detail": "Part B gives only a suggested 1,600 pool and >=450 retained test states; exact pool/split counts, ordering, eligible-row selection, and the ordering of gates versus test sealing are not fixed.",
+      "id": "fresh_pool_split_order_unfrozen"
+    },
+    {
+      "detail": "The freeze requires at least 450 post-gate test states; pin the exact test allocation and enforce that floor before any test scoring.",
+      "id": "minimum_test_state_rule_unpinned"
+    },
+    {
+      "detail": "The freeze says same RQ2c generator/prompt as PCS3, but PCS3 documents and the pinned runner differ in final-marker wording; the RNG namespace/code and exact prompt/parser identity are not sealed for the fresh seed.",
+      "id": "source_prompt_generator_identity_unfrozen"
+    },
+    {
+      "detail": "PCS3c says exact-A-state oracle >=90%; older PCS3 supervised freeze additionally requires >=85% per selector. No reading is selected by this preflight.",
+      "id": "receiver_gate_interpretation_unfrozen"
+    },
+    {
+      "detail": "The multiposition amendment fixes semantic positions but not an approved tokenizer-boundary mapping rule for source character offsets, saved greedy IDs, and teacher-forced prompt+trace positions.",
+      "id": "tokenizer_checkpoint_mapping_unfrozen"
+    },
+    {
+      "detail": "The freezes name Qwen/Qwen3-4B and Qwen/Qwen3-1.7B but do not pin immutable model and tokenizer revisions or local artifact hashes.",
+      "id": "model_revisions_unpinned"
+    },
+    {
+      "detail": "The registered arms do not pin all receiver prompt/chat-template bytes, the choice among multiple matched wrong partners, the probe commitment seed, or the bootstrap seed.",
+      "id": "evaluation_prompts_controls_or_seeds_unfrozen"
+    },
+    {
+      "detail": "No complete PCS3c source-generation/capture/gates/bridge/evaluation executor or Modal launcher is implemented; only pure helpers and synthetic smoke are available.",
+      "id": "executor_incomplete"
+    }
+  ],
+  "canonical_runner_hash_verified": true,
+  "fixed_values": {
+    "canonical_runner_sha256": "20b0191e0d87bef269256aa5fb5cdb290d330d2d4c899dce9bccc193a3e8f49f",
+    "minimum_test_states_after_gates": 450,
+    "multipos_converter_sha256": "04394d115bab08f18f42c9f855caf28f66480f4f26d59fd0f1169b87ec2a15f3",
+    "positive_criteria": {
+      "each_selector_neural_fidelity": 0.6,
+      "near_miss_floor": 0.65,
+      "neural_minus_mean_strong_wrong": 0.3,
+      "neural_minus_restart": 0.3,
+      "overall_neural_fidelity": 0.7,
+      "source_wrong_states_for_directional_check": 10
+    },
+    "receiver_model_id": "Qwen/Qwen3-1.7B",
+    "source_generation_seed": 20261005,
+    "source_model_id": "Qwen/Qwen3-4B",
+    "source_thresholds": {
+      "checkpoint_rate_given_parse": 0.98,
+      "parse_rate": 0.9,
+      "per_register_decodability": 0.7,
+      "receiver_oracle_overall": 0.9,
+      "strong_control_coverage_ge1": 0.9,
+      "strong_control_coverage_ge3": 0.7,
+      "train_val_triple_accuracy": 0.8
+    }
+  },
+  "launch_allowed": false,
+  "modal_launched": false,
+  "model_imported": false,
+  "multipos_converter_hash_verified": true,
+  "protocol_schema": null,
+  "schema": "pcs3c_preflight_v1",
+  "scientific_data_opened": false,
+  "status": "BLOCKED"
+}

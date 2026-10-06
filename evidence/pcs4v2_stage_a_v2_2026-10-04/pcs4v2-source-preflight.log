@@ -1,0 +1,1143 @@
+[{"stream_name":"stderr","time":6.468070432,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.468123995,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":7.434463301,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.434505435,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.434510201,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.434513978,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.048636258,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.048698116,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.048707129,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.048710923,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":12.538526735,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.5/10.5 MB 75.7 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":12.590654509,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 77.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":12.630993958,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 558.8/558.8 kB 23.4 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":12.741007461,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.5/10.5 MB 75.7 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":12.741027968000001,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 77.6 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":12.7410338,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 558.8/558.8 kB 23.4 MB/s eta 0:00:00\n"}
+,{"stream_name":"stderr","time":26.313284667,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":26.313310136,"data":"gradio 6.26.0 requires huggingface-hub\u003c2.0,\u003e=1.16.0, but you have huggingface-hub 0.34.3 which is incompatible.\n"}
+,{"stream_name":"stderr","time":26.313315366,"data":"diffusers 0.40.0 requires huggingface-hub\u003c2.0,\u003e=1.23.0, but you have huggingface-hub 0.34.3 which is incompatible.\n"}
+,{"stream_name":"stderr","time":26.41481803,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":26.414852526,"data":"gradio 6.26.0 requires huggingface-hub\u003c2.0,\u003e=1.16.0, but you have huggingface-hub 0.34.3 which is incompatible.\n"}
+,{"stream_name":"stderr","time":26.414868257,"data":"diffusers 0.40.0 requires huggingface-hub\u003c2.0,\u003e=1.23.0, but you have huggingface-hub 0.34.3 which is incompatible.\n"}
+,{"stream_name":"stderr","time":26.414885099,"data":"\n"}
+,{"stream_name":"stderr","time":26.414889123000002,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":26.414893494,"data":"gradio 6.26.0 requires huggingface-hub\u003c2.0,\u003e=1.16.0, but you have huggingface-hub 0.34.3 which is incompatible.\n"}
+,{"stream_name":"stderr","time":26.414897367000002,"data":"diffusers 0.40.0 requires huggingface-hub\u003c2.0,\u003e=1.23.0, but you have huggingface-hub 0.34.3 which is incompatible.\n"}
+,{"stream_name":"stdout","time":26.507776209,"data":"runner_sha256 e41f4b562c6ac444d8661bb547f3a9cd885d8c5e74f466d56acc7a64c146ac63\n"}
+,{"stream_name":"stderr","time":67.327397446,"data":"\rFetching 3 files:   0%|          | 0/3 [00:00\u003c?, ?it/s]\rFetching 3 files:   0%|          | 0/3 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":87.878309823,"data":"\rFetching 3 files:   0%|          | 0/3 [00:00\u003c?, ?it/s]\rFetching 3 files:  33%|███▎      | 1/3 [00:20\u003c00:41, 20.55s/it]\rFetching 3 files:  33%|███▎      | 1/3 [00:20\u003c00:41, 20.55s/it]\n"}
+,{"stream_name":"stderr","time":99.328956637,"data":"\rFetching 3 files:  33%|███▎      | 1/3 [00:20\u003c00:41, 20.55s/it]\rFetching 3 files:  67%|██████▋   | 2/3 [00:32\u003c00:15, 15.32s/it]\rFetching 3 files: 100%|██████████| 3/3 [00:32\u003c00:00, 10.73s/it]\n"}
+,{"stream_name":"stderr","time":99.532642108,"data":"\rFetching 3 files:  67%|██████▋   | 2/3 [00:32\u003c00:15, 15.32s/it]\rFetching 3 files: 100%|██████████| 3/3 [00:32\u003c00:00, 10.73s/it]\n"}
+,{"stream_name":"stderr","time":99.532687663,"data":"\n"}
+,{"stream_name":"stderr","time":99.532695373,"data":"\rFetching 3 files:  67%|██████▋   | 2/3 [00:32\u003c00:15, 15.32s/it]\rFetching 3 files: 100%|██████████| 3/3 [00:32\u003c00:00, 10.73s/it]\n"}
+,{"stream_name":"stderr","time":107.866086363,"data":"\rLoading checkpoint shards:   0%|          | 0/3 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:   0%|          | 0/3 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":110.258483681,"data":"\rLoading checkpoint shards:   0%|          | 0/3 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:  33%|███▎      | 1/3 [00:02\u003c00:04,  2.39s/it]\rLoading checkpoint shards:  33%|███▎      | 1/3 [00:02\u003c00:04,  2.39s/it]\n"}
+,{"stream_name":"stderr","time":112.630469916,"data":"\rLoading checkpoint shards:  33%|███▎      | 1/3 [00:02\u003c00:04,  2.39s/it]\rLoading checkpoint shards:  67%|██████▋   | 2/3 [00:04\u003c00:02,  2.46s/it]\rLoading checkpoint shards: 100%|██████████| 3/3 [00:04\u003c00:00,  1.66s/it]\n"}
+,{"stream_name":"stderr","time":112.765415102,"data":"\rLoading checkpoint shards:  67%|██████▋   | 2/3 [00:04\u003c00:02,  2.46s/it]\rLoading checkpoint shards: 100%|██████████| 3/3 [00:04\u003c00:00,  1.66s/it]\n"}
+,{"stream_name":"stderr","time":112.765445207,"data":"\n"}
+,{"stream_name":"stderr","time":112.765449518,"data":"\rLoading checkpoint shards:  67%|██████▋   | 2/3 [00:04\u003c00:02,  2.46s/it]\rLoading checkpoint shards: 100%|██████████| 3/3 [00:04\u003c00:00,  1.66s/it]\n"}
+,{"stream_name":"stderr","time":115.403696755,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":115.606281757,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":115.606314187,"data":"\n"}
+,{"stream_name":"stderr","time":115.60631876,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":141.954763109,"data":"SOURCE_GEN 8 / 896\n"}
+,{"stream_name":"stderr","time":141.960111691,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":142.160839529,"data":"SOURCE_GEN 8 / 896\n"}
+,{"stream_name":"stderr","time":142.161912879,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":142.16193207,"data":"\n"}
+,{"stream_name":"stderr","time":142.161937618,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":168.385590243,"data":"SOURCE_GEN 16 / 896\n"}
+,{"stream_name":"stderr","time":168.388179288,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":168.588487287,"data":"SOURCE_GEN 16 / 896\n"}
+,{"stream_name":"stderr","time":168.590895942,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":168.590925522,"data":"\n"}
+,{"stream_name":"stderr","time":168.59093144,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":195.563555752,"data":"SOURCE_GEN 24 / 896\n"}
+,{"stream_name":"stderr","time":195.568599464,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":195.767474732,"data":"SOURCE_GEN 24 / 896\n"}
+,{"stream_name":"stderr","time":195.771253867,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":195.771272498,"data":"\n"}
+,{"stream_name":"stderr","time":195.771277444,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":223.74247103,"data":"SOURCE_GEN 32 / 896\n"}
+,{"stream_name":"stderr","time":223.748062085,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":223.945560623,"data":"SOURCE_GEN 32 / 896\n"}
+,{"stream_name":"stderr","time":223.94982463,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":223.949852116,"data":"\n"}
+,{"stream_name":"stderr","time":223.949858271,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":253.496771655,"data":"SOURCE_GEN 40 / 896\n"}
+,{"stream_name":"stderr","time":253.499833538,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":253.701088376,"data":"SOURCE_GEN 40 / 896\n"}
+,{"stream_name":"stderr","time":253.702139826,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":253.702159359,"data":"\n"}
+,{"stream_name":"stderr","time":253.702165293,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":283.070733013,"data":"SOURCE_GEN 48 / 896\n"}
+,{"stream_name":"stderr","time":283.073701248,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":283.274050512,"data":"SOURCE_GEN 48 / 896\n"}
+,{"stream_name":"stderr","time":283.276240834,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":283.276258393,"data":"\n"}
+,{"stream_name":"stderr","time":283.276263673,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":312.159099744,"data":"SOURCE_GEN 56 / 896\n"}
+,{"stream_name":"stderr","time":312.164452332,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":312.363734028,"data":"SOURCE_GEN 56 / 896\n"}
+,{"stream_name":"stderr","time":312.367108661,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":312.367129888,"data":"\n"}
+,{"stream_name":"stderr","time":312.367136036,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":341.837765607,"data":"SOURCE_GEN 64 / 896\n"}
+,{"stream_name":"stderr","time":341.842770913,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":342.040111024,"data":"SOURCE_GEN 64 / 896\n"}
+,{"stream_name":"stderr","time":342.044483185,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":342.044507518,"data":"\n"}
+,{"stream_name":"stderr","time":342.044514019,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":371.390372163,"data":"SOURCE_GEN 72 / 896\n"}
+,{"stream_name":"stderr","time":371.39332143,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":371.592590377,"data":"SOURCE_GEN 72 / 896\n"}
+,{"stream_name":"stderr","time":371.595409622,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":371.59542986,"data":"\n"}
+,{"stream_name":"stderr","time":371.595434621,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":400.742720234,"data":"SOURCE_GEN 80 / 896\n"}
+,{"stream_name":"stderr","time":400.747723761,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":400.948666567,"data":"SOURCE_GEN 80 / 896\n"}
+,{"stream_name":"stderr","time":400.950894032,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":400.950912304,"data":"\n"}
+,{"stream_name":"stderr","time":400.950915442,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":429.98454101,"data":"SOURCE_GEN 88 / 896\n"}
+,{"stream_name":"stderr","time":429.986889725,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":430.192161051,"data":"SOURCE_GEN 88 / 896\n"}
+,{"stream_name":"stderr","time":430.193467673,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":430.193486686,"data":"\n"}
+,{"stream_name":"stderr","time":430.193490334,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":459.358799651,"data":"SOURCE_GEN 96 / 896\n"}
+,{"stream_name":"stderr","time":459.36202616,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":459.559410812,"data":"SOURCE_GEN 96 / 896\n"}
+,{"stream_name":"stderr","time":459.56380819,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":459.563834693,"data":"\n"}
+,{"stream_name":"stderr","time":459.56384061,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":488.86139907,"data":"SOURCE_GEN 104 / 896\n"}
+,{"stream_name":"stderr","time":488.86712203,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":489.06988876,"data":"SOURCE_GEN 104 / 896\n"}
+,{"stream_name":"stderr","time":489.071220248,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":489.071235743,"data":"\n"}
+,{"stream_name":"stderr","time":489.071266845,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":518.306736224,"data":"SOURCE_GEN 112 / 896\n"}
+,{"stream_name":"stderr","time":518.309899784,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":518.50777447,"data":"SOURCE_GEN 112 / 896\n"}
+,{"stream_name":"stderr","time":518.512759339,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":518.512776658,"data":"\n"}
+,{"stream_name":"stderr","time":518.512781457,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":547.807338885,"data":"SOURCE_GEN 120 / 896\n"}
+,{"stream_name":"stderr","time":547.812649254,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":548.012253003,"data":"SOURCE_GEN 120 / 896\n"}
+,{"stream_name":"stderr","time":548.015124954,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":548.015144571,"data":"\n"}
+,{"stream_name":"stderr","time":548.015150853,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":577.279029731,"data":"SOURCE_GEN 128 / 896\n"}
+,{"stream_name":"stderr","time":577.284508238,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":577.485232217,"data":"SOURCE_GEN 128 / 896\n"}
+,{"stream_name":"stderr","time":577.486242155,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":577.486260267,"data":"\n"}
+,{"stream_name":"stderr","time":577.486266114,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":606.787609333,"data":"SOURCE_GEN 136 / 896\n"}
+,{"stream_name":"stderr","time":606.789702739,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":606.992640041,"data":"SOURCE_GEN 136 / 896\n"}
+,{"stream_name":"stderr","time":606.993539455,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":606.993554713,"data":"\n"}
+,{"stream_name":"stderr","time":606.993560609,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":636.278880144,"data":"SOURCE_GEN 144 / 896\n"}
+,{"stream_name":"stderr","time":636.284300124,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":636.48212232,"data":"SOURCE_GEN 144 / 896\n"}
+,{"stream_name":"stderr","time":636.487264049,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":636.487284731,"data":"\n"}
+,{"stream_name":"stderr","time":636.487289905,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":665.82677282,"data":"SOURCE_GEN 152 / 896\n"}
+,{"stream_name":"stderr","time":665.830473645,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":666.032939984,"data":"SOURCE_GEN 152 / 896\n"}
+,{"stream_name":"stderr","time":666.034253967,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":666.034268673,"data":"\n"}
+,{"stream_name":"stderr","time":666.03427343,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":695.287749124,"data":"SOURCE_GEN 160 / 896\n"}
+,{"stream_name":"stderr","time":695.290792928,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":695.491035129,"data":"SOURCE_GEN 160 / 896\n"}
+,{"stream_name":"stderr","time":695.493309963,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":695.493328559,"data":"\n"}
+,{"stream_name":"stderr","time":695.493333939,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":724.792773068,"data":"SOURCE_GEN 168 / 896\n"}
+,{"stream_name":"stderr","time":724.795382888,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":724.994783127,"data":"SOURCE_GEN 168 / 896\n"}
+,{"stream_name":"stderr","time":724.997621608,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":724.99764078,"data":"\n"}
+,{"stream_name":"stderr","time":724.997645767,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":754.268752295,"data":"SOURCE_GEN 176 / 896\n"}
+,{"stream_name":"stderr","time":754.271777876,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":754.471870444,"data":"SOURCE_GEN 176 / 896\n"}
+,{"stream_name":"stderr","time":754.474022927,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":754.474056353,"data":"\n"}
+,{"stream_name":"stderr","time":754.474061427,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":783.828808429,"data":"SOURCE_GEN 184 / 896\n"}
+,{"stream_name":"stderr","time":783.831719715,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":784.034632477,"data":"SOURCE_GEN 184 / 896\n"}
+,{"stream_name":"stderr","time":784.035522694,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":784.035539004,"data":"\n"}
+,{"stream_name":"stderr","time":784.03554383,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":813.345384376,"data":"SOURCE_GEN 192 / 896\n"}
+,{"stream_name":"stderr","time":813.34820555,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":813.546094039,"data":"SOURCE_GEN 192 / 896\n"}
+,{"stream_name":"stderr","time":813.551205792,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":813.551223756,"data":"\n"}
+,{"stream_name":"stderr","time":813.55122957,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":842.838761721,"data":"SOURCE_GEN 200 / 896\n"}
+,{"stream_name":"stderr","time":842.841034729,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":843.044115748,"data":"SOURCE_GEN 200 / 896\n"}
+,{"stream_name":"stderr","time":843.044993851,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":843.045013775,"data":"\n"}
+,{"stream_name":"stderr","time":843.045018707,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":872.345980555,"data":"SOURCE_GEN 208 / 896\n"}
+,{"stream_name":"stderr","time":872.351024536,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":872.548939027,"data":"SOURCE_GEN 208 / 896\n"}
+,{"stream_name":"stderr","time":872.553833759,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":872.553862731,"data":"\n"}
+,{"stream_name":"stderr","time":872.553868821,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":901.775058294,"data":"SOURCE_GEN 216 / 896\n"}
+,{"stream_name":"stderr","time":901.780446708,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":901.98465283,"data":"SOURCE_GEN 216 / 896\n"}
+,{"stream_name":"stderr","time":901.98611746,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":901.986136012,"data":"\n"}
+,{"stream_name":"stderr","time":901.986149368,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":931.233741749,"data":"SOURCE_GEN 224 / 896\n"}
+,{"stream_name":"stderr","time":931.239369268,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":931.434484609,"data":"SOURCE_GEN 224 / 896\n"}
+,{"stream_name":"stderr","time":931.441766073,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":931.441785036,"data":"\n"}
+,{"stream_name":"stderr","time":931.441790503,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":960.717732761,"data":"SOURCE_GEN 232 / 896\n"}
+,{"stream_name":"stderr","time":960.720972353,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":960.926390764,"data":"SOURCE_GEN 232 / 896\n"}
+,{"stream_name":"stderr","time":960.927804749,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":960.927821221,"data":"\n"}
+,{"stream_name":"stderr","time":960.927825565,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":990.181581841,"data":"SOURCE_GEN 240 / 896\n"}
+,{"stream_name":"stderr","time":990.186855258,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":990.384718973,"data":"SOURCE_GEN 240 / 896\n"}
+,{"stream_name":"stderr","time":990.3895847,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":990.389605283,"data":"\n"}
+,{"stream_name":"stderr","time":990.38961503,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1019.635932938,"data":"SOURCE_GEN 248 / 896\n"}
+,{"stream_name":"stderr","time":1019.641292448,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1019.846098815,"data":"SOURCE_GEN 248 / 896\n"}
+,{"stream_name":"stderr","time":1019.84749558,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1019.847530221,"data":"\n"}
+,{"stream_name":"stderr","time":1019.847535192,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1049.143234055,"data":"SOURCE_GEN 256 / 896\n"}
+,{"stream_name":"stderr","time":1049.147570858,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1049.345735091,"data":"SOURCE_GEN 256 / 896\n"}
+,{"stream_name":"stderr","time":1049.350063853,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1049.350081383,"data":"\n"}
+,{"stream_name":"stderr","time":1049.35008662,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1078.602402997,"data":"SOURCE_GEN 264 / 896\n"}
+,{"stream_name":"stderr","time":1078.604947382,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1078.808237502,"data":"SOURCE_GEN 264 / 896\n"}
+,{"stream_name":"stderr","time":1078.809119866,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1078.809134345,"data":"\n"}
+,{"stream_name":"stderr","time":1078.809140167,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1108.160737118,"data":"SOURCE_GEN 272 / 896\n"}
+,{"stream_name":"stderr","time":1108.163340422,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1108.36350057,"data":"SOURCE_GEN 272 / 896\n"}
+,{"stream_name":"stderr","time":1108.365586276,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1108.365603363,"data":"\n"}
+,{"stream_name":"stderr","time":1108.365609008,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1137.603757722,"data":"SOURCE_GEN 280 / 896\n"}
+,{"stream_name":"stderr","time":1137.606408506,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1137.809155057,"data":"SOURCE_GEN 280 / 896\n"}
+,{"stream_name":"stderr","time":1137.810068293,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1137.810084432,"data":"\n"}
+,{"stream_name":"stderr","time":1137.810090081,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1167.062147947,"data":"SOURCE_GEN 288 / 896\n"}
+,{"stream_name":"stderr","time":1167.067637802,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1167.265202126,"data":"SOURCE_GEN 288 / 896\n"}
+,{"stream_name":"stderr","time":1167.270008579,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1167.270026574,"data":"\n"}
+,{"stream_name":"stderr","time":1167.270031181,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1196.508805283,"data":"SOURCE_GEN 296 / 896\n"}
+,{"stream_name":"stderr","time":1196.513270263,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1196.713805382,"data":"SOURCE_GEN 296 / 896\n"}
+,{"stream_name":"stderr","time":1196.715502085,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1196.715521271,"data":"\n"}
+,{"stream_name":"stderr","time":1196.715526673,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1225.995730139,"data":"SOURCE_GEN 304 / 896\n"}
+,{"stream_name":"stderr","time":1226.000764542,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1226.198938553,"data":"SOURCE_GEN 304 / 896\n"}
+,{"stream_name":"stderr","time":1226.203694875,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1226.203712482,"data":"\n"}
+,{"stream_name":"stderr","time":1226.203720804,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1255.456888006,"data":"SOURCE_GEN 312 / 896\n"}
+,{"stream_name":"stderr","time":1255.462535205,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1255.663325706,"data":"SOURCE_GEN 312 / 896\n"}
+,{"stream_name":"stderr","time":1255.665055349,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1255.665076407,"data":"\n"}
+,{"stream_name":"stderr","time":1255.665082611,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1284.919815432,"data":"SOURCE_GEN 320 / 896\n"}
+,{"stream_name":"stderr","time":1284.922578338,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1285.122852733,"data":"SOURCE_GEN 320 / 896\n"}
+,{"stream_name":"stderr","time":1285.125369179,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1285.125403373,"data":"\n"}
+,{"stream_name":"stderr","time":1285.125425946,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1314.416692005,"data":"SOURCE_GEN 328 / 896\n"}
+,{"stream_name":"stderr","time":1314.422043571,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1314.628566801,"data":"SOURCE_GEN 328 / 896\n"}
+,{"stream_name":"stderr","time":1314.629917023,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1314.629932193,"data":"\n"}
+,{"stream_name":"stderr","time":1314.62993731,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1343.800662771,"data":"SOURCE_GEN 336 / 896\n"}
+,{"stream_name":"stderr","time":1343.805692263,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1344.005976653,"data":"SOURCE_GEN 336 / 896\n"}
+,{"stream_name":"stderr","time":1344.008107807,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1344.008128742,"data":"\n"}
+,{"stream_name":"stderr","time":1344.008134532,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1373.225051503,"data":"SOURCE_GEN 344 / 896\n"}
+,{"stream_name":"stderr","time":1373.230443046,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1373.431415437,"data":"SOURCE_GEN 344 / 896\n"}
+,{"stream_name":"stderr","time":1373.432877874,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1373.432896384,"data":"\n"}
+,{"stream_name":"stderr","time":1373.432901527,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1402.599917026,"data":"SOURCE_GEN 352 / 896\n"}
+,{"stream_name":"stderr","time":1402.602187132,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1402.799999251,"data":"SOURCE_GEN 352 / 896\n"}
+,{"stream_name":"stderr","time":1402.804886553,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1402.804907567,"data":"\n"}
+,{"stream_name":"stderr","time":1402.8049135,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1432.020080666,"data":"SOURCE_GEN 360 / 896\n"}
+,{"stream_name":"stderr","time":1432.025512989,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1432.226549743,"data":"SOURCE_GEN 360 / 896\n"}
+,{"stream_name":"stderr","time":1432.227770274,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1432.227788962,"data":"\n"}
+,{"stream_name":"stderr","time":1432.227794915,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1461.512128257,"data":"SOURCE_GEN 368 / 896\n"}
+,{"stream_name":"stderr","time":1461.517945605,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1461.714964179,"data":"SOURCE_GEN 368 / 896\n"}
+,{"stream_name":"stderr","time":1461.720241743,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1461.720258634,"data":"\n"}
+,{"stream_name":"stderr","time":1461.720265105,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1490.941701636,"data":"SOURCE_GEN 376 / 896\n"}
+,{"stream_name":"stderr","time":1490.947493691,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1491.156475919,"data":"SOURCE_GEN 376 / 896\n"}
+,{"stream_name":"stderr","time":1491.157803377,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1491.157823456,"data":"\n"}
+,{"stream_name":"stderr","time":1491.157830344,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1520.334215713,"data":"SOURCE_GEN 384 / 896\n"}
+,{"stream_name":"stderr","time":1520.33988259,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1520.537145554,"data":"SOURCE_GEN 384 / 896\n"}
+,{"stream_name":"stderr","time":1520.542458247,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1520.542480007,"data":"\n"}
+,{"stream_name":"stderr","time":1520.542486233,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1549.733350718,"data":"SOURCE_GEN 392 / 896\n"}
+,{"stream_name":"stderr","time":1549.738982391,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1549.948531629,"data":"SOURCE_GEN 392 / 896\n"}
+,{"stream_name":"stderr","time":1549.949504898,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1549.94951847,"data":"\n"}
+,{"stream_name":"stderr","time":1549.949523271,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1579.182944411,"data":"SOURCE_GEN 400 / 896\n"}
+,{"stream_name":"stderr","time":1579.185622591,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1579.386370097,"data":"SOURCE_GEN 400 / 896\n"}
+,{"stream_name":"stderr","time":1579.38848888,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1579.388517937,"data":"\n"}
+,{"stream_name":"stderr","time":1579.388522158,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1608.648768205,"data":"SOURCE_GEN 408 / 896\n"}
+,{"stream_name":"stderr","time":1608.653972217,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1608.855311574,"data":"SOURCE_GEN 408 / 896\n"}
+,{"stream_name":"stderr","time":1608.856542884,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1608.856559592,"data":"\n"}
+,{"stream_name":"stderr","time":1608.856565239,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1638.068236946,"data":"SOURCE_GEN 416 / 896\n"}
+,{"stream_name":"stderr","time":1638.073539338,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1638.273644016,"data":"SOURCE_GEN 416 / 896\n"}
+,{"stream_name":"stderr","time":1638.276087686,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1638.276107572,"data":"\n"}
+,{"stream_name":"stderr","time":1638.276113544,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1667.457726412,"data":"SOURCE_GEN 424 / 896\n"}
+,{"stream_name":"stderr","time":1667.460629239,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1667.66213584,"data":"SOURCE_GEN 424 / 896\n"}
+,{"stream_name":"stderr","time":1667.6632399,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1667.663257766,"data":"\n"}
+,{"stream_name":"stderr","time":1667.663262677,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1696.832926176,"data":"SOURCE_GEN 432 / 896\n"}
+,{"stream_name":"stderr","time":1696.838249163,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1697.035702399,"data":"SOURCE_GEN 432 / 896\n"}
+,{"stream_name":"stderr","time":1697.040079245,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1697.040100498,"data":"\n"}
+,{"stream_name":"stderr","time":1697.040105724,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1726.197473074,"data":"SOURCE_GEN 440 / 896\n"}
+,{"stream_name":"stderr","time":1726.202427057,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1726.405126351,"data":"SOURCE_GEN 440 / 896\n"}
+,{"stream_name":"stderr","time":1726.406104224,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1726.406120233,"data":"\n"}
+,{"stream_name":"stderr","time":1726.406126094,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1755.59325275,"data":"SOURCE_GEN 448 / 896\n"}
+,{"stream_name":"stderr","time":1755.598399232,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1755.796283123,"data":"SOURCE_GEN 448 / 896\n"}
+,{"stream_name":"stderr","time":1755.801700475,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1755.801718621,"data":"\n"}
+,{"stream_name":"stderr","time":1755.801722112,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1785.012197278,"data":"SOURCE_GEN 456 / 896\n"}
+,{"stream_name":"stderr","time":1785.018099882,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1785.219882385,"data":"SOURCE_GEN 456 / 896\n"}
+,{"stream_name":"stderr","time":1785.220768651,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1785.220787468,"data":"\n"}
+,{"stream_name":"stderr","time":1785.220792744,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1814.462822663,"data":"SOURCE_GEN 464 / 896\n"}
+,{"stream_name":"stderr","time":1814.469641882,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1814.666697116,"data":"SOURCE_GEN 464 / 896\n"}
+,{"stream_name":"stderr","time":1814.672890244,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1814.672912411,"data":"\n"}
+,{"stream_name":"stderr","time":1814.672918426,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1843.864740224,"data":"SOURCE_GEN 472 / 896\n"}
+,{"stream_name":"stderr","time":1843.870482696,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1844.079335681,"data":"SOURCE_GEN 472 / 896\n"}
+,{"stream_name":"stderr","time":1844.080716943,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1844.080731758,"data":"\n"}
+,{"stream_name":"stderr","time":1844.080736833,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1873.288727994,"data":"SOURCE_GEN 480 / 896\n"}
+,{"stream_name":"stderr","time":1873.294316502,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1873.494356481,"data":"SOURCE_GEN 480 / 896\n"}
+,{"stream_name":"stderr","time":1873.496519247,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1873.49653707,"data":"\n"}
+,{"stream_name":"stderr","time":1873.496543183,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1902.663659718,"data":"SOURCE_GEN 488 / 896\n"}
+,{"stream_name":"stderr","time":1902.669017576,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1902.874039779,"data":"SOURCE_GEN 488 / 896\n"}
+,{"stream_name":"stderr","time":1902.875055261,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1902.875073047,"data":"\n"}
+,{"stream_name":"stderr","time":1902.875078771,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1932.039625558,"data":"SOURCE_GEN 496 / 896\n"}
+,{"stream_name":"stderr","time":1932.045439447,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1932.242536254,"data":"SOURCE_GEN 496 / 896\n"}
+,{"stream_name":"stderr","time":1932.247718093,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1932.247740939,"data":"\n"}
+,{"stream_name":"stderr","time":1932.247747555,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1961.407196347,"data":"SOURCE_GEN 504 / 896\n"}
+,{"stream_name":"stderr","time":1961.412725519,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1961.615047433,"data":"SOURCE_GEN 504 / 896\n"}
+,{"stream_name":"stderr","time":1961.615931699,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1961.615947341,"data":"\n"}
+,{"stream_name":"stderr","time":1961.615953124,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1990.737155758,"data":"SOURCE_GEN 512 / 896\n"}
+,{"stream_name":"stderr","time":1990.74218973,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":1990.939284029,"data":"SOURCE_GEN 512 / 896\n"}
+,{"stream_name":"stderr","time":1990.944520021,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":1990.94453853,"data":"\n"}
+,{"stream_name":"stderr","time":1990.944544393,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2020.039740801,"data":"SOURCE_GEN 520 / 896\n"}
+,{"stream_name":"stderr","time":2020.044800068,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2020.247104151,"data":"SOURCE_GEN 520 / 896\n"}
+,{"stream_name":"stderr","time":2020.248041111,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2020.248061676,"data":"\n"}
+,{"stream_name":"stderr","time":2020.248067308,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2049.307128745,"data":"SOURCE_GEN 528 / 896\n"}
+,{"stream_name":"stderr","time":2049.312510154,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2049.509690731,"data":"SOURCE_GEN 528 / 896\n"}
+,{"stream_name":"stderr","time":2049.514980457,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2049.515003115,"data":"\n"}
+,{"stream_name":"stderr","time":2049.515009624,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2078.642168377,"data":"SOURCE_GEN 536 / 896\n"}
+,{"stream_name":"stderr","time":2078.647449307,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2078.852918223,"data":"SOURCE_GEN 536 / 896\n"}
+,{"stream_name":"stderr","time":2078.853862166,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2078.853881035,"data":"\n"}
+,{"stream_name":"stderr","time":2078.853885249,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2108.055804917,"data":"SOURCE_GEN 544 / 896\n"}
+,{"stream_name":"stderr","time":2108.058387161,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2108.255514986,"data":"SOURCE_GEN 544 / 896\n"}
+,{"stream_name":"stderr","time":2108.260582139,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2108.260605064,"data":"\n"}
+,{"stream_name":"stderr","time":2108.260610195,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2137.502275547,"data":"SOURCE_GEN 552 / 896\n"}
+,{"stream_name":"stderr","time":2137.507303691,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2137.70953259,"data":"SOURCE_GEN 552 / 896\n"}
+,{"stream_name":"stderr","time":2137.710426886,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2137.71044558,"data":"\n"}
+,{"stream_name":"stderr","time":2137.710450571,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2166.977772965,"data":"SOURCE_GEN 560 / 896\n"}
+,{"stream_name":"stderr","time":2166.982986279,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2167.180357117,"data":"SOURCE_GEN 560 / 896\n"}
+,{"stream_name":"stderr","time":2167.184736929,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2167.184755747,"data":"\n"}
+,{"stream_name":"stderr","time":2167.184760643,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2196.504108363,"data":"SOURCE_GEN 568 / 896\n"}
+,{"stream_name":"stderr","time":2196.509291305,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2196.719831486,"data":"SOURCE_GEN 568 / 896\n"}
+,{"stream_name":"stderr","time":2196.721333721,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2196.721363673,"data":"\n"}
+,{"stream_name":"stderr","time":2196.721391091,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2225.97775695,"data":"SOURCE_GEN 576 / 896\n"}
+,{"stream_name":"stderr","time":2225.983058903,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2226.180218996,"data":"SOURCE_GEN 576 / 896\n"}
+,{"stream_name":"stderr","time":2226.185354272,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2226.185375821,"data":"\n"}
+,{"stream_name":"stderr","time":2226.185381037,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2255.350483016,"data":"SOURCE_GEN 584 / 896\n"}
+,{"stream_name":"stderr","time":2255.358249931,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2255.558929407,"data":"SOURCE_GEN 584 / 896\n"}
+,{"stream_name":"stderr","time":2255.560877601,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2255.560896947,"data":"\n"}
+,{"stream_name":"stderr","time":2255.560913596,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2284.650837828,"data":"SOURCE_GEN 592 / 896\n"}
+,{"stream_name":"stderr","time":2284.656167785,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2284.853398505,"data":"SOURCE_GEN 592 / 896\n"}
+,{"stream_name":"stderr","time":2284.859346807,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2284.85938197,"data":"\n"}
+,{"stream_name":"stderr","time":2284.859388381,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2313.923635374,"data":"SOURCE_GEN 600 / 896\n"}
+,{"stream_name":"stderr","time":2313.927552228,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2314.133212616,"data":"SOURCE_GEN 600 / 896\n"}
+,{"stream_name":"stderr","time":2314.134186785,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2314.134208672,"data":"\n"}
+,{"stream_name":"stderr","time":2314.13421451,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2343.263733652,"data":"SOURCE_GEN 608 / 896\n"}
+,{"stream_name":"stderr","time":2343.267635804,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2343.464599687,"data":"SOURCE_GEN 608 / 896\n"}
+,{"stream_name":"stderr","time":2343.470065512,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2343.470082904,"data":"\n"}
+,{"stream_name":"stderr","time":2343.470087474,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2372.645369154,"data":"SOURCE_GEN 616 / 896\n"}
+,{"stream_name":"stderr","time":2372.650656794,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2372.853626498,"data":"SOURCE_GEN 616 / 896\n"}
+,{"stream_name":"stderr","time":2372.854511248,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2372.854526301,"data":"\n"}
+,{"stream_name":"stderr","time":2372.854532455,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2402.071750591,"data":"SOURCE_GEN 624 / 896\n"}
+,{"stream_name":"stderr","time":2402.07547487,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2402.271813385,"data":"SOURCE_GEN 624 / 896\n"}
+,{"stream_name":"stderr","time":2402.277244486,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2402.277264282,"data":"\n"}
+,{"stream_name":"stderr","time":2402.277271073,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2431.551896428,"data":"SOURCE_GEN 632 / 896\n"}
+,{"stream_name":"stderr","time":2431.557550689,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2431.760699026,"data":"SOURCE_GEN 632 / 896\n"}
+,{"stream_name":"stderr","time":2431.761713364,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2431.761734022,"data":"\n"}
+,{"stream_name":"stderr","time":2431.761740776,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2461.034896593,"data":"SOURCE_GEN 640 / 896\n"}
+,{"stream_name":"stderr","time":2461.040032101,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2461.241020598,"data":"SOURCE_GEN 640 / 896\n"}
+,{"stream_name":"stderr","time":2461.242477479,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2461.242529593,"data":"\n"}
+,{"stream_name":"stderr","time":2461.242535563,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2490.532142228,"data":"SOURCE_GEN 648 / 896\n"}
+,{"stream_name":"stderr","time":2490.538011534,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2490.742050991,"data":"SOURCE_GEN 648 / 896\n"}
+,{"stream_name":"stderr","time":2490.742984497,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2490.743006072,"data":"\n"}
+,{"stream_name":"stderr","time":2490.743011555,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2520.024773033,"data":"SOURCE_GEN 656 / 896\n"}
+,{"stream_name":"stderr","time":2520.029710667,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2520.22715053,"data":"SOURCE_GEN 656 / 896\n"}
+,{"stream_name":"stderr","time":2520.231550386,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2520.231572324,"data":"\n"}
+,{"stream_name":"stderr","time":2520.231577326,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2549.523727985,"data":"SOURCE_GEN 664 / 896\n"}
+,{"stream_name":"stderr","time":2549.526477218,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2549.729617656,"data":"SOURCE_GEN 664 / 896\n"}
+,{"stream_name":"stderr","time":2549.73064688,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2549.730680188,"data":"\n"}
+,{"stream_name":"stderr","time":2549.730686442,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2579.022496818,"data":"SOURCE_GEN 672 / 896\n"}
+,{"stream_name":"stderr","time":2579.028239443,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2579.225634384,"data":"SOURCE_GEN 672 / 896\n"}
+,{"stream_name":"stderr","time":2579.231131458,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2579.231152606,"data":"\n"}
+,{"stream_name":"stderr","time":2579.231158559,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2608.529740889,"data":"SOURCE_GEN 680 / 896\n"}
+,{"stream_name":"stderr","time":2608.532578284,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2608.735769443,"data":"SOURCE_GEN 680 / 896\n"}
+,{"stream_name":"stderr","time":2608.736814515,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2608.736832765,"data":"\n"}
+,{"stream_name":"stderr","time":2608.736836998,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2638.114745865,"data":"SOURCE_GEN 688 / 896\n"}
+,{"stream_name":"stderr","time":2638.118328492,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2638.315439883,"data":"SOURCE_GEN 688 / 896\n"}
+,{"stream_name":"stderr","time":2638.320588452,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2638.320612422,"data":"\n"}
+,{"stream_name":"stderr","time":2638.320617424,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2667.721982137,"data":"SOURCE_GEN 696 / 896\n"}
+,{"stream_name":"stderr","time":2667.728177468,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2667.931095153,"data":"SOURCE_GEN 696 / 896\n"}
+,{"stream_name":"stderr","time":2667.932110059,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2667.932129695,"data":"\n"}
+,{"stream_name":"stderr","time":2667.93213527,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2697.342180705,"data":"SOURCE_GEN 704 / 896\n"}
+,{"stream_name":"stderr","time":2697.348068429,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2697.546164726,"data":"SOURCE_GEN 704 / 896\n"}
+,{"stream_name":"stderr","time":2697.55103371,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2697.551057017,"data":"\n"}
+,{"stream_name":"stderr","time":2697.551062655,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2727.043694888,"data":"SOURCE_GEN 712 / 896\n"}
+,{"stream_name":"stderr","time":2727.048980333,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2727.26230714,"data":"SOURCE_GEN 712 / 896\n"}
+,{"stream_name":"stderr","time":2727.263603534,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2727.26364965,"data":"\n"}
+,{"stream_name":"stderr","time":2727.26365484,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2756.60748455,"data":"SOURCE_GEN 720 / 896\n"}
+,{"stream_name":"stderr","time":2756.613521155,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2756.809627722,"data":"SOURCE_GEN 720 / 896\n"}
+,{"stream_name":"stderr","time":2756.815859326,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2756.815877577,"data":"\n"}
+,{"stream_name":"stderr","time":2756.815882697,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2786.075481022,"data":"SOURCE_GEN 728 / 896\n"}
+,{"stream_name":"stderr","time":2786.080874095,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2786.294580274,"data":"SOURCE_GEN 728 / 896\n"}
+,{"stream_name":"stderr","time":2786.296131871,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2786.296149546,"data":"\n"}
+,{"stream_name":"stderr","time":2786.296155162,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2815.572634053,"data":"SOURCE_GEN 736 / 896\n"}
+,{"stream_name":"stderr","time":2815.578012071,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2815.77586474,"data":"SOURCE_GEN 736 / 896\n"}
+,{"stream_name":"stderr","time":2815.78093747,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2815.780957444,"data":"\n"}
+,{"stream_name":"stderr","time":2815.780963659,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2845.057608812,"data":"SOURCE_GEN 744 / 896\n"}
+,{"stream_name":"stderr","time":2845.063008201,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2845.267532571,"data":"SOURCE_GEN 744 / 896\n"}
+,{"stream_name":"stderr","time":2845.268424282,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2845.268442408,"data":"\n"}
+,{"stream_name":"stderr","time":2845.268447871,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2874.535115583,"data":"SOURCE_GEN 752 / 896\n"}
+,{"stream_name":"stderr","time":2874.54085129,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2874.737791883,"data":"SOURCE_GEN 752 / 896\n"}
+,{"stream_name":"stderr","time":2874.743144468,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2874.743162221,"data":"\n"}
+,{"stream_name":"stderr","time":2874.743166687,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2903.984011421,"data":"SOURCE_GEN 760 / 896\n"}
+,{"stream_name":"stderr","time":2903.989459423,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2904.193014451,"data":"SOURCE_GEN 760 / 896\n"}
+,{"stream_name":"stderr","time":2904.193955564,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2904.193975149,"data":"\n"}
+,{"stream_name":"stderr","time":2904.193980227,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2933.204491626,"data":"SOURCE_GEN 768 / 896\n"}
+,{"stream_name":"stderr","time":2933.209654964,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2933.406999347,"data":"SOURCE_GEN 768 / 896\n"}
+,{"stream_name":"stderr","time":2933.412290334,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2933.412313552,"data":"\n"}
+,{"stream_name":"stderr","time":2933.412320309,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2962.220290795,"data":"SOURCE_GEN 776 / 896\n"}
+,{"stream_name":"stderr","time":2962.226279466,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2962.430503786,"data":"SOURCE_GEN 776 / 896\n"}
+,{"stream_name":"stderr","time":2962.431504804,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2962.431522521,"data":"\n"}
+,{"stream_name":"stderr","time":2962.431528941,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2991.120794318,"data":"SOURCE_GEN 784 / 896\n"}
+,{"stream_name":"stderr","time":2991.126266057,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":2991.323518781,"data":"SOURCE_GEN 784 / 896\n"}
+,{"stream_name":"stderr","time":2991.327941894,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":2991.327979229,"data":"\n"}
+,{"stream_name":"stderr","time":2991.327985155,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3019.963760663,"data":"SOURCE_GEN 792 / 896\n"}
+,{"stream_name":"stderr","time":3019.968993666,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3020.173127141,"data":"SOURCE_GEN 792 / 896\n"}
+,{"stream_name":"stderr","time":3020.174054688,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":3020.174070963,"data":"\n"}
+,{"stream_name":"stderr","time":3020.174076873,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3048.839319236,"data":"SOURCE_GEN 800 / 896\n"}
+,{"stream_name":"stderr","time":3048.844938574,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3049.042336039,"data":"SOURCE_GEN 800 / 896\n"}
+,{"stream_name":"stderr","time":3049.04656532,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":3049.04658622,"data":"\n"}
+,{"stream_name":"stderr","time":3049.046591445,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3077.775815839,"data":"SOURCE_GEN 808 / 896\n"}
+,{"stream_name":"stderr","time":3077.781016998,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3077.996021024,"data":"SOURCE_GEN 808 / 896\n"}
+,{"stream_name":"stderr","time":3077.997209098,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":3077.997228405,"data":"\n"}
+,{"stream_name":"stderr","time":3077.997234263,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3106.671254921,"data":"SOURCE_GEN 816 / 896\n"}
+,{"stream_name":"stderr","time":3106.677275244,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3106.875180773,"data":"SOURCE_GEN 816 / 896\n"}
+,{"stream_name":"stderr","time":3106.880395511,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":3106.880421166,"data":"\n"}
+,{"stream_name":"stderr","time":3106.880426571,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3135.638638463,"data":"SOURCE_GEN 824 / 896\n"}
+,{"stream_name":"stderr","time":3135.644265812,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3135.85529884,"data":"SOURCE_GEN 824 / 896\n"}
+,{"stream_name":"stderr","time":3135.856204092,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":3135.85621916,"data":"\n"}
+,{"stream_name":"stderr","time":3135.856225441,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3164.535800818,"data":"SOURCE_GEN 832 / 896\n"}
+,{"stream_name":"stderr","time":3164.538602422,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3164.736905069,"data":"SOURCE_GEN 832 / 896\n"}
+,{"stream_name":"stderr","time":3164.741888422,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":3164.741907461,"data":"\n"}
+,{"stream_name":"stderr","time":3164.741913595,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3193.47844563,"data":"SOURCE_GEN 840 / 896\n"}
+,{"stream_name":"stderr","time":3193.484270121,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3193.688995809,"data":"SOURCE_GEN 840 / 896\n"}
+,{"stream_name":"stderr","time":3193.690001357,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":3193.690019667,"data":"\n"}
+,{"stream_name":"stderr","time":3193.690025419,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3222.443326106,"data":"SOURCE_GEN 848 / 896\n"}
+,{"stream_name":"stderr","time":3222.448872795,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3222.646149853,"data":"SOURCE_GEN 848 / 896\n"}
+,{"stream_name":"stderr","time":3222.650586327,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":3222.650606836,"data":"\n"}
+,{"stream_name":"stderr","time":3222.65061345,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3251.374040569,"data":"SOURCE_GEN 856 / 896\n"}
+,{"stream_name":"stderr","time":3251.380734226,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3251.584238812,"data":"SOURCE_GEN 856 / 896\n"}
+,{"stream_name":"stderr","time":3251.585204952,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":3251.585223465,"data":"\n"}
+,{"stream_name":"stderr","time":3251.585227346,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3280.260083479,"data":"SOURCE_GEN 864 / 896\n"}
+,{"stream_name":"stderr","time":3280.265719231,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3280.463588,"data":"SOURCE_GEN 864 / 896\n"}
+,{"stream_name":"stderr","time":3280.468533524,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":3280.4685549,"data":"\n"}
+,{"stream_name":"stderr","time":3280.468559409,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3309.133482552,"data":"SOURCE_GEN 872 / 896\n"}
+,{"stream_name":"stderr","time":3309.135785824,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3309.340657197,"data":"SOURCE_GEN 872 / 896\n"}
+,{"stream_name":"stderr","time":3309.341558017,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":3309.341581324,"data":"\n"}
+,{"stream_name":"stderr","time":3309.341587898,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3338.005287107,"data":"SOURCE_GEN 880 / 896\n"}
+,{"stream_name":"stderr","time":3338.010582696,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3338.207721146,"data":"SOURCE_GEN 880 / 896\n"}
+,{"stream_name":"stderr","time":3338.2128512,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":3338.212874275,"data":"\n"}
+,{"stream_name":"stderr","time":3338.212880468,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3366.941058381,"data":"SOURCE_GEN 888 / 896\n"}
+,{"stream_name":"stderr","time":3366.946534501,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3367.151118483,"data":"SOURCE_GEN 888 / 896\n"}
+,{"stream_name":"stderr","time":3367.152071172,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stderr","time":3367.15209659,"data":"\n"}
+,{"stream_name":"stderr","time":3367.15210347,"data":"The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.\n"}
+,{"stream_name":"stdout","time":3395.87380702,"data":"SOURCE_GEN 896 / 896\n"}
+,{"stream_name":"stdout","time":3396.076161916,"data":"SOURCE_GEN 896 / 896\n"}
+,{"stream_name":"stdout","time":3767.267323881,"data":"PROBE s0_a {\"val_accuracy\": 0.703125, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3767.357754425,"data":"PROBE s0_b {\"val_accuracy\": 0.46875, \"lambda\": 0.01}\n"}
+,{"stream_name":"stdout","time":3767.447078645,"data":"PROBE s0_c {\"val_accuracy\": 0.7890625, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3767.508953426,"data":"PROBE s0_a {\"val_accuracy\": 0.703125, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3767.508982218,"data":"PROBE s0_b {\"val_accuracy\": 0.46875, \"lambda\": 0.01}\n"}
+,{"stream_name":"stdout","time":3767.508987782,"data":"PROBE s0_c {\"val_accuracy\": 0.7890625, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3767.556505366,"data":"PROBE s1_a {\"val_accuracy\": 0.5390625, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3767.648785439,"data":"PROBE s1_b {\"val_accuracy\": 0.453125, \"lambda\": 0.01}\n"}
+,{"stream_name":"stdout","time":3767.740831208,"data":"PROBE s1_c {\"val_accuracy\": 0.7734375, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3767.759277801,"data":"PROBE s1_a {\"val_accuracy\": 0.5390625, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3767.759309817,"data":"PROBE s1_b {\"val_accuracy\": 0.453125, \"lambda\": 0.01}\n"}
+,{"stream_name":"stdout","time":3767.759315233,"data":"PROBE s1_c {\"val_accuracy\": 0.7734375, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3767.833993913,"data":"PROBE s2_a {\"val_accuracy\": 0.5390625, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3767.928612478,"data":"PROBE s2_b {\"val_accuracy\": 0.28125, \"lambda\": 0.01}\n"}
+,{"stream_name":"stdout","time":3768.022302115,"data":"PROBE s2_c {\"val_accuracy\": 0.765625, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3768.037818197,"data":"PROBE s2_a {\"val_accuracy\": 0.5390625, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3768.037848265,"data":"PROBE s2_b {\"val_accuracy\": 0.28125, \"lambda\": 0.01}\n"}
+,{"stream_name":"stdout","time":3768.037876493,"data":"PROBE s2_c {\"val_accuracy\": 0.765625, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3768.116691044,"data":"PROBE s3_a {\"val_accuracy\": 0.5390625, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3768.207946535,"data":"PROBE s3_b {\"val_accuracy\": 0.28125, \"lambda\": 0.01}\n"}
+,{"stream_name":"stdout","time":3768.29877915,"data":"PROBE s3_c {\"val_accuracy\": 0.4453125, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3768.323361385,"data":"PROBE s3_a {\"val_accuracy\": 0.5390625, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3768.323392061,"data":"PROBE s3_b {\"val_accuracy\": 0.28125, \"lambda\": 0.01}\n"}
+,{"stream_name":"stdout","time":3768.323414879,"data":"PROBE s3_c {\"val_accuracy\": 0.4453125, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3768.391221463,"data":"PROBE s4_a {\"val_accuracy\": 0.4296875, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3768.480567293,"data":"PROBE s4_b {\"val_accuracy\": 0.359375, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3768.57060012,"data":"PROBE s4_c {\"val_accuracy\": 0.5390625, \"lambda\": 0.1}\n"}
+,{"stream_name":"stdout","time":3768.594100195,"data":"PROBE s4_a {\"val_accuracy\": 0.4296875, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3768.59413283,"data":"PROBE s4_b {\"val_accuracy\": 0.359375, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3768.594138433,"data":"PROBE s4_c {\"val_accuracy\": 0.5390625, \"lambda\": 0.1}\n"}
+,{"stream_name":"stdout","time":3768.664018329,"data":"PROBE s5_a {\"val_accuracy\": 0.4609375, \"lambda\": 0.01}\n"}
+,{"stream_name":"stdout","time":3768.756833707,"data":"PROBE s5_b {\"val_accuracy\": 0.5078125, \"lambda\": 0.1}\n"}
+,{"stream_name":"stdout","time":3768.848091634,"data":"PROBE s5_c {\"val_accuracy\": 0.6328125, \"lambda\": 0.1}\n"}
+,{"stream_name":"stdout","time":3768.866913108,"data":"PROBE s5_a {\"val_accuracy\": 0.4609375, \"lambda\": 0.01}\n"}
+,{"stream_name":"stdout","time":3768.866943273,"data":"PROBE s5_b {\"val_accuracy\": 0.5078125, \"lambda\": 0.1}\n"}
+,{"stream_name":"stdout","time":3768.866947801,"data":"PROBE s5_c {\"val_accuracy\": 0.6328125, \"lambda\": 0.1}\n"}
+,{"stream_name":"stdout","time":3768.946233296,"data":"PROBE s6_a {\"val_accuracy\": 0.6015625, \"lambda\": 0.01}\n"}
+,{"stream_name":"stdout","time":3769.040119981,"data":"PROBE s6_b {\"val_accuracy\": 0.5234375, \"lambda\": 0.01}\n"}
+,{"stream_name":"stdout","time":3769.1320678,"data":"PROBE s6_c {\"val_accuracy\": 0.71875, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3769.150442856,"data":"PROBE s6_a {\"val_accuracy\": 0.6015625, \"lambda\": 0.01}\n"}
+,{"stream_name":"stdout","time":3769.150472559,"data":"PROBE s6_b {\"val_accuracy\": 0.5234375, \"lambda\": 0.01}\n"}
+,{"stream_name":"stdout","time":3769.150477308,"data":"PROBE s6_c {\"val_accuracy\": 0.71875, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3769.224552455,"data":"PROBE s7_a {\"val_accuracy\": 0.6875, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3769.315190568,"data":"PROBE s7_b {\"val_accuracy\": 0.65625, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3769.404621156,"data":"PROBE s7_c {\"val_accuracy\": 0.8515625, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3769.427976986,"data":"PROBE s7_a {\"val_accuracy\": 0.6875, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3769.428008208,"data":"PROBE s7_b {\"val_accuracy\": 0.65625, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3769.428012708,"data":"PROBE s7_c {\"val_accuracy\": 0.8515625, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3769.498241523,"data":"PROBE s8_a {\"val_accuracy\": 0.84375, \"lambda\": 0.01}\n"}
+,{"stream_name":"stdout","time":3769.589819567,"data":"PROBE s8_b {\"val_accuracy\": 0.9765625, \"lambda\": 0.01}\n"}
+,{"stream_name":"stdout","time":3769.68246927,"data":"PROBE s8_c {\"val_accuracy\": 1.0, \"lambda\": 0.001}\n"}
+,{"stream_name":"stdout","time":3769.700563021,"data":"PROBE s8_a {\"val_accuracy\": 0.84375, \"lambda\": 0.01}\n"}
+,{"stream_name":"stdout","time":3769.700584688,"data":"PROBE s8_b {\"val_accuracy\": 0.9765625, \"lambda\": 0.01}\n"}
+,{"stream_name":"stdout","time":3769.700588703,"data":"PROBE s8_c {\"val_accuracy\": 1.0, \"lambda\": 0.001}\n"}
+,{"stream_name":"stderr","time":3772.726316881,"data":"\rFetching 2 files:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rFetching 2 files:   0%|          | 0/2 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":3781.345330595,"data":"\rFetching 2 files:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rFetching 2 files:  50%|█████     | 1/2 [00:08\u003c00:08,  8.82s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:08\u003c00:00,  4.41s/it]\n"}
+,{"stream_name":"stderr","time":3781.548875032,"data":"\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rFetching 2 files:  50%|█████     | 1/2 [00:08\u003c00:08,  8.82s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:08\u003c00:00,  4.41s/it]\n"}
+,{"stream_name":"stderr","time":3781.548905698,"data":"\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":3781.548923098,"data":"\rFetching 2 files:  50%|█████     | 1/2 [00:08\u003c00:08,  8.82s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:08\u003c00:00,  4.41s/it]\n"}
+,{"stream_name":"stderr","time":3784.124045427,"data":"\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:  50%|█████     | 1/2 [00:02\u003c00:02,  2.52s/it]\rLoading checkpoint shards:  50%|█████     | 1/2 [00:02\u003c00:02,  2.52s/it]\n"}
+,{"stream_name":"stderr","time":3795.765019132,"data":"\rLoading checkpoint shards:  50%|█████     | 1/2 [00:02\u003c00:02,  2.52s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:11\u003c00:00,  6.48s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:11\u003c00:00,  5.89s/it]\n"}
+,{"stream_name":"stderr","time":3795.765040565,"data":"\rLoading checkpoint shards: 100%|██████████| 2/2 [00:11\u003c00:00,  6.48s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:11\u003c00:00,  5.89s/it]\n"}
+,{"stream_name":"stderr","time":3795.765047025,"data":"\n"}
+,{"stream_name":"stderr","time":3795.765052877,"data":"\rLoading checkpoint shards: 100%|██████████| 2/2 [00:11\u003c00:00,  6.48s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:11\u003c00:00,  5.89s/it]\n"}
+,{"stream_name":"stdout","time":3802.858448556,"data":"STAGE_A {\n"}
+,{"stream_name":"stdout","time":3802.858476257,"data":"  \"config\": {\n"}
+,{"stream_name":"stdout","time":3802.858480917,"data":"    \"seed\": 20261004,\n"}
+,{"stream_name":"stdout","time":3802.85849585,"data":"    \"pool_n\": 896,\n"}
+,{"stream_name":"stdout","time":3802.858499851,"data":"    \"train_n\": 512,\n"}
+,{"stream_name":"stdout","time":3802.858503716,"data":"    \"val_n\": 128,\n"}
+,{"stream_name":"stdout","time":3802.858507449,"data":"    \"test_n\": 256,\n"}
+,{"stream_name":"stdout","time":3802.858511305,"data":"    \"depth\": 8,\n"}
+,{"stream_name":"stdout","time":3802.858515201,"data":"    \"max_trace_tokens\": 420,\n"}
+,{"stream_name":"stdout","time":3802.858519177,"data":"    \"source_batch\": 8,\n"}
+,{"stream_name":"stdout","time":3802.858523389,"data":"    \"receiver_batch\": 32,\n"}
+,{"stream_name":"stdout","time":3802.85852734,"data":"    \"out_dir\": \"/kaggle/working\"\n"}
+,{"stream_name":"stdout","time":3802.858531424,"data":"  },\n"}
+,{"stream_name":"stdout","time":3802.858535319,"data":"  \"source_model\": \"Qwen/Qwen3-4B\",\n"}
+,{"stream_name":"stdout","time":3802.858539397,"data":"  \"receiver_model\": \"Qwen/Qwen3-1.7B\",\n"}
+,{"stream_name":"stdout","time":3802.858543233,"data":"  \"source_layers\": [\n"}
+,{"stream_name":"stdout","time":3802.858547148,"data":"    4,\n"}
+,{"stream_name":"stdout","time":3802.858550981,"data":"    8,\n"}
+,{"stream_name":"stdout","time":3802.858554758,"data":"    12,\n"}
+,{"stream_name":"stdout","time":3802.85855856,"data":"    16,\n"}
+,{"stream_name":"stdout","time":3802.858562285,"data":"    20,\n"}
+,{"stream_name":"stdout","time":3802.858565992,"data":"    24,\n"}
+,{"stream_name":"stdout","time":3802.858569878,"data":"    28,\n"}
+,{"stream_name":"stdout","time":3802.85857358,"data":"    32,\n"}
+,{"stream_name":"stdout","time":3802.858577217,"data":"    36\n"}
+,{"stream_name":"stdout","time":3802.858581022,"data":"  ],\n"}
+,{"stream_name":"stdout","time":3802.858584774,"data":"  \"source_gates\": {\n"}
+,{"stream_name":"stdout","time":3802.858588501,"data":"    \"pool_parse_rate\": 1.0,\n"}
+,{"stream_name":"stdout","time":3802.858592366,"data":"    \"pool_checkpoint_marker_rate\": 1.0,\n"}
+,{"stream_name":"stdout","time":3802.858607914,"data":"    \"pool_complete_parse_and_checkpoint_rate\": 1.0,\n"}
+,{"stream_name":"stdout","time":3802.858611108,"data":"    \"selected_n\": 896,\n"}
+,{"stream_name":"stdout","time":3802.858614483,"data":"    \"source_belief_accuracy_all_coordinates\": 0.9693700396825397,\n"}
+,{"stream_name":"stdout","time":3802.85861767,"data":"    \"final_strict_triple_accuracy\": 0.8895089285714286,\n"}
+,{"stream_name":"stdout","time":3802.858620756,"data":"    \"mistake_instances_all_selected\": 741,\n"}
+,{"stream_name":"stdout","time":3802.858623771,"data":"    \"mistake_episodes_all_selected\": 132\n"}
+,{"stream_name":"stdout","time":3802.858626834,"data":"  },\n"}
+,{"stream_name":"stdout","time":3802.858629741,"data":"  \"decodability\": {\n"}
+,{"stream_name":"stdout","time":3802.858632763,"data":"    \"n_properties\": 27,\n"}
+,{"stream_name":"stdout","time":3802.858635792,"data":"    \"passing_ge_80\": 4,\n"}
+,{"stream_name":"stdout","time":3802.858638936,"data":"    \"passing_properties\": [\n"}
+,{"stream_name":"stdout","time":3802.858642363,"data":"      \"s7_c\",\n"}
+,{"stream_name":"stdout","time":3802.858645408,"data":"      \"s8_a\",\n"}
+,{"stream_name":"stdout","time":3802.858648343,"data":"      \"s8_b\",\n"}
+,{"stream_name":"stdout","time":3802.858651386,"data":"      \"s8_c\"\n"}
+,{"stream_name":"stdout","time":3802.858654555,"data":"    ],\n"}
+,{"stream_name":"stdout","time":3802.858657458,"data":"    \"map\": {\n"}
+,{"stream_name":"stdout","time":3802.858660451,"data":"      \"s0_a\": {\n"}
+,{"stream_name":"stdout","time":3802.858679733,"data":"        \"val_accuracy\": 0.703125,\n"}
+,{"stream_name":"stdout","time":3802.858683143,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3802.858687378,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858692333,"data":"      \"s0_b\": {\n"}
+,{"stream_name":"stdout","time":3802.858696403,"data":"        \"val_accuracy\": 0.46875,\n"}
+,{"stream_name":"stdout","time":3802.858700054,"data":"        \"lambda\": 0.01\n"}
+,{"stream_name":"stdout","time":3802.858703077,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858706151,"data":"      \"s0_c\": {\n"}
+,{"stream_name":"stdout","time":3802.8587090729998,"data":"        \"val_accuracy\": 0.7890625,\n"}
+,{"stream_name":"stdout","time":3802.858712087,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3802.858715244,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858718078,"data":"      \"s1_a\": {\n"}
+,{"stream_name":"stdout","time":3802.858720972,"data":"        \"val_accuracy\": 0.5390625,\n"}
+,{"stream_name":"stdout","time":3802.858724232,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3802.858727323,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858730094,"data":"      \"s1_b\": {\n"}
+,{"stream_name":"stdout","time":3802.858733063,"data":"        \"val_accuracy\": 0.453125,\n"}
+,{"stream_name":"stdout","time":3802.858736084,"data":"        \"lambda\": 0.01\n"}
+,{"stream_name":"stdout","time":3802.858739099,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858742006,"data":"      \"s1_c\": {\n"}
+,{"stream_name":"stdout","time":3802.858744941,"data":"        \"val_accuracy\": 0.7734375,\n"}
+,{"stream_name":"stdout","time":3802.858747999,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3802.858751183,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858754101,"data":"      \"s2_a\": {\n"}
+,{"stream_name":"stdout","time":3802.858757062,"data":"        \"val_accuracy\": 0.5390625,\n"}
+,{"stream_name":"stdout","time":3802.85876431,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3802.858767632,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858770514,"data":"      \"s2_b\": {\n"}
+,{"stream_name":"stdout","time":3802.858773521,"data":"        \"val_accuracy\": 0.28125,\n"}
+,{"stream_name":"stdout","time":3802.858776559,"data":"        \"lambda\": 0.01\n"}
+,{"stream_name":"stdout","time":3802.858779656,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.85878277,"data":"      \"s2_c\": {\n"}
+,{"stream_name":"stdout","time":3802.858786173,"data":"        \"val_accuracy\": 0.765625,\n"}
+,{"stream_name":"stdout","time":3802.858789154,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3802.858792181,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858795414,"data":"      \"s3_a\": {\n"}
+,{"stream_name":"stdout","time":3802.858798573,"data":"        \"val_accuracy\": 0.5390625,\n"}
+,{"stream_name":"stdout","time":3802.858801541,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3802.85880478,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858807588,"data":"      \"s3_b\": {\n"}
+,{"stream_name":"stdout","time":3802.858810679,"data":"        \"val_accuracy\": 0.28125,\n"}
+,{"stream_name":"stdout","time":3802.858813942,"data":"        \"lambda\": 0.01\n"}
+,{"stream_name":"stdout","time":3802.858817437,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858820346,"data":"      \"s3_c\": {\n"}
+,{"stream_name":"stdout","time":3802.858823665,"data":"        \"val_accuracy\": 0.4453125,\n"}
+,{"stream_name":"stdout","time":3802.858826626,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3802.858829557,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858832501,"data":"      \"s4_a\": {\n"}
+,{"stream_name":"stdout","time":3802.858842194,"data":"        \"val_accuracy\": 0.4296875,\n"}
+,{"stream_name":"stdout","time":3802.858845212,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3802.858848433,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858851309,"data":"      \"s4_b\": {\n"}
+,{"stream_name":"stdout","time":3802.858854381,"data":"        \"val_accuracy\": 0.359375,\n"}
+,{"stream_name":"stdout","time":3802.858857293,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3802.858860447,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858863438,"data":"      \"s4_c\": {\n"}
+,{"stream_name":"stdout","time":3802.858866416,"data":"        \"val_accuracy\": 0.5390625,\n"}
+,{"stream_name":"stdout","time":3802.858869384,"data":"        \"lambda\": 0.1\n"}
+,{"stream_name":"stdout","time":3802.858872391,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858875261,"data":"      \"s5_a\": {\n"}
+,{"stream_name":"stdout","time":3802.858878249,"data":"        \"val_accuracy\": 0.4609375,\n"}
+,{"stream_name":"stdout","time":3802.858881257,"data":"        \"lambda\": 0.01\n"}
+,{"stream_name":"stdout","time":3802.858884281,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858887073,"data":"      \"s5_b\": {\n"}
+,{"stream_name":"stdout","time":3802.858890042,"data":"        \"val_accuracy\": 0.5078125,\n"}
+,{"stream_name":"stdout","time":3802.85889338,"data":"        \"lambda\": 0.1\n"}
+,{"stream_name":"stdout","time":3802.858896422,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858899259,"data":"      \"s5_c\": {\n"}
+,{"stream_name":"stdout","time":3802.858902276,"data":"        \"val_accuracy\": 0.6328125,\n"}
+,{"stream_name":"stdout","time":3802.858905292,"data":"        \"lambda\": 0.1\n"}
+,{"stream_name":"stdout","time":3802.858911318,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.8589144,"data":"      \"s6_a\": {\n"}
+,{"stream_name":"stdout","time":3802.85891739,"data":"        \"val_accuracy\": 0.6015625,\n"}
+,{"stream_name":"stdout","time":3802.858920428,"data":"        \"lambda\": 0.01\n"}
+,{"stream_name":"stdout","time":3802.858923486,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858926431,"data":"      \"s6_b\": {\n"}
+,{"stream_name":"stdout","time":3802.858929444,"data":"        \"val_accuracy\": 0.5234375,\n"}
+,{"stream_name":"stdout","time":3802.858932607,"data":"        \"lambda\": 0.01\n"}
+,{"stream_name":"stdout","time":3802.858935743,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858939305,"data":"      \"s6_c\": {\n"}
+,{"stream_name":"stdout","time":3802.858942595,"data":"        \"val_accuracy\": 0.71875,\n"}
+,{"stream_name":"stdout","time":3802.858945809,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3802.85894877,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858951698,"data":"      \"s7_a\": {\n"}
+,{"stream_name":"stdout","time":3802.858954677,"data":"        \"val_accuracy\": 0.6875,\n"}
+,{"stream_name":"stdout","time":3802.85895769,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3802.858960643,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858963505,"data":"      \"s7_b\": {\n"}
+,{"stream_name":"stdout","time":3802.858966537,"data":"        \"val_accuracy\": 0.65625,\n"}
+,{"stream_name":"stdout","time":3802.85896958,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3802.858972519,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858975404,"data":"      \"s7_c\": {\n"}
+,{"stream_name":"stdout","time":3802.858978285,"data":"        \"val_accuracy\": 0.8515625,\n"}
+,{"stream_name":"stdout","time":3802.858981183,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3802.858984178,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858987078,"data":"      \"s8_a\": {\n"}
+,{"stream_name":"stdout","time":3802.858989945,"data":"        \"val_accuracy\": 0.84375,\n"}
+,{"stream_name":"stdout","time":3802.858993083,"data":"        \"lambda\": 0.01\n"}
+,{"stream_name":"stdout","time":3802.858996296,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.858999182,"data":"      \"s8_b\": {\n"}
+,{"stream_name":"stdout","time":3802.85900266,"data":"        \"val_accuracy\": 0.9765625,\n"}
+,{"stream_name":"stdout","time":3802.859005606,"data":"        \"lambda\": 0.01\n"}
+,{"stream_name":"stdout","time":3802.859008586,"data":"      },\n"}
+,{"stream_name":"stdout","time":3802.859011411,"data":"      \"s8_c\": {\n"}
+,{"stream_name":"stdout","time":3802.859014424,"data":"        \"val_accuracy\": 1.0,\n"}
+,{"stream_name":"stdout","time":3802.85901747,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3802.85902058,"data":"      }\n"}
+,{"stream_name":"stdout","time":3802.859023505,"data":"    },\n"}
+,{"stream_name":"stdout","time":3802.859026448,"data":"    \"sealed_test_mistake_instances_on_passing_properties\": 63,\n"}
+,{"stream_name":"stdout","time":3802.85902943,"data":"    \"sealed_test_mistake_episodes_on_passing_properties\": 31\n"}
+,{"stream_name":"stdout","time":3802.859032915,"data":"  },\n"}
+,{"stream_name":"stdout","time":3802.859035729,"data":"  \"receiver_probe_gate\": {\n"}
+,{"stream_name":"stdout","time":3802.859038838,"data":"    \"equality\": {\n"}
+,{"stream_name":"stdout","time":3802.859041793,"data":"      \"n\": 256,\n"}
+,{"stream_name":"stdout","time":3802.859048318,"data":"      \"accuracy\": 0.9296875\n"}
+,{"stream_name":"stdout","time":3802.859051528,"data":"    },\n"}
+,{"stream_name":"stdout","time":3802.859054457,"data":"    \"shift_plus_1\": {\n"}
+,{"stream_name":"stdout","time":3802.859057512,"data":"      \"n\": 256,\n"}
+,{"stream_name":"stdout","time":3802.85906056,"data":"      \"accuracy\": 0.8125\n"}
+,{"stream_name":"stdout","time":3802.859063504,"data":"    }\n"}
+,{"stream_name":"stdout","time":3802.85906654,"data":"  },\n"}
+,{"stream_name":"stdout","time":3802.85906948,"data":"  \"stage_a_pass\": false\n"}
+,{"stream_name":"stdout","time":3802.859072485,"data":"}\n"}
+,{"stream_name":"stdout","time":3803.069429191,"data":"STAGE_A {\n"}
+,{"stream_name":"stdout","time":3803.069455056,"data":"  \"config\": {\n"}
+,{"stream_name":"stdout","time":3803.06945946,"data":"    \"seed\": 20261004,\n"}
+,{"stream_name":"stdout","time":3803.069464442,"data":"    \"pool_n\": 896,\n"}
+,{"stream_name":"stdout","time":3803.069472662,"data":"    \"train_n\": 512,\n"}
+,{"stream_name":"stdout","time":3803.069476399,"data":"    \"val_n\": 128,\n"}
+,{"stream_name":"stdout","time":3803.069479014,"data":"    \"test_n\": 256,\n"}
+,{"stream_name":"stdout","time":3803.069481215,"data":"    \"depth\": 8,\n"}
+,{"stream_name":"stdout","time":3803.069483374,"data":"    \"max_trace_tokens\": 420,\n"}
+,{"stream_name":"stdout","time":3803.069485682,"data":"    \"source_batch\": 8,\n"}
+,{"stream_name":"stdout","time":3803.069487853,"data":"    \"receiver_batch\": 32,\n"}
+,{"stream_name":"stdout","time":3803.069490161,"data":"    \"out_dir\": \"/kaggle/working\"\n"}
+,{"stream_name":"stdout","time":3803.069492432,"data":"  },\n"}
+,{"stream_name":"stdout","time":3803.069494525,"data":"  \"source_model\": \"Qwen/Qwen3-4B\",\n"}
+,{"stream_name":"stdout","time":3803.069496795,"data":"  \"receiver_model\": \"Qwen/Qwen3-1.7B\",\n"}
+,{"stream_name":"stdout","time":3803.069499095,"data":"  \"source_layers\": [\n"}
+,{"stream_name":"stdout","time":3803.069501227,"data":"    4,\n"}
+,{"stream_name":"stdout","time":3803.069503285,"data":"    8,\n"}
+,{"stream_name":"stdout","time":3803.06950567,"data":"    12,\n"}
+,{"stream_name":"stdout","time":3803.069507798,"data":"    16,\n"}
+,{"stream_name":"stdout","time":3803.069509927,"data":"    20,\n"}
+,{"stream_name":"stdout","time":3803.069511959,"data":"    24,\n"}
+,{"stream_name":"stdout","time":3803.069513997,"data":"    28,\n"}
+,{"stream_name":"stdout","time":3803.069516111,"data":"    32,\n"}
+,{"stream_name":"stdout","time":3803.069518138,"data":"    36\n"}
+,{"stream_name":"stdout","time":3803.069520265,"data":"  ],\n"}
+,{"stream_name":"stdout","time":3803.069522497,"data":"  \"source_gates\": {\n"}
+,{"stream_name":"stdout","time":3803.069524636,"data":"    \"pool_parse_rate\": 1.0,\n"}
+,{"stream_name":"stdout","time":3803.069526829,"data":"    \"pool_checkpoint_marker_rate\": 1.0,\n"}
+,{"stream_name":"stdout","time":3803.069529019,"data":"    \"pool_complete_parse_and_checkpoint_rate\": 1.0,\n"}
+,{"stream_name":"stdout","time":3803.069531202,"data":"    \"selected_n\": 896,\n"}
+,{"stream_name":"stdout","time":3803.069533387,"data":"    \"source_belief_accuracy_all_coordinates\": 0.9693700396825397,\n"}
+,{"stream_name":"stdout","time":3803.069535681,"data":"    \"final_strict_triple_accuracy\": 0.8895089285714286,\n"}
+,{"stream_name":"stdout","time":3803.069537896,"data":"    \"mistake_instances_all_selected\": 741,\n"}
+,{"stream_name":"stdout","time":3803.069540068,"data":"    \"mistake_episodes_all_selected\": 132\n"}
+,{"stream_name":"stdout","time":3803.069550541,"data":"  },\n"}
+,{"stream_name":"stdout","time":3803.069552675,"data":"  \"decodability\": {\n"}
+,{"stream_name":"stdout","time":3803.069554791,"data":"    \"n_properties\": 27,\n"}
+,{"stream_name":"stdout","time":3803.069556912,"data":"    \"passing_ge_80\": 4,\n"}
+,{"stream_name":"stdout","time":3803.069559022,"data":"    \"passing_properties\": [\n"}
+,{"stream_name":"stdout","time":3803.069561162,"data":"      \"s7_c\",\n"}
+,{"stream_name":"stdout","time":3803.069563307,"data":"      \"s8_a\",\n"}
+,{"stream_name":"stdout","time":3803.069565427,"data":"      \"s8_b\",\n"}
+,{"stream_name":"stdout","time":3803.069567505,"data":"      \"s8_c\"\n"}
+,{"stream_name":"stdout","time":3803.069569595,"data":"    ],\n"}
+,{"stream_name":"stdout","time":3803.069571625,"data":"    \"map\": {\n"}
+,{"stream_name":"stdout","time":3803.069573733,"data":"      \"s0_a\": {\n"}
+,{"stream_name":"stdout","time":3803.069575848,"data":"        \"val_accuracy\": 0.703125,\n"}
+,{"stream_name":"stdout","time":3803.069578069,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3803.06958022,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069582306,"data":"      \"s0_b\": {\n"}
+,{"stream_name":"stdout","time":3803.069584418,"data":"        \"val_accuracy\": 0.46875,\n"}
+,{"stream_name":"stdout","time":3803.069586601,"data":"        \"lambda\": 0.01\n"}
+,{"stream_name":"stdout","time":3803.06958908,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069591145,"data":"      \"s0_c\": {\n"}
+,{"stream_name":"stdout","time":3803.069593243,"data":"        \"val_accuracy\": 0.7890625,\n"}
+,{"stream_name":"stdout","time":3803.069595409,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3803.0695976,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069599644,"data":"      \"s1_a\": {\n"}
+,{"stream_name":"stdout","time":3803.069601749,"data":"        \"val_accuracy\": 0.5390625,\n"}
+,{"stream_name":"stdout","time":3803.069603867,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3803.069606049,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069608085,"data":"      \"s1_b\": {\n"}
+,{"stream_name":"stdout","time":3803.069610186,"data":"        \"val_accuracy\": 0.453125,\n"}
+,{"stream_name":"stdout","time":3803.069612334,"data":"        \"lambda\": 0.01\n"}
+,{"stream_name":"stdout","time":3803.06961451,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069616539,"data":"      \"s1_c\": {\n"}
+,{"stream_name":"stdout","time":3803.069618844,"data":"        \"val_accuracy\": 0.7734375,\n"}
+,{"stream_name":"stdout","time":3803.069620962,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3803.069623142,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069625167,"data":"      \"s2_a\": {\n"}
+,{"stream_name":"stdout","time":3803.069627252,"data":"        \"val_accuracy\": 0.5390625,\n"}
+,{"stream_name":"stdout","time":3803.069629361,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3803.069631444,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069633473,"data":"      \"s2_b\": {\n"}
+,{"stream_name":"stdout","time":3803.069635567,"data":"        \"val_accuracy\": 0.28125,\n"}
+,{"stream_name":"stdout","time":3803.069637704,"data":"        \"lambda\": 0.01\n"}
+,{"stream_name":"stdout","time":3803.069639808,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069641855,"data":"      \"s2_c\": {\n"}
+,{"stream_name":"stdout","time":3803.069647255,"data":"        \"val_accuracy\": 0.765625,\n"}
+,{"stream_name":"stdout","time":3803.069651855,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3803.069654181,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069656226,"data":"      \"s3_a\": {\n"}
+,{"stream_name":"stdout","time":3803.069658325,"data":"        \"val_accuracy\": 0.5390625,\n"}
+,{"stream_name":"stdout","time":3803.06966044,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3803.069662605,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069695593,"data":"      \"s3_b\": {\n"}
+,{"stream_name":"stdout","time":3803.069702789,"data":"        \"val_accuracy\": 0.28125,\n"}
+,{"stream_name":"stdout","time":3803.069706892,"data":"        \"lambda\": 0.01\n"}
+,{"stream_name":"stdout","time":3803.069710649,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069714148,"data":"      \"s3_c\": {\n"}
+,{"stream_name":"stdout","time":3803.069717385,"data":"        \"val_accuracy\": 0.4453125,\n"}
+,{"stream_name":"stdout","time":3803.069720818,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3803.069724238,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069727942,"data":"      \"s4_a\": {\n"}
+,{"stream_name":"stdout","time":3803.069731648,"data":"        \"val_accuracy\": 0.4296875,\n"}
+,{"stream_name":"stdout","time":3803.069734954,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3803.069743428,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069747808,"data":"      \"s4_b\": {\n"}
+,{"stream_name":"stdout","time":3803.069750065,"data":"        \"val_accuracy\": 0.359375,\n"}
+,{"stream_name":"stdout","time":3803.069752243,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3803.069754371,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069756455,"data":"      \"s4_c\": {\n"}
+,{"stream_name":"stdout","time":3803.069758717,"data":"        \"val_accuracy\": 0.5390625,\n"}
+,{"stream_name":"stdout","time":3803.069760853,"data":"        \"lambda\": 0.1\n"}
+,{"stream_name":"stdout","time":3803.069762955,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069764991,"data":"      \"s5_a\": {\n"}
+,{"stream_name":"stdout","time":3803.069767155,"data":"        \"val_accuracy\": 0.4609375,\n"}
+,{"stream_name":"stdout","time":3803.069769272,"data":"        \"lambda\": 0.01\n"}
+,{"stream_name":"stdout","time":3803.069771401,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.06977344,"data":"      \"s5_b\": {\n"}
+,{"stream_name":"stdout","time":3803.069775604,"data":"        \"val_accuracy\": 0.5078125,\n"}
+,{"stream_name":"stdout","time":3803.069777723,"data":"        \"lambda\": 0.1\n"}
+,{"stream_name":"stdout","time":3803.069779818,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069781899,"data":"      \"s5_c\": {\n"}
+,{"stream_name":"stdout","time":3803.069784061,"data":"        \"val_accuracy\": 0.6328125,\n"}
+,{"stream_name":"stdout","time":3803.069786167,"data":"        \"lambda\": 0.1\n"}
+,{"stream_name":"stdout","time":3803.06978826,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069790293,"data":"      \"s6_a\": {\n"}
+,{"stream_name":"stdout","time":3803.06979238,"data":"        \"val_accuracy\": 0.6015625,\n"}
+,{"stream_name":"stdout","time":3803.069794496,"data":"        \"lambda\": 0.01\n"}
+,{"stream_name":"stdout","time":3803.069796611,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069798663,"data":"      \"s6_b\": {\n"}
+,{"stream_name":"stdout","time":3803.069800746,"data":"        \"val_accuracy\": 0.5234375,\n"}
+,{"stream_name":"stdout","time":3803.069802866,"data":"        \"lambda\": 0.01\n"}
+,{"stream_name":"stdout","time":3803.069808366,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069810593,"data":"      \"s6_c\": {\n"}
+,{"stream_name":"stdout","time":3803.06981271,"data":"        \"val_accuracy\": 0.71875,\n"}
+,{"stream_name":"stdout","time":3803.069814839,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3803.069816953,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069818978,"data":"      \"s7_a\": {\n"}
+,{"stream_name":"stdout","time":3803.069821071,"data":"        \"val_accuracy\": 0.6875,\n"}
+,{"stream_name":"stdout","time":3803.069823194,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3803.069825286,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069827325,"data":"      \"s7_b\": {\n"}
+,{"stream_name":"stdout","time":3803.069829455,"data":"        \"val_accuracy\": 0.65625,\n"}
+,{"stream_name":"stdout","time":3803.069831584,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3803.069833685,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069835714,"data":"      \"s7_c\": {\n"}
+,{"stream_name":"stdout","time":3803.06983781,"data":"        \"val_accuracy\": 0.8515625,\n"}
+,{"stream_name":"stdout","time":3803.06983993,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3803.069842024,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069844136,"data":"      \"s8_a\": {\n"}
+,{"stream_name":"stdout","time":3803.069846235,"data":"        \"val_accuracy\": 0.84375,\n"}
+,{"stream_name":"stdout","time":3803.069848357,"data":"        \"lambda\": 0.01\n"}
+,{"stream_name":"stdout","time":3803.069850471,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069852505,"data":"      \"s8_b\": {\n"}
+,{"stream_name":"stdout","time":3803.069854615,"data":"        \"val_accuracy\": 0.9765625,\n"}
+,{"stream_name":"stdout","time":3803.069856737,"data":"        \"lambda\": 0.01\n"}
+,{"stream_name":"stdout","time":3803.069858838,"data":"      },\n"}
+,{"stream_name":"stdout","time":3803.069860888,"data":"      \"s8_c\": {\n"}
+,{"stream_name":"stdout","time":3803.069863174,"data":"        \"val_accuracy\": 1.0,\n"}
+,{"stream_name":"stdout","time":3803.069865291,"data":"        \"lambda\": 0.001\n"}
+,{"stream_name":"stdout","time":3803.069867393,"data":"      }\n"}
+,{"stream_name":"stdout","time":3803.069869443,"data":"    },\n"}
+,{"stream_name":"stdout","time":3803.069871485,"data":"    \"sealed_test_mistake_instances_on_passing_properties\": 63,\n"}
+,{"stream_name":"stdout","time":3803.06987372,"data":"    \"sealed_test_mistake_episodes_on_passing_properties\": 31\n"}
+,{"stream_name":"stdout","time":3803.06987595,"data":"  },\n"}
+,{"stream_name":"stdout","time":3803.069877965,"data":"  \"receiver_probe_gate\": {\n"}
+,{"stream_name":"stdout","time":3803.069880106,"data":"    \"equality\": {\n"}
+,{"stream_name":"stdout","time":3803.069882231,"data":"      \"n\": 256,\n"}
+,{"stream_name":"stdout","time":3803.06988434,"data":"      \"accuracy\": 0.9296875\n"}
+,{"stream_name":"stdout","time":3803.069886511,"data":"    },\n"}
+,{"stream_name":"stdout","time":3803.069889046,"data":"    \"shift_plus_1\": {\n"}
+,{"stream_name":"stdout","time":3803.069892411,"data":"      \"n\": 256,\n"}
+,{"stream_name":"stdout","time":3803.06989512,"data":"      \"accuracy\": 0.8125\n"}
+,{"stream_name":"stdout","time":3803.069897285,"data":"    }\n"}
+,{"stream_name":"stdout","time":3803.069899346,"data":"  },\n"}
+,{"stream_name":"stdout","time":3803.069901455,"data":"  \"stage_a_pass\": false\n"}
+,{"stream_name":"stdout","time":3803.069905515,"data":"}\n"}
+,{"stream_name":"stdout","time":3808.874262717,"data":"{\n"}
+,{"stream_name":"stdout","time":3808.874296043,"data":"  \"runner_git_blob\": \"5c6b4795b472b1b0f74c7ceabb64048e024a3dd6\",\n"}
+,{"stream_name":"stdout","time":3808.874302809,"data":"  \"PCS4V2_STAGE_A.json\": {\n"}
+,{"stream_name":"stdout","time":3808.874307175,"data":"    \"bytes\": 3518,\n"}
+,{"stream_name":"stdout","time":3808.874311302,"data":"    \"sha256\": \"f70d1ad0d61488f9f258299701f6ddb22f36c0808e6cf49374455a3069af294f\"\n"}
+,{"stream_name":"stdout","time":3808.874315624,"data":"  },\n"}
+,{"stream_name":"stdout","time":3808.874319514,"data":"  \"PCS4V2_SOURCE_TRACES.json\": {\n"}
+,{"stream_name":"stdout","time":3808.874323656,"data":"    \"bytes\": 590171,\n"}
+,{"stream_name":"stdout","time":3808.874327804,"data":"    \"sha256\": \"ccb67055227b6cae49cd290750e5c62687c39cdb901d6a03baff639f69e95bd2\"\n"}
+,{"stream_name":"stdout","time":3808.874332247,"data":"  },\n"}
+,{"stream_name":"stdout","time":3808.874336606,"data":"  \"PCS4V2_SOURCE_CACHE.pt\": {\n"}
+,{"stream_name":"stdout","time":3808.874340645,"data":"    \"bytes\": 42879613,\n"}
+,{"stream_name":"stdout","time":3808.874344492,"data":"    \"sha256\": \"3f2d3d3831426d2cbf4aeaf48a46a0bfc9993de4e392d2ebb5d357aeef7d1d4c\"\n"}
+,{"stream_name":"stdout","time":3808.874348446,"data":"  },\n"}
+,{"stream_name":"stdout","time":3808.874352561,"data":"  \"pcs4v2_source_preflight.py\": {\n"}
+,{"stream_name":"stdout","time":3808.874357252,"data":"    \"bytes\": 13696,\n"}
+,{"stream_name":"stdout","time":3808.874361583,"data":"    \"sha256\": \"e41f4b562c6ac444d8661bb547f3a9cd885d8c5e74f466d56acc7a64c146ac63\"\n"}
+,{"stream_name":"stdout","time":3808.874366031,"data":"  }\n"}
+,{"stream_name":"stdout","time":3808.874369625,"data":"}\n"}
+,{"stream_name":"stderr","time":3811.415435483,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3811.415467778,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3811.593906222,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3811.593931986,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3812.353307536,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":3812.488045902,"data":"[NbConvertApp] Writing 72062 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":3814.894078777,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3815.469813807,"data":"[NbConvertApp] Writing 389912 bytes to __results__.html\n"}
+]

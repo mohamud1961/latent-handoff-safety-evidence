@@ -1,0 +1,51 @@
+{
+  "regen_selected_episodes_reproduced_identically": 1.0,
+  "n_compared": 896,
+  "n_extras_parsed_located": 203,
+  "extras_with_ckpt_match": 203,
+  "extras_total_parsed": 203,
+  "enlarged_test_pool_size": 459,
+  "original_test_pool_size": 256,
+  "coverage_original_test_pool": {
+    "overall_ge1": 0.8450520833333334,
+    "overall_ge3": 0.5013020833333334,
+    "by_selector": {
+      "a": {
+        "ge1": 0.8359375,
+        "ge3": 0.46875
+      },
+      "b": {
+        "ge1": 0.828125,
+        "ge3": 0.5390625
+      },
+      "c": {
+        "ge1": 0.87109375,
+        "ge3": 0.49609375
+      }
+    }
+  },
+  "coverage_enlarged_test_pool": {
+    "overall_ge1": 0.9527959331880901,
+    "overall_ge3": 0.7262164124909223,
+    "by_selector": {
+      "a": {
+        "ge1": 0.9455337690631809,
+        "ge3": 0.7320261437908496
+      },
+      "b": {
+        "ge1": 0.954248366013072,
+        "ge3": 0.7015250544662309
+      },
+      "c": {
+        "ge1": 0.9586056644880174,
+        "ge3": 0.7450980392156863
+      }
+    }
+  },
+  "gate": {
+    "coverage_ge1_ge_90": true,
+    "coverage_ge3_ge_70": true
+  },
+  "seconds": 1968.9846286773682,
+  "coverage_gate_pass": true
+}

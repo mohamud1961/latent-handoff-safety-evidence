@@ -1,0 +1,50 @@
+{
+  "checks": {
+    "A_silent_accuracy_ge_80": true,
+    "source_silence_all": true,
+    "test_format_valid_at_least_95pct": true,
+    "test_parsed_ge_400": true,
+    "train_format_valid_at_least_95pct": true,
+    "val_format_valid_at_least_95pct": true
+  },
+  "enforced": true,
+  "failed": [],
+  "metrics": {
+    "A_accuracy_valid": 1.0,
+    "A_wrong_valid_n": 0,
+    "by_split": {
+      "test": {
+        "A_accuracy": 1.0,
+        "A_wrong_n": 0,
+        "format_valid_rate": 1.0,
+        "invalid_n": 0,
+        "n": 500,
+        "valid_n": 500
+      },
+      "train": {
+        "A_accuracy": 1.0,
+        "A_wrong_n": 0,
+        "format_valid_rate": 1.0,
+        "invalid_n": 0,
+        "n": 900,
+        "valid_n": 900
+      },
+      "val": {
+        "A_accuracy": 1.0,
+        "A_wrong_n": 0,
+        "format_valid_rate": 1.0,
+        "invalid_n": 0,
+        "n": 200,
+        "valid_n": 200
+      }
+    },
+    "format_valid_rate": 1.0,
+    "format_validity_threshold": 0.95,
+    "invalid_format_n": 0,
+    "n": 1600,
+    "silence_verified_rate": 1.0,
+    "valid_format_n": 1600
+  },
+  "parsed_test_n": 500,
+  "passed": true
+}

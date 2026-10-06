@@ -1,0 +1,182 @@
+{
+  "all": {
+    "delta_specific_fidelity_cluster_bootstrap": [
+      0.8512731481481481,
+      0.8318865740740741,
+      0.8700810185185185
+    ],
+    "excess_wrong_belief_fidelity": 0.837037037037037,
+    "mcnemar_fidelity_vs_wrong": {
+      "wrong0": {
+        "a_only_correct": 1974,
+        "b_only_correct": 10,
+        "p_two_sided_exact": 0.0
+      },
+      "wrong1": {
+        "a_only_correct": 1959,
+        "b_only_correct": 8,
+        "p_two_sided_exact": 0.0
+      },
+      "wrong2": {
+        "a_only_correct": 1972,
+        "b_only_correct": 3,
+        "p_two_sided_exact": 0.0
+      }
+    },
+    "n_records": 2304,
+    "n_states": 256,
+    "oracle_fidelity": 0.7634548611111112,
+    "oracle_objective": 0.7243923611111112,
+    "pcs_fidelity": 0.8741319444444444,
+    "pcs_follow_wrong_A": 0.8444444444444444,
+    "pcs_objective": 0.8272569444444444,
+    "random_fidelity": 0.11805555555555555,
+    "random_objective": 0.12022569444444445,
+    "readback_fidelity": 1.0,
+    "restart_fidelity": 0.12977430555555555,
+    "restart_objective": 0.1306423611111111,
+    "source_wrong_records": 135,
+    "source_wrong_states": 15,
+    "text_fidelity": 0.2660590277777778,
+    "text_objective": 0.2582465277777778,
+    "wrong0_fidelity": 0.021701388888888888,
+    "wrong0_objective": 0.033854166666666664,
+    "wrong1_fidelity": 0.02734375,
+    "wrong1_objective": 0.035590277777777776,
+    "wrong2_fidelity": 0.01953125,
+    "wrong2_objective": 0.03211805555555555,
+    "wrongmean_follow_wrong_A": 0.007407407407407408,
+    "zero_fidelity": 0.12065972222222222,
+    "zero_objective": 0.12196180555555555
+  },
+  "bridge_params": 7519617,
+  "classification": "PCS2B_POSITIVE_CONTROLLED_ONE_HOP",
+  "early_receiver_oracle_preflight": 0.86328125,
+  "frozen_checks": {
+    "future_fidelity_ge_50": true,
+    "heldout_state_specific_positive": true,
+    "pcs_beats_every_wrong": true,
+    "pcs_beats_random": true,
+    "pcs_beats_zero": true,
+    "pcs_minus_restart_ge_20pt": true,
+    "readback_ge_70": true,
+    "receiver_oracle_gate": true,
+    "source_exact_prefix_gate": true,
+    "source_objective_gate": true,
+    "source_parse_gate": true,
+    "source_predigit_gate": true,
+    "source_wrong_directional_fidelity": true,
+    "state_specific_ci_gt_0": true,
+    "state_specific_ge_10pt": true
+  },
+  "heldout_interventions": {
+    "delta_specific_fidelity_cluster_bootstrap": [
+      0.7322916666666667,
+      0.6973958333333333,
+      0.7661458333333333
+    ],
+    "excess_wrong_belief_fidelity": 0.7066666666666667,
+    "mcnemar_fidelity_vs_wrong": {
+      "wrong0": {
+        "a_only_correct": 950,
+        "b_only_correct": 10,
+        "p_two_sided_exact": 3.6253034999324684e-266
+      },
+      "wrong1": {
+        "a_only_correct": 935,
+        "b_only_correct": 8,
+        "p_two_sided_exact": 4.0842406252313986e-265
+      },
+      "wrong2": {
+        "a_only_correct": 948,
+        "b_only_correct": 3,
+        "p_two_sided_exact": 1.5062491806450527e-278
+      }
+    },
+    "n_records": 1280,
+    "n_states": 256,
+    "oracle_fidelity": 0.6953125,
+    "oracle_objective": 0.6625,
+    "pcs_fidelity": 0.7734375,
+    "pcs_follow_wrong_A": 0.72,
+    "pcs_objective": 0.7359375,
+    "random_fidelity": 0.1265625,
+    "random_objective": 0.1265625,
+    "readback_fidelity": 1.0,
+    "restart_fidelity": 0.1421875,
+    "restart_objective": 0.1421875,
+    "source_wrong_records": 75,
+    "source_wrong_states": 15,
+    "text_fidelity": 0.25625,
+    "text_objective": 0.24765625,
+    "wrong0_fidelity": 0.0390625,
+    "wrong0_objective": 0.0515625,
+    "wrong1_fidelity": 0.04921875,
+    "wrong1_objective": 0.0578125,
+    "wrong2_fidelity": 0.03515625,
+    "wrong2_objective": 0.0484375,
+    "wrongmean_follow_wrong_A": 0.013333333333333334,
+    "zero_fidelity": 0.1328125,
+    "zero_objective": 0.1296875
+  },
+  "receiver_model": "Qwen/Qwen3-1.7B",
+  "receiver_oracle_preflight": 0.830078125,
+  "source_gates": {
+    "exact_prefix_rate_pool_parsed": 1.0,
+    "parse_rate_pool": 1.0,
+    "predigit_agreement": 1.0,
+    "source_objective_pool_parsed": 0.94140625,
+    "source_objective_selected": 0.9386160714285714
+  },
+  "source_model": "Qwen/Qwen3-4B",
+  "train_interventions": {
+    "delta_specific_fidelity_cluster_bootstrap": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "excess_wrong_belief_fidelity": 1.0,
+    "mcnemar_fidelity_vs_wrong": {
+      "wrong0": {
+        "a_only_correct": 1024,
+        "b_only_correct": 0,
+        "p_two_sided_exact": 1.1125369292536007e-308
+      },
+      "wrong1": {
+        "a_only_correct": 1024,
+        "b_only_correct": 0,
+        "p_two_sided_exact": 1.1125369292536007e-308
+      },
+      "wrong2": {
+        "a_only_correct": 1024,
+        "b_only_correct": 0,
+        "p_two_sided_exact": 1.1125369292536007e-308
+      }
+    },
+    "n_records": 1024,
+    "n_states": 256,
+    "oracle_fidelity": 0.8486328125,
+    "oracle_objective": 0.8017578125,
+    "pcs_fidelity": 1.0,
+    "pcs_follow_wrong_A": 1.0,
+    "pcs_objective": 0.94140625,
+    "random_fidelity": 0.107421875,
+    "random_objective": 0.1123046875,
+    "readback_fidelity": 1.0,
+    "restart_fidelity": 0.1142578125,
+    "restart_objective": 0.1162109375,
+    "source_wrong_records": 60,
+    "source_wrong_states": 15,
+    "text_fidelity": 0.2783203125,
+    "text_objective": 0.271484375,
+    "wrong0_fidelity": 0.0,
+    "wrong0_objective": 0.01171875,
+    "wrong1_fidelity": 0.0,
+    "wrong1_objective": 0.0078125,
+    "wrong2_fidelity": 0.0,
+    "wrong2_objective": 0.01171875,
+    "wrongmean_follow_wrong_A": 0.0,
+    "zero_fidelity": 0.10546875,
+    "zero_objective": 0.1123046875
+  }
+}

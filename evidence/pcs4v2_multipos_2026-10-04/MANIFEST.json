@@ -1,0 +1,5 @@
+{"volume":"pcs-core-artifacts (profile modal-account-B)",
+ "features":{"path":"pcs4v2-multipos-2aedd7129e4e/PCS4V2_MULTIPOS_FEATURES.pt","sha256":"5a3648d1f563133159ac935833bc6ac76afd3595e69e7bb75c54e2435dc523a2","shape":[896,10,9,2560]},
+ "input_cache":"inputs/PCS4V2_SOURCE_CACHE.pt sha256 3f2d3d3831426d2cbf4aeaf48a46a0bfc9993de4e392d2ebb5d357aeef7d1d4c",
+ "runner_sha256":"e41f4b562c6ac444d8661bb547f3a9cd885d8c5e74f466d56acc7a64c146ac63",
+ "capture_script_sha256_used_for_features":"2aedd7129e4ec9f2cf3659d16c1b5da631df1c3f6304e949f78a8cd089426006"}

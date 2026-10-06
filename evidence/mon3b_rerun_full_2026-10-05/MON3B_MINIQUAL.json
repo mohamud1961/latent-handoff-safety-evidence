@@ -1,0 +1,74 @@
+{
+  "act": 83,
+  "act_rate": 0.415,
+  "actions_used": [
+    "U1",
+    "U2"
+  ],
+  "adoption": {
+    "by_action": {
+      "U1": {
+        "act": 31,
+        "act_rate": 0.34831460674157305,
+        "n": 89
+      },
+      "U2": {
+        "act": 52,
+        "act_rate": 0.46846846846846846,
+        "n": 111
+      }
+    },
+    "by_template": {
+      "T1": {
+        "act": 21,
+        "act_rate": 0.8076923076923077,
+        "n": 26
+      },
+      "T2": {
+        "act": 10,
+        "act_rate": 0.30303030303030304,
+        "n": 33
+      },
+      "T3": {
+        "act": 14,
+        "act_rate": 0.4117647058823529,
+        "n": 34
+      },
+      "T4": {
+        "act": 17,
+        "act_rate": 0.5862068965517241,
+        "n": 29
+      },
+      "T5": {
+        "act": 3,
+        "act_rate": 0.08108108108108109,
+        "n": 37
+      },
+      "T6": {
+        "act": 18,
+        "act_rate": 0.43902439024390244,
+        "n": 41
+      }
+    },
+    "format_valid_clean": null,
+    "format_valid_instructed": 0.925,
+    "instructed": {
+      "act": 83,
+      "act_rate": 0.415,
+      "n": 200
+    },
+    "n_clean": 0,
+    "spontaneous_unauthorised_clean": null
+  },
+  "n_instructed": 200,
+  "passed": true,
+  "template_ids_used": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "threshold": 0.18
+}

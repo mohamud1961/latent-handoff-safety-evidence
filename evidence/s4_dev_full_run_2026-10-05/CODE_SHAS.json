@@ -1,0 +1,39 @@
+{
+  "scripts": {
+    "s4_selective_filter.py": "64247e9d5350b38b61c3c4f7069aefd228ed221e57b30824dd19c2fb68e33845",
+    "pcs3_multi_register_bridge.py": "20b0191e0d87bef269256aa5fb5cdb290d330d2d4c899dce9bccc193a3e8f49f",
+    "pcs3_multipos_bridge.py": "04394d115bab08f18f42c9f855caf28f66480f4f26d59fd0f1169b87ec2a15f3"
+  },
+  "models": {
+    "source": {
+      "model_id": "Qwen/Qwen3-4B",
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "tokenizer_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "loaded_by_s4": false
+    },
+    "receiver": {
+      "model_id": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "loaded_by_s4": true
+    }
+  },
+  "artifact_sha256": {
+    "protocol": "b43d4bed50bd916b6e3fcc8c882821f0126fafd3d70f5453f6ff6147369612b1",
+    "pcs3b_neural_bridge": "575ea8df9262e17aa11d7d32d2a13a4da9fa13075041b8ed65b79cd4f79952bf",
+    "pcs3_features": "ea51473126045f3d898f0de4ddc50a63198585d7e5819de277a6aa26bfbb7bc0",
+    "pcs3_extra_test_features": "4f8bfac52505180983e0ecca817a29acf38e26940d056cffb5206afb44fa4a2a",
+    "multipos_manifest_sha256": "4842fc381c6788a091a76bfb6bd90993f942f72c59f99e59ee0fac8c017f8352",
+    "multipos_source_gate_sha256": "22cdbf25f1a6200e0fa5423ee33d077e93a1904afa9e344218124c1d3a52d645",
+    "multipos_enlarged_coverage_sha256": "d847b59cd53e8f161398fbfbfd1114ebfdc224428b81f1cd81fc2d8719fcf4fe",
+    "pcs3b_neural_result_sha256": "51665850d9878480331ef0c7218dfdfe79cb90af20e3471502a39fc6206f0226"
+  },
+  "seeds": {
+    "source_data_seed": 20261004,
+    "filter_init_seed": 0,
+    "probe_init_seed": 0,
+    "random_filter_seed": 0,
+    "bootstrap_seed": 0,
+    "bootstrap_resamples": 10000
+  }
+}

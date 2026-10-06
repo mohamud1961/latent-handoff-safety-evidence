@@ -1,0 +1,80 @@
+{
+  "beta_selection": {
+    "beta": 0.2,
+    "max_validation_drop": 0.02,
+    "status": "selected",
+    "validation_fidelity_drop": 0.01
+  },
+  "capacities_declared": [
+    1,
+    4,
+    16
+  ],
+  "d_noise_sigma_fraction": 0.1,
+  "d_pca_rank": 15,
+  "d_pca_retained_variance": 1.0,
+  "d_quant_bits": 4,
+  "frozen_transform_objective_and_training_checks": true,
+  "mode": "synthetic_cpu_not_model_validation",
+  "norm_budget_max_relative_rms": 0.5000000596046448,
+  "objective": {
+    "bce": 0.7006900310516357,
+    "encoder_and_decoder_backpropagated": true,
+    "kl": 0.018900567665696144,
+    "synthetic_receiver_frozen": true,
+    "total": 0.7054151892662048
+  },
+  "payload_ones_per_bit_iid_sample": [
+    11,
+    18,
+    16,
+    18
+  ],
+  "seed": 20261003,
+  "synthetic_arm_training": {
+    "arms_exercised": [
+      "undefended",
+      "d_pca",
+      "d_quant",
+      "d_noise",
+      "adaptive_d_pca"
+    ],
+    "attacker_beta_searches": [
+      {
+        "beta": 0.0,
+        "max_validation_drop": 0.02,
+        "status": "selected",
+        "validation_fidelity_drop": 0.0
+      },
+      {
+        "beta": 0.0,
+        "max_validation_drop": 0.02,
+        "status": "selected",
+        "validation_fidelity_drop": 0.0
+      }
+    ],
+    "defense_decoders": {
+      "d_noise": 0.6793307662010193,
+      "d_pca": 0.7403501272201538,
+      "d_quant": 0.7193518280982971
+    },
+    "detectors": {
+      "adaptive_d_pca": 0.6935572624206543,
+      "d_noise": 0.6616526246070862,
+      "d_pca": 0.693545937538147,
+      "d_quant": 0.6730372309684753,
+      "undefended": 0.6609816551208496
+    }
+  },
+  "synthetic_monitor_auroc": 1.0,
+  "synthetic_split_sizes": {
+    "test": 8,
+    "train": 16,
+    "val": 8
+  },
+  "synthetic_training_checkpoint": {
+    "best_epoch": 1,
+    "validation_fidelity_drop": 0.0,
+    "validation_objective": 0.7797974348068237
+  }
+}

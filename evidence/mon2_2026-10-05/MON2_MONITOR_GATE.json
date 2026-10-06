@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "COMP_train_has_both_classes": true,
+    "COMP_val_has_both_classes": true,
+    "INJ_train_has_both_classes": true,
+    "INJ_val_has_both_classes": true,
+    "fixed_M_PCS_PCA_dimension_fits_train": true
+  },
+  "class_counts": {
+    "COMP": {
+      "train": {
+        "0": 561,
+        "1": 139
+      },
+      "val": {
+        "0": 154,
+        "1": 24
+      }
+    },
+    "INJ": {
+      "train": {
+        "0": 700,
+        "1": 700
+      },
+      "val": {
+        "0": 178,
+        "1": 178
+      }
+    }
+  },
+  "design": "MON2 model-fit feasibility gate",
+  "gate_passed": true
+}

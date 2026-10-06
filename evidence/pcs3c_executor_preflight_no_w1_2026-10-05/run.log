@@ -1,0 +1,10 @@
+{
+  "blocker": "PCS3C_W1_CHOICE_REQUIRED path_not_supplied",
+  "elapsed_seconds": 0.0001251697540283203,
+  "error": "PreflightError: PCS3C_W1_CHOICE_REQUIRED path_not_supplied",
+  "launch_allowed": false,
+  "model_imported": false,
+  "schema": "pcs3c_executor_status_v1",
+  "scientific_data_opened": false,
+  "status": "BLOCKED"
+}

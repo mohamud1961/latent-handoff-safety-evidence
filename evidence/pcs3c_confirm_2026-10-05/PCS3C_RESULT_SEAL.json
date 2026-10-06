@@ -1,0 +1,8 @@
+{
+  "result_sha256": "9cc8035ee0e18a7496ad7223ef3c669006c55e67ab53a0f3c8752109868f813f",
+  "schema": "pcs3c_result_seal_v1",
+  "source_bundle_sha256": "23d098530252c59bc9b8d7039731213f2c55cac288c18e32670a7bd601d18999",
+  "status": "complete",
+  "synthetic": false,
+  "w1_choice_sha256": "d85909b93dea9f42e89dc98eb8f048344ae82723ebca6e70d9429ca7b9e60937"
+}

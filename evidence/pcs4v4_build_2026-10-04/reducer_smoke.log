@@ -1,0 +1,67 @@
+{
+  "arm_f_sha256": "synthetic-only",
+  "bootstrap_method": "source-episode clusters sampled with replacement; all rows in sampled clusters pooled; percentile interval",
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261004,
+  "bootstrap_seed_source": "synthetic_fixture_fallback",
+  "categories": {
+    "derived_random": {
+      "arm_f_accuracy": 1.0,
+      "arm_f_minus_mean_wrong_accuracy": 1.0,
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20261004,
+      "mean_wrong_accuracy": 0.0,
+      "n_probes": 30,
+      "n_source_episodes": 10,
+      "probe_level_delta_point": 1.0,
+      "state_cluster_bootstrap_ci95_high": 1.0,
+      "state_cluster_bootstrap_ci95_low": 1.0,
+      "wrong0_accuracy": 0.0,
+      "wrong1_accuracy": 0.0,
+      "wrong2_accuracy": 0.0
+    },
+    "source_mistake": {
+      "arm_f_accuracy": 1.0,
+      "arm_f_minus_mean_wrong_accuracy": 1.0,
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20261004,
+      "mean_wrong_accuracy": 0.0,
+      "n_probes": 30,
+      "n_source_episodes": 10,
+      "probe_level_delta_point": 1.0,
+      "state_cluster_bootstrap_ci95_high": 1.0,
+      "state_cluster_bootstrap_ci95_low": 1.0,
+      "wrong0_accuracy": 0.0,
+      "wrong1_accuracy": 0.0,
+      "wrong2_accuracy": 0.0
+    }
+  },
+  "classification": "PCS4V4_L3_REACHED_EXPLORATORY",
+  "frozen_l3_checks": {
+    "derived_random_cluster_ci95_lower_gt_zero": true,
+    "source_mistake_cluster_ci95_lower_gt_zero": true,
+    "source_mistake_episodes_ge_10": true,
+    "source_mistake_probes_ge_25": true
+  },
+  "n_stage_c_records": 60,
+  "pcs4v3_l3_reached": false,
+  "pcs4v4_l3_reached_exploratory": true,
+  "pcs6_d1": {
+    "basis": {
+      "pcs4v3_l3_reached": false,
+      "pcs4v4_l3_reached_exploratory": true
+    },
+    "claim": "label-free reasoning continuation",
+    "objective": "D1-a",
+    "training_objective": "PCS4v4 information-weighted loss plus contrastive term"
+  },
+  "probe_seed_u64": null,
+  "receiver_model": "synthetic-receiver",
+  "smoke": {
+    "input_format": "plain JSON",
+    "synthetic": true
+  },
+  "source_model": "synthetic-source"
+}
+wrote evidence/pcs4v4_build_2026-10-04/reducer_smoke_summary.json
+

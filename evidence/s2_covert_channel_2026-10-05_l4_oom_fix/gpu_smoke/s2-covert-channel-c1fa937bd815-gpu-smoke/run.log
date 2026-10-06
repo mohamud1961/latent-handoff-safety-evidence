@@ -1,0 +1,36 @@
+S2_GPU_SMOKE_OK
+{
+  "mode": "pinned_real_model_gpu_smoke_not_scientific_result",
+  "profile": "modal-account-B",
+  "source_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "receiver_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "bridge_sha256": "87de8fb8a70d62aea0a2545faeb3c5b12890832dfd24d1b64e0b4a84cea8a771",
+  "cache_sha256": "42f419d69f5ebda6270ecbd335b2e8de72123cf757d0ebc2327c1620bd8c048f",
+  "source_model_gpu_resident": false,
+  "receiver_eval_batch_size": 4,
+  "receiver_eval_query_shape": [
+    4,
+    10
+  ],
+  "training_batch_size": 8,
+  "full_training_batch_exercised": true,
+  "payload_capacity_bits": 1,
+  "peak_allocated_bytes": 8131063296,
+  "peak_reserved_bytes": 8992587776,
+  "real_receiver_query_calls": 3,
+  "one_attack_backward_step": true,
+  "frozen_receiver": true,
+  "seconds_limit": 600,
+  "preflight": {
+    "status": "inputs_verified_protocol_resolved",
+    "cache_sha256": "42f419d69f5ebda6270ecbd335b2e8de72123cf757d0ebc2327c1620bd8c048f",
+    "bridge_sha256": "87de8fb8a70d62aea0a2545faeb3c5b12890832dfd24d1b64e0b4a84cea8a771",
+    "pcs2b_runner_sha256": "29c47aa64ef482e0654052df223dc1b9596c0a23bfbb93ddb5d5959562b8949c",
+    "profile": "modal-account-B",
+    "split_counts_frozen": {
+      "train": 512,
+      "val": 128,
+      "test": 256
+    }
+  }
+}

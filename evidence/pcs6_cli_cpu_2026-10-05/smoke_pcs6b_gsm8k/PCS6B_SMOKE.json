@@ -1,0 +1,61 @@
+{
+  "blocked_preflight_blockers": 5,
+  "blocked_preflight_status": "BLOCKED",
+  "modal_launched": false,
+  "model_loaded": false,
+  "normalization": {
+    "applied": true,
+    "comparison": "strip_commas_dollars_spaces_then_float_abs_tolerance_1e-6"
+  },
+  "note": "400 deterministic synthetic numeric records only; not GSM8K data, model output, a qualification run, or a scientific result.",
+  "schema": "pcs6b_smoke_v1",
+  "scientific_use": false,
+  "sealed_data_opened": false,
+  "status": "PASS_SYNTHETIC_ONLY",
+  "synthetic_criteria": {
+    "a_wrong_pcs_reproduces_a_more_than_restart_by_10pt": true,
+    "pcs_minus_mean_wrong_state_ci_lower_gt_zero": true
+  },
+  "synthetic_exploratory_metrics": {
+    "a_accuracy_numeric": 0.75,
+    "mean_wrong_state_agreement_with_a_overall": 0.0,
+    "partial_text_agreement_with_a_on_a_wrong": 1.0,
+    "partial_text_agreement_with_a_overall": 1.0,
+    "pcs_agreement_with_a_overall": 1.0,
+    "pcs_minus_mean_wrong_state_agreement": 1.0,
+    "pcs_minus_restart_on_a_wrong": 1.0,
+    "pcs_reproduces_a_wrong_answer_rate": 1.0,
+    "restart_agreement_with_a_on_a_wrong": 0.0,
+    "restart_agreement_with_a_overall": 0.75,
+    "restart_reproduces_a_wrong_answer_rate": 0.0
+  },
+  "synthetic_qualification_gates": {
+    "a_accuracy": 0.75,
+    "a_wrong_test_problems": 100,
+    "answer_comparison": "float_after_stripping_comma_dollar_space;absolute_tolerance_1e-6",
+    "answer_normalization_applied": true,
+    "checks": {
+      "a_accuracy": true,
+      "a_wrong_test_problems": true,
+      "partial_text_lift_over_restart_on_a_wrong": true,
+      "partial_text_lift_over_restart_overall": true
+    },
+    "engineering_helper_only": true,
+    "n_test": 400,
+    "partial_text_agreement_with_a_on_a_wrong": 1.0,
+    "partial_text_agreement_with_a_overall": 1.0,
+    "restart_agreement_with_a_on_a_wrong": 0.0,
+    "restart_agreement_with_a_overall": 0.75,
+    "six_b_qualification_pass": true
+  },
+  "synthetic_state_cluster_bootstrap": {
+    "cluster_unit": "episode_id",
+    "estimator": "mean of episode-level effects",
+    "lower_95": 1.0,
+    "n_clusters": 400,
+    "point": 1.0,
+    "resamples": 500,
+    "seed": 20261004,
+    "upper_95": 1.0
+  }
+}

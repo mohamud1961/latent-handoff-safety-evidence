@@ -1,0 +1,90 @@
+{
+  "by_selector": {
+    "a": {
+      "n": 959,
+      "neural_fidelity": 0.5130344108446299
+    },
+    "b": {
+      "n": 959,
+      "neural_fidelity": 0.5881126173096975
+    },
+    "c": {
+      "n": 959,
+      "neural_fidelity": 0.6423357664233577
+    }
+  },
+  "classification": "PCS3C_NULL",
+  "criteria": {
+    "each_selector_fidelity_ge_60": false,
+    "neural_beats_zero_and_random": true,
+    "neural_minus_restart_ge_30": true,
+    "neural_minus_strong_wrong_ge_30_and_ci_gt_0": true,
+    "overall_fidelity_ge_70": false,
+    "source_wrong_directional_if_at_least_10_states": true
+  },
+  "exact_mcnemar_vs_wrong": {
+    "1": {
+      "correct_only": 1521,
+      "method": "exact two-sided conditional binomial McNemar",
+      "n_discordant": 1562,
+      "n_pairs": 2852,
+      "p_two_sided": 0.0,
+      "wrong_only": 41
+    },
+    "2": {
+      "correct_only": 1493,
+      "method": "exact two-sided conditional binomial McNemar",
+      "n_discordant": 1533,
+      "n_pairs": 2795,
+      "p_two_sided": 0.0,
+      "wrong_only": 40
+    },
+    "3": {
+      "correct_only": 1443,
+      "method": "exact two-sided conditional binomial McNemar",
+      "n_discordant": 1482,
+      "n_pairs": 2702,
+      "p_two_sided": 0.0,
+      "wrong_only": 39
+    }
+  },
+  "metrics": {
+    "matched_n_records": 2852,
+    "matched_neural_fidelity": 0.5816970546984572,
+    "matched_row_neural_minus_mean_strong_wrong": 0.5188756428237494,
+    "mean_strong_wrong_fidelity": 0.0628214118747078,
+    "n_records": 2877,
+    "n_states": 959,
+    "neural_fidelity": 0.581160931525895,
+    "neural_fidelity_by_selector": {
+      "a": 0.5130344108446299,
+      "b": 0.5881126173096975,
+      "c": 0.6423357664233577
+    },
+    "neural_minus_restart": 0.43309002433090016,
+    "neural_minus_strong_wrong": 0.5168578380257213,
+    "neural_minus_strong_wrong_estimand": "mean over source episodes of the episode's mean selector-level (neural fidelity minus mean available strong-wrong fidelity); episodes/rows without a strong-wrong partner are excluded from this causal contrast but remain in overall neural fidelity",
+    "neural_objective_accuracy": 0.5759471671880431,
+    "neural_source_wrong_fidelity": 0.37209302325581395,
+    "partial_fidelity": 0.1981230448383733,
+    "private_trace_text_fidelity": 0.9791449426485923,
+    "random_fidelity": 0.08098713938129996,
+    "restart_fidelity": 0.1480709071949948,
+    "source_wrong_coordinate_records": 44,
+    "source_wrong_coordinate_records_with_controls": 43,
+    "source_wrong_states": 25,
+    "text_oracle_fidelity": 1.0,
+    "token_identity_fidelity": 0.9961765728189086,
+    "wrong_source_wrong_fidelity": 0.09302325581395349,
+    "zero_fidelity": 0.054223149113660066
+  },
+  "state_cluster_bootstrap": {
+    "cluster_unit": "source episode id",
+    "lower_95": 0.49687174139728885,
+    "n_clusters": 959,
+    "point": 0.5168578380257213,
+    "resamples": 10000,
+    "seed": 0,
+    "upper_95": 0.5360329046460434
+  }
+}

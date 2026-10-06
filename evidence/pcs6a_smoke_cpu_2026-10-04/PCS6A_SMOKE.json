@@ -1,0 +1,121 @@
+{
+  "blocked_preflight_blockers": 21,
+  "blocked_preflight_status": "BLOCKED",
+  "d1_default": {
+    "basis": "no_reviewed_pcs4_l3_pass",
+    "choice": "D1-b",
+    "claim": "state-supervised reasoning continuation",
+    "contrastive_term": false,
+    "objective": "information_weighted_plus_readback",
+    "readback_lambda": 0.25
+  },
+  "m3_parser_and_scorer": {
+    "fidelity_to_a_all_rows": 1.0,
+    "fidelity_to_a_parseable": 1.0,
+    "n_episodes": 1,
+    "objective_accuracy_all_rows": 1.0,
+    "objective_accuracy_parseable": 1.0,
+    "parse_errors": {},
+    "parse_rate": 1.0,
+    "parsed_n": 1,
+    "parser_scope": "rq6_local_helper_only_not_scientific_parser_approval"
+  },
+  "modal_launched": false,
+  "model_loaded": false,
+  "note": "Deterministic synthetic CPU helper evidence only; not a model, RQ6 gate, bridge, or scientific result.",
+  "schema": "pcs6a_smoke_v1",
+  "scientific_use": false,
+  "sealed_data_opened": false,
+  "specificity_estimand": "Primary specificity point and CI use the mean of episode-level PCS-minus-mean-matched-wrong effects among episodes with at least one supplied wrong partner; wrong partner selection is not performed here.",
+  "status": "PASS_SYNTHETIC_ONLY",
+  "swap_test": {
+    "estimand": "B wrong-state final equals partner A-s8 propagated through target episode steps 9-11",
+    "n_partner_propagation_matches": 8,
+    "n_records": 20,
+    "rate": 0.4
+  },
+  "synthetic_6a_u_classification": "L4_POSITIVE_SUPERVISED",
+  "synthetic_6a_u_criteria": {
+    "criterion_1_fidelity_ge_60": true,
+    "criterion_2_specificity_and_swap": true,
+    "criterion_3_beats_restart_ge_30": true,
+    "criterion_4_a_wrong_trajectory_lift_ge_25": true,
+    "criterion_5_beats_zero_and_random_ge_20": true
+  },
+  "synthetic_6a_u_metrics": {
+    "matched_row_mean_pcs_minus_wrong": 1.0,
+    "mean_wrong_a_wrong_follow_rate": 0.0,
+    "oracle_state_fidelity_to_a": 1.0,
+    "partial_text_fidelity_to_a": 1.0,
+    "pcs_a_wrong_follow_rate": 1.0,
+    "pcs_fidelity_to_a": 1.0,
+    "pcs_minus_mean_matched_wrong": 1.0,
+    "pcs_minus_random": 1.0,
+    "pcs_minus_restart": 1.0,
+    "pcs_minus_wrong_a_wrong_follow_rate": 1.0,
+    "pcs_minus_zero": 1.0,
+    "pcs_objective_accuracy": 0.25,
+    "restart_fidelity_to_a": 0.0,
+    "token_identity_fidelity_to_a": null
+  },
+  "synthetic_classification": "L4_POSITIVE_SUPERVISED",
+  "synthetic_cluster_bootstrap": {
+    "cluster_unit": "episode_id",
+    "estimator": "mean of episode-level effects",
+    "lower_95": 1.0,
+    "n_clusters": 20,
+    "point": 1.0,
+    "resamples": 500,
+    "seed": 20261004,
+    "upper_95": 1.0
+  },
+  "synthetic_criteria": {
+    "criterion_1_fidelity_ge_60": true,
+    "criterion_2_specificity_and_swap": true,
+    "criterion_3_beats_restart_ge_30": true,
+    "criterion_4_a_wrong_trajectory_lift_ge_25": true,
+    "criterion_5_beats_zero_and_random_ge_20": true
+  },
+  "synthetic_mcnemar": {
+    "1": {
+      "correct_only": 20,
+      "method": "exact two-sided conditional binomial McNemar",
+      "n_discordant": 20,
+      "n_pairs": 20,
+      "p_two_sided": 1.9073486328125e-06,
+      "wrong_only": 0
+    },
+    "2": {
+      "correct_only": 20,
+      "method": "exact two-sided conditional binomial McNemar",
+      "n_discordant": 20,
+      "n_pairs": 20,
+      "p_two_sided": 1.9073486328125e-06,
+      "wrong_only": 0
+    },
+    "3": {
+      "correct_only": 20,
+      "method": "exact two-sided conditional binomial McNemar",
+      "n_discordant": 20,
+      "n_pairs": 20,
+      "p_two_sided": 1.9073486328125e-06,
+      "wrong_only": 0
+    }
+  },
+  "synthetic_metrics": {
+    "matched_row_mean_pcs_minus_wrong": 1.0,
+    "mean_wrong_a_wrong_follow_rate": 0.0,
+    "oracle_state_fidelity_to_a": 1.0,
+    "partial_text_fidelity_to_a": 1.0,
+    "pcs_a_wrong_follow_rate": 1.0,
+    "pcs_fidelity_to_a": 1.0,
+    "pcs_minus_mean_matched_wrong": 1.0,
+    "pcs_minus_random": 1.0,
+    "pcs_minus_restart": 1.0,
+    "pcs_minus_wrong_a_wrong_follow_rate": 1.0,
+    "pcs_minus_zero": 1.0,
+    "pcs_objective_accuracy": 0.25,
+    "restart_fidelity_to_a": 0.0,
+    "token_identity_fidelity_to_a": 1.0
+  }
+}

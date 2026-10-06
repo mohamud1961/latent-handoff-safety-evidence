@@ -1,0 +1,20 @@
+{
+  "files": {
+    "interfere1.py": "329105f349ff433ea8afe36a6e0d00e22d625a2780314af3c409ecaefb9f1490",
+    "mon2_contract.py": "8f5e4c8dcc290b0b15e82967a26d8184a7aae5a86e4194fe63af26aabfafdb6f",
+    "pcs2b_preanswer_bridge.py": "29c47aa64ef482e0654052df223dc1b9596c0a23bfbb93ddb5d5959562b8949c",
+    "pcs2b_sealed.py": "d34b139996c32c5f76d6679e34466e2bedc5217ba953689c58110e51748c4ac6"
+  },
+  "models": {
+    "B": {
+      "id": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+    }
+  },
+  "pcs2b": {
+    "bridge": "87de8fb8a70d62aea0a2545faeb3c5b12890832dfd24d1b64e0b4a84cea8a771",
+    "cache": "42f419d69f5ebda6270ecbd335b2e8de72123cf757d0ebc2327c1620bd8c048f",
+    "runner": "29c47aa64ef482e0654052df223dc1b9596c0a23bfbb93ddb5d5959562b8949c"
+  }
+}

@@ -1,0 +1,1320 @@
+[
+  {
+    "a_s11": [
+      5,
+      6,
+      3
+    ],
+    "a_s8": [
+      6,
+      2,
+      2
+    ],
+    "id": 0,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "STATE s0: a=2, b=4, c=5  \na = (5 + 8) % 10 = 3  \nSTATE s1: a=3, b=4, c=5  \nb = (5 + 3) % 10 = 8  \nSTATE s2: a=3, b=8, c=5  \nc = (3 + 6) % 10 = 9  \nSTATE s3: a=3, b=8, c=9  \nc = (3 + 3) % 10 = 6  \nSTATE s4: a=3, b=8, c=6  \nc = (6 * 7) % 10 = 2  \nSTATE s5: a=3, b=8, c=2  \nc = (3 * 4) % 10 = 2  \nSTATE s6: a=3,",
+        "states": null,
+        "text": "STATE s0: a=2, b=4, c=5  \na = (5 + 8) % 10 = 3  \nSTATE s1: a=3, b=4, c=5  \nb = (5 + 3) % 10 = 8  \nSTATE s2: a=3, b=8, c=5  \nc = (3 + 6) % 10 = 9  \nSTATE s3: a=3, b=8, c=9  \nc = (3 + 3) % 10 = 6  \nSTATE s4: a=3, b=8, c=6  \nc = (6 * 7) % 10 = 2  \nSTATE s5: a=3, b=8, c=2  \nc = (3 * 4) % 10 = 2  \nSTATE s6: a=3,",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=2, b=4, c=5  \nSTATE s0: a=2, b=4, c=5  \na = (5 + 8) % 10 = 3  \nSTATE s1: a=3, b=4, c=5  \nb = (5 + 3) % 10 = 8  \nSTATE s2: a=3, b=8, c=5  \nc = (3 + 6) % 10 = 9  \nSTATE s3: a=3, b=8, c=9  \nc = (3 + 3) % 10 = 6  \nSTATE s4: a=3, b=8, c=6  \nc = (6 * 7) % 10 = 2  \nSTATE s5: a=3, b=8, c=2  \nc = (3 * 4) % ",
+        "states": null,
+        "text": "init: a=2, b=4, c=5  \nSTATE s0: a=2, b=4, c=5  \na = (5 + 8) % 10 = 3  \nSTATE s1: a=3, b=4, c=5  \nb = (5 + 3) % 10 = 8  \nSTATE s2: a=3, b=8, c=5  \nc = (3 + 6) % 10 = 9  \nSTATE s3: a=3, b=8, c=9  \nc = (3 + 3) % 10 = 6  \nSTATE s4: a=3, b=8, c=6  \nc = (6 * 7) % 10 = 2  \nSTATE s5: a=3, b=8, c=2  \nc = (3 * 4) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s0: a=2, b=4, c=5  \na = (5 + 8) % 10 = 3  \nSTATE s1: a=3, b=4, c=5  \nb = (5 + 3) % 10 = 8  \nSTATE s2: a=3, b=8, c=5  \nc = (3 + 6) % 10 = 9  \nSTATE s3: a=3, b=8, c=9  \nc = (3 + 3) % 10 = 6  \nSTATE s4: a=3, b=8, c=6  \nc = (6 * 7) % 10 = 2  \nSTATE s5: a=3, b=8, c=2  \nc = (3 * 4) % 10 = 2  \nSTATE s6: a=3,",
+    "source_token_count": 404,
+    "truth_s11": [
+      5,
+      6,
+      3
+    ]
+  },
+  {
+    "a_s11": [
+      0,
+      0,
+      9
+    ],
+    "a_s8": [
+      0,
+      8,
+      0
+    ],
+    "id": 1,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=7, b=0, c=2  \nSTATE s0: a=7, b=0, c=2  \na = (0 + 0) % 10 = 0  \nSTATE s1: a=0, b=0, c=2  \nb = (0 + 0) % 10 = 0  \nSTATE s2: a=0, b=0, c=2  \nc = (0 + 0) % 10 = 0  \nSTATE s3: a=0, b=0, c=0  \nb = (0 + 8) % 10 = 8  \nSTATE s4: a=0, b=8, c=0  \nc = (0 + 8) % 10 = 8  \nSTATE s5: a=0, b=8, c=8  \na = (0 * 0) % ",
+        "states": null,
+        "text": "init: a=7, b=0, c=2  \nSTATE s0: a=7, b=0, c=2  \na = (0 + 0) % 10 = 0  \nSTATE s1: a=0, b=0, c=2  \nb = (0 + 0) % 10 = 0  \nSTATE s2: a=0, b=0, c=2  \nc = (0 + 0) % 10 = 0  \nSTATE s3: a=0, b=0, c=0  \nb = (0 + 8) % 10 = 8  \nSTATE s4: a=0, b=8, c=0  \nc = (0 + 8) % 10 = 8  \nSTATE s5: a=0, b=8, c=8  \na = (0 * 0) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=7, b=0, c=2  \nSTATE s0: a=7, b=0, c=2  \na = (0 + 0) % 10 = 0  \nSTATE s1: a=0, b=0, c=2  \nb = (0 + 0) % 10 = 0  \nSTATE s2: a=0, b=0, c=2  \nc = (0 + 0) % 10 = 0  \nSTATE s3: a=0, b=0, c=0  \nb = (0 + 8) % 10 = 8  \nSTATE s4: a=0, b=8, c=0  \nc = (0 + 8) % 10 = 8  \nSTATE s5: a=0, b=8, c=8  \na = (0 * 0) % ",
+        "states": null,
+        "text": "init: a=7, b=0, c=2  \nSTATE s0: a=7, b=0, c=2  \na = (0 + 0) % 10 = 0  \nSTATE s1: a=0, b=0, c=2  \nb = (0 + 0) % 10 = 0  \nSTATE s2: a=0, b=0, c=2  \nc = (0 + 0) % 10 = 0  \nSTATE s3: a=0, b=0, c=0  \nb = (0 + 8) % 10 = 8  \nSTATE s4: a=0, b=8, c=0  \nc = (0 + 8) % 10 = 8  \nSTATE s5: a=0, b=8, c=8  \na = (0 * 0) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "init: a=7, b=0, c=2  \nSTATE s0: a=7, b=0, c=2  \na = (0 + 0) % 10 = 0  \nSTATE s1: a=0, b=0, c=2  \nb = (0 + 0) % 10 = 0  \nSTATE s2: a=0, b=0, c=2  \nc = (0 + 0) % 10 = 0  \nSTATE s3: a=0, b=0, c=0  \nb = (0 + 8) % 10 = 8  \nSTATE s4: a=0, b=8, c=0  \nc = (0 + 8) % 10 = 8  \nSTATE s5: a=0, b=8, c=8  \na = (0 * 0) % ",
+    "source_token_count": 404,
+    "truth_s11": [
+      0,
+      0,
+      9
+    ]
+  },
+  {
+    "a_s11": [
+      1,
+      7,
+      9
+    ],
+    "a_s8": [
+      7,
+      7,
+      1
+    ],
+    "id": 2,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=6, b=9, c=5  \nSTATE s0: a=6, b=9, c=5  \na = (9 + 9) % 10 = 8  \nSTATE s1: a=8, b=9, c=5  \nb = (8 + 9) % 10 = 5  \nSTATE s2: a=8, b=5, c=5  \nc = (8 + 9) % 10 = 5  \nSTATE s3: a=8, b=5, c=5  \na = (5 + 6) % 10 = 1  \nSTATE s4: a=1, b=5, c=5  \na = (1 + 4) % 10 = 5  \nSTATE s5: a=5, b=5, c=5  \nc = (5 * 3) % ",
+        "states": null,
+        "text": "init: a=6, b=9, c=5  \nSTATE s0: a=6, b=9, c=5  \na = (9 + 9) % 10 = 8  \nSTATE s1: a=8, b=9, c=5  \nb = (8 + 9) % 10 = 5  \nSTATE s2: a=8, b=5, c=5  \nc = (8 + 9) % 10 = 5  \nSTATE s3: a=8, b=5, c=5  \na = (5 + 6) % 10 = 1  \nSTATE s4: a=1, b=5, c=5  \na = (1 + 4) % 10 = 5  \nSTATE s5: a=5, b=5, c=5  \nc = (5 * 3) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=6, b=9, c=5  \nSTATE s0: a=6, b=9, c=5  \na = (9 + 9) % 10 = 8  \nSTATE s1: a=8, b=9, c=5  \nb = (8 + 9) % 10 = 5  \nSTATE s2: a=8, b=5, c=5  \nc = (8 + 9) % 10 = 5  \nSTATE s3: a=8, b=5, c=5  \na = (5 + 6) % 10 = 1  \nSTATE s4: a=1, b=5, c=5  \na = (1 + 4) % 10 = 5  \nSTATE s5: a=5, b=5, c=5  \nc = (5 * 3) % ",
+        "states": null,
+        "text": "init: a=6, b=9, c=5  \nSTATE s0: a=6, b=9, c=5  \na = (9 + 9) % 10 = 8  \nSTATE s1: a=8, b=9, c=5  \nb = (8 + 9) % 10 = 5  \nSTATE s2: a=8, b=5, c=5  \nc = (8 + 9) % 10 = 5  \nSTATE s3: a=8, b=5, c=5  \na = (5 + 6) % 10 = 1  \nSTATE s4: a=1, b=5, c=5  \na = (1 + 4) % 10 = 5  \nSTATE s5: a=5, b=5, c=5  \nc = (5 * 3) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "init: a=6, b=9, c=5  \nSTATE s0: a=6, b=9, c=5  \na = (9 + 9) % 10 = 8  \nSTATE s1: a=8, b=9, c=5  \nb = (8 + 9) % 10 = 5  \nSTATE s2: a=8, b=5, c=5  \nc = (8 + 9) % 10 = 5  \nSTATE s3: a=8, b=5, c=5  \na = (5 + 6) % 10 = 1  \nSTATE s4: a=1, b=5, c=5  \na = (1 + 4) % 10 = 5  \nSTATE s5: a=5, b=5, c=5  \nc = (5 * 3) % ",
+    "source_token_count": 404,
+    "truth_s11": [
+      1,
+      7,
+      9
+    ]
+  },
+  {
+    "a_s11": [
+      8,
+      3,
+      5
+    ],
+    "a_s8": [
+      8,
+      0,
+      9
+    ],
+    "id": 3,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "STATE s0: a=0, b=3, c=2  \na = (2 + 3) % 10 = 5  \nSTATE s1: a=5, b=3, c=2  \nb = (2 * 4) % 10 = 8  \nSTATE s2: a=5, b=8, c=2  \nc = (8 * 2) % 10 = 6  \nSTATE s3: a=5, b=8, c=6  \nc = (8 * 4) % 10 = 2  \nSTATE s4: a=5, b=8, c=2  \na = (2 * 2) % 10 = 4  \nSTATE s5: a=4, b=8, c=2  \nc = (8 + 5) % 10 = 1  \nSTATE s6: a=4,",
+        "states": null,
+        "text": "STATE s0: a=0, b=3, c=2  \na = (2 + 3) % 10 = 5  \nSTATE s1: a=5, b=3, c=2  \nb = (2 * 4) % 10 = 8  \nSTATE s2: a=5, b=8, c=2  \nc = (8 * 2) % 10 = 6  \nSTATE s3: a=5, b=8, c=6  \nc = (8 * 4) % 10 = 2  \nSTATE s4: a=5, b=8, c=2  \na = (2 * 2) % 10 = 4  \nSTATE s5: a=4, b=8, c=2  \nc = (8 + 5) % 10 = 1  \nSTATE s6: a=4,",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=0, b=3, c=2  \nSTATE s0: a=0, b=3, c=2  \na = (2 + 3) % 10 = 5  \nSTATE s1: a=5, b=3, c=2  \nb = (2 * 4) % 10 = 8  \nSTATE s2: a=5, b=8, c=2  \nc = (8 * 2) % 10 = 6  \nSTATE s3: a=5, b=8, c=6  \nc = (8 * 4) % 10 = 2  \nSTATE s4: a=5, b=8, c=2  \na = (2 * 2) % 10 = 4  \nSTATE s5: a=4, b=8, c=2  \nc = (8 + 5) % ",
+        "states": null,
+        "text": "init: a=0, b=3, c=2  \nSTATE s0: a=0, b=3, c=2  \na = (2 + 3) % 10 = 5  \nSTATE s1: a=5, b=3, c=2  \nb = (2 * 4) % 10 = 8  \nSTATE s2: a=5, b=8, c=2  \nc = (8 * 2) % 10 = 6  \nSTATE s3: a=5, b=8, c=6  \nc = (8 * 4) % 10 = 2  \nSTATE s4: a=5, b=8, c=2  \na = (2 * 2) % 10 = 4  \nSTATE s5: a=4, b=8, c=2  \nc = (8 + 5) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s0: a=0, b=3, c=2  \na = (2 + 3) % 10 = 5  \nSTATE s1: a=5, b=3, c=2  \nb = (2 * 4) % 10 = 8  \nSTATE s2: a=5, b=8, c=2  \nc = (8 * 2) % 10 = 6  \nSTATE s3: a=5, b=8, c=6  \nc = (8 * 4) % 10 = 2  \nSTATE s4: a=5, b=8, c=2  \na = (2 * 2) % 10 = 4  \nSTATE s5: a=4, b=8, c=2  \nc = (8 + 5) % 10 = 1  \nSTATE s6: a=4,",
+    "source_token_count": 404,
+    "truth_s11": [
+      8,
+      3,
+      5
+    ]
+  },
+  {
+    "a_s11": [
+      3,
+      6,
+      0
+    ],
+    "a_s8": [
+      3,
+      8,
+      0
+    ],
+    "id": 4,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=9, b=8, c=3  \nSTATE s0: a=9, b=8, c=3  \na = (8 * 8) % 10 = 4  \nSTATE s1: a=4, b=8, c=3  \nb = (3 + 8) % 10 = 1  \nSTATE s2: a=4, b=1, c=3  \nc = (4 * 5) % 10 = 0  \nSTATE s3: a=4, b=1, c=0  \na = (1 + 7) % 10 = 8  \nSTATE s4: a=8, b=1, c=0  \nc = (0 + 0) % 10 = 0  \nSTATE s5: a=8, b=1, c=0  \nc = (8 + 4) % ",
+        "states": null,
+        "text": "init: a=9, b=8, c=3  \nSTATE s0: a=9, b=8, c=3  \na = (8 * 8) % 10 = 4  \nSTATE s1: a=4, b=8, c=3  \nb = (3 + 8) % 10 = 1  \nSTATE s2: a=4, b=1, c=3  \nc = (4 * 5) % 10 = 0  \nSTATE s3: a=4, b=1, c=0  \na = (1 + 7) % 10 = 8  \nSTATE s4: a=8, b=1, c=0  \nc = (0 + 0) % 10 = 0  \nSTATE s5: a=8, b=1, c=0  \nc = (8 + 4) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=9, b=8, c=3  \nSTATE s0: a=9, b=8, c=3  \na = (8 * 8) % 10 = 64 % 10 = 4  \nSTATE s1: a=4, b=8, c=3  \nb = (3 + 8) % 10 = 11 % 10 = 1  \nSTATE s2: a=4, b=1, c=3  \nc = (4 * 5) % 10 = 20 % 10 = 0  \nSTATE s3: a=4, b=1, c=0  \na = (1 + 7) % 10 = 8 % 10 = 8  \nSTATE s4: a=8, b=1, c=0  \nc = (0 + 0) % 1",
+        "states": null,
+        "text": "init: a=9, b=8, c=3  \nSTATE s0: a=9, b=8, c=3  \na = (8 * 8) % 10 = 64 % 10 = 4  \nSTATE s1: a=4, b=8, c=3  \nb = (3 + 8) % 10 = 11 % 10 = 1  \nSTATE s2: a=4, b=1, c=3  \nc = (4 * 5) % 10 = 20 % 10 = 0  \nSTATE s3: a=4, b=1, c=0  \na = (1 + 7) % 10 = 8 % 10 = 8  \nSTATE s4: a=8, b=1, c=0  \nc = (0 + 0) % 1",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "init: a=9, b=8, c=3  \nSTATE s0: a=9, b=8, c=3  \na = (8 * 8) % 10 = 4  \nSTATE s1: a=4, b=8, c=3  \nb = (3 + 8) % 10 = 1  \nSTATE s2: a=4, b=1, c=3  \nc = (4 * 5) % 10 = 0  \nSTATE s3: a=4, b=1, c=0  \na = (1 + 7) % 10 = 8  \nSTATE s4: a=8, b=1, c=0  \nc = (0 + 0) % 10 = 0  \nSTATE s5: a=8, b=1, c=0  \nc = (8 + 4) % ",
+    "source_token_count": 404,
+    "truth_s11": [
+      5,
+      0,
+      4
+    ]
+  },
+  {
+    "a_s11": [
+      0,
+      0,
+      0
+    ],
+    "a_s8": [
+      0,
+      0,
+      0
+    ],
+    "id": 5,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=4, b=2, c=4  \nSTATE s0: a=4, b=2, c=4  \na = (4 * 7) % 10 = 2  \nSTATE s1: a=2, b=2, c=4  \nb = (4 + 4) % 10 = 8  \nSTATE s2: a=2, b=8, c=4  \nc = (4 * 4) % 10 = 6  \nSTATE s3: a=2, b=8, c=6  \na = (8 * 5) % 10 = 0  \nSTATE s4: a=0, b=8, c=6  \nb = (6 + 4) % 10 = 0  \nSTATE s5: a=0, b=0, c=6  \nb = (6 * 0) % ",
+        "states": null,
+        "text": "init: a=4, b=2, c=4  \nSTATE s0: a=4, b=2, c=4  \na = (4 * 7) % 10 = 2  \nSTATE s1: a=2, b=2, c=4  \nb = (4 + 4) % 10 = 8  \nSTATE s2: a=2, b=8, c=4  \nc = (4 * 4) % 10 = 6  \nSTATE s3: a=2, b=8, c=6  \na = (8 * 5) % 10 = 0  \nSTATE s4: a=0, b=8, c=6  \nb = (6 + 4) % 10 = 0  \nSTATE s5: a=0, b=0, c=6  \nb = (6 * 0) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=4, b=2, c=4  \nSTATE s0: a=4, b=2, c=4  \na = (4 * 7) % 10 = 8  \nSTATE s1: a=8, b=2, c=4  \nb = (4 + 4) % 10 = 8  \nSTATE s2: a=8, b=8, c=4  \nc = (4 * 4) % 10 = 6  \nSTATE s3: a=8, b=8, c=6  \na = (8 * 5) % 10 = 0  \nSTATE s4: a=0, b=8, c=6  \nb = (6 + 4) % 10 = 0  \nSTATE s5: a=0, b=0, c=6  \nb = (6 * 0) % ",
+        "states": null,
+        "text": "init: a=4, b=2, c=4  \nSTATE s0: a=4, b=2, c=4  \na = (4 * 7) % 10 = 8  \nSTATE s1: a=8, b=2, c=4  \nb = (4 + 4) % 10 = 8  \nSTATE s2: a=8, b=8, c=4  \nc = (4 * 4) % 10 = 6  \nSTATE s3: a=8, b=8, c=6  \na = (8 * 5) % 10 = 0  \nSTATE s4: a=0, b=8, c=6  \nb = (6 + 4) % 10 = 0  \nSTATE s5: a=0, b=0, c=6  \nb = (6 * 0) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "init: a=4, b=2, c=4  \nSTATE s0: a=4, b=2, c=4  \na = (4 * 7) % 10 = 2  \nSTATE s1: a=2, b=2, c=4  \nb = (4 + 4) % 10 = 8  \nSTATE s2: a=2, b=8, c=4  \nc = (4 * 4) % 10 = 6  \nSTATE s3: a=2, b=8, c=6  \na = (8 * 5) % 10 = 0  \nSTATE s4: a=0, b=8, c=6  \nb = (6 + 4) % 10 = 0  \nSTATE s5: a=0, b=0, c=6  \nb = (6 * 0) % ",
+    "source_token_count": 393,
+    "truth_s11": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "a_s11": [
+      1,
+      4,
+      4
+    ],
+    "a_s8": [
+      4,
+      8,
+      2
+    ],
+    "id": 6,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=7, b=5, c=1  \nSTATE s0: a=7, b=5, c=1  \na = (1 + 7) % 10 = 8  \nSTATE s1: a=8, b=5, c=1  \nb = (1 + 5) % 10 = 6  \nSTATE s2: a=8, b=6, c=1  \nc = (8 + 1) % 10 = 9  \nSTATE s3: a=8, b=6, c=9  \nb = (9 * 8) % 10 = 2  \nSTATE s4: a=8, b=2, c=9  \nc = (9 * 8) % 10 = 2  \nSTATE s5: a=8, b=2, c=2  \na = (2 * 2) % ",
+        "states": null,
+        "text": "init: a=7, b=5, c=1  \nSTATE s0: a=7, b=5, c=1  \na = (1 + 7) % 10 = 8  \nSTATE s1: a=8, b=5, c=1  \nb = (1 + 5) % 10 = 6  \nSTATE s2: a=8, b=6, c=1  \nc = (8 + 1) % 10 = 9  \nSTATE s3: a=8, b=6, c=9  \nb = (9 * 8) % 10 = 2  \nSTATE s4: a=8, b=2, c=9  \nc = (9 * 8) % 10 = 2  \nSTATE s5: a=8, b=2, c=2  \na = (2 * 2) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=7, b=5, c=1  \nSTATE s0: a=7, b=5, c=1  \na = (1 + 7) % 10 = 8  \nSTATE s1: a=8, b=5, c=1  \nb = (1 + 5) % 10 = 6  \nSTATE s2: a=8, b=6, c=1  \nc = (8 + 1) % 10 = 9  \nSTATE s3: a=8, b=6, c=9  \nb = (9 * 8) % 10 = 2  \nSTATE s4: a=8, b=2, c=9  \nc = (9 * 8) % 10 = 2  \nSTATE s5: a=8, b=2, c=2  \na = (2 * 2) % ",
+        "states": null,
+        "text": "init: a=7, b=5, c=1  \nSTATE s0: a=7, b=5, c=1  \na = (1 + 7) % 10 = 8  \nSTATE s1: a=8, b=5, c=1  \nb = (1 + 5) % 10 = 6  \nSTATE s2: a=8, b=6, c=1  \nc = (8 + 1) % 10 = 9  \nSTATE s3: a=8, b=6, c=9  \nb = (9 * 8) % 10 = 2  \nSTATE s4: a=8, b=2, c=9  \nc = (9 * 8) % 10 = 2  \nSTATE s5: a=8, b=2, c=2  \na = (2 * 2) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "init: a=7, b=5, c=1  \nSTATE s0: a=7, b=5, c=1  \na = (1 + 7) % 10 = 8  \nSTATE s1: a=8, b=5, c=1  \nb = (1 + 5) % 10 = 6  \nSTATE s2: a=8, b=6, c=1  \nc = (8 + 1) % 10 = 9  \nSTATE s3: a=8, b=6, c=9  \nb = (9 * 8) % 10 = 2  \nSTATE s4: a=8, b=2, c=9  \nc = (9 * 8) % 10 = 2  \nSTATE s5: a=8, b=2, c=2  \na = (2 * 2) % ",
+    "source_token_count": 404,
+    "truth_s11": [
+      9,
+      8,
+      4
+    ]
+  },
+  {
+    "a_s11": [
+      4,
+      4,
+      7
+    ],
+    "a_s8": [
+      6,
+      2,
+      1
+    ],
+    "id": 7,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=0, b=3, c=3  \nSTATE s0: a=0, b=3, c=3  \na = (3 * 3) % 10 = 9  \nSTATE s1: a=9, b=3, c=3  \nb = (3 + 3) % 10 = 6  \nSTATE s2: a=9, b=6, c=3  \nc = (9 + 1) % 10 = 0  \nSTATE s3: a=9, b=6, c=0  \nc = (0 + 1) % 10 = 1  \nSTATE s4: a=9, b=6, c=1  \na = (1 + 9) % 10 = 0  \nSTATE s5: a=0, b=6, c=1  \na = (0 + 6) % ",
+        "states": null,
+        "text": "init: a=0, b=3, c=3  \nSTATE s0: a=0, b=3, c=3  \na = (3 * 3) % 10 = 9  \nSTATE s1: a=9, b=3, c=3  \nb = (3 + 3) % 10 = 6  \nSTATE s2: a=9, b=6, c=3  \nc = (9 + 1) % 10 = 0  \nSTATE s3: a=9, b=6, c=0  \nc = (0 + 1) % 10 = 1  \nSTATE s4: a=9, b=6, c=1  \na = (1 + 9) % 10 = 0  \nSTATE s5: a=0, b=6, c=1  \na = (0 + 6) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=0, b=3, c=3  \nSTATE s0: a=0, b=3, c=3  \na = (3 * 3) % 10 = 9  \nSTATE s1: a=9, b=3, c=3  \nb = (3 + 3) % 10 = 6  \nSTATE s2: a=9, b=6, c=3  \nc = (9 + 1) % 10 = 0  \nSTATE s3: a=9, b=6, c=0  \nc = (0 + 1) % 10 = 1  \nSTATE s4: a=9, b=6, c=1  \na = (1 + 9) % 10 = 0  \nSTATE s5: a=0, b=6, c=1  \na = (0 + 6) % ",
+        "states": null,
+        "text": "init: a=0, b=3, c=3  \nSTATE s0: a=0, b=3, c=3  \na = (3 * 3) % 10 = 9  \nSTATE s1: a=9, b=3, c=3  \nb = (3 + 3) % 10 = 6  \nSTATE s2: a=9, b=6, c=3  \nc = (9 + 1) % 10 = 0  \nSTATE s3: a=9, b=6, c=0  \nc = (0 + 1) % 10 = 1  \nSTATE s4: a=9, b=6, c=1  \na = (1 + 9) % 10 = 0  \nSTATE s5: a=0, b=6, c=1  \na = (0 + 6) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "init: a=0, b=3, c=3  \nSTATE s0: a=0, b=3, c=3  \na = (3 * 3) % 10 = 9  \nSTATE s1: a=9, b=3, c=3  \nb = (3 + 3) % 10 = 6  \nSTATE s2: a=9, b=6, c=3  \nc = (9 + 1) % 10 = 0  \nSTATE s3: a=9, b=6, c=0  \nc = (0 + 1) % 10 = 1  \nSTATE s4: a=9, b=6, c=1  \na = (1 + 9) % 10 = 0  \nSTATE s5: a=0, b=6, c=1  \na = (0 + 6) % ",
+    "source_token_count": 404,
+    "truth_s11": [
+      4,
+      4,
+      7
+    ]
+  },
+  {
+    "a_s11": null,
+    "a_s8": null,
+    "id": 8,
+    "parse_ok": false,
+    "receiver": null,
+    "receiver_prompt_oracle_preview": null,
+    "source_token_count": 338,
+    "truth_s11": [
+      0,
+      0,
+      6
+    ]
+  },
+  {
+    "a_s11": [
+      5,
+      0,
+      0
+    ],
+    "a_s8": [
+      0,
+      5,
+      0
+    ],
+    "id": 9,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=3, b=2, c=2  \nSTATE s0: a=3, b=2, c=2  \na = (3 * 3) % 10 = 9  \nSTATE s1: a=9, b=2, c=2  \nb = (2 + 2) % 10 = 4  \nSTATE s2: a=9, b=4, c=2  \nc = (2 * 2) % 10 = 4  \nSTATE s3: a=9, b=4, c=4  \nc = (4 * 4) % 10 = 6  \nSTATE s4: a=9, b=4, c=6  \nc = (4 * 9) % 10 = 6  \nSTATE s5: a=9, b=4, c=6  \na = (9 + 6) % ",
+        "states": null,
+        "text": "init: a=3, b=2, c=2  \nSTATE s0: a=3, b=2, c=2  \na = (3 * 3) % 10 = 9  \nSTATE s1: a=9, b=2, c=2  \nb = (2 + 2) % 10 = 4  \nSTATE s2: a=9, b=4, c=2  \nc = (2 * 2) % 10 = 4  \nSTATE s3: a=9, b=4, c=4  \nc = (4 * 4) % 10 = 6  \nSTATE s4: a=9, b=4, c=6  \nc = (4 * 9) % 10 = 6  \nSTATE s5: a=9, b=4, c=6  \na = (9 + 6) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=3, b=2, c=2  \nSTATE s0: a=3, b=2, c=2  \na = (3 * 3) % 10 = 9  \nSTATE s1: a=9, b=2, c=2  \nb = (2 + 2) % 10 = 4  \nSTATE s2: a=9, b=4, c=2  \nc = (2 * 2) % 10 = 4  \nSTATE s3: a=9, b=4, c=4  \nc = (4 * 4) % 10 = 6  \nSTATE s4: a=9, b=4, c=6  \nc = (4 * 9) % 10 = 6  \nSTATE s5: a=9, b=4, c=6  \na = (9 + 6) % ",
+        "states": null,
+        "text": "init: a=3, b=2, c=2  \nSTATE s0: a=3, b=2, c=2  \na = (3 * 3) % 10 = 9  \nSTATE s1: a=9, b=2, c=2  \nb = (2 + 2) % 10 = 4  \nSTATE s2: a=9, b=4, c=2  \nc = (2 * 2) % 10 = 4  \nSTATE s3: a=9, b=4, c=4  \nc = (4 * 4) % 10 = 6  \nSTATE s4: a=9, b=4, c=6  \nc = (4 * 9) % 10 = 6  \nSTATE s5: a=9, b=4, c=6  \na = (9 + 6) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "init: a=3, b=2, c=2  \nSTATE s0: a=3, b=2, c=2  \na = (3 * 3) % 10 = 9  \nSTATE s1: a=9, b=2, c=2  \nb = (2 + 2) % 10 = 4  \nSTATE s2: a=9, b=4, c=2  \nc = (2 * 2) % 10 = 4  \nSTATE s3: a=9, b=4, c=4  \nc = (4 * 4) % 10 = 6  \nSTATE s4: a=9, b=4, c=6  \nc = (4 * 9) % 10 = 6  \nSTATE s5: a=9, b=4, c=6  \na = (9 + 6) % ",
+    "source_token_count": 404,
+    "truth_s11": [
+      5,
+      0,
+      0
+    ]
+  },
+  {
+    "a_s11": null,
+    "a_s8": null,
+    "id": 10,
+    "parse_ok": false,
+    "receiver": null,
+    "receiver_prompt_oracle_preview": null,
+    "source_token_count": 363,
+    "truth_s11": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "a_s11": [
+      3,
+      5,
+      6
+    ],
+    "a_s8": [
+      3,
+      9,
+      6
+    ],
+    "id": 11,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=5, b=8, c=4  \nSTATE s0: a=5, b=8, c=4  \na = (5 + 2) % 10 = 7  \nSTATE s1: a=7, b=8, c=4  \nb = (8 + 8) % 10 = 6  \nSTATE s2: a=7, b=6, c=4  \nc = (4 * 4) % 10 = 6  \nSTATE s3: a=7, b=6, c=6  \nc = (6 + 3) % 10 = 9  \nSTATE s4: a=7, b=6, c=9  \nc = (6 * 9) % 10 = 4  \nSTATE s5: a=7, b=6, c=4  \na = (6 + 7) % ",
+        "states": null,
+        "text": "init: a=5, b=8, c=4  \nSTATE s0: a=5, b=8, c=4  \na = (5 + 2) % 10 = 7  \nSTATE s1: a=7, b=8, c=4  \nb = (8 + 8) % 10 = 6  \nSTATE s2: a=7, b=6, c=4  \nc = (4 * 4) % 10 = 6  \nSTATE s3: a=7, b=6, c=6  \nc = (6 + 3) % 10 = 9  \nSTATE s4: a=7, b=6, c=9  \nc = (6 * 9) % 10 = 4  \nSTATE s5: a=7, b=6, c=4  \na = (6 + 7) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=5, b=8, c=4  \nSTATE s0: a=5, b=8, c=4  \na = (5 + 2) % 10 = 7  \nSTATE s1: a=7, b=8, c=4  \nb = (8 + 8) % 10 = 6  \nSTATE s2: a=7, b=6, c=4  \nc = (4 * 4) % 10 = 6  \nSTATE s3: a=7, b=6, c=6  \nc = (6 + 3) % 10 = 9  \nSTATE s4: a=7, b=6, c=9  \nc = (6 * 9) % 10 = 4  \nSTATE s5: a=7, b=6, c=4  \na = (6 + 7) % ",
+        "states": null,
+        "text": "init: a=5, b=8, c=4  \nSTATE s0: a=5, b=8, c=4  \na = (5 + 2) % 10 = 7  \nSTATE s1: a=7, b=8, c=4  \nb = (8 + 8) % 10 = 6  \nSTATE s2: a=7, b=6, c=4  \nc = (4 * 4) % 10 = 6  \nSTATE s3: a=7, b=6, c=6  \nc = (6 + 3) % 10 = 9  \nSTATE s4: a=7, b=6, c=9  \nc = (6 * 9) % 10 = 4  \nSTATE s5: a=7, b=6, c=4  \na = (6 + 7) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "init: a=5, b=8, c=4  \nSTATE s0: a=5, b=8, c=4  \na = (5 + 2) % 10 = 7  \nSTATE s1: a=7, b=8, c=4  \nb = (8 + 8) % 10 = 6  \nSTATE s2: a=7, b=6, c=4  \nc = (4 * 4) % 10 = 6  \nSTATE s3: a=7, b=6, c=6  \nc = (6 + 3) % 10 = 9  \nSTATE s4: a=7, b=6, c=9  \nc = (6 * 9) % 10 = 4  \nSTATE s5: a=7, b=6, c=4  \na = (6 + 7) % ",
+    "source_token_count": 404,
+    "truth_s11": [
+      3,
+      9,
+      6
+    ]
+  },
+  {
+    "a_s11": [
+      2,
+      6,
+      2
+    ],
+    "a_s8": [
+      6,
+      6,
+      1
+    ],
+    "id": 12,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=8, b=1, c=5  \nSTATE s0: a=8, b=1, c=5  \na = (5 + 8) % 10 = 1  \nSTATE s1: a=1, b=1, c=5  \nb = (5 + 2) % 10 = 2  \nSTATE s2: a=1, b=2, c=5  \nc = (2 + 2) % 10 = 4  \nSTATE s3: a=1, b=2, c=4  \na = (1 * 5) % 10 = 5  \nSTATE s4: a=5, b=2, c=4  \nc = (2 + 4) % 10 = 6  \nSTATE s5: a=5, b=2, c=6  \na = (5 + 6) % ",
+        "states": null,
+        "text": "init: a=8, b=1, c=5  \nSTATE s0: a=8, b=1, c=5  \na = (5 + 8) % 10 = 1  \nSTATE s1: a=1, b=1, c=5  \nb = (5 + 2) % 10 = 2  \nSTATE s2: a=1, b=2, c=5  \nc = (2 + 2) % 10 = 4  \nSTATE s3: a=1, b=2, c=4  \na = (1 * 5) % 10 = 5  \nSTATE s4: a=5, b=2, c=4  \nc = (2 + 4) % 10 = 6  \nSTATE s5: a=5, b=2, c=6  \na = (5 + 6) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=8, b=1, c=5  \nSTATE s0: a=8, b=1, c=5  \na = (5 + 8) % 10 = 1  \nSTATE s1: a=1, b=1, c=5  \nb = (5 + 2) % 10 = 7  \nSTATE s2: a=1, b=7, c=5  \nc = (7 + 7) % 10 = 4  \nSTATE s3: a=1, b=7, c=4  \na = (1 * 5) % 10 = 5  \nSTATE s4: a=5, b=7, c=4  \nc = (7 + 4) % 10 = 1  \nSTATE s5: a=5, b=7, c=1  \na = (5 + 1) % ",
+        "states": null,
+        "text": "init: a=8, b=1, c=5  \nSTATE s0: a=8, b=1, c=5  \na = (5 + 8) % 10 = 1  \nSTATE s1: a=1, b=1, c=5  \nb = (5 + 2) % 10 = 7  \nSTATE s2: a=1, b=7, c=5  \nc = (7 + 7) % 10 = 4  \nSTATE s3: a=1, b=7, c=4  \na = (1 * 5) % 10 = 5  \nSTATE s4: a=5, b=7, c=4  \nc = (7 + 4) % 10 = 1  \nSTATE s5: a=5, b=7, c=1  \na = (5 + 1) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "init: a=8, b=1, c=5  \nSTATE s0: a=8, b=1, c=5  \na = (5 + 8) % 10 = 1  \nSTATE s1: a=1, b=1, c=5  \nb = (5 + 2) % 10 = 2  \nSTATE s2: a=1, b=2, c=5  \nc = (2 + 2) % 10 = 4  \nSTATE s3: a=1, b=2, c=4  \na = (1 * 5) % 10 = 5  \nSTATE s4: a=5, b=2, c=4  \nc = (2 + 4) % 10 = 6  \nSTATE s5: a=5, b=2, c=6  \na = (5 + 6) % ",
+    "source_token_count": 404,
+    "truth_s11": [
+      2,
+      6,
+      2
+    ]
+  },
+  {
+    "a_s11": [
+      0,
+      0,
+      0
+    ],
+    "a_s8": [
+      0,
+      0,
+      0
+    ],
+    "id": 13,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=4, b=9, c=5  \nSTATE s0: a=4, b=9, c=5  \na = (5 * 4) % 10 = 0  \nSTATE s1: a=0, b=9, c=5  \nb = (5 + 2) % 10 = 7  \nSTATE s2: a=0, b=7, c=5  \nc = (0 * 7) % 10 = 0  \nSTATE s3: a=0, b=7, c=0  \nb = (7 * 9) % 10 = 3  \nSTATE s4: a=0, b=3, c=0  \nb = (3 + 0) % 10 = 3  \nSTATE s5: a=0, b=3, c=0  \na = (3 + 4) % ",
+        "states": null,
+        "text": "init: a=4, b=9, c=5  \nSTATE s0: a=4, b=9, c=5  \na = (5 * 4) % 10 = 0  \nSTATE s1: a=0, b=9, c=5  \nb = (5 + 2) % 10 = 7  \nSTATE s2: a=0, b=7, c=5  \nc = (0 * 7) % 10 = 0  \nSTATE s3: a=0, b=7, c=0  \nb = (7 * 9) % 10 = 3  \nSTATE s4: a=0, b=3, c=0  \nb = (3 + 0) % 10 = 3  \nSTATE s5: a=0, b=3, c=0  \na = (3 + 4) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=4, b=9, c=5  \nSTATE s0: a=4, b=9, c=5  \na = (5 * 4) % 10 = 0  \nSTATE s1: a=0, b=9, c=5  \nc = (0 * 7) % 10 = 0  \nSTATE s2: a=0, b=9, c=0  \nb = (0 + 2) % 10 = 2  \nSTATE s3: a=0, b=2, c=0  \nb = (2 * 9) % 10 = 8  \nSTATE s4: a=0, b=8, c=0  \nb = (8 + 0) % 10 = 8  \nSTATE s5: a=0, b=8, c=0  \na = (8 + 4) % ",
+        "states": null,
+        "text": "init: a=4, b=9, c=5  \nSTATE s0: a=4, b=9, c=5  \na = (5 * 4) % 10 = 0  \nSTATE s1: a=0, b=9, c=5  \nc = (0 * 7) % 10 = 0  \nSTATE s2: a=0, b=9, c=0  \nb = (0 + 2) % 10 = 2  \nSTATE s3: a=0, b=2, c=0  \nb = (2 * 9) % 10 = 8  \nSTATE s4: a=0, b=8, c=0  \nb = (8 + 0) % 10 = 8  \nSTATE s5: a=0, b=8, c=0  \na = (8 + 4) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "init: a=4, b=9, c=5  \nSTATE s0: a=4, b=9, c=5  \na = (5 * 4) % 10 = 0  \nSTATE s1: a=0, b=9, c=5  \nb = (5 + 2) % 10 = 7  \nSTATE s2: a=0, b=7, c=5  \nc = (0 * 7) % 10 = 0  \nSTATE s3: a=0, b=7, c=0  \nb = (7 * 9) % 10 = 3  \nSTATE s4: a=0, b=3, c=0  \nb = (3 + 0) % 10 = 3  \nSTATE s5: a=0, b=3, c=0  \na = (3 + 4) % ",
+    "source_token_count": 404,
+    "truth_s11": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "a_s11": [
+      5,
+      0,
+      0
+    ],
+    "a_s8": [
+      5,
+      0,
+      5
+    ],
+    "id": 14,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=7, b=2, c=3  \nSTATE s0: a=7, b=2, c=3  \na = (2 + 9) % 10 = 1  \nSTATE s1: a=1, b=2, c=3  \nb = (3 + 8) % 10 = 1  \nSTATE s2: a=1, b=1, c=3  \nc = (3 * 5) % 10 = 5  \nSTATE s3: a=1, b=1, c=5  \nb = (5 * 5) % 10 = 5  \nSTATE s4: a=1, b=5, c=5  \na = (5 * 1) % 10 = 5  \nSTATE s5: a=5, b=5, c=5  \nb = (5 + 5) % ",
+        "states": null,
+        "text": "init: a=7, b=2, c=3  \nSTATE s0: a=7, b=2, c=3  \na = (2 + 9) % 10 = 1  \nSTATE s1: a=1, b=2, c=3  \nb = (3 + 8) % 10 = 1  \nSTATE s2: a=1, b=1, c=3  \nc = (3 * 5) % 10 = 5  \nSTATE s3: a=1, b=1, c=5  \nb = (5 * 5) % 10 = 5  \nSTATE s4: a=1, b=5, c=5  \na = (5 * 1) % 10 = 5  \nSTATE s5: a=5, b=5, c=5  \nb = (5 + 5) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=7, b=2, c=3  \nSTATE s0: a=7, b=2, c=3  \na = (2 + 9) % 10 = 1  \nSTATE s1: a=1, b=2, c=3  \nb = (3 + 8) % 10 = 1  \nSTATE s2: a=1, b=1, c=3  \nc = (3 * 5) % 10 = 5  \nSTATE s3: a=1, b=1, c=5  \nb = (5 * 5) % 10 = 5  \nSTATE s4: a=1, b=5, c=5  \na = (5 * 1) % 10 = 5  \nSTATE s5: a=5, b=5, c=5  \nb = (5 + 5) % ",
+        "states": null,
+        "text": "init: a=7, b=2, c=3  \nSTATE s0: a=7, b=2, c=3  \na = (2 + 9) % 10 = 1  \nSTATE s1: a=1, b=2, c=3  \nb = (3 + 8) % 10 = 1  \nSTATE s2: a=1, b=1, c=3  \nc = (3 * 5) % 10 = 5  \nSTATE s3: a=1, b=1, c=5  \nb = (5 * 5) % 10 = 5  \nSTATE s4: a=1, b=5, c=5  \na = (5 * 1) % 10 = 5  \nSTATE s5: a=5, b=5, c=5  \nb = (5 + 5) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "init: a=7, b=2, c=3  \nSTATE s0: a=7, b=2, c=3  \na = (2 + 9) % 10 = 1  \nSTATE s1: a=1, b=2, c=3  \nb = (3 + 8) % 10 = 1  \nSTATE s2: a=1, b=1, c=3  \nc = (3 * 5) % 10 = 5  \nSTATE s3: a=1, b=1, c=5  \nb = (5 * 5) % 10 = 5  \nSTATE s4: a=1, b=5, c=5  \na = (5 * 1) % 10 = 5  \nSTATE s5: a=5, b=5, c=5  \nb = (5 + 5) % ",
+    "source_token_count": 404,
+    "truth_s11": [
+      4,
+      0,
+      0
+    ]
+  },
+  {
+    "a_s11": [
+      0,
+      0,
+      0
+    ],
+    "a_s8": [
+      2,
+      0,
+      0
+    ],
+    "id": 15,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "STATE s0: a=6, b=3, c=9  \na = (6 + 6) % 10 = 2  \nSTATE s1: a=2, b=3, c=9  \nb = (9 + 9) % 10 = 8  \nSTATE s2: a=2, b=8, c=9  \nc = (8 * 9) % 10 = 2  \nSTATE s3: a=2, b=8, c=2  \nc = (2 + 8) % 10 = 0  \nSTATE s4: a=2, b=8, c=0  \nb = (0 + 0) % 10 = 0  \nSTATE s5: a=2, b=0, c=0  \nc = (0 + 8) % 10 = 8  \nSTATE s6: a=2,",
+        "states": null,
+        "text": "STATE s0: a=6, b=3, c=9  \na = (6 + 6) % 10 = 2  \nSTATE s1: a=2, b=3, c=9  \nb = (9 + 9) % 10 = 8  \nSTATE s2: a=2, b=8, c=9  \nc = (8 * 9) % 10 = 2  \nSTATE s3: a=2, b=8, c=2  \nc = (2 + 8) % 10 = 0  \nSTATE s4: a=2, b=8, c=0  \nb = (0 + 0) % 10 = 0  \nSTATE s5: a=2, b=0, c=0  \nc = (0 + 8) % 10 = 8  \nSTATE s6: a=2,",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=6, b=3, c=9  \nSTATE s0: a=6, b=3, c=9  \na = (6 + 6) % 10 = 2  \nSTATE s1: a=2, b=3, c=9  \nb = (9 + 9) % 10 = 8  \nSTATE s2: a=2, b=8, c=9  \nc = (8 * 9) % 10 = 2  \nSTATE s3: a=2, b=8, c=2  \nc = (2 + 8) % 10 = 0  \nSTATE s4: a=2, b=8, c=0  \nb = (0 + 0) % 10 = 0  \nSTATE s5: a=2, b=0, c=0  \nc = (0 + 8) % ",
+        "states": null,
+        "text": "init: a=6, b=3, c=9  \nSTATE s0: a=6, b=3, c=9  \na = (6 + 6) % 10 = 2  \nSTATE s1: a=2, b=3, c=9  \nb = (9 + 9) % 10 = 8  \nSTATE s2: a=2, b=8, c=9  \nc = (8 * 9) % 10 = 2  \nSTATE s3: a=2, b=8, c=2  \nc = (2 + 8) % 10 = 0  \nSTATE s4: a=2, b=8, c=0  \nb = (0 + 0) % 10 = 0  \nSTATE s5: a=2, b=0, c=0  \nc = (0 + 8) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s0: a=6, b=3, c=9  \na = (6 + 6) % 10 = 2  \nSTATE s1: a=2, b=3, c=9  \nb = (9 + 9) % 10 = 8  \nSTATE s2: a=2, b=8, c=9  \nc = (8 * 9) % 10 = 2  \nSTATE s3: a=2, b=8, c=2  \nc = (2 + 8) % 10 = 0  \nSTATE s4: a=2, b=8, c=0  \nb = (0 + 0) % 10 = 0  \nSTATE s5: a=2, b=0, c=0  \nc = (0 + 8) % 10 = 8  \nSTATE s6: a=2,",
+    "source_token_count": 393,
+    "truth_s11": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "a_s11": [
+      5,
+      3,
+      1
+    ],
+    "a_s8": [
+      4,
+      3,
+      3
+    ],
+    "id": 16,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=3, b=8, c=6  \nSTATE s0: a=3, b=8, c=6  \na = (6 * 3) % 10 = 8  \nSTATE s1: a=8, b=8, c=6  \nb = (8 * 6) % 10 = 8  \nSTATE s2: a=8, b=8, c=8  \nc = (8 + 8) % 10 = 6  \nSTATE s3: a=8, b=8, c=6  \na = (8 + 3) % 10 = 1  \nSTATE s4: a=1, b=8, c=6  \nc = (8 * 6) % 10 = 8  \nSTATE s5: a=1, b=8, c=8  \nc = (1 + 8) % ",
+        "states": null,
+        "text": "init: a=3, b=8, c=6  \nSTATE s0: a=3, b=8, c=6  \na = (6 * 3) % 10 = 8  \nSTATE s1: a=8, b=8, c=6  \nb = (8 * 6) % 10 = 8  \nSTATE s2: a=8, b=8, c=8  \nc = (8 + 8) % 10 = 6  \nSTATE s3: a=8, b=8, c=6  \na = (8 + 3) % 10 = 1  \nSTATE s4: a=1, b=8, c=6  \nc = (8 * 6) % 10 = 8  \nSTATE s5: a=1, b=8, c=8  \nc = (1 + 8) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=3, b=8, c=6  \nSTATE s0: a=3, b=8, c=6  \na = (6 * 3) % 10 = 8  \nSTATE s1: a=8, b=8, c=6  \nb = (8 * 6) % 10 = 8  \nSTATE s2: a=8, b=8, c=8  \nc = (8 + 8) % 10 = 6  \nSTATE s3: a=8, b=8, c=6  \na = (8 + 3) % 10 = 1  \nSTATE s4: a=1, b=8, c=6  \nc = (8 * 6) % 10 = 8  \nSTATE s5: a=1, b=8, c=8  \nc = (1 + 8) % ",
+        "states": null,
+        "text": "init: a=3, b=8, c=6  \nSTATE s0: a=3, b=8, c=6  \na = (6 * 3) % 10 = 8  \nSTATE s1: a=8, b=8, c=6  \nb = (8 * 6) % 10 = 8  \nSTATE s2: a=8, b=8, c=8  \nc = (8 + 8) % 10 = 6  \nSTATE s3: a=8, b=8, c=6  \na = (8 + 3) % 10 = 1  \nSTATE s4: a=1, b=8, c=6  \nc = (8 * 6) % 10 = 8  \nSTATE s5: a=1, b=8, c=8  \nc = (1 + 8) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "init: a=3, b=8, c=6  \nSTATE s0: a=3, b=8, c=6  \na = (6 * 3) % 10 = 8  \nSTATE s1: a=8, b=8, c=6  \nb = (8 * 6) % 10 = 8  \nSTATE s2: a=8, b=8, c=8  \nc = (8 + 8) % 10 = 6  \nSTATE s3: a=8, b=8, c=6  \na = (8 + 3) % 10 = 1  \nSTATE s4: a=1, b=8, c=6  \nc = (8 * 6) % 10 = 8  \nSTATE s5: a=1, b=8, c=8  \nc = (1 + 8) % ",
+    "source_token_count": 404,
+    "truth_s11": [
+      5,
+      3,
+      1
+    ]
+  },
+  {
+    "a_s11": [
+      0,
+      6,
+      7
+    ],
+    "a_s8": [
+      0,
+      8,
+      2
+    ],
+    "id": 17,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=1, b=5, c=2  \nSTATE s0: a=1, b=5, c=2  \na = (5 * 2) % 10 = 0  \nSTATE s1: a=0, b=5, c=2  \nb = (0 * 7) % 10 = 0  \nSTATE s2: a=0, b=0, c=2  \nc = (2 + 0) % 10 = 2  \nSTATE s3: a=0, b=0, c=2  \na = (0 * 8) % 10 = 0  \nSTATE s4: a=0, b=0, c=2  \nc = (2 + 2) % 10 = 4  \nSTATE s5: a=0, b=0, c=4  \nb = (4 + 1) % ",
+        "states": null,
+        "text": "init: a=1, b=5, c=2  \nSTATE s0: a=1, b=5, c=2  \na = (5 * 2) % 10 = 0  \nSTATE s1: a=0, b=5, c=2  \nb = (0 * 7) % 10 = 0  \nSTATE s2: a=0, b=0, c=2  \nc = (2 + 0) % 10 = 2  \nSTATE s3: a=0, b=0, c=2  \na = (0 * 8) % 10 = 0  \nSTATE s4: a=0, b=0, c=2  \nc = (2 + 2) % 10 = 4  \nSTATE s5: a=0, b=0, c=4  \nb = (4 + 1) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=1, b=5, c=2  \nSTATE s0: a=1, b=5, c=2  \na = (5 * 2) % 10 = 0  \nSTATE s1: a=0, b=5, c=2  \nb = (0 * 7) % 10 = 0  \nSTATE s2: a=0, b=0, c=2  \nc = (2 + 0) % 10 = 2  \nSTATE s3: a=0, b=0, c=2  \na = (0 * 8) % 10 = 0  \nSTATE s4: a=0, b=0, c=2  \nc = (2 + 2) % 10 = 4  \nSTATE s5: a=0, b=0, c=4  \nb = (4 + 1) % ",
+        "states": null,
+        "text": "init: a=1, b=5, c=2  \nSTATE s0: a=1, b=5, c=2  \na = (5 * 2) % 10 = 0  \nSTATE s1: a=0, b=5, c=2  \nb = (0 * 7) % 10 = 0  \nSTATE s2: a=0, b=0, c=2  \nc = (2 + 0) % 10 = 2  \nSTATE s3: a=0, b=0, c=2  \na = (0 * 8) % 10 = 0  \nSTATE s4: a=0, b=0, c=2  \nc = (2 + 2) % 10 = 4  \nSTATE s5: a=0, b=0, c=4  \nb = (4 + 1) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "init: a=1, b=5, c=2  \nSTATE s0: a=1, b=5, c=2  \na = (5 * 2) % 10 = 0  \nSTATE s1: a=0, b=5, c=2  \nb = (0 * 7) % 10 = 0  \nSTATE s2: a=0, b=0, c=2  \nc = (2 + 0) % 10 = 2  \nSTATE s3: a=0, b=0, c=2  \na = (0 * 8) % 10 = 0  \nSTATE s4: a=0, b=0, c=2  \nc = (2 + 2) % 10 = 4  \nSTATE s5: a=0, b=0, c=4  \nb = (4 + 1) % ",
+    "source_token_count": 404,
+    "truth_s11": [
+      0,
+      6,
+      7
+    ]
+  },
+  {
+    "a_s11": [
+      0,
+      0,
+      0
+    ],
+    "a_s8": [
+      0,
+      0,
+      0
+    ],
+    "id": 18,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=9, b=2, c=4  \nSTATE s0: a=9, b=2, c=4  \na = (2 * 1) % 10 = 2  \nSTATE s1: a=2, b=2, c=4  \nb = (4 * 1) % 10 = 4  \nSTATE s2: a=2, b=4, c=4  \nc = (4 * 5) % 10 = 0  \nSTATE s3: a=2, b=4, c=0  \na = (2 + 1) % 10 = 3  \nSTATE s4: a=3, b=4, c=0  \na = (3 + 0) % 10 = 3  \nSTATE s5: a=3, b=4, c=0  \nb = (3 + 3) % ",
+        "states": null,
+        "text": "init: a=9, b=2, c=4  \nSTATE s0: a=9, b=2, c=4  \na = (2 * 1) % 10 = 2  \nSTATE s1: a=2, b=2, c=4  \nb = (4 * 1) % 10 = 4  \nSTATE s2: a=2, b=4, c=4  \nc = (4 * 5) % 10 = 0  \nSTATE s3: a=2, b=4, c=0  \na = (2 + 1) % 10 = 3  \nSTATE s4: a=3, b=4, c=0  \na = (3 + 0) % 10 = 3  \nSTATE s5: a=3, b=4, c=0  \nb = (3 + 3) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=9, b=2, c=4  \nSTATE s0: a=9, b=2, c=4  \na = (2 * 1) % 10 = 2  \nSTATE s1: a=2, b=2, c=4  \nb = (4 * 1) % 10 = 4  \nSTATE s2: a=2, b=4, c=4  \nc = (4 * 5) % 10 = 0  \nSTATE s3: a=2, b=4, c=0  \na = (2 + 1) % 10 = 3  \nSTATE s4: a=3, b=4, c=0  \na = (3 + 0) % 10 = 3  \nSTATE s5: a=3, b=4, c=0  \nc = (0 * 6) % ",
+        "states": null,
+        "text": "init: a=9, b=2, c=4  \nSTATE s0: a=9, b=2, c=4  \na = (2 * 1) % 10 = 2  \nSTATE s1: a=2, b=2, c=4  \nb = (4 * 1) % 10 = 4  \nSTATE s2: a=2, b=4, c=4  \nc = (4 * 5) % 10 = 0  \nSTATE s3: a=2, b=4, c=0  \na = (2 + 1) % 10 = 3  \nSTATE s4: a=3, b=4, c=0  \na = (3 + 0) % 10 = 3  \nSTATE s5: a=3, b=4, c=0  \nc = (0 * 6) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "init: a=9, b=2, c=4  \nSTATE s0: a=9, b=2, c=4  \na = (2 * 1) % 10 = 2  \nSTATE s1: a=2, b=2, c=4  \nb = (4 * 1) % 10 = 4  \nSTATE s2: a=2, b=4, c=4  \nc = (4 * 5) % 10 = 0  \nSTATE s3: a=2, b=4, c=0  \na = (2 + 1) % 10 = 3  \nSTATE s4: a=3, b=4, c=0  \na = (3 + 0) % 10 = 3  \nSTATE s5: a=3, b=4, c=0  \nb = (3 + 3) % ",
+    "source_token_count": 393,
+    "truth_s11": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "a_s11": [
+      0,
+      8,
+      8
+    ],
+    "a_s8": [
+      4,
+      8,
+      6
+    ],
+    "id": 19,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=4, b=0, c=6  \nSTATE s0: a=4, b=0, c=6  \na = (6 * 7) % 10 = 4  \nSTATE s1: a=4, b=0, c=6  \nb = (6 * 6) % 10 = 6  \nSTATE s2: a=4, b=6, c=6  \nc = (6 + 6) % 10 = 2  \nSTATE s3: a=4, b=6, c=2  \nb = (6 * 2) % 10 = 2  \nSTATE s4: a=4, b=2, c=2  \nb = (2 * 2) % 10 = 4  \nSTATE s5: a=4, b=4, c=2  \nb = (4 * 9) % ",
+        "states": null,
+        "text": "init: a=4, b=0, c=6  \nSTATE s0: a=4, b=0, c=6  \na = (6 * 7) % 10 = 4  \nSTATE s1: a=4, b=0, c=6  \nb = (6 * 6) % 10 = 6  \nSTATE s2: a=4, b=6, c=6  \nc = (6 + 6) % 10 = 2  \nSTATE s3: a=4, b=6, c=2  \nb = (6 * 2) % 10 = 2  \nSTATE s4: a=4, b=2, c=2  \nb = (2 * 2) % 10 = 4  \nSTATE s5: a=4, b=4, c=2  \nb = (4 * 9) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=4, b=0, c=6  \nSTATE s0: a=4, b=0, c=6  \na = (6 * 7) % 10 = 4  \nSTATE s1: a=4, b=0, c=6  \nb = (6 * 6) % 10 = 6  \nSTATE s2: a=4, b=6, c=6  \nc = (6 + 6) % 10 = 2  \nSTATE s3: a=4, b=6, c=2  \nb = (6 * 2) % 10 = 2  \nSTATE s4: a=4, b=2, c=2  \nb = (2 * 2) % 10 = 4  \nSTATE s5: a=4, b=4, c=2  \nb = (4 * 9) % ",
+        "states": null,
+        "text": "init: a=4, b=0, c=6  \nSTATE s0: a=4, b=0, c=6  \na = (6 * 7) % 10 = 4  \nSTATE s1: a=4, b=0, c=6  \nb = (6 * 6) % 10 = 6  \nSTATE s2: a=4, b=6, c=6  \nc = (6 + 6) % 10 = 2  \nSTATE s3: a=4, b=6, c=2  \nb = (6 * 2) % 10 = 2  \nSTATE s4: a=4, b=2, c=2  \nb = (2 * 2) % 10 = 4  \nSTATE s5: a=4, b=4, c=2  \nb = (4 * 9) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "init: a=4, b=0, c=6  \nSTATE s0: a=4, b=0, c=6  \na = (6 * 7) % 10 = 4  \nSTATE s1: a=4, b=0, c=6  \nb = (6 * 6) % 10 = 6  \nSTATE s2: a=4, b=6, c=6  \nc = (6 + 6) % 10 = 2  \nSTATE s3: a=4, b=6, c=2  \nb = (6 * 2) % 10 = 2  \nSTATE s4: a=4, b=2, c=2  \nb = (2 * 2) % 10 = 4  \nSTATE s5: a=4, b=4, c=2  \nb = (4 * 9) % ",
+    "source_token_count": 404,
+    "truth_s11": [
+      0,
+      8,
+      8
+    ]
+  },
+  {
+    "a_s11": [
+      9,
+      0,
+      5
+    ],
+    "a_s8": [
+      2,
+      7,
+      5
+    ],
+    "id": 20,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "STATE s0: a=5, b=9, c=2  \na = (5 * 6) % 10 = 0  \nSTATE s1: a=0, b=9, c=2  \nb = (2 + 5) % 10 = 7  \nSTATE s2: a=0, b=7, c=2  \nc = (7 + 8) % 10 = 5  \nSTATE s3: a=0, b=7, c=5  \nc = (5 * 5) % 10 = 5  \nSTATE s4: a=0, b=7, c=5  \na = (7 + 7) % 10 = 4  \nSTATE s5: a=4, b=7, c=5  \na = (5 + 1) % 10 = 6  \nSTATE s6: a=6,",
+        "states": null,
+        "text": "STATE s0: a=5, b=9, c=2  \na = (5 * 6) % 10 = 0  \nSTATE s1: a=0, b=9, c=2  \nb = (2 + 5) % 10 = 7  \nSTATE s2: a=0, b=7, c=2  \nc = (7 + 8) % 10 = 5  \nSTATE s3: a=0, b=7, c=5  \nc = (5 * 5) % 10 = 5  \nSTATE s4: a=0, b=7, c=5  \na = (7 + 7) % 10 = 4  \nSTATE s5: a=4, b=7, c=5  \na = (5 + 1) % 10 = 6  \nSTATE s6: a=6,",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": false,
+        "parse_ok": false,
+        "scored_text": "STATE s9: a=7, b=5, c=2  \na = (7 + 5) % 10 = 2  \nSTATE s10: a=2, b=5, c=2  \na = (2 + 2) % 10 = 4  \nSTATE s11: a=4, b=5, c=2  \nb = (4 + 2) % 10 = 6  \nSTATE s12: a=4, b=6, c=2  \nFINAL_SUMMARY: a=4, b=6, c=2",
+        "states": null,
+        "text": "STATE s9: a=7, b=5, c=2  \na = (7 + 5) % 10 = 2  \nSTATE s10: a=2, b=5, c=2  \na = (2 + 2) % 10 = 4  \nSTATE s11: a=4, b=5, c=2  \nb = (4 + 2) % 10 = 6  \nSTATE s12: a=4, b=6, c=2  \nFINAL_SUMMARY: a=4, b=6, c=2",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 130
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s0: a=5, b=9, c=2  \na = (5 * 6) % 10 = 0  \nSTATE s1: a=0, b=9, c=2  \nb = (2 + 5) % 10 = 7  \nSTATE s2: a=0, b=7, c=2  \nc = (7 + 8) % 10 = 5  \nSTATE s3: a=0, b=7, c=5  \nc = (5 * 5) % 10 = 5  \nSTATE s4: a=0, b=7, c=5  \na = (7 + 7) % 10 = 4  \nSTATE s5: a=4, b=7, c=5  \na = (5 + 1) % 10 = 6  \nSTATE s6: a=6,",
+    "source_token_count": 404,
+    "truth_s11": [
+      9,
+      0,
+      5
+    ]
+  },
+  {
+    "a_s11": [
+      5,
+      0,
+      0
+    ],
+    "a_s8": [
+      5,
+      5,
+      1
+    ],
+    "id": 21,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=7, b=7, c=8  \nSTATE s0: a=7, b=7, c=8  \na = (7 * 7) % 10 = 9  \nSTATE s1: a=9, b=7, c=8  \nb = (7 * 9) % 10 = 3  \nSTATE s2: a=9, b=3, c=8  \nc = (9 * 9) % 10 = 1  \nSTATE s3: a=9, b=3, c=1  \nc = (1 + 9) % 10 = 0  \nSTATE s4: a=9, b=3, c=0  \nc = (0 + 0) % 10 = 0  \nSTATE s5: a=9, b=3, c=0  \nb = (0 + 5) % ",
+        "states": null,
+        "text": "init: a=7, b=7, c=8  \nSTATE s0: a=7, b=7, c=8  \na = (7 * 7) % 10 = 9  \nSTATE s1: a=9, b=7, c=8  \nb = (7 * 9) % 10 = 3  \nSTATE s2: a=9, b=3, c=8  \nc = (9 * 9) % 10 = 1  \nSTATE s3: a=9, b=3, c=1  \nc = (1 + 9) % 10 = 0  \nSTATE s4: a=9, b=3, c=0  \nc = (0 + 0) % 10 = 0  \nSTATE s5: a=9, b=3, c=0  \nb = (0 + 5) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=7, b=7, c=8  \nSTATE s0: a=7, b=7, c=8  \na = (7 * 7) % 10 = 9  \nSTATE s1: a=9, b=7, c=8  \nb = (7 * 9) % 10 = 3  \nSTATE s2: a=9, b=3, c=8  \nc = (9 * 9) % 10 = 1  \nSTATE s3: a=9, b=3, c=1  \nc = (1 + 9) % 10 = 0  \nSTATE s4: a=9, b=3, c=0  \nc = (0 + 0) % 10 = 0  \nSTATE s5: a=9, b=3, c=0  \nb = (0 + 5) % ",
+        "states": null,
+        "text": "init: a=7, b=7, c=8  \nSTATE s0: a=7, b=7, c=8  \na = (7 * 7) % 10 = 9  \nSTATE s1: a=9, b=7, c=8  \nb = (7 * 9) % 10 = 3  \nSTATE s2: a=9, b=3, c=8  \nc = (9 * 9) % 10 = 1  \nSTATE s3: a=9, b=3, c=1  \nc = (1 + 9) % 10 = 0  \nSTATE s4: a=9, b=3, c=0  \nc = (0 + 0) % 10 = 0  \nSTATE s5: a=9, b=3, c=0  \nb = (0 + 5) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "init: a=7, b=7, c=8  \nSTATE s0: a=7, b=7, c=8  \na = (7 * 7) % 10 = 9  \nSTATE s1: a=9, b=7, c=8  \nb = (7 * 9) % 10 = 3  \nSTATE s2: a=9, b=3, c=8  \nc = (9 * 9) % 10 = 1  \nSTATE s3: a=9, b=3, c=1  \nc = (1 + 9) % 10 = 0  \nSTATE s4: a=9, b=3, c=0  \nc = (0 + 0) % 10 = 0  \nSTATE s5: a=9, b=3, c=0  \nb = (0 + 5) % ",
+    "source_token_count": 404,
+    "truth_s11": [
+      5,
+      0,
+      0
+    ]
+  },
+  {
+    "a_s11": [
+      9,
+      2,
+      1
+    ],
+    "a_s8": [
+      3,
+      9,
+      1
+    ],
+    "id": 22,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "STATE s0: a=3, b=1, c=5  \na = (1 + 3) % 10 = 4  \nSTATE s1: a=4, b=1, c=5  \nb = (1 * 1) % 10 = 1  \nSTATE s2: a=4, b=1, c=5  \nc = (5 * 9) % 10 = 5  \nSTATE s3: a=4, b=1, c=5  \nb = (5 * 3) % 10 = 5  \nSTATE s4: a=4, b=5, c=5  \nb = (4 + 5) % 10 = 9  \nSTATE s5: a=4, b=9, c=5  \nc = (4 + 5) % 10 = 9  \nSTATE s6: a=4,",
+        "states": null,
+        "text": "STATE s0: a=3, b=1, c=5  \na = (1 + 3) % 10 = 4  \nSTATE s1: a=4, b=1, c=5  \nb = (1 * 1) % 10 = 1  \nSTATE s2: a=4, b=1, c=5  \nc = (5 * 9) % 10 = 5  \nSTATE s3: a=4, b=1, c=5  \nb = (5 * 3) % 10 = 5  \nSTATE s4: a=4, b=5, c=5  \nb = (4 + 5) % 10 = 9  \nSTATE s5: a=4, b=9, c=5  \nc = (4 + 5) % 10 = 9  \nSTATE s6: a=4,",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=3, b=1, c=5  \nSTATE s0: a=3, b=1, c=5  \na = (1 + 3) % 10 = 4  \nSTATE s1: a=4, b=1, c=5  \nb = (1 * 1) % 10 = 1  \nSTATE s2: a=4, b=1, c=5  \nc = (5 * 9) % 10 = 5  \nSTATE s3: a=4, b=1, c=5  \nb = (5 * 3) % 10 = 5  \nSTATE s4: a=4, b=5, c=5  \nb = (4 + 1) % 10 = 5  \nSTATE s5: a=4, b=5, c=5  \nc = (4 + 5) % ",
+        "states": null,
+        "text": "init: a=3, b=1, c=5  \nSTATE s0: a=3, b=1, c=5  \na = (1 + 3) % 10 = 4  \nSTATE s1: a=4, b=1, c=5  \nb = (1 * 1) % 10 = 1  \nSTATE s2: a=4, b=1, c=5  \nc = (5 * 9) % 10 = 5  \nSTATE s3: a=4, b=1, c=5  \nb = (5 * 3) % 10 = 5  \nSTATE s4: a=4, b=5, c=5  \nb = (4 + 1) % 10 = 5  \nSTATE s5: a=4, b=5, c=5  \nc = (4 + 5) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s0: a=3, b=1, c=5  \na = (1 + 3) % 10 = 4  \nSTATE s1: a=4, b=1, c=5  \nb = (1 * 1) % 10 = 1  \nSTATE s2: a=4, b=1, c=5  \nc = (5 * 9) % 10 = 5  \nSTATE s3: a=4, b=1, c=5  \nb = (5 * 3) % 10 = 5  \nSTATE s4: a=4, b=5, c=5  \nb = (4 + 5) % 10 = 9  \nSTATE s5: a=4, b=9, c=5  \nc = (4 + 5) % 10 = 9  \nSTATE s6: a=4,",
+    "source_token_count": 404,
+    "truth_s11": [
+      4,
+      8,
+      8
+    ]
+  },
+  {
+    "a_s11": [
+      6,
+      8,
+      4
+    ],
+    "a_s8": [
+      4,
+      8,
+      4
+    ],
+    "id": 23,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=3, b=8, c=3  \nSTATE s0: a=3, b=8, c=3  \na = (3 * 3) % 10 = 9  \nSTATE s1: a=9, b=8, c=3  \nb = (3 * 3) % 10 = 9  \nSTATE s2: a=9, b=9, c=3  \nc = (9 + 5) % 10 = 4  \nSTATE s3: a=9, b=9, c=4  \na = (9 * 3) % 10 = 7  \nSTATE s4: a=7, b=9, c=4  \nb = (4 * 7) % 10 = 2  \nSTATE s5: a=7, b=2, c=4  \na = (7 + 7) % ",
+        "states": null,
+        "text": "init: a=3, b=8, c=3  \nSTATE s0: a=3, b=8, c=3  \na = (3 * 3) % 10 = 9  \nSTATE s1: a=9, b=8, c=3  \nb = (3 * 3) % 10 = 9  \nSTATE s2: a=9, b=9, c=3  \nc = (9 + 5) % 10 = 4  \nSTATE s3: a=9, b=9, c=4  \na = (9 * 3) % 10 = 7  \nSTATE s4: a=7, b=9, c=4  \nb = (4 * 7) % 10 = 2  \nSTATE s5: a=7, b=2, c=4  \na = (7 + 7) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=3, b=8, c=3  \nSTATE s0: a=3, b=8, c=3  \na = (3 * 3) % 10 = 9  \nSTATE s1: a=9, b=8, c=3  \nb = (3 * 3) % 10 = 9  \nSTATE s2: a=9, b=9, c=3  \nc = (9 + 5) % 10 = 4  \nSTATE s3: a=9, b=9, c=4  \na = (9 * 3) % 10 = 7  \nSTATE s4: a=7, b=9, c=4  \nb = (4 * 7) % 10 = 8  \nSTATE s5: a=7, b=8, c=4  \na = (7 + 7) % ",
+        "states": null,
+        "text": "init: a=3, b=8, c=3  \nSTATE s0: a=3, b=8, c=3  \na = (3 * 3) % 10 = 9  \nSTATE s1: a=9, b=8, c=3  \nb = (3 * 3) % 10 = 9  \nSTATE s2: a=9, b=9, c=3  \nc = (9 + 5) % 10 = 4  \nSTATE s3: a=9, b=9, c=4  \na = (9 * 3) % 10 = 7  \nSTATE s4: a=7, b=9, c=4  \nb = (4 * 7) % 10 = 8  \nSTATE s5: a=7, b=8, c=4  \na = (7 + 7) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "init: a=3, b=8, c=3  \nSTATE s0: a=3, b=8, c=3  \na = (3 * 3) % 10 = 9  \nSTATE s1: a=9, b=8, c=3  \nb = (3 * 3) % 10 = 9  \nSTATE s2: a=9, b=9, c=3  \nc = (9 + 5) % 10 = 4  \nSTATE s3: a=9, b=9, c=4  \na = (9 * 3) % 10 = 7  \nSTATE s4: a=7, b=9, c=4  \nb = (4 * 7) % 10 = 2  \nSTATE s5: a=7, b=2, c=4  \na = (7 + 7) % ",
+    "source_token_count": 397,
+    "truth_s11": [
+      6,
+      8,
+      4
+    ]
+  },
+  {
+    "a_s11": [
+      6,
+      8,
+      6
+    ],
+    "a_s8": [
+      6,
+      8,
+      6
+    ],
+    "id": 24,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "STATE s0: a=1, b=7, c=6  \na = (6 * 7) % 10 = 4  \nSTATE s1: a=4, b=7, c=6  \nb = (7 * 4) % 10 = 8  \nSTATE s2: a=4, b=8, c=6  \nc = (4 + 2) % 10 = 6  \nSTATE s3: a=4, b=8, c=6  \nc = (4 * 6) % 10 = 4  \nSTATE s4: a=4, b=8, c=4  \na = (4 * 8) % 10 = 2  \nSTATE s5: a=2, b=8, c=4  \nb = (2 + 3) % 10 = 5  \nSTATE s6: a=2,",
+        "states": null,
+        "text": "STATE s0: a=1, b=7, c=6  \na = (6 * 7) % 10 = 4  \nSTATE s1: a=4, b=7, c=6  \nb = (7 * 4) % 10 = 8  \nSTATE s2: a=4, b=8, c=6  \nc = (4 + 2) % 10 = 6  \nSTATE s3: a=4, b=8, c=6  \nc = (4 * 6) % 10 = 4  \nSTATE s4: a=4, b=8, c=4  \na = (4 * 8) % 10 = 2  \nSTATE s5: a=2, b=8, c=4  \nb = (2 + 3) % 10 = 5  \nSTATE s6: a=2,",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=1, b=7, c=6  \nSTATE s0: a=1, b=7, c=6  \na = (6 * 7) % 10 = 4  \nSTATE s1: a=4, b=7, c=6  \nb = (7 * 4) % 10 = 8  \nSTATE s2: a=4, b=8, c=6  \nc = (4 + 2) % 10 = 6  \nSTATE s3: a=4, b=8, c=6  \nc = (4 * 6) % 10 = 4  \nSTATE s4: a=4, b=8, c=4  \na = (4 * 8) % 10 = 2  \nSTATE s5: a=2, b=8, c=4  \nb = (2 + 3) % ",
+        "states": null,
+        "text": "init: a=1, b=7, c=6  \nSTATE s0: a=1, b=7, c=6  \na = (6 * 7) % 10 = 4  \nSTATE s1: a=4, b=7, c=6  \nb = (7 * 4) % 10 = 8  \nSTATE s2: a=4, b=8, c=6  \nc = (4 + 2) % 10 = 6  \nSTATE s3: a=4, b=8, c=6  \nc = (4 * 6) % 10 = 4  \nSTATE s4: a=4, b=8, c=4  \na = (4 * 8) % 10 = 2  \nSTATE s5: a=2, b=8, c=4  \nb = (2 + 3) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s0: a=1, b=7, c=6  \na = (6 * 7) % 10 = 4  \nSTATE s1: a=4, b=7, c=6  \nb = (7 * 4) % 10 = 8  \nSTATE s2: a=4, b=8, c=6  \nc = (4 + 2) % 10 = 6  \nSTATE s3: a=4, b=8, c=6  \nc = (4 * 6) % 10 = 4  \nSTATE s4: a=4, b=8, c=4  \na = (4 * 8) % 10 = 2  \nSTATE s5: a=2, b=8, c=4  \nb = (2 + 3) % 10 = 5  \nSTATE s6: a=2,",
+    "source_token_count": 404,
+    "truth_s11": [
+      6,
+      8,
+      6
+    ]
+  },
+  {
+    "a_s11": [
+      0,
+      5,
+      5
+    ],
+    "a_s8": [
+      0,
+      0,
+      5
+    ],
+    "id": 25,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=4, b=5, c=9  \nSTATE s0: a=4, b=5, c=9  \na = (5 + 9) % 10 = 4  \nSTATE s1: a=4, b=5, c=9  \nb = (5 + 5) % 10 = 0  \nSTATE s2: a=4, b=0, c=9  \nc = (4 + 3) % 10 = 7  \nSTATE s3: a=4, b=0, c=7  \nc = (4 + 1) % 10 = 5  \nSTATE s4: a=4, b=0, c=5  \na = (0 * 0) % 10 = 0  \nSTATE s5: a=0, b=0, c=5  \nb = (0 * 4) % ",
+        "states": null,
+        "text": "init: a=4, b=5, c=9  \nSTATE s0: a=4, b=5, c=9  \na = (5 + 9) % 10 = 4  \nSTATE s1: a=4, b=5, c=9  \nb = (5 + 5) % 10 = 0  \nSTATE s2: a=4, b=0, c=9  \nc = (4 + 3) % 10 = 7  \nSTATE s3: a=4, b=0, c=7  \nc = (4 + 1) % 10 = 5  \nSTATE s4: a=4, b=0, c=5  \na = (0 * 0) % 10 = 0  \nSTATE s5: a=0, b=0, c=5  \nb = (0 * 4) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=4, b=5, c=9  \nSTATE s0: a=4, b=5, c=9  \na = (5 + 9) % 10 = 4  \nSTATE s1: a=4, b=5, c=9  \nb = (5 + 5) % 10 = 0  \nSTATE s2: a=4, b=0, c=9  \nc = (4 + 3) % 10 = 7  \nSTATE s3: a=4, b=0, c=7  \nc = (4 + 1) % 10 = 5  \nSTATE s4: a=4, b=0, c=5  \na = (0 * 0) % 10 = 0  \nSTATE s5: a=0, b=0, c=5  \nb = (0 * 4) % ",
+        "states": null,
+        "text": "init: a=4, b=5, c=9  \nSTATE s0: a=4, b=5, c=9  \na = (5 + 9) % 10 = 4  \nSTATE s1: a=4, b=5, c=9  \nb = (5 + 5) % 10 = 0  \nSTATE s2: a=4, b=0, c=9  \nc = (4 + 3) % 10 = 7  \nSTATE s3: a=4, b=0, c=7  \nc = (4 + 1) % 10 = 5  \nSTATE s4: a=4, b=0, c=5  \na = (0 * 0) % 10 = 0  \nSTATE s5: a=0, b=0, c=5  \nb = (0 * 4) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "init: a=4, b=5, c=9  \nSTATE s0: a=4, b=5, c=9  \na = (5 + 9) % 10 = 4  \nSTATE s1: a=4, b=5, c=9  \nb = (5 + 5) % 10 = 0  \nSTATE s2: a=4, b=0, c=9  \nc = (4 + 3) % 10 = 7  \nSTATE s3: a=4, b=0, c=7  \nc = (4 + 1) % 10 = 5  \nSTATE s4: a=4, b=0, c=5  \na = (0 * 0) % 10 = 0  \nSTATE s5: a=0, b=0, c=5  \nb = (0 * 4) % ",
+    "source_token_count": 404,
+    "truth_s11": [
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "a_s11": [
+      7,
+      2,
+      3
+    ],
+    "a_s8": [
+      1,
+      2,
+      9
+    ],
+    "id": 26,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "STATE s0: a=8, b=2, c=0  \na = (8 * 2) % 10 = 6  \nSTATE s1: a=6, b=2, c=0  \nb = (6 * 2) % 10 = 2  \nSTATE s2: a=6, b=2, c=0  \nc = (0 * 4) % 10 = 0  \nSTATE s3: a=6, b=2, c=0  \nc = (2 + 7) % 10 = 9  \nSTATE s4: a=6, b=2, c=9  \na = (9 * 9) % 10 = 1  \nSTATE s5: a=1, b=2, c=9  \nc = (9 + 1) % 10 = 0  \nSTATE s6: a=1,",
+        "states": null,
+        "text": "STATE s0: a=8, b=2, c=0  \na = (8 * 2) % 10 = 6  \nSTATE s1: a=6, b=2, c=0  \nb = (6 * 2) % 10 = 2  \nSTATE s2: a=6, b=2, c=0  \nc = (0 * 4) % 10 = 0  \nSTATE s3: a=6, b=2, c=0  \nc = (2 + 7) % 10 = 9  \nSTATE s4: a=6, b=2, c=9  \na = (9 * 9) % 10 = 1  \nSTATE s5: a=1, b=2, c=9  \nc = (9 + 1) % 10 = 0  \nSTATE s6: a=1,",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=8, b=2, c=0  \nSTATE s0: a=8, b=2, c=0  \na = (8 * 2) % 10 = 6  \nSTATE s1: a=6, b=2, c=0  \nb = (6 * 2) % 10 = 2  \nSTATE s2: a=6, b=2, c=0  \nc = (0 * 4) % 10 = 0  \nSTATE s3: a=6, b=2, c=0  \nc = (2 + 7) % 10 = 9  \nSTATE s4: a=6, b=2, c=9  \na = (9 * 9) % 10 = 1  \nSTATE s5: a=1, b=2, c=9  \nc = (9 + 1) % ",
+        "states": null,
+        "text": "init: a=8, b=2, c=0  \nSTATE s0: a=8, b=2, c=0  \na = (8 * 2) % 10 = 6  \nSTATE s1: a=6, b=2, c=0  \nb = (6 * 2) % 10 = 2  \nSTATE s2: a=6, b=2, c=0  \nc = (0 * 4) % 10 = 0  \nSTATE s3: a=6, b=2, c=0  \nc = (2 + 7) % 10 = 9  \nSTATE s4: a=6, b=2, c=9  \na = (9 * 9) % 10 = 1  \nSTATE s5: a=1, b=2, c=9  \nc = (9 + 1) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s0: a=8, b=2, c=0  \na = (8 * 2) % 10 = 6  \nSTATE s1: a=6, b=2, c=0  \nb = (6 * 2) % 10 = 2  \nSTATE s2: a=6, b=2, c=0  \nc = (0 * 4) % 10 = 0  \nSTATE s3: a=6, b=2, c=0  \nc = (2 + 7) % 10 = 9  \nSTATE s4: a=6, b=2, c=9  \na = (9 * 9) % 10 = 1  \nSTATE s5: a=1, b=2, c=9  \nc = (9 + 1) % 10 = 0  \nSTATE s6: a=1,",
+    "source_token_count": 404,
+    "truth_s11": [
+      7,
+      2,
+      3
+    ]
+  },
+  {
+    "a_s11": [
+      5,
+      5,
+      8
+    ],
+    "a_s8": [
+      5,
+      5,
+      4
+    ],
+    "id": 27,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=3, b=2, c=0  \nSTATE s0: a=3, b=2, c=0  \na = (0 + 3) % 10 = 3  \nSTATE s1: a=3, b=2, c=0  \nb = (3 + 2) % 10 = 5  \nSTATE s2: a=3, b=5, c=0  \nc = (3 + 9) % 10 = 2  \nSTATE s3: a=3, b=5, c=2  \nc = (3 * 2) % 10 = 6  \nSTATE s4: a=3, b=5, c=6  \nc = (3 * 5) % 10 = 5  \nSTATE s5: a=3, b=5, c=5  \nc = (3 + 3) % ",
+        "states": null,
+        "text": "init: a=3, b=2, c=0  \nSTATE s0: a=3, b=2, c=0  \na = (0 + 3) % 10 = 3  \nSTATE s1: a=3, b=2, c=0  \nb = (3 + 2) % 10 = 5  \nSTATE s2: a=3, b=5, c=0  \nc = (3 + 9) % 10 = 2  \nSTATE s3: a=3, b=5, c=2  \nc = (3 * 2) % 10 = 6  \nSTATE s4: a=3, b=5, c=6  \nc = (3 * 5) % 10 = 5  \nSTATE s5: a=3, b=5, c=5  \nc = (3 + 3) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=3, b=2, c=0  \nSTATE s0: a=3, b=2, c=0  \na = (0 + 3) % 10 = 3  \nSTATE s1: a=3, b=2, c=0  \nb = (3 + 2) % 10 = 5  \nSTATE s2: a=3, b=5, c=0  \nc = (3 + 9) % 10 = 2  \nSTATE s3: a=3, b=5, c=2  \nc = (3 * 2) % 10 = 6  \nSTATE s4: a=3, b=5, c=6  \nc = (3 * 6) % 10 = 8  \nSTATE s5: a=3, b=5, c=8  \nc = (3 + 3) % ",
+        "states": null,
+        "text": "init: a=3, b=2, c=0  \nSTATE s0: a=3, b=2, c=0  \na = (0 + 3) % 10 = 3  \nSTATE s1: a=3, b=2, c=0  \nb = (3 + 2) % 10 = 5  \nSTATE s2: a=3, b=5, c=0  \nc = (3 + 9) % 10 = 2  \nSTATE s3: a=3, b=5, c=2  \nc = (3 * 2) % 10 = 6  \nSTATE s4: a=3, b=5, c=6  \nc = (3 * 6) % 10 = 8  \nSTATE s5: a=3, b=5, c=8  \nc = (3 + 3) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "init: a=3, b=2, c=0  \nSTATE s0: a=3, b=2, c=0  \na = (0 + 3) % 10 = 3  \nSTATE s1: a=3, b=2, c=0  \nb = (3 + 2) % 10 = 5  \nSTATE s2: a=3, b=5, c=0  \nc = (3 + 9) % 10 = 2  \nSTATE s3: a=3, b=5, c=2  \nc = (3 * 2) % 10 = 6  \nSTATE s4: a=3, b=5, c=6  \nc = (3 * 5) % 10 = 5  \nSTATE s5: a=3, b=5, c=5  \nc = (3 + 3) % ",
+    "source_token_count": 397,
+    "truth_s11": [
+      0,
+      5,
+      8
+    ]
+  },
+  {
+    "a_s11": [
+      5,
+      0,
+      3
+    ],
+    "a_s8": [
+      5,
+      0,
+      3
+    ],
+    "id": 28,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=4, b=4, c=6  \nSTATE s0: a=4, b=4, c=6  \na = (4 + 4) % 10 = 8  \nSTATE s1: a=8, b=4, c=6  \nb = (4 + 6) % 10 = 0  \nSTATE s2: a=8, b=0, c=6  \nc = (0 * 8) % 10 = 0  \nSTATE s3: a=8, b=0, c=0  \na = (0 * 8) % 10 = 0  \nSTATE s4: a=0, b=0, c=0  \nc = (0 + 3) % 10 = 3  \nSTATE s5: a=0, b=0, c=3  \nc = (3 + 3) % ",
+        "states": null,
+        "text": "init: a=4, b=4, c=6  \nSTATE s0: a=4, b=4, c=6  \na = (4 + 4) % 10 = 8  \nSTATE s1: a=8, b=4, c=6  \nb = (4 + 6) % 10 = 0  \nSTATE s2: a=8, b=0, c=6  \nc = (0 * 8) % 10 = 0  \nSTATE s3: a=8, b=0, c=0  \na = (0 * 8) % 10 = 0  \nSTATE s4: a=0, b=0, c=0  \nc = (0 + 3) % 10 = 3  \nSTATE s5: a=0, b=0, c=3  \nc = (3 + 3) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=4, b=4, c=6  \nSTATE s0: a=4, b=4, c=6  \na = (4 + 4) % 10 = 8  \nSTATE s1: a=8, b=4, c=6  \nb = (4 + 6) % 10 = 0  \nSTATE s2: a=8, b=0, c=6  \nc = (0 * 8) % 10 = 0  \nSTATE s3: a=8, b=0, c=0  \na = (0 * 8) % 10 = 0  \nSTATE s4: a=0, b=0, c=0  \nc = (0 + 3) % 10 = 3  \nSTATE s5: a=0, b=0, c=3  \nc = (3 + 3) % ",
+        "states": null,
+        "text": "init: a=4, b=4, c=6  \nSTATE s0: a=4, b=4, c=6  \na = (4 + 4) % 10 = 8  \nSTATE s1: a=8, b=4, c=6  \nb = (4 + 6) % 10 = 0  \nSTATE s2: a=8, b=0, c=6  \nc = (0 * 8) % 10 = 0  \nSTATE s3: a=8, b=0, c=0  \na = (0 * 8) % 10 = 0  \nSTATE s4: a=0, b=0, c=0  \nc = (0 + 3) % 10 = 3  \nSTATE s5: a=0, b=0, c=3  \nc = (3 + 3) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "init: a=4, b=4, c=6  \nSTATE s0: a=4, b=4, c=6  \na = (4 + 4) % 10 = 8  \nSTATE s1: a=8, b=4, c=6  \nb = (4 + 6) % 10 = 0  \nSTATE s2: a=8, b=0, c=6  \nc = (0 * 8) % 10 = 0  \nSTATE s3: a=8, b=0, c=0  \na = (0 * 8) % 10 = 0  \nSTATE s4: a=0, b=0, c=0  \nc = (0 + 3) % 10 = 3  \nSTATE s5: a=0, b=0, c=3  \nc = (3 + 3) % ",
+    "source_token_count": 397,
+    "truth_s11": [
+      5,
+      0,
+      3
+    ]
+  },
+  {
+    "a_s11": [
+      6,
+      4,
+      4
+    ],
+    "a_s8": [
+      8,
+      4,
+      2
+    ],
+    "id": 29,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=1, b=6, c=1  \nSTATE s0: a=1, b=6, c=1  \na = (1 + 1) % 10 = 2  \nSTATE s1: a=2, b=6, c=1  \nb = (2 + 2) % 10 = 4  \nSTATE s2: a=2, b=4, c=1  \nc = (4 * 4) % 10 = 6  \nSTATE s3: a=2, b=4, c=6  \na = (2 + 2) % 10 = 4  \nSTATE s4: a=4, b=4, c=6  \nc = (4 + 4) % 10 = 8  \nSTATE s5: a=4, b=4, c=8  \na = (4 + 4) % ",
+        "states": null,
+        "text": "init: a=1, b=6, c=1  \nSTATE s0: a=1, b=6, c=1  \na = (1 + 1) % 10 = 2  \nSTATE s1: a=2, b=6, c=1  \nb = (2 + 2) % 10 = 4  \nSTATE s2: a=2, b=4, c=1  \nc = (4 * 4) % 10 = 6  \nSTATE s3: a=2, b=4, c=6  \na = (2 + 2) % 10 = 4  \nSTATE s4: a=4, b=4, c=6  \nc = (4 + 4) % 10 = 8  \nSTATE s5: a=4, b=4, c=8  \na = (4 + 4) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=1, b=6, c=1  \nSTATE s0: a=1, b=6, c=1  \na = (1 + 1) % 10 = 2  \nSTATE s1: a=2, b=6, c=1  \nb = (2 + 2) % 10 = 4  \nSTATE s2: a=2, b=4, c=1  \nc = (4 * 4) % 10 = 6  \nSTATE s3: a=2, b=4, c=6  \na = (2 + 2) % 10 = 4  \nSTATE s4: a=4, b=4, c=6  \nc = (4 + 4) % 10 = 8  \nSTATE s5: a=4, b=4, c=8  \na = (4 + 4) % ",
+        "states": null,
+        "text": "init: a=1, b=6, c=1  \nSTATE s0: a=1, b=6, c=1  \na = (1 + 1) % 10 = 2  \nSTATE s1: a=2, b=6, c=1  \nb = (2 + 2) % 10 = 4  \nSTATE s2: a=2, b=4, c=1  \nc = (4 * 4) % 10 = 6  \nSTATE s3: a=2, b=4, c=6  \na = (2 + 2) % 10 = 4  \nSTATE s4: a=4, b=4, c=6  \nc = (4 + 4) % 10 = 8  \nSTATE s5: a=4, b=4, c=8  \na = (4 + 4) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "init: a=1, b=6, c=1  \nSTATE s0: a=1, b=6, c=1  \na = (1 + 1) % 10 = 2  \nSTATE s1: a=2, b=6, c=1  \nb = (2 + 2) % 10 = 4  \nSTATE s2: a=2, b=4, c=1  \nc = (4 * 4) % 10 = 6  \nSTATE s3: a=2, b=4, c=6  \na = (2 + 2) % 10 = 4  \nSTATE s4: a=4, b=4, c=6  \nc = (4 + 4) % 10 = 8  \nSTATE s5: a=4, b=4, c=8  \na = (4 + 4) % ",
+    "source_token_count": 404,
+    "truth_s11": [
+      6,
+      4,
+      4
+    ]
+  },
+  {
+    "a_s11": [
+      0,
+      0,
+      0
+    ],
+    "a_s8": [
+      0,
+      0,
+      0
+    ],
+    "id": 30,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "STATE s0: a=0, b=7, c=3  \na = (0 * 7) % 10 = 0  \nSTATE s1: a=0, b=7, c=3  \nb = (0 + 0) % 10 = 0  \nSTATE s2: a=0, b=0, c=3  \nc = (0 * 5) % 10 = 0  \nSTATE s3: a=0, b=0, c=0  \nc = (0 + 0) % 10 = 0  \nSTATE s4: a=0, b=0, c=0  \nb = (0 + 0) % 10 = 0  \nSTATE s5: a=0, b=0, c=0  \na = (0 + 0) % 10 = 0  \nSTATE s6: a=0,",
+        "states": null,
+        "text": "STATE s0: a=0, b=7, c=3  \na = (0 * 7) % 10 = 0  \nSTATE s1: a=0, b=7, c=3  \nb = (0 + 0) % 10 = 0  \nSTATE s2: a=0, b=0, c=3  \nc = (0 * 5) % 10 = 0  \nSTATE s3: a=0, b=0, c=0  \nc = (0 + 0) % 10 = 0  \nSTATE s4: a=0, b=0, c=0  \nb = (0 + 0) % 10 = 0  \nSTATE s5: a=0, b=0, c=0  \na = (0 + 0) % 10 = 0  \nSTATE s6: a=0,",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=0, b=7, c=3  \nSTATE s0: a=0, b=7, c=3  \na = (0 * 7) % 10 = 0  \nSTATE s1: a=0, b=7, c=3  \nb = (0 + 0) % 10 = 0  \nSTATE s2: a=0, b=0, c=3  \nc = (0 * 5) % 10 = 0  \nSTATE s3: a=0, b=0, c=0  \nc = (0 + 0) % 10 = 0  \nSTATE s4: a=0, b=0, c=0  \nb = (0 + 0) % 10 = 0  \nSTATE s5: a=0, b=0, c=0  \na = (0 + 0) % ",
+        "states": null,
+        "text": "init: a=0, b=7, c=3  \nSTATE s0: a=0, b=7, c=3  \na = (0 * 7) % 10 = 0  \nSTATE s1: a=0, b=7, c=3  \nb = (0 + 0) % 10 = 0  \nSTATE s2: a=0, b=0, c=3  \nc = (0 * 5) % 10 = 0  \nSTATE s3: a=0, b=0, c=0  \nc = (0 + 0) % 10 = 0  \nSTATE s4: a=0, b=0, c=0  \nb = (0 + 0) % 10 = 0  \nSTATE s5: a=0, b=0, c=0  \na = (0 + 0) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s0: a=0, b=7, c=3  \na = (0 * 7) % 10 = 0  \nSTATE s1: a=0, b=7, c=3  \nb = (0 + 0) % 10 = 0  \nSTATE s2: a=0, b=0, c=3  \nc = (0 * 5) % 10 = 0  \nSTATE s3: a=0, b=0, c=0  \nc = (0 + 0) % 10 = 0  \nSTATE s4: a=0, b=0, c=0  \nb = (0 + 0) % 10 = 0  \nSTATE s5: a=0, b=0, c=0  \na = (0 + 0) % 10 = 0  \nSTATE s6: a=0,",
+    "source_token_count": 404,
+    "truth_s11": [
+      9,
+      0,
+      0
+    ]
+  },
+  {
+    "a_s11": [
+      2,
+      6,
+      6
+    ],
+    "a_s8": [
+      8,
+      4,
+      5
+    ],
+    "id": 31,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=0, b=4, c=2  \nSTATE s0: a=0, b=4, c=2  \na = (2 * 2) % 10 = 4  \nSTATE s1: a=4, b=4, c=2  \nb = (2 * 1) % 10 = 2  \nSTATE s2: a=4, b=2, c=2  \nc = (2 + 2) % 10 = 4  \nSTATE s3: a=4, b=2, c=4  \nc = (4 * 2) % 10 = 8  \nSTATE s4: a=4, b=2, c=8  \nb = (2 + 2) % 10 = 4  \nSTATE s5: a=4, b=4, c=8  \nc = (4 + 2) % ",
+        "states": null,
+        "text": "init: a=0, b=4, c=2  \nSTATE s0: a=0, b=4, c=2  \na = (2 * 2) % 10 = 4  \nSTATE s1: a=4, b=4, c=2  \nb = (2 * 1) % 10 = 2  \nSTATE s2: a=4, b=2, c=2  \nc = (2 + 2) % 10 = 4  \nSTATE s3: a=4, b=2, c=4  \nc = (4 * 2) % 10 = 8  \nSTATE s4: a=4, b=2, c=8  \nb = (2 + 2) % 10 = 4  \nSTATE s5: a=4, b=4, c=8  \nc = (4 + 2) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      },
+      "restart": {
+        "final": null,
+        "hit_cap": true,
+        "parse_ok": false,
+        "scored_text": "init: a=0, b=4, c=2  \nSTATE s0: a=0, b=4, c=2  \na = (2 * 2) % 10 = 4  \nSTATE s1: a=4, b=4, c=2  \nb = (2 * 1) % 10 = 2  \nSTATE s2: a=4, b=2, c=2  \nc = (2 + 2) % 10 = 4  \nSTATE s3: a=4, b=2, c=4  \nc = (4 * 2) % 10 = 8  \nSTATE s4: a=4, b=2, c=8  \nb = (2 + 2) % 10 = 4  \nSTATE s5: a=4, b=4, c=8  \nc = (4 + 9) % ",
+        "states": null,
+        "text": "init: a=0, b=4, c=2  \nSTATE s0: a=0, b=4, c=2  \na = (2 * 2) % 10 = 4  \nSTATE s1: a=4, b=4, c=2  \nb = (2 * 1) % 10 = 2  \nSTATE s2: a=4, b=2, c=2  \nc = (2 + 2) % 10 = 4  \nSTATE s3: a=4, b=2, c=4  \nc = (4 * 2) % 10 = 8  \nSTATE s4: a=4, b=2, c=8  \nb = (2 + 2) % 10 = 4  \nSTATE s5: a=4, b=4, c=8  \nc = (4 + 9) % ",
+        "thinking_trace_recorded_not_scored": false,
+        "token_count": 200
+      }
+    },
+    "receiver_prompt_oracle_preview": "init: a=0, b=4, c=2  \nSTATE s0: a=0, b=4, c=2  \na = (2 * 2) % 10 = 4  \nSTATE s1: a=4, b=4, c=2  \nb = (2 * 1) % 10 = 2  \nSTATE s2: a=4, b=2, c=2  \nc = (2 + 2) % 10 = 4  \nSTATE s3: a=4, b=2, c=4  \nc = (4 * 2) % 10 = 8  \nSTATE s4: a=4, b=2, c=8  \nb = (2 + 2) % 10 = 4  \nSTATE s5: a=4, b=4, c=8  \nc = (4 + 2) % ",
+    "source_token_count": 404,
+    "truth_s11": [
+      2,
+      6,
+      6
+    ]
+  }
+]

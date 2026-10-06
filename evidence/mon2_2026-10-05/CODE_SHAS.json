@@ -1,0 +1,64 @@
+{
+  "00_ROADMAP_AND_PACKAGE_INDEX.md": {
+    "container_path": "/root/00_ROADMAP_AND_PACKAGE_INDEX.md",
+    "path": "/design_L2_L4/00_ROADMAP_AND_PACKAGE_INDEX.md",
+    "sha256": "e2635f2d5648889f98e610e3f56b8ee86f9884961342c1fa727a41131b5169a2"
+  },
+  "05_BUILD_SPEC_FOR_IMPLEMENTER.md": {
+    "container_path": "/root/05_BUILD_SPEC_FOR_IMPLEMENTER.md",
+    "path": "/design_L2_L4/05_BUILD_SPEC_FOR_IMPLEMENTER.md",
+    "sha256": "0a892adeda8fbdb89532010510e0e6dafbb7c968afb917bb20c0f16d995e9c3a"
+  },
+  "08_MON2_COMPROMISED_STATE_MONITOR_FREEZE.md": {
+    "container_path": "/root/08_MON2_COMPROMISED_STATE_MONITOR_FREEZE.md",
+    "path": "/design_L2_L4/08_MON2_COMPROMISED_STATE_MONITOR_FREEZE.md",
+    "sha256": "15939328e0d3697dd08b08ad176e313b8fb44e28ee9dbb50d537aa90f10fc97b"
+  },
+  "PCS2B_RUN_MANIFEST.json": {
+    "container_path": "/root/PCS2B_RUN_MANIFEST.json",
+    "path": "/evidence/pcs2b_preanswer_2026-10-03/PCS2B_RUN_MANIFEST.json",
+    "sha256": "adc79a4163fc56b12ce5d1a9cd25c2f4ed2be7adcb02b2000dd92dd6638276ae"
+  },
+  "RESOLUTIONS_1_OPUS.md": {
+    "container_path": "/root/RESOLUTIONS_1_OPUS.md",
+    "path": "/design_L2_L4/RESOLUTIONS_1_OPUS.md",
+    "sha256": "3de67dd567cbf3bd2d45b88d677c0c0755cd1027929418c0b934611b4947e61c"
+  },
+  "REVIEW_MON2_OPUS.md": {
+    "container_path": "/root/REVIEW_MON2_OPUS.md",
+    "path": "/design_L2_L4/REVIEW_MON2_OPUS.md",
+    "sha256": "7eaf95fa411c0dab14dd0fba91f1288f8dbc6acdf33dcca3c710f7c20dd4c0c9"
+  },
+  "modal_mon2_compromised_state.py": {
+    "container_path": "/root/modal_mon2_compromised_state.py",
+    "path": "/root/modal_mon2_compromised_state.py",
+    "sha256": "51044b0b4e9dcc0f91acfb63e10b569fc3bf2847b76bf1e8070e8c16d9f08266"
+  },
+  "model_revisions": {
+    "A": {
+      "repo_id": "Qwen/Qwen3-4B",
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "tokenizer_revision": "1cfa9a7208912126459214e8b04321603b3df60c"
+    },
+    "B": {
+      "repo_id": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+    }
+  },
+  "mon2_compromised_state.py": {
+    "container_path": "/root/mon2_compromised_state.py",
+    "path": "/root/mon2_compromised_state.py",
+    "sha256": "dd1093e0e9e1738dd9bf7bafa877c8c3e282ae58f56ff276b521bc75649de9ba"
+  },
+  "mon2_contract.py": {
+    "container_path": "/root/mon2_contract.py",
+    "path": "/root/mon2_contract.py",
+    "sha256": "8f5e4c8dcc290b0b15e82967a26d8184a7aae5a86e4194fe63af26aabfafdb6f"
+  },
+  "pcs2b_preanswer_bridge.py": {
+    "container_path": "/root/pcs2b_preanswer_bridge.py",
+    "path": "/root/pcs2b_preanswer_bridge.py",
+    "sha256": "29c47aa64ef482e0654052df223dc1b9596c0a23bfbb93ddb5d5959562b8949c"
+  }
+}

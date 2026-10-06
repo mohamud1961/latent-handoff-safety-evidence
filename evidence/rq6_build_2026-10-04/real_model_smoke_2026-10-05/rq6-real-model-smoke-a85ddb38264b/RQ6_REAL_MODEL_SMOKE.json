@@ -1,0 +1,27 @@
+{
+  "evidence_kind": "pinned_real_model_smoke_not_qualification",
+  "gsm8k_a_answer_parsed": false,
+  "gsm8k_checkpoint_available": true,
+  "gsm8k_dataset_manifest_sha256": "f158f9727acfd9361c2240abcdc2c367f76201609b1e9ed2dee1cd68fd1fc1d9",
+  "gsm8k_selected_test_n": 500,
+  "gsm8k_selected_train_n": 3000,
+  "local_files_only": true,
+  "modal_timeout_seconds": 600,
+  "models_loaded": [
+    "Qwen/Qwen3-4B",
+    "Qwen/Qwen3-1.7B"
+  ],
+  "protocol_sha256": "9880291e2ed842882f50fa63ab8a1ff60509ccef85c153e4cb778228b9fb8704",
+  "receiver_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "schema": "rq6_real_model_smoke_v1",
+  "seconds": 87.221377676,
+  "six_a_hidden_capture_finite": true,
+  "six_a_receiver_arm": "oracle_state",
+  "six_a_receiver_generated": true,
+  "six_a_receiver_parse_ok": false,
+  "six_a_source_generated_and_parsed": true,
+  "six_a_u_checkpoint_positions_located": true,
+  "six_a_w_checkpoint_positions_located": true,
+  "smoke_only_no_qualification_gate": true,
+  "source_revision": "1cfa9a7208912126459214e8b04321603b3df60c"
+}

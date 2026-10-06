@@ -1,0 +1,37 @@
+{
+  "arm": "X-FAM",
+  "assumed_usd_per_gpu_hour": 0.8,
+  "gpu": "L4",
+  "peak_gpu_memory_gib": 12.01,
+  "smoke": false,
+  "stages": {
+    "capture": {
+      "gpu_hours": 0.02068542976777779,
+      "seconds": 74.5,
+      "usd_assumed": 0.016548343814222235
+    },
+    "eval": {
+      "gpu_hours": 0.22139839922055557,
+      "seconds": 797.0,
+      "usd_assumed": 0.17711871937644447
+    },
+    "generation": {
+      "gpu_hours": 0.4020494952469444,
+      "seconds": 1447.4,
+      "usd_assumed": 0.32163959619755556
+    },
+    "receiver_preflight": {
+      "gpu_hours": 0.008487320735833333,
+      "seconds": 30.6,
+      "usd_assumed": 0.006789856588666667
+    },
+    "training": {
+      "gpu_hours": 0.26956174690444445,
+      "seconds": 970.4,
+      "usd_assumed": 0.21564939752355558
+    }
+  },
+  "total_gpu_hours": 0.9271486858047222,
+  "total_seconds": 3337.7,
+  "total_usd_assumed": 0.7417189486437779
+}

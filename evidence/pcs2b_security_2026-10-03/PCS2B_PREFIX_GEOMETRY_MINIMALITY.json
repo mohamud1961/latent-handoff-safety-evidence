@@ -1,0 +1,41 @@
+{
+  "n": 896,
+  "prefix_dim": 8192,
+  "semantic_classes": 30,
+  "variance_decomposition_train_centroid": {
+    "total_energy": 77115690.61246558,
+    "semantic_centroid_energy": 77115358.78617162,
+    "residual_energy": 43848.83206181222,
+    "cross_term": -43517.005767859904,
+    "semantic_fraction": 0.9999956970327137,
+    "residual_fraction": 0.0005686110273221642,
+    "cross_fraction": -0.00056430806003604
+  },
+  "spectrum_total": {
+    "rank_numeric": 722,
+    "participation_ratio": 2.095842352705998,
+    "entropy_effective_rank": 2.6254879030138554,
+    "n_pc_50": 1,
+    "n_pc_90": 2,
+    "n_pc_95": 3,
+    "n_pc_99": 5
+  },
+  "spectrum_semantic_centroids": {
+    "rank_numeric": 29,
+    "participation_ratio": 2.09435005575855,
+    "entropy_effective_rank": 2.6225439617801194,
+    "n_pc_50": 1,
+    "n_pc_90": 2,
+    "n_pc_95": 3,
+    "n_pc_99": 5
+  },
+  "spectrum_residual": {
+    "rank_numeric": 866,
+    "participation_ratio": 2.473084700527295,
+    "entropy_effective_rank": 3.7059099683253396,
+    "n_pc_50": 1,
+    "n_pc_90": 4,
+    "n_pc_95": 5,
+    "n_pc_99": 10
+  }
+}

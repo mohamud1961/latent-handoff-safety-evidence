@@ -1,0 +1,7 @@
+{
+  "models_sha256": "dcf7e121b522be8db7157cb4a26ec4a1dda157b673059d1a14bba313b1707467",
+  "pca_fit_ids_sha256": "8401c817f97d57224f98238fa9c69dc183c87ebca3eb00f6edcb1964b75f2d46",
+  "schema": "cogmon1_monitor_seal_v1",
+  "test_scoring_opened": false,
+  "validation_ids_used_for_C_selection": true
+}

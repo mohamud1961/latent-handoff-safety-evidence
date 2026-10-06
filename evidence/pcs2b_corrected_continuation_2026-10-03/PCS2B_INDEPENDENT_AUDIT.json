@@ -1,0 +1,183 @@
+{
+  "all": {
+    "n_records": 2304,
+    "n_states": 256,
+    "restart_fidelity": 0.1328125,
+    "restart_objective": 0.13411458333333334,
+    "oracle_true_fidelity": 0.7291666666666666,
+    "oracle_true_objective": 0.7634548611111112,
+    "oracle_A_fidelity": 0.7604166666666666,
+    "oracle_A_objective": 0.7291666666666666,
+    "text_fidelity": 0.2183159722222222,
+    "text_objective": 0.21614583333333334,
+    "pcs_fidelity": 0.5759548611111112,
+    "pcs_objective": 0.5503472222222222,
+    "wrong0_fidelity": 0.07552083333333333,
+    "wrong0_objective": 0.07769097222222222,
+    "wrong1_fidelity": 0.07855902777777778,
+    "wrong1_objective": 0.07942708333333333,
+    "wrong2_fidelity": 0.07942708333333333,
+    "wrong2_objective": 0.0798611111111111,
+    "zero_fidelity": 0.13020833333333334,
+    "zero_objective": 0.1293402777777778,
+    "random_fidelity": 0.1310763888888889,
+    "random_objective": 0.1323784722222222,
+    "wrong_mean_fidelity": 0.07783564814814814,
+    "wrong_mean_objective": 0.07899305555555555,
+    "readback_unique_state": {
+      "accuracy": 1.0,
+      "states": 256,
+      "inconsistent_states": 0
+    },
+    "delta_fidelity_cluster_bootstrap": [
+      0.49811921296296297,
+      0.46817129629629634,
+      0.5289351851851852
+    ],
+    "delta_objective_cluster_bootstrap": [
+      0.4713541666666667,
+      0.43735532407407407,
+      0.5049189814814815
+    ],
+    "source_wrong_excess_cluster_bootstrap": {
+      "n_states": 13,
+      "point": 0.50997150997151,
+      "ci95": [
+        0.4045584045584046,
+        0.6210826210826211
+      ],
+      "positive_states": 13,
+      "zero_states": 0,
+      "negative_states": 0
+    }
+  },
+  "train_m": {
+    "n_records": 1024,
+    "n_states": 256,
+    "restart_fidelity": 0.12109375,
+    "restart_objective": 0.123046875,
+    "oracle_true_fidelity": 0.822265625,
+    "oracle_true_objective": 0.8603515625,
+    "oracle_A_fidelity": 0.8603515625,
+    "oracle_A_objective": 0.8212890625,
+    "text_fidelity": 0.228515625,
+    "text_objective": 0.2255859375,
+    "pcs_fidelity": 0.82421875,
+    "pcs_objective": 0.779296875,
+    "wrong0_fidelity": 0.03515625,
+    "wrong0_objective": 0.0419921875,
+    "wrong1_fidelity": 0.03125,
+    "wrong1_objective": 0.03125,
+    "wrong2_fidelity": 0.025390625,
+    "wrong2_objective": 0.02734375,
+    "zero_fidelity": 0.119140625,
+    "zero_objective": 0.1181640625,
+    "random_fidelity": 0.099609375,
+    "random_objective": 0.10546875,
+    "wrong_mean_fidelity": 0.030598958333333332,
+    "wrong_mean_objective": 0.033528645833333336,
+    "readback_unique_state": {
+      "accuracy": 1.0,
+      "states": 256,
+      "inconsistent_states": 0
+    },
+    "delta_fidelity_cluster_bootstrap": [
+      0.7936197916666667,
+      0.7669270833333334,
+      0.8193359375
+    ],
+    "delta_objective_cluster_bootstrap": [
+      0.7457682291666666,
+      0.708984375,
+      0.7802734375
+    ],
+    "source_wrong_excess_cluster_bootstrap": {
+      "n_states": 13,
+      "point": 0.8397435897435896,
+      "ci95": [
+        0.7564102564102565,
+        0.9230769230769231
+      ],
+      "positive_states": 13,
+      "zero_states": 0,
+      "negative_states": 0
+    }
+  },
+  "heldout_m": {
+    "n_records": 1280,
+    "n_states": 256,
+    "restart_fidelity": 0.1421875,
+    "restart_objective": 0.14296875,
+    "oracle_true_fidelity": 0.6546875,
+    "oracle_true_objective": 0.6859375,
+    "oracle_A_fidelity": 0.68046875,
+    "oracle_A_objective": 0.65546875,
+    "text_fidelity": 0.21015625,
+    "text_objective": 0.20859375,
+    "pcs_fidelity": 0.37734375,
+    "pcs_objective": 0.3671875,
+    "wrong0_fidelity": 0.1078125,
+    "wrong0_objective": 0.10625,
+    "wrong1_fidelity": 0.11640625,
+    "wrong1_objective": 0.11796875,
+    "wrong2_fidelity": 0.12265625,
+    "wrong2_objective": 0.121875,
+    "zero_fidelity": 0.1390625,
+    "zero_objective": 0.13828125,
+    "random_fidelity": 0.15625,
+    "random_objective": 0.15390625,
+    "wrong_mean_fidelity": 0.11562499999999999,
+    "wrong_mean_objective": 0.11536458333333333,
+    "readback_unique_state": {
+      "accuracy": 1.0,
+      "states": 256,
+      "inconsistent_states": 0
+    },
+    "delta_fidelity_cluster_bootstrap": [
+      0.26171875,
+      0.22057291666666667,
+      0.3041666666666667
+    ],
+    "delta_objective_cluster_bootstrap": [
+      0.2518229166666667,
+      0.20963541666666669,
+      0.2947916666666667
+    ],
+    "source_wrong_excess_cluster_bootstrap": {
+      "n_states": 13,
+      "point": 0.24615384615384617,
+      "ci95": [
+        0.09743589743589745,
+        0.4205128205128205
+      ],
+      "positive_states": 8,
+      "zero_states": 4,
+      "negative_states": 1
+    }
+  },
+  "source_test": {
+    "n_states": 256,
+    "A_state_accuracy": 0.94921875,
+    "A_wrong_states": 13
+  },
+  "reasoning_baselines": {
+    "all": {
+      "restart_reason_objective": 0.0915798611111111,
+      "restart_reason_fidelity": 0.09288194444444445,
+      "text_reason_objective": 0.1037326388888889,
+      "text_reason_fidelity": 0.1037326388888889
+    },
+    "train_m": {
+      "restart_reason_objective": 0.0947265625,
+      "restart_reason_fidelity": 0.0927734375,
+      "text_reason_objective": 0.1240234375,
+      "text_reason_fidelity": 0.1181640625
+    },
+    "heldout_m": {
+      "restart_reason_objective": 0.0890625,
+      "restart_reason_fidelity": 0.09296875,
+      "text_reason_objective": 0.0875,
+      "text_reason_fidelity": 0.0921875
+    }
+  }
+}

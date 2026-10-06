@@ -1,0 +1,5 @@
+All smoke runs use tiny RANDOM models and random projectors (PCS_SMOKE=1): they prove the code path runs, not that results are meaningful.
+smoke_fp32.log / smoke_auto.log: final notebook. smoke_auto exercises the fp16-vs-fp32 sanity gate (random models disagree, so it correctly falls back to fp32).
+smoke_bf16.log / smoke_fp16.log: previous build, identical except one added print line (mismatched-control partner coverage).
+static_check.txt: validate_notebook.py. test_analysis.txt: test_analysis.py (synthetic scenarios with known truth).
+Environment: python 3.11, torch 2.6.0 (CPU), transformers 4.52.4, tokenizers 0.21.4, huggingface_hub 0.34.3.

@@ -1,0 +1,789 @@
+{
+  "WRITER_CEILING_FLAG": false,
+  "WRITER_CEILING_FLAG_threshold": 0.9,
+  "choice_seal_sha256": "0785f4abc44cce60d2e39b22c13868f693bc86d5075b43e0ec1b6a5153199af3",
+  "chosen_config": "W1-b",
+  "chosen_neural_val_fidelity": 0.7109375,
+  "chosen_token_identity_val_fidelity": 0.9088541666666666,
+  "config_order": [
+    "W1-a",
+    "W1-b",
+    "W1-c",
+    "W1-d"
+  ],
+  "highest_neural_val_fidelity": 0.7109375,
+  "provenance": {
+    "canonical_runner_sha256": "20b0191e0d87bef269256aa5fb5cdb290d330d2d4c899dce9bccc193a3e8f49f",
+    "code_shas": {
+      "canonical_runner_expected_sha256": "20b0191e0d87bef269256aa5fb5cdb290d330d2d4c899dce9bccc193a3e8f49f",
+      "code": {
+        "modal_w1_writer_sweep.py": "a97aab7bbdc0c5af052f7e0b520d0f5900db692a380b60aedfd54bc6df45c3c8",
+        "pcs3_multi_register_bridge.py": "20b0191e0d87bef269256aa5fb5cdb290d330d2d4c899dce9bccc193a3e8f49f",
+        "pcs3_multipos_bridge.py": "04394d115bab08f18f42c9f855caf28f66480f4f26d59fd0f1169b87ec2a15f3",
+        "w1_writer_sweep.py": "f49f19039167f656c50da911c30972009c4bc0d9c19d7dabe2fee9d35a122ba3"
+      },
+      "data": {
+        "expected_features_sha256": "ea51473126045f3d898f0de4ddc50a63198585d7e5819de277a6aa26bfbb7bc0",
+        "features_path": "/__modal/volumes/vo-r16ZpvZh4htF666voiY29E/pcs3-multipos-2aedd7129e4e/PCS3_MULTIPOS_FEATURES.pt",
+        "features_sha256": "ea51473126045f3d898f0de4ddc50a63198585d7e5819de277a6aa26bfbb7bc0"
+      },
+      "extra_test_features": {
+        "loaded": false,
+        "reason": "W1 uses train/val only; the extra artifact is test-only"
+      },
+      "model_revisions": {
+        "A": {
+          "repo_id": "Qwen/Qwen3-4B",
+          "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+          "role": "source feature provenance",
+          "tokenizer_revision": "1cfa9a7208912126459214e8b04321603b3df60c"
+        },
+        "B": {
+          "repo_id": "Qwen/Qwen3-1.7B",
+          "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "role": "PCS3 writer-sweep receiver",
+          "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+        }
+      },
+      "run_mode": "W1 validation-only writer sweep"
+    },
+    "converter_sha256": "04394d115bab08f18f42c9f855caf28f66480f4f26d59fd0f1169b87ec2a15f3",
+    "feature_sha256": "ea51473126045f3d898f0de4ddc50a63198585d7e5819de277a6aa26bfbb7bc0",
+    "fit_line_digits_sha256": "fa14c30da775f197903be4a72fbc0a391c5e3195627ab707519b5dbee3dfa064",
+    "fit_source_rows": 640,
+    "fit_source_split_counts": {
+      "train": 512,
+      "val": 128
+    },
+    "loaded_extra_test_features": false,
+    "split_handling": "The monolithic feature artifact is subset to train+val before the PCS3 multiposition converter runs. R.train_bridge receives train+val only; R.evaluate receives a fresh val-only cache temporarily relabeled test to satisfy its hardcoded split selector.",
+    "split_manifests": {
+      "neural": {
+        "train": {
+          "ids_sha256": "c0d6c3b0c01cf61fc514cbdf29ba30971552172c8cc266b95151e9ac4012a0e3",
+          "labels_sha256": "9314df49a7434d03935c26f8641bae38342049f26fac19d8c73441c4302a96d2",
+          "n": 512
+        },
+        "val": {
+          "ids_sha256": "8d4ed8fcb17019f4259921f832f82901116eec9af305c367db6687fe0bbbc5e5",
+          "labels_sha256": "0f900fb9b6471ad9809cf5f71a1b9ab7d9e51a566ea4ab1c313d85b5c0894944",
+          "n": 128
+        }
+      },
+      "token_identity": {
+        "train": {
+          "ids_sha256": "c0d6c3b0c01cf61fc514cbdf29ba30971552172c8cc266b95151e9ac4012a0e3",
+          "labels_sha256": "9314df49a7434d03935c26f8641bae38342049f26fac19d8c73441c4302a96d2",
+          "n": 512
+        },
+        "val": {
+          "ids_sha256": "8d4ed8fcb17019f4259921f832f82901116eec9af305c367db6687fe0bbbc5e5",
+          "labels_sha256": "0f900fb9b6471ad9809cf5f71a1b9ab7d9e51a566ea4ab1c313d85b5c0894944",
+          "n": 128
+        }
+      }
+    },
+    "used_splits": [
+      "train",
+      "val"
+    ]
+  },
+  "purpose": "W1 development sweep; validation only",
+  "runs": {
+    "W1-a": {
+      "neural": {
+        "best_epoch_zero_based": 35,
+        "best_val_loss": 0.9970564916729927,
+        "checkpoint_path": "W1-a/neural/PCS3_BRIDGE.pt",
+        "checkpoint_seal_sha256": "08d4bb9b10e83f4caca7e6c1ba8968c6d80c1b86bc8eabc9a1d2bc47102f9dff",
+        "checkpoint_sha256": "2c6d5c3685669ea87dc8a846119615a9742f5925b02de27b980fa8a7a606e33b",
+        "coverage_from_val_evaluator": {
+          "a": {
+            "ge1": 0.734375,
+            "ge3": 0.3125
+          },
+          "b": {
+            "ge1": 0.703125,
+            "ge3": 0.296875
+          },
+          "c": {
+            "ge1": 0.734375,
+            "ge3": 0.2734375
+          }
+        },
+        "receiver_preflight": {
+          "by_selector": {
+            "a": 1.0,
+            "b": 1.0,
+            "c": 1.0
+          },
+          "overall": 1.0,
+          "passed": true
+        },
+        "training_config": {
+          "batch_size": 16,
+          "bridge_hidden": 768,
+          "c_dim": 16,
+          "c_dropout": 0.0,
+          "epochs": 40,
+          "eval_batch": 32,
+          "k_slots": 4,
+          "lr": 0.0003,
+          "max_source_tokens": 260,
+          "min_checkpoint_rate": 0.98,
+          "min_one_wrong_coverage": 0.9,
+          "min_parse_rate": 0.9,
+          "min_receiver_oracle": 0.9,
+          "min_source_coord_decode": 0.7,
+          "min_source_triple_acc": 0.8,
+          "min_three_wrong_coverage": 0.7,
+          "out_dir": "/__modal/volumes/vo-r16ZpvZh4htF666voiY29E/w1-writer-sweep-f49f19039167/W1-a/neural",
+          "pool_n": 1100,
+          "seed": 20261004,
+          "source_batch": 8,
+          "source_proj": 128,
+          "test_n": 256,
+          "text_batch": 16,
+          "train_n": 512,
+          "val_n": 128,
+          "weight_decay": 0.01
+        },
+        "val": {
+          "by_selector": {
+            "a": {
+              "correct": 96,
+              "fidelity": 0.75,
+              "fidelity_pct": 75.0,
+              "n": 128
+            },
+            "b": {
+              "correct": 74,
+              "fidelity": 0.578125,
+              "fidelity_pct": 57.8125,
+              "n": 128
+            },
+            "c": {
+              "correct": 84,
+              "fidelity": 0.65625,
+              "fidelity_pct": 65.625,
+              "n": 128
+            }
+          },
+          "fidelity": 0.6614583333333334,
+          "fidelity_pct": 66.14583333333333,
+          "n_records": 384,
+          "n_states": 128
+        },
+        "val_records_path": "W1-a/neural/W1_VAL_RECORDS.json"
+      },
+      "token_identity": {
+        "best_epoch_zero_based": 32,
+        "best_val_loss": 0.2801301162689924,
+        "checkpoint_path": "W1-a/token_identity/PCS3_BRIDGE.pt",
+        "checkpoint_seal_sha256": "35e5d9e60ea05795e9daac6563eab95af67b2a348a1bc063612a9c7287c4e56e",
+        "checkpoint_sha256": "0def9c6b8bc6295745452e640be7eaac3f33cd50559b14ecd36e655b18f2096c",
+        "coverage_from_val_evaluator": {
+          "a": {
+            "ge1": 0.734375,
+            "ge3": 0.3125
+          },
+          "b": {
+            "ge1": 0.703125,
+            "ge3": 0.296875
+          },
+          "c": {
+            "ge1": 0.734375,
+            "ge3": 0.2734375
+          }
+        },
+        "receiver_preflight": {
+          "by_selector": {
+            "a": 1.0,
+            "b": 1.0,
+            "c": 1.0
+          },
+          "overall": 1.0,
+          "passed": true
+        },
+        "training_config": {
+          "batch_size": 16,
+          "bridge_hidden": 768,
+          "c_dim": 16,
+          "c_dropout": 0.0,
+          "epochs": 40,
+          "eval_batch": 32,
+          "k_slots": 4,
+          "lr": 0.0003,
+          "max_source_tokens": 260,
+          "min_checkpoint_rate": 0.98,
+          "min_one_wrong_coverage": 0.9,
+          "min_parse_rate": 0.9,
+          "min_receiver_oracle": 0.9,
+          "min_source_coord_decode": 0.7,
+          "min_source_triple_acc": 0.8,
+          "min_three_wrong_coverage": 0.7,
+          "out_dir": "/__modal/volumes/vo-r16ZpvZh4htF666voiY29E/w1-writer-sweep-f49f19039167/W1-a/token_identity",
+          "pool_n": 1100,
+          "seed": 20261004,
+          "source_batch": 8,
+          "source_proj": 128,
+          "test_n": 256,
+          "text_batch": 16,
+          "train_n": 512,
+          "val_n": 128,
+          "weight_decay": 0.01
+        },
+        "val": {
+          "by_selector": {
+            "a": {
+              "correct": 127,
+              "fidelity": 0.9921875,
+              "fidelity_pct": 99.21875,
+              "n": 128
+            },
+            "b": {
+              "correct": 109,
+              "fidelity": 0.8515625,
+              "fidelity_pct": 85.15625,
+              "n": 128
+            },
+            "c": {
+              "correct": 122,
+              "fidelity": 0.953125,
+              "fidelity_pct": 95.3125,
+              "n": 128
+            }
+          },
+          "fidelity": 0.9322916666666666,
+          "fidelity_pct": 93.22916666666667,
+          "n_records": 384,
+          "n_states": 128
+        },
+        "val_records_path": "W1-a/token_identity/W1_VAL_RECORDS.json"
+      }
+    },
+    "W1-b": {
+      "neural": {
+        "best_epoch_zero_based": 35,
+        "best_val_loss": 0.8749937042593956,
+        "checkpoint_path": "W1-b/neural/PCS3_BRIDGE.pt",
+        "checkpoint_seal_sha256": "31bcbbcdc87b21cb982802dd4dd32e21ca57a2f7c671fa7747cc947c305ed2ef",
+        "checkpoint_sha256": "486b589356f5058f2bb7300001840dc44f3e6dd7a78211fecb72d9aefeb87847",
+        "coverage_from_val_evaluator": {
+          "a": {
+            "ge1": 0.734375,
+            "ge3": 0.3125
+          },
+          "b": {
+            "ge1": 0.703125,
+            "ge3": 0.296875
+          },
+          "c": {
+            "ge1": 0.734375,
+            "ge3": 0.2734375
+          }
+        },
+        "receiver_preflight": {
+          "by_selector": {
+            "a": 1.0,
+            "b": 1.0,
+            "c": 1.0
+          },
+          "overall": 1.0,
+          "passed": true
+        },
+        "training_config": {
+          "batch_size": 16,
+          "bridge_hidden": 768,
+          "c_dim": 64,
+          "c_dropout": 0.0,
+          "epochs": 40,
+          "eval_batch": 32,
+          "k_slots": 4,
+          "lr": 0.0003,
+          "max_source_tokens": 260,
+          "min_checkpoint_rate": 0.98,
+          "min_one_wrong_coverage": 0.9,
+          "min_parse_rate": 0.9,
+          "min_receiver_oracle": 0.9,
+          "min_source_coord_decode": 0.7,
+          "min_source_triple_acc": 0.8,
+          "min_three_wrong_coverage": 0.7,
+          "out_dir": "/__modal/volumes/vo-r16ZpvZh4htF666voiY29E/w1-writer-sweep-f49f19039167/W1-b/neural",
+          "pool_n": 1100,
+          "seed": 20261004,
+          "source_batch": 8,
+          "source_proj": 128,
+          "test_n": 256,
+          "text_batch": 16,
+          "train_n": 512,
+          "val_n": 128,
+          "weight_decay": 0.01
+        },
+        "val": {
+          "by_selector": {
+            "a": {
+              "correct": 98,
+              "fidelity": 0.765625,
+              "fidelity_pct": 76.5625,
+              "n": 128
+            },
+            "b": {
+              "correct": 88,
+              "fidelity": 0.6875,
+              "fidelity_pct": 68.75,
+              "n": 128
+            },
+            "c": {
+              "correct": 87,
+              "fidelity": 0.6796875,
+              "fidelity_pct": 67.96875,
+              "n": 128
+            }
+          },
+          "fidelity": 0.7109375,
+          "fidelity_pct": 71.09375,
+          "n_records": 384,
+          "n_states": 128
+        },
+        "val_records_path": "W1-b/neural/W1_VAL_RECORDS.json"
+      },
+      "token_identity": {
+        "best_epoch_zero_based": 38,
+        "best_val_loss": 0.3194104004651308,
+        "checkpoint_path": "W1-b/token_identity/PCS3_BRIDGE.pt",
+        "checkpoint_seal_sha256": "da0e10daf7e584bddabab5d44f9d1fa5548052f321ad72b4183ee16c932687cf",
+        "checkpoint_sha256": "c2a26b682aa7b6f99b8616a397b132dcd62d090d6971aadad8b29d18f76f74e4",
+        "coverage_from_val_evaluator": {
+          "a": {
+            "ge1": 0.734375,
+            "ge3": 0.3125
+          },
+          "b": {
+            "ge1": 0.703125,
+            "ge3": 0.296875
+          },
+          "c": {
+            "ge1": 0.734375,
+            "ge3": 0.2734375
+          }
+        },
+        "receiver_preflight": {
+          "by_selector": {
+            "a": 1.0,
+            "b": 1.0,
+            "c": 1.0
+          },
+          "overall": 1.0,
+          "passed": true
+        },
+        "training_config": {
+          "batch_size": 16,
+          "bridge_hidden": 768,
+          "c_dim": 64,
+          "c_dropout": 0.0,
+          "epochs": 40,
+          "eval_batch": 32,
+          "k_slots": 4,
+          "lr": 0.0003,
+          "max_source_tokens": 260,
+          "min_checkpoint_rate": 0.98,
+          "min_one_wrong_coverage": 0.9,
+          "min_parse_rate": 0.9,
+          "min_receiver_oracle": 0.9,
+          "min_source_coord_decode": 0.7,
+          "min_source_triple_acc": 0.8,
+          "min_three_wrong_coverage": 0.7,
+          "out_dir": "/__modal/volumes/vo-r16ZpvZh4htF666voiY29E/w1-writer-sweep-f49f19039167/W1-b/token_identity",
+          "pool_n": 1100,
+          "seed": 20261004,
+          "source_batch": 8,
+          "source_proj": 128,
+          "test_n": 256,
+          "text_batch": 16,
+          "train_n": 512,
+          "val_n": 128,
+          "weight_decay": 0.01
+        },
+        "val": {
+          "by_selector": {
+            "a": {
+              "correct": 117,
+              "fidelity": 0.9140625,
+              "fidelity_pct": 91.40625,
+              "n": 128
+            },
+            "b": {
+              "correct": 111,
+              "fidelity": 0.8671875,
+              "fidelity_pct": 86.71875,
+              "n": 128
+            },
+            "c": {
+              "correct": 121,
+              "fidelity": 0.9453125,
+              "fidelity_pct": 94.53125,
+              "n": 128
+            }
+          },
+          "fidelity": 0.9088541666666666,
+          "fidelity_pct": 90.88541666666667,
+          "n_records": 384,
+          "n_states": 128
+        },
+        "val_records_path": "W1-b/token_identity/W1_VAL_RECORDS.json"
+      }
+    },
+    "W1-c": {
+      "neural": {
+        "best_epoch_zero_based": 37,
+        "best_val_loss": 1.197541981935501,
+        "checkpoint_path": "W1-c/neural/PCS3_BRIDGE.pt",
+        "checkpoint_seal_sha256": "195068b2cf45dbce95d42c672c63d642d9e3dbce905349265f0d20fb2d2cfde6",
+        "checkpoint_sha256": "1a88ecd8dd8f8ba28402641eab3772baa353060174184ccdbe82bf2d9cb5bcc5",
+        "coverage_from_val_evaluator": {
+          "a": {
+            "ge1": 0.734375,
+            "ge3": 0.3125
+          },
+          "b": {
+            "ge1": 0.703125,
+            "ge3": 0.296875
+          },
+          "c": {
+            "ge1": 0.734375,
+            "ge3": 0.2734375
+          }
+        },
+        "receiver_preflight": {
+          "by_selector": {
+            "a": 1.0,
+            "b": 1.0,
+            "c": 1.0
+          },
+          "overall": 1.0,
+          "passed": true
+        },
+        "training_config": {
+          "batch_size": 16,
+          "bridge_hidden": 768,
+          "c_dim": 64,
+          "c_dropout": 0.0,
+          "epochs": 40,
+          "eval_batch": 32,
+          "k_slots": 8,
+          "lr": 0.0003,
+          "max_source_tokens": 260,
+          "min_checkpoint_rate": 0.98,
+          "min_one_wrong_coverage": 0.9,
+          "min_parse_rate": 0.9,
+          "min_receiver_oracle": 0.9,
+          "min_source_coord_decode": 0.7,
+          "min_source_triple_acc": 0.8,
+          "min_three_wrong_coverage": 0.7,
+          "out_dir": "/__modal/volumes/vo-r16ZpvZh4htF666voiY29E/w1-writer-sweep-f49f19039167/W1-c/neural",
+          "pool_n": 1100,
+          "seed": 20261004,
+          "source_batch": 8,
+          "source_proj": 128,
+          "test_n": 256,
+          "text_batch": 16,
+          "train_n": 512,
+          "val_n": 128,
+          "weight_decay": 0.01
+        },
+        "val": {
+          "by_selector": {
+            "a": {
+              "correct": 80,
+              "fidelity": 0.625,
+              "fidelity_pct": 62.5,
+              "n": 128
+            },
+            "b": {
+              "correct": 69,
+              "fidelity": 0.5390625,
+              "fidelity_pct": 53.90625,
+              "n": 128
+            },
+            "c": {
+              "correct": 73,
+              "fidelity": 0.5703125,
+              "fidelity_pct": 57.03125,
+              "n": 128
+            }
+          },
+          "fidelity": 0.578125,
+          "fidelity_pct": 57.8125,
+          "n_records": 384,
+          "n_states": 128
+        },
+        "val_records_path": "W1-c/neural/W1_VAL_RECORDS.json"
+      },
+      "token_identity": {
+        "best_epoch_zero_based": 35,
+        "best_val_loss": 0.06026920158183202,
+        "checkpoint_path": "W1-c/token_identity/PCS3_BRIDGE.pt",
+        "checkpoint_seal_sha256": "664a9debf163fb45b0fa34cc497b50b825a7c4c077b1ea5dda9e434bf3f55dac",
+        "checkpoint_sha256": "c84960e0840bc8f20e293edcfb9be97a44febf129a7e998029bba80befd76ac1",
+        "coverage_from_val_evaluator": {
+          "a": {
+            "ge1": 0.734375,
+            "ge3": 0.3125
+          },
+          "b": {
+            "ge1": 0.703125,
+            "ge3": 0.296875
+          },
+          "c": {
+            "ge1": 0.734375,
+            "ge3": 0.2734375
+          }
+        },
+        "receiver_preflight": {
+          "by_selector": {
+            "a": 1.0,
+            "b": 1.0,
+            "c": 1.0
+          },
+          "overall": 1.0,
+          "passed": true
+        },
+        "training_config": {
+          "batch_size": 16,
+          "bridge_hidden": 768,
+          "c_dim": 64,
+          "c_dropout": 0.0,
+          "epochs": 40,
+          "eval_batch": 32,
+          "k_slots": 8,
+          "lr": 0.0003,
+          "max_source_tokens": 260,
+          "min_checkpoint_rate": 0.98,
+          "min_one_wrong_coverage": 0.9,
+          "min_parse_rate": 0.9,
+          "min_receiver_oracle": 0.9,
+          "min_source_coord_decode": 0.7,
+          "min_source_triple_acc": 0.8,
+          "min_three_wrong_coverage": 0.7,
+          "out_dir": "/__modal/volumes/vo-r16ZpvZh4htF666voiY29E/w1-writer-sweep-f49f19039167/W1-c/token_identity",
+          "pool_n": 1100,
+          "seed": 20261004,
+          "source_batch": 8,
+          "source_proj": 128,
+          "test_n": 256,
+          "text_batch": 16,
+          "train_n": 512,
+          "val_n": 128,
+          "weight_decay": 0.01
+        },
+        "val": {
+          "by_selector": {
+            "a": {
+              "correct": 128,
+              "fidelity": 1.0,
+              "fidelity_pct": 100.0,
+              "n": 128
+            },
+            "b": {
+              "correct": 125,
+              "fidelity": 0.9765625,
+              "fidelity_pct": 97.65625,
+              "n": 128
+            },
+            "c": {
+              "correct": 126,
+              "fidelity": 0.984375,
+              "fidelity_pct": 98.4375,
+              "n": 128
+            }
+          },
+          "fidelity": 0.9869791666666666,
+          "fidelity_pct": 98.69791666666667,
+          "n_records": 384,
+          "n_states": 128
+        },
+        "val_records_path": "W1-c/token_identity/W1_VAL_RECORDS.json"
+      }
+    },
+    "W1-d": {
+      "neural": {
+        "best_epoch_zero_based": 39,
+        "best_val_loss": 1.6438492834568024,
+        "checkpoint_path": "W1-d/neural/PCS3_BRIDGE.pt",
+        "checkpoint_seal_sha256": "2608afd4bbd682d1ada0ffb8c2fee48739ad81eaab2f7e19c46a4ce5562532aa",
+        "checkpoint_sha256": "bf4597aee8c9832e390eec34b59850066049d041e3856f593a734edf3a430a15",
+        "coverage_from_val_evaluator": {
+          "a": {
+            "ge1": 0.734375,
+            "ge3": 0.3125
+          },
+          "b": {
+            "ge1": 0.703125,
+            "ge3": 0.296875
+          },
+          "c": {
+            "ge1": 0.734375,
+            "ge3": 0.2734375
+          }
+        },
+        "receiver_preflight": {
+          "by_selector": {
+            "a": 1.0,
+            "b": 1.0,
+            "c": 1.0
+          },
+          "overall": 1.0,
+          "passed": true
+        },
+        "training_config": {
+          "batch_size": 16,
+          "bridge_hidden": 768,
+          "c_dim": 64,
+          "c_dropout": 0.1,
+          "epochs": 40,
+          "eval_batch": 32,
+          "k_slots": 8,
+          "lr": 0.0003,
+          "max_source_tokens": 260,
+          "min_checkpoint_rate": 0.98,
+          "min_one_wrong_coverage": 0.9,
+          "min_parse_rate": 0.9,
+          "min_receiver_oracle": 0.9,
+          "min_source_coord_decode": 0.7,
+          "min_source_triple_acc": 0.8,
+          "min_three_wrong_coverage": 0.7,
+          "out_dir": "/__modal/volumes/vo-r16ZpvZh4htF666voiY29E/w1-writer-sweep-f49f19039167/W1-d/neural",
+          "pool_n": 1100,
+          "seed": 20261004,
+          "source_batch": 8,
+          "source_proj": 128,
+          "test_n": 256,
+          "text_batch": 16,
+          "train_n": 512,
+          "val_n": 128,
+          "weight_decay": 0.01
+        },
+        "val": {
+          "by_selector": {
+            "a": {
+              "correct": 56,
+              "fidelity": 0.4375,
+              "fidelity_pct": 43.75,
+              "n": 128
+            },
+            "b": {
+              "correct": 38,
+              "fidelity": 0.296875,
+              "fidelity_pct": 29.6875,
+              "n": 128
+            },
+            "c": {
+              "correct": 58,
+              "fidelity": 0.453125,
+              "fidelity_pct": 45.3125,
+              "n": 128
+            }
+          },
+          "fidelity": 0.3958333333333333,
+          "fidelity_pct": 39.583333333333336,
+          "n_records": 384,
+          "n_states": 128
+        },
+        "val_records_path": "W1-d/neural/W1_VAL_RECORDS.json"
+      },
+      "token_identity": {
+        "best_epoch_zero_based": 38,
+        "best_val_loss": 0.07136905309744179,
+        "checkpoint_path": "W1-d/token_identity/PCS3_BRIDGE.pt",
+        "checkpoint_seal_sha256": "4f7515c3cb900c10ae994f31aef813572b6da576e4045ea782134a40833ad5f7",
+        "checkpoint_sha256": "dd8300c42d0afcc72e4f16a55dba3a036e0af86c1f7bb21c9beb1b6f7b57e08a",
+        "coverage_from_val_evaluator": {
+          "a": {
+            "ge1": 0.734375,
+            "ge3": 0.3125
+          },
+          "b": {
+            "ge1": 0.703125,
+            "ge3": 0.296875
+          },
+          "c": {
+            "ge1": 0.734375,
+            "ge3": 0.2734375
+          }
+        },
+        "receiver_preflight": {
+          "by_selector": {
+            "a": 1.0,
+            "b": 1.0,
+            "c": 1.0
+          },
+          "overall": 1.0,
+          "passed": true
+        },
+        "training_config": {
+          "batch_size": 16,
+          "bridge_hidden": 768,
+          "c_dim": 64,
+          "c_dropout": 0.1,
+          "epochs": 40,
+          "eval_batch": 32,
+          "k_slots": 8,
+          "lr": 0.0003,
+          "max_source_tokens": 260,
+          "min_checkpoint_rate": 0.98,
+          "min_one_wrong_coverage": 0.9,
+          "min_parse_rate": 0.9,
+          "min_receiver_oracle": 0.9,
+          "min_source_coord_decode": 0.7,
+          "min_source_triple_acc": 0.8,
+          "min_three_wrong_coverage": 0.7,
+          "out_dir": "/__modal/volumes/vo-r16ZpvZh4htF666voiY29E/w1-writer-sweep-f49f19039167/W1-d/token_identity",
+          "pool_n": 1100,
+          "seed": 20261004,
+          "source_batch": 8,
+          "source_proj": 128,
+          "test_n": 256,
+          "text_batch": 16,
+          "train_n": 512,
+          "val_n": 128,
+          "weight_decay": 0.01
+        },
+        "val": {
+          "by_selector": {
+            "a": {
+              "correct": 126,
+              "fidelity": 0.984375,
+              "fidelity_pct": 98.4375,
+              "n": 128
+            },
+            "b": {
+              "correct": 124,
+              "fidelity": 0.96875,
+              "fidelity_pct": 96.875,
+              "n": 128
+            },
+            "c": {
+              "correct": 126,
+              "fidelity": 0.984375,
+              "fidelity_pct": 98.4375,
+              "n": 128
+            }
+          },
+          "fidelity": 0.9791666666666666,
+          "fidelity_pct": 97.91666666666667,
+          "n_records": 384,
+          "n_states": 128
+        },
+        "val_records_path": "W1-d/token_identity/W1_VAL_RECORDS.json"
+      }
+    }
+  },
+  "schema": "w1_choice_v1",
+  "status": "sealed",
+  "tie_rule": "highest neural val fidelity; candidates within 1 percentage point tie, then choose first in W1-a < W1-b < W1-c < W1-d",
+  "tie_tolerance_percentage_points": 1.0,
+  "within_one_point_candidates": [
+    "W1-b"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "init_a": {
+    "reg": "a",
+    "lambda": 0.001,
+    "observed_balanced_accuracy": 0.43611874465697553,
+    "n_permutations": 1000,
+    "shuffle_mean": 0.09984767897186939,
+    "shuffle_sd": 0.020695748005459848,
+    "shuffle_p95": 0.13456553530316645,
+    "shuffle_p99": 0.14865715963751944,
+    "empirical_p_ge_observed": 0.000999000999000999,
+    "max_shuffle": 0.16953918950170824
+  },
+  "init_b": {
+    "reg": "b",
+    "lambda": 0.001,
+    "observed_balanced_accuracy": 0.2604544670990357,
+    "n_permutations": 1000,
+    "shuffle_mean": 0.10030883586582873,
+    "shuffle_sd": 0.01944374490040639,
+    "shuffle_p95": 0.1325807001611282,
+    "shuffle_p99": 0.14802475186928005,
+    "empirical_p_ge_observed": 0.000999000999000999,
+    "max_shuffle": 0.17228157804614933
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "blocker": "CAP1_REFUSE_PCS3C_NOT_COMPLETE completion_handoff_and_expected_sha_required",
+  "launch_allowed": false,
+  "model_imported": false,
+  "schema": "cap1_preflight_v1",
+  "scientific_data_opened": false,
+  "status": "BLOCKED"
+}

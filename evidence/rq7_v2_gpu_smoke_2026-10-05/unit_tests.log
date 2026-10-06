@@ -1,0 +1,49 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.8, pytest-8.3.5, pluggy-1.6.0 -- /tmp/pcs-l2l4-cpu-env/bin/python
+cachedir: .pytest_cache
+rootdir: <local>/Downloads/pcs-wt-codex-mon2
+configfile: pyproject.toml
+plugins: anyio-4.15.1
+collecting ... collected 39 items
+
+tests/test_pcs4v4_gpu_smoke.py::test_authorization_requires_expected_profile_and_neural_only_trigger PASSED [  2%]
+tests/test_pcs4v4_gpu_smoke.py::test_copy_exact_v3_inputs_checks_seal_semantics_and_copy_hashes PASSED [  5%]
+tests/test_pcs4v4_gpu_smoke.py::test_copy_exact_v3_inputs_rejects_changed_frozen_gate PASSED [  7%]
+tests/test_pcs4v4_gpu_smoke.py::test_fit_subset_is_deterministic_train_validation_only_and_one_depth PASSED [ 10%]
+tests/test_pcs4v4_gpu_smoke.py::test_cached_model_loader_pins_revision_and_forbids_network PASSED [ 12%]
+tests/test_pcs4v4_gpu_smoke.py::test_gpu_smoke_limits_and_receiver_pin_match_resolution PASSED [ 15%]
+tests/test_pcs4v4_gpu_smoke.py::test_launcher_assigns_unique_valid_output_path_per_smoke_attempt PASSED [ 17%]
+tests/test_pcs4v4_gpu_smoke.py::test_validation_checkpoint_copy_verifies_and_refuses_overwrite PASSED [ 20%]
+tests/test_pcs4v4_gpu_smoke.py::test_validation_readback_features_match_float32_bridge_parameters PASSED [ 23%]
+tests/test_pcs4v4_gpu_smoke.py::test_runtime_budget_rejects_values_above_helper_ceiling PASSED [ 25%]
+tests/test_pcs4v4_gpu_smoke.py::test_modal_entrypoint_is_separate_bounded_and_has_disjoint_output_path PASSED [ 28%]
+tests/test_pcs4v4_gpu_smoke.py::test_modal_launcher_does_not_resolve_checkout_paths_inside_container PASSED [ 30%]
+tests/test_rq7_qualification.py::RQ7GeneratorTests::test_f1_retains_pcs1_answer_exclusion PASSED [ 33%]
+tests/test_rq7_qualification.py::RQ7GeneratorTests::test_f2_and_f3_semantics PASSED [ 35%]
+tests/test_rq7_qualification.py::RQ7GeneratorTests::test_receiver_prompt_arms_keep_restart_and_oracle_distinct PASSED [ 38%]
+tests/test_rq7_qualification.py::RQ7GeneratorTests::test_six_frozen_cells_and_deterministic_generation PASSED [ 41%]
+tests/test_rq7_qualification.py::RQ7ParserTests::test_reasoning_readout_uses_last_integer PASSED [ 43%]
+tests/test_rq7_qualification.py::RQ7ParserTests::test_silent_parser_requires_only_an_in_range_integer PASSED [ 46%]
+tests/test_rq7_qualification.py::RQ7DigitReadoutTests::test_digit_ids_are_single_token_and_base100_reads_two_steps PASSED [ 48%]
+tests/test_rq7_qualification.py::RQ7DigitReadoutTests::test_reasoning_tokens_precede_the_answer_anchor PASSED [ 51%]
+tests/test_rq7_qualification.py::RQ7GateTests::test_cell_choice_is_margin_then_source_error_then_frozen_order PASSED [ 53%]
+tests/test_rq7_qualification.py::RQ7GateTests::test_stop_when_no_cell_passes PASSED [ 56%]
+tests/test_rq7_qualification.py::RQ7GateTests::test_synthetic_cpu_smoke_writes_raw_and_mechanical_stop PASSED [ 58%]
+tests/test_rq7_qualification.py::RQ7GateTests::test_threshold_boundaries_and_projected_mistakes PASSED [ 61%]
+tests/test_rq7_qualification.py::RQ7ModalLauncherTests::test_host_and_container_layouts_keep_baked_files_under_scripts PASSED [ 64%]
+tests/test_pcs7_silent.py::PCS7ContractTests::test_base100_readout_is_two_zero_padded_digits_and_anchored PASSED [ 66%]
+tests/test_pcs7_silent.py::PCS7ContractTests::test_exact_mcnemar_and_smoke_result_are_nonqualifying PASSED [ 69%]
+tests/test_pcs7_silent.py::PCS7ContractTests::test_gpu_smoke_label_substitution_is_explicit_and_retains_model_output PASSED [ 71%]
+tests/test_pcs7_silent.py::PCS7ContractTests::test_invalid_test_source_rows_remain_in_metric_denominators_as_failures PASSED [ 74%]
+tests/test_pcs7_silent.py::PCS7ContractTests::test_malformed_receiver_readouts_count_as_failures_in_full_denominator PASSED [ 76%]
+tests/test_pcs7_silent.py::PCS7ContractTests::test_modal_launcher_resolves_host_and_container_baked_sources PASSED [ 79%]
+tests/test_pcs7_silent.py::PCS7ContractTests::test_rq7_bundle_is_recomputed_and_hash_sealed PASSED [ 82%]
+tests/test_pcs7_silent.py::PCS7ContractTests::test_rq7_synthetic_smoke_artifact_is_not_accepted_as_choice PASSED [ 84%]
+tests/test_pcs7_silent.py::PCS7ContractTests::test_scientific_cli_fails_closed_without_rq7_choice PASSED [ 87%]
+tests/test_pcs7_silent.py::PCS7ContractTests::test_soft_target_loss_trains_only_digit_readout_positions PASSED [ 89%]
+tests/test_pcs7_silent.py::PCS7ContractTests::test_source_answers_use_digit_logits_with_zero_free_tokens PASSED [ 92%]
+tests/test_pcs7_silent.py::PCS7ContractTests::test_source_format_gate_accepts_exactly_95_percent_in_each_split PASSED [ 94%]
+tests/test_pcs7_silent.py::PCS7ContractTests::test_source_format_gate_rejects_any_split_below_95_percent PASSED [ 97%]
+tests/test_pcs7_silent.py::PCS7ContractTests::test_split_and_intervention_boundaries_are_frozen PASSED [100%]
+
+============================== 39 passed in 4.71s ==============================

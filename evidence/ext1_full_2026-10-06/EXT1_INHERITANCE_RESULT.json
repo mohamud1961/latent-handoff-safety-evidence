@@ -1,0 +1,128 @@
+{
+  "all_inheritance_criteria_passed": false,
+  "by_readout_mode": {
+    "direct": {
+      "all_inheritance_criteria_passed": false,
+      "correct_minus_mismatched": {
+        "ci95_high": 0.8423809523809525,
+        "ci95_low": 0.793809523809524,
+        "n_clusters": 700,
+        "point": 0.8180952380952382,
+        "replicates": 10000,
+        "seed": 0,
+        "unit": "recipient_episode"
+      },
+      "correct_minus_none": 0.7971428571428572,
+      "correct_vs_mismatched_exact_mcnemar_episode_level": {
+        "a_only_correct": 601,
+        "b_only_correct": 1,
+        "discordant_pairs": 602,
+        "p_two_sided_exact": 7.265908393285196e-179,
+        "unit": "recipient_episode"
+      },
+      "criteria": {
+        "correct_minus_mismatched_cluster_ci_lower_gt_0": true,
+        "correct_minus_mismatched_ge_0_20": true,
+        "correct_minus_none_ge_0_20": true,
+        "mismatched_follow_partner_ge_0_25": false
+      },
+      "follow_inherited": {
+        "correct_follow_A": 0.9057142857142857,
+        "mismatch_follow_partner": 0.18380952380952378,
+        "mismatched_follow_A": 0.08761904761904761,
+        "none_follow_A": 0.10857142857142857,
+        "text_follow_A": 0.9014285714285715
+      },
+      "gate_keys": [
+        "correct_minus_mismatched_ge_0_20",
+        "correct_minus_mismatched_cluster_ci_lower_gt_0",
+        "correct_minus_none_ge_0_20"
+      ],
+      "n_recipient_episodes": 700,
+      "n_text_arm_episodes": 700,
+      "prerequisite_passed": true,
+      "schema": "ext1_inheritance_result_v1",
+      "status": "PASS"
+    },
+    "forced": {
+      "correct_minus_mismatched": null,
+      "correct_minus_none": null,
+      "correct_vs_mismatched_exact_mcnemar_episode_level": null,
+      "criteria": {
+        "correct_minus_mismatched_cluster_ci_lower_gt_0": null,
+        "correct_minus_mismatched_ge_0_20": null,
+        "correct_minus_none_ge_0_20": null,
+        "mismatched_follow_partner_ge_0_25": null
+      },
+      "follow_inherited": null,
+      "n_recipient_episodes": 0,
+      "n_text_arm_episodes": 0,
+      "prerequisite_passed": null,
+      "schema": "ext1_inheritance_result_v1",
+      "status": "UNSCORABLE"
+    },
+    "natural": {
+      "correct_minus_mismatched": null,
+      "correct_minus_none": null,
+      "correct_vs_mismatched_exact_mcnemar_episode_level": null,
+      "criteria": {
+        "correct_minus_mismatched_cluster_ci_lower_gt_0": null,
+        "correct_minus_mismatched_ge_0_20": null,
+        "correct_minus_none_ge_0_20": null,
+        "mismatched_follow_partner_ge_0_25": null
+      },
+      "follow_inherited": null,
+      "n_recipient_episodes": 0,
+      "n_text_arm_episodes": 0,
+      "prerequisite_passed": null,
+      "schema": "ext1_inheritance_result_v1",
+      "status": "UNSCORABLE"
+    }
+  },
+  "correct_minus_mismatched": {
+    "ci95_high": 0.8423809523809525,
+    "ci95_low": 0.793809523809524,
+    "n_clusters": 700,
+    "point": 0.8180952380952382,
+    "replicates": 10000,
+    "seed": 0,
+    "unit": "recipient_episode"
+  },
+  "correct_minus_none": 0.7971428571428572,
+  "correct_vs_mismatched_exact_mcnemar_episode_level": {
+    "a_only_correct": 601,
+    "b_only_correct": 1,
+    "discordant_pairs": 602,
+    "p_two_sided_exact": 7.265908393285196e-179,
+    "unit": "recipient_episode"
+  },
+  "criteria": {
+    "correct_minus_mismatched_cluster_ci_lower_gt_0": true,
+    "correct_minus_mismatched_ge_0_20": true,
+    "correct_minus_none_ge_0_20": true,
+    "mismatched_follow_partner_ge_0_25": false
+  },
+  "follow_inherited": {
+    "correct_follow_A": 0.9057142857142857,
+    "mismatch_follow_partner": 0.18380952380952378,
+    "mismatched_follow_A": 0.08761904761904761,
+    "none_follow_A": 0.10857142857142857,
+    "text_follow_A": 0.9014285714285715
+  },
+  "gate_keys": [
+    "correct_minus_mismatched_ge_0_20",
+    "correct_minus_mismatched_cluster_ci_lower_gt_0",
+    "correct_minus_none_ge_0_20"
+  ],
+  "n_recipient_episodes": 700,
+  "n_text_arm_episodes": 700,
+  "prerequisite_passed": true,
+  "readout_mode_counts": {
+    "direct": 4200,
+    "forced": 0,
+    "natural": 0
+  },
+  "readout_mode_stratification_note": "all primary result rows use direct_digit_logit_v3; Amendment-2 thinking cross-check rows are separate and excluded",
+  "schema": "ext1_inheritance_result_v1",
+  "status": "PASS"
+}

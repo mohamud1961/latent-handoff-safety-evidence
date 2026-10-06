@@ -1,0 +1,83 @@
+{
+  "by_readout_mode": {
+    "direct": {
+      "eligible_by_lambda": {
+        "0.1": false,
+        "0.25": false,
+        "0.5": false
+      },
+      "eligible_lambdas": [],
+      "n_observations_by_lambda": {
+        "0.1": 100,
+        "0.25": 100,
+        "0.5": 100
+      },
+      "validation_episode_count": 100,
+      "verified_wins_by_lambda": {
+        "0.1": 0.09,
+        "0.25": 0.35,
+        "0.5": 0.75
+      }
+    },
+    "forced": {
+      "eligible_by_lambda": {
+        "0.1": null,
+        "0.25": null,
+        "0.5": null
+      },
+      "eligible_lambdas": [],
+      "n_observations_by_lambda": {
+        "0.1": 0,
+        "0.25": 0,
+        "0.5": 0
+      },
+      "validation_episode_count": 0,
+      "verified_wins_by_lambda": {
+        "0.1": null,
+        "0.25": null,
+        "0.5": null
+      }
+    },
+    "natural": {
+      "eligible_by_lambda": {
+        "0.1": null,
+        "0.25": null,
+        "0.5": null
+      },
+      "eligible_lambdas": [],
+      "n_observations_by_lambda": {
+        "0.1": 0,
+        "0.25": 0,
+        "0.5": 0
+      },
+      "validation_episode_count": 0,
+      "verified_wins_by_lambda": {
+        "0.1": null,
+        "0.25": null,
+        "0.5": null
+      }
+    }
+  },
+  "chosen_lambda": null,
+  "eligible_by_lambda": {
+    "0.1": false,
+    "0.25": false,
+    "0.5": false
+  },
+  "eligible_lambdas": [],
+  "n_observations_by_lambda": {
+    "0.1": 100,
+    "0.25": 100,
+    "0.5": 100
+  },
+  "rule": "largest lambda in {0.5,0.25,0.1} with validation verified-wins >= 0.80",
+  "schema": "ext1_lambda_selection_v1",
+  "selection_basis": "overall validation only; readout-mode selections are descriptive",
+  "selection_split": "validation_only",
+  "validation_episode_count": 100,
+  "verified_wins_by_lambda": {
+    "0.1": 0.09,
+    "0.25": 0.35,
+    "0.5": 0.75
+  }
+}

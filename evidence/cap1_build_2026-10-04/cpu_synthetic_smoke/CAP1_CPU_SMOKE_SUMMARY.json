@@ -1,0 +1,2455 @@
+{
+  "arms": {
+    "C16": {
+      "a_mistake_follow_rate_excess": 0.0,
+      "a_mistake_follow_rate_excess_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 1,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "a_mistake_selector_rows": 2,
+      "fidelity": 0.25,
+      "fidelity_by_selector": {
+        "a": 0.25,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "max_portable_state_bits": 256,
+      "max_portable_state_values": 16,
+      "mean_portable_state_bits": 256.0,
+      "mean_portable_state_values": 16.0,
+      "min_portable_state_bits": 256,
+      "min_portable_state_values": 16,
+      "nominal_state_values": 16,
+      "objective_accuracy_vs_truth": 0.25,
+      "portable_state_unit": "latent C for C16/C64/C256/C2048; decoder prefix for NOBOT; mapped per-token prefix for FULLSEQ",
+      "specificity_delta_vs_mean_strong_wrong": 0.0,
+      "specificity_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 8,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "swap_rate_to_wrong_partner_state": 0.5,
+      "wrong_partner_pairs_scored": 24
+    },
+    "C2048": {
+      "a_mistake_follow_rate_excess": 0.0,
+      "a_mistake_follow_rate_excess_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 1,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "a_mistake_selector_rows": 2,
+      "fidelity": 0.25,
+      "fidelity_by_selector": {
+        "a": 0.25,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "max_portable_state_bits": 32768,
+      "max_portable_state_values": 2048,
+      "mean_portable_state_bits": 32768.0,
+      "mean_portable_state_values": 2048.0,
+      "min_portable_state_bits": 32768,
+      "min_portable_state_values": 2048,
+      "nominal_state_values": 2048,
+      "objective_accuracy_vs_truth": 0.25,
+      "portable_state_unit": "latent C for C16/C64/C256/C2048; decoder prefix for NOBOT; mapped per-token prefix for FULLSEQ",
+      "specificity_delta_vs_mean_strong_wrong": 0.0,
+      "specificity_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 8,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "swap_rate_to_wrong_partner_state": 0.5,
+      "wrong_partner_pairs_scored": 24
+    },
+    "C256": {
+      "a_mistake_follow_rate_excess": 0.0,
+      "a_mistake_follow_rate_excess_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 1,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "a_mistake_selector_rows": 2,
+      "fidelity": 0.25,
+      "fidelity_by_selector": {
+        "a": 0.25,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "max_portable_state_bits": 4096,
+      "max_portable_state_values": 256,
+      "mean_portable_state_bits": 4096.0,
+      "mean_portable_state_values": 256.0,
+      "min_portable_state_bits": 4096,
+      "min_portable_state_values": 256,
+      "nominal_state_values": 256,
+      "objective_accuracy_vs_truth": 0.25,
+      "portable_state_unit": "latent C for C16/C64/C256/C2048; decoder prefix for NOBOT; mapped per-token prefix for FULLSEQ",
+      "specificity_delta_vs_mean_strong_wrong": 0.0,
+      "specificity_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 8,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "swap_rate_to_wrong_partner_state": 0.5,
+      "wrong_partner_pairs_scored": 24
+    },
+    "C64": {
+      "a_mistake_follow_rate_excess": 0.0,
+      "a_mistake_follow_rate_excess_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 1,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "a_mistake_selector_rows": 2,
+      "fidelity": 0.25,
+      "fidelity_by_selector": {
+        "a": 0.25,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "max_portable_state_bits": 1024,
+      "max_portable_state_values": 64,
+      "mean_portable_state_bits": 1024.0,
+      "mean_portable_state_values": 64.0,
+      "min_portable_state_bits": 1024,
+      "min_portable_state_values": 64,
+      "nominal_state_values": 64,
+      "objective_accuracy_vs_truth": 0.25,
+      "portable_state_unit": "latent C for C16/C64/C256/C2048; decoder prefix for NOBOT; mapped per-token prefix for FULLSEQ",
+      "specificity_delta_vs_mean_strong_wrong": 0.0,
+      "specificity_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 8,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "swap_rate_to_wrong_partner_state": 0.5,
+      "wrong_partner_pairs_scored": 24
+    },
+    "FULLSEQ": {
+      "a_mistake_follow_rate_excess": 0.0,
+      "a_mistake_follow_rate_excess_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 1,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "a_mistake_selector_rows": 2,
+      "fidelity": 0.25,
+      "fidelity_by_selector": {
+        "a": 0.25,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "max_portable_state_bits": 262144,
+      "max_portable_state_values": 16384,
+      "mean_portable_state_bits": 196608.0,
+      "mean_portable_state_values": 12288.0,
+      "min_portable_state_bits": 131072,
+      "min_portable_state_values": 8192,
+      "nominal_state_values": null,
+      "objective_accuracy_vs_truth": 0.25,
+      "portable_state_unit": "latent C for C16/C64/C256/C2048; decoder prefix for NOBOT; mapped per-token prefix for FULLSEQ",
+      "specificity_delta_vs_mean_strong_wrong": 0.0,
+      "specificity_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 8,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "swap_rate_to_wrong_partner_state": 0.5,
+      "wrong_partner_pairs_scored": 24
+    },
+    "NOBOT": {
+      "a_mistake_follow_rate_excess": 0.0,
+      "a_mistake_follow_rate_excess_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 1,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "a_mistake_selector_rows": 2,
+      "fidelity": 0.25,
+      "fidelity_by_selector": {
+        "a": 0.25,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "max_portable_state_bits": 524288,
+      "max_portable_state_values": 32768,
+      "mean_portable_state_bits": 524288.0,
+      "mean_portable_state_values": 32768.0,
+      "min_portable_state_bits": 524288,
+      "min_portable_state_values": 32768,
+      "nominal_state_values": 32768,
+      "objective_accuracy_vs_truth": 0.25,
+      "portable_state_unit": "latent C for C16/C64/C256/C2048; decoder prefix for NOBOT; mapped per-token prefix for FULLSEQ",
+      "specificity_delta_vs_mean_strong_wrong": 0.0,
+      "specificity_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 8,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "swap_rate_to_wrong_partner_state": 0.5,
+      "wrong_partner_pairs_scored": 24
+    },
+    "TI_C16": {
+      "a_mistake_follow_rate_excess": 0.0,
+      "a_mistake_follow_rate_excess_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 1,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "a_mistake_selector_rows": 2,
+      "fidelity": 0.25,
+      "fidelity_by_selector": {
+        "a": 0.25,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "max_portable_state_bits": 256,
+      "max_portable_state_values": 16,
+      "mean_portable_state_bits": 256.0,
+      "mean_portable_state_values": 16.0,
+      "min_portable_state_bits": 256,
+      "min_portable_state_values": 16,
+      "nominal_state_values": 16,
+      "objective_accuracy_vs_truth": 0.25,
+      "portable_state_unit": "latent C for C16/C64/C256/C2048; decoder prefix for NOBOT; mapped per-token prefix for FULLSEQ",
+      "specificity_delta_vs_mean_strong_wrong": 0.0,
+      "specificity_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 8,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "swap_rate_to_wrong_partner_state": 0.5,
+      "wrong_partner_pairs_scored": 24
+    },
+    "TI_C2048": {
+      "a_mistake_follow_rate_excess": 0.0,
+      "a_mistake_follow_rate_excess_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 1,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "a_mistake_selector_rows": 2,
+      "fidelity": 0.25,
+      "fidelity_by_selector": {
+        "a": 0.25,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "max_portable_state_bits": 32768,
+      "max_portable_state_values": 2048,
+      "mean_portable_state_bits": 32768.0,
+      "mean_portable_state_values": 2048.0,
+      "min_portable_state_bits": 32768,
+      "min_portable_state_values": 2048,
+      "nominal_state_values": 2048,
+      "objective_accuracy_vs_truth": 0.25,
+      "portable_state_unit": "latent C for C16/C64/C256/C2048; decoder prefix for NOBOT; mapped per-token prefix for FULLSEQ",
+      "specificity_delta_vs_mean_strong_wrong": 0.0,
+      "specificity_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 8,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "swap_rate_to_wrong_partner_state": 0.5,
+      "wrong_partner_pairs_scored": 24
+    },
+    "TI_C256": {
+      "a_mistake_follow_rate_excess": 0.0,
+      "a_mistake_follow_rate_excess_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 1,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "a_mistake_selector_rows": 2,
+      "fidelity": 0.25,
+      "fidelity_by_selector": {
+        "a": 0.25,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "max_portable_state_bits": 4096,
+      "max_portable_state_values": 256,
+      "mean_portable_state_bits": 4096.0,
+      "mean_portable_state_values": 256.0,
+      "min_portable_state_bits": 4096,
+      "min_portable_state_values": 256,
+      "nominal_state_values": 256,
+      "objective_accuracy_vs_truth": 0.25,
+      "portable_state_unit": "latent C for C16/C64/C256/C2048; decoder prefix for NOBOT; mapped per-token prefix for FULLSEQ",
+      "specificity_delta_vs_mean_strong_wrong": 0.0,
+      "specificity_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 8,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "swap_rate_to_wrong_partner_state": 0.5,
+      "wrong_partner_pairs_scored": 24
+    },
+    "TI_C64": {
+      "a_mistake_follow_rate_excess": 0.0,
+      "a_mistake_follow_rate_excess_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 1,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "a_mistake_selector_rows": 2,
+      "fidelity": 0.25,
+      "fidelity_by_selector": {
+        "a": 0.25,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "max_portable_state_bits": 1024,
+      "max_portable_state_values": 64,
+      "mean_portable_state_bits": 1024.0,
+      "mean_portable_state_values": 64.0,
+      "min_portable_state_bits": 1024,
+      "min_portable_state_values": 64,
+      "nominal_state_values": 64,
+      "objective_accuracy_vs_truth": 0.25,
+      "portable_state_unit": "latent C for C16/C64/C256/C2048; decoder prefix for NOBOT; mapped per-token prefix for FULLSEQ",
+      "specificity_delta_vs_mean_strong_wrong": 0.0,
+      "specificity_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 8,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "swap_rate_to_wrong_partner_state": 0.5,
+      "wrong_partner_pairs_scored": 24
+    },
+    "TI_FULLSEQ": {
+      "a_mistake_follow_rate_excess": 0.0,
+      "a_mistake_follow_rate_excess_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 1,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "a_mistake_selector_rows": 2,
+      "fidelity": 0.25,
+      "fidelity_by_selector": {
+        "a": 0.25,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "max_portable_state_bits": 262144,
+      "max_portable_state_values": 16384,
+      "mean_portable_state_bits": 196608.0,
+      "mean_portable_state_values": 12288.0,
+      "min_portable_state_bits": 131072,
+      "min_portable_state_values": 8192,
+      "nominal_state_values": null,
+      "objective_accuracy_vs_truth": 0.25,
+      "portable_state_unit": "latent C for C16/C64/C256/C2048; decoder prefix for NOBOT; mapped per-token prefix for FULLSEQ",
+      "specificity_delta_vs_mean_strong_wrong": 0.0,
+      "specificity_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 8,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "swap_rate_to_wrong_partner_state": 0.5,
+      "wrong_partner_pairs_scored": 24
+    },
+    "TI_NOBOT": {
+      "a_mistake_follow_rate_excess": 0.0,
+      "a_mistake_follow_rate_excess_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 1,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "a_mistake_selector_rows": 2,
+      "fidelity": 0.25,
+      "fidelity_by_selector": {
+        "a": 0.25,
+        "b": 0.25,
+        "c": 0.25
+      },
+      "max_portable_state_bits": 524288,
+      "max_portable_state_values": 32768,
+      "mean_portable_state_bits": 524288.0,
+      "mean_portable_state_values": 32768.0,
+      "min_portable_state_bits": 524288,
+      "min_portable_state_values": 32768,
+      "nominal_state_values": 32768,
+      "objective_accuracy_vs_truth": 0.25,
+      "portable_state_unit": "latent C for C16/C64/C256/C2048; decoder prefix for NOBOT; mapped per-token prefix for FULLSEQ",
+      "specificity_delta_vs_mean_strong_wrong": 0.0,
+      "specificity_state_cluster_ci": {
+        "cluster_unit": "PCS3c source episode id",
+        "lower_95": 0.0,
+        "n_clusters": 8,
+        "point": 0.0,
+        "resamples": 250,
+        "seed": 0,
+        "upper_95": 0.0
+      },
+      "swap_rate_to_wrong_partner_state": 0.5,
+      "wrong_partner_pairs_scored": 24
+    }
+  },
+  "arms_trained_or_scored": [
+    "C16",
+    "C64",
+    "C256",
+    "C2048",
+    "NOBOT",
+    "FULLSEQ",
+    "TI_C16",
+    "TI_C64",
+    "TI_C256",
+    "TI_C2048",
+    "TI_NOBOT",
+    "TI_FULLSEQ"
+  ],
+  "checkpoint_training_records": {
+    "C16": {
+      "arm": "C16",
+      "best_validation_loss": 21.789825439453125,
+      "checkpoint_path": "/var/folders/0j/1vz77sln5pg3bcc99g30bjnh0000gn/T/cap1-cpu-smoke-ejy18xe6/C16.pt",
+      "checkpoint_sha256": "cf4910f930406c145fab1d1cb9e9cae61baf9575423e7730ff3cfc1cf8c8bb7b",
+      "identity_ceiling": false,
+      "selected_epoch": 0,
+      "source_kind": "multiposition_neural",
+      "test_used_for_training_or_selection": false,
+      "train_split_ids_sha256": "6bec0aa5ef952ea6c39ad040bd5b88938025d78b2737978202d8d23ee48a1b61",
+      "val_split_ids_sha256": "8da237b064fe15602f341c239f99d008196598260e3abfe426191b03848d7cbf"
+    },
+    "C2048": {
+      "arm": "C2048",
+      "best_validation_loss": 19.834762573242188,
+      "checkpoint_path": "/var/folders/0j/1vz77sln5pg3bcc99g30bjnh0000gn/T/cap1-cpu-smoke-ejy18xe6/C2048.pt",
+      "checkpoint_sha256": "6d94e23862b5d9d8a42617381870ddb929b51ee72d0adb292143f149e0c85b14",
+      "identity_ceiling": false,
+      "selected_epoch": 0,
+      "source_kind": "multiposition_neural",
+      "test_used_for_training_or_selection": false,
+      "train_split_ids_sha256": "6bec0aa5ef952ea6c39ad040bd5b88938025d78b2737978202d8d23ee48a1b61",
+      "val_split_ids_sha256": "8da237b064fe15602f341c239f99d008196598260e3abfe426191b03848d7cbf"
+    },
+    "C256": {
+      "arm": "C256",
+      "best_validation_loss": 22.36077308654785,
+      "checkpoint_path": "/var/folders/0j/1vz77sln5pg3bcc99g30bjnh0000gn/T/cap1-cpu-smoke-ejy18xe6/C256.pt",
+      "checkpoint_sha256": "d049ef927c4c93293765ea2ed0f604d3b0941bb74558ff9820d33b438902cf48",
+      "identity_ceiling": false,
+      "selected_epoch": 0,
+      "source_kind": "multiposition_neural",
+      "test_used_for_training_or_selection": false,
+      "train_split_ids_sha256": "6bec0aa5ef952ea6c39ad040bd5b88938025d78b2737978202d8d23ee48a1b61",
+      "val_split_ids_sha256": "8da237b064fe15602f341c239f99d008196598260e3abfe426191b03848d7cbf"
+    },
+    "C64": {
+      "arm": "C64",
+      "best_validation_loss": 23.88749885559082,
+      "checkpoint_path": "/var/folders/0j/1vz77sln5pg3bcc99g30bjnh0000gn/T/cap1-cpu-smoke-ejy18xe6/C64.pt",
+      "checkpoint_sha256": "07393f90417c92c9938dea4a3953f7f284a61531e73018ead6bccb3bb62a0200",
+      "identity_ceiling": false,
+      "selected_epoch": 0,
+      "source_kind": "multiposition_neural",
+      "test_used_for_training_or_selection": false,
+      "train_split_ids_sha256": "6bec0aa5ef952ea6c39ad040bd5b88938025d78b2737978202d8d23ee48a1b61",
+      "val_split_ids_sha256": "8da237b064fe15602f341c239f99d008196598260e3abfe426191b03848d7cbf"
+    },
+    "FULLSEQ": {
+      "arm": "FULLSEQ",
+      "best_validation_loss": 17.013774871826172,
+      "checkpoint_path": "/var/folders/0j/1vz77sln5pg3bcc99g30bjnh0000gn/T/cap1-cpu-smoke-ejy18xe6/FULLSEQ.pt",
+      "checkpoint_sha256": "13ea50b853504078c41e3399f10fa94123ce754531097f4ce46a7b65107cc35d",
+      "identity_ceiling": false,
+      "selected_epoch": 0,
+      "source_kind": "fullseq",
+      "test_used_for_training_or_selection": false,
+      "train_split_ids_sha256": "6bec0aa5ef952ea6c39ad040bd5b88938025d78b2737978202d8d23ee48a1b61",
+      "val_split_ids_sha256": "8da237b064fe15602f341c239f99d008196598260e3abfe426191b03848d7cbf"
+    },
+    "NOBOT": {
+      "arm": "NOBOT",
+      "best_validation_loss": 26.20738410949707,
+      "checkpoint_path": "/var/folders/0j/1vz77sln5pg3bcc99g30bjnh0000gn/T/cap1-cpu-smoke-ejy18xe6/NOBOT.pt",
+      "checkpoint_sha256": "bb7a4638bc469181b2a090c00bca7dc96e4384662b9b77d14bde519fb1d04f2c",
+      "identity_ceiling": false,
+      "selected_epoch": 0,
+      "source_kind": "multiposition_neural",
+      "test_used_for_training_or_selection": false,
+      "train_split_ids_sha256": "6bec0aa5ef952ea6c39ad040bd5b88938025d78b2737978202d8d23ee48a1b61",
+      "val_split_ids_sha256": "8da237b064fe15602f341c239f99d008196598260e3abfe426191b03848d7cbf"
+    },
+    "TI_C16": {
+      "arm": "TI_C16",
+      "best_validation_loss": 24.534502029418945,
+      "checkpoint_path": "/var/folders/0j/1vz77sln5pg3bcc99g30bjnh0000gn/T/cap1-cpu-smoke-ejy18xe6/TI_C16.pt",
+      "checkpoint_sha256": "7b7428d1bd62b231cf7d7cbac50e831fa3a2b25b7de46797dc6b742f4a1240f5",
+      "identity_ceiling": true,
+      "selected_epoch": 0,
+      "source_kind": "token_identity_positions",
+      "test_used_for_training_or_selection": false,
+      "train_split_ids_sha256": "6bec0aa5ef952ea6c39ad040bd5b88938025d78b2737978202d8d23ee48a1b61",
+      "val_split_ids_sha256": "8da237b064fe15602f341c239f99d008196598260e3abfe426191b03848d7cbf"
+    },
+    "TI_C2048": {
+      "arm": "TI_C2048",
+      "best_validation_loss": 13.224209785461426,
+      "checkpoint_path": "/var/folders/0j/1vz77sln5pg3bcc99g30bjnh0000gn/T/cap1-cpu-smoke-ejy18xe6/TI_C2048.pt",
+      "checkpoint_sha256": "910138a4b7c0d26b3bff486061c677ef0e36d69a6f4c9ad5e500eed2235e7f3a",
+      "identity_ceiling": true,
+      "selected_epoch": 0,
+      "source_kind": "token_identity_positions",
+      "test_used_for_training_or_selection": false,
+      "train_split_ids_sha256": "6bec0aa5ef952ea6c39ad040bd5b88938025d78b2737978202d8d23ee48a1b61",
+      "val_split_ids_sha256": "8da237b064fe15602f341c239f99d008196598260e3abfe426191b03848d7cbf"
+    },
+    "TI_C256": {
+      "arm": "TI_C256",
+      "best_validation_loss": 20.479440689086914,
+      "checkpoint_path": "/var/folders/0j/1vz77sln5pg3bcc99g30bjnh0000gn/T/cap1-cpu-smoke-ejy18xe6/TI_C256.pt",
+      "checkpoint_sha256": "0f46310090607f701ddd411ec14e33ad423d6c3d0070dea30036e2b16df0244f",
+      "identity_ceiling": true,
+      "selected_epoch": 0,
+      "source_kind": "token_identity_positions",
+      "test_used_for_training_or_selection": false,
+      "train_split_ids_sha256": "6bec0aa5ef952ea6c39ad040bd5b88938025d78b2737978202d8d23ee48a1b61",
+      "val_split_ids_sha256": "8da237b064fe15602f341c239f99d008196598260e3abfe426191b03848d7cbf"
+    },
+    "TI_C64": {
+      "arm": "TI_C64",
+      "best_validation_loss": 22.48748207092285,
+      "checkpoint_path": "/var/folders/0j/1vz77sln5pg3bcc99g30bjnh0000gn/T/cap1-cpu-smoke-ejy18xe6/TI_C64.pt",
+      "checkpoint_sha256": "93872a4e61a17db6361aabc735182c225ac92ff21482ecaebcb77623cfa9e937",
+      "identity_ceiling": true,
+      "selected_epoch": 0,
+      "source_kind": "token_identity_positions",
+      "test_used_for_training_or_selection": false,
+      "train_split_ids_sha256": "6bec0aa5ef952ea6c39ad040bd5b88938025d78b2737978202d8d23ee48a1b61",
+      "val_split_ids_sha256": "8da237b064fe15602f341c239f99d008196598260e3abfe426191b03848d7cbf"
+    },
+    "TI_NOBOT": {
+      "arm": "TI_NOBOT",
+      "best_validation_loss": 25.457616806030273,
+      "checkpoint_path": "/var/folders/0j/1vz77sln5pg3bcc99g30bjnh0000gn/T/cap1-cpu-smoke-ejy18xe6/TI_NOBOT.pt",
+      "checkpoint_sha256": "ba62928b1597b272609dcec90e1a1f8457cf2d76b2d6bb21fb53073fe7afc404",
+      "identity_ceiling": true,
+      "selected_epoch": 0,
+      "source_kind": "token_identity_positions",
+      "test_used_for_training_or_selection": false,
+      "train_split_ids_sha256": "6bec0aa5ef952ea6c39ad040bd5b88938025d78b2737978202d8d23ee48a1b61",
+      "val_split_ids_sha256": "8da237b064fe15602f341c239f99d008196598260e3abfe426191b03848d7cbf"
+    }
+  },
+  "evidence_kind": "synthetic_cpu_smoke_only",
+  "linear_probes": {
+    "C16": {
+      "arm": "C16",
+      "linear_monitorability_accuracy": {
+        "a": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 0.5,
+          "val_accuracy": 0.5
+        },
+        "b": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 0.75,
+          "val_accuracy": 0.5
+        },
+        "c": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 0.75,
+          "val_accuracy": 0.75
+        }
+      },
+      "monitor_state_width": 16,
+      "prefix_lengths": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "within_stratum_leakage": {
+        "initial_a": {
+          "balanced_accuracy": 0.25,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_b": {
+          "balanced_accuracy": 0.25,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_c": {
+          "balanced_accuracy": 0.25,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_multiply_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            1
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_plus_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            2
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        }
+      }
+    },
+    "C2048": {
+      "arm": "C2048",
+      "linear_monitorability_accuracy": {
+        "a": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 0.375,
+          "val_accuracy": 0.25
+        },
+        "b": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.1,
+          "test_accuracy": 0.75,
+          "val_accuracy": 0.5
+        },
+        "c": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 0.875,
+          "val_accuracy": 0.75
+        }
+      },
+      "monitor_state_width": 2048,
+      "prefix_lengths": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "within_stratum_leakage": {
+        "initial_a": {
+          "balanced_accuracy": 0.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_b": {
+          "balanced_accuracy": 0.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_c": {
+          "balanced_accuracy": 0.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_multiply_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            1
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_plus_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            2
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        }
+      }
+    },
+    "C256": {
+      "arm": "C256",
+      "linear_monitorability_accuracy": {
+        "a": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 0.375,
+          "val_accuracy": 0.25
+        },
+        "b": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.1,
+          "test_accuracy": 0.75,
+          "val_accuracy": 0.5
+        },
+        "c": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 0.875,
+          "val_accuracy": 0.75
+        }
+      },
+      "monitor_state_width": 256,
+      "prefix_lengths": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "within_stratum_leakage": {
+        "initial_a": {
+          "balanced_accuracy": 0.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_b": {
+          "balanced_accuracy": 0.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_c": {
+          "balanced_accuracy": 0.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_multiply_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            1
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_plus_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            2
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        }
+      }
+    },
+    "C64": {
+      "arm": "C64",
+      "linear_monitorability_accuracy": {
+        "a": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 10.0,
+          "test_accuracy": 0.375,
+          "val_accuracy": 0.5
+        },
+        "b": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 0.75,
+          "val_accuracy": 0.5
+        },
+        "c": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 0.75,
+          "val_accuracy": 0.75
+        }
+      },
+      "monitor_state_width": 64,
+      "prefix_lengths": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "within_stratum_leakage": {
+        "initial_a": {
+          "balanced_accuracy": 0.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_b": {
+          "balanced_accuracy": 0.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_c": {
+          "balanced_accuracy": 0.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_multiply_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            1
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_plus_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            2
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        }
+      }
+    },
+    "FULLSEQ": {
+      "arm": "FULLSEQ",
+      "linear_monitorability_accuracy": {
+        "a": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.1,
+          "test_accuracy": 0.875,
+          "val_accuracy": 0.5
+        },
+        "b": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 0.75,
+          "val_accuracy": 0.75
+        },
+        "c": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 0.75,
+          "val_accuracy": 0.0
+        }
+      },
+      "monitor_state_width": 8192,
+      "prefix_lengths": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        4,
+        5,
+        6,
+        7,
+        8,
+        4,
+        5,
+        6,
+        7,
+        8,
+        4,
+        5,
+        6,
+        7,
+        8,
+        4,
+        5,
+        6,
+        7
+      ],
+      "within_stratum_leakage": {
+        "initial_a": {
+          "balanced_accuracy": 0.25,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_b": {
+          "balanced_accuracy": 0.25,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_c": {
+          "balanced_accuracy": 0.25,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_multiply_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            1
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_plus_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            2
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        }
+      }
+    },
+    "NOBOT": {
+      "arm": "NOBOT",
+      "linear_monitorability_accuracy": {
+        "a": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 0.375,
+          "val_accuracy": 0.25
+        },
+        "b": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.1,
+          "test_accuracy": 0.75,
+          "val_accuracy": 0.5
+        },
+        "c": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 0.875,
+          "val_accuracy": 0.75
+        }
+      },
+      "monitor_state_width": 512,
+      "prefix_lengths": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "within_stratum_leakage": {
+        "initial_a": {
+          "balanced_accuracy": 0.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_b": {
+          "balanced_accuracy": 0.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_c": {
+          "balanced_accuracy": 0.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_multiply_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            1
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_plus_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            2
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        }
+      }
+    },
+    "TI_C16": {
+      "arm": "TI_C16",
+      "linear_monitorability_accuracy": {
+        "a": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 1.0,
+          "val_accuracy": 1.0
+        },
+        "b": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 1.0,
+          "val_accuracy": 1.0
+        },
+        "c": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 1.0,
+          "val_accuracy": 1.0
+        }
+      },
+      "monitor_state_width": 16,
+      "prefix_lengths": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "within_stratum_leakage": {
+        "initial_a": {
+          "balanced_accuracy": 0.125,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_b": {
+          "balanced_accuracy": 0.125,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_c": {
+          "balanced_accuracy": 0.125,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_multiply_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            1
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_plus_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            2
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        }
+      }
+    },
+    "TI_C2048": {
+      "arm": "TI_C2048",
+      "linear_monitorability_accuracy": {
+        "a": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 1.0,
+          "val_accuracy": 1.0
+        },
+        "b": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 1.0,
+          "val_accuracy": 1.0
+        },
+        "c": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 1.0,
+          "val_accuracy": 1.0
+        }
+      },
+      "monitor_state_width": 2048,
+      "prefix_lengths": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "within_stratum_leakage": {
+        "initial_a": {
+          "balanced_accuracy": 0.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_b": {
+          "balanced_accuracy": 0.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_c": {
+          "balanced_accuracy": 0.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_multiply_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            1
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_plus_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            2
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        }
+      }
+    },
+    "TI_C256": {
+      "arm": "TI_C256",
+      "linear_monitorability_accuracy": {
+        "a": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 1.0,
+          "val_accuracy": 1.0
+        },
+        "b": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 1.0,
+          "val_accuracy": 1.0
+        },
+        "c": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 1.0,
+          "val_accuracy": 1.0
+        }
+      },
+      "monitor_state_width": 256,
+      "prefix_lengths": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "within_stratum_leakage": {
+        "initial_a": {
+          "balanced_accuracy": 0.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_b": {
+          "balanced_accuracy": 0.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_c": {
+          "balanced_accuracy": 0.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_multiply_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            1
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_plus_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            2
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        }
+      }
+    },
+    "TI_C64": {
+      "arm": "TI_C64",
+      "linear_monitorability_accuracy": {
+        "a": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 1.0,
+          "val_accuracy": 1.0
+        },
+        "b": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 1.0,
+          "val_accuracy": 1.0
+        },
+        "c": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 1.0,
+          "val_accuracy": 1.0
+        }
+      },
+      "monitor_state_width": 64,
+      "prefix_lengths": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "within_stratum_leakage": {
+        "initial_a": {
+          "balanced_accuracy": 0.125,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_b": {
+          "balanced_accuracy": 0.125,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_c": {
+          "balanced_accuracy": 0.25,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_multiply_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            1
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_plus_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            2
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        }
+      }
+    },
+    "TI_FULLSEQ": {
+      "arm": "TI_FULLSEQ",
+      "linear_monitorability_accuracy": {
+        "a": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 0.75,
+          "val_accuracy": 0.5
+        },
+        "b": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 0.625,
+          "val_accuracy": 0.5
+        },
+        "c": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 0.625,
+          "val_accuracy": 0.5
+        }
+      },
+      "within_stratum_leakage": {
+        "initial_a": {
+          "balanced_accuracy": 1.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_b": {
+          "balanced_accuracy": 1.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_c": {
+          "balanced_accuracy": 1.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_multiply_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            1
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_plus_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            2
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        }
+      }
+    },
+    "TI_NOBOT": {
+      "arm": "TI_NOBOT",
+      "linear_monitorability_accuracy": {
+        "a": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 1.0,
+          "val_accuracy": 1.0
+        },
+        "b": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 1.0,
+          "val_accuracy": 1.0
+        },
+        "c": {
+          "classes": [
+            0,
+            1
+          ],
+          "lambda": 0.0001,
+          "test_accuracy": 1.0,
+          "val_accuracy": 1.0
+        }
+      },
+      "monitor_state_width": 512,
+      "prefix_lengths": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "within_stratum_leakage": {
+        "initial_a": {
+          "balanced_accuracy": 0.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_b": {
+          "balanced_accuracy": 0.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "initial_c": {
+          "balanced_accuracy": 0.0,
+          "chance": 0.5,
+          "classes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "conditioning": "exact A_belief triple; residualize state and within-state class rates using train only",
+          "lambda": 0.0001,
+          "n_test": 8,
+          "n_test_strata_scored": 4,
+          "n_train_strata": 4,
+          "n_val_strata_scored": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_multiply_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            1
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        },
+        "operation_plus_count": {
+          "balanced_accuracy": null,
+          "chance": null,
+          "classes": [
+            2
+          ],
+          "n_test": 0,
+          "n_test_strata_scored": 0,
+          "n_train_strata": 0,
+          "val_balanced_accuracy": null
+        }
+      }
+    }
+  },
+  "modal_or_gpu_started": false,
+  "n_test_episodes": 8,
+  "n_test_records": 24,
+  "pcs3c_handoff_required_for_science": true,
+  "primary_contrast": {
+    "estimand": "mean episode-clustered difference in per-selector fidelity over the exact PCS3c sealed test IDs",
+    "interpretation": "descriptive; lower CI > 0 means FULLSEQ outperformed C16 on this completed PCS3c test set",
+    "name": "FULLSEQ_minus_C16_fidelity",
+    "state_cluster_ci": {
+      "cluster_unit": "PCS3c source episode id",
+      "lower_95": 0.0,
+      "n_clusters": 8,
+      "point": 0.0,
+      "resamples": 250,
+      "seed": 0,
+      "upper_95": 0.0
+    }
+  },
+  "schema": "cap1_summary_v1",
+  "scientific_gate": "descriptive_only_no_threshold_or_claim_promotion",
+  "scientific_result": false,
+  "test_rows_synthetic_only": 24,
+  "training_epochs_per_learned_arm": 1
+}

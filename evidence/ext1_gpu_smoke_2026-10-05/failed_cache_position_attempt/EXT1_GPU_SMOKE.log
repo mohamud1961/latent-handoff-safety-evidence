@@ -1,0 +1,40 @@
+$ /usr/local/bin/python /root/scripts/ext1.py --out-dir /artifacts/ext1-gpu-smoke-edc38cbf6c60 --gpu-smoke
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:03<00:07,  3.59s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:07<00:03,  3.64s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:07<00:00,  2.03s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:07<00:00,  2.46s/it]
+Traceback (most recent call last):
+  File "/root/scripts/ext1.py", line 1024, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/root/scripts/ext1.py", line 1017, in main
+    result = _run_gpu_smoke(args, out, shas)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/scripts/ext1.py", line 878, in _run_gpu_smoke
+    rows.extend(run_inheritance_arms(runtime, [recipient], by_id, partners, split="gpu_smoke"))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/scripts/ext1.py", line 537, in run_inheritance_arms
+    rows.append(_record_response(
+                ^^^^^^^^^^^^^^^^^
+  File "/root/scripts/ext1.py", line 498, in _record_response
+    raw_text, trace = runtime.receiver_response(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/scripts/ext1.py", line 470, in receiver_response
+    generated, _ = self.model.generate_text_batch(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/third_party/LatentMAS/models.py", line 247, in generate_text_batch
+    outputs = self.model.generate(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/generation/utils.py", line 2597, in generate
+    result = self._sample(
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/generation/utils.py", line 3534, in _sample
+    model_kwargs = self._get_initial_cache_position(cur_len, input_ids.device, model_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/transformers/generation/utils.py", line 1792, in _get_initial_cache_position
+    if "cache_position" in model_kwargs and model_kwargs["cache_position"]:
+                                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous

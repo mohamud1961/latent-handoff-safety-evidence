@@ -1,0 +1,11 @@
+{
+  "bridge_bytes": 30083799,
+  "bridge_path": "/artifacts/pcs2b-preanswer-state-realization/pcs2b_bridge.pt",
+  "bridge_sha256": "87de8fb8a70d62aea0a2545faeb3c5b12890832dfd24d1b64e0b4a84cea8a771",
+  "errors": [],
+  "input_gate_passed": true,
+  "manifest_bridge_sha256": "87de8fb8a70d62aea0a2545faeb3c5b12890832dfd24d1b64e0b4a84cea8a771",
+  "manifest_path": "/root/PCS2B_RUN_MANIFEST.json",
+  "manifest_runner_sha256": "29c47aa64ef482e0654052df223dc1b9596c0a23bfbb93ddb5d5959562b8949c",
+  "pcs2b_runner_sha256": "29c47aa64ef482e0654052df223dc1b9596c0a23bfbb93ddb5d5959562b8949c"
+}

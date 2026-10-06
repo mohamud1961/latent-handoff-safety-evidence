@@ -1,0 +1,73 @@
+{
+  "classification": "SMOKE_ONLY_NOT_SCIENTIFIC_RESULT",
+  "provider_or_pretrained_model_started": false,
+  "synthetic_model_started": true,
+  "train_items": 4,
+  "validation_queries": 1,
+  "test_items_never_selected": true,
+  "negative_count": 3,
+  "negative_ids_by_query": {
+    "0": [
+      2,
+      3,
+      1
+    ],
+    "1": [
+      3,
+      5,
+      0
+    ],
+    "2": [
+      0,
+      3,
+      1
+    ],
+    "3": [
+      0,
+      1,
+      2
+    ],
+    "4": [
+      2,
+      0,
+      3
+    ],
+    "5": [
+      1,
+      3,
+      0
+    ],
+    "6": [
+      0,
+      2,
+      3
+    ]
+  },
+  "lambda": 1.0,
+  "margin_nats": 0.5,
+  "synthetic_composite_loss": 0.8500000238418579,
+  "finite_gradients": true,
+  "toy_model_path_loss": 54.50202178955078,
+  "toy_model_path_prefix_gradients": true,
+  "neural_stage_b_training_performed": true,
+  "stage_b_objective": "restart_surprisal_weighted_contrastive",
+  "stage_b_epochs": 1,
+  "stage_b_best_validation_loss": 114.68859100341797,
+  "restart_weight_stats": {
+    "n": 5,
+    "mean_surprisal": 20.74903984069824,
+    "mean_frac_tokens_positive_weight": 0.5,
+    "mean_total_weight": 114.0571060180664
+  },
+  "test_item_ids_never_processed": [
+    105
+  ],
+  "copied_validation_only_bridge_readback": {
+    "passed": true,
+    "validation_source_id": 104,
+    "validation_target_digit": 4,
+    "predicted_digit": 7,
+    "checkpoint_sha256": "b851848215ba71f349676b51a0831772058990be1f0a6ac2d7f304a1a3ae14c8",
+    "test_items_read": 0
+  }
+}

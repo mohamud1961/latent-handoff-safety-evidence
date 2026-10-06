@@ -1,0 +1,16 @@
+{
+  "id": "kaggle-user/pcs-c2c-fidelity",
+  "title": "PCS C2C Fidelity",
+  "code_file": "c2c_fidelity.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

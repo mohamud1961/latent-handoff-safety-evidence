@@ -1,0 +1,17 @@
+{
+  "blocking_protocol_questions": [],
+  "experiment_ready": true,
+  "external_services_used": false,
+  "gsm8k_revision": "740312add88f781978c0658806c59bc2815b9866",
+  "modal_launched": false,
+  "model_loading_performed": false,
+  "model_revisions": {
+    "Qwen/Qwen3-1.7B": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "Qwen/Qwen3-4B": "1cfa9a7208912126459214e8b04321603b3df60c"
+  },
+  "protocol_path": "<local>/Downloads/pcs-wt-codex-mon2/evidence/rq6_build_2026-10-04/RQ6_PROTOCOL.json",
+  "protocol_sha256": "9880291e2ed842882f50fa63ab8a1ff60509ccef85c153e4cb778228b9fb8704",
+  "resolved_by": "design_L2_L4/RESOLUTIONS_1_OPUS.md#RQ6-PCS6",
+  "schema": "rq6_protocol_preflight_v1",
+  "status": "resolved_ready_for_reviewed_inference"
+}

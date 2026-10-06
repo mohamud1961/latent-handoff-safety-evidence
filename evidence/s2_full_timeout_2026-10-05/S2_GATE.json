@@ -1,0 +1,8 @@
+{
+  "models_loaded": true,
+  "schema": "s2_gate_v1",
+  "sealed_evaluation_started": false,
+  "status": "CLEAN_TRAIN_VAL_QUERIES_READY",
+  "test_outputs_read": false,
+  "training_started": true
+}

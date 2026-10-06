@@ -1,0 +1,89 @@
+{
+  "schema": "s4_dev_protocol_v1",
+  "status": "resolved",
+  "experiment": "S4-dev",
+  "claim_scope": "development_only_reused_PCS3b_test_pool",
+  "asset_custody": {
+    "modal_profile": "modal-account-A",
+    "volume_artifact_profile": "modal-account-A",
+    "same_profile_volume_access_verified": true,
+    "pcs3b_neural_bridge_volume_path": "/artifacts/pcs3-multipos-bridge-04394d115bab-ep40/neural/PCS3_BRIDGE.pt",
+    "pcs3b_neural_bridge_sha256": "575ea8df9262e17aa11d7d32d2a13a4da9fa13075041b8ed65b79cd4f79952bf",
+    "pcs3_features_path": "/artifacts/pcs3-multipos-2aedd7129e4e/PCS3_MULTIPOS_FEATURES.pt",
+    "pcs3_features_sha256": "ea51473126045f3d898f0de4ddc50a63198585d7e5819de277a6aa26bfbb7bc0",
+    "pcs3_extra_test_features_path": "/artifacts/pcs3-multipos-7996da43f49d/PCS3_MULTIPOS_EXTRA_TEST_FEATURES.pt",
+    "pcs3_extra_test_features_sha256": "4f8bfac52505180983e0ecca817a29acf38e26940d056cffb5206afb44fa4a2a"
+  },
+  "models": {
+    "source": {
+      "model_id": "Qwen/Qwen3-4B",
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "tokenizer_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "use": "sealed PCS3 multiposition feature provenance; source model is not reloaded"
+    },
+    "receiver": {
+      "model_id": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+    }
+  },
+  "upstream_evidence": {
+    "multipos_manifest_sha256": "4842fc381c6788a091a76bfb6bd90993f942f72c59f99e59ee0fac8c017f8352",
+    "multipos_source_gate_sha256": "22cdbf25f1a6200e0fa5423ee33d077e93a1904afa9e344218124c1d3a52d645",
+    "multipos_enlarged_coverage_sha256": "d847b59cd53e8f161398fbfbfd1114ebfdc224428b81f1cd81fc2d8719fcf4fe",
+    "pcs3b_neural_result_sha256": "51665850d9878480331ef0c7218dfdfe79cb90af20e3471502a39fc6206f0226",
+    "required_source_gate": "decodability_gate_pass",
+    "required_enlarged_coverage_gates": [
+      "coverage_ge1_ge_90",
+      "coverage_ge3_ge_70"
+    ],
+    "required_pcs3b_gates": [
+      "source_gate",
+      "receiver_oracle_gate"
+    ],
+    "note": "The original multiposition full gate is false only because original-test matched-wrong coverage is low; S4 uses the frozen enlarged 459-record test pool whose coverage gate passes. PCS3b is a development near-miss and is not promoted by S4-dev."
+  },
+  "c_probe_chance_accuracy": 0.1,
+  "c_probe_accuracy_metric": "balanced_accuracy",
+  "f_train": {
+    "hidden_dim": 256,
+    "epochs": 30,
+    "batch_size": 64,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "task_loss_weight": 1.0,
+    "adversary_loss_weight": 1.0,
+    "gradient_reversal_scale": 1.0,
+    "adversary_hidden_dim": 128,
+    "adversary_learning_rate": 0.001,
+    "adversary_updates_per_batch": 1,
+    "validation_selection": "lowest_retained_selector_ce_when_c_probe_balanced_accuracy_le_0.20_else_lowest_task_ce_minus_adversary_ce",
+    "validation_c_probe_balanced_accuracy_max": 0.2
+  },
+  "mlp_probe": {
+    "hidden_dim": 128,
+    "epochs": 50,
+    "batch_size": 64,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "validation_selection": "lowest_validation_cross_entropy"
+  },
+  "seeds": {
+    "source_data_seed": 20261004,
+    "filter_init_seed": 0,
+    "probe_init_seed": 0,
+    "random_filter_seed": 0,
+    "bootstrap_seed": 0,
+    "bootstrap_resamples": 10000
+  },
+  "real_smoke": {
+    "timeout_seconds": 600,
+    "train_records": 48,
+    "validation_records": 16,
+    "test_records": 8,
+    "scientific_gates_enforced": false,
+    "classification": "SMOKE_ONLY_NO_SCIENTIFIC_CLAIM"
+  }
+}

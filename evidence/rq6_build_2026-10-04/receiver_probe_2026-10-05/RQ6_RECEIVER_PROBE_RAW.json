@@ -1,0 +1,1720 @@
+[
+  {
+    "a_s11": [
+      5,
+      6,
+      3
+    ],
+    "a_s8": [
+      6,
+      2,
+      2
+    ],
+    "id": 0,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          6,
+          2,
+          2
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            6,
+            2,
+            2
+          ],
+          "11": [
+            6,
+            2,
+            2
+          ],
+          "9": [
+            6,
+            2,
+            2
+          ]
+        },
+        "text": "STATE s9: a=6, b=2, c=2  \nSTATE s10: a=6, b=2, c=2  \nSTATE s11: a=6, b=2, c=2  \n\nFINAL_SUMMARY: The state remains the same after all updates 9 through 11.",
+        "token_count": 69
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=2, b=4, c=5  \nSTATE s1: a=2, b=4, c=5  \nSTATE s2: a=2, b=4, c=5  \nSTATE s3: a=2, b=4, c=5  \nSTATE s4: a=2, b=4, c=5  \nSTATE s5: a=2, b=4, c=5  \nSTATE s6: a=2, b=4, c=5  \nSTATE s7: a=2,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=6, b=2, c=2  \nSTATE s10: a=6, b=2, c=2  \nSTATE s11: a=6, b=2, c=2  \n\nFINAL_SUMMARY: The state remains the same after all updates 9 through 11.",
+    "source_token_count": 404,
+    "truth_s11": [
+      5,
+      6,
+      3
+    ]
+  },
+  {
+    "a_s11": [
+      0,
+      0,
+      9
+    ],
+    "a_s8": [
+      0,
+      8,
+      0
+    ],
+    "id": 1,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          0,
+          8,
+          0
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            0,
+            8,
+            0
+          ],
+          "11": [
+            0,
+            8,
+            0
+          ],
+          "9": [
+            0,
+            8,
+            0
+          ]
+        },
+        "text": "STATE s9: a=0, b=8, c=0  \nSTATE s10: a=0, b=8, c=0  \nSTATE s11: a=0, b=8, c=0  \n\nFINAL_SUMMARY: The state after updates 9 through 11 is the same as the initial state.",
+        "token_count": 72
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=7, b=0, c=2  \nSTATE s1: a=7, b=0, c=2  \nSTATE s2: a=7, b=0, c=2  \nSTATE s3: a=7, b=0, c=2  \nSTATE s4: a=7, b=0, c=2  \nSTATE s5: a=7, b=0, c=2  \nSTATE s6: a=7, b=0, c=2  \nSTATE s7: a=7,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=0, b=8, c=0  \nSTATE s10: a=0, b=8, c=0  \nSTATE s11: a=0, b=8, c=0  \n\nFINAL_SUMMARY: The state after updates 9 through 11 is the same as the initial state.",
+    "source_token_count": 404,
+    "truth_s11": [
+      0,
+      0,
+      9
+    ]
+  },
+  {
+    "a_s11": [
+      1,
+      7,
+      9
+    ],
+    "a_s8": [
+      7,
+      7,
+      1
+    ],
+    "id": 2,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s1: a=6, b=9, c=5  \nSTATE s2: a=8, b=9, c=5  \nSTATE s3: a=8, b=8, c=5  \nSTATE s4: a=8, b=8, c=5  \nSTATE s5: a=8, b=8, c=5  \nSTATE s6: a=8, b=8, c=5  \nSTATE s7: a=8, b=8, c=5  \nSTATE s8: a=7,",
+        "token_count": 120
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=6, b=9, c=5  \nSTATE s1: a=6, b=9, c=5  \nSTATE s2: a=6, b=9, c=5  \nSTATE s3: a=6, b=9, c=5  \nSTATE s4: a=6, b=9, c=5  \nSTATE s5: a=6, b=9, c=5  \nSTATE s6: a=6, b=9, c=5  \nSTATE s7: a=6,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s1: a=6, b=9, c=5  \nSTATE s2: a=8, b=9, c=5  \nSTATE s3: a=8, b=8, c=5  \nSTATE s4: a=8, b=8, c=5  \nSTATE s5: a=8, b=8, c=5  \nSTATE s6: a=8, b=8, c=5  \nSTATE s7: a=8, b=8, c=5  \nSTATE s8: a=7,",
+    "source_token_count": 404,
+    "truth_s11": [
+      1,
+      7,
+      9
+    ]
+  },
+  {
+    "a_s11": [
+      8,
+      3,
+      5
+    ],
+    "a_s8": [
+      8,
+      0,
+      9
+    ],
+    "id": 3,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          8,
+          0,
+          9
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            8,
+            0,
+            9
+          ],
+          "11": [
+            8,
+            0,
+            9
+          ],
+          "9": [
+            8,
+            0,
+            9
+          ]
+        },
+        "text": "STATE s9: a=8, b=0, c=9  \nSTATE s10: a=8, b=0, c=9  \nSTATE s11: a=8, b=0, c=9  \n\nFINAL_SUMMARY: The state after updates 9 through 11 remains the same.",
+        "token_count": 68
+      },
+      "restart": {
+        "final": [
+          0,
+          3,
+          2
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            0,
+            3,
+            2
+          ],
+          "11": [
+            0,
+            3,
+            2
+          ],
+          "9": [
+            0,
+            3,
+            2
+          ]
+        },
+        "text": "STATE s9: a=0, b=3, c=2  \nSTATE s10: a=0, b=3, c=2  \nSTATE s11: a=0, b=3, c=2  \n\nFINAL_SUMMARY: The final state after updates 9 through 11 is a=0, b=3, c=2.",
+        "token_count": 78
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=8, b=0, c=9  \nSTATE s10: a=8, b=0, c=9  \nSTATE s11: a=8, b=0, c=9  \n\nFINAL_SUMMARY: The state after updates 9 through 11 remains the same.",
+    "source_token_count": 404,
+    "truth_s11": [
+      8,
+      3,
+      5
+    ]
+  },
+  {
+    "a_s11": [
+      3,
+      6,
+      0
+    ],
+    "a_s8": [
+      3,
+      8,
+      0
+    ],
+    "id": 4,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          3,
+          8,
+          0
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            3,
+            8,
+            0
+          ],
+          "11": [
+            3,
+            8,
+            0
+          ],
+          "9": [
+            3,
+            8,
+            0
+          ]
+        },
+        "text": "STATE s9: a=3, b=8, c=0  \nSTATE s10: a=3, b=8, c=0  \nSTATE s11: a=3, b=8, c=0  \n\nFINAL_SUMMARY: The state after updates 9 through 11 remains the same.",
+        "token_count": 68
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=9, b=8, c=3  \nSTATE s1: a=9, b=8, c=3  \nSTATE s2: a=9, b=8, c=3  \nSTATE s3: a=9, b=8, c=3  \nSTATE s4: a=9, b=8, c=3  \nSTATE s5: a=9, b=8, c=3  \nSTATE s6: a=9, b=8, c=3  \nSTATE s7: a=9,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=3, b=8, c=0  \nSTATE s10: a=3, b=8, c=0  \nSTATE s11: a=3, b=8, c=0  \n\nFINAL_SUMMARY: The state after updates 9 through 11 remains the same.",
+    "source_token_count": 404,
+    "truth_s11": [
+      5,
+      0,
+      4
+    ]
+  },
+  {
+    "a_s11": [
+      0,
+      0,
+      0
+    ],
+    "a_s8": [
+      0,
+      0,
+      0
+    ],
+    "id": 5,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          0,
+          0,
+          0
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            0,
+            0,
+            0
+          ],
+          "11": [
+            0,
+            0,
+            0
+          ],
+          "9": [
+            0,
+            0,
+            0
+          ]
+        },
+        "text": "STATE s9: a=0, b=0, c=0  \nSTATE s10: a=0, b=0, c=0  \nSTATE s11: a=0, b=0, c=0  \nFINAL_SUMMARY: All variables are 0 after updates 9 through 11.",
+        "token_count": 68
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=4, b=2, c=4  \nSTATE s1: a=4, b=2, c=4  \nSTATE s2: a=4, b=2, c=4  \nSTATE s3: a=4, b=2, c=4  \nSTATE s4: a=4, b=2, c=4  \nSTATE s5: a=4, b=2, c=4  \nSTATE s6: a=4, b=2, c=4  \nSTATE s7: a=4,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=0, b=0, c=0  \nSTATE s10: a=0, b=0, c=0  \nSTATE s11: a=0, b=0, c=0  \nFINAL_SUMMARY: All variables are 0 after updates 9 through 11.",
+    "source_token_count": 393,
+    "truth_s11": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "a_s11": [
+      1,
+      4,
+      4
+    ],
+    "a_s8": [
+      4,
+      8,
+      2
+    ],
+    "id": 6,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          4,
+          8,
+          2
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            4,
+            8,
+            2
+          ],
+          "11": [
+            4,
+            8,
+            2
+          ],
+          "9": [
+            4,
+            8,
+            2
+          ]
+        },
+        "text": "STATE s9: a=4, b=8, c=2  \nSTATE s10: a=4, b=8, c=2  \nSTATE s11: a=4, b=8, c=2  \n\nFINAL_SUMMARY: The state after updates 9 through 11 remains the same.",
+        "token_count": 68
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=7, b=5, c=1  \nSTATE s1: a=8, b=5, c=1  \nSTATE s2: a=9, b=5, c=1  \nSTATE s3: a=0, b=5, c=1  \nSTATE s4: a=1, b=5, c=1  \nSTATE s5: a=2, b=5, c=1  \nSTATE s6: a=3, b=5, c=1  \nSTATE s7: a=4,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=4, b=8, c=2  \nSTATE s10: a=4, b=8, c=2  \nSTATE s11: a=4, b=8, c=2  \n\nFINAL_SUMMARY: The state after updates 9 through 11 remains the same.",
+    "source_token_count": 404,
+    "truth_s11": [
+      9,
+      8,
+      4
+    ]
+  },
+  {
+    "a_s11": [
+      4,
+      4,
+      7
+    ],
+    "a_s8": [
+      6,
+      2,
+      1
+    ],
+    "id": 7,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          6,
+          2,
+          1
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            6,
+            2,
+            1
+          ],
+          "11": [
+            6,
+            2,
+            1
+          ],
+          "9": [
+            6,
+            2,
+            1
+          ]
+        },
+        "text": "STATE s9: a=6, b=2, c=1  \nSTATE s10: a=6, b=2, c=1  \nSTATE s11: a=6, b=2, c=1  \n\nFINAL_SUMMARY: The state after updates 9 through 11 is the same as the supplied state.",
+        "token_count": 72
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s8: a=0, b=3, c=3  \nSTATE s9: a=1, b=3, c=4  \nSTATE s10: a=1, b=3, c=4  \nSTATE s11: a=1, b=3, c=4  \n\nFINAL_SUMMARY: The final state is a=1, b=3, c=4.",
+        "token_count": 86
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=6, b=2, c=1  \nSTATE s10: a=6, b=2, c=1  \nSTATE s11: a=6, b=2, c=1  \n\nFINAL_SUMMARY: The state after updates 9 through 11 is the same as the supplied state.",
+    "source_token_count": 404,
+    "truth_s11": [
+      4,
+      4,
+      7
+    ]
+  },
+  {
+    "a_s11": null,
+    "a_s8": null,
+    "id": 8,
+    "parse_ok": false,
+    "receiver": null,
+    "receiver_prompt_oracle_preview": null,
+    "source_token_count": 338,
+    "truth_s11": [
+      0,
+      0,
+      6
+    ]
+  },
+  {
+    "a_s11": [
+      5,
+      0,
+      0
+    ],
+    "a_s8": [
+      0,
+      5,
+      0
+    ],
+    "id": 9,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          0,
+          5,
+          0
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            0,
+            5,
+            0
+          ],
+          "11": [
+            0,
+            5,
+            0
+          ],
+          "9": [
+            0,
+            5,
+            0
+          ]
+        },
+        "text": "STATE s9: a=0, b=5, c=0  \nSTATE s10: a=0, b=5, c=0  \nSTATE s11: a=0, b=5, c=0  \nFINAL_SUMMARY: The state after updates 9 through 11 is the same as the supplied state after update 8.",
+        "token_count": 76
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=3, b=2, c=2  \nSTATE s1: a=9, b=2, c=2  \nSTATE s2: a=1, b=2, c=2  \nSTATE s3: a=1, b=2, c=2  \nSTATE s4: a=1, b=2, c=2  \nSTATE s5: a=1, b=2, c=2  \nSTATE s6: a=1, b=2, c=2  \nSTATE s7: a=1,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=0, b=5, c=0  \nSTATE s10: a=0, b=5, c=0  \nSTATE s11: a=0, b=5, c=0  \nFINAL_SUMMARY: The state after updates 9 through 11 is the same as the supplied state after update 8.",
+    "source_token_count": 404,
+    "truth_s11": [
+      5,
+      0,
+      0
+    ]
+  },
+  {
+    "a_s11": null,
+    "a_s8": null,
+    "id": 10,
+    "parse_ok": false,
+    "receiver": null,
+    "receiver_prompt_oracle_preview": null,
+    "source_token_count": 363,
+    "truth_s11": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "a_s11": [
+      3,
+      5,
+      6
+    ],
+    "a_s8": [
+      3,
+      9,
+      6
+    ],
+    "id": 11,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          3,
+          9,
+          6
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            3,
+            9,
+            6
+          ],
+          "11": [
+            3,
+            9,
+            6
+          ],
+          "9": [
+            3,
+            9,
+            6
+          ]
+        },
+        "text": "STATE s9: a=3, b=9, c=6  \nSTATE s10: a=3, b=9, c=6  \nSTATE s11: a=3, b=9, c=6  \n\nFINAL_SUMMARY: The state after updates 9 through 11 remains the same.",
+        "token_count": 68
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=5, b=8, c=4  \nSTATE s1: a=7, b=8, c=4  \nSTATE s2: a=7, b=8, c=6  \nSTATE s3: a=7, b=8, c=6  \nSTATE s4: a=7, b=8, c=6  \nSTATE s5: a=7, b=8, c=6  \nSTATE s6: a=7, b=8, c=6  \nSTATE s7: a=7,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=3, b=9, c=6  \nSTATE s10: a=3, b=9, c=6  \nSTATE s11: a=3, b=9, c=6  \n\nFINAL_SUMMARY: The state after updates 9 through 11 remains the same.",
+    "source_token_count": 404,
+    "truth_s11": [
+      3,
+      9,
+      6
+    ]
+  },
+  {
+    "a_s11": [
+      2,
+      6,
+      2
+    ],
+    "a_s8": [
+      6,
+      6,
+      1
+    ],
+    "id": 12,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          6,
+          6,
+          1
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            6,
+            6,
+            1
+          ],
+          "11": [
+            6,
+            6,
+            1
+          ],
+          "9": [
+            6,
+            6,
+            1
+          ]
+        },
+        "text": "STATE s9: a=6, b=6, c=1  \nSTATE s10: a=6, b=6, c=1  \nSTATE s11: a=6, b=6, c=1  \n\nFINAL_SUMMARY: The state after updates 9 through 11 remains the same.",
+        "token_count": 68
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=8, b=1, c=5  \nSTATE s1: a=9, b=1, c=5  \nSTATE s2: a=9, b=1, c=5  \nSTATE s3: a=9, b=1, c=5  \nSTATE s4: a=9, b=1, c=5  \nSTATE s5: a=9, b=1, c=5  \nSTATE s6: a=9, b=1, c=5  \nSTATE s7: a=9,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=6, b=6, c=1  \nSTATE s10: a=6, b=6, c=1  \nSTATE s11: a=6, b=6, c=1  \n\nFINAL_SUMMARY: The state after updates 9 through 11 remains the same.",
+    "source_token_count": 404,
+    "truth_s11": [
+      2,
+      6,
+      2
+    ]
+  },
+  {
+    "a_s11": [
+      0,
+      0,
+      0
+    ],
+    "a_s8": [
+      0,
+      0,
+      0
+    ],
+    "id": 13,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          0,
+          0,
+          0
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            0,
+            0,
+            0
+          ],
+          "11": [
+            0,
+            0,
+            0
+          ],
+          "9": [
+            0,
+            0,
+            0
+          ]
+        },
+        "text": "STATE s9: a=0, b=0, c=0  \nSTATE s10: a=0, b=0, c=0  \nSTATE s11: a=0, b=0, c=0  \nFINAL_SUMMARY: All variables are 0 after updates 9 through 11.",
+        "token_count": 68
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=4, b=9, c=5  \nSTATE s1: a=4, b=9, c=5  \nSTATE s2: a=4, b=9, c=5  \nSTATE s3: a=4, b=9, c=5  \nSTATE s4: a=4, b=9, c=5  \nSTATE s5: a=4, b=9, c=5  \nSTATE s6: a=4, b=9, c=5  \nSTATE s7: a=4,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=0, b=0, c=0  \nSTATE s10: a=0, b=0, c=0  \nSTATE s11: a=0, b=0, c=0  \nFINAL_SUMMARY: All variables are 0 after updates 9 through 11.",
+    "source_token_count": 404,
+    "truth_s11": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "a_s11": [
+      5,
+      0,
+      0
+    ],
+    "a_s8": [
+      5,
+      0,
+      5
+    ],
+    "id": 14,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          5,
+          0,
+          5
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            5,
+            0,
+            5
+          ],
+          "11": [
+            5,
+            0,
+            5
+          ],
+          "9": [
+            5,
+            0,
+            5
+          ]
+        },
+        "text": "STATE s9: a=5, b=0, c=5  \nSTATE s10: a=5, b=0, c=5  \nSTATE s11: a=5, b=0, c=5  \n\nFINAL_SUMMARY: The state after updates 9 through 11 remains the same.",
+        "token_count": 68
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=7, b=2, c=3  \nSTATE s1: a=7, b=2, c=3  \nSTATE s2: a=7, b=2, c=3  \nSTATE s3: a=7, b=2, c=3  \nSTATE s4: a=7, b=2, c=3  \nSTATE s5: a=7, b=2, c=3  \nSTATE s6: a=7, b=2, c=3  \nSTATE s7: a=7,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=5, b=0, c=5  \nSTATE s10: a=5, b=0, c=5  \nSTATE s11: a=5, b=0, c=5  \n\nFINAL_SUMMARY: The state after updates 9 through 11 remains the same.",
+    "source_token_count": 404,
+    "truth_s11": [
+      4,
+      0,
+      0
+    ]
+  },
+  {
+    "a_s11": [
+      0,
+      0,
+      0
+    ],
+    "a_s8": [
+      2,
+      0,
+      0
+    ],
+    "id": 15,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          2,
+          0,
+          0
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            2,
+            0,
+            0
+          ],
+          "11": [
+            2,
+            0,
+            0
+          ],
+          "9": [
+            2,
+            0,
+            0
+          ]
+        },
+        "text": "STATE s9: a=2, b=0, c=0  \nSTATE s10: a=2, b=0, c=0  \nSTATE s11: a=2, b=0, c=0  \nFINAL_SUMMARY: The final state is a=2, b=0, c=0.",
+        "token_count": 70
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=6, b=3, c=9  \nSTATE s1: a=6, b=3, c=9  \nSTATE s2: a=6, b=3, c=9  \nSTATE s3: a=6, b=3, c=9  \nSTATE s4: a=6, b=3, c=9  \nSTATE s5: a=6, b=3, c=9  \nSTATE s6: a=6, b=3, c=9  \nSTATE s7: a=6,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=2, b=0, c=0  \nSTATE s10: a=2, b=0, c=0  \nSTATE s11: a=2, b=0, c=0  \nFINAL_SUMMARY: The final state is a=2, b=0, c=0.",
+    "source_token_count": 393,
+    "truth_s11": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "a_s11": [
+      5,
+      3,
+      1
+    ],
+    "a_s8": [
+      4,
+      3,
+      3
+    ],
+    "id": 16,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          4,
+          3,
+          3
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            4,
+            3,
+            3
+          ],
+          "11": [
+            4,
+            3,
+            3
+          ],
+          "9": [
+            4,
+            3,
+            3
+          ]
+        },
+        "text": "STATE s9: a=4, b=3, c=3  \nSTATE s10: a=4, b=3, c=3  \nSTATE s11: a=4, b=3, c=3  \nFINAL_SUMMARY: The state after updates 9 through 11 is the same as the initial state.",
+        "token_count": 72
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=3, b=8, c=6  \nSTATE s1: a=3, b=8, c=6  \nSTATE s2: a=3, b=8, c=6  \nSTATE s3: a=3, b=8, c=6  \nSTATE s4: a=3, b=8, c=6  \nSTATE s5: a=3, b=8, c=6  \nSTATE s6: a=3, b=8, c=6  \nSTATE s7: a=3,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=4, b=3, c=3  \nSTATE s10: a=4, b=3, c=3  \nSTATE s11: a=4, b=3, c=3  \nFINAL_SUMMARY: The state after updates 9 through 11 is the same as the initial state.",
+    "source_token_count": 404,
+    "truth_s11": [
+      5,
+      3,
+      1
+    ]
+  },
+  {
+    "a_s11": [
+      0,
+      6,
+      7
+    ],
+    "a_s8": [
+      0,
+      8,
+      2
+    ],
+    "id": 17,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          0,
+          8,
+          2
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            0,
+            8,
+            2
+          ],
+          "11": [
+            0,
+            8,
+            2
+          ],
+          "9": [
+            0,
+            8,
+            2
+          ]
+        },
+        "text": "STATE s9: a=0, b=8, c=2  \nSTATE s10: a=0, b=8, c=2  \nSTATE s11: a=0, b=8, c=2  \nFINAL_SUMMARY: The state after updates 9 through 11 is the same as the supplied state.",
+        "token_count": 72
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=1, b=5, c=2  \nSTATE s1: a=1, b=5, c=2  \nSTATE s2: a=1, b=5, c=2  \nSTATE s3: a=1, b=5, c=2  \nSTATE s4: a=1, b=5, c=2  \nSTATE s5: a=1, b=5, c=2  \nSTATE s6: a=1, b=5, c=2  \nSTATE s7: a=1,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=0, b=8, c=2  \nSTATE s10: a=0, b=8, c=2  \nSTATE s11: a=0, b=8, c=2  \nFINAL_SUMMARY: The state after updates 9 through 11 is the same as the supplied state.",
+    "source_token_count": 404,
+    "truth_s11": [
+      0,
+      6,
+      7
+    ]
+  },
+  {
+    "a_s11": [
+      0,
+      0,
+      0
+    ],
+    "a_s8": [
+      0,
+      0,
+      0
+    ],
+    "id": 18,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          0,
+          0,
+          0
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            0,
+            0,
+            0
+          ],
+          "11": [
+            0,
+            0,
+            0
+          ],
+          "9": [
+            0,
+            0,
+            0
+          ]
+        },
+        "text": "STATE s9: a=0, b=0, c=0  \nSTATE s10: a=0, b=0, c=0  \nSTATE s11: a=0, b=0, c=0  \nFINAL_SUMMARY: All variables are 0 after updates 9 through 11.",
+        "token_count": 68
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=9, b=2, c=4  \nSTATE s1: a=9, b=2, c=4  \nSTATE s2: a=9, b=2, c=4  \nSTATE s3: a=9, b=2, c=4  \nSTATE s4: a=9, b=2, c=4  \nSTATE s5: a=9, b=2, c=4  \nSTATE s6: a=9, b=2, c=4  \nSTATE s7: a=9,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=0, b=0, c=0  \nSTATE s10: a=0, b=0, c=0  \nSTATE s11: a=0, b=0, c=0  \nFINAL_SUMMARY: All variables are 0 after updates 9 through 11.",
+    "source_token_count": 393,
+    "truth_s11": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "a_s11": [
+      0,
+      8,
+      8
+    ],
+    "a_s8": [
+      4,
+      8,
+      6
+    ],
+    "id": 19,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          4,
+          8,
+          6
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            4,
+            8,
+            6
+          ],
+          "11": [
+            4,
+            8,
+            6
+          ],
+          "9": [
+            4,
+            8,
+            6
+          ]
+        },
+        "text": "STATE s9: a=4, b=8, c=6  \nSTATE s10: a=4, b=8, c=6  \nSTATE s11: a=4, b=8, c=6  \n\nFINAL_SUMMARY: The state remains the same after updates 9 through 11.",
+        "token_count": 68
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=4, b=0, c=6  \nSTATE s1: a=4, b=0, c=6  \nSTATE s2: a=4, b=0, c=6  \nSTATE s3: a=4, b=0, c=6  \nSTATE s4: a=4, b=0, c=6  \nSTATE s5: a=4, b=0, c=6  \nSTATE s6: a=4, b=0, c=6  \nSTATE s7: a=4,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=4, b=8, c=6  \nSTATE s10: a=4, b=8, c=6  \nSTATE s11: a=4, b=8, c=6  \n\nFINAL_SUMMARY: The state remains the same after updates 9 through 11.",
+    "source_token_count": 404,
+    "truth_s11": [
+      0,
+      8,
+      8
+    ]
+  },
+  {
+    "a_s11": [
+      9,
+      0,
+      5
+    ],
+    "a_s8": [
+      2,
+      7,
+      5
+    ],
+    "id": 20,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          2,
+          7,
+          5
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            2,
+            7,
+            5
+          ],
+          "11": [
+            2,
+            7,
+            5
+          ],
+          "9": [
+            2,
+            7,
+            5
+          ]
+        },
+        "text": "STATE s9: a=2, b=7, c=5  \nSTATE s10: a=2, b=7, c=5  \nSTATE s11: a=2, b=7, c=5  \n\nFINAL_SUMMARY: The state after updates 9 through 11 remains the same.",
+        "token_count": 68
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=5, b=9, c=2  \nSTATE s1: a=5, b=9, c=2  \nSTATE s2: a=5, b=9, c=2  \nSTATE s3: a=5, b=9, c=2  \nSTATE s4: a=5, b=9, c=2  \nSTATE s5: a=5, b=9, c=2  \nSTATE s6: a=5, b=9, c=2  \nSTATE s7: a=5,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=2, b=7, c=5  \nSTATE s10: a=2, b=7, c=5  \nSTATE s11: a=2, b=7, c=5  \n\nFINAL_SUMMARY: The state after updates 9 through 11 remains the same.",
+    "source_token_count": 404,
+    "truth_s11": [
+      9,
+      0,
+      5
+    ]
+  },
+  {
+    "a_s11": [
+      5,
+      0,
+      0
+    ],
+    "a_s8": [
+      5,
+      5,
+      1
+    ],
+    "id": 21,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          5,
+          5,
+          3
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            5,
+            5,
+            2
+          ],
+          "11": [
+            5,
+            5,
+            3
+          ],
+          "9": [
+            5,
+            5,
+            1
+          ]
+        },
+        "text": "STATE s9: a=5, b=5, c=1  \nSTATE s10: a=5, b=5, c=2  \nSTATE s11: a=5, b=5, c=3  \n\nFINAL_SUMMARY: The final state after updates 9 through 11 is a=5, b=5, c=3.",
+        "token_count": 78
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s8: a=7, b=7, c=8  \nSTATE s9: a=3, b=4, c=8  \nSTATE s10: a=3, b=4, c=9  \nSTATE s11: a=9, b=4, c=9  \n\nFINAL_SUMMARY: The final values are a=9, b=4, c=9.",
+        "token_count": 86
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=5, b=5, c=1  \nSTATE s10: a=5, b=5, c=2  \nSTATE s11: a=5, b=5, c=3  \n\nFINAL_SUMMARY: The final state after updates 9 through 11 is a=5, b=5, c=3.",
+    "source_token_count": 404,
+    "truth_s11": [
+      5,
+      0,
+      0
+    ]
+  },
+  {
+    "a_s11": [
+      9,
+      2,
+      1
+    ],
+    "a_s8": [
+      3,
+      9,
+      1
+    ],
+    "id": 22,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          3,
+          9,
+          1
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            3,
+            9,
+            1
+          ],
+          "11": [
+            3,
+            9,
+            1
+          ],
+          "9": [
+            3,
+            9,
+            1
+          ]
+        },
+        "text": "STATE s9: a=3, b=9, c=1  \nSTATE s10: a=3, b=9, c=1  \nSTATE s11: a=3, b=9, c=1  \n\nFINAL_SUMMARY: The state after updates 9 through 11 remains the same.",
+        "token_count": 68
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=3, b=1, c=5  \nSTATE s1: a=3, b=1, c=5  \nSTATE s2: a=3, b=1, c=5  \nSTATE s3: a=3, b=1, c=5  \nSTATE s4: a=3, b=1, c=5  \nSTATE s5: a=3, b=1, c=5  \nSTATE s6: a=3, b=1, c=5  \nSTATE s7: a=3,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=3, b=9, c=1  \nSTATE s10: a=3, b=9, c=1  \nSTATE s11: a=3, b=9, c=1  \n\nFINAL_SUMMARY: The state after updates 9 through 11 remains the same.",
+    "source_token_count": 404,
+    "truth_s11": [
+      4,
+      8,
+      8
+    ]
+  },
+  {
+    "a_s11": [
+      6,
+      8,
+      4
+    ],
+    "a_s8": [
+      4,
+      8,
+      4
+    ],
+    "id": 23,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          4,
+          4,
+          4
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            4,
+            4,
+            4
+          ],
+          "11": [
+            4,
+            4,
+            4
+          ],
+          "9": [
+            4,
+            8,
+            4
+          ]
+        },
+        "text": "STATE s9: a=4, b=8, c=4  \nSTATE s10: a=4, b=4, c=4  \nSTATE s11: a=4, b=4, c=4  \n\nFINAL_SUMMARY: The final state after updates 9 through 11 is a=4, b=4, c=4.",
+        "token_count": 78
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=3, b=8, c=3  \nSTATE s1: a=9, b=8, c=3  \nSTATE s2: a=1, b=8, c=3  \nSTATE s3: a=1, b=8, c=3  \nSTATE s4: a=1, b=8, c=3  \nSTATE s5: a=1, b=8, c=3  \nSTATE s6: a=1, b=8, c=3  \nSTATE s7: a=1,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=4, b=8, c=4  \nSTATE s10: a=4, b=4, c=4  \nSTATE s11: a=4, b=4, c=4  \n\nFINAL_SUMMARY: The final state after updates 9 through 11 is a=4, b=4, c=4.",
+    "source_token_count": 397,
+    "truth_s11": [
+      6,
+      8,
+      4
+    ]
+  },
+  {
+    "a_s11": [
+      6,
+      8,
+      6
+    ],
+    "a_s8": [
+      6,
+      8,
+      6
+    ],
+    "id": 24,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          6,
+          8,
+          6
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            6,
+            8,
+            6
+          ],
+          "11": [
+            6,
+            8,
+            6
+          ],
+          "9": [
+            6,
+            8,
+            6
+          ]
+        },
+        "text": "STATE s9: a=6, b=8, c=6  \nSTATE s10: a=6, b=8, c=6  \nSTATE s11: a=6, b=8, c=6  \n\nFINAL_SUMMARY: The state after updates 9 through 11 is the same as the initial state.",
+        "token_count": 72
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=1, b=7, c=6  \nSTATE s1: a=1, b=7, c=6  \nSTATE s2: a=1, b=7, c=6  \nSTATE s3: a=1, b=7, c=6  \nSTATE s4: a=1, b=7, c=6  \nSTATE s5: a=1, b=7, c=6  \nSTATE s6: a=1, b=7, c=6  \nSTATE s7: a=1,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=6, b=8, c=6  \nSTATE s10: a=6, b=8, c=6  \nSTATE s11: a=6, b=8, c=6  \n\nFINAL_SUMMARY: The state after updates 9 through 11 is the same as the initial state.",
+    "source_token_count": 404,
+    "truth_s11": [
+      6,
+      8,
+      6
+    ]
+  },
+  {
+    "a_s11": [
+      0,
+      5,
+      5
+    ],
+    "a_s8": [
+      0,
+      0,
+      5
+    ],
+    "id": 25,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          0,
+          0,
+          5
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            0,
+            0,
+            5
+          ],
+          "11": [
+            0,
+            0,
+            5
+          ],
+          "9": [
+            0,
+            0,
+            5
+          ]
+        },
+        "text": "STATE s9: a=0, b=0, c=5  \nSTATE s10: a=0, b=0, c=5  \nSTATE s11: a=0, b=0, c=5  \n\nFINAL_SUMMARY: The state after updates 9 through 11 is the same as the initial state.",
+        "token_count": 72
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=4, b=5, c=9  \nSTATE s1: a=4, b=5, c=9  \nSTATE s2: a=4, b=5, c=9  \nSTATE s3: a=4, b=5, c=9  \nSTATE s4: a=4, b=5, c=9  \nSTATE s5: a=4, b=5, c=9  \nSTATE s6: a=4, b=5, c=9  \nSTATE s7: a=4,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=0, b=0, c=5  \nSTATE s10: a=0, b=0, c=5  \nSTATE s11: a=0, b=0, c=5  \n\nFINAL_SUMMARY: The state after updates 9 through 11 is the same as the initial state.",
+    "source_token_count": 404,
+    "truth_s11": [
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "a_s11": [
+      7,
+      2,
+      3
+    ],
+    "a_s8": [
+      1,
+      2,
+      9
+    ],
+    "id": 26,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          1,
+          2,
+          9
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            1,
+            2,
+            9
+          ],
+          "11": [
+            1,
+            2,
+            9
+          ],
+          "9": [
+            1,
+            2,
+            9
+          ]
+        },
+        "text": "STATE s9: a=1, b=2, c=9  \nSTATE s10: a=1, b=2, c=9  \nSTATE s11: a=1, b=2, c=9  \n\nFINAL_SUMMARY: The state after updates 9 through 11 remains the same.",
+        "token_count": 68
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=8, b=2, c=0  \nSTATE s1: a=8, b=2, c=0  \nSTATE s2: a=8, b=2, c=0  \nSTATE s3: a=8, b=2, c=0  \nSTATE s4: a=8, b=2, c=0  \nSTATE s5: a=8, b=2, c=0  \nSTATE s6: a=8, b=2, c=0  \nSTATE s7: a=8,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=1, b=2, c=9  \nSTATE s10: a=1, b=2, c=9  \nSTATE s11: a=1, b=2, c=9  \n\nFINAL_SUMMARY: The state after updates 9 through 11 remains the same.",
+    "source_token_count": 404,
+    "truth_s11": [
+      7,
+      2,
+      3
+    ]
+  },
+  {
+    "a_s11": [
+      5,
+      5,
+      8
+    ],
+    "a_s8": [
+      5,
+      5,
+      4
+    ],
+    "id": 27,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          6,
+          5,
+          4
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            4,
+            5,
+            4
+          ],
+          "11": [
+            6,
+            5,
+            4
+          ],
+          "9": [
+            4,
+            5,
+            4
+          ]
+        },
+        "text": "STATE s9: a=4, b=5, c=4  \nSTATE s10: a=4, b=5, c=4  \nSTATE s11: a=6, b=5, c=4  \n\nFINAL_SUMMARY: The final state after updates 9 through 11 is a=6, b=5, c=4.",
+        "token_count": 78
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s8: a=3, b=2, c=0  \nSTATE s9: a=7, b=2, c=0  \nSTATE s10: a=7, b=2, c=0  \nSTATE s11: a=9, b=2, c=0  \nFINAL_SUMMARY: The final values are a=9, b=2, c=0.",
+        "token_count": 86
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=4, b=5, c=4  \nSTATE s10: a=4, b=5, c=4  \nSTATE s11: a=6, b=5, c=4  \n\nFINAL_SUMMARY: The final state after updates 9 through 11 is a=6, b=5, c=4.",
+    "source_token_count": 397,
+    "truth_s11": [
+      0,
+      5,
+      8
+    ]
+  },
+  {
+    "a_s11": [
+      5,
+      0,
+      3
+    ],
+    "a_s8": [
+      5,
+      0,
+      3
+    ],
+    "id": 28,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          5,
+          0,
+          3
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            5,
+            0,
+            3
+          ],
+          "11": [
+            5,
+            0,
+            3
+          ],
+          "9": [
+            5,
+            0,
+            3
+          ]
+        },
+        "text": "STATE s9: a=5, b=0, c=3  \nSTATE s10: a=5, b=0, c=3  \nSTATE s11: a=5, b=0, c=3  \n\nFINAL_SUMMARY: The state after updates 9 through 11 remains the same.",
+        "token_count": 68
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=4, b=4, c=6  \nSTATE s1: a=4, b=4, c=6  \nSTATE s2: a=4, b=4, c=6  \nSTATE s3: a=4, b=4, c=6  \nSTATE s4: a=4, b=4, c=6  \nSTATE s5: a=4, b=4, c=6  \nSTATE s6: a=4, b=4, c=6  \nSTATE s7: a=4,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=5, b=0, c=3  \nSTATE s10: a=5, b=0, c=3  \nSTATE s11: a=5, b=0, c=3  \n\nFINAL_SUMMARY: The state after updates 9 through 11 remains the same.",
+    "source_token_count": 397,
+    "truth_s11": [
+      5,
+      0,
+      3
+    ]
+  },
+  {
+    "a_s11": [
+      6,
+      4,
+      4
+    ],
+    "a_s8": [
+      8,
+      4,
+      2
+    ],
+    "id": 29,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s1: a=1, b=6, c=1  \nSTATE s2: a=1, b=6, c=1  \nSTATE s3: a=1, b=6, c=1  \nSTATE s4: a=1, b=6, c=1  \nSTATE s5: a=1, b=6, c=1  \nSTATE s6: a=1, b=6, c=1  \nSTATE s7: a=1, b=6, c=1  \nSTATE s8: a=8,",
+        "token_count": 120
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=1, b=6, c=1  \nSTATE s1: a=1, b=6, c=1  \nSTATE s2: a=1, b=6, c=1  \nSTATE s3: a=1, b=6, c=1  \nSTATE s4: a=1, b=6, c=1  \nSTATE s5: a=1, b=6, c=1  \nSTATE s6: a=1, b=6, c=1  \nSTATE s7: a=1,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s1: a=1, b=6, c=1  \nSTATE s2: a=1, b=6, c=1  \nSTATE s3: a=1, b=6, c=1  \nSTATE s4: a=1, b=6, c=1  \nSTATE s5: a=1, b=6, c=1  \nSTATE s6: a=1, b=6, c=1  \nSTATE s7: a=1, b=6, c=1  \nSTATE s8: a=8,",
+    "source_token_count": 404,
+    "truth_s11": [
+      6,
+      4,
+      4
+    ]
+  },
+  {
+    "a_s11": [
+      0,
+      0,
+      0
+    ],
+    "a_s8": [
+      0,
+      0,
+      0
+    ],
+    "id": 30,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          7,
+          0,
+          6
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            9,
+            0,
+            7
+          ],
+          "11": [
+            7,
+            0,
+            6
+          ],
+          "9": [
+            9,
+            0,
+            0
+          ]
+        },
+        "text": "STATE s9: a=9, b=0, c=0  \nSTATE s10: a=9, b=0, c=7  \nSTATE s11: a=7, b=0, c=6  \n\nFINAL_SUMMARY: The final state after updates 9 through 11 is a=7, b=0, c=6.",
+        "token_count": 78
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s0: a=0, b=7, c=3  \nSTATE s1: a=0, b=7, c=3  \nSTATE s2: a=0, b=7, c=3  \nSTATE s3: a=0, b=7, c=3  \nSTATE s4: a=0, b=7, c=3  \nSTATE s5: a=0, b=7, c=3  \nSTATE s6: a=0, b=7, c=3  \nSTATE s7: a=0,",
+        "token_count": 120
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=9, b=0, c=0  \nSTATE s10: a=9, b=0, c=7  \nSTATE s11: a=7, b=0, c=6  \n\nFINAL_SUMMARY: The final state after updates 9 through 11 is a=7, b=0, c=6.",
+    "source_token_count": 404,
+    "truth_s11": [
+      9,
+      0,
+      0
+    ]
+  },
+  {
+    "a_s11": [
+      2,
+      6,
+      6
+    ],
+    "a_s8": [
+      8,
+      4,
+      5
+    ],
+    "id": 31,
+    "parse_ok": true,
+    "receiver": {
+      "oracle_state": {
+        "final": [
+          8,
+          4,
+          5
+        ],
+        "parse_ok": true,
+        "states": {
+          "10": [
+            8,
+            4,
+            5
+          ],
+          "11": [
+            8,
+            4,
+            5
+          ],
+          "9": [
+            8,
+            4,
+            5
+          ]
+        },
+        "text": "STATE s9: a=8, b=4, c=5  \nSTATE s10: a=8, b=4, c=5  \nSTATE s11: a=8, b=4, c=5  \n\nFINAL_SUMMARY: The state after updates 9 through 11 is the same as the supplied state after update 8.",
+        "token_count": 76
+      },
+      "restart": {
+        "final": null,
+        "parse_ok": false,
+        "states": null,
+        "text": "STATE s8: a=0, b=4, c=2  \nSTATE s9: a=2, b=4, c=2  \nSTATE s10: a=2, b=4, c=2  \nSTATE s11: a=2, b=4, c=2  \nFINAL_SUMMARY: The final state is a=2, b=4, c=2.",
+        "token_count": 86
+      }
+    },
+    "receiver_prompt_oracle_preview": "STATE s9: a=8, b=4, c=5  \nSTATE s10: a=8, b=4, c=5  \nSTATE s11: a=8, b=4, c=5  \n\nFINAL_SUMMARY: The state after updates 9 through 11 is the same as the supplied state after update 8.",
+    "source_token_count": 404,
+    "truth_s11": [
+      2,
+      6,
+      6
+    ]
+  }
+]

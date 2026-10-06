@@ -1,0 +1,95 @@
+{
+  "code": {
+    "canonical_runner_sha256": "20b0191e0d87bef269256aa5fb5cdb290d330d2d4c899dce9bccc193a3e8f49f",
+    "freeze_sha256": "95d7e1eef57a5f64bf4166eaf9dad3fb02c6c9382e19c9b913845b32f9b6e621",
+    "launcher_sha256": "cbf6b56a9e4e54db45b5a85570d4e613f2d0d0185f0482a993f5ea60477ff4b7",
+    "multipos_capture_sha256": "7996da43f49d6053ec3317886bf2e72ecf0d95812d414d5521b627ac34ba4a22",
+    "multipos_converter_sha256": "04394d115bab08f18f42c9f855caf28f66480f4f26d59fd0f1169b87ec2a15f3",
+    "resolutions_sha256": "3de67dd567cbf3bd2d45b88d677c0c0755cd1027929418c0b934611b4947e61c"
+  },
+  "evaluation": {
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 0,
+    "criteria": {
+      "each_selector_neural_fidelity": 0.6,
+      "near_miss_floor": 0.65,
+      "neural_minus_mean_strong_wrong": 0.3,
+      "neural_minus_restart": 0.3,
+      "overall_neural_fidelity": 0.7,
+      "source_wrong_states_for_directional_check": 10
+    },
+    "noise_seed": 20261007,
+    "probe_seed": 0,
+    "probe_seed_commitment_formula": "sha256(bridge_sha256_hex || ASCII('PCS3c'))",
+    "wrong_partner_selection": "canonical PCS3 strongest same-two-register matches; nearest checkpoint token count, then first source order; three distinct partners"
+  },
+  "gates": {
+    "checkpoint_rate_given_parse": 0.98,
+    "each_register_decodability": 0.7,
+    "location_rate_given_parse": 0.9,
+    "minimum_test_states": 450,
+    "parse_rate": 0.9,
+    "receiver_gate_policy": "overall_90_and_each_selector_85",
+    "receiver_oracle_each_selector": 0.85,
+    "receiver_oracle_overall": 0.9,
+    "strong_control_coverage_ge1": 0.9,
+    "strong_control_coverage_ge3": 0.7,
+    "train_val_triple_accuracy": 0.8
+  },
+  "model_load_policy": "pinned immutable revision with local_files_only=True",
+  "models": {
+    "receiver": {
+      "repo_id": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+    },
+    "source": {
+      "repo_id": "Qwen/Qwen3-4B",
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "tokenizer_revision": "1cfa9a7208912126459214e8b04321603b3df60c"
+    }
+  },
+  "schema": "pcs3c_resolved_protocol_v1",
+  "source_generation": {
+    "capture": "scripts/pcs_multipos_capture.py locate_pcs3 and capture_positions",
+    "eligible": "parsed, canonical checkpoint marker found, all four multiposition positions located, and reconstructed checkpoint length matches",
+    "generator": "canonical PCS3 gen_episode; per-episode RNG namespace pcs3",
+    "minimum_test_states": 450,
+    "pool_size": 1600,
+    "prompt_parser": "canonical PCS3 runner bytes and Final state parser",
+    "seed": 20261005,
+    "split": "canonical seeded shuffle: random.Random(seed + 1), train 512, val 128, test all remaining eligible"
+  },
+  "status": "resolved_from_freezes_and_sealed_w1_choice",
+  "training": {
+    "arms": [
+      "neural",
+      "token_identity"
+    ],
+    "canonical_pcs3_defaults": {
+      "batch_size": 16,
+      "bridge_hidden": 768,
+      "eval_batch": 32,
+      "lr": 0.0003,
+      "max_source_tokens": 260,
+      "source_batch": 8,
+      "source_proj": 128,
+      "text_batch": 16,
+      "weight_decay": 0.01
+    },
+    "checkpoint_selection": "minimum validation loss",
+    "epochs": 40,
+    "w1_overrides": {
+      "c_dim": 64,
+      "c_dropout": 0.0,
+      "chosen_config": "W1-b",
+      "epochs": 40,
+      "k_slots": 4
+    }
+  },
+  "w1_choice": {
+    "chosen_config": "W1-b",
+    "path": "/artifacts/pcs3c-eval-only-f1394f83c8ec/W1_CHOICE.json",
+    "sha256": "d85909b93dea9f42e89dc98eb8f048344ae82723ebca6e70d9429ca7b9e60937"
+  }
+}

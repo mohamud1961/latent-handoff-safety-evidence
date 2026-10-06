@@ -1,0 +1,228 @@
+[{"stream_name":"stderr","time":6.439169032,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.439212122,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.439217486,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.4392209000000005,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":6.996899001,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.996930234,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.996934166,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.99693674,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":8.034237282,"data":"env: Kaggle | python 3.12.13 | out=/kaggle/working\n"}
+,{"stream_name":"stdout","time":8.034262394,"data":"mode: FULL | pair: q3_1.7b+q25_1.5b (Qwen/Qwen3-1.7B \u003c- Qwen/Qwen2.5-1.5B-Instruct)\n"}
+,{"stream_name":"stdout","time":8.094585772,"data":"GPU: ('Tesla T4', 7.5, '15360 MiB')\n"}
+,{"stream_name":"stdout","time":8.094609785,"data":"$ /usr/bin/python3 -m pip install -q transformers==4.52.4 tokenizers==0.21.4 huggingface_hub==0.34.3\n"}
+,{"stream_name":"stdout","time":12.138789145,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.5/10.5 MB 31.0 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":12.235213834,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 92.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":12.314483355,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 558.8/558.8 kB 27.1 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":12.340937443,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.5/10.5 MB 31.0 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":12.340956369,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 92.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":12.340961604,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 558.8/558.8 kB 27.1 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":24.485369513,"data":"{'transformers': '4.52.4', 'tokenizers': '0.21.4', 'huggingface_hub': '0.34.3', 'datasets': '5.0.0', 'numpy': '2.0.2'}\n"}
+,{"stream_name":"stdout","time":24.50141439,"data":"$ git init -q /tmp/C2C\n"}
+,{"stream_name":"stdout","time":24.537321898,"data":"$ git -C /tmp/C2C remote add origin https://github.com/thu-nics/C2C\n"}
+,{"stream_name":"stdout","time":24.541967651,"data":"$ git -C /tmp/C2C fetch -q --depth 1 origin 3ca0e98020bac1f36000623afcb8dfc6f8c29bdf\n"}
+,{"stream_name":"stdout","time":26.12374045,"data":"$ git -C /tmp/C2C checkout -q FETCH_HEAD\n"}
+,{"stream_name":"stdout","time":26.156991044,"data":"C2C commit: 3ca0e98020bac1f36000623afcb8dfc6f8c29bdf\n"}
+,{"stream_name":"stdout","time":56.39992038,"data":"torch 2.10.0+cu128 | transformers 4.52.4 | device cuda:0 (Tesla T4, cc (7, 5)) | native bf16: False\n"}
+,{"stream_name":"stdout","time":213.386625259,"data":"{'obqa': 500, 'arc': 1144, 'mmlu': 5632} loaded in 155s\n"}
+,{"stream_name":"stdout","time":237.388540075,"data":"fuser dir: /root/.cache/huggingface/hub/models--nics-efc--C2C_Fuser/snapshots/f01fc3258b305e280e04c7238f4f2cf31b7dc70d/qwen3_1.7b+qwen2.5_1.5b_Fuser/final | files: 58\n"}
+,{"stream_name":"stdout","time":241.158456314,"data":"Model Qwen/Qwen3-1.7B already has a chat template.\n"}
+,{"stream_name":"stdout","time":492.84438591,"data":"fp32 reference on cpu: 16/16 probe items in 255s\n"}
+,{"stream_name":"stdout","time":493.82670289,"data":"Model Qwen/Qwen3-1.7B already has a chat template.\n"}
+,{"stream_name":"stdout","time":512.36586638,"data":"fp16 gate vs fp32 reference: {'R': {'finite': True, 'argmax_agree': 1.0, 'mean_abs_dprob': 0.0002}, 'S': {'finite': True, 'argmax_agree': 1.0, 'mean_abs_dprob': 0.0007}, 'C': {'finite': True, 'argmax_agree': 1.0, 'mean_abs_dprob': 0.0008}}\n"}
+,{"stream_name":"stdout","time":512.566099026,"data":"models + fuser ready in 275s | dtype: fp16 (passed sanity gate vs fp32) | fuser projectors: 28\n"}
+,{"stream_name":"stdout","time":512.566127572,"data":"GPU memory after load: 7.0 GiB allocated of 14.6\n"}
+,{"stream_name":"stdout","time":516.251026008,"data":"items: pool=2000 reserve=1000 | median prompt tokens=134 max=717\n"}
+,{"stream_name":"stdout","time":520.94272293,"data":"partner bank: 7276 prompts over 402 distinct lengths\n"}
+,{"stream_name":"stderr","time":522.615992726,"data":"`generation_config` default values have been modified to match model-specific defaults: {'do_sample': True, 'temperature': 0.6, 'top_k': 20, 'top_p': 0.95, 'bos_token_id': 151643}. If this is not desired, please set these values explicitly.\n"}
+,{"stream_name":"stderr","time":522.616028282,"data":"\n"}
+,{"stream_name":"stderr","time":522.616034732,"data":"`generation_config` default values have been modified to match model-specific defaults: {'do_sample': True, 'temperature': 0.6, 'top_k': 20, 'top_p': 0.95, 'bos_token_id': 151643}. If this is not desired, please set these values explicitly.\n"}
+,{"stream_name":"stdout","time":526.697390484,"data":"timing (median-length prompt): LM fwd 60 ms | C2C fwd 203 ms | HF gen64 0.31s | C2C gen64 0.95s\n"}
+,{"stream_name":"stdout","time":526.697425153,"data":"ESTIMATE  Part A ~10 min | Part B ~24 min | Part C ~5 min  (heuristic; includes no model-download time)\n"}
+,{"stream_name":"stdout","time":620.490227465,"data":"  part A 50/200  94s\n"}
+,{"stream_name":"stdout","time":713.65450367,"data":"  part A 100/200  187s\n"}
+,{"stream_name":"stdout","time":806.351637041,"data":"  part A 150/200  279s\n"}
+,{"stream_name":"stdout","time":897.61101399,"data":"  part A 200/200  371s\n"}
+,{"stream_name":"stdout","time":897.821743967,"data":"\n"}
+,{"stream_name":"stdout","time":897.821782067,"data":"=== PART A: plumbing (OpenBookQA, N=200; the paper reports no number for this pair) ===\n"}
+,{"stream_name":"stdout","time":897.821787696,"data":"readout  condition       accuracy [95% CI]     paper  unparsed\n"}
+,{"stream_name":"stdout","time":897.821791913,"data":"--------------------------------------------------------------\n"}
+,{"stream_name":"stdout","time":897.821796093,"data":"gen      receiver alone   68.0% [ 61.5, 74.5]  -      0       \n"}
+,{"stream_name":"stdout","time":897.821800134,"data":"gen      sharer alone     68.5% [ 62.0, 75.0]  -      1       \n"}
+,{"stream_name":"stdout","time":897.821804207,"data":"gen      C2C fused        65.5% [ 59.0, 72.0]  -      0       \n"}
+,{"stream_name":"stdout","time":897.821808243,"data":"logit    receiver alone   67.5% [ 61.0, 74.0]  -      0       \n"}
+,{"stream_name":"stdout","time":897.821812187,"data":"logit    sharer alone     66.5% [ 60.0, 73.0]  -      0       \n"}
+,{"stream_name":"stdout","time":897.821834787,"data":"logit    C2C fused        63.5% [ 57.0, 70.5]  -      0       \n"}
+,{"stream_name":"stdout","time":897.821838789,"data":"  [gen] C2C - receiver: -0.025 [-0.070,+0.015]   C2C - sharer: -0.030 [-0.105,+0.040]\n"}
+,{"stream_name":"stdout","time":897.821842224,"data":"  [logit] C2C - receiver: -0.040 [-0.085,+0.000]   C2C - sharer: -0.030 [-0.105,+0.045]\n"}
+,{"stream_name":"stdout","time":897.821845758,"data":"  [gen] mismatched sharer (n=200 with a same-length partner): acc C  65.5% [ 59.0, 72.0] | C_mm  65.5% [ 59.0, 72.0] | C - C_mm +0.000 [+0.000,+0.000] | answer agreement C vs C_mm  99.0% [ 97.5,100.0] | unparsed C_mm 0\n"}
+,{"stream_name":"stdout","time":897.821851077,"data":"  checks: {'projection_off_matches_receiver': 1.0, 'projection_off_mean_abs_dprob': 0.0002606249999999997, 'list_vs_tensor_max_logit_diff': 0.0, 'nonfinite_so_far': 0}\n"}
+,{"stream_name":"stdout","time":897.821854942,"data":"  criteria (PREREG_run2): {'no_nonfinite_logits': True, 'projection_off_matches_receiver\u003e=95%': True, 'generation_parse_rate\u003e=90%_for_R,S,C,C_mm': True} | informational: {'C2C_beats_receiver_CI_excludes_0[gen]': False}\n"}
+,{"stream_name":"stdout","time":897.821859973,"data":"  PLUMBING: OK (371s)\n"}
+,{"stream_name":"stdout","time":949.542865007,"data":"  stage1 100/2000  52s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1001.565317716,"data":"  stage1 200/2000  104s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1053.417366373,"data":"  stage1 300/2000  155s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1105.29266758,"data":"  stage1 400/2000  207s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1156.316193809,"data":"  stage1 500/2000  258s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1207.30330191,"data":"  stage1 600/2000  309s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1258.988376106,"data":"  stage1 700/2000  361s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1309.425495666,"data":"  stage1 800/2000  411s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1360.203779792,"data":"  stage1 900/2000  462s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1411.487159384,"data":"  stage1 1000/2000  514s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1462.544139377,"data":"  stage1 1100/2000  565s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1514.877088934,"data":"  stage1 1200/2000  617s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1566.848034646,"data":"  stage1 1300/2000  669s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1618.158754124,"data":"  stage1 1400/2000  720s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1670.28895347,"data":"  stage1 1500/2000  772s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1720.465638053,"data":"  stage1 1600/2000  822s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1771.539271306,"data":"  stage1 1700/2000  874s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1823.292303761,"data":"  stage1 1800/2000  925s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1873.881498107,"data":"  stage1 1900/2000  976s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1924.741061135,"data":"  stage1 2000/2000  1027s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1929.879567179,"data":"  stage2 100/774  5s\n"}
+,{"stream_name":"stdout","time":1934.943225918,"data":"  stage2 200/774  10s\n"}
+,{"stream_name":"stdout","time":1940.071807242,"data":"  stage2 300/774  15s\n"}
+,{"stream_name":"stdout","time":1944.923646405,"data":"  stage2 400/774  20s\n"}
+,{"stream_name":"stdout","time":1949.812651106,"data":"  stage2 500/774  25s\n"}
+,{"stream_name":"stdout","time":1954.881301793,"data":"  stage2 600/774  30s\n"}
+,{"stream_name":"stdout","time":1959.885242997,"data":"  stage2 700/774  35s\n"}
+,{"stream_name":"stdout","time":2126.118808733,"data":"\n"}
+,{"stream_name":"stdout","time":2126.118843148,"data":"=== PART B: fidelity (logit readout; D = items where sharer-alone != receiver-alone) ===\n"}
+,{"stream_name":"stdout","time":2126.118849563,"data":"items scored: 2000 | disagreement set D: 774 | cells: {'A': 280, 'B': 332, 'W': 162, 'B+W': 494} | sharer own-template vs fuser-tokens agreement: 0.86\n"}
+,{"stream_name":"stdout","time":2126.118855318,"data":"same-length partner found for the mismatched-sharer control on 98% of D items\n"}
+,{"stream_name":"stdout","time":2126.118860242,"data":"accuracy, all items  [95% CI]              \n"}
+,{"stream_name":"stdout","time":2126.118864691,"data":"-------------------------------------------\n"}
+,{"stream_name":"stdout","time":2126.118869604,"data":"R                     66.6% [ 64.5, 68.7]  \n"}
+,{"stream_name":"stdout","time":2126.118874039,"data":"S                     64.0% [ 61.9, 66.1]  \n"}
+,{"stream_name":"stdout","time":2126.118878027,"data":"S_nat                 65.0% [ 62.9, 67.0]  \n"}
+,{"stream_name":"stdout","time":2126.118882684,"data":"C                     61.2% [ 59.1, 63.3]  \n"}
+,{"stream_name":"stdout","time":2126.11888728,"data":"C - R (paired)       -0.054 [-0.071,-0.037]\n"}
+,{"stream_name":"stdout","time":2126.11890905,"data":"\n"}
+,{"stream_name":"stdout","time":2126.118913318,"data":"accuracy on D  [95% CI]              \n"}
+,{"stream_name":"stdout","time":2126.11891757,"data":"-------------------------------------\n"}
+,{"stream_name":"stdout","time":2126.118921613,"data":"R               42.9% [ 39.4, 46.4]  \n"}
+,{"stream_name":"stdout","time":2126.118931002,"data":"S               36.2% [ 32.7, 39.7]  \n"}
+,{"stream_name":"stdout","time":2126.118934863,"data":"C               41.9% [ 38.4, 45.3]  \n"}
+,{"stream_name":"stdout","time":2126.118937715,"data":"C_mm            41.7% [ 38.2, 45.3]  \n"}
+,{"stream_name":"stdout","time":2126.118940563,"data":"T               48.1% [ 44.6, 51.6]  \n"}
+,{"stream_name":"stdout","time":2126.118943432,"data":"T2              49.5% [ 46.0, 53.0]  \n"}
+,{"stream_name":"stdout","time":2126.118946151,"data":"C_minus_C_mm   +0.005 [-0.005,+0.016]\n"}
+,{"stream_name":"stdout","time":2126.118949559,"data":"\n"}
+,{"stream_name":"stdout","time":2126.118970164,"data":"Inheritance P(answer == sharer's answer). A: sharer right/receiver wrong | B: sharer WRONG/receiver right | W: both wrong, differ\n"}
+,{"stream_name":"stdout","time":2126.118975447,"data":"cell  n    C2C inherits S        C2C reverts to R      null inherits S       null reverts to R     EXCESS E = C2C - null   text handoff          text+rationale      \n"}
+,{"stream_name":"stdout","time":2126.118981331,"data":"---------------------------------------------------------------------------------------------------------------------------------------------------------------------\n"}
+,{"stream_name":"stdout","time":2126.118986085,"data":"A     280    9.3% [  6.1, 12.9]   74.3% [ 68.9, 79.3]    7.4% [  4.4, 10.7]   74.1% [ 68.9, 79.3]  +0.019 [+0.004,+0.037]   44.3% [ 38.6, 50.4]   75.7% [ 70.7, 80.7]\n"}
+,{"stream_name":"stdout","time":2126.118991089,"data":"B     332    5.7% [  3.3,  8.4]   81.6% [ 77.4, 85.8]    4.8% [  2.7,  7.3]   81.2% [ 77.0, 85.5]  +0.006 [-0.006,+0.018]   25.0% [ 20.5, 29.8]   51.2% [ 45.8, 56.6]\n"}
+,{"stream_name":"stdout","time":2126.118995772,"data":"W     162    3.1% [  0.6,  6.2]   72.2% [ 64.8, 79.0]    3.1% [  0.6,  6.2]   70.0% [ 62.5, 76.9]  +0.000 [+0.000,+0.000]   38.3% [ 30.9, 45.7]   51.2% [ 43.2, 58.7]\n"}
+,{"stream_name":"stdout","time":2126.119002435,"data":"B+W   494    4.9% [  3.0,  6.9]   78.5% [ 74.7, 82.2]    4.3% [  2.4,  6.1]   77.6% [ 73.9, 81.2]  +0.004 [-0.004,+0.012]   29.4% [ 25.5, 33.4]   51.2% [ 47.0, 55.5]\n"}
+,{"stream_name":"stdout","time":2126.119016108,"data":"(null = C2C with the sharer cache computed on a different same-length prompt. 'reverts' columns show the two perturbations are comparable in size.)\n"}
+,{"stream_name":"stdout","time":2126.119019714,"data":"\n"}
+,{"stream_name":"stdout","time":2126.119022885,"data":"asymmetry Inh(C|A) - Inh(C|B): +0.036 [-0.006,+0.078]    bridge/text ratio in B: 0.02\n"}
+,{"stream_name":"stdout","time":2126.119026306,"data":"predicted-letter marginals: {'R': {'A': 0.29, 'B': 0.27, 'C': 0.2, 'D': 0.24}, 'S': {'A': 0.16, 'B': 0.18, 'C': 0.26, 'D': 0.4}, 'C': {'A': 0.44, 'B': 0.27, 'C': 0.15, 'D': 0.14}}\n"}
+,{"stream_name":"stdout","time":2126.119030052,"data":"mismatched-sharer letter leak (C_mm answer == partner's sharer answer): {'n': 585, 'rate': 0.22905982905982905, 'chance': 0.25}\n"}
+,{"stream_name":"stdout","time":2126.119033637,"data":"\n"}
+,{"stream_name":"stdout","time":2126.119038419,"data":"AUTO-READING (PREREG decision table): NON-SPECIFIC PERTURBATION: inheritance is indistinguishable from the mismatched-sharer null and accuracy does not depend on the sharer's content\n"}
+,{"stream_name":"stdout","time":2126.119045603,"data":"non-finite logits so far: 0\n"}
+,{"stream_name":"stdout","time":2129.021926506,"data":"\n"}
+,{"stream_name":"stdout","time":2129.02196057,"data":"=== PART B, PREREG_run2: calibrated receiver, mismatched sharer on ALL items (logit readout) ===\n"}
+,{"stream_name":"stdout","time":2129.021966206,"data":"items scored: 2000 | with a same-length partner: 1975 (98.8%) | D (S != R): 774 | calibration: label-free per-letter mean log-prob prior, 2-fold cross-fit, seed 0\n"}
+,{"stream_name":"stdout","time":2129.021970647,"data":"accuracy, all scored items  [95% CI]            \n"}
+,{"stream_name":"stdout","time":2129.021973998,"data":"------------------------------------------------\n"}
+,{"stream_name":"stdout","time":2129.021977906,"data":"R                            66.6% [ 64.5, 68.7]\n"}
+,{"stream_name":"stdout","time":2129.021981756,"data":"Rcal                         66.3% [ 64.2, 68.4]\n"}
+,{"stream_name":"stdout","time":2129.021985442,"data":"S                            64.0% [ 61.9, 66.1]\n"}
+,{"stream_name":"stdout","time":2129.02198921,"data":"C                            61.2% [ 59.1, 63.3]\n"}
+,{"stream_name":"stdout","time":2129.021993068,"data":"Ccal                         65.8% [ 63.6, 67.8]\n"}
+,{"stream_name":"stdout","time":2129.021996504,"data":"\n"}
+,{"stream_name":"stdout","time":2129.021999632,"data":"accuracy, items with a partner  [95% CI]            \n"}
+,{"stream_name":"stdout","time":2129.022003025,"data":"----------------------------------------------------\n"}
+,{"stream_name":"stdout","time":2129.022006336,"data":"R                                66.8% [ 64.7, 68.9]\n"}
+,{"stream_name":"stdout","time":2129.02200957,"data":"Rcal                             66.6% [ 64.5, 68.8]\n"}
+,{"stream_name":"stdout","time":2129.022014338,"data":"C                                61.4% [ 59.2, 63.5]\n"}
+,{"stream_name":"stdout","time":2129.022021745,"data":"C_mm                             60.7% [ 58.5, 62.8]\n"}
+,{"stream_name":"stdout","time":2129.02202402,"data":"Ccal                             65.9% [ 63.8, 68.1]\n"}
+,{"stream_name":"stdout","time":2129.022026144,"data":"C_mm_cal                         65.4% [ 63.3, 67.5]\n"}
+,{"stream_name":"stdout","time":2129.022028386,"data":"\n"}
+,{"stream_name":"stdout","time":2129.022031045,"data":"accuracy on D  [95% CI]            \n"}
+,{"stream_name":"stdout","time":2129.022050098,"data":"-----------------------------------\n"}
+,{"stream_name":"stdout","time":2129.022054078,"data":"R               42.9% [ 39.4, 46.4]\n"}
+,{"stream_name":"stdout","time":2129.022086199,"data":"Rcal            43.7% [ 40.2, 47.2]\n"}
+,{"stream_name":"stdout","time":2129.022090023,"data":"S               36.2% [ 32.7, 39.7]\n"}
+,{"stream_name":"stdout","time":2129.022093233,"data":"C               41.9% [ 38.4, 45.3]\n"}
+,{"stream_name":"stdout","time":2129.022096496,"data":"Ccal            46.9% [ 43.4, 50.4]\n"}
+,{"stream_name":"stdout","time":2129.022105016,"data":"C_mm            41.7% [ 38.2, 45.3]\n"}
+,{"stream_name":"stdout","time":2129.022108689,"data":"C_mm_cal        46.3% [ 42.8, 49.9]\n"}
+,{"stream_name":"stdout","time":2129.022110923,"data":"\n"}
+,{"stream_name":"stdout","time":2129.022112952,"data":"paired differences (bootstrap 95% CI):\n"}
+,{"stream_name":"stdout","time":2129.022115066,"data":"comparison             difference [95% CI]   \n"}
+,{"stream_name":"stdout","time":2129.022117226,"data":"---------------------------------------------\n"}
+,{"stream_name":"stdout","time":2129.022119456,"data":"C_minus_R_all          -0.054 [-0.071,-0.037]\n"}
+,{"stream_name":"stdout","time":2129.022121591,"data":"Rcal_minus_R_all       -0.003 [-0.009,+0.004]\n"}
+,{"stream_name":"stdout","time":2129.022123704,"data":"C_minus_Rcal_all       -0.051 [-0.070,-0.035]\n"}
+,{"stream_name":"stdout","time":2129.022125825,"data":"C_minus_Rcal_D         -0.018 [-0.047,+0.010]\n"}
+,{"stream_name":"stdout","time":2129.022128032,"data":"C_minus_Cmm_all        +0.007 [+0.001,+0.014]\n"}
+,{"stream_name":"stdout","time":2129.022130582,"data":"C_minus_Cmm_D          +0.005 [-0.005,+0.016]\n"}
+,{"stream_name":"stdout","time":2129.02213296,"data":"Ccal_minus_Cmmcal_all  +0.005 [-0.002,+0.012]\n"}
+,{"stream_name":"stdout","time":2129.022135081,"data":"Ccal_minus_Cmmcal_D    +0.009 [-0.005,+0.024]\n"}
+,{"stream_name":"stdout","time":2129.022137283,"data":"Ccal_minus_Rcal_all    -0.006 [-0.022,+0.010]\n"}
+,{"stream_name":"stdout","time":2129.022139467,"data":"Ccal_minus_Rcal_D      +0.032 [-0.001,+0.067]\n"}
+,{"stream_name":"stdout","time":2129.02214159,"data":"Cmm_minus_R_all        -0.061 [-0.078,-0.044]\n"}
+,{"stream_name":"stdout","time":2129.022156545,"data":"Cmm_minus_Rcal_all     -0.059 [-0.077,-0.042]\n"}
+,{"stream_name":"stdout","time":2129.022160628,"data":"\n"}
+,{"stream_name":"stdout","time":2129.022165978,"data":"answer agreement C vs C_mm (same letter):\n"}
+,{"stream_name":"stdout","time":2129.022170038,"data":"set  n     same answer [95% CI]  mean |dprob|\n"}
+,{"stream_name":"stdout","time":2129.022173753,"data":"---------------------------------------------\n"}
+,{"stream_name":"stdout","time":2129.022177436,"data":"all  1975   97.1% [ 96.4, 97.8]  0.0081      \n"}
+,{"stream_name":"stdout","time":2129.022180722,"data":"D    760    96.7% [ 95.4, 97.9]  0.0077      \n"}
+,{"stream_name":"stdout","time":2129.02218397,"data":"A    270    96.7% [ 94.4, 98.5]  0.0079      \n"}
+,{"stream_name":"stdout","time":2129.02218718,"data":"B    330    97.3% [ 95.5, 98.8]  0.0079      \n"}
+,{"stream_name":"stdout","time":2129.022190373,"data":"W    160    95.6% [ 92.5, 98.1]  0.0067      \n"}
+,{"stream_name":"stdout","time":2129.022193611,"data":"agreement after calibrating both: {'all': ' 97.4% [ 96.7, 98.1]', 'D': ' 95.0% [ 93.4, 96.4]'}\n"}
+,{"stream_name":"stdout","time":2129.022197841,"data":"predicted-letter marginals: {'R': {'A': 0.29, 'B': 0.27, 'C': 0.2, 'D': 0.24}, 'Rcal': {'A': 0.3, 'B': 0.25, 'C': 0.21, 'D': 0.23}, 'S': {'A': 0.16, 'B': 0.18, 'C': 0.26, 'D': 0.4}, 'C': {'A': 0.44, 'B': 0.27, 'C': 0.15, 'D': 0.14}, 'C_mm': {'A': 0.44, 'B': 0.26, 'C': 0.15, 'D': 0.14}, 'Ccal': {'A': 0.19, 'B': 0.25, 'C': 0.25, 'D': 0.31}}\n"}
+,{"stream_name":"stdout","time":2129.022202894,"data":"\n"}
+,{"stream_name":"stdout","time":2129.022210203,"data":"READING (PREREG_run2 (e)): MIXED / NO CLAIM: matches neither pre-registered row of PREREG_run2 (e) {'C_beats_Cmm_lowerCI\u003e=+0.02': False, 'C_beats_calibratedR_lowerCI\u003e0': False, 'C_minus_Cmm_CI_includes_0': False, 'calibratedR_within_2pts_of_C': False}\n"}
+,{"stream_name":"stdout","time":2192.344938021,"data":"  part C 100/500  63s\n"}
+,{"stream_name":"stdout","time":2255.655876031,"data":"  part C 200/500  127s\n"}
+,{"stream_name":"stdout","time":2318.942359258,"data":"  part C 300/500  190s\n"}
+,{"stream_name":"stdout","time":2381.190927024,"data":"  part C 400/500  252s\n"}
+,{"stream_name":"stdout","time":2443.146141896,"data":"  part C 500/500  314s\n"}
+,{"stream_name":"stdout","time":2443.436238305,"data":"\n"}
+,{"stream_name":"stdout","time":2443.436273457,"data":"=== PART C: planted false belief (exploratory) ===\n"}
+,{"stream_name":"stdout","time":2443.436279628,"data":"items: 500 (skipped 0) | sharer adopted the planted letter on 270\n"}
+,{"stream_name":"stdout","time":2443.436284039,"data":"P(answer == planted letter w)  [95% CI]            \n"}
+,{"stream_name":"stdout","time":2443.436288328,"data":"---------------------------------------------------\n"}
+,{"stream_name":"stdout","time":2443.436293621,"data":"S_plant                         71.0% [ 67.0, 75.0]\n"}
+,{"stream_name":"stdout","time":2443.436298467,"data":"S_ctrl                          17.0% [ 13.8, 20.4]\n"}
+,{"stream_name":"stdout","time":2443.436303071,"data":"C_plant                         11.6% [  8.8, 14.4]\n"}
+,{"stream_name":"stdout","time":2443.436307589,"data":"C_ctrl                          11.4% [  8.6, 14.2]\n"}
+,{"stream_name":"stdout","time":2443.436311552,"data":"T_plant                         45.8% [ 41.6, 50.2]\n"}
+,{"stream_name":"stdout","time":2443.436317232,"data":"R                               11.6% [  8.8, 14.4]\n"}
+,{"stream_name":"stdout","time":2443.436326405,"data":"sharer effect (S_plant - S_ctrl):       +0.540 [+0.496,+0.582]\n"}
+,{"stream_name":"stdout","time":2443.436329312,"data":"bridge effect, all items:               +0.002 [+0.000,+0.006]\n"}
+,{"stream_name":"stdout","time":2443.436348118,"data":"bridge effect, sharer-susceptible items: +0.004 [+0.000,+0.011]\n"}
+,{"stream_name":"stdout","time":2443.436353224,"data":"text effect (receiver told directly):   +0.342 [+0.302,+0.384]\n"}
+,{"stream_name":"stdout","time":2443.436357835,"data":"mask sanity (masked-pad receiver vs plain receiver with the same position gap; should be ~identical): same answer 1.0 | mean |dprob| 0.0010152500000000005\n"}
+,{"stream_name":"stdout","time":2443.436362056,"data":"   (receiver w/ masked pad vs plain receiver: same answer 0.964 ; differs only by the positional gap)\n"}
+,{"stream_name":"stdout","time":2443.436366197,"data":"READING: no detectable transfer of the planted premise (exploratory; fuser was only trained on identical inputs)\n"}
+,{"stream_name":"stdout","time":2443.556471382,"data":"\n"}
+,{"stream_name":"stdout","time":2443.556495697,"data":"saved /kaggle/working/results.json (2.0 MB). Total wall time 40.6 min.\n"}
+,{"stream_name":"stdout","time":2443.556501496,"data":"\n"}
+,{"stream_name":"stdout","time":2443.556505825,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":2443.556510463,"data":"HEADLINE (cell B: sharer WRONG, receiver right; n=332)\n"}
+,{"stream_name":"stdout","time":2443.556514573,"data":"  C2C inherits the sharer's wrong answer :   5.7% [  3.3,  8.4]\n"}
+,{"stream_name":"stdout","time":2443.556518593,"data":"  mismatched-sharer null                 :   4.8% [  2.7,  7.3]\n"}
+,{"stream_name":"stdout","time":2443.556523258,"data":"  EXCESS inheritance E (C2C - null)      : +0.006 [-0.006,+0.018]\n"}
+,{"stream_name":"stdout","time":2443.556538386,"data":"  text handoff 'Another model answered'  :  25.0% [ 20.5, 29.8]\n"}
+,{"stream_name":"stdout","time":2443.556541952,"data":"  PartB reading (belief transfer, PREREG table): NON-SPECIFIC PERTURBATION: inheritance is indistinguishable from the mismatched-sharer null and accuracy does not depend on the sharer's content\n"}
+,{"stream_name":"stdout","time":2443.556551642,"data":"  PartB reading (PREREG_run2 (e)): MIXED / NO CLAIM: matches neither pre-registered row of PREREG_run2 (e) {'C_beats_Cmm_lowerCI\u003e=+0.02': False, 'C_beats_calibratedR_lowerCI\u003e0': False, 'C_minus_Cmm_CI_includes_0': False, 'calibratedR_within_2pts_of_C': False}\n"}
+,{"stream_name":"stdout","time":2443.556556251,"data":"  PartC reading: no detectable transfer of the planted premise (exploratory; fuser was only trained on identical inputs)\n"}
+,{"stream_name":"stdout","time":2443.556559726,"data":"  plumbing: OK\n"}
+,{"stream_name":"stdout","time":2443.556562949,"data":"==============================================================================\n"}
+,{"stream_name":"stderr","time":2450.218965055,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":2450.218993269,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":2450.375691743,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":2450.375714403,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":2450.960770478,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":2451.914863695,"data":"[NbConvertApp] Writing 2890169 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":2454.241230323,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":2455.784418415,"data":"[NbConvertApp] Writing 2928478 bytes to __results__.html\n"}
+]

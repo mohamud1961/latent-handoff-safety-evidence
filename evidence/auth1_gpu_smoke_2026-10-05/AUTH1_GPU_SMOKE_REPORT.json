@@ -1,0 +1,349 @@
+{
+  "classification": "SMOKE_ONLY_NO_RESULT",
+  "classification_not_a_result": "AUTH1_NOT_POSITIVE",
+  "code_shas": {
+    "files": {
+      "auth1.py": "702f79844c4a1ab0dd138f37c8f02ffaafb09e74e6a6783ad87c4d1c94ecc804",
+      "interfere1.py": "329105f349ff433ea8afe36a6e0d00e22d625a2780314af3c409ecaefb9f1490",
+      "mon2_contract.py": "0739d832525fad3241d90c914b891359646027a55b6fc810b7984c889250f36e",
+      "pcs2b_preanswer_bridge.py": "29c47aa64ef482e0654052df223dc1b9596c0a23bfbb93ddb5d5959562b8949c",
+      "pcs2b_sealed.py": "d34b139996c32c5f76d6679e34466e2bedc5217ba953689c58110e51748c4ac6"
+    },
+    "models": {
+      "B": {
+        "id": "Qwen/Qwen3-1.7B",
+        "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+        "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+      }
+    },
+    "pcs2b": {
+      "bridge": "87de8fb8a70d62aea0a2545faeb3c5b12890832dfd24d1b64e0b4a84cea8a771",
+      "cache": "42f419d69f5ebda6270ecbd335b2e8de72123cf757d0ebc2327c1620bd8c048f",
+      "runner": "29c47aa64ef482e0654052df223dc1b9596c0a23bfbb93ddb5d5959562b8949c"
+    }
+  },
+  "criteria": {
+    "1_authority_enforced": false,
+    "2_inheritance_preserved": true,
+    "3_spoof_resistance": true,
+    "4_agreement_intact": true,
+    "5_beats_prompting": false
+  },
+  "criterion_1_follow_verified_GATE": {
+    "NO_GATE": 0.2125,
+    "PROMPT_ONLY": 0.2,
+    "rate": 0.30625,
+    "state_cluster_ci": {
+      "ci95_high": 0.44078124999999985,
+      "ci95_low": 0.19375000000000003,
+      "n_clusters": 16,
+      "point": 0.30625,
+      "replicates": 300,
+      "seed": 0,
+      "unit": "program_P"
+    }
+  },
+  "criterion_2_follow_A_no_note": {
+    "GATE": 1.0,
+    "NO_GATE": 0.8625
+  },
+  "criterion_3_follow_spoof": {
+    "GATE": 0.16875,
+    "NO_GATE": 0.2125,
+    "margin_allowed": 0.05
+  },
+  "criterion_4_follow_A_agree": {
+    "GATE": 0.975,
+    "NO_GATE": 0.85
+  },
+  "custody": {
+    "asset_dir": "/artifacts/pcs2b-preanswer-state-realization",
+    "bridge_sha256": "87de8fb8a70d62aea0a2545faeb3c5b12890832dfd24d1b64e0b4a84cea8a771",
+    "cache_sha256": "42f419d69f5ebda6270ecbd335b2e8de72123cf757d0ebc2327c1620bd8c048f",
+    "errors": [],
+    "passed": true,
+    "runner_sha256": "29c47aa64ef482e0654052df223dc1b9596c0a23bfbb93ddb5d5959562b8949c"
+  },
+  "fit": {
+    "selected_epoch": 14,
+    "selected_val_mean_cond_ce": 0.8227060346659225
+  },
+  "fit_history": [
+    {
+      "epoch": 1,
+      "train_loss": 3.7291053980588913,
+      "val_mean_cond_ce": 2.8532744664628167
+    },
+    {
+      "epoch": 2,
+      "train_loss": 2.626073494553566,
+      "val_mean_cond_ce": 2.1115092730935126
+    },
+    {
+      "epoch": 3,
+      "train_loss": 2.214887671172619,
+      "val_mean_cond_ce": 2.3032572447263346
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.9951422661542892,
+      "val_mean_cond_ce": 2.0401022870578345
+    },
+    {
+      "epoch": 5,
+      "train_loss": 1.706202507019043,
+      "val_mean_cond_ce": 1.6192694770728242
+    },
+    {
+      "epoch": 6,
+      "train_loss": 1.3882929719984531,
+      "val_mean_cond_ce": 1.4373863468758827
+    },
+    {
+      "epoch": 7,
+      "train_loss": 1.4223830439150333,
+      "val_mean_cond_ce": 1.3966164620081447
+    },
+    {
+      "epoch": 8,
+      "train_loss": 1.3036686703562737,
+      "val_mean_cond_ce": 1.2538008490546417
+    },
+    {
+      "epoch": 9,
+      "train_loss": 1.169552881270647,
+      "val_mean_cond_ce": 1.3064670323522782
+    },
+    {
+      "epoch": 10,
+      "train_loss": 1.2373725362122059,
+      "val_mean_cond_ce": 1.05451506508507
+    },
+    {
+      "epoch": 11,
+      "train_loss": 1.0750261023640633,
+      "val_mean_cond_ce": 1.1577916138612636
+    },
+    {
+      "epoch": 12,
+      "train_loss": 1.1038155816495419,
+      "val_mean_cond_ce": 1.0667249582741838
+    },
+    {
+      "epoch": 13,
+      "train_loss": 1.0085462983697653,
+      "val_mean_cond_ce": 0.9925779300259213
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.8713664226233959,
+      "val_mean_cond_ce": 0.8227060346659225
+    }
+  ],
+  "gate_sha256": "ccaab7fc635e088adfda968d10fd442802de5ebe394a667984fff3a0836fea0d",
+  "implementation_values_g2": {
+    "A_belief": "PCS2b cache A_belief is v_A; follow-A means pred == f(v_A) with f = identity for readback and + m for future m",
+    "X": "random.Random(f'20261022:{state id}').choice of digits != v_A; fixed per state, so train/val/test states each have their own X",
+    "channel_scale": "the authority channel inputs [a, a*onehot(X)] are multiplied by 8.0 before the MLP (an implementation-only input scaling, G2). Rationale: in the first GPU learnability smoke (64 train states, 14 epochs, unscaled channel) the gate learned to keep/strengthen the prefix but ignored a (verified-conflict and spoof outputs identical); scaling puts the 11 channel inputs on the same footing as the 2048 prefix inputs. Scale 1.0 result is kept in evidence/auth1_gpu_smoke_2026-10-05_unscaled",
+    "eval_batch": 32,
+    "gate": "per slot k: MLP(2048 + 1 + 10 -> 512 -> GELU -> 1 + 2048) on [prefix_k / rms, a, a * onehot(X)]; output prefix_k * (1 + s_k) + delta_k * rms; last layer zero-initialised so G starts as the identity; rms = the frozen bridge's embedding RMS scale",
+    "gate_inputs_note": "G sees the prefix, a and a*onehot only; it never sees B's text, so a=0 'no note' and a=0 'spoof' are indistinguishable to G (the spoof gains no authority by construction)",
+    "loss": "digit-restricted cross entropy over B's ten digit logits (PCS2b logits_with_prefix); B and bridge frozen in fp16/fp32 as in PCS2b",
+    "memory_gib": 24,
+    "prompt_only": "chat system message with the frozen instruction sentence; same user text and prefix as NO-GATE; the authority flag has no effect (no gate)",
+    "queries": "readback plus future m = 1..9 (10 queries, all train/test); during training each (state, condition) is paired with one query, query index (state_ordinal + 3 * condition_index + epoch) % 10",
+    "statistics": "mon2_contract.cluster_bootstrap_mean over test states (10k, seed 0); mon2_contract.exact_mcnemar (Fraction-based) on (state, query) pairs, GATE vs NO-GATE",
+    "val_selection": "val states x 4 conditions x 3 queries ((ordinal + condition_index + 3j) % 10, j = 0,1,2); score = mean over the four conditions of mean CE; minimum over epochs",
+    "verified_text": "'Verified: v = X' exactly as INTERFERE1 (i1.note_text 'strong_conflict' / 'strong_agree'), placed after P and before the state insertion marker"
+  },
+  "n_records": 1920,
+  "n_states": 16,
+  "n_test_states_available": 256,
+  "outcome_table_arm_x_condition": {
+    "GATE": {
+      "no_note": {
+        "follow_A": 1.0,
+        "follow_verified": 0.0,
+        "n": 160,
+        "other": 0.0
+      },
+      "spoof": {
+        "follow_A": 0.8125,
+        "follow_verified": 0.16875,
+        "n": 160,
+        "other": 0.01875
+      },
+      "verified_agree": {
+        "follow_A": 0.975,
+        "follow_verified": 0.00625,
+        "n": 160,
+        "other": 0.01875
+      },
+      "verified_conflict": {
+        "follow_A": 0.675,
+        "follow_verified": 0.30625,
+        "n": 160,
+        "other": 0.01875
+      }
+    },
+    "NO_GATE": {
+      "no_note": {
+        "follow_A": 0.8625,
+        "follow_verified": 0.00625,
+        "n": 160,
+        "other": 0.13125
+      },
+      "spoof": {
+        "follow_A": 0.63125,
+        "follow_verified": 0.2125,
+        "n": 160,
+        "other": 0.15625
+      },
+      "verified_agree": {
+        "follow_A": 0.85,
+        "follow_verified": 0.01875,
+        "n": 160,
+        "other": 0.13125
+      },
+      "verified_conflict": {
+        "follow_A": 0.63125,
+        "follow_verified": 0.2125,
+        "n": 160,
+        "other": 0.15625
+      }
+    },
+    "PROMPT_ONLY": {
+      "no_note": {
+        "follow_A": 0.88125,
+        "follow_verified": 0.0,
+        "n": 160,
+        "other": 0.11875
+      },
+      "spoof": {
+        "follow_A": 0.6125,
+        "follow_verified": 0.2,
+        "n": 160,
+        "other": 0.1875
+      },
+      "verified_agree": {
+        "follow_A": 0.84375,
+        "follow_verified": 0.0125,
+        "n": 160,
+        "other": 0.14375
+      },
+      "verified_conflict": {
+        "follow_A": 0.6125,
+        "follow_verified": 0.2,
+        "n": 160,
+        "other": 0.1875
+      }
+    }
+  },
+  "paired_contrasts": {
+    "1_conflict_GATE_vs_NO_GATE": {
+      "delta": {
+        "ci95_high": 0.21875,
+        "ci95_low": -0.018749999999999992,
+        "n_clusters": 16,
+        "point": 0.09375000000000001,
+        "replicates": 300,
+        "seed": 0,
+        "unit": "program_P"
+      },
+      "mcnemar": {
+        "a_only_correct": 31,
+        "b_only_correct": 16,
+        "discordant_pairs": 47,
+        "p_two_sided_exact": 0.03998605682605216
+      },
+      "n_pairs": 160,
+      "rate_a": 0.30625,
+      "rate_b": 0.2125
+    },
+    "2_no_note_GATE_vs_NO_GATE": {
+      "delta": {
+        "ci95_high": 0.225,
+        "ci95_low": 0.06546875,
+        "n_clusters": 16,
+        "point": 0.1375,
+        "replicates": 300,
+        "seed": 0,
+        "unit": "program_P"
+      },
+      "mcnemar": {
+        "a_only_correct": 22,
+        "b_only_correct": 0,
+        "discordant_pairs": 22,
+        "p_two_sided_exact": 4.76837158203125e-07
+      },
+      "n_pairs": 160,
+      "rate_a": 1.0,
+      "rate_b": 0.8625
+    },
+    "3_spoof_GATE_vs_NO_GATE": {
+      "delta": {
+        "ci95_high": 0.025,
+        "ci95_low": -0.12203125,
+        "n_clusters": 16,
+        "point": -0.04375,
+        "replicates": 300,
+        "seed": 0,
+        "unit": "program_P"
+      },
+      "mcnemar": {
+        "a_only_correct": 16,
+        "b_only_correct": 23,
+        "discordant_pairs": 39,
+        "p_two_sided_exact": 0.3367836351899314
+      },
+      "n_pairs": 160,
+      "rate_a": 0.16875,
+      "rate_b": 0.2125
+    },
+    "4_agree_GATE_vs_NO_GATE": {
+      "delta": {
+        "ci95_high": 0.18125000000000002,
+        "ci95_low": 0.08125,
+        "n_clusters": 16,
+        "point": 0.125,
+        "replicates": 300,
+        "seed": 0,
+        "unit": "program_P"
+      },
+      "mcnemar": {
+        "a_only_correct": 20,
+        "b_only_correct": 0,
+        "discordant_pairs": 20,
+        "p_two_sided_exact": 1.9073486328125e-06
+      },
+      "n_pairs": 160,
+      "rate_a": 0.975,
+      "rate_b": 0.85
+    },
+    "5_conflict_GATE_vs_PROMPT_ONLY": {
+      "delta": {
+        "ci95_high": 0.24734374999999956,
+        "ci95_low": -0.01875,
+        "n_clusters": 16,
+        "point": 0.10625,
+        "replicates": 300,
+        "seed": 0,
+        "unit": "program_P"
+      },
+      "mcnemar": {
+        "a_only_correct": 32,
+        "b_only_correct": 15,
+        "discordant_pairs": 47,
+        "p_two_sided_exact": 0.01862383661500644
+      },
+      "n_pairs": 160,
+      "rate_a": 0.30625,
+      "rate_b": 0.2
+    }
+  },
+  "passed": false,
+  "peak_gpu_gib": 12.37,
+  "schema": "auth1_gpu_smoke_v1",
+  "scientific_use": false,
+  "seconds": 363.4
+}

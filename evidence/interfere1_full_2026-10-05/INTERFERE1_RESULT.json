@@ -1,0 +1,284 @@
+{
+  "classification": "INTERFERE1_CONTRAST1_PASS",
+  "contrast_1_residual_inheritance": {
+    "by_query_type": {
+      "future": {
+        "follow_A_prefix_A": 0.7135416666666666,
+        "follow_A_prefix_W": 0.023871527777777776
+      },
+      "readback": {
+        "follow_A_prefix_A": 0.1796875,
+        "follow_A_prefix_W": 0.0
+      }
+    },
+    "delta": {
+      "ci95_high": 0.665234375,
+      "ci95_low": 0.6109375,
+      "n_clusters": 256,
+      "point": 0.638671875,
+      "replicates": 10000,
+      "seed": 0,
+      "unit": "program_P"
+    },
+    "mcnemar": {
+      "a_only_correct": 1656,
+      "b_only_correct": 21,
+      "discordant_pairs": 1677,
+      "p_two_sided_exact": 0.0
+    },
+    "mcnemar_pairs": 2560,
+    "passes": true,
+    "rate_a": 0.66015625,
+    "rate_b": 0.021484375
+  },
+  "contrast_2_text_override": {
+    "follow_A_drop_none_to_strong_conflict_prefix_A": {
+      "delta": {
+        "ci95_high": 0.2531347656249999,
+        "ci95_low": 0.20234375,
+        "n_clusters": 256,
+        "point": 0.226953125,
+        "replicates": 10000,
+        "seed": 0,
+        "unit": "program_P"
+      },
+      "mcnemar": {
+        "a_only_correct": 607,
+        "b_only_correct": 26,
+        "discordant_pairs": 633,
+        "p_two_sided_exact": 5.926949519276883e-145
+      },
+      "mcnemar_pairs": 2560,
+      "rate_a": 0.887109375,
+      "rate_b": 0.66015625
+    },
+    "follow_note_prefix_A_strong_conflict": {
+      "ci95_high": 0.166796875,
+      "ci95_low": 0.13749023437500002,
+      "n_clusters": 256,
+      "point": 0.15156250000000002,
+      "replicates": 10000,
+      "seed": 0,
+      "unit": "program_P"
+    }
+  },
+  "custody": {
+    "asset_dir": "/artifacts/pcs2b-preanswer-state-realization",
+    "bridge_sha256": "87de8fb8a70d62aea0a2545faeb3c5b12890832dfd24d1b64e0b4a84cea8a771",
+    "cache_sha256": "42f419d69f5ebda6270ecbd335b2e8de72123cf757d0ebc2327c1620bd8c048f",
+    "errors": [],
+    "passed": true,
+    "runner_sha256": "29c47aa64ef482e0654052df223dc1b9596c0a23bfbb93ddb5d5959562b8949c"
+  },
+  "descriptive": {
+    "blend_curve": {
+      "0": {
+        "follow_A": 0.01953125,
+        "follow_W": 0.869140625,
+        "follow_note": 0.012890625,
+        "n": 2560,
+        "other": 0.0984375
+      },
+      "0.25": {
+        "follow_A": 0.036328125,
+        "follow_W": 0.838671875,
+        "follow_note": 0.014453125,
+        "n": 2560,
+        "other": 0.110546875
+      },
+      "0.5": {
+        "follow_A": 0.33984375,
+        "follow_W": 0.295703125,
+        "follow_note": 0.04765625,
+        "n": 2560,
+        "other": 0.316796875
+      },
+      "0.75": {
+        "follow_A": 0.853125,
+        "follow_W": 0.033203125,
+        "follow_note": 0.016015625,
+        "n": 2560,
+        "other": 0.09765625
+      },
+      "1": {
+        "follow_A": 0.8875,
+        "follow_W": 0.0171875,
+        "follow_note": 0.012890625,
+        "n": 2560,
+        "other": 0.082421875
+      },
+      "_shape": {
+        "adjacent_steps_follow_A": [
+          0.016796875000000003,
+          0.303515625,
+          0.51328125,
+          0.03437499999999993
+        ],
+        "incoherence_other_rate_at_lambda_0.5": 0.316796875,
+        "label": "graded",
+        "largest_step_fraction": 0.5913591359135915,
+        "total_change": 0.86796875
+      }
+    },
+    "dose_weak_vs_strong_follow_note_prefix_A": {
+      "delta": {
+        "ci95_high": 0.03203125,
+        "ci95_low": 0.006640624999999998,
+        "n_clusters": 256,
+        "point": 0.019140625,
+        "replicates": 10000,
+        "seed": 0,
+        "unit": "program_P"
+      },
+      "mcnemar": {
+        "a_only_correct": 117,
+        "b_only_correct": 68,
+        "discordant_pairs": 185,
+        "p_two_sided_exact": 0.0003886194340684363
+      },
+      "mcnemar_pairs": 2560,
+      "rate_a": 0.170703125,
+      "rate_b": 0.1515625
+    },
+    "strong_agree_minus_none_follow_A_prefix_A": {
+      "delta": {
+        "ci95_high": 0.005859375000000002,
+        "ci95_low": -0.010937499999999998,
+        "n_clusters": 256,
+        "point": -0.002343749999999999,
+        "replicates": 10000,
+        "seed": 0,
+        "unit": "program_P"
+      },
+      "mcnemar": {
+        "a_only_correct": 49,
+        "b_only_correct": 55,
+        "discordant_pairs": 104,
+        "p_two_sided_exact": 0.624143515844679
+      },
+      "mcnemar_pairs": 2560,
+      "rate_a": 0.884765625,
+      "rate_b": 0.887109375
+    }
+  },
+  "implementation_values_g2": {
+    "X": "seeded per state (20261016, state id) from the digits not in {v_A, v_W}",
+    "eval_batch": 32,
+    "note_position": "after P, before the state-insertion marker and the query; text 'I think {v} might be {X}.' / 'Verified: {v} = {X}.' / 'Verified: {v} = {v_A}.'",
+    "outcome_f": "readback: identity; future: + m (mod 10)",
+    "queries": "readback plus future with m = 1..9 (PCS2b train m 1-4 and held-out m 5-9)",
+    "switch_vs_graded_rule": "post-hoc descriptive label: switch-like if the largest adjacent-lambda step in P(follow-A) is >= 60% of the total change",
+    "test_states": "all 256 sealed PCS2b test states (design text said about 450; designer accepted 256 on 2026-10-05)",
+    "wrong_partner": "first matched wrong state of the PCS2b matched_wrong_maps rule (seed cfg.seed + 909), v_W != v_A"
+  },
+  "interpretation": "inherited cognition competes with resident belief (not just a default used when B has no information); a text-level instruction does not guarantee control over what B inherited",
+  "models": {
+    "B": [
+      "Qwen/Qwen3-1.7B",
+      "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+    ]
+  },
+  "n_records": 43520,
+  "n_states": 256,
+  "n_test_states_available": 256,
+  "outcome_table_prefix_x_note": {
+    "A": {
+      "none": {
+        "follow_A": 0.887109375,
+        "follow_W": 0.0171875,
+        "follow_note": 0.012890625,
+        "n": 2560,
+        "other": 0.0828125
+      },
+      "strong_agree": {
+        "follow_A": 0.884765625,
+        "follow_W": 0.01953125,
+        "follow_note": 0.015234375,
+        "n": 2560,
+        "other": 0.08046875
+      },
+      "strong_conflict": {
+        "follow_A": 0.66015625,
+        "follow_W": 0.0265625,
+        "follow_note": 0.1515625,
+        "n": 2560,
+        "other": 0.16171875
+      },
+      "weak_conflict": {
+        "follow_A": 0.62734375,
+        "follow_W": 0.025390625,
+        "follow_note": 0.170703125,
+        "n": 2560,
+        "other": 0.1765625
+      }
+    },
+    "W": {
+      "none": {
+        "follow_A": 0.01953125,
+        "follow_W": 0.869140625,
+        "follow_note": 0.012890625,
+        "n": 2560,
+        "other": 0.0984375
+      },
+      "strong_agree": {
+        "follow_A": 0.164453125,
+        "follow_W": 0.664453125,
+        "follow_note": 0.01953125,
+        "n": 2560,
+        "other": 0.1515625
+      },
+      "strong_conflict": {
+        "follow_A": 0.021484375,
+        "follow_W": 0.661328125,
+        "follow_note": 0.1609375,
+        "n": 2560,
+        "other": 0.15625
+      },
+      "weak_conflict": {
+        "follow_A": 0.024609375,
+        "follow_W": 0.6234375,
+        "follow_note": 0.183203125,
+        "n": 2560,
+        "other": 0.16875
+      }
+    },
+    "Z": {
+      "none": {
+        "follow_A": 0.11953125,
+        "follow_W": 0.100390625,
+        "follow_note": 0.0921875,
+        "n": 2560,
+        "other": 0.687890625
+      },
+      "strong_agree": {
+        "follow_A": 0.406640625,
+        "follow_W": 0.069140625,
+        "follow_note": 0.064453125,
+        "n": 2560,
+        "other": 0.459765625
+      },
+      "strong_conflict": {
+        "follow_A": 0.078515625,
+        "follow_W": 0.06875,
+        "follow_note": 0.355859375,
+        "n": 2560,
+        "other": 0.496875
+      },
+      "weak_conflict": {
+        "follow_A": 0.09296875,
+        "follow_W": 0.090625,
+        "follow_note": 0.19140625,
+        "n": 2560,
+        "other": 0.625
+      }
+    }
+  },
+  "peak_gpu_gib": 5.2,
+  "schema": "interfere1_result_v1",
+  "scientific_use": true,
+  "seconds": 1022.7,
+  "seeds": {
+    "X": 20261016,
+    "bootstrap": 0
+  }
+}

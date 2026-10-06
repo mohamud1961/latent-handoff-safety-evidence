@@ -1,0 +1,279 @@
+$ /usr/local/bin/python /root/scripts/cogmon1.py --out-dir /artifacts/cogmon1-full-1a16224eba52 --run
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.76s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  2.70s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.01s/it]
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+/usr/local/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:451: OptimizeWarning: Unknown solver options: iprint
+  opt_res = optimize.minimize(
+COGMON1_INTERVENTIONS states=12/959
+COGMON1_INTERVENTIONS states=24/959
+COGMON1_INTERVENTIONS states=36/959
+COGMON1_INTERVENTIONS states=48/959
+COGMON1_INTERVENTIONS states=60/959
+COGMON1_INTERVENTIONS states=72/959
+COGMON1_INTERVENTIONS states=84/959
+COGMON1_INTERVENTIONS states=96/959
+COGMON1_INTERVENTIONS states=108/959
+COGMON1_INTERVENTIONS states=120/959
+COGMON1_INTERVENTIONS states=132/959
+COGMON1_INTERVENTIONS states=144/959
+COGMON1_INTERVENTIONS states=156/959
+COGMON1_INTERVENTIONS states=168/959
+COGMON1_INTERVENTIONS states=180/959
+COGMON1_INTERVENTIONS states=192/959
+COGMON1_INTERVENTIONS states=204/959
+COGMON1_INTERVENTIONS states=216/959
+COGMON1_INTERVENTIONS states=228/959
+COGMON1_INTERVENTIONS states=240/959
+COGMON1_INTERVENTIONS states=252/959
+COGMON1_INTERVENTIONS states=264/959
+COGMON1_INTERVENTIONS states=276/959
+COGMON1_INTERVENTIONS states=288/959
+COGMON1_INTERVENTIONS states=300/959
+COGMON1_INTERVENTIONS states=312/959
+COGMON1_INTERVENTIONS states=324/959
+COGMON1_INTERVENTIONS states=336/959
+COGMON1_INTERVENTIONS states=348/959
+COGMON1_INTERVENTIONS states=360/959
+COGMON1_INTERVENTIONS states=372/959
+COGMON1_INTERVENTIONS states=384/959
+COGMON1_INTERVENTIONS states=396/959
+COGMON1_INTERVENTIONS states=408/959
+COGMON1_INTERVENTIONS states=420/959
+COGMON1_INTERVENTIONS states=432/959
+COGMON1_INTERVENTIONS states=444/959
+COGMON1_INTERVENTIONS states=456/959
+COGMON1_INTERVENTIONS states=468/959
+COGMON1_INTERVENTIONS states=480/959
+COGMON1_INTERVENTIONS states=492/959
+COGMON1_INTERVENTIONS states=504/959
+COGMON1_INTERVENTIONS states=516/959
+COGMON1_INTERVENTIONS states=528/959
+COGMON1_INTERVENTIONS states=540/959
+COGMON1_INTERVENTIONS states=552/959
+COGMON1_INTERVENTIONS states=564/959
+COGMON1_INTERVENTIONS states=576/959
+COGMON1_INTERVENTIONS states=588/959
+COGMON1_INTERVENTIONS states=600/959
+COGMON1_INTERVENTIONS states=612/959
+COGMON1_INTERVENTIONS states=624/959
+COGMON1_INTERVENTIONS states=636/959
+COGMON1_INTERVENTIONS states=648/959
+COGMON1_INTERVENTIONS states=660/959
+COGMON1_INTERVENTIONS states=672/959
+COGMON1_INTERVENTIONS states=684/959
+COGMON1_INTERVENTIONS states=696/959
+COGMON1_INTERVENTIONS states=708/959
+COGMON1_INTERVENTIONS states=720/959
+COGMON1_INTERVENTIONS states=732/959
+COGMON1_INTERVENTIONS states=744/959
+COGMON1_INTERVENTIONS states=756/959
+COGMON1_INTERVENTIONS states=768/959
+COGMON1_INTERVENTIONS states=780/959
+COGMON1_INTERVENTIONS states=792/959
+COGMON1_INTERVENTIONS states=804/959
+COGMON1_INTERVENTIONS states=816/959
+COGMON1_INTERVENTIONS states=828/959
+COGMON1_INTERVENTIONS states=840/959
+COGMON1_INTERVENTIONS states=852/959
+COGMON1_INTERVENTIONS states=864/959
+COGMON1_INTERVENTIONS states=876/959
+COGMON1_INTERVENTIONS states=888/959
+COGMON1_INTERVENTIONS states=900/959
+COGMON1_INTERVENTIONS states=912/959
+COGMON1_INTERVENTIONS states=924/959
+COGMON1_INTERVENTIONS states=936/959
+COGMON1_INTERVENTIONS states=948/959
+COGMON1_INTERVENTIONS states=959/959
+{"criteria": {"intervene_cluster_ci_lower_gt_0": true, "intervene_delta_ge_0_30": true, "intervene_edit_ge_0_40": true, "intervene_exact_mcnemar_p_lt_0_05": true, "intervene_rand_le_0_10": true, "off_target_edit_preservation_ge_0_80": false, "off_target_edit_within_0_10_of_rand": false, "predict_accuracy_ge_0_65": false, "predict_cluster_ci_lower_above_a_value_baseline": false, "read_each_register_balanced_accuracy_ge_0_50": true, "read_joint_accuracy_ge_0_25": true, "read_mean_balanced_accuracy_ge_0_60": true}, "elapsed_seconds": 154.20509314537048, "intervene": {"edit_minus_rand": 0.4132777198470629, "edit_minus_rand_cluster_bootstrap": {"ci95_high": 0.4330900243309002, "ci95_low": 0.3931178310740355, "n_clusters": 959, "point": 0.41327771984706296, "replicates": 10000, "seed": 0, "unit": "source_state_id"}, "edit_target_success_rate": 0.46228710462287104, "edit_vs_rand_exact_mcnemar": {"a_only_correct": 1230, "b_only_correct": 41, "discordant_pairs": 1271, "p_two_sided_exact": 1.4754616006291645e-305}, "off_target_edit_minus_rand_cluster_bootstrap": {"ci95_high": -0.30517900590893293, "ci95_low": -0.3359402155022593, "n_clusters": 959, "point": -0.3202989224887035, "replicates": 10000, "seed": 0, "unit": "source_state_id"}, "off_target_preservation_edit": 0.47636426833507123, "off_target_preservation_rand": 0.7966631908237748, "rand_target_success_rate": 0.049009384775808136}, "predict": {"a_value_baseline_accuracy": 0.5797705943691345, "accuracy": 0.5033020507473063, "accuracy_minus_a_value_baseline_cluster_bootstrap": {"ci95_high": -0.05213764337851928, "ci95_low": -0.1007994438651373, "n_clusters": 959, "point": -0.07646854362182827, "replicates": 10000, "seed": 0, "unit": "source_state_id"}, "p_only_baseline_accuracy": 0.26312130691692737}, "read": {"all_three_joint_accuracy": 0.38790406673618355, "balanced_accuracy_by_register": {"a": 0.6198639152731251, "b": 0.6243084549430554, "c": 0.625395137267037}, "mean_balanced_accuracy": 0.6231891691610726}, "status": "MIXED"}

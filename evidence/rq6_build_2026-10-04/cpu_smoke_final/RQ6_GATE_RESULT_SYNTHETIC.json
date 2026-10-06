@@ -1,0 +1,31 @@
+{
+  "code_shas_json_sha256": "7c01b152e7701b5d0292f693770eb58ff91e77d77d9b08cb804782a8e1d9628f",
+  "code_shas_path": "CODE_SHAS.json",
+  "evidence_kind": "synthetic_cpu_smoke_only",
+  "protocol_copy_path": "RQ6_PROTOCOL_RESOLVED.json",
+  "protocol_sha256": "9880291e2ed842882f50fa63ab8a1ff60509ccef85c153e4cb778228b9fb8704",
+  "raw_records_path": "RQ6_SYNTHETIC_RAW_RECORDS.jsonl",
+  "raw_records_sha256": "ffb3fa9256547e7736f49ae6d26d23d142c092e1af9ce7d364eece4e97336091",
+  "run_complete": true,
+  "schema": "rq6_gate_result_v1",
+  "six_a": {
+    "attempt_depth": 11,
+    "six_a_qualification_pass": true,
+    "six_a_u_action": "run_6a_w_and_u",
+    "six_a_u_qualification_pass": true,
+    "six_a_w_qualification_pass": true
+  },
+  "six_a_attempt_depth": 11,
+  "six_a_qualification_pass": true,
+  "six_a_u_action": "run_6a_w_and_u",
+  "six_a_u_qualification_pass": true,
+  "six_a_w_qualification_pass": true,
+  "six_b": {
+    "six_b_qualification_pass": true
+  },
+  "six_b_qualification_pass": true,
+  "status": "synthetic_only",
+  "status_semantics": "passed means inference and artifact integrity completed; track qualification is expressed by its own boolean",
+  "summary_path": "RQ6_SUMMARY.json",
+  "summary_sha256": "e43d6a542ded7ebe445a52eba05e0fd4b2b37b9460e4da23d1ca5f262177193e"
+}

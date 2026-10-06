@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "bridge_hash_probe_commitment": true,
+    "canonical_seeded_split_counts_and_order": true,
+    "helper_parser_gates_summary": true,
+    "sealed_w1_input_required_for_science": true,
+    "test_floor_fail_closed": true
+  },
+  "elapsed_seconds": 0.04312491416931152,
+  "modal_launched": false,
+  "model_loaded": false,
+  "note": "CPU-only contract smoke. It does not exercise model loading, source generation/capture, scientific gates, bridge training, or any scientific outcome.",
+  "schema": "pcs3c_executor_smoke_v1",
+  "scientific_use": false,
+  "source_data_opened": false,
+  "status": "PASS_SYNTHETIC_CPU_ONLY",
+  "synthetic_helper_classification": "PCS3C_POSITIVE",
+  "synthetic_split_counts": {
+    "test": 450,
+    "train": 512,
+    "val": 128
+  },
+  "w1_choice_created_or_read": false
+}

@@ -1,0 +1,36 @@
+{
+  "files": {
+    "build_questions.md": {
+      "path": "<local>/Downloads/pcs-wt-codex-mon2/design_L2_L4/BUILD_QUESTIONS.md",
+      "sha256": "ee3c5e07f6a94211e1b4722ca2ec2189444e94ed7b950e2a11ce1ad7d7b70fa6"
+    },
+    "build_spec.md": {
+      "path": "<local>/Downloads/pcs-wt-codex-mon2/design_L2_L4/05_BUILD_SPEC_FOR_IMPLEMENTER.md",
+      "sha256": "19241920997740a0d9ee86aa483aa7493b3c6443ed271e99ad444afb39f80c8b"
+    },
+    "pcs3c_confirm.py": {
+      "path": "<local>/Downloads/pcs-wt-codex-mon2/scripts/pcs3c_confirm.py",
+      "sha256": "6e0aeaff77ef5f76e68442a429a4dd575bce5ddded450cd48360b46912938aa1"
+    },
+    "pcs6_freeze.md": {
+      "path": "<local>/Downloads/pcs-wt-codex-mon2/design_L2_L4/04_PCS6_REASONING_CONTINUATION_FREEZE.md",
+      "sha256": "d4bbfd637d8fd5c35aeca5c23da9354d002986ec0db38eddedd60bb27a917e1c"
+    },
+    "pcs6a_continuation.py": {
+      "path": "<local>/Downloads/pcs-wt-codex-mon2/scripts/pcs6a_continuation.py",
+      "sha256": "fedba71be58f78d5c67ff1858628f9c6b4e5f0f7b16347619d1374b4dfe33a50"
+    },
+    "rq6_qualification.py": {
+      "path": "<local>/Downloads/pcs-wt-codex-mon2/scripts/rq6_qualification.py",
+      "sha256": "bfe8de6315a450ea53f52f99aeb08a3e63cf00bef8200fd05b028f2d795f53c7"
+    },
+    "test_pcs6a_continuation.py": {
+      "path": "<local>/Downloads/pcs-wt-codex-mon2/tests/test_pcs6a_continuation.py",
+      "sha256": "69cccd03c0960ee677fbc790b926d80421e8d669dfea78a49d1e31971a55e8db"
+    }
+  },
+  "modal_launched": false,
+  "model_imported": false,
+  "schema": "pcs6_code_shas_v1",
+  "scientific_data_opened": false
+}

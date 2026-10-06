@@ -1,0 +1,2 @@
+{"episode_id": "synthetic-6a-0", "prediction": [1, 2, 3], "source_trace": "synthetic only", "track": "6a"}
+{"a_answer": 2.0, "gold_answer": 2.0, "problem_id": "synthetic-6b-0", "track": "6b"}

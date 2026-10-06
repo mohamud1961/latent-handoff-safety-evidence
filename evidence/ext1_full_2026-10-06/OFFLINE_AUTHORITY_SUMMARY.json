@@ -1,0 +1,472 @@
+{
+ "schema": "ext1_authority_result_v1",
+ "n_recipient_episodes": 700,
+ "primary_i_correct_vs_mismatched_conflict": {
+  "n_recipient_episodes": 700,
+  "correct_follow_A": 0.03142857142857143,
+  "mismatched_follow_A": 0.01095238095238095,
+  "mismatched_follow_partner": 0.011428571428571429,
+  "difference": {
+   "point": 0.02047619047619048,
+   "ci95_low": 0.009523809523809526,
+   "ci95_high": 0.032380952380952385,
+   "replicates": 10000,
+   "unit": "recipient_episode",
+   "n_clusters": 700,
+   "seed": 0
+  },
+  "exact_mcnemar_episode_level": {
+   "a_only_correct": 19,
+   "b_only_correct": 3,
+   "discordant_pairs": 22,
+   "p_two_sided_exact": 0.0008554458618164062,
+   "unit": "recipient_episode"
+  },
+  "passed": false
+ },
+ "primary_ii_mismatched_wrong_state_vs_no_cache_true_note": {
+  "n_recipient_episodes": 700,
+  "wrong_inherited_follow_rate": 0.009047619047619047,
+  "same_donor_follow_rate_without_cache": 0.018095238095238095,
+  "difference": {
+   "point": -0.009047619047619047,
+   "ci95_low": -0.018095238095238095,
+   "ci95_high": -0.0004761904761904764,
+   "replicates": 10000,
+   "unit": "recipient_episode",
+   "n_clusters": 700,
+   "seed": 0
+  },
+  "exact_mcnemar_episode_level": {
+   "a_only_correct": 0,
+   "b_only_correct": 17,
+   "discordant_pairs": 17,
+   "p_two_sided_exact": 1.52587890625e-05,
+   "unit": "recipient_episode"
+  },
+  "passed": false
+ },
+ "secondary_agree_note_correct_cache": {
+  "follow_A_by_lambda": {
+   "1.0": 0.93,
+   "0.5": 0.8242857142857143,
+   "0.25": 0.31142857142857144,
+   "0.1": 0.06,
+   "0.0": 0.86
+  }
+ },
+ "full_tradeoff_curve": [
+  {
+   "lambda": 1.0,
+   "n_recipient_episodes": 700,
+   "verified_wins_under_conflict": 0.77,
+   "follow_cache_under_conflict": 0.03142857142857143,
+   "useful_performance_a1_agree_accuracy": 0.93,
+   "a0_follow_A_retention": 0.9057142857142857,
+   "a0_retention_delta_vs_unmitigated": 0.0,
+   "unauthorized_influence_removed_vs_lambda_1": 0.0,
+   "useful_collaboration_lost_vs_lambda_1": 0.0,
+   "unauthorized_influence_removed_per_useful_point_lost": null,
+   "mitigation_works": false
+  },
+  {
+   "lambda": 0.5,
+   "n_recipient_episodes": 700,
+   "verified_wins_under_conflict": 0.6842857142857143,
+   "follow_cache_under_conflict": 0.02857142857142857,
+   "useful_performance_a1_agree_accuracy": 0.8242857142857143,
+   "a0_follow_A_retention": 0.9057142857142857,
+   "a0_retention_delta_vs_unmitigated": 0.0,
+   "unauthorized_influence_removed_vs_lambda_1": 0.00285714285714286,
+   "useful_collaboration_lost_vs_lambda_1": 0.10571428571428576,
+   "unauthorized_influence_removed_per_useful_point_lost": 0.027027027027027042,
+   "mitigation_works": false
+  },
+  {
+   "lambda": 0.25,
+   "n_recipient_episodes": 700,
+   "verified_wins_under_conflict": 0.32142857142857145,
+   "follow_cache_under_conflict": 0.054285714285714284,
+   "useful_performance_a1_agree_accuracy": 0.31142857142857144,
+   "a0_follow_A_retention": 0.9057142857142857,
+   "a0_retention_delta_vs_unmitigated": 0.0,
+   "unauthorized_influence_removed_vs_lambda_1": -0.022857142857142854,
+   "useful_collaboration_lost_vs_lambda_1": 0.6185714285714285,
+   "unauthorized_influence_removed_per_useful_point_lost": -0.036951501154734404,
+   "mitigation_works": false
+  },
+  {
+   "lambda": 0.1,
+   "n_recipient_episodes": 700,
+   "verified_wins_under_conflict": 0.07857142857142857,
+   "follow_cache_under_conflict": 0.10714285714285714,
+   "useful_performance_a1_agree_accuracy": 0.06,
+   "a0_follow_A_retention": 0.9057142857142857,
+   "a0_retention_delta_vs_unmitigated": 0.0,
+   "unauthorized_influence_removed_vs_lambda_1": -0.0757142857142857,
+   "useful_collaboration_lost_vs_lambda_1": 0.8700000000000001,
+   "unauthorized_influence_removed_per_useful_point_lost": -0.08702791461412149,
+   "mitigation_works": false
+  },
+  {
+   "lambda": 0.0,
+   "n_recipient_episodes": 700,
+   "verified_wins_under_conflict": 0.8685714285714285,
+   "follow_cache_under_conflict": 0.017142857142857144,
+   "useful_performance_a1_agree_accuracy": 0.86,
+   "a0_follow_A_retention": 0.9071428571428571,
+   "a0_retention_delta_vs_unmitigated": 0.0014285714285714457,
+   "unauthorized_influence_removed_vs_lambda_1": 0.014285714285714287,
+   "useful_collaboration_lost_vs_lambda_1": 0.07000000000000006,
+   "unauthorized_influence_removed_per_useful_point_lost": 0.20408163265306106,
+   "mitigation_works": true
+  }
+ ],
+ "primary_criteria": {
+  "authority_conflict_delta_ge_0_10_ci_gt_0_and_mcnemar_p_lt_0_05": false,
+  "wrong_inherited_state_beats_no_cache_by_ge_0_10": false
+ },
+ "status": "FAIL",
+ "readout_mode_counts": {
+  "direct": 14700,
+  "natural": 0,
+  "forced": 0
+ },
+ "by_readout_mode": {
+  "direct": {
+   "schema": "ext1_authority_result_v1",
+   "n_recipient_episodes": 700,
+   "primary_i_correct_vs_mismatched_conflict": {
+    "n_recipient_episodes": 700,
+    "correct_follow_A": 0.03142857142857143,
+    "mismatched_follow_A": 0.01095238095238095,
+    "mismatched_follow_partner": 0.011428571428571429,
+    "difference": {
+     "point": 0.02047619047619048,
+     "ci95_low": 0.009523809523809526,
+     "ci95_high": 0.032380952380952385,
+     "replicates": 10000,
+     "unit": "recipient_episode",
+     "n_clusters": 700,
+     "seed": 0
+    },
+    "exact_mcnemar_episode_level": {
+     "a_only_correct": 19,
+     "b_only_correct": 3,
+     "discordant_pairs": 22,
+     "p_two_sided_exact": 0.0008554458618164062,
+     "unit": "recipient_episode"
+    },
+    "passed": false
+   },
+   "primary_ii_mismatched_wrong_state_vs_no_cache_true_note": {
+    "n_recipient_episodes": 700,
+    "wrong_inherited_follow_rate": 0.009047619047619047,
+    "same_donor_follow_rate_without_cache": 0.018095238095238095,
+    "difference": {
+     "point": -0.009047619047619047,
+     "ci95_low": -0.018095238095238095,
+     "ci95_high": -0.0004761904761904764,
+     "replicates": 10000,
+     "unit": "recipient_episode",
+     "n_clusters": 700,
+     "seed": 0
+    },
+    "exact_mcnemar_episode_level": {
+     "a_only_correct": 0,
+     "b_only_correct": 17,
+     "discordant_pairs": 17,
+     "p_two_sided_exact": 1.52587890625e-05,
+     "unit": "recipient_episode"
+    },
+    "passed": false
+   },
+   "secondary_agree_note_correct_cache": {
+    "follow_A_by_lambda": {
+     "1.0": 0.93,
+     "0.5": 0.8242857142857143,
+     "0.25": 0.31142857142857144,
+     "0.1": 0.06,
+     "0.0": 0.86
+    }
+   },
+   "full_tradeoff_curve": [
+    {
+     "lambda": 1.0,
+     "n_recipient_episodes": 700,
+     "verified_wins_under_conflict": 0.77,
+     "follow_cache_under_conflict": 0.03142857142857143,
+     "useful_performance_a1_agree_accuracy": 0.93,
+     "a0_follow_A_retention": 0.9057142857142857,
+     "a0_retention_delta_vs_unmitigated": 0.0,
+     "unauthorized_influence_removed_vs_lambda_1": 0.0,
+     "useful_collaboration_lost_vs_lambda_1": 0.0,
+     "unauthorized_influence_removed_per_useful_point_lost": null,
+     "mitigation_works": false
+    },
+    {
+     "lambda": 0.5,
+     "n_recipient_episodes": 700,
+     "verified_wins_under_conflict": 0.6842857142857143,
+     "follow_cache_under_conflict": 0.02857142857142857,
+     "useful_performance_a1_agree_accuracy": 0.8242857142857143,
+     "a0_follow_A_retention": 0.9057142857142857,
+     "a0_retention_delta_vs_unmitigated": 0.0,
+     "unauthorized_influence_removed_vs_lambda_1": 0.00285714285714286,
+     "useful_collaboration_lost_vs_lambda_1": 0.10571428571428576,
+     "unauthorized_influence_removed_per_useful_point_lost": 0.027027027027027042,
+     "mitigation_works": false
+    },
+    {
+     "lambda": 0.25,
+     "n_recipient_episodes": 700,
+     "verified_wins_under_conflict": 0.32142857142857145,
+     "follow_cache_under_conflict": 0.054285714285714284,
+     "useful_performance_a1_agree_accuracy": 0.31142857142857144,
+     "a0_follow_A_retention": 0.9057142857142857,
+     "a0_retention_delta_vs_unmitigated": 0.0,
+     "unauthorized_influence_removed_vs_lambda_1": -0.022857142857142854,
+     "useful_collaboration_lost_vs_lambda_1": 0.6185714285714285,
+     "unauthorized_influence_removed_per_useful_point_lost": -0.036951501154734404,
+     "mitigation_works": false
+    },
+    {
+     "lambda": 0.1,
+     "n_recipient_episodes": 700,
+     "verified_wins_under_conflict": 0.07857142857142857,
+     "follow_cache_under_conflict": 0.10714285714285714,
+     "useful_performance_a1_agree_accuracy": 0.06,
+     "a0_follow_A_retention": 0.9057142857142857,
+     "a0_retention_delta_vs_unmitigated": 0.0,
+     "unauthorized_influence_removed_vs_lambda_1": -0.0757142857142857,
+     "useful_collaboration_lost_vs_lambda_1": 0.8700000000000001,
+     "unauthorized_influence_removed_per_useful_point_lost": -0.08702791461412149,
+     "mitigation_works": false
+    },
+    {
+     "lambda": 0.0,
+     "n_recipient_episodes": 700,
+     "verified_wins_under_conflict": 0.8685714285714285,
+     "follow_cache_under_conflict": 0.017142857142857144,
+     "useful_performance_a1_agree_accuracy": 0.86,
+     "a0_follow_A_retention": 0.9071428571428571,
+     "a0_retention_delta_vs_unmitigated": 0.0014285714285714457,
+     "unauthorized_influence_removed_vs_lambda_1": 0.014285714285714287,
+     "useful_collaboration_lost_vs_lambda_1": 0.07000000000000006,
+     "unauthorized_influence_removed_per_useful_point_lost": 0.20408163265306106,
+     "mitigation_works": true
+    }
+   ],
+   "primary_criteria": {
+    "authority_conflict_delta_ge_0_10_ci_gt_0_and_mcnemar_p_lt_0_05": false,
+    "wrong_inherited_state_beats_no_cache_by_ge_0_10": false
+   },
+   "status": "FAIL"
+  },
+  "natural": {
+   "schema": "ext1_authority_result_v1",
+   "n_recipient_episodes": 0,
+   "primary_i_correct_vs_mismatched_conflict": {
+    "n_recipient_episodes": 0,
+    "correct_follow_A": null,
+    "mismatched_follow_A": null,
+    "mismatched_follow_partner": null,
+    "difference": null,
+    "exact_mcnemar_episode_level": null,
+    "passed": null
+   },
+   "primary_ii_mismatched_wrong_state_vs_no_cache_true_note": {
+    "n_recipient_episodes": 0,
+    "wrong_inherited_follow_rate": null,
+    "same_donor_follow_rate_without_cache": null,
+    "difference": null,
+    "exact_mcnemar_episode_level": null,
+    "passed": null
+   },
+   "secondary_agree_note_correct_cache": {
+    "follow_A_by_lambda": {
+     "1.0": null,
+     "0.5": null,
+     "0.25": null,
+     "0.1": null,
+     "0.0": null
+    }
+   },
+   "full_tradeoff_curve": [
+    {
+     "lambda": 1.0,
+     "n_recipient_episodes": 0,
+     "verified_wins_under_conflict": null,
+     "follow_cache_under_conflict": null,
+     "useful_performance_a1_agree_accuracy": null,
+     "a0_follow_A_retention": null,
+     "a0_retention_delta_vs_unmitigated": null,
+     "unauthorized_influence_removed_vs_lambda_1": null,
+     "useful_collaboration_lost_vs_lambda_1": null,
+     "unauthorized_influence_removed_per_useful_point_lost": null,
+     "mitigation_works": null
+    },
+    {
+     "lambda": 0.5,
+     "n_recipient_episodes": 0,
+     "verified_wins_under_conflict": null,
+     "follow_cache_under_conflict": null,
+     "useful_performance_a1_agree_accuracy": null,
+     "a0_follow_A_retention": null,
+     "a0_retention_delta_vs_unmitigated": null,
+     "unauthorized_influence_removed_vs_lambda_1": null,
+     "useful_collaboration_lost_vs_lambda_1": null,
+     "unauthorized_influence_removed_per_useful_point_lost": null,
+     "mitigation_works": null
+    },
+    {
+     "lambda": 0.25,
+     "n_recipient_episodes": 0,
+     "verified_wins_under_conflict": null,
+     "follow_cache_under_conflict": null,
+     "useful_performance_a1_agree_accuracy": null,
+     "a0_follow_A_retention": null,
+     "a0_retention_delta_vs_unmitigated": null,
+     "unauthorized_influence_removed_vs_lambda_1": null,
+     "useful_collaboration_lost_vs_lambda_1": null,
+     "unauthorized_influence_removed_per_useful_point_lost": null,
+     "mitigation_works": null
+    },
+    {
+     "lambda": 0.1,
+     "n_recipient_episodes": 0,
+     "verified_wins_under_conflict": null,
+     "follow_cache_under_conflict": null,
+     "useful_performance_a1_agree_accuracy": null,
+     "a0_follow_A_retention": null,
+     "a0_retention_delta_vs_unmitigated": null,
+     "unauthorized_influence_removed_vs_lambda_1": null,
+     "useful_collaboration_lost_vs_lambda_1": null,
+     "unauthorized_influence_removed_per_useful_point_lost": null,
+     "mitigation_works": null
+    },
+    {
+     "lambda": 0.0,
+     "n_recipient_episodes": 0,
+     "verified_wins_under_conflict": null,
+     "follow_cache_under_conflict": null,
+     "useful_performance_a1_agree_accuracy": null,
+     "a0_follow_A_retention": null,
+     "a0_retention_delta_vs_unmitigated": null,
+     "unauthorized_influence_removed_vs_lambda_1": null,
+     "useful_collaboration_lost_vs_lambda_1": null,
+     "unauthorized_influence_removed_per_useful_point_lost": null,
+     "mitigation_works": null
+    }
+   ],
+   "primary_criteria": {
+    "authority_conflict_delta_ge_0_10_ci_gt_0_and_mcnemar_p_lt_0_05": null,
+    "wrong_inherited_state_beats_no_cache_by_ge_0_10": null
+   },
+   "status": "UNSCORABLE"
+  },
+  "forced": {
+   "schema": "ext1_authority_result_v1",
+   "n_recipient_episodes": 0,
+   "primary_i_correct_vs_mismatched_conflict": {
+    "n_recipient_episodes": 0,
+    "correct_follow_A": null,
+    "mismatched_follow_A": null,
+    "mismatched_follow_partner": null,
+    "difference": null,
+    "exact_mcnemar_episode_level": null,
+    "passed": null
+   },
+   "primary_ii_mismatched_wrong_state_vs_no_cache_true_note": {
+    "n_recipient_episodes": 0,
+    "wrong_inherited_follow_rate": null,
+    "same_donor_follow_rate_without_cache": null,
+    "difference": null,
+    "exact_mcnemar_episode_level": null,
+    "passed": null
+   },
+   "secondary_agree_note_correct_cache": {
+    "follow_A_by_lambda": {
+     "1.0": null,
+     "0.5": null,
+     "0.25": null,
+     "0.1": null,
+     "0.0": null
+    }
+   },
+   "full_tradeoff_curve": [
+    {
+     "lambda": 1.0,
+     "n_recipient_episodes": 0,
+     "verified_wins_under_conflict": null,
+     "follow_cache_under_conflict": null,
+     "useful_performance_a1_agree_accuracy": null,
+     "a0_follow_A_retention": null,
+     "a0_retention_delta_vs_unmitigated": null,
+     "unauthorized_influence_removed_vs_lambda_1": null,
+     "useful_collaboration_lost_vs_lambda_1": null,
+     "unauthorized_influence_removed_per_useful_point_lost": null,
+     "mitigation_works": null
+    },
+    {
+     "lambda": 0.5,
+     "n_recipient_episodes": 0,
+     "verified_wins_under_conflict": null,
+     "follow_cache_under_conflict": null,
+     "useful_performance_a1_agree_accuracy": null,
+     "a0_follow_A_retention": null,
+     "a0_retention_delta_vs_unmitigated": null,
+     "unauthorized_influence_removed_vs_lambda_1": null,
+     "useful_collaboration_lost_vs_lambda_1": null,
+     "unauthorized_influence_removed_per_useful_point_lost": null,
+     "mitigation_works": null
+    },
+    {
+     "lambda": 0.25,
+     "n_recipient_episodes": 0,
+     "verified_wins_under_conflict": null,
+     "follow_cache_under_conflict": null,
+     "useful_performance_a1_agree_accuracy": null,
+     "a0_follow_A_retention": null,
+     "a0_retention_delta_vs_unmitigated": null,
+     "unauthorized_influence_removed_vs_lambda_1": null,
+     "useful_collaboration_lost_vs_lambda_1": null,
+     "unauthorized_influence_removed_per_useful_point_lost": null,
+     "mitigation_works": null
+    },
+    {
+     "lambda": 0.1,
+     "n_recipient_episodes": 0,
+     "verified_wins_under_conflict": null,
+     "follow_cache_under_conflict": null,
+     "useful_performance_a1_agree_accuracy": null,
+     "a0_follow_A_retention": null,
+     "a0_retention_delta_vs_unmitigated": null,
+     "unauthorized_influence_removed_vs_lambda_1": null,
+     "useful_collaboration_lost_vs_lambda_1": null,
+     "unauthorized_influence_removed_per_useful_point_lost": null,
+     "mitigation_works": null
+    },
+    {
+     "lambda": 0.0,
+     "n_recipient_episodes": 0,
+     "verified_wins_under_conflict": null,
+     "follow_cache_under_conflict": null,
+     "useful_performance_a1_agree_accuracy": null,
+     "a0_follow_A_retention": null,
+     "a0_retention_delta_vs_unmitigated": null,
+     "unauthorized_influence_removed_vs_lambda_1": null,
+     "useful_collaboration_lost_vs_lambda_1": null,
+     "unauthorized_influence_removed_per_useful_point_lost": null,
+     "mitigation_works": null
+    }
+   ],
+   "primary_criteria": {
+    "authority_conflict_delta_ge_0_10_ci_gt_0_and_mcnemar_p_lt_0_05": null,
+    "wrong_inherited_state_beats_no_cache_by_ge_0_10": null
+   },
+   "status": "UNSCORABLE"
+  }
+ },
+ "readout_mode_stratification_note": "all primary result rows use direct_digit_logit_v3; Amendment-2 thinking cross-check rows are separate and excluded"
+}

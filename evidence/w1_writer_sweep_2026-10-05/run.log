@@ -1,0 +1,341 @@
+W1_BUILD mode=validation_writer_sweep
+FIT_CACHE neural {'train': 512, 'val': 128} rows= 640
+FIT_CACHE token_identity {'train': 512, 'val': 128} rows= 640
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|#####     | 1/2 [00:05<00:05,  5.75s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:06<00:00,  2.96s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:06<00:00,  3.38s/it]
+PCS3 epoch 1 train 2.360935904085636 val 2.2472330927848816
+PCS3 epoch 2 train 2.2332090958952904 val 2.248061954975128
+PCS3 epoch 3 train 2.225422702729702 val 2.243924856185913
+PCS3 epoch 4 train 2.2283563539385796 val 2.2216712534427643
+PCS3 epoch 5 train 2.223267190158367 val 2.219781458377838
+PCS3 epoch 6 train 2.1906050592660904 val 2.119418054819107
+PCS3 epoch 7 train 2.0584663338959217 val 2.033987507224083
+PCS3 epoch 8 train 1.9833825156092644 val 1.9850883781909943
+PCS3 epoch 9 train 1.959287140518427 val 1.9804993867874146
+PCS3 epoch 10 train 1.9225251823663712 val 1.9757985174655914
+PCS3 epoch 11 train 1.878512293100357 val 1.904673084616661
+PCS3 epoch 12 train 1.8534372933208942 val 1.8702643364667892
+PCS3 epoch 13 train 1.7993742935359478 val 1.8285750299692154
+PCS3 epoch 14 train 1.6912105605006218 val 1.8216286152601242
+PCS3 epoch 15 train 1.6683450043201447 val 1.8367822617292404
+PCS3 epoch 16 train 1.6148503683507442 val 1.7564393877983093
+PCS3 epoch 17 train 1.5692614801228046 val 1.6426101624965668
+PCS3 epoch 18 train 1.7242792509496212 val 1.7565224170684814
+PCS3 epoch 19 train 1.61593596637249 val 1.6436694115400314
+PCS3 epoch 20 train 1.490467119961977 val 1.606122151017189
+PCS3 epoch 21 train 1.452210322022438 val 1.757769450545311
+PCS3 epoch 22 train 1.4137189351022243 val 1.4882674515247345
+PCS3 epoch 23 train 1.2390738055109978 val 1.4134624153375626
+PCS3 epoch 24 train 1.1857806574553251 val 1.331965833902359
+PCS3 epoch 25 train 1.1102421507239342 val 1.3684703558683395
+PCS3 epoch 26 train 1.041832223534584 val 1.248395636677742
+PCS3 epoch 27 train 0.9122628532350063 val 1.224609375
+PCS3 epoch 28 train 0.8850377071648836 val 1.2284931987524033
+PCS3 epoch 29 train 0.8390802964568138 val 1.1234190464019775
+PCS3 epoch 30 train 0.73240702226758 val 1.1234338283538818
+PCS3 epoch 31 train 0.7351809609681368 val 1.2087274119257927
+PCS3 epoch 32 train 0.6732854042202234 val 1.10807304084301
+PCS3 epoch 33 train 0.5838787527754903 val 0.999930165708065
+PCS3 epoch 34 train 0.5259916428476572 val 1.113099031150341
+PCS3 epoch 35 train 0.5129571361467242 val 1.2022101804614067
+PCS3 epoch 36 train 0.5235985312610865 val 0.9970564916729927
+PCS3 epoch 37 train 0.5042278137989342 val 1.0336923897266388
+PCS3 epoch 38 train 0.4254739284515381 val 1.051001600921154
+PCS3 epoch 39 train 0.42254539066925645 val 1.105050690472126
+PCS3 epoch 40 train 0.36271082470193505 val 1.2222573459148407
+W1_RESULT W1-a neural {"best_epoch_zero_based": 35, "best_val_loss": 0.9970564916729927, "checkpoint_path": "W1-a/neural/PCS3_BRIDGE.pt", "checkpoint_seal_sha256": "08d4bb9b10e83f4caca7e6c1ba8968c6d80c1b86bc8eabc9a1d2bc47102f9dff", "checkpoint_sha256": "2c6d5c3685669ea87dc8a846119615a9742f5925b02de27b980fa8a7a606e33b", "coverage_from_val_evaluator": {"a": {"ge1": 0.734375, "ge3": 0.3125}, "b": {"ge1": 0.703125, "ge3": 0.296875}, "c": {"ge1": 0.734375, "ge3": 0.2734375}}, "receiver_preflight": {"by_selector": {"a": 1.0, "b": 1.0, "c": 1.0}, "overall": 1.0, "passed": true}, "training_config": {"batch_size": 16, "bridge_hidden": 768, "c_dim": 16, "c_dropout": 0.0, "epochs": 40, "eval_batch": 32, "k_slots": 4, "lr": 0.0003, "max_source_tokens": 260, "min_checkpoint_rate": 0.98, "min_one_wrong_coverage": 0.9, "min_parse_rate": 0.9, "min_receiver_oracle": 0.9, "min_source_coord_decode": 0.7, "min_source_triple_acc": 0.8, "min_three_wrong_coverage": 0.7, "out_dir": "/__modal/volumes/vo-r16ZpvZh4htF666voiY29E/w1-writer-sweep-f49f19039167/W1-a/neural", "pool_n": 1100, "seed": 20261004, "source_batch": 8, "source_proj": 128, "test_n": 256, "text_batch": 16, "train_n": 512, "val_n": 128, "weight_decay": 0.01}, "val": {"by_selector": {"a": {"correct": 96, "fidelity": 0.75, "fidelity_pct": 75.0, "n": 128}, "b": {"correct": 74, "fidelity": 0.578125, "fidelity_pct": 57.8125, "n": 128}, "c": {"correct": 84, "fidelity": 0.65625, "fidelity_pct": 65.625, "n": 128}}, "fidelity": 0.6614583333333334, "fidelity_pct": 66.14583333333333, "n_records": 384, "n_states": 128}, "val_records_path": "W1-a/neural/W1_VAL_RECORDS.json"}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|#####     | 1/2 [00:03<00:03,  3.35s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:03<00:00,  1.72s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:03<00:00,  1.97s/it]
+PCS3 epoch 1 train 2.4125754199922085 val 2.0883596390485764
+PCS3 epoch 2 train 1.963187325745821 val 1.8181296288967133
+PCS3 epoch 3 train 1.6242104209959507 val 1.4063533246517181
+PCS3 epoch 4 train 1.2986102011054754 val 1.2472931891679764
+PCS3 epoch 5 train 1.101491253823042 val 1.0576390102505684
+PCS3 epoch 6 train 1.0057969763875008 val 0.995399534702301
+PCS3 epoch 7 train 0.9493199866265059 val 0.9543720409274101
+PCS3 epoch 8 train 0.9055895525962114 val 0.9613339155912399
+PCS3 epoch 9 train 0.8708035536110401 val 0.9141341894865036
+PCS3 epoch 10 train 0.843821607530117 val 0.8723478391766548
+PCS3 epoch 11 train 0.7710691373795271 val 0.821555383503437
+PCS3 epoch 12 train 0.7249193228781223 val 0.8166051506996155
+PCS3 epoch 13 train 0.7152453255839646 val 0.789848268032074
+PCS3 epoch 14 train 0.6506947139278054 val 0.7552859336137772
+PCS3 epoch 15 train 0.5941112264990807 val 0.7025580108165741
+PCS3 epoch 16 train 0.5297787981107831 val 0.749033585190773
+PCS3 epoch 17 train 0.49543246859684587 val 0.6726304069161415
+PCS3 epoch 18 train 0.44859466701745987 val 0.618974395096302
+PCS3 epoch 19 train 0.3649620362557471 val 0.550506517291069
+PCS3 epoch 20 train 0.30515506071969867 val 0.5000469163060188
+PCS3 epoch 21 train 0.24886866100132465 val 0.47464435175061226
+PCS3 epoch 22 train 0.22807940864004195 val 0.5504868216812611
+PCS3 epoch 23 train 0.21137919777538627 val 0.46792592480778694
+PCS3 epoch 24 train 0.1639491057721898 val 0.5680234953761101
+PCS3 epoch 25 train 0.15756263816729188 val 0.3802362270653248
+PCS3 epoch 26 train 0.11791851255111396 val 0.4419366344809532
+PCS3 epoch 27 train 0.09436841277056374 val 0.3693624781444669
+PCS3 epoch 28 train 0.09715450782096013 val 0.5163274835795164
+PCS3 epoch 29 train 0.09227193729020655 val 0.3886676663532853
+PCS3 epoch 30 train 0.08567995816702023 val 0.4985001627355814
+PCS3 epoch 31 train 0.11523066816153005 val 0.3782117422670126
+PCS3 epoch 32 train 0.06398120525409468 val 0.3892140556126833
+PCS3 epoch 33 train 0.046568569538067095 val 0.2801301162689924
+PCS3 epoch 34 train 0.0430095487536164 val 0.3838647250086069
+PCS3 epoch 35 train 0.042448842330486514 val 0.2846901931334287
+PCS3 epoch 36 train 0.045707325043622404 val 0.3328450177796185
+PCS3 epoch 37 train 0.06376157452905318 val 0.42670211801305413
+PCS3 epoch 38 train 0.0614141967962496 val 0.28920656675472856
+PCS3 epoch 39 train 0.038401483274355996 val 0.4177462914958596
+PCS3 epoch 40 train 0.028324805789452512 val 0.3525476292707026
+W1_RESULT W1-a token_identity {"best_epoch_zero_based": 32, "best_val_loss": 0.2801301162689924, "checkpoint_path": "W1-a/token_identity/PCS3_BRIDGE.pt", "checkpoint_seal_sha256": "35e5d9e60ea05795e9daac6563eab95af67b2a348a1bc063612a9c7287c4e56e", "checkpoint_sha256": "0def9c6b8bc6295745452e640be7eaac3f33cd50559b14ecd36e655b18f2096c", "coverage_from_val_evaluator": {"a": {"ge1": 0.734375, "ge3": 0.3125}, "b": {"ge1": 0.703125, "ge3": 0.296875}, "c": {"ge1": 0.734375, "ge3": 0.2734375}}, "receiver_preflight": {"by_selector": {"a": 1.0, "b": 1.0, "c": 1.0}, "overall": 1.0, "passed": true}, "training_config": {"batch_size": 16, "bridge_hidden": 768, "c_dim": 16, "c_dropout": 0.0, "epochs": 40, "eval_batch": 32, "k_slots": 4, "lr": 0.0003, "max_source_tokens": 260, "min_checkpoint_rate": 0.98, "min_one_wrong_coverage": 0.9, "min_parse_rate": 0.9, "min_receiver_oracle": 0.9, "min_source_coord_decode": 0.7, "min_source_triple_acc": 0.8, "min_three_wrong_coverage": 0.7, "out_dir": "/__modal/volumes/vo-r16ZpvZh4htF666voiY29E/w1-writer-sweep-f49f19039167/W1-a/token_identity", "pool_n": 1100, "seed": 20261004, "source_batch": 8, "source_proj": 128, "test_n": 256, "text_batch": 16, "train_n": 512, "val_n": 128, "weight_decay": 0.01}, "val": {"by_selector": {"a": {"correct": 127, "fidelity": 0.9921875, "fidelity_pct": 99.21875, "n": 128}, "b": {"correct": 109, "fidelity": 0.8515625, "fidelity_pct": 85.15625, "n": 128}, "c": {"correct": 122, "fidelity": 0.953125, "fidelity_pct": 95.3125, "n": 128}}, "fidelity": 0.9322916666666666, "fidelity_pct": 93.22916666666667, "n_records": 384, "n_states": 128}, "val_records_path": "W1-a/token_identity/W1_VAL_RECORDS.json"}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|#####     | 1/2 [00:03<00:03,  3.29s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:03<00:00,  1.69s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:03<00:00,  1.93s/it]
+PCS3 epoch 1 train 2.548494838178158 val 2.388341635465622
+PCS3 epoch 2 train 2.3051221147179604 val 2.2272401452064514
+PCS3 epoch 3 train 2.3182926699519157 val 2.227004826068878
+PCS3 epoch 4 train 2.306269660592079 val 2.40469953417778
+PCS3 epoch 5 train 2.3074536323547363 val 2.2287813127040863
+PCS3 epoch 6 train 2.3003229834139347 val 2.234420359134674
+PCS3 epoch 7 train 2.2191407456994057 val 2.184017598628998
+PCS3 epoch 8 train 2.094100147485733 val 2.0427032709121704
+PCS3 epoch 9 train 2.0470307245850563 val 2.0473487079143524
+PCS3 epoch 10 train 2.002768699079752 val 1.987961858510971
+PCS3 epoch 11 train 1.9486682042479515 val 2.131344050168991
+PCS3 epoch 12 train 1.9815840534865856 val 1.9499278366565704
+PCS3 epoch 13 train 1.9048987068235874 val 2.0095380395650864
+PCS3 epoch 14 train 1.8749609775841236 val 1.839985340833664
+PCS3 epoch 15 train 1.7999927662312984 val 1.846688151359558
+PCS3 epoch 16 train 1.7663930989801884 val 1.826933965086937
+PCS3 epoch 17 train 1.6508425995707512 val 1.659657135605812
+PCS3 epoch 18 train 1.559839177876711 val 1.6599488109350204
+PCS3 epoch 19 train 1.4636108577251434 val 1.5624482184648514
+PCS3 epoch 20 train 1.3243208341300488 val 1.5152623653411865
+PCS3 epoch 21 train 1.2367246057838202 val 1.34629787504673
+PCS3 epoch 22 train 1.1320905443280935 val 1.2594417333602905
+PCS3 epoch 23 train 1.0452747773379087 val 1.1671739742159843
+PCS3 epoch 24 train 1.0139540899544954 val 1.2372648194432259
+PCS3 epoch 25 train 0.9488020073622465 val 1.1338975951075554
+PCS3 epoch 26 train 0.8754488937556744 val 1.1591917499899864
+PCS3 epoch 27 train 0.817593976855278 val 1.147881105542183
+PCS3 epoch 28 train 0.7641005329787731 val 0.9820024445652962
+PCS3 epoch 29 train 0.8009983729571104 val 0.9517715647816658
+PCS3 epoch 30 train 0.7457970278337598 val 1.033093698322773
+PCS3 epoch 31 train 0.686446244828403 val 1.0571885854005814
+PCS3 epoch 32 train 0.6240123314782977 val 1.0542505010962486
+PCS3 epoch 33 train 0.6324344305321574 val 1.0456956177949905
+PCS3 epoch 34 train 0.616063411347568 val 0.8894586116075516
+PCS3 epoch 35 train 0.6273910012096167 val 0.8879261240363121
+PCS3 epoch 36 train 0.5135404001921415 val 0.8749937042593956
+PCS3 epoch 37 train 0.4805212300270796 val 0.9563328176736832
+PCS3 epoch 38 train 0.3988295355811715 val 0.9157689809799194
+PCS3 epoch 39 train 0.41740912571549416 val 0.9407947733998299
+PCS3 epoch 40 train 0.39925666665658355 val 0.8999225571751595
+W1_RESULT W1-b neural {"best_epoch_zero_based": 35, "best_val_loss": 0.8749937042593956, "checkpoint_path": "W1-b/neural/PCS3_BRIDGE.pt", "checkpoint_seal_sha256": "31bcbbcdc87b21cb982802dd4dd32e21ca57a2f7c671fa7747cc947c305ed2ef", "checkpoint_sha256": "486b589356f5058f2bb7300001840dc44f3e6dd7a78211fecb72d9aefeb87847", "coverage_from_val_evaluator": {"a": {"ge1": 0.734375, "ge3": 0.3125}, "b": {"ge1": 0.703125, "ge3": 0.296875}, "c": {"ge1": 0.734375, "ge3": 0.2734375}}, "receiver_preflight": {"by_selector": {"a": 1.0, "b": 1.0, "c": 1.0}, "overall": 1.0, "passed": true}, "training_config": {"batch_size": 16, "bridge_hidden": 768, "c_dim": 64, "c_dropout": 0.0, "epochs": 40, "eval_batch": 32, "k_slots": 4, "lr": 0.0003, "max_source_tokens": 260, "min_checkpoint_rate": 0.98, "min_one_wrong_coverage": 0.9, "min_parse_rate": 0.9, "min_receiver_oracle": 0.9, "min_source_coord_decode": 0.7, "min_source_triple_acc": 0.8, "min_three_wrong_coverage": 0.7, "out_dir": "/__modal/volumes/vo-r16ZpvZh4htF666voiY29E/w1-writer-sweep-f49f19039167/W1-b/neural", "pool_n": 1100, "seed": 20261004, "source_batch": 8, "source_proj": 128, "test_n": 256, "text_batch": 16, "train_n": 512, "val_n": 128, "weight_decay": 0.01}, "val": {"by_selector": {"a": {"correct": 98, "fidelity": 0.765625, "fidelity_pct": 76.5625, "n": 128}, "b": {"correct": 88, "fidelity": 0.6875, "fidelity_pct": 68.75, "n": 128}, "c": {"correct": 87, "fidelity": 0.6796875, "fidelity_pct": 67.96875, "n": 128}}, "fidelity": 0.7109375, "fidelity_pct": 71.09375, "n_records": 384, "n_states": 128}, "val_records_path": "W1-b/neural/W1_VAL_RECORDS.json"}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|#####     | 1/2 [00:02<00:02,  2.64s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:03<00:00,  1.42s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:03<00:00,  1.60s/it]
+PCS3 epoch 1 train 2.461505137383938 val 2.3005918860435486
+PCS3 epoch 2 train 2.010527592152357 val 1.7753798514604568
+PCS3 epoch 3 train 1.7968395538628101 val 2.29105544090271
+PCS3 epoch 4 train 2.055897679179907 val 2.0356729179620743
+PCS3 epoch 5 train 1.7773761190474033 val 1.6292028725147247
+PCS3 epoch 6 train 1.6267742179334164 val 1.590605080127716
+PCS3 epoch 7 train 1.538276083767414 val 1.4932996332645416
+PCS3 epoch 8 train 1.4178544878959656 val 1.4545387774705887
+PCS3 epoch 9 train 1.337001956999302 val 1.2868895828723907
+PCS3 epoch 10 train 1.217017887160182 val 1.2475621327757835
+PCS3 epoch 11 train 1.1620735451579094 val 1.1594167277216911
+PCS3 epoch 12 train 1.0424933396279812 val 1.1254993826150894
+PCS3 epoch 13 train 1.0007337080314755 val 1.053337000310421
+PCS3 epoch 14 train 0.9311010409146547 val 1.003715381026268
+PCS3 epoch 15 train 0.9226193446666002 val 1.0301823392510414
+PCS3 epoch 16 train 0.9085922874510288 val 0.9558976292610168
+PCS3 epoch 17 train 0.888482702895999 val 0.947296530008316
+PCS3 epoch 18 train 0.8908082069829106 val 0.9927958622574806
+PCS3 epoch 19 train 0.8892446663230658 val 1.0177700370550156
+PCS3 epoch 20 train 0.8730830792337656 val 0.9142956733703613
+PCS3 epoch 21 train 0.8561301808804274 val 0.9368815496563911
+PCS3 epoch 22 train 0.8482471704483032 val 0.9209688603878021
+PCS3 epoch 23 train 0.827660845592618 val 0.9192790240049362
+PCS3 epoch 24 train 0.81029037758708 val 0.9134039580821991
+PCS3 epoch 25 train 0.8045739904046059 val 0.8759145140647888
+PCS3 epoch 26 train 0.7894837595522404 val 0.8630761727690697
+PCS3 epoch 27 train 0.7889141561463475 val 0.885929599404335
+PCS3 epoch 28 train 0.7704831659793854 val 0.8574521690607071
+PCS3 epoch 29 train 0.7656783070415258 val 0.8583756387233734
+PCS3 epoch 30 train 0.7559335436671972 val 0.8686281517148018
+PCS3 epoch 31 train 0.7449259031563997 val 0.8384975865483284
+PCS3 epoch 32 train 0.6914032027125359 val 0.7481022626161575
+PCS3 epoch 33 train 0.5699867773801088 val 0.6610560715198517
+PCS3 epoch 34 train 0.47405345644801855 val 0.5891265459358692
+PCS3 epoch 35 train 0.37159756291657686 val 0.5204973332583904
+PCS3 epoch 36 train 0.2836120496504009 val 0.4258098788559437
+PCS3 epoch 37 train 0.19244331493973732 val 0.3661164175719023
+PCS3 epoch 38 train 0.14740342274308205 val 0.336883001960814
+PCS3 epoch 39 train 0.1141094685299322 val 0.3194104004651308
+PCS3 epoch 40 train 0.10393787059001625 val 0.32434819638729095
+W1_RESULT W1-b token_identity {"best_epoch_zero_based": 38, "best_val_loss": 0.3194104004651308, "checkpoint_path": "W1-b/token_identity/PCS3_BRIDGE.pt", "checkpoint_seal_sha256": "da0e10daf7e584bddabab5d44f9d1fa5548052f321ad72b4183ee16c932687cf", "checkpoint_sha256": "c2a26b682aa7b6f99b8616a397b132dcd62d090d6971aadad8b29d18f76f74e4", "coverage_from_val_evaluator": {"a": {"ge1": 0.734375, "ge3": 0.3125}, "b": {"ge1": 0.703125, "ge3": 0.296875}, "c": {"ge1": 0.734375, "ge3": 0.2734375}}, "receiver_preflight": {"by_selector": {"a": 1.0, "b": 1.0, "c": 1.0}, "overall": 1.0, "passed": true}, "training_config": {"batch_size": 16, "bridge_hidden": 768, "c_dim": 64, "c_dropout": 0.0, "epochs": 40, "eval_batch": 32, "k_slots": 4, "lr": 0.0003, "max_source_tokens": 260, "min_checkpoint_rate": 0.98, "min_one_wrong_coverage": 0.9, "min_parse_rate": 0.9, "min_receiver_oracle": 0.9, "min_source_coord_decode": 0.7, "min_source_triple_acc": 0.8, "min_three_wrong_coverage": 0.7, "out_dir": "/__modal/volumes/vo-r16ZpvZh4htF666voiY29E/w1-writer-sweep-f49f19039167/W1-b/token_identity", "pool_n": 1100, "seed": 20261004, "source_batch": 8, "source_proj": 128, "test_n": 256, "text_batch": 16, "train_n": 512, "val_n": 128, "weight_decay": 0.01}, "val": {"by_selector": {"a": {"correct": 117, "fidelity": 0.9140625, "fidelity_pct": 91.40625, "n": 128}, "b": {"correct": 111, "fidelity": 0.8671875, "fidelity_pct": 86.71875, "n": 128}, "c": {"correct": 121, "fidelity": 0.9453125, "fidelity_pct": 94.53125, "n": 128}}, "fidelity": 0.9088541666666666, "fidelity_pct": 90.88541666666667, "n_records": 384, "n_states": 128}, "val_records_path": "W1-b/token_identity/W1_VAL_RECORDS.json"}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|#####     | 1/2 [00:02<00:02,  2.76s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:03<00:00,  1.47s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:03<00:00,  1.66s/it]
+PCS3 epoch 1 train 2.337056078016758 val 2.25968337059021
+PCS3 epoch 2 train 2.230506408959627 val 2.213235914707184
+PCS3 epoch 3 train 2.220210023224354 val 2.2192750573158264
+PCS3 epoch 4 train 2.2225503847002983 val 2.241267502307892
+PCS3 epoch 5 train 2.1752814762294292 val 2.126373305916786
+PCS3 epoch 6 train 2.044043581932783 val 2.0431759655475616
+PCS3 epoch 7 train 1.9983411133289337 val 2.0124439150094986
+PCS3 epoch 8 train 1.952247366309166 val 2.0570566654205322
+PCS3 epoch 9 train 1.944395575672388 val 1.9660238921642303
+PCS3 epoch 10 train 1.9204499796032906 val 2.0111381858587265
+PCS3 epoch 11 train 1.944801576435566 val 1.9646678119897842
+PCS3 epoch 12 train 1.8511356301605701 val 1.8656976372003555
+PCS3 epoch 13 train 1.7846926338970661 val 1.9958272129297256
+PCS3 epoch 14 train 1.791123602539301 val 1.848749652504921
+PCS3 epoch 15 train 1.7781275548040867 val 1.8230173587799072
+PCS3 epoch 16 train 1.72300336509943 val 1.8560811579227448
+PCS3 epoch 17 train 1.7253976799547672 val 1.8612128347158432
+PCS3 epoch 18 train 1.6619424037635326 val 1.93632173538208
+PCS3 epoch 19 train 1.6359367966651917 val 1.7338609546422958
+PCS3 epoch 20 train 1.4834404364228249 val 1.6232617050409317
+PCS3 epoch 21 train 1.4397889599204063 val 1.5997442603111267
+PCS3 epoch 22 train 1.4443372171372175 val 1.6526623666286469
+PCS3 epoch 23 train 1.3975598812103271 val 1.5928881913423538
+PCS3 epoch 24 train 1.3094913829118013 val 1.560272917151451
+PCS3 epoch 25 train 1.2715593054890633 val 1.4969365149736404
+PCS3 epoch 26 train 1.1924394983798265 val 1.4924965351819992
+PCS3 epoch 27 train 1.1659512110054493 val 1.4851904064416885
+PCS3 epoch 28 train 1.1875510830432177 val 1.688681036233902
+PCS3 epoch 29 train 1.2225869596004486 val 1.5660344660282135
+PCS3 epoch 30 train 1.1784005612134933 val 1.49704147875309
+PCS3 epoch 31 train 1.1410475950688124 val 1.4879834949970245
+PCS3 epoch 32 train 1.0558079704642296 val 1.4857110977172852
+PCS3 epoch 33 train 0.9871552903205156 val 1.551946148276329
+PCS3 epoch 34 train 0.9596530608832836 val 1.411330059170723
+PCS3 epoch 35 train 0.9302031435072422 val 1.333450362086296
+PCS3 epoch 36 train 0.9072786513715982 val 1.3837145566940308
+PCS3 epoch 37 train 0.8044512327760458 val 1.2248599529266357
+PCS3 epoch 38 train 0.6970582930371165 val 1.197541981935501
+PCS3 epoch 39 train 0.7224423820152879 val 1.3860792219638824
+PCS3 epoch 40 train 0.6879268065094948 val 1.3112896531820297
+W1_RESULT W1-c neural {"best_epoch_zero_based": 37, "best_val_loss": 1.197541981935501, "checkpoint_path": "W1-c/neural/PCS3_BRIDGE.pt", "checkpoint_seal_sha256": "195068b2cf45dbce95d42c672c63d642d9e3dbce905349265f0d20fb2d2cfde6", "checkpoint_sha256": "1a88ecd8dd8f8ba28402641eab3772baa353060174184ccdbe82bf2d9cb5bcc5", "coverage_from_val_evaluator": {"a": {"ge1": 0.734375, "ge3": 0.3125}, "b": {"ge1": 0.703125, "ge3": 0.296875}, "c": {"ge1": 0.734375, "ge3": 0.2734375}}, "receiver_preflight": {"by_selector": {"a": 1.0, "b": 1.0, "c": 1.0}, "overall": 1.0, "passed": true}, "training_config": {"batch_size": 16, "bridge_hidden": 768, "c_dim": 64, "c_dropout": 0.0, "epochs": 40, "eval_batch": 32, "k_slots": 8, "lr": 0.0003, "max_source_tokens": 260, "min_checkpoint_rate": 0.98, "min_one_wrong_coverage": 0.9, "min_parse_rate": 0.9, "min_receiver_oracle": 0.9, "min_source_coord_decode": 0.7, "min_source_triple_acc": 0.8, "min_three_wrong_coverage": 0.7, "out_dir": "/__modal/volumes/vo-r16ZpvZh4htF666voiY29E/w1-writer-sweep-f49f19039167/W1-c/neural", "pool_n": 1100, "seed": 20261004, "source_batch": 8, "source_proj": 128, "test_n": 256, "text_batch": 16, "train_n": 512, "val_n": 128, "weight_decay": 0.01}, "val": {"by_selector": {"a": {"correct": 80, "fidelity": 0.625, "fidelity_pct": 62.5, "n": 128}, "b": {"correct": 69, "fidelity": 0.5390625, "fidelity_pct": 53.90625, "n": 128}, "c": {"correct": 73, "fidelity": 0.5703125, "fidelity_pct": 57.03125, "n": 128}}, "fidelity": 0.578125, "fidelity_pct": 57.8125, "n_records": 384, "n_states": 128}, "val_records_path": "W1-c/neural/W1_VAL_RECORDS.json"}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|#####     | 1/2 [00:02<00:02,  2.50s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:03<00:00,  1.37s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:03<00:00,  1.54s/it]
+PCS3 epoch 1 train 2.113030456006527 val 1.5399723052978516
+PCS3 epoch 2 train 1.330914780497551 val 1.2754416465759277
+PCS3 epoch 3 train 1.0383873265236616 val 0.9378807321190834
+PCS3 epoch 4 train 0.6683388631790876 val 0.6088697463274002
+PCS3 epoch 5 train 0.4369209692813456 val 0.4063460938632488
+PCS3 epoch 6 train 0.2784622637555003 val 0.3034852631390095
+PCS3 epoch 7 train 0.21195603162050247 val 0.2966455016285181
+PCS3 epoch 8 train 0.14101102226413786 val 0.2713354742154479
+PCS3 epoch 9 train 0.13100950449006632 val 0.1839242111891508
+PCS3 epoch 10 train 0.12331685412209481 val 0.24412291310727596
+PCS3 epoch 11 train 0.0977847323520109 val 0.15619398467242718
+PCS3 epoch 12 train 0.07436819344002288 val 0.1770687149837613
+PCS3 epoch 13 train 0.05608738426599302 val 0.16619648691266775
+PCS3 epoch 14 train 0.05279351910576224 val 0.11125928303226829
+PCS3 epoch 15 train 0.03929110978060635 val 0.14356925967149436
+PCS3 epoch 16 train 0.05138034860283369 val 0.15038658492267132
+PCS3 epoch 17 train 0.033661271027085604 val 0.07209662685636431
+PCS3 epoch 18 train 0.05183684810981504 val 0.12228028569370508
+PCS3 epoch 19 train 0.0531567919315421 val 0.15738495672121644
+PCS3 epoch 20 train 0.04481839305663016 val 0.09916209918446839
+PCS3 epoch 21 train 0.035143656150466995 val 0.17078614607453346
+PCS3 epoch 22 train 0.03815393667900935 val 0.12128005735576153
+PCS3 epoch 23 train 0.058937687335856026 val 0.08157556084915996
+PCS3 epoch 24 train 0.027332890713296365 val 0.0631972037954256
+PCS3 epoch 25 train 0.026791031243192265 val 0.07357460641651414
+PCS3 epoch 26 train 0.019094007499916188 val 0.0791484851797577
+PCS3 epoch 27 train 0.018930390731838997 val 0.11483264242997393
+PCS3 epoch 28 train 0.010258302549573273 val 0.08747862817835994
+PCS3 epoch 29 train 0.016193662966543343 val 0.07576038912520744
+PCS3 epoch 30 train 0.011234821295147412 val 0.060589714092202485
+PCS3 epoch 31 train 0.007646352931715228 val 0.11041520105209202
+PCS3 epoch 32 train 0.012206746815081715 val 0.10649371883482672
+PCS3 epoch 33 train 0.009117968420014222 val 0.13438029307872057
+PCS3 epoch 34 train 0.012165214531705715 val 0.08909541362663731
+PCS3 epoch 35 train 0.008853216658962992 val 0.09612979873782024
+PCS3 epoch 36 train 0.011415465115078405 val 0.06026920158183202
+PCS3 epoch 37 train 0.01230674658472708 val 0.08323446696158499
+PCS3 epoch 38 train 0.029053726614620246 val 0.12523663294268772
+PCS3 epoch 39 train 0.01941444348267396 val 0.1269959051569458
+PCS3 epoch 40 train 0.012298798234496644 val 0.10774338885676116
+W1_RESULT W1-c token_identity {"best_epoch_zero_based": 35, "best_val_loss": 0.06026920158183202, "checkpoint_path": "W1-c/token_identity/PCS3_BRIDGE.pt", "checkpoint_seal_sha256": "664a9debf163fb45b0fa34cc497b50b825a7c4c077b1ea5dda9e434bf3f55dac", "checkpoint_sha256": "c84960e0840bc8f20e293edcfb9be97a44febf129a7e998029bba80befd76ac1", "coverage_from_val_evaluator": {"a": {"ge1": 0.734375, "ge3": 0.3125}, "b": {"ge1": 0.703125, "ge3": 0.296875}, "c": {"ge1": 0.734375, "ge3": 0.2734375}}, "receiver_preflight": {"by_selector": {"a": 1.0, "b": 1.0, "c": 1.0}, "overall": 1.0, "passed": true}, "training_config": {"batch_size": 16, "bridge_hidden": 768, "c_dim": 64, "c_dropout": 0.0, "epochs": 40, "eval_batch": 32, "k_slots": 8, "lr": 0.0003, "max_source_tokens": 260, "min_checkpoint_rate": 0.98, "min_one_wrong_coverage": 0.9, "min_parse_rate": 0.9, "min_receiver_oracle": 0.9, "min_source_coord_decode": 0.7, "min_source_triple_acc": 0.8, "min_three_wrong_coverage": 0.7, "out_dir": "/__modal/volumes/vo-r16ZpvZh4htF666voiY29E/w1-writer-sweep-f49f19039167/W1-c/token_identity", "pool_n": 1100, "seed": 20261004, "source_batch": 8, "source_proj": 128, "test_n": 256, "text_batch": 16, "train_n": 512, "val_n": 128, "weight_decay": 0.01}, "val": {"by_selector": {"a": {"correct": 128, "fidelity": 1.0, "fidelity_pct": 100.0, "n": 128}, "b": {"correct": 125, "fidelity": 0.9765625, "fidelity_pct": 97.65625, "n": 128}, "c": {"correct": 126, "fidelity": 0.984375, "fidelity_pct": 98.4375, "n": 128}}, "fidelity": 0.9869791666666666, "fidelity_pct": 98.69791666666667, "n_records": 384, "n_states": 128}, "val_records_path": "W1-c/token_identity/W1_VAL_RECORDS.json"}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|#####     | 1/2 [00:02<00:02,  2.48s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:03<00:00,  1.36s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:03<00:00,  1.52s/it]
+PCS3 epoch 1 train 2.430543228983879 val 2.2977381348609924
+PCS3 epoch 2 train 2.281752273440361 val 2.2297564148902893
+PCS3 epoch 3 train 2.2555782347917557 val 2.219211667776108
+PCS3 epoch 4 train 2.238193430006504 val 2.2249875664711
+PCS3 epoch 5 train 2.230171784758568 val 2.2713940143585205
+PCS3 epoch 6 train 2.2635844349861145 val 2.24363973736763
+PCS3 epoch 7 train 2.231912571936846 val 2.2241415977478027
+PCS3 epoch 8 train 2.2205070927739143 val 2.2153770327568054
+PCS3 epoch 9 train 2.2182945385575294 val 2.210844039916992
+PCS3 epoch 10 train 2.193856928497553 val 2.1223805248737335
+PCS3 epoch 11 train 2.0606504529714584 val 2.01789453625679
+PCS3 epoch 12 train 2.0036626867949963 val 2.0252812057733536
+PCS3 epoch 13 train 2.0117136240005493 val 1.9903781861066818
+PCS3 epoch 14 train 2.0523274019360542 val 2.0820730924606323
+PCS3 epoch 15 train 1.982896700501442 val 2.078185498714447
+PCS3 epoch 16 train 1.9984608478844166 val 2.0184117555618286
+PCS3 epoch 17 train 1.9803884588181973 val 2.0980482697486877
+PCS3 epoch 18 train 1.9724606275558472 val 1.9962545186281204
+PCS3 epoch 19 train 1.9365942515432835 val 1.9679008722305298
+PCS3 epoch 20 train 1.9332851245999336 val 1.962445929646492
+PCS3 epoch 21 train 1.9045078232884407 val 1.9967155158519745
+PCS3 epoch 22 train 1.9390098489820957 val 2.0033784061670303
+PCS3 epoch 23 train 1.916424885392189 val 1.9809510260820389
+PCS3 epoch 24 train 1.9286371171474457 val 2.0499661415815353
+PCS3 epoch 25 train 1.9751339182257652 val 2.0050552040338516
+PCS3 epoch 26 train 1.9309478178620338 val 2.0130350291728973
+PCS3 epoch 27 train 1.9064199216663837 val 1.9308566749095917
+PCS3 epoch 28 train 1.8613058738410473 val 1.9642227590084076
+PCS3 epoch 29 train 1.8450762555003166 val 1.928581789135933
+PCS3 epoch 30 train 1.897179439663887 val 2.037315532565117
+PCS3 epoch 31 train 1.8297552727162838 val 1.874847263097763
+PCS3 epoch 32 train 1.747082207351923 val 1.813834473490715
+PCS3 epoch 33 train 1.7197838798165321 val 1.7788398414850235
+PCS3 epoch 34 train 1.7124168910086155 val 1.7862938791513443
+PCS3 epoch 35 train 1.7271368205547333 val 1.7810040563344955
+PCS3 epoch 36 train 1.69022511318326 val 1.900189757347107
+PCS3 epoch 37 train 1.620565164834261 val 1.7263076454401016
+PCS3 epoch 38 train 1.6225773617625237 val 1.8246061354875565
+PCS3 epoch 39 train 1.6741439327597618 val 1.6935022920370102
+PCS3 epoch 40 train 1.5775388702750206 val 1.6438492834568024
+W1_RESULT W1-d neural {"best_epoch_zero_based": 39, "best_val_loss": 1.6438492834568024, "checkpoint_path": "W1-d/neural/PCS3_BRIDGE.pt", "checkpoint_seal_sha256": "2608afd4bbd682d1ada0ffb8c2fee48739ad81eaab2f7e19c46a4ce5562532aa", "checkpoint_sha256": "bf4597aee8c9832e390eec34b59850066049d041e3856f593a734edf3a430a15", "coverage_from_val_evaluator": {"a": {"ge1": 0.734375, "ge3": 0.3125}, "b": {"ge1": 0.703125, "ge3": 0.296875}, "c": {"ge1": 0.734375, "ge3": 0.2734375}}, "receiver_preflight": {"by_selector": {"a": 1.0, "b": 1.0, "c": 1.0}, "overall": 1.0, "passed": true}, "training_config": {"batch_size": 16, "bridge_hidden": 768, "c_dim": 64, "c_dropout": 0.1, "epochs": 40, "eval_batch": 32, "k_slots": 8, "lr": 0.0003, "max_source_tokens": 260, "min_checkpoint_rate": 0.98, "min_one_wrong_coverage": 0.9, "min_parse_rate": 0.9, "min_receiver_oracle": 0.9, "min_source_coord_decode": 0.7, "min_source_triple_acc": 0.8, "min_three_wrong_coverage": 0.7, "out_dir": "/__modal/volumes/vo-r16ZpvZh4htF666voiY29E/w1-writer-sweep-f49f19039167/W1-d/neural", "pool_n": 1100, "seed": 20261004, "source_batch": 8, "source_proj": 128, "test_n": 256, "text_batch": 16, "train_n": 512, "val_n": 128, "weight_decay": 0.01}, "val": {"by_selector": {"a": {"correct": 56, "fidelity": 0.4375, "fidelity_pct": 43.75, "n": 128}, "b": {"correct": 38, "fidelity": 0.296875, "fidelity_pct": 29.6875, "n": 128}, "c": {"correct": 58, "fidelity": 0.453125, "fidelity_pct": 45.3125, "n": 128}}, "fidelity": 0.3958333333333333, "fidelity_pct": 39.583333333333336, "n_records": 384, "n_states": 128}, "val_records_path": "W1-d/neural/W1_VAL_RECORDS.json"}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|#####     | 1/2 [00:02<00:02,  2.62s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:03<00:00,  1.48s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:03<00:00,  1.65s/it]
+PCS3 epoch 1 train 2.31865281611681 val 1.81764155626297
+PCS3 epoch 2 train 1.6222122050821781 val 1.36970616877079
+PCS3 epoch 3 train 1.211026581004262 val 1.137001559138298
+PCS3 epoch 4 train 1.0057085398584604 val 1.0039657577872276
+PCS3 epoch 5 train 0.9320246111601591 val 0.9427542835474014
+PCS3 epoch 6 train 0.8529316242784262 val 0.8215177357196808
+PCS3 epoch 7 train 0.762465663254261 val 0.7637416198849678
+PCS3 epoch 8 train 0.6762373987585306 val 0.688079409301281
+PCS3 epoch 9 train 0.5820282604545355 val 0.6534718051552773
+PCS3 epoch 10 train 0.488310057669878 val 0.5516186282038689
+PCS3 epoch 11 train 0.37974592531099916 val 0.5290714763104916
+PCS3 epoch 12 train 0.32868572999723256 val 0.3914312459528446
+PCS3 epoch 13 train 0.22400942048989236 val 0.2911924384534359
+PCS3 epoch 14 train 0.21077391906874254 val 0.2475507240742445
+PCS3 epoch 15 train 0.18551088264212012 val 0.27994157187640667
+PCS3 epoch 16 train 0.16338938678381965 val 0.294301426038146
+PCS3 epoch 17 train 0.15128064679447562 val 0.21272749919444323
+PCS3 epoch 18 train 0.11853403193526901 val 0.1319530364125967
+PCS3 epoch 19 train 0.11109817743999884 val 0.20900066196918488
+PCS3 epoch 20 train 0.0885841904382687 val 0.13195911911316216
+PCS3 epoch 21 train 0.0701720765355276 val 0.10295905242674053
+PCS3 epoch 22 train 0.07827242872735951 val 0.14591150265187025
+PCS3 epoch 23 train 0.07916617536102422 val 0.1180548551492393
+PCS3 epoch 24 train 0.06758609783719294 val 0.14472624682821333
+PCS3 epoch 25 train 0.05088081938447431 val 0.13190453429706395
+PCS3 epoch 26 train 0.0434295180166373 val 0.11293049424421042
+PCS3 epoch 27 train 0.03509465569368331 val 0.13498054631054401
+PCS3 epoch 28 train 0.03244274321696139 val 0.12035197764635086
+PCS3 epoch 29 train 0.029043921022093855 val 0.1372448186739348
+PCS3 epoch 30 train 0.031955643695255276 val 0.15960362134501338
+PCS3 epoch 31 train 0.032390697284427006 val 0.16209359769709408
+PCS3 epoch 32 train 0.060333270419505425 val 0.09230305359233171
+PCS3 epoch 33 train 0.038704327282175655 val 0.12301005481276661
+PCS3 epoch 34 train 0.012152302730100928 val 0.16227000445360318
+PCS3 epoch 35 train 0.020509687536105048 val 0.10825136175844818
+PCS3 epoch 36 train 0.030161395956383785 val 0.14135066187009215
+PCS3 epoch 37 train 0.012906092822959181 val 0.1747026490047574
+PCS3 epoch 38 train 0.01339000183634198 val 0.10936885478440672
+PCS3 epoch 39 train 0.02219927407350042 val 0.07136905309744179
+PCS3 epoch 40 train 0.015478302046176395 val 0.1123006115667522
+W1_RESULT W1-d token_identity {"best_epoch_zero_based": 38, "best_val_loss": 0.07136905309744179, "checkpoint_path": "W1-d/token_identity/PCS3_BRIDGE.pt", "checkpoint_seal_sha256": "4f7515c3cb900c10ae994f31aef813572b6da576e4045ea782134a40833ad5f7", "checkpoint_sha256": "dd8300c42d0afcc72e4f16a55dba3a036e0af86c1f7bb21c9beb1b6f7b57e08a", "coverage_from_val_evaluator": {"a": {"ge1": 0.734375, "ge3": 0.3125}, "b": {"ge1": 0.703125, "ge3": 0.296875}, "c": {"ge1": 0.734375, "ge3": 0.2734375}}, "receiver_preflight": {"by_selector": {"a": 1.0, "b": 1.0, "c": 1.0}, "overall": 1.0, "passed": true}, "training_config": {"batch_size": 16, "bridge_hidden": 768, "c_dim": 64, "c_dropout": 0.1, "epochs": 40, "eval_batch": 32, "k_slots": 8, "lr": 0.0003, "max_source_tokens": 260, "min_checkpoint_rate": 0.98, "min_one_wrong_coverage": 0.9, "min_parse_rate": 0.9, "min_receiver_oracle": 0.9, "min_source_coord_decode": 0.7, "min_source_triple_acc": 0.8, "min_three_wrong_coverage": 0.7, "out_dir": "/__modal/volumes/vo-r16ZpvZh4htF666voiY29E/w1-writer-sweep-f49f19039167/W1-d/token_identity", "pool_n": 1100, "seed": 20261004, "source_batch": 8, "source_proj": 128, "test_n": 256, "text_batch": 16, "train_n": 512, "val_n": 128, "weight_decay": 0.01}, "val": {"by_selector": {"a": {"correct": 126, "fidelity": 0.984375, "fidelity_pct": 98.4375, "n": 128}, "b": {"correct": 124, "fidelity": 0.96875, "fidelity_pct": 96.875, "n": 128}, "c": {"correct": 126, "fidelity": 0.984375, "fidelity_pct": 98.4375, "n": 128}}, "fidelity": 0.9791666666666666, "fidelity_pct": 97.91666666666667, "n_records": 384, "n_states": 128}, "val_records_path": "W1-d/token_identity/W1_VAL_RECORDS.json"}
+W1_CHOICE {"WRITER_CEILING_FLAG": false, "choice_seal_sha256": "0785f4abc44cce60d2e39b22c13868f693bc86d5075b43e0ec1b6a5153199af3", "chosen_config": "W1-b", "chosen_neural_val_fidelity": 0.7109375, "chosen_token_identity_val_fidelity": 0.9088541666666666}
+EXIT_CODE 0

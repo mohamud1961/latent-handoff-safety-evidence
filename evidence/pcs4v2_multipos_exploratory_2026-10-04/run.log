@@ -1,0 +1,703 @@
+
+$ python /root/adapt.py --features /artifacts/pcs4v2-multipos-2aedd7129e4e/PCS4V2_MULTIPOS_FEATURES.pt --gate /root/GATE.json --stage-a /root/STAGE_A.json --arm neural --out-dir /artifacts/pcs4v2-multipos-exploratory-095d34455c78/src_neural
+ADAPTED neural (896, 90, 2560) passing 17
+
+$ python /root/adapt.py --features /artifacts/pcs4v2-multipos-2aedd7129e4e/PCS4V2_MULTIPOS_FEATURES.pt --gate /root/GATE.json --stage-a /root/STAGE_A.json --arm token_identity --out-dir /artifacts/pcs4v2-multipos-exploratory-095d34455c78/src_ti
+ADAPTED token_identity (896, 10, 30) passing 17
+
+$ python /root/stage_b.py --source-cache /artifacts/pcs4v2-multipos-exploratory-095d34455c78/src_neural/PCS4V2_SOURCE_CACHE.pt --stage-a /artifacts/pcs4v2-multipos-exploratory-095d34455c78/src_neural/PCS4V2_STAGE_A.json --out-dir /artifacts/pcs4v2-multipos-exploratory-095d34455c78/bridges_neural --exploratory-override
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [00:12<00:12, 12.06s/it]Fetching 2 files: 100%|██████████| 2/2 [00:21<00:00, 10.81s/it]Fetching 2 files: 100%|██████████| 2/2 [00:21<00:00, 10.81s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.38s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.21s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.38s/it]
+TRACE_TARGET_STATS {"fraction_truncated": 0.0, "max_target_tokens": 384, "max_tokens": 285, "mean_tokens": 285.0, "median_tokens": 285.0, "n": 896, "p95_tokens": 285.0}
+ARM_F 1 train 0.312186163617298 val 0.17080241441726685
+ARM_F 2 train 0.16322180698625743 val 0.15905152447521687
+ARM_F 3 train 0.15778068162035197 val 0.15601074695587158
+ARM_F 4 train 0.15317026211414486 val 0.1541760335676372
+ARM_F 5 train 0.1526725176954642 val 0.14979555504396558
+ARM_F 6 train 0.14763605466578156 val 0.15428122924640775
+ARM_T 1 train 2.3378576673567295 val_acc 0.2890625
+ARM_T 2 train 2.2451678290963173 val_acc 0.1640625
+ARM_T 3 train 2.2083334550261497 val_acc 0.2890625
+ARM_T 4 train 2.219433829188347 val_acc 0.2890625
+ARM_T 5 train 2.1892178282141685 val_acc 0.15625
+ARM_T 6 train 2.2395186349749565 val_acc 0.1953125
+ARM_T 7 train 2.3211792446672916 val_acc 0.2890625
+ARM_T 8 train 2.1204496435821056 val_acc 0.328125
+{
+  "config": {
+    "seed": 20261004,
+    "c_dim": 16,
+    "k_slots": 4,
+    "source_proj": 128,
+    "hidden": 512,
+    "f_epochs": 6,
+    "t_epochs": 8,
+    "f_batch": 4,
+    "t_batch": 16,
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "max_trace_target_tokens": 384,
+    "out_dir": "/artifacts/pcs4v2-multipos-exploratory-095d34455c78/bridges_neural"
+  },
+  "receiver_model": "Qwen/Qwen3-1.7B",
+  "source_cache_payload": {
+    "config": {
+      "seed": 20261004,
+      "pool_n": 896,
+      "train_n": 512,
+      "val_n": 128,
+      "test_n": 256,
+      "depth": 8,
+      "max_trace_tokens": 420,
+      "source_batch": 8,
+      "receiver_batch": 32,
+      "out_dir": "/kaggle/working"
+    },
+    "source_model": "Qwen/Qwen3-4B",
+    "receiver_model": "Qwen/Qwen3-1.7B",
+    "source_layers": [
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36
+    ],
+    "source_gates": {
+      "pool_parse_rate": 1.0,
+      "pool_checkpoint_marker_rate": 1.0,
+      "pool_complete_parse_and_checkpoint_rate": 1.0,
+      "selected_n": 896,
+      "source_belief_accuracy_all_coordinates": 0.9693700396825397,
+      "final_strict_triple_accuracy": 0.8895089285714286,
+      "mistake_instances_all_selected": 741,
+      "mistake_episodes_all_selected": 132
+    },
+    "decodability": {
+      "n_properties": 27,
+      "passing_ge_80": 17,
+      "passing_properties": [
+        "s0_a",
+        "s0_b",
+        "s0_c",
+        "s1_a",
+        "s1_b",
+        "s1_c",
+        "s2_a",
+        "s2_b",
+        "s2_c",
+        "s3_a",
+        "s3_b",
+        "s3_c",
+        "s4_c",
+        "s5_c",
+        "s6_c",
+        "s7_c",
+        "s8_c"
+      ],
+      "map": {
+        "s0_a": {
+          "val_accuracy": 0.9921875,
+          "lambda": 0.001
+        },
+        "s0_b": {
+          "val_accuracy": 0.9453125,
+          "lambda": 0.001
+        },
+        "s0_c": {
+          "val_accuracy": 1.0,
+          "lambda": 0.1
+        },
+        "s1_a": {
+          "val_accuracy": 0.9609375,
+          "lambda": 0.001
+        },
+        "s1_b": {
+          "val_accuracy": 0.9453125,
+          "lambda": 0.001
+        },
+        "s1_c": {
+          "val_accuracy": 0.9921875,
+          "lambda": 0.001
+        },
+        "s2_a": {
+          "val_accuracy": 0.9609375,
+          "lambda": 0.001
+        },
+        "s2_b": {
+          "val_accuracy": 0.859375,
+          "lambda": 0.001
+        },
+        "s2_c": {
+          "val_accuracy": 0.984375,
+          "lambda": 0.001
+        },
+        "s3_a": {
+          "val_accuracy": 0.9609375,
+          "lambda": 0.001
+        },
+        "s3_b": {
+          "val_accuracy": 0.859375,
+          "lambda": 0.001
+        },
+        "s3_c": {
+          "val_accuracy": 0.9921875,
+          "lambda": 0.001
+        },
+        "s4_a": {
+          "val_accuracy": 0.7265625,
+          "lambda": 0.01
+        },
+        "s4_b": {
+          "val_accuracy": 0.640625,
+          "lambda": 0.001
+        },
+        "s4_c": {
+          "val_accuracy": 0.96875,
+          "lambda": 0.001
+        },
+        "s5_a": {
+          "val_accuracy": 0.609375,
+          "lambda": 0.001
+        },
+        "s5_b": {
+          "val_accuracy": 0.6328125,
+          "lambda": 0.001
+        },
+        "s5_c": {
+          "val_accuracy": 0.984375,
+          "lambda": 0.001
+        },
+        "s6_a": {
+          "val_accuracy": 0.578125,
+          "lambda": 0.001
+        },
+        "s6_b": {
+          "val_accuracy": 0.578125,
+          "lambda": 0.001
+        },
+        "s6_c": {
+          "val_accuracy": 0.9609375,
+          "lambda": 0.001
+        },
+        "s7_a": {
+          "val_accuracy": 0.515625,
+          "lambda": 0.01
+        },
+        "s7_b": {
+          "val_accuracy": 0.5546875,
+          "lambda": 0.1
+        },
+        "s7_c": {
+          "val_accuracy": 0.9921875,
+          "lambda": 0.001
+        },
+        "s8_a": {
+          "val_accuracy": 0.484375,
+          "lambda": 0.001
+        },
+        "s8_b": {
+          "val_accuracy": 0.5078125,
+          "lambda": 0.01
+        },
+        "s8_c": {
+          "val_accuracy": 1.0,
+          "lambda": 0.001
+        }
+      },
+      "sealed_test_mistake_instances_on_passing_properties": 98,
+      "sealed_test_mistake_episodes_on_passing_properties": 24,
+      "multipos_map_source": "concatenated"
+    },
+    "receiver_probe_gate": {
+      "equality": {
+        "n": 256,
+        "accuracy": 0.9296875
+      },
+      "shift_plus_1": {
+        "n": 256,
+        "accuracy": 0.8125
+      }
+    },
+    "stage_a_pass": false,
+    "multipos_arm": "neural"
+  },
+  "strict_stage_a_gate": {
+    "passes": true,
+    "checks": {
+      "pool_parse_rate_ge_90": true,
+      "checkpoint_rate_ge_98": true,
+      "final_triple_ge_80": true,
+      "passing_coordinates_ge_18": false,
+      "each_register_ge_5": false,
+      "all_final_coordinates_ge_80": false,
+      "mistake_instances_ge_25": true,
+      "mistake_episodes_ge_10": true
+    },
+    "passing_coordinates": [
+      "s0_a",
+      "s0_b",
+      "s0_c",
+      "s1_a",
+      "s1_b",
+      "s1_c",
+      "s2_a",
+      "s2_b",
+      "s2_c",
+      "s3_a",
+      "s3_b",
+      "s3_c",
+      "s4_c",
+      "s5_c",
+      "s6_c",
+      "s7_c",
+      "s8_c"
+    ],
+    "passing_coordinate_count": 17,
+    "passing_by_register": {
+      "a": 4,
+      "b": 4,
+      "c": 9
+    },
+    "final_coordinate_val_accuracy": {
+      "a": 0.484375,
+      "b": 0.5078125,
+      "c": 1.0
+    },
+    "overridden_checks": {
+      "passing_coordinates_ge_18": false,
+      "each_register_ge_5": false,
+      "all_final_coordinates_ge_80": false
+    },
+    "passes_original": false,
+    "label": "EXPLORATORY"
+  },
+  "trace_target_stats": {
+    "n": 896,
+    "mean_tokens": 285.0,
+    "median_tokens": 285.0,
+    "p95_tokens": 285.0,
+    "max_tokens": 285,
+    "fraction_truncated": 0.0,
+    "max_target_tokens": 384
+  },
+  "handoff_order": "instruction_context -> PCS -> query_or_generation",
+  "arm_f": {
+    "best_epoch": 4,
+    "best_val_loss": 0.14979555504396558
+  },
+  "arm_t": {
+    "best_epoch": 7,
+    "best_val_accuracy": 0.328125
+  },
+  "sealed_probe_status": "NOT_REVEALED"
+}
+
+$ python /root/stage_b.py --source-cache /artifacts/pcs4v2-multipos-exploratory-095d34455c78/src_ti/PCS4V2_SOURCE_CACHE.pt --stage-a /artifacts/pcs4v2-multipos-exploratory-095d34455c78/src_ti/PCS4V2_STAGE_A.json --out-dir /artifacts/pcs4v2-multipos-exploratory-095d34455c78/bridges_ti --exploratory-override
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.44s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.26s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.44s/it]
+TRACE_TARGET_STATS {"fraction_truncated": 0.0, "max_target_tokens": 384, "max_tokens": 285, "mean_tokens": 285.0, "median_tokens": 285.0, "n": 896, "p95_tokens": 285.0}
+ARM_F 1 train 0.3446989656658843 val 0.16537042381241918
+ARM_F 2 train 0.1591423664940521 val 0.154916075989604
+ARM_F 3 train 0.15262509079184383 val 0.1519221467897296
+ARM_F 4 train 0.14895116456318647 val 0.1533617191016674
+ARM_F 5 train 0.14841554482700303 val 0.14678652118891478
+ARM_F 6 train 0.14600766549119726 val 0.14710065815597773
+ARM_T 1 train 2.0520792342722416 val_acc 0.515625
+ARM_T 2 train 1.2317431513220072 val_acc 0.78125
+ARM_T 3 train 0.532811734592542 val_acc 0.9296875
+ARM_T 4 train 0.18666638275317382 val_acc 0.9765625
+ARM_T 5 train 0.08645259825243556 val_acc 0.9921875
+ARM_T 6 train 0.03914997570518608 val_acc 0.9921875
+ARM_T 7 train 0.028855781664788083 val_acc 0.9921875
+ARM_T 8 train 0.01608219774425379 val_acc 0.9921875
+{
+  "config": {
+    "seed": 20261004,
+    "c_dim": 16,
+    "k_slots": 4,
+    "source_proj": 128,
+    "hidden": 512,
+    "f_epochs": 6,
+    "t_epochs": 8,
+    "f_batch": 4,
+    "t_batch": 16,
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "max_trace_target_tokens": 384,
+    "out_dir": "/artifacts/pcs4v2-multipos-exploratory-095d34455c78/bridges_ti"
+  },
+  "receiver_model": "Qwen/Qwen3-1.7B",
+  "source_cache_payload": {
+    "config": {
+      "seed": 20261004,
+      "pool_n": 896,
+      "train_n": 512,
+      "val_n": 128,
+      "test_n": 256,
+      "depth": 8,
+      "max_trace_tokens": 420,
+      "source_batch": 8,
+      "receiver_batch": 32,
+      "out_dir": "/kaggle/working"
+    },
+    "source_model": "Qwen/Qwen3-4B",
+    "receiver_model": "Qwen/Qwen3-1.7B",
+    "source_layers": [
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36
+    ],
+    "source_gates": {
+      "pool_parse_rate": 1.0,
+      "pool_checkpoint_marker_rate": 1.0,
+      "pool_complete_parse_and_checkpoint_rate": 1.0,
+      "selected_n": 896,
+      "source_belief_accuracy_all_coordinates": 0.9693700396825397,
+      "final_strict_triple_accuracy": 0.8895089285714286,
+      "mistake_instances_all_selected": 741,
+      "mistake_episodes_all_selected": 132
+    },
+    "decodability": {
+      "n_properties": 27,
+      "passing_ge_80": 17,
+      "passing_properties": [
+        "s0_a",
+        "s0_b",
+        "s0_c",
+        "s1_a",
+        "s1_b",
+        "s1_c",
+        "s2_a",
+        "s2_b",
+        "s2_c",
+        "s3_a",
+        "s3_b",
+        "s3_c",
+        "s4_c",
+        "s5_c",
+        "s6_c",
+        "s7_c",
+        "s8_c"
+      ],
+      "map": {
+        "s0_a": {
+          "val_accuracy": 0.9921875,
+          "lambda": 0.001
+        },
+        "s0_b": {
+          "val_accuracy": 0.9453125,
+          "lambda": 0.001
+        },
+        "s0_c": {
+          "val_accuracy": 1.0,
+          "lambda": 0.1
+        },
+        "s1_a": {
+          "val_accuracy": 0.9609375,
+          "lambda": 0.001
+        },
+        "s1_b": {
+          "val_accuracy": 0.9453125,
+          "lambda": 0.001
+        },
+        "s1_c": {
+          "val_accuracy": 0.9921875,
+          "lambda": 0.001
+        },
+        "s2_a": {
+          "val_accuracy": 0.9609375,
+          "lambda": 0.001
+        },
+        "s2_b": {
+          "val_accuracy": 0.859375,
+          "lambda": 0.001
+        },
+        "s2_c": {
+          "val_accuracy": 0.984375,
+          "lambda": 0.001
+        },
+        "s3_a": {
+          "val_accuracy": 0.9609375,
+          "lambda": 0.001
+        },
+        "s3_b": {
+          "val_accuracy": 0.859375,
+          "lambda": 0.001
+        },
+        "s3_c": {
+          "val_accuracy": 0.9921875,
+          "lambda": 0.001
+        },
+        "s4_a": {
+          "val_accuracy": 0.7265625,
+          "lambda": 0.01
+        },
+        "s4_b": {
+          "val_accuracy": 0.640625,
+          "lambda": 0.001
+        },
+        "s4_c": {
+          "val_accuracy": 0.96875,
+          "lambda": 0.001
+        },
+        "s5_a": {
+          "val_accuracy": 0.609375,
+          "lambda": 0.001
+        },
+        "s5_b": {
+          "val_accuracy": 0.6328125,
+          "lambda": 0.001
+        },
+        "s5_c": {
+          "val_accuracy": 0.984375,
+          "lambda": 0.001
+        },
+        "s6_a": {
+          "val_accuracy": 0.578125,
+          "lambda": 0.001
+        },
+        "s6_b": {
+          "val_accuracy": 0.578125,
+          "lambda": 0.001
+        },
+        "s6_c": {
+          "val_accuracy": 0.9609375,
+          "lambda": 0.001
+        },
+        "s7_a": {
+          "val_accuracy": 0.515625,
+          "lambda": 0.01
+        },
+        "s7_b": {
+          "val_accuracy": 0.5546875,
+          "lambda": 0.1
+        },
+        "s7_c": {
+          "val_accuracy": 0.9921875,
+          "lambda": 0.001
+        },
+        "s8_a": {
+          "val_accuracy": 0.484375,
+          "lambda": 0.001
+        },
+        "s8_b": {
+          "val_accuracy": 0.5078125,
+          "lambda": 0.01
+        },
+        "s8_c": {
+          "val_accuracy": 1.0,
+          "lambda": 0.001
+        }
+      },
+      "sealed_test_mistake_instances_on_passing_properties": 98,
+      "sealed_test_mistake_episodes_on_passing_properties": 24,
+      "multipos_map_source": "concatenated"
+    },
+    "receiver_probe_gate": {
+      "equality": {
+        "n": 256,
+        "accuracy": 0.9296875
+      },
+      "shift_plus_1": {
+        "n": 256,
+        "accuracy": 0.8125
+      }
+    },
+    "stage_a_pass": false,
+    "multipos_arm": "token_identity"
+  },
+  "strict_stage_a_gate": {
+    "passes": true,
+    "checks": {
+      "pool_parse_rate_ge_90": true,
+      "checkpoint_rate_ge_98": true,
+      "final_triple_ge_80": true,
+      "passing_coordinates_ge_18": false,
+      "each_register_ge_5": false,
+      "all_final_coordinates_ge_80": false,
+      "mistake_instances_ge_25": true,
+      "mistake_episodes_ge_10": true
+    },
+    "passing_coordinates": [
+      "s0_a",
+      "s0_b",
+      "s0_c",
+      "s1_a",
+      "s1_b",
+      "s1_c",
+      "s2_a",
+      "s2_b",
+      "s2_c",
+      "s3_a",
+      "s3_b",
+      "s3_c",
+      "s4_c",
+      "s5_c",
+      "s6_c",
+      "s7_c",
+      "s8_c"
+    ],
+    "passing_coordinate_count": 17,
+    "passing_by_register": {
+      "a": 4,
+      "b": 4,
+      "c": 9
+    },
+    "final_coordinate_val_accuracy": {
+      "a": 0.484375,
+      "b": 0.5078125,
+      "c": 1.0
+    },
+    "overridden_checks": {
+      "passing_coordinates_ge_18": false,
+      "each_register_ge_5": false,
+      "all_final_coordinates_ge_80": false
+    },
+    "passes_original": false,
+    "label": "EXPLORATORY"
+  },
+  "trace_target_stats": {
+    "n": 896,
+    "mean_tokens": 285.0,
+    "median_tokens": 285.0,
+    "p95_tokens": 285.0,
+    "max_tokens": 285,
+    "fraction_truncated": 0.0,
+    "max_target_tokens": 384
+  },
+  "handoff_order": "instruction_context -> PCS -> query_or_generation",
+  "arm_f": {
+    "best_epoch": 4,
+    "best_val_loss": 0.14678652118891478
+  },
+  "arm_t": {
+    "best_epoch": 4,
+    "best_val_accuracy": 0.9921875
+  },
+  "sealed_probe_status": "NOT_REVEALED"
+}
+
+$ python /root/stage_c.py --source-dir /artifacts/pcs4v2-multipos-exploratory-095d34455c78/src_neural --bridge-dir /artifacts/pcs4v2-multipos-exploratory-095d34455c78/bridges_neural --ti-source-dir /artifacts/pcs4v2-multipos-exploratory-095d34455c78/src_ti --ti-bridge-dir /artifacts/pcs4v2-multipos-exploratory-095d34455c78/bridges_ti --seal-file /artifacts/pcs4v2-multipos-exploratory-095d34455c78/PCS4V2_SEAL.json --out-dir /artifacts/pcs4v2-multipos-exploratory-095d34455c78/stage_c --exploratory-override
+SEAL_VERIFIED {"neural_F": "01c31d66f4cbe599137e37ab2c37589d3b1fb105cbc76eb6ef5e849529a40b09", "neural_T": "c8986e12fb52a89a38d566ef2b995a2e2891fabad2dce1e40abcc57b29311476", "ti_F": "401e5bbf3f9a1cea13baa19716164c72c7b5f52537f721db9ee018618b8f4b76", "ti_T": "479d2d48855dd1efed6a02f64586ff1200e2071d5ed7708735374abc503cc7dc"}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.25s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.20s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.35s/it]
+{
+  "source_model": "Qwen/Qwen3-4B",
+  "receiver_model": "Qwen/Qwen3-1.7B",
+  "arm_f_sha256": "01c31d66f4cbe599137e37ab2c37589d3b1fb105cbc76eb6ef5e849529a40b09",
+  "probe_seed_derivation_hash": "bc974c8da3dd2a7350ed2269df74d7db03538a1d72b78f7ac48c3a1fe47c704e",
+  "probe_seed_u64": 13589414571837041267,
+  "strict_stage_a_gate": {
+    "passes": true,
+    "checks": {
+      "parse": true,
+      "checkpoint": true,
+      "final_triple": true,
+      "n_passing": false,
+      "per_register": false,
+      "final_coords": false,
+      "mistake_instances": true,
+      "mistake_episodes": true
+    },
+    "passing": [
+      "s0_a",
+      "s0_b",
+      "s0_c",
+      "s1_a",
+      "s1_b",
+      "s1_c",
+      "s2_a",
+      "s2_b",
+      "s2_c",
+      "s3_a",
+      "s3_b",
+      "s3_c",
+      "s4_c",
+      "s5_c",
+      "s6_c",
+      "s7_c",
+      "s8_c"
+    ],
+    "per_register": {
+      "a": 4,
+      "b": 4,
+      "c": 9
+    },
+    "finals": {
+      "a": 0.484375,
+      "b": 0.5078125,
+      "c": 1.0
+    },
+    "overridden_checks": {
+      "n_passing": false,
+      "per_register": false,
+      "final_coords": false
+    },
+    "passes_original": false,
+    "label": "EXPLORATORY"
+  },
+  "seal": {
+    "label": "EXPLORATORY",
+    "written_utc": "2026-10-04T06:17:24Z",
+    "written_before_probe_instantiation": true,
+    "bridge_sha256": {
+      "neural_F": "01c31d66f4cbe599137e37ab2c37589d3b1fb105cbc76eb6ef5e849529a40b09",
+      "neural_T": "c8986e12fb52a89a38d566ef2b995a2e2891fabad2dce1e40abcc57b29311476",
+      "ti_F": "401e5bbf3f9a1cea13baa19716164c72c7b5f52537f721db9ee018618b8f4b76",
+      "ti_T": "479d2d48855dd1efed6a02f64586ff1200e2071d5ed7708735374abc503cc7dc"
+    },
+    "probe_domain": "PCS4V2_PROBE_V1|",
+    "probe_seed_hash": "bc974c8da3dd2a7350ed2269df74d7db03538a1d72b78f7ac48c3a1fe47c704e",
+    "deviation_record_sha256": "42151e0f40b3708ce008429996d5f3eda54fecd4b931db069b1d2625c4d2a7b9",
+    "features_sha256": "5a3648d1f563133159ac935833bc6ac76afd3595e69e7bb75c54e2435dc523a2",
+    "code_shas": {
+      "/root/orch.py": "095d34455c788e384ccd183cf55882e6e59e7f84f4ae0ae922d7606e82aaf6ec",
+      "/root/stage_b.py": "c5f7edf517a9e2e2d285feeb47c0496d00cf8a8408f4d0ef9564dd23dd8cdfc1",
+      "/root/stage_c.py": "32947d2cb80aa106a3230b66daacd3214ac32abb0c601cb1b48ab8ce0949ba59",
+      "/root/adapt.py": "7f9abccb66126380d465c63d292bd5880d6073b37ba824b614c3fbf9262eceb9",
+      "/root/GATE.json": "1c9eec29a37837293fad392a8045dda10a7ed54aa442d377314902f074df35e1",
+      "/root/STAGE_A.json": "f70d1ad0d61488f9f258299701f6ddb22f36c0808e6cf49374455a3069af294f",
+      "/root/DEVIATION.md": "42151e0f40b3708ce008429996d5f3eda54fecd4b931db069b1d2625c4d2a7b9"
+    }
+  },
+  "receiver_probe_gate": {
+    "equality": {
+      "n": 256,
+      "accuracy": 0.9296875
+    },
+    "shift_plus_1": {
+      "n": 256,
+      "accuracy": 0.8125
+    }
+  },
+  "probe_meta": {
+    "equality_enabled": true,
+    "plus1_enabled": true,
+    "n_derived_candidates": 14,
+    "derived_candidates": [
+      "s1_a",
+      "s1_b",
+      "s1_c",
+      "s2_a",
+      "s2_b",
+      "s2_c",
+      "s3_a",
+      "s3_b",
+      "s3_c",
+      "s4_c",
+      "s5_c",
+      "s6_c",
+      "s7_c",
+      "s8_c"
+    ]
+  },
+  "n_records": 1378
+}

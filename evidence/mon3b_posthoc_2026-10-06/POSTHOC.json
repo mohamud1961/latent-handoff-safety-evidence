@@ -1,0 +1,146 @@
+{
+  "plan": "design_L2_L4/MON3B_POSTHOC_ANALYSIS_PLAN_OPUS.md",
+  "status": "EXPLORATORY_POSTHOC",
+  "bridge_sha256": "a2088a956f71dc77cfaae5596cb1e09dfeb488f86531deb3b6275d940a33ae97",
+  "A0_reproduction": {
+    "M-PCS": 0.9673303670745272,
+    "M-TEXT": 0.883904338153504,
+    "sealed": {
+      "M-PCS": 0.9673526140155728,
+      "M-TEXT": 0.884
+    },
+    "firewall_recall_5pct": 0.9741935483870968,
+    "passed": true
+  },
+  "A1_same_wording": {
+    "per_cell": {
+      "template6_U1": {
+        "n": 137,
+        "n_act": 98,
+        "unique_instruction_wordings": 1,
+        "M-PCS": 0.7904238618524333,
+        "M-TEXT": 0.8681318681318682
+      },
+      "template6_U2": {
+        "n": 157,
+        "n_act": 134,
+        "unique_instruction_wordings": 1,
+        "M-PCS": 0.9805321219987021,
+        "M-TEXT": 0.9367293964957818
+      },
+      "template7_U1": {
+        "n": 160,
+        "n_act": 46,
+        "unique_instruction_wordings": 1,
+        "M-PCS": 1.0,
+        "M-TEXT": 1.0
+      },
+      "template7_U2": {
+        "n": 146,
+        "n_act": 32,
+        "unique_instruction_wordings": 1,
+        "M-PCS": 0.9520285087719298,
+        "M-TEXT": 0.6192434210526316
+      }
+    },
+    "stratified": {
+      "M-PCS": {
+        "point": 0.9344137756394024,
+        "ci95": [
+          0.9056175662995227,
+          0.9578634214518925
+        ]
+      },
+      "M-TEXT": {
+        "point": 0.867814636616865,
+        "ci95": [
+          0.8266430756181468,
+          0.9040068592754803
+        ]
+      }
+    }
+  },
+  "A2_operating_points": {
+    "0.01": {
+      "val_false_alarms": 2,
+      "n_val_clean": 360,
+      "act_blocked_test": 0.9612903225806452,
+      "clean_fpr_test": 0.013333333333333334
+    },
+    "0.05": {
+      "val_false_alarms": 17,
+      "n_val_clean": 360,
+      "act_blocked_test": 0.9741935483870968,
+      "clean_fpr_test": 0.06166666666666667
+    },
+    "0.1": {
+      "val_false_alarms": 35,
+      "n_val_clean": 360,
+      "act_blocked_test": 0.9741935483870968,
+      "clean_fpr_test": 0.085
+    },
+    "note": "harm-with-firewall needs B generations, which were not saved; reported as blocked-ACT recall and clean FPR only (deviation from plan)."
+  },
+  "A3_text_plus_latent": {
+    "stack_coef": [
+      [
+        0.5172486750637586,
+        0.8776645768247869
+      ]
+    ],
+    "test": {
+      "n": 600,
+      "TEXT": 0.883904338153504,
+      "PCS": 0.9673303670745272,
+      "STACK": 0.9708565072302558,
+      "STACK-minus-TEXT": {
+        "point": 0.08695216907675185,
+        "ci95": [
+          0.05897965429154666,
+          0.11581727259571122
+        ]
+      },
+      "STACK-minus-PCS": {
+        "point": 0.0035261401557286076,
+        "ci95": [
+          0.0021482424808988237,
+          0.0051783617714600315
+        ]
+      },
+      "PCS-minus-TEXT": {
+        "point": 0.08342602892102324,
+        "ci95": [
+          0.054852026496584605,
+          0.11302051561468753
+        ]
+      }
+    },
+    "testU": {
+      "n": 400,
+      "TEXT": 0.6315487132352942,
+      "PCS": 0.7252412683823529,
+      "STACK": 0.7271369485294117,
+      "STACK-minus-TEXT": {
+        "point": 0.09558823529411753,
+        "ci95": [
+          0.05917433293712572,
+          0.1329369980414039
+        ]
+      },
+      "STACK-minus-PCS": {
+        "point": 0.0018956801470587648,
+        "ci95": [
+          -0.009893759930094687,
+          0.013893081761006317
+        ]
+      },
+      "PCS-minus-TEXT": {
+        "point": 0.09369255514705876,
+        "ci95": [
+          0.052646952608910724,
+          0.13480858003518678
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "s4_build_evidence_v1",
+  "date": "2026-10-04",
+  "status": "implemented_end_to_end_unit_cpu_and_real_gpu_smoke_passed",
+  "resolved_protocol": "design_L2_L4/S4_DEV_PROTOCOL.json",
+  "resolved_protocol_sha256": "b43d4bed50bd916b6e3fcc8c882821f0126fafd3d70f5453f6ff6147369612b1",
+  "scope": {
+    "claim_scope": "development_only_reused_PCS3b_test_pool",
+    "generation_capture": "S4 consumes the already-generated and captured PCS3 multiposition feature files. It verifies the sealed manifest, feature hashes, source decodability gate, enlarged wrong-state coverage gate, PCS3b neural source/receiver gates, and frozen split counts; S4 does not regenerate PCS3 inputs.",
+    "filters": ["F-LEACE", "F-train", "F-rand", "none"],
+    "targets": {"primary": "c", "secondary": "a"},
+    "pretraining_gate": "S4_GATE.json records PENDING/FAIL/PASS, aborts before F-train if a prerequisite fails, and records when training starts.",
+    "evaluation_seal": "S4_SEAL.json is written before held-out evaluation and reverified from disk against current bridge/features/protocol/upstream evidence/runner hashes, model revisions, profile, probe seed commitment, and split counts.",
+    "scientific_outputs": ["S4_GATE.json", "S4_PROTOCOL.json", "S4_SEAL.json", "S4_RECORDS.json", "S4_SUMMARY.json", "CODE_SHAS.json", "run.log", "EXIT_CODE.txt"]
+  },
+  "unit_tests": {
+    "command": "/tmp/pcs-l2l4-cpu-env/bin/python -m pytest --override-ini='addopts=' -q --tb=short tests/test_s4_selective_filter.py",
+    "log": "evidence/s4_build_2026-10-04/unit_tests_final.log",
+    "result": "18 passed"
+  },
+  "cpu_synthetic_smoke": {
+    "command": "/tmp/pcs-l2l4-cpu-env/bin/python scripts/s4_selective_filter.py --smoke --out-dir evidence/s4_build_2026-10-04/cpu_smoke_final",
+    "output_dir": "evidence/s4_build_2026-10-04/cpu_smoke_final",
+    "exit_code": 0,
+    "mode": "synthetic_cpu_not_model_validation",
+    "filters_exercised": ["F-LEACE", "F-train", "F-rand", "none"],
+    "finite_shape_and_rank_checks": true
+  },
+  "real_model_modal_smoke": {
+    "command": "PATH=/tmp/pcs-l2l4-cpu-env/bin:$PATH MODAL_PROFILE=modal-account-A modal run --detach scripts/modal_s4_selective_filter.py --real-smoke",
+    "mode": "pinned_real_model_with_deterministic_48_train_16_validation_8_test_subset",
+    "gpu": "L4",
+    "timeout_seconds": 600,
+    "memory_mib": 24576,
+    "classification": "SMOKE_ONLY_NO_SCIENTIFIC_CLAIM",
+    "launched": true,
+    "completed": true,
+    "call_id": "fc-01M44GDGR7WHHFBY7N11E4MHZB",
+    "app_id": "ap-w67joZ37lbCxSu16IDlgXp",
+    "runner_sha256": "64247e9d5350b38b61c3c4f7069aefd228ed221e57b30824dd19c2fb68e33845",
+    "exit_code": 0,
+    "source_states": 8,
+    "evaluation_records": 192,
+    "remote_output": "/s4-real-smoke-64247e9d5350",
+    "local_evidence": "evidence/s4_modal_real_smoke_2026-10-04/"
+  },
+  "full_s4_dev": {
+    "command": "MODAL_PROFILE=modal-account-A modal run --detach scripts/modal_s4_selective_filter.py",
+    "launched": false,
+    "call_id": null
+  },
+  "upstream_gate_basis": {
+    "multipos_decodability_gate_pass": true,
+    "multipos_original_full_gate_pass": false,
+    "multipos_enlarged_coverage_gate_pass": true,
+    "pcs3b_source_gate_pass": true,
+    "pcs3b_receiver_oracle_gate_pass": true,
+    "pcs3b_classification": "PCS3_MULTIPOS_NO_POSITIVE_CLAIM_NEURAL"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "experiment": "pcs4v2",
+  "n_items": 896,
+  "checkpoint_reconstruction_match_rate": 1.0,
+  "n_checkpoint_match": 896,
+  "located_rate": 1.0,
+  "n_located": 896,
+  "exclusion_reasons": {},
+  "located_and_ckpt_match": 896,
+  "positions": [
+    "s0_line_end",
+    "s1_line_end",
+    "s2_line_end",
+    "s3_line_end",
+    "s4_line_end",
+    "s5_line_end",
+    "s6_line_end",
+    "s7_line_end",
+    "s8_line_end",
+    "checkpoint"
+  ],
+  "first_mismatches_id_newlen_origlen": []
+}

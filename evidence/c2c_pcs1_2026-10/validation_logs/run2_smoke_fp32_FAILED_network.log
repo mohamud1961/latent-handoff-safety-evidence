@@ -1,0 +1,103 @@
+env: local | python 3.11.13 | out=<tmp>
+mode: SMOKE (tiny random models, CPU) | pair: q3_1.7b+q25_1.5b (Qwen/Qwen3-1.7B <- Qwen/Qwen2.5-1.5B-Instruct)
+{'transformers': '4.52.4', 'tokenizers': '0.21.4', 'huggingface_hub': '0.34.3', 'datasets': '5.0.1', 'numpy': '2.2.6'}
+C2C commit: 3ca0e98020bac1f36000623afcb8dfc6f8c29bdf
+torch 2.6.0 | transformers 4.52.4 | device cpu (cpu, cc (0, 0)) | native bf16: False
+Using the latest cached version of the dataset since allenai/openbookqa couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'main' at <local>/.cache/huggingface/datasets/allenai___openbookqa/main/0.0.0/388097ea7776314e93a529163e0fea805b8a6454 (last modified on Thu Oct  1 16:47:55 2026).
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'ARC-Challenge' at <local>/.cache/huggingface/datasets/allenai___ai2_arc/ARC-Challenge/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Thu Oct  1 16:47:57 2026).
+{'obqa': 500, 'arc': 1144, 'mmlu': 570} loaded in 253s
+fuser dir: <local>/.cache/huggingface/hub/models--nics-efc--C2C_Fuser/snapshots/f01fc3258b305e280e04c7238f4f2cf31b7dc70d/qwen3_1.7b+qwen2.5_1.5b_Fuser/final | files: 30
+Traceback (most recent call last):
+  File "<local>/Downloads/pcs-c2c-audit/.venv-smoke/lib/python3.11/site-packages/urllib3/connection.py", line 239, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<local>/Downloads/pcs-c2c-audit/.venv-smoke/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<local>/.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/lib/python3.11/socket.py", line 974, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<local>/Downloads/pcs-c2c-audit/.venv-smoke/lib/python3.11/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "<local>/Downloads/pcs-c2c-audit/.venv-smoke/lib/python3.11/site-packages/urllib3/connectionpool.py", line 494, in _make_request
+    raise new_e
+  File "<local>/Downloads/pcs-c2c-audit/.venv-smoke/lib/python3.11/site-packages/urllib3/connectionpool.py", line 470, in _make_request
+    self._validate_conn(conn)
+  File "<local>/Downloads/pcs-c2c-audit/.venv-smoke/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1125, in _validate_conn
+    conn.connect()
+  File "<local>/Downloads/pcs-c2c-audit/.venv-smoke/lib/python3.11/site-packages/urllib3/connection.py", line 827, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "<local>/Downloads/pcs-c2c-audit/.venv-smoke/lib/python3.11/site-packages/urllib3/connection.py", line 246, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='huggingface.co', port=443): Failed to resolve 'huggingface.co' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<local>/Downloads/pcs-c2c-audit/.venv-smoke/lib/python3.11/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "<local>/Downloads/pcs-c2c-audit/.venv-smoke/lib/python3.11/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "<local>/Downloads/pcs-c2c-audit/.venv-smoke/lib/python3.11/site-packages/urllib3/util/retry.py", line 555, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /api/models/Qwen/Qwen3-1.7B/tree/main/additional_chat_templates?recursive=False&expand=False (Caused by NameResolutionError("HTTPSConnection(host='huggingface.co', port=443): Failed to resolve 'huggingface.co' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<local>/Downloads/pcs-c2c-audit/smoke_test.py", line 26, in <module>
+    exec(compile(src, a.notebook, "exec"), {"__name__": "__main__"})
+  File "c2c_fidelity_run2.ipynb", line 581, in <module>
+    "execution_count": null,
+                     ^^^^^^^^
+  File "c2c_fidelity_run2.ipynb", line 516, in choose_dtype_and_load
+    "        return (float(\"nan\"),) * 3\n",
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c2c_fidelity_run2.ipynb", line 260, in build_stack
+    "def make_prompt(question, choices):\n",
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<local>/Downloads/pcs-c2c-audit/.venv-smoke/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 1013, in from_pretrained
+    return tokenizer_class.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<local>/Downloads/pcs-c2c-audit/.venv-smoke/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 1968, in from_pretrained
+    for template in list_repo_templates(
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "<local>/Downloads/pcs-c2c-audit/.venv-smoke/lib/python3.11/site-packages/transformers/utils/hub.py", line 161, in list_repo_templates
+    return [
+           ^
+  File "<local>/Downloads/pcs-c2c-audit/.venv-smoke/lib/python3.11/site-packages/transformers/utils/hub.py", line 161, in <listcomp>
+    return [
+           ^
+  File "<local>/Downloads/pcs-c2c-audit/.venv-smoke/lib/python3.11/site-packages/huggingface_hub/hf_api.py", line 3171, in list_repo_tree
+    for path_info in paginate(path=tree_url, headers=headers, params={"recursive": recursive, "expand": expand}):
+  File "<local>/Downloads/pcs-c2c-audit/.venv-smoke/lib/python3.11/site-packages/huggingface_hub/utils/_pagination.py", line 36, in paginate
+    r = session.get(path, params=params, headers=headers)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<local>/Downloads/pcs-c2c-audit/.venv-smoke/lib/python3.11/site-packages/requests/sessions.py", line 671, in get
+    return self.request("GET", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<local>/Downloads/pcs-c2c-audit/.venv-smoke/lib/python3.11/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<local>/Downloads/pcs-c2c-audit/.venv-smoke/lib/python3.11/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<local>/Downloads/pcs-c2c-audit/.venv-smoke/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<local>/Downloads/pcs-c2c-audit/.venv-smoke/lib/python3.11/site-packages/requests/adapters.py", line 729, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: (MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /api/models/Qwen/Qwen3-1.7B/tree/main/additional_chat_templates?recursive=False&expand=False (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno 8] nodename nor servname provided, or not known)"))'), '(Request ID: d689c571-ce6b-40c0-8487-7122bcd4b279)')
+EXIT 1

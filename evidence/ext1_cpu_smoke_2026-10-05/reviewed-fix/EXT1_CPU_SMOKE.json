@@ -1,0 +1,14 @@
+{
+  "confirmatory_result_emitted": false,
+  "episodes": 12,
+  "out_of_band_cache_hook": {
+    "authority_false_bypasses_attenuation": true,
+    "lambda_zero_drops_cache": true,
+    "scaled_values_only": true
+  },
+  "schema": "ext1_cpu_smoke_v1",
+  "status": "PASS",
+  "strict_numeric_parser": "single digit only; malformed examples rejected",
+  "synthetic_or_generated_data_only": true,
+  "task_generator": "RQ7 F3_lookup_depth1; repeat deterministic check passed"
+}

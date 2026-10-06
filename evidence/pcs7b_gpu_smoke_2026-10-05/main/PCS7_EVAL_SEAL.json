@@ -1,0 +1,8 @@
+{
+  "bridge_sha256": "225122a8af55e629dfd393064007086c49cd53c764611c0499df366db35c8457",
+  "commitment_rule": "sha256(bridge_sha256_hex || 'PCS7b')",
+  "probe_seed": 0,
+  "probe_seed_commitment": "b4471e7b106558584c8660bc984ee44fc32ba09d0fcd39b8102eecc9c64e2c50",
+  "protocol": "pcs7b_eval_seal_v1",
+  "written_before_evaluation_controls": true
+}

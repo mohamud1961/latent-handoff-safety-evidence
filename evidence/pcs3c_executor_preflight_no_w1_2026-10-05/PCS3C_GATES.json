@@ -1,0 +1,6 @@
+{
+  "blocker": "PreflightError: PCS3C_W1_CHOICE_REQUIRED path_not_supplied",
+  "passed": false,
+  "schema": "pcs3c_gate_report_v1",
+  "status": "BLOCKED"
+}

@@ -1,0 +1,7 @@
+PASS  belief carrier               cells={'A': 682, 'B': 557, 'W': 549, 'B+W': 1106}  E_B=+0.542  E_A=+0.509  ->  BELIEF TRANSFER: receiver abandons a corre
+PASS  truth-biased helper          cells={'A': 640, 'B': 552, 'W': 546, 'B+W': 1098}  E_B=-0.007  E_A=+0.486  ->  TRUTH-BIASED HELPER: follows the sharer wh
+PASS  non-specific perturbation    cells={'A': 683, 'B': 523, 'W': 540, 'B+W': 1063}  E_B=+0.000  E_A=+0.006  ->  NON-SPECIFIC PERTURBATION: inheritance is 
+PASS  A+B+W partition D (1746 == 1746)
+PASS  bootstrap CI brackets the mean (0.667 [0.613,0.713])
+
+RESULT: ALL TESTS PASSED

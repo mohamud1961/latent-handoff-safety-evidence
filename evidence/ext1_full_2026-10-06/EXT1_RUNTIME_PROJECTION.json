@@ -1,0 +1,18 @@
+{
+  "basis": "one bounded GPU smoke; direct forward amortized per example; slowest observed thinking call; exact tokenizer-derived 800-episode LRU access simulation",
+  "contingency_multiplier": 1.25,
+  "expected_primary_direct_examples": 21600,
+  "expected_sender_cache_builds": 1666,
+  "expected_thinking_crosscheck_calls": 400,
+  "launch_gate_passed": true,
+  "launch_gate_seconds": 36000,
+  "non_forward_allowance_seconds": 540.0,
+  "projected_direct_forward_seconds": 893.5899327529405,
+  "projected_full_runtime_hours": 7.136230117360742,
+  "projected_full_runtime_seconds": 25690.42842249867,
+  "projected_sender_cache_seconds": 4365.663087646,
+  "projected_thinking_crosscheck_seconds": 14705.089717599998,
+  "smoke_direct_seconds_per_example": 0.04136990429411762,
+  "smoke_sender_seconds_per_cache_build": 2.620446031,
+  "smoke_thinking_seconds_per_call_conservative": 36.762724293999995
+}

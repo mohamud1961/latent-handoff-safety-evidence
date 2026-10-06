@@ -1,0 +1,16 @@
+{
+  "id": "kaggle-user/pcs1-pilot",
+  "title": "PCS1 Pilot",
+  "code_file": "pcs1_pilot.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

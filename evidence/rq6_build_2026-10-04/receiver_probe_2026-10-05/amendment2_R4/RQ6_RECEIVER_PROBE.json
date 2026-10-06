@@ -1,0 +1,34 @@
+{
+  "a_final_correct_vs_truth_n": 26,
+  "depth": 10,
+  "evidence_kind": "inference_only_probe_not_qualification",
+  "n_generated_episodes": 32,
+  "oracle_accuracy_vs_truth_s11": 0.21875,
+  "oracle_fidelity_to_A_s11": 0.21875,
+  "oracle_fidelity_to_A_s11_over_all_generated_unparsed_failed": 0.21875,
+  "oracle_gate_reference_threshold": 0.7,
+  "oracle_parse_rate": 0.53125,
+  "oracle_passes_70": false,
+  "program_rendering": "B's copy of the program numbers each update line as 'Update K: <line>' (K=1..D in order); the initial assignments stay unnumbered; A's source prompt is unchanged",
+  "protocol_sha256": "f9764e967dd7eaf70ff366106a1d1b35bbfe1981021f713dcabea9936d86aa30",
+  "receiver_s9_s10_equal_A_s8_counts": {
+    "oracle_state": 3,
+    "restart": 0
+  },
+  "restart_accuracy_vs_truth_s11": 0.0,
+  "restart_fidelity_to_A_s11": 0.0,
+  "restart_parse_rate": 0.75,
+  "rung": "R4",
+  "rung_spec": {
+    "depth": 10,
+    "description": "RQ6 Amendment 3: worked example rewritten as a continuation (updates 8-9 from 'State after step 7'); ONLY updates 9..D requested; M=2",
+    "max_new_tokens": 300,
+    "template": "continuation_example",
+    "thinking": false
+  },
+  "schema": "rq6_receiver_probe_v1",
+  "seconds_source": 131.523015573,
+  "seconds_total": 163.885069057,
+  "source_parse_n": 32,
+  "source_parse_rate": 1.0
+}

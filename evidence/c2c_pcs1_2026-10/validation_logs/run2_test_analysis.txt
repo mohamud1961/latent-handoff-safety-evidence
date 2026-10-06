@@ -1,0 +1,45 @@
+--- run 1 tests: Part B inheritance analysis (PREREG.md decision table)
+PASS  belief carrier               cells={'A': 682, 'B': 557, 'W': 549, 'B+W': 1106}  E_B=+0.542  E_A=+0.509  ->  BELIEF TRANSFER: receiver abandons a corre
+PASS  truth-biased helper          cells={'A': 640, 'B': 552, 'W': 546, 'B+W': 1098}  E_B=-0.007  E_A=+0.486  ->  TRUTH-BIASED HELPER: follows the sharer wh
+PASS  non-specific perturbation    cells={'A': 683, 'B': 523, 'W': 540, 'B+W': 1063}  E_B=+0.000  E_A=+0.006  ->  NON-SPECIFIC PERTURBATION: inheritance is 
+PASS  A+B+W partition D (1746 == 1746)
+PASS  bootstrap CI brackets the mean (0.667 [0.613,0.713])
+
+--- run 2 tests: calibration, mismatched sharer on all items, thresholds (PREREG_run2)
+PASS  2-fold split partitions the items evenly [300, 300]
+PASS  fold assignment is deterministic and independent of the input order
+PASS  a different seed gives a different split
+PASS  calibrated answer = argmax(lp - mean lp of the OTHER fold), checked by hand
+PASS  calibration is label-free (changing every label changes nothing)
+PASS  same-fold items never influence each other's prior (cross-fit)
+PASS  the prior does come from the other fold (sanity: perturbing it changes answers)
+PASS  removes a constant letter bias (share of 'A' answers 0.96 -> 0.25; chance 0.25)
+PASS  items with missing or non-finite predictions are skipped
+      content      acc R/Rcal/C/Cmm = 0.440/0.517/0.560/0.515  C-Cmm +0.045 [+0.025,+0.065]  C-Rcal +0.043 [+0.024,+0.062]
+PASS  scenario 'content' -> CONTENT-SPECIFIC COMMUNICATION: C2
+      calibration  acc R/Rcal/C/Cmm = 0.440/0.517/0.516/0.518  C-Cmm -0.003 [-0.009,+0.003]  C-Rcal -0.001 [-0.005,+0.004]
+PASS  scenario 'calibration' -> NON-SPECIFIC: the sharer's cache f
+      mixed        acc R/Rcal/C/Cmm = 0.440/0.517/0.549/0.548  C-Cmm +0.000 [-0.005,+0.005]  C-Rcal +0.033 [+0.025,+0.040]
+PASS  scenario 'mixed' -> MIXED / NO CLAIM: matches neither 
+PASS  calibration lifts a biased receiver (calibrated R > R by > 5 pts)
+PASS  calibration scenario: C and C_mm give the same answer (0.96)
+PASS  content scenario: C and C_mm disagree more (0.66)
+PASS  content scenario: C - C_mm stays positive after calibrating both
+PASS  calibration scenario: calibrated C - calibrated C_mm ~ 0
+PASS  mixed scenario: C beats calibrated R but not the wrong-question control
+PASS  partner coverage reported on all items (0.902); comparisons use only items with a partner
+PASS  agreement is computed on exactly the items that have a partner
+PASS  agreement on D is restricted to D
+PASS  agreement cells A+B+W partition D (items with a partner)
+PASS  threshold: lower CI exactly +0.02 and beats cal -> content
+PASS  threshold: lower CI +0.019 -> not content
+PASS  threshold: beats C_mm but calibrated R CI includes 0 -> not content
+PASS  threshold: C-C_mm CI includes 0 and |C-Rcal| = 0.02 -> non-specific
+PASS  threshold: C-C_mm CI includes 0 but C-Rcal = 0.03 -> not non-specific
+PASS  threshold: C-C_mm CI excludes 0 negatively, Rcal ties -> mixed
+PASS  threshold: no partner data -> no claim
+PASS  gen readout: accuracies on the partner subset match a hand computation
+PASS  gen readout: agreement 0.922 and unparsed C_mm count are right
+PASS  gen readout: paired C - C_mm difference and CI bracket
+
+RESULT: ALL TESTS PASSED

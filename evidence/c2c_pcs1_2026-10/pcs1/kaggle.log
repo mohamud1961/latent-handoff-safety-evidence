@@ -1,0 +1,121 @@
+[{"stream_name":"stderr","time":7.975448626,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.975494967,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.975501818,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.97550617,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.619764424,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.619796984,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.619803191,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.619807346,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":9.808122643,"data":"mode: main | depths [1] x 3000 | Qwen/Qwen3-0.6B \u003c- Qwen/Qwen3-4B | out=/kaggle/working\n"}
+,{"stream_name":"stdout","time":9.871029731,"data":"GPU: ('Tesla T4', 7.5, '15360 MiB')\n"}
+,{"stream_name":"stdout","time":9.871058574,"data":"$ /usr/bin/python3 -m pip install -q transformers==4.52.4 tokenizers==0.21.4 huggingface_hub==0.34.3\n"}
+,{"stream_name":"stdout","time":13.412083735,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.5/10.5 MB 112.1 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":13.460561632,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 81.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":13.488694948,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 558.8/558.8 kB 29.1 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":13.614113223,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.5/10.5 MB 112.1 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":13.614153343,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 81.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":13.614159511,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 558.8/558.8 kB 29.1 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":26.788820586,"data":"{'transformers': '4.52.4', 'tokenizers': '0.21.4', 'huggingface_hub': '0.34.3', 'datasets': '5.0.0', 'numpy': '2.0.2'}\n"}
+,{"stream_name":"stdout","time":26.804176123,"data":"$ git init -q /tmp/C2C\n"}
+,{"stream_name":"stdout","time":26.846844716,"data":"$ git -C /tmp/C2C remote add origin https://github.com/thu-nics/C2C\n"}
+,{"stream_name":"stdout","time":26.854285126,"data":"$ git -C /tmp/C2C fetch -q --depth 1 origin 3ca0e98020bac1f36000623afcb8dfc6f8c29bdf\n"}
+,{"stream_name":"stdout","time":28.162730989,"data":"$ git -C /tmp/C2C checkout -q FETCH_HEAD\n"}
+,{"stream_name":"stdout","time":28.199181964,"data":"C2C commit: 3ca0e98020bac1f36000623afcb8dfc6f8c29bdf\n"}
+,{"stream_name":"stdout","time":64.953758759,"data":"torch 2.10.0+cu128 | transformers 4.52.4 | device cuda:0 (Tesla T4, cc (7, 5)) | native bf16: False\n"}
+,{"stream_name":"stdout","time":74.766514692,"data":"fuser dir: /root/.cache/huggingface/hub/models--nics-efc--C2C_Fuser/snapshots/f01fc3258b305e280e04c7238f4f2cf31b7dc70d/qwen3_0.6b+qwen3_4b_Fuser/final | files: 58\n"}
+,{"stream_name":"stdout","time":74.883187031,"data":"host RAM available: 25.5 GiB; fp32 reference needs about 20.6 GiB (+3 headroom)\n"}
+,{"stream_name":"stdout","time":78.40964183,"data":"Model Qwen/Qwen3-0.6B already has a chat template.\n"}
+,{"stream_name":"stdout","time":299.021968552,"data":"fp32 reference on cpu: 12/12 probe items in 224s\n"}
+,{"stream_name":"stdout","time":300.170250067,"data":"Model Qwen/Qwen3-0.6B already has a chat template.\n"}
+,{"stream_name":"stdout","time":335.157351336,"data":"fp16 gate: {'R': {'finite': True, 'argmax_agree': 1.0, 'mean_abs_dprob': 0.0005}, 'S': {'finite': True, 'argmax_agree': 1.0, 'mean_abs_dprob': 0.0008}, 'C': {'finite': True, 'argmax_agree': 1.0, 'mean_abs_dprob': 0.0004}}\n"}
+,{"stream_name":"stdout","time":335.344248253,"data":"models ready in 260s | dtype: fp16 (passed gate vs fp32)\n"}
+,{"stream_name":"stdout","time":335.344282871,"data":"GPU memory after load: 9.7 GiB of 14.6\n"}
+,{"stream_name":"stdout","time":341.130383639,"data":"items: 3000 | fused-section tokens median 44 (min 43, max 44) | total tokens median 81\n"}
+,{"stream_name":"stdout","time":341.1304466,"data":"example fused section:\n"}
+,{"stream_name":"stdout","time":341.130454956,"data":"Track the variables below. All arithmetic is mod 10.\n"}
+,{"stream_name":"stdout","time":341.130460317,"data":"a = 3\n"}
+,{"stream_name":"stdout","time":341.130465324,"data":"b = 5\n"}
+,{"stream_name":"stdout","time":341.130470046,"data":"c = 7\n"}
+,{"stream_name":"stdout","time":341.13047472,"data":"c = (a + b) % 10\n"}
+,{"stream_name":"stdout","time":341.130479669,"data":"tail U: Now e = (c + 3) % 10. What is e? Answer with a single digit. | queried c = X 8 -\u003e U-answer 1\n"}
+,{"stream_name":"stdout","time":462.994442772,"data":"  100/3000  122s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":576.873019399,"data":"  200/3000  236s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":691.940558032,"data":"  300/3000  351s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":806.010043361,"data":"  400/3000  465s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":920.751869917,"data":"  500/3000  580s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1037.293943226,"data":"  600/3000  696s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1153.351492443,"data":"  700/3000  812s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1269.293098595,"data":"  800/3000  928s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1385.610109232,"data":"  900/3000  1044s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1503.426389892,"data":"  1000/3000  1162s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1619.315347445,"data":"  1100/3000  1278s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1733.101776483,"data":"  1200/3000  1392s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1850.848689559,"data":"  1300/3000  1510s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":1965.745397928,"data":"  1400/3000  1624s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":2084.189087466,"data":"  1500/3000  1743s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":2198.094878452,"data":"  1600/3000  1857s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":2311.401636716,"data":"  1700/3000  1970s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":2421.118732107,"data":"  1800/3000  2080s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":2534.402316854,"data":"  1900/3000  2193s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":2647.610550376,"data":"  2000/3000  2306s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":2760.934030562,"data":"  2100/3000  2420s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":2875.120770333,"data":"  2200/3000  2534s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":2988.056803334,"data":"  2300/3000  2647s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":3099.803020726,"data":"  2400/3000  2758s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":3212.983100381,"data":"  2500/3000  2872s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":3326.030868875,"data":"  2600/3000  2985s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":3444.998636998,"data":"  2700/3000  3104s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":3561.12050487,"data":"  2800/3000  3220s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":3678.72945325,"data":"  2900/3000  3337s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":3798.67332974,"data":"  3000/3000  3457s  nonfinite=0\n"}
+,{"stream_name":"stdout","time":3798.878802906,"data":"run finished: all items processed | 3789s since start\n"}
+,{"stream_name":"stdout","time":3807.303473498,"data":"\n"}
+,{"stream_name":"stdout","time":3807.303574502,"data":"=== PCS1 main: depths [1], items scored 3000 (A's belief wrong on 224) ===\n"}
+,{"stream_name":"stdout","time":3807.303587017,"data":"pooled U-answer accuracy (chance 10%)  [95% CI]            \n"}
+,{"stream_name":"stdout","time":3807.303598366,"data":"-----------------------------------------------------------\n"}
+,{"stream_name":"stdout","time":3807.303601922,"data":"R                                       10.5% [  9.5, 11.7]\n"}
+,{"stream_name":"stdout","time":3807.30360505,"data":"Rcal                                     9.8% [  8.7, 10.9]\n"}
+,{"stream_name":"stdout","time":3807.303608136,"data":"S_full                                  22.7% [ 21.2, 24.2]\n"}
+,{"stream_name":"stdout","time":3807.303611304,"data":"S_state                                 92.5% [ 91.6, 93.5]\n"}
+,{"stream_name":"stdout","time":3807.303614458,"data":"C                                       10.5% [  9.4, 11.6]\n"}
+,{"stream_name":"stdout","time":3807.303617534,"data":"C_mm_mean                               10.5% [  9.5, 11.7]\n"}
+,{"stream_name":"stdout","time":3807.303620482,"data":"T                                       17.0% [ 15.7, 18.4]\n"}
+,{"stream_name":"stdout","time":3807.303635209,"data":"Ccal                                     9.9% [  8.8, 10.9]\n"}
+,{"stream_name":"stdout","time":3807.303654631,"data":"paired difference   [95% CI]              \n"}
+,{"stream_name":"stdout","time":3807.303659475,"data":"------------------------------------------\n"}
+,{"stream_name":"stdout","time":3807.303664168,"data":"Delta_specific      -0.001 [-0.004,+0.003]\n"}
+,{"stream_name":"stdout","time":3807.303668923,"data":"Delta_specific_cal  +0.003 [-0.001,+0.007]\n"}
+,{"stream_name":"stdout","time":3807.303673628,"data":"C_minus_Rcal        +0.007 [-0.005,+0.018]\n"}
+,{"stream_name":"stdout","time":3807.303677817,"data":"C_minus_R           -0.001 [-0.011,+0.010]\n"}
+,{"stream_name":"stdout","time":3807.303681904,"data":"C_minus_T           -0.065 [-0.079,-0.052]\n"}
+,{"stream_name":"stdout","time":3807.303686029,"data":"T_minus_Rcal        +0.072 [+0.058,+0.086]\n"}
+,{"stream_name":"stdout","time":3807.303690341,"data":"C_minus_Sfull       -0.123 [-0.142,-0.104]\n"}
+,{"stream_name":"stdout","time":3807.303695443,"data":"  depth 1: n=3000 | R  10.5% [  9.5, 11.7] | Rcal   9.8% [  8.7, 10.9] | S_full  22.7% [ 21.2, 24.2] | S_state  92.5% [ 91.6, 93.5] | C  10.5% [  9.4, 11.6] | C_mm_mean  10.5% [  9.5, 11.7] | T  17.0% [ 15.7, 18.4] | Ccal   9.9% [  8.8, 10.9] | Delta -0.001 [-0.004,+0.003] | C-Rcal +0.007 [-0.005,+0.018]\n"}
+,{"stream_name":"stdout","time":3807.303706519,"data":"\n"}
+,{"stream_name":"stdout","time":3807.303709479,"data":"FIDELITY on items where A's belief is wrong (n=224); g = U-answer implied by A's wrong belief; chance 0.10\n"}
+,{"stream_name":"stdout","time":3807.303722636,"data":"quantity                            [95% CI]              \n"}
+,{"stream_name":"stdout","time":3807.303725036,"data":"----------------------------------------------------------\n"}
+,{"stream_name":"stdout","time":3807.303727249,"data":"P(C == g)                             6.7% [  3.6, 10.3]  \n"}
+,{"stream_name":"stdout","time":3807.303729495,"data":"P(C_mm == g), mean over k             6.5% [  3.7,  9.7]  \n"}
+,{"stream_name":"stdout","time":3807.303731641,"data":"EXCESS P(C==g) - mean P(C_mm,k==g)  +0.001 [-0.006,+0.009]\n"}
+,{"stream_name":"stdout","time":3807.303733869,"data":"P(C == g) - 0.10                    -0.033 [-0.064,+0.003]\n"}
+,{"stream_name":"stdout","time":3807.303737011,"data":"P(R == g)                             5.4% [  2.7,  8.5]  \n"}
+,{"stream_name":"stdout","time":3807.303752114,"data":"P(Rcal == g)                          4.5% [  1.8,  7.1]  \n"}
+,{"stream_name":"stdout","time":3807.303756139,"data":"P(T == g) text handoff               16.5% [ 12.1, 21.4]  \n"}
+,{"stream_name":"stdout","time":3807.30376169,"data":"by depth excess: {1: '+0.001 [-0.006,+0.009]'}\n"}
+,{"stream_name":"stdout","time":3807.30376572,"data":"wrong-cache following: {'P_Cmm_eq_g_mm_mean': ' 10.1% [  9.5, 10.6]', 'P_C_eq_g_mm_mean': '  9.8% [  9.3, 10.4]'}\n"}
+,{"stream_name":"stdout","time":3807.303769771,"data":"agreement C vs C_mm,k: [' 92.6% [ 91.6, 93.5]', ' 92.5% [ 91.6, 93.5]', ' 92.9% [ 92.0, 93.8]'] | C vs R:  52.2% [ 50.4, 54.0] | projection-off == receiver: 1.0\n"}
+,{"stream_name":"stdout","time":3807.303776989,"data":"digit marginals: {'truth_U': {'0': 0.102, '1': 0.093, '2': 0.1, '3': 0.106, '4': 0.101, '5': 0.11, '6': 0.093, '7': 0.096, '8': 0.096, '9': 0.104}, 'R': {'0': 0.005, '1': 0.02, '2': 0.035, '3': 0.032, '4': 0.017, '5': 0.085, '6': 0.152, '7': 0.173, '8': 0.31, '9': 0.17}, 'Rcal': {'0': 0.071, '1': 0.047, '2': 0.101, '3': 0.075, '4': 0.054, '5': 0.098, '6': 0.095, '7': 0.169, '8': 0.1, '9': 0.19}, 'C': {'0': 0.007, '1': 0.047, '2': 0.041, '3': 0.027, '4': 0.048, '5': 0.03, '6': 0.085, '7': 0.179, '8': 0.193, '9': 0.343}, 'C_mm0': {'0': 0.006, '1': 0.052, '2': 0.042, '3': 0.027, '4': 0.044, '5': 0.03, '6': 0.087, '7': 0.184, '8': 0.196, '9': 0.332}, 'T': {'0': 0.028, '1': 0.049, '2': 0.051, '3': 0.084, '4': 0.093, '5': 0.121, '6': 0.144, '7': 0.136, '8': 0.183, '9': 0.11}}\n"}
+,{"stream_name":"stdout","time":3807.303783647,"data":"\n"}
+,{"stream_name":"stdout","time":3807.303786789,"data":"READING (PREREG_pcs1): NULL: both CIs include 0. Delta_specific -0.001 [-0.004,+0.003]; C-Rcal +0.007 [-0.005,+0.018]; fidelity excess +0.001 [-0.006,+0.009] {'new_deduction_supported(Delta lowerCI\u003e=+0.02 and C-Rcal lowerCI\u003e0)': False, 'fidelity_supported(excess lowerCI\u003e0)': False, 'both_CIs_include_0': True}\n"}
+,{"stream_name":"stdout","time":3807.306904878,"data":"\n"}
+,{"stream_name":"stdout","time":3807.306921776,"data":"saved /kaggle/working/results.json (6.0 MB). Total wall time 63.3 min.\n"}
+,{"stream_name":"stderr","time":3814.340430483,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3814.340462568,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3814.681287411,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3814.681312143,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3816.181108418,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":3816.647944032,"data":"[NbConvertApp] Writing 685154 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":3819.122581236,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3820.663863447,"data":"[NbConvertApp] Writing 1037904 bytes to __results__.html\n"}
+]

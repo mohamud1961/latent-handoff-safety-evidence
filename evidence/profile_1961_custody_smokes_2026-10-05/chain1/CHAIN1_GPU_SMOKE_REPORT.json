@@ -1,0 +1,276 @@
+{
+  "addendum_1_error": null,
+  "addendum_1_provenance_probe": {
+    "design_ambiguity": "see docstring: v1_A and m1 jointly determine v_A",
+    "note": "descriptive only; no pass/fail",
+    "primary_lineage_probe_A_wrong": {
+      "n_test": 72,
+      "n_wrong_test": 9,
+      "note": "primary lineage probe; descriptive, no pass/fail",
+      "p_only_comparator": {
+        "C": 0.01,
+        "auroc": null,
+        "ci95_high": 0.5,
+        "ci95_low": 0.5,
+        "n_strata": 45,
+        "replicates": 57,
+        "val_auroc_pooled": 0.5
+      },
+      "prefix2": {
+        "C": 0.01,
+        "auroc": null,
+        "ci95_high": 0.7777777777777778,
+        "ci95_low": 0.0,
+        "n_strata": 45,
+        "replicates": 57,
+        "val_auroc_pooled": 0.5
+      },
+      "prefix2_minus_comparator_auroc": null,
+      "strata": "(v1_A, m1)",
+      "target": "A_wrong = v_A != ground truth"
+    },
+    "probe_v1": {
+      "C": 0.01,
+      "chance": 0.1,
+      "ci95_high": 0.6775565476190476,
+      "ci95_low": 0.495,
+      "point": 0.5689285714285715,
+      "replicates": 200,
+      "val_bal_acc": 0.9099999999999999
+    },
+    "probe_v_a": {
+      "C": 0.01,
+      "chance": 0.2,
+      "ci95_high": 1.0,
+      "ci95_low": 0.6666666666666666,
+      "point": 0.8,
+      "replicates": 200,
+      "val_bal_acc": 0.8
+    },
+    "within_m1_stratum_predict_v_a": {
+      "mean_bal_acc": 0.8,
+      "mean_chance": 0.2,
+      "n_strata": 4,
+      "strata": [
+        {
+          "bal_acc": 0.8,
+          "chance": 0.2,
+          "n_test": 8,
+          "stratum": 1
+        },
+        {
+          "bal_acc": 0.8,
+          "chance": 0.2,
+          "n_test": 8,
+          "stratum": 2
+        },
+        {
+          "bal_acc": 0.8,
+          "chance": 0.2,
+          "n_test": 8,
+          "stratum": 3
+        },
+        {
+          "bal_acc": 0.8,
+          "chance": 0.2,
+          "n_test": 8,
+          "stratum": 4
+        }
+      ]
+    },
+    "within_v1_stratum_predict_v_a": {
+      "mean_bal_acc": null,
+      "mean_chance": null,
+      "n_strata": 0,
+      "strata": []
+    }
+  },
+  "analysis": {
+    "chain_minus_restart": {
+      "ci95_high": 0.0,
+      "ci95_low": -0.05555555555555555,
+      "n_clusters": 8,
+      "point": -0.027777777777777776,
+      "replicates": 300,
+      "seed": 0,
+      "unit": "program_P"
+    },
+    "chain_minus_wrong1": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "n_clusters": 8,
+      "point": 0.0,
+      "replicates": 300,
+      "seed": 0,
+      "unit": "program_P"
+    },
+    "chain_minus_wrong2": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "n_clusters": 8,
+      "point": 0.0,
+      "replicates": 300,
+      "seed": 0,
+      "unit": "program_P"
+    },
+    "classification": "CHAIN1_NOT_POSITIVE",
+    "criteria": {
+      "1_end_to_end_fidelity": false,
+      "2_A_specificity_survives_two_hops": false,
+      "3_hop2_specificity": false,
+      "4_A_mistakes_pass_on": false,
+      "5_beats_restart": false
+    },
+    "fidelity_by_arm": {
+      "chain": 0.0,
+      "oracle": 0.5833333333333334,
+      "random1": 0.0,
+      "random2": 0.013888888888888888,
+      "restart": 0.027777777777777776,
+      "ti_ceiling": 1.0,
+      "wrong1_0": 0.0,
+      "wrong1_1": 0.0,
+      "wrong1_2": 0.0,
+      "wrong2_0": 0.0,
+      "wrong2_1": 0.0,
+      "wrong2_2": 0.0,
+      "zero1": 0.0,
+      "zero2": 0.027777777777777776
+    },
+    "fidelity_chain_heldout_m": 0.0,
+    "fidelity_chain_train_m": 0.0,
+    "mcnemar_chain_vs_wrong1": {
+      "wrong1_0": {
+        "a_only_correct": 0,
+        "b_only_correct": 0,
+        "discordant_pairs": 0,
+        "p_two_sided_exact": 1.0
+      },
+      "wrong1_1": {
+        "a_only_correct": 0,
+        "b_only_correct": 0,
+        "discordant_pairs": 0,
+        "p_two_sided_exact": 1.0
+      },
+      "wrong1_2": {
+        "a_only_correct": 0,
+        "b_only_correct": 0,
+        "discordant_pairs": 0,
+        "p_two_sided_exact": 1.0
+      }
+    },
+    "mistake_follow_margin_chain_minus_wrong1": 0.0,
+    "n_records": 72,
+    "n_source_wrong_states": 1,
+    "n_states": 8,
+    "passed": false
+  },
+  "bridge2_history": [
+    {
+      "epoch": 1,
+      "train": 3.1590855717658997,
+      "val": 3.0829204320907593
+    }
+  ],
+  "classification": "SMOKE_ONLY_NO_RESULT",
+  "custody": {
+    "asset_dir": "/artifacts/pcs2b-preanswer-state-realization",
+    "bridge_sha256": "87de8fb8a70d62aea0a2545faeb3c5b12890832dfd24d1b64e0b4a84cea8a771",
+    "cache_sha256": "42f419d69f5ebda6270ecbd335b2e8de72123cf757d0ebc2327c1620bd8c048f",
+    "errors": [],
+    "passed": true,
+    "runner_sha256": "29c47aa64ef482e0654052df223dc1b9596c0a23bfbb93ddb5d5959562b8949c"
+  },
+  "implementation_values_g2": {
+    "addendum_1_resolved": "primary lineage probe = A_wrong (v_A != ground truth) from prefix2 within (v1_A, m1) strata, within-stratum AUROC + state-cluster bootstrap CI, comparator = same probe on P-only TF-IDF features; v_A and v1_A decodability and the earlier stratified probes are descriptive",
+    "bridge2": "PCS2b Bridge class, config from the sealed PCS2b checkpoint (source_proj 128, bridge_hidden 768, k_slots 4), source dim 2048 x 14 slices, target dim 2560; 40 epochs, batch 4, AdamW lr 3e-4 wd 0.01, clip 1.0",
+    "loss": "0.75 * C future CE on ((v_A + m1) + m2) % 10 + 0.25 * readback CE on (v_A + m1) % 10 (A belief, not ground truth)",
+    "m_sampling_in_training": "m1 from the captured train set 1-4 (state-wise cycling), m2 cycling through 1-4 per epoch",
+    "oracle_chain": "B reads 'Intermediate result: v = v_A' + U1-as-question -> digit; C reads 'Intermediate result: w = <B digit>' + U2",
+    "pairs": {
+      "heldout_m": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          6
+        ]
+      ],
+      "train_m": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          1
+        ]
+      ]
+    },
+    "provenance_probe": "PCA 64 (train) + L2 logistic, C in {0.01..100} by val balanced accuracy; samples = every (state, m1) with a captured B state",
+    "random_prefix": "Gaussian rescaled to the real prefix RMS per example, seed 20261007",
+    "token_identity_ceiling_hop2": "C reads the true w = (v_A + m1) % 10 as an explicit line (bridge-free)",
+    "u1_text": "'Now let w = ({v} + {m1}) % 10. Keep w in mind; do not answer yet.' (B is never asked to answer; capture is at its last 2 prompt positions)",
+    "u2_text": "'The previous model held w = ({v} + {m1}) % 10, inherited internally. Now e = (w + {m2}) % 10. What is e?'",
+    "wrong1": "partner A prefix as prefix1 with the current P and m1 (3 partners from the PCS2b matched_wrong_maps rule)",
+    "wrong2": "partner's own real B state at the same m1 (3 partners, same rule), current P and real hop 1 otherwise"
+  },
+  "models": {
+    "A": [
+      "Qwen/Qwen3-4B",
+      "1cfa9a7208912126459214e8b04321603b3df60c"
+    ],
+    "B": [
+      "Qwen/Qwen3-1.7B",
+      "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+    ],
+    "C": [
+      "Qwen/Qwen3-4B",
+      "1cfa9a7208912126459214e8b04321603b3df60c"
+    ]
+  },
+  "peak_gpu_gib": 15.29,
+  "schema": "chain1_gpu_smoke_v1",
+  "scientific_use": false,
+  "seal": {
+    "bridge2_sha256": "bea001ae5680504f11e3a9ee0ad43aab03d2eaa0931e924950783bc7d5899369",
+    "probe_seed_commitment": "7bec675a4199d1f26d03d1ba443a5a81bcea8ad7a46bf8176ed9fa89338dd998"
+  },
+  "source_gates": {
+    "exact_prefix_rate_pool_parsed": 1.0,
+    "parse_rate_pool": 1.0,
+    "predigit_agreement": 1.0,
+    "source_objective_pool_parsed": 0.9642857142857143,
+    "source_objective_selected": 0.9375
+  },
+  "stage_seconds": {
+    "b_captures": 124.4,
+    "bridge2_trained": 139.8,
+    "evaluation": 189.1,
+    "fresh_A_episodes": 104.3,
+    "provenance_probe": 191.8
+  },
+  "text_chain_equals_restart": "by construction: A's written text is answer-free in this regime, so the text chain is the restart prompt (single function restart_prompt)"
+}

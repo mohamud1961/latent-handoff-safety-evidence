@@ -1,0 +1,27 @@
+{
+  "arm_f_sha256": "0f52e442a827cc974bb93591676759258b3eb495cc3c3426096dd2dc0e6934ea",
+  "domain": "PCS4V2_PROBE_V1|",
+  "seed_hash": "cfac45431264ba8f58e764e033966ea7e2906d3333f14e44a35eab09dffa6ae3",
+  "seed_u64": 14964411816219032207,
+  "probe_meta": {
+    "equality_enabled": true,
+    "plus1_enabled": true,
+    "n_derived_candidates": 14,
+    "derived_candidates": [
+      "s1_a",
+      "s1_b",
+      "s1_c",
+      "s2_a",
+      "s2_b",
+      "s2_c",
+      "s3_a",
+      "s3_b",
+      "s3_c",
+      "s4_c",
+      "s5_c",
+      "s6_c",
+      "s7_c",
+      "s8_c"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+PASS  program text evaluates to the stored values; U-answer = (X*k+m)%10, differs from EVERY final variable value; k invertible; wrong belief => different answer
+PASS  each update reads the variable updated at the previous step (dependency chain: depth is real)
+PASS  fused section p1 is the common prefix; U is only in the tail
+PASS  the fused section (all A ever reads through the bridge) contains no U text
+PASS  response ends at 'The answer is ' so the next token is a digit
+PASS  K=3 wrong-P partners: exactly the same token length, different programs, distinct values of the queried variable (all differ from the true one), implied answers differ from the true answer
+PASS  items and partners are deterministic (seeded)
+PASS  text handoff T puts A's value in the tail, after the same P
+      faithful      acc R/Rcal/C/Cmm/T = 0.10/0.09/0.47/0.04/0.62  Delta +0.430  C-Rcal +0.373  fidelity excess +0.450 [+0.407,+0.493] (n wrong belief 571)
+      generic       acc R/Rcal/C/Cmm/T = 0.09/0.09/0.10/0.10/0.59  Delta -0.002  C-Rcal +0.011  fidelity excess +0.001 [-0.028,+0.029] (n wrong belief 615)
+      copies_truth  acc R/Rcal/C/Cmm/T = 0.11/0.11/0.27/0.10/0.57  Delta +0.168  C-Rcal +0.166  fidelity excess -0.030 [-0.055,-0.005] (n wrong belief 636)
+PASS  wrong-belief set is about 35% of items (synthetic A is 65% right)
+PASS  faithful scenario: fidelity excess large, reading reports fidelity
+PASS  generic-perturbation scenario -> NULL
+PASS  C accurate via the true state but not following A's WRONG belief -> new deduction supported, fidelity not
+PASS  wrong-cache following statistic is high when C_mm follows the (wrong) cache
+PASS  generic C sits at the 1/10 chance reference on the wrong-belief set
+PASS  rule: deduction + fidelity
+PASS  rule: deduction only (lower CI exactly .02)
+PASS  rule: Delta lower .019 -> not deduction; fidelity ok -> fidelity only
+PASS  rule: both CIs include 0 -> null
+PASS  rule: Delta positive (<.02) but fidelity CI includes 0 -> partial
+PASS  rule: Delta big but C not above Rcal, fidelity null -> partial
+PASS  rule: Delta negative CI -> partial
+PASS  rule: missing -> no claim
+
+RESULT: ALL TESTS PASSED

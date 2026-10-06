@@ -1,0 +1,20 @@
+{
+  "command": "/tmp/pcs-l2l4-cpu-env/bin/python -c pcs4v2_stage_b_train_bridges.run_cpu_smoke(out_dir)",
+  "copied_validation_only_bridge_readback": {
+    "checkpoint_sha256": "b851848215ba71f349676b51a0831772058990be1f0a6ac2d7f304a1a3ae14c8",
+    "passed": true,
+    "predicted_digit": 7,
+    "test_items_read": 0,
+    "validation_source_id": 104,
+    "validation_target_digit": 4
+  },
+  "elapsed_seconds": 1.055,
+  "evidence_kind": "cpu_synthetic_smoke_only",
+  "gpu_smoke_helper_sha256": "2e7a0982822044bb6cb17e26f1ea0def9272dcb28fdb521faa79cdf52fbb3fec",
+  "modal_launcher_sha256": "7b8729a3850f7bf4cfaffd8c65fc1bfb988fb4f6fb1d1baac5cc99a122eaf40b",
+  "modal_or_gpu_job_started": false,
+  "stage_b_sha256": "1bffa2e29b3e931585874dbace29e4916aee983ee4865096df09a82ecd4aec45",
+  "stage_b_training_performed": true,
+  "summary_sha256": "f0d7fc1f69d3d77760c35cd68390d4832a70782d68f93da5556830764aeac10d",
+  "test_items_never_processed": null
+}

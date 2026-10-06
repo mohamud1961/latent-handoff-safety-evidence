@@ -1,0 +1,24 @@
+mode: pilot (SMOKE) | depths [1, 2] x 6 | Qwen/Qwen3-0.6B <- Qwen/Qwen3-4B | out=<tmp>
+{'transformers': '4.52.4', 'tokenizers': '0.21.4', 'huggingface_hub': '0.34.3', 'datasets': '5.0.1', 'numpy': '2.2.6'}
+C2C commit: 3ca0e98020bac1f36000623afcb8dfc6f8c29bdf
+torch 2.6.0 | transformers 4.52.4 | device cpu (cpu, cc (0, 0)) | native bf16: False
+Model Qwen/Qwen3-0.6B already has a chat template.
+models ready in 5s | dtype: torch.float32 (pilot: no gate, finite-checked)
+items: 12 | fused-section tokens median 50 (min 43, max 57) | total tokens median 87
+example fused section:
+Track the variables below. All arithmetic is mod 10.
+a = 1
+b = 8
+c = 2
+b = (b + a) % 10
+a = (b + 7) % 10
+tail U: Now e = (a + 8) % 10. What is e? Answer with a single digit. | queried a = X 6 -> U-answer 4
+run finished: all items processed | 31s since start
+depth  n  R (P+U)               Rcal (P+U)            R_state (P only)      S_full (P+U)          S_state (P only)      S_state - R  qualifies
+----------------------------------------------------------------------------------------------------------------------------------------------
+1      6    0.0% [  0.0,  0.0]   16.7% [  0.0, 50.0]   33.3% [  0.0, 75.4]    0.0% [  0.0,  0.0]   16.7% [  0.0, 50.0]  +16.7        no       
+2      6   33.3% [  0.0, 83.3]   16.7% [  0.0, 50.0]    0.0% [  0.0,  0.0]    0.0% [  0.0,  0.0]   33.3% [  0.0, 66.7]  +0.0         no       
+
+QUALIFYING depths (S_state - R >= 20 pts and S_state >= 60%): NONE
+
+saved <tmp> (0.0 MB). Total wall time 0.5 min.

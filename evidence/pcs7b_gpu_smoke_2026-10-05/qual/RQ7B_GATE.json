@@ -1,0 +1,93 @@
+{
+  "cells": [
+    {
+      "A_checkpoint_silence_verified": true,
+      "A_format_valid": 30,
+      "A_format_valid_rate": 1.0,
+      "A_mistakes": 0,
+      "A_mistakes_projected_to_1600": 0.0,
+      "A_silent_accuracy": 1.0,
+      "A_silent_correct": 30,
+      "B_oracle_accuracy": 0.8333333333333334,
+      "B_oracle_correct": 25,
+      "B_oracle_follow_A_count": 25,
+      "B_oracle_follow_A_n": 30,
+      "B_oracle_follow_A_rate": 0.8333333333333334,
+      "B_oracle_minus_B_restart": 0.7666666666666667,
+      "B_oracle_valid": 30,
+      "B_oracle_valid_rate": 1.0,
+      "B_restart_accuracy": 0.06666666666666667,
+      "B_restart_correct": 2,
+      "B_restart_reason_accuracy": 0.0,
+      "B_restart_reason_correct": 0,
+      "B_restart_valid": 30,
+      "B_restart_valid_rate": 1.0,
+      "cell_id": "P1_private_lookup",
+      "difficulty": 1,
+      "failed_gates": [],
+      "family": "P",
+      "gate_scheme": "pcs7b_v1 (design 16); A mistakes are the choice criterion, not a gate",
+      "gates": {
+        "A_checkpoint_silence_by_construction": true,
+        "A_format_valid_ge_95": true,
+        "A_silent_ge_80": true,
+        "B_never_sees_g": true,
+        "B_oracle_ge_70": true,
+        "B_restart_le_20": true,
+        "sample_size": true
+      },
+      "n": 30,
+      "n_expected": 30,
+      "passed": true
+    },
+    {
+      "A_checkpoint_silence_verified": true,
+      "A_format_valid": 30,
+      "A_format_valid_rate": 1.0,
+      "A_mistakes": 25,
+      "A_mistakes_projected_to_1600": 1333.3333333333333,
+      "A_silent_accuracy": 0.16666666666666666,
+      "A_silent_correct": 5,
+      "B_oracle_accuracy": 0.16666666666666666,
+      "B_oracle_correct": 5,
+      "B_oracle_follow_A_count": 26,
+      "B_oracle_follow_A_n": 30,
+      "B_oracle_follow_A_rate": 0.8666666666666667,
+      "B_oracle_minus_B_restart": 0.13333333333333333,
+      "B_oracle_valid": 30,
+      "B_oracle_valid_rate": 1.0,
+      "B_restart_accuracy": 0.03333333333333333,
+      "B_restart_correct": 1,
+      "B_restart_reason_accuracy": 0.0,
+      "B_restart_reason_correct": 0,
+      "B_restart_valid": 30,
+      "B_restart_valid_rate": 1.0,
+      "cell_id": "P2_private_lookup_plus_c",
+      "difficulty": 2,
+      "failed_gates": [
+        "A_silent_ge_80",
+        "B_oracle_ge_70"
+      ],
+      "family": "P",
+      "gate_scheme": "pcs7b_v1 (design 16); A mistakes are the choice criterion, not a gate",
+      "gates": {
+        "A_checkpoint_silence_by_construction": true,
+        "A_format_valid_ge_95": true,
+        "A_silent_ge_80": false,
+        "B_never_sees_g": true,
+        "B_oracle_ge_70": false,
+        "B_restart_le_20": true,
+        "sample_size": true
+      },
+      "n": 30,
+      "n_expected": 30,
+      "passed": false
+    }
+  ],
+  "classification": "PCS7B_QUALIFIED_CELL_SELECTED",
+  "mode": "gpu_smoke_forced",
+  "passing_cells": [
+    "P1_private_lookup"
+  ],
+  "protocol": "pcs7b_qualification_v1"
+}

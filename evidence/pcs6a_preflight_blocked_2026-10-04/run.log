@@ -1,0 +1,99 @@
+{
+  "base_rq6_preflight_status": "blocked",
+  "blockers": [
+    {
+      "detail": "No reviewed pcs6_protocol_v1 JSON was supplied.",
+      "id": "reviewed_protocol_absent"
+    },
+    {
+      "detail": "A reviewed PCS6 protocol needs a non-empty reviewed_by field.",
+      "id": "protocol_review_missing"
+    },
+    {
+      "detail": "A protocol-pinned RQ6 gate JSON is not available.",
+      "id": "rq6_pass_gate_unavailable"
+    },
+    {
+      "detail": "A protocol-pinned sealed W1_CHOICE.json is not available.",
+      "id": "sealed_w1_choice_unavailable"
+    },
+    {
+      "detail": "The reviewed protocol must pin the mechanically derived D1 objective decision.",
+      "id": "d1_decision_unreviewed"
+    },
+    {
+      "detail": "RQ6 requires s_9 through s_11 and FINAL: a=... b=... c=..., but PCS4v2 amendment 1 prompts for and parses STATE s0 through s8 plus FINAL_SUMMARY:. The mandated prompt/parser cannot represent the frozen RQ6 trace.",
+      "id": "rq6_source_prompt_parser_mismatch"
+    },
+    {
+      "detail": "The fixed PCS4v2 compact prompt is referenced, but its state syntax, depth-8 example, and terminal marker conflict with RQ6's D=11, s_8 handoff, and FINAL line. No compatible exact prompt is frozen.",
+      "id": "rq6_rq6_source_prompt_not_defined"
+    },
+    {
+      "detail": "The 1,600-episode pool has no generation seed, generator namespace, or exact record-selection rule. The split seed 20261006 does not specify those values.",
+      "id": "rq6_episode_pool_generation_seed_and_draws"
+    },
+    {
+      "detail": "The split says 900 train / 200 val / test >=400 after gates, but source-decoding and test-mistake gates themselves require train/val/test membership. The exact test count and seeded assignment algorithm are not defined.",
+      "id": "rq6_split_order_count_and_algorithm"
+    },
+    {
+      "detail": "The source-mistake gate requires at least 15 A-wrong test episodes while splits are specified after gates; the gate cannot be evaluated until the test split exists.",
+      "id": "rq6_test_mistake_gate_order"
+    },
+    {
+      "detail": "The 75% A final-triple gate does not state whether malformed/unparsed episodes count as incorrect or whether accuracy is computed only over parseable traces; the source-episode helper reports both rates without selecting one.",
+      "id": "rq6_source_accuracy_denominator"
+    },
+    {
+      "detail": "6A-W lists end-s7, end-s8, and checkpoint, but checkpoint is also defined as immediately after the s8 newline, duplicating end-s8. The frozen capture needs three positions x nine layers.",
+      "id": "rq6_checkpoint_capture_positions"
+    },
+    {
+      "detail": "6A-U requires capture after the s8: prefix before any value token, but no tokenizer-boundary mapping or exact checkpoint-location scoring rule is specified. Character offsets alone do not determine model token positions.",
+      "id": "rq6_token_boundary_and_checkpoint_location_metric"
+    },
+    {
+      "detail": "The partial-text handoff content is to be validated on val, but its candidate format, validation selection criterion, and tie rule are not frozen.",
+      "id": "rq6_partial_text_validation_format"
+    },
+    {
+      "detail": "The source-decoding gate names a linear probe but does not specify solver, standardization, regularization candidates/selection, feature concatenation/order, or which validation score selects the probe.",
+      "id": "rq6_linear_probe_definition"
+    },
+    {
+      "detail": "The literal oracle-state arm is abbreviated with ellipses, the restart/partial arm insertion format is not fully specified, and the exact chat-template/tokenization and continuation parse policy are not pinned.",
+      "id": "rq6_receiver_prompt_execution_details"
+    },
+    {
+      "detail": "The M=2 retry changes D to 10 but does not specify whether to regenerate the pool, how to transform the frozen RQ6 prompt/checkpoints, or how its test split relates to the M=3 attempt.",
+      "id": "rq6_registered_m2_prompt_and_pool"
+    },
+    {
+      "detail": "The model families are named, but immutable model/tokenizer revisions and local artifact hashes are absent; this blocks a reproducible inference-only qualification run without downloads.",
+      "id": "rq6_model_and_tokenizer_revisions"
+    },
+    {
+      "detail": "6B lacks an exact dataset revision/hash and test sample rule, A/B prompts, numeric answer canonicalization, sentence segmentation/token-count/tie rules for the 50% checkpoint, and matched-wrong prefix similarity/tie rules.",
+      "id": "rq6_gsm8k_rq6b_protocol"
+    },
+    {
+      "detail": "The later 6B bridge refers to about 3,000 GSM8K train problems, but the train selection and whether RQ6 qualification generates/scores train examples are not specified.",
+      "id": "rq6_gsm8k_train_scope"
+    },
+    {
+      "detail": "Only pure helper scoring and synthetic smoke are implemented. No PCS6 model/training/evaluation executor exists; this CLI cannot launch an experiment.",
+      "id": "pcs6_executor_incomplete"
+    }
+  ],
+  "gate_json_schema_contract": "rq6_gate_result_v1",
+  "gate_json_schema_frozen_in_design": false,
+  "launch_allowed": false,
+  "modal_launched": false,
+  "model_imported": false,
+  "protocol_schema": null,
+  "schema": "pcs6a_preflight_v1",
+  "scientific_data_opened": false,
+  "status": "BLOCKED",
+  "track": "6a"
+}

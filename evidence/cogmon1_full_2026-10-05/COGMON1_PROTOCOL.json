@@ -1,0 +1,209 @@
+{
+  "code_shas": {
+    "assets": {
+      "bridge_sha256": "317b1ff3f234d503e402c7e0715c81ffdc9bd99ca385d61291a995b2819970cd",
+      "handoff_sha256": "90e479c5cb40992ac6a8f32ec63dac6d0f4c3e0d44939ba002a3dda5127c2880",
+      "source_bundle_sha256": "23d098530252c59bc9b8d7039731213f2c55cac288c18e32670a7bd601d18999",
+      "w1_choice_sha256": "d85909b93dea9f42e89dc98eb8f048344ae82723ebca6e70d9429ca7b9e60937"
+    },
+    "files": {
+      "W1_CHOICE.json": {
+        "path": "/root/W1_CHOICE.json",
+        "sha256": "d85909b93dea9f42e89dc98eb8f048344ae82723ebca6e70d9429ca7b9e60937"
+      },
+      "design_L2_L4/20_COGMON1_READ_PREDICT_INTERVENE_FREEZE.md": {
+        "path": "/root/design_L2_L4/20_COGMON1_READ_PREDICT_INTERVENE_FREEZE.md",
+        "sha256": "eb7caefa9f891c4fa148e4506f4bd97ba65612d10eebdfac0b3e86e55be0781b"
+      },
+      "design_L2_L4/PRE_GRANT_STOP_RULE_OPUS.md": {
+        "path": "/root/design_L2_L4/PRE_GRANT_STOP_RULE_OPUS.md",
+        "sha256": "3e153dd765fddef6dc87d9e35ca30931f0aedcede1ba40a7c2c134f68e305bdd"
+      },
+      "design_L2_L4/RESOLUTIONS_1_OPUS.md": {
+        "path": "/root/design_L2_L4/RESOLUTIONS_1_OPUS.md",
+        "sha256": "3de67dd567cbf3bd2d45b88d677c0c0755cd1027929418c0b934611b4947e61c"
+      },
+      "scripts/cogmon1.py": {
+        "path": "/root/scripts/cogmon1.py",
+        "sha256": "97bdae46461f2001cd23ab7f9867db373990ae49b72a18a20d7bd65c1c6b24d1"
+      },
+      "scripts/pcs3_multi_register_bridge.py": {
+        "path": "/root/scripts/pcs3_multi_register_bridge.py",
+        "sha256": "20b0191e0d87bef269256aa5fb5cdb290d330d2d4c899dce9bccc193a3e8f49f"
+      },
+      "scripts/pcs3c_confirm.py": {
+        "path": "/root/scripts/pcs3c_confirm.py",
+        "sha256": "2dd6f27a43d66ee7cd51078f412105d0f68d561bb54203d026f2a90220a7c37d"
+      }
+    },
+    "model_revisions": {
+      "receiver": {
+        "id": "Qwen/Qwen3-1.7B",
+        "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+      },
+      "source": {
+        "id": "Qwen/Qwen3-4B",
+        "revision": "1cfa9a7208912126459214e8b04321603b3df60c"
+      }
+    },
+    "receiver_snapshot": {
+      "bridge_config": {
+        "checkpoint_config": {
+          "batch_size": 16,
+          "bridge_hidden": 768,
+          "c_dim": 64,
+          "c_dropout": 0.0,
+          "epochs": 40,
+          "eval_batch": 32,
+          "k_slots": 4,
+          "lr": 0.0003,
+          "max_source_tokens": 260,
+          "min_checkpoint_rate": 0.98,
+          "min_one_wrong_coverage": 0.9,
+          "min_parse_rate": 0.9,
+          "min_receiver_oracle": 0.9,
+          "min_source_coord_decode": 0.7,
+          "min_source_triple_acc": 0.8,
+          "min_three_wrong_coverage": 0.7,
+          "out_dir": "/artifacts/pcs3c-confirm-003cdc273016/neural",
+          "pool_n": 1600,
+          "seed": 20261005,
+          "source_batch": 8,
+          "source_proj": 128,
+          "test_n": 959,
+          "text_batch": 16,
+          "train_n": 512,
+          "val_n": 128,
+          "weight_decay": 0.01
+        },
+        "ignored_zero_effect_fields": {
+          "c_dropout": 0.0
+        },
+        "reconciliation": "W1 wrapper adds c_dropout metadata; W1-b is sealed with c_dropout=0, so canonical PCS3 Bridge is unchanged",
+        "runtime_config": {
+          "batch_size": 16,
+          "bridge_hidden": 768,
+          "c_dim": 64,
+          "epochs": 40,
+          "eval_batch": 32,
+          "k_slots": 4,
+          "lr": 0.0003,
+          "max_source_tokens": 260,
+          "min_checkpoint_rate": 0.98,
+          "min_one_wrong_coverage": 0.9,
+          "min_parse_rate": 0.9,
+          "min_receiver_oracle": 0.9,
+          "min_source_coord_decode": 0.7,
+          "min_source_triple_acc": 0.8,
+          "min_three_wrong_coverage": 0.7,
+          "out_dir": "/artifacts/pcs3c-confirm-003cdc273016/neural",
+          "pool_n": 1600,
+          "seed": 20261005,
+          "source_batch": 8,
+          "source_proj": 128,
+          "test_n": 959,
+          "text_batch": 16,
+          "train_n": 512,
+          "val_n": 128,
+          "weight_decay": 0.01
+        }
+      },
+      "config_commit_hash": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "model_id": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "snapshot_folder_commit": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "snapshot_path": "/root/.cache/huggingface/hub/models--Qwen--Qwen3-1.7B/snapshots/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+    },
+    "schema": "cogmon1_code_shas_v1"
+  },
+  "handoff_object": "PCS3c neural bridge prefix, 4x2048 flattened; train-fitted standardisation then PCA(128)",
+  "implementation_choices": {
+    "gpu": "L4",
+    "gpu_memory_gib": 24,
+    "logistic": {
+      "max_iter": 2000,
+      "penalty": "l2",
+      "random_state": 0,
+      "solver": "lbfgs"
+    },
+    "model_init_seed": 0,
+    "p_only_tfidf": {
+      "max_features": 4096,
+      "ngram_range": [
+        1,
+        2
+      ],
+      "token_pattern": "(?u)\\b\\w+\\b"
+    },
+    "pca": {
+      "components": 128,
+      "random_state": 0,
+      "solver": "randomized"
+    },
+    "receiver_batch_size": 32,
+    "standard_scaler": "sklearn StandardScaler, fit on train only"
+  },
+  "interventions": {
+    "method": "train-only register-class mean difference in 128D PCA space; inverse PCA and de-standardise to prefix",
+    "random_direction_seed": 0,
+    "receiver_queries": "PCS3c selector_query and prefix_logits used verbatim",
+    "targets_seed": 20261023,
+    "wrong_register_resolution": "cyclic next register a->b, b->c, c->a"
+  },
+  "mode": "full",
+  "models": {
+    "receiver": {
+      "id": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+    },
+    "source": {
+      "id": "Qwen/Qwen3-4B",
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c"
+    }
+  },
+  "monitor": {
+    "C_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "class_means_fit_split": "train only",
+    "p_only": "TF-IDF unigram/bigram of public P text plus selector, fitted on train and chosen on validation",
+    "predict": "L2 logistic on reduced prefix plus one-hot selector; target is B actual restricted-digit answer",
+    "read": "one multinomial L2 logistic probe per A_belief register; C chosen by validation balanced accuracy"
+  },
+  "schema": "cogmon1_protocol_v1",
+  "source": {
+    "asset": "sealed PCS3c neural bridge and source bundle",
+    "bridge_sha256": "317b1ff3f234d503e402c7e0715c81ffdc9bd99ca385d61291a995b2819970cd",
+    "bundle_sha256": "23d098530252c59bc9b8d7039731213f2c55cac288c18e32670a7bd601d18999",
+    "handoff_sha256": "90e479c5cb40992ac6a8f32ec63dac6d0f4c3e0d44939ba002a3dda5127c2880",
+    "w1_choice_sha256": "d85909b93dea9f42e89dc98eb8f048344ae82723ebca6e70d9429ca7b9e60937"
+  },
+  "splits": {
+    "test": 959,
+    "train": 512,
+    "val": 128
+  },
+  "test_policy": "test scoring uses labels/answers only after monitor selection is sealed; GPU smoke uses train states only",
+  "thresholds": {
+    "edit_minus_rand": 0.3,
+    "edit_minus_rand_ci_lower": 0.0,
+    "edit_target_success": 0.4,
+    "edit_vs_rand_off_target_tolerance": 0.1,
+    "off_target_preservation": 0.8,
+    "predict_accuracy": 0.65,
+    "predict_cluster_ci_lower_above_a_value_baseline": true,
+    "rand_target_success_max": 0.1,
+    "read_each_register_balanced_accuracy": 0.5,
+    "read_joint_accuracy": 0.25,
+    "read_mean_balanced_accuracy": 0.6
+  },
+  "uncertainty": {
+    "bootstrap_seed": 0,
+    "cluster_unit": "source state id",
+    "resamples": 10000
+  }
+}

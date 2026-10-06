@@ -1,0 +1,91 @@
+{
+  "checks": {
+    "beats_restart": false,
+    "heldout_m_fidelity": false,
+    "rq7_choice_verified": true,
+    "silence_verified": true,
+    "silent_mistake_excess": false,
+    "silent_mistake_n": false,
+    "source_gate_passed": false,
+    "specificity_cluster_ci": false,
+    "specificity_point": false,
+    "swap": false,
+    "train_m_fidelity": false
+  },
+  "details": {
+    "classification": "SMOKE_ONLY_NO_QUALIFICATION",
+    "source_gate": {
+      "checks": {
+        "source_silence_all_included": true,
+        "test_at_least_400_parsed_rows": false,
+        "test_format_valid_at_least_95pct": true,
+        "train_format_valid_at_least_95pct": true,
+        "train_has_parsed_rows": true,
+        "val_format_valid_at_least_95pct": true,
+        "validation_has_parsed_rows": true
+      },
+      "details": {
+        "parsed_A_wrong_test_n": 0,
+        "parsed_test_n": 16,
+        "parsed_train_n": 24,
+        "parsed_validation_n": 8,
+        "source_metrics": {
+          "A_accuracy_valid": 1.0,
+          "A_wrong_valid_n": 0,
+          "by_split": {
+            "test": {
+              "A_accuracy": 1.0,
+              "A_wrong_n": 0,
+              "format_valid_rate": 1.0,
+              "invalid_n": 0,
+              "n": 16,
+              "valid_n": 16
+            },
+            "train": {
+              "A_accuracy": 1.0,
+              "A_wrong_n": 0,
+              "format_valid_rate": 1.0,
+              "invalid_n": 0,
+              "n": 24,
+              "valid_n": 24
+            },
+            "val": {
+              "A_accuracy": 1.0,
+              "A_wrong_n": 0,
+              "format_valid_rate": 1.0,
+              "invalid_n": 0,
+              "n": 8,
+              "valid_n": 8
+            }
+          },
+          "format_valid_rate": 1.0,
+          "format_validity_threshold": 0.95,
+          "invalid_format_n": 0,
+          "n": 48,
+          "silence_verified_rate": 1.0,
+          "valid_format_n": 48
+        }
+      },
+      "failed_checks": [
+        "test_at_least_400_parsed_rows"
+      ],
+      "passed": false,
+      "protocol": "pcs7_silent_v2",
+      "stage": "source_qualification"
+    }
+  },
+  "failed_checks": [
+    "source_gate_passed",
+    "train_m_fidelity",
+    "heldout_m_fidelity",
+    "specificity_point",
+    "specificity_cluster_ci",
+    "swap",
+    "beats_restart",
+    "silent_mistake_n",
+    "silent_mistake_excess"
+  ],
+  "passed": true,
+  "protocol": "pcs7_silent_v2",
+  "stage": "completed_evaluation"
+}

@@ -1,0 +1,33 @@
+{
+  "canonical_runner_expected_sha256": "20b0191e0d87bef269256aa5fb5cdb290d330d2d4c899dce9bccc193a3e8f49f",
+  "code": {
+    "modal_w1_writer_sweep.py": "a97aab7bbdc0c5af052f7e0b520d0f5900db692a380b60aedfd54bc6df45c3c8",
+    "pcs3_multi_register_bridge.py": "20b0191e0d87bef269256aa5fb5cdb290d330d2d4c899dce9bccc193a3e8f49f",
+    "pcs3_multipos_bridge.py": "04394d115bab08f18f42c9f855caf28f66480f4f26d59fd0f1169b87ec2a15f3",
+    "w1_writer_sweep.py": "f49f19039167f656c50da911c30972009c4bc0d9c19d7dabe2fee9d35a122ba3"
+  },
+  "data": {
+    "expected_features_sha256": "ea51473126045f3d898f0de4ddc50a63198585d7e5819de277a6aa26bfbb7bc0",
+    "features_path": "/__modal/volumes/vo-r16ZpvZh4htF666voiY29E/pcs3-multipos-2aedd7129e4e/PCS3_MULTIPOS_FEATURES.pt",
+    "features_sha256": "ea51473126045f3d898f0de4ddc50a63198585d7e5819de277a6aa26bfbb7bc0"
+  },
+  "extra_test_features": {
+    "loaded": false,
+    "reason": "W1 uses train/val only; the extra artifact is test-only"
+  },
+  "model_revisions": {
+    "A": {
+      "repo_id": "Qwen/Qwen3-4B",
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "role": "source feature provenance",
+      "tokenizer_revision": "1cfa9a7208912126459214e8b04321603b3df60c"
+    },
+    "B": {
+      "repo_id": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "role": "PCS3 writer-sweep receiver",
+      "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+    }
+  },
+  "run_mode": "W1 validation-only writer sweep"
+}

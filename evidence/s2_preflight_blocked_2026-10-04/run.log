@@ -1,0 +1,1 @@
+S2_ABORT ProtocolError: scientific S2 requires --protocol-json, --cache, --bridge

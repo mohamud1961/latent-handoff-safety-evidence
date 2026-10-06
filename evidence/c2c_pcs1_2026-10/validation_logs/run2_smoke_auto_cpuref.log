@@ -1,0 +1,169 @@
+env: local | python 3.11.13 | out=<tmp>
+mode: SMOKE (tiny random models, CPU) | pair: q3_1.7b+q25_1.5b (Qwen/Qwen3-1.7B <- Qwen/Qwen2.5-1.5B-Instruct)
+{'transformers': '4.52.4', 'tokenizers': '0.21.4', 'huggingface_hub': '0.34.3', 'datasets': '5.0.1', 'numpy': '2.2.6'}
+C2C commit: 3ca0e98020bac1f36000623afcb8dfc6f8c29bdf
+torch 2.6.0 | transformers 4.52.4 | device cpu (cpu, cc (0, 0)) | native bf16: False
+{'obqa': 500, 'arc': 1144, 'mmlu': 570} loaded in 9s
+
+Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]
+Fetching 30 files: 100%|██████████| 30/30 [00:00<00:00, 9358.11it/s]
+fuser dir: <local>/.cache/huggingface/hub/models--nics-efc--C2C_Fuser/snapshots/f01fc3258b305e280e04c7238f4f2cf31b7dc70d/qwen3_1.7b+qwen2.5_1.5b_Fuser/final | files: 30
+Model Qwen/Qwen3-1.7B already has a chat template.
+fp32 reference on cpu: 16/16 probe items in 61s
+Model Qwen/Qwen3-1.7B already has a chat template.
+fp16 gate vs fp32 reference: {'R': {'finite': True, 'argmax_agree': 0.062, 'mean_abs_dprob': 0.0425}, 'S': {'finite': True, 'argmax_agree': 0.875, 'mean_abs_dprob': 0.0457}, 'C': {'finite': True, 'argmax_agree': 0.0, 'mean_abs_dprob': 0.0563}}
+Model Qwen/Qwen3-1.7B already has a chat template.
+models + fuser ready in 100s | dtype: fp32 (fp16 failed sanity gate) | fuser projectors: 28
+items: pool=52 reserve=0 | median prompt tokens=128 max=244
+partner bank: 2214 prompts over 143 distinct lengths
+`generation_config` default values have been modified to match model-specific defaults: {'bos_token_id': 151643}. If this is not desired, please set these values explicitly.
+timing (median-length prompt): LM fwd 113 ms | C2C fwd 307 ms | HF gen64 0.28s | C2C gen64 1.16s
+ESTIMATE  Part A ~1 min | Part B ~1 min | Part C ~0 min  (heuristic; includes no model-download time)
+
+=== PART A: plumbing (OpenBookQA, N=12; the paper reports no number for this pair) ===
+readout  condition       accuracy [95% CI]     paper  unparsed
+--------------------------------------------------------------
+gen      receiver alone    0.0% [  0.0,  0.0]  -      12      
+gen      sharer alone      0.0% [  0.0,  0.0]  -      12      
+gen      C2C fused         0.0% [  0.0,  0.0]  -      12      
+logit    receiver alone   25.0% [  4.0, 50.0]  -      0       
+logit    sharer alone     33.3% [  8.3, 58.3]  -      0       
+logit    C2C fused        33.3% [  8.3, 58.3]  -      0       
+  [gen] C2C - receiver: +0.000 [+0.000,+0.000]   C2C - sharer: +0.000 [+0.000,+0.000]
+  [logit] C2C - receiver: +0.083 [+0.000,+0.250]   C2C - sharer: +0.000 [+0.000,+0.000]
+  [gen] mismatched sharer (n=12 with a same-length partner): acc C   0.0% [  0.0,  0.0] | C_mm   0.0% [  0.0,  0.0] | C - C_mm +0.000 [+0.000,+0.000] | answer agreement C vs C_mm   0.0% [  0.0,  0.0] | unparsed C_mm 12
+  checks: {'projection_off_matches_receiver': 1.0, 'projection_off_mean_abs_dprob': 0.0, 'list_vs_tensor_max_logit_diff': 0.0, 'nonfinite_so_far': 0}
+  criteria (PREREG_run2): {'no_nonfinite_logits': True, 'projection_off_matches_receiver>=95%': True, 'generation_parse_rate>=90%_for_R,S,C,C_mm': False} | informational: {'C2C_beats_receiver_CI_excludes_0[gen]': False}
+  PLUMBING: !! NOT OK: see failed criterion above; Part B is not interpretable until it is understood (43s)
+
+=== PART B: fidelity (logit readout; D = items where sharer-alone != receiver-alone) ===
+items scored: 52 | disagreement set D: 17 | cells: {'A': 5, 'B': 4, 'W': 8, 'B+W': 12} | sharer own-template vs fuser-tokens agreement: 0.71
+same-length partner found for the mismatched-sharer control on 100% of D items
+accuracy, all items  [95% CI]              
+-------------------------------------------
+R                     19.2% [  9.6, 30.8]  
+S                     21.2% [  9.6, 32.7]  
+S_nat                 21.2% [  9.6, 32.7]  
+C                     21.2% [  9.6, 32.7]  
+C - R (paired)       +0.019 [+0.000,+0.058]
+
+accuracy on D  [95% CI]              
+-------------------------------------
+R               23.5% [  5.9, 47.1]  
+S               29.4% [ 11.8, 52.9]  
+C               29.4% [ 11.8, 52.9]  
+C_mm            29.4% [ 11.8, 52.9]  
+T               35.3% [ 11.8, 58.8]  
+T2              29.4% [ 11.8, 52.9]  
+C_minus_C_mm   +0.000 [+0.000,+0.000]
+
+Inheritance P(answer == sharer's answer). A: sharer right/receiver wrong | B: sharer WRONG/receiver right | W: both wrong, differ
+cell  n   C2C inherits S        C2C reverts to R      null inherits S       null reverts to R     EXCESS E = C2C - null   text handoff          text+rationale      
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A     5    20.0% [  0.0, 60.0]   60.0% [ 20.0,100.0]   20.0% [  0.0, 60.0]   60.0% [ 20.0,100.0]  +0.000 [+0.000,+0.000]   20.0% [  0.0, 60.0]   20.0% [  0.0, 60.0]
+B     4     0.0% [  0.0,  0.0]  100.0% [100.0,100.0]    0.0% [  0.0,  0.0]  100.0% [100.0,100.0]  +0.000 [+0.000,+0.000]    0.0% [  0.0,  0.0]    0.0% [  0.0,  0.0]
+W     8     0.0% [  0.0,  0.0]   87.5% [ 62.5,100.0]    0.0% [  0.0,  0.0]   87.5% [ 62.5,100.0]  +0.000 [+0.000,+0.000]   12.5% [  0.0, 37.5]   12.5% [  0.0, 37.5]
+B+W   12    0.0% [  0.0,  0.0]   91.7% [ 75.0,100.0]    0.0% [  0.0,  0.0]   91.7% [ 75.0,100.0]  +0.000 [+0.000,+0.000]    8.3% [  0.0, 25.0]    8.3% [  0.0, 25.0]
+(null = C2C with the sharer cache computed on a different same-length prompt. 'reverts' columns show the two perturbations are comparable in size.)
+
+asymmetry Inh(C|A) - Inh(C|B): +0.200 [+0.000,+0.600]    bridge/text ratio in B: None
+predicted-letter marginals: {'R': {'A': 0.0, 'B': 0.06, 'C': 0.02, 'D': 0.92}, 'S': {'A': 0.27, 'B': 0.0, 'C': 0.02, 'D': 0.71}, 'C': {'A': 0.0, 'B': 0.0, 'C': 0.02, 'D': 0.98}}
+mismatched-sharer letter leak (C_mm answer == partner's sharer answer): {'n': 2, 'rate': 0.0, 'chance': 0.25}
+
+AUTO-READING (PREREG decision table): NON-SPECIFIC PERTURBATION: inheritance is indistinguishable from the mismatched-sharer null and accuracy does not depend on the sharer's content
+non-finite logits so far: 0
+
+=== PART B, PREREG_run2: calibrated receiver, mismatched sharer on ALL items (logit readout) ===
+items scored: 52 | with a same-length partner: 50 (96.2%) | D (S != R): 17 | calibration: label-free per-letter mean log-prob prior, 2-fold cross-fit, seed 0
+accuracy, all scored items  [95% CI]            
+------------------------------------------------
+R                            19.2% [  9.6, 30.8]
+Rcal                         25.0% [ 13.5, 38.5]
+S                            21.2% [  9.6, 32.7]
+C                            21.2% [  9.6, 32.7]
+Ccal                         28.8% [ 15.4, 40.4]
+
+accuracy, items with a partner  [95% CI]            
+----------------------------------------------------
+R                                20.0% [ 10.0, 32.0]
+Rcal                             24.0% [ 12.0, 36.0]
+C                                22.0% [ 10.0, 34.0]
+C_mm                             22.0% [ 10.0, 34.0]
+Ccal                             28.0% [ 14.0, 40.0]
+C_mm_cal                         36.0% [ 22.0, 48.0]
+
+accuracy on D  [95% CI]            
+-----------------------------------
+R               23.5% [  5.9, 47.1]
+Rcal            29.4% [  5.9, 52.9]
+S               29.4% [ 11.8, 52.9]
+C               29.4% [ 11.8, 52.9]
+Ccal            29.4% [  5.9, 52.9]
+C_mm            29.4% [ 11.8, 52.9]
+C_mm_cal        41.2% [ 17.6, 64.7]
+
+paired differences (bootstrap 95% CI):
+comparison             difference [95% CI]   
+---------------------------------------------
+C_minus_R_all          +0.019 [+0.000,+0.058]
+Rcal_minus_R_all       +0.058 [-0.115,+0.231]
+C_minus_Rcal_all       -0.038 [-0.212,+0.135]
+C_minus_Rcal_D         +0.000 [-0.353,+0.412]
+C_minus_Cmm_all        +0.000 [+0.000,+0.000]
+C_minus_Cmm_D          +0.000 [+0.000,+0.000]
+Ccal_minus_Cmmcal_all  -0.080 [-0.160,-0.020]
+Ccal_minus_Cmmcal_D    -0.118 [-0.294,+0.000]
+Ccal_minus_Rcal_all    +0.038 [+0.000,+0.096]
+Ccal_minus_Rcal_D      +0.000 [+0.000,+0.000]
+Cmm_minus_R_all        +0.020 [+0.000,+0.080]
+Cmm_minus_Rcal_all     -0.020 [-0.160,+0.140]
+
+answer agreement C vs C_mm (same letter):
+set  n   same answer [95% CI]  mean |dprob|
+-------------------------------------------
+all  50  100.0% [100.0,100.0]  0.0032      
+D    17  100.0% [100.0,100.0]  0.0028      
+A    5   100.0% [100.0,100.0]  0.0026      
+B    4   100.0% [100.0,100.0]  0.0031      
+W    8   100.0% [100.0,100.0]  0.0028      
+agreement after calibrating both: {'all': ' 86.0% [ 76.0, 94.0]', 'D': ' 82.4% [ 64.7,100.0]'}
+predicted-letter marginals: {'R': {'A': 0.0, 'B': 0.06, 'C': 0.02, 'D': 0.92}, 'Rcal': {'A': 0.27, 'B': 0.21, 'C': 0.27, 'D': 0.25}, 'S': {'A': 0.27, 'B': 0.0, 'C': 0.02, 'D': 0.71}, 'C': {'A': 0.0, 'B': 0.0, 'C': 0.02, 'D': 0.98}, 'C_mm': {'A': 0.0, 'B': 0.0, 'C': 0.02, 'D': 0.94}, 'Ccal': {'A': 0.31, 'B': 0.31, 'C': 0.19, 'D': 0.19}}
+
+READING (PREREG_run2 (e)): MIXED / NO CLAIM: matches neither pre-registered row of PREREG_run2 (e) {'C_beats_Cmm_lowerCI>=+0.02': False, 'C_beats_calibratedR_lowerCI>0': False, 'C_minus_Cmm_CI_includes_0': True, 'calibratedR_within_2pts_of_C': False}
+
+=== PART C: planted false belief (exploratory) ===
+items: 12 (skipped 0) | sharer adopted the planted letter on 2
+P(answer == planted letter w)  [95% CI]            
+---------------------------------------------------
+S_plant                         41.7% [ 16.7, 66.7]
+S_ctrl                          33.3% [  8.3, 58.3]
+C_plant                         25.0% [  4.0, 50.0]
+C_ctrl                          25.0% [  4.0, 50.0]
+T_plant                         33.3% [  8.3, 58.3]
+R                               33.3% [  8.3, 58.3]
+sharer effect (S_plant - S_ctrl):       +0.083 [-0.167,+0.333]
+bridge effect, all items:               +0.000 [+0.000,+0.000]
+bridge effect, sharer-susceptible items: +0.000 [+0.000,+0.000]
+text effect (receiver told directly):   +0.000 [-0.250,+0.250]
+mask sanity (masked-pad receiver vs plain receiver with the same position gap; should be ~identical): same answer 1.0 | mean |dprob| 0.0
+   (receiver w/ masked pad vs plain receiver: same answer 1.0 ; differs only by the positional gap)
+READING: too few items where the sharer itself adopted the false premise; no claim
+
+saved <tmp> (0.1 MB). Total wall time 5.2 min.
+
+==============================================================================
+HEADLINE (cell B: sharer WRONG, receiver right; n=4)
+  C2C inherits the sharer's wrong answer :   0.0% [  0.0,  0.0]
+  mismatched-sharer null                 :   0.0% [  0.0,  0.0]
+  EXCESS inheritance E (C2C - null)      : +0.000 [+0.000,+0.000]
+  text handoff 'Another model answered'  :   0.0% [  0.0,  0.0]
+  PartB reading (belief transfer, PREREG table): NON-SPECIFIC PERTURBATION: inheritance is indistinguishable from the mismatched-sharer null and accuracy does not depend on the sharer's content
+  PartB reading (PREREG_run2 (e)): MIXED / NO CLAIM: matches neither pre-registered row of PREREG_run2 (e) {'C_beats_Cmm_lowerCI>=+0.02': False, 'C_beats_calibratedR_lowerCI>0': False, 'C_minus_Cmm_CI_includes_0': True, 'calibratedR_within_2pts_of_C': False}
+  PartC reading: too few items where the sharer itself adopted the false premise; no claim
+  plumbing: NOT OK / not run
+==============================================================================
+DEVIATIONS from PREREG:
+  - fp16 failed the sanity gate {'R': {'finite': True, 'argmax_agree': 0.062, 'mean_abs_dprob': 0.0425}, 'S': {'finite': True, 'argmax_agree': 0.875, 'mean_abs_dprob': 0.0457}, 'C': {'finite': True, 'argmax_agree': 0.0, 'mean_abs_dprob': 0.0563}}; fell back to fp32
+  - Part A plumbing check did NOT pass; treat Parts B/C as uninterpretable
+NOTE: this was a SMOKE (random tiny models) run. Do not interpret numbers.
+EXIT 0

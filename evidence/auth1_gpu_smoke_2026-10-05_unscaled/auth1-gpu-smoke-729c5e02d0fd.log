@@ -1,0 +1,18 @@
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.78s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.42s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.78s/it]
+AUTH1 epoch=1/14 train=3.4483 val=3.4071
+AUTH1 epoch=2/14 train=2.4932 val=2.4484
+AUTH1 epoch=3/14 train=1.8874 val=1.7299
+AUTH1 epoch=4/14 train=1.7661 val=1.6580
+AUTH1 epoch=5/14 train=1.5590 val=1.4884
+AUTH1 epoch=6/14 train=1.2277 val=1.1555
+AUTH1 epoch=7/14 train=1.2404 val=1.1521
+AUTH1 epoch=8/14 train=1.1624 val=1.0404
+AUTH1 epoch=9/14 train=1.0511 val=1.0537
+AUTH1 epoch=10/14 train=1.0010 val=1.0137
+AUTH1 epoch=11/14 train=0.9793 val=0.9473
+AUTH1 epoch=12/14 train=1.0183 val=0.8943
+AUTH1 epoch=13/14 train=0.9881 val=0.9206
+AUTH1 epoch=14/14 train=0.9741 val=0.8370
+AUTH1 eval GATE 32/640 t=316s
+AUTH1 eval NO_GATE 32/640 t=330s
+AUTH1 eval PROMPT_ONLY 32/640 t=345s

@@ -1,0 +1,39 @@
+{
+  "schema": "s2_asset_custody_verification_v1",
+  "status": "read_only_hashes_and_bridge_structure_verified",
+  "profile": "modal-account-B",
+  "verification_method": "read-only Modal volume downloads; no app, container, or GPU job launched",
+  "pcs2b_manifest": {
+    "path": "evidence/pcs2b_preanswer_2026-10-03/PCS2B_RUN_MANIFEST.json",
+    "sha256": "adc79a4163fc56b12ce5d1a9cd25c2f4ed2be7adcb02b2000dd92dd6638276ae",
+    "matches_runner_pin": true
+  },
+  "pcs2b_runner": {
+    "path": "scripts/pcs2b_preanswer_bridge.py",
+    "sha256": "29c47aa64ef482e0654052df223dc1b9596c0a23bfbb93ddb5d5959562b8949c",
+    "matches_manifest": true
+  },
+  "bridge": {
+    "volume_path": "pcs2b-preanswer-state-realization/pcs2b_bridge.pt",
+    "sha256": "87de8fb8a70d62aea0a2545faeb3c5b12890832dfd24d1b64e0b4a84cea8a771",
+    "bytes": 30083799,
+    "matches_manifest": true,
+    "canonical_state_dict_load": true,
+    "cpu_forward_shape": [2, 4, 2048],
+    "cpu_forward_finite": true
+  },
+  "source_cache": {
+    "volume_path": "pcs2b-preanswer-state-realization/pcs2b_source_cache.pt",
+    "sha256": "42f419d69f5ebda6270ecbd335b2e8de72123cf757d0ebc2327c1620bd8c048f",
+    "bytes": 42616502,
+    "matches_manifest": true,
+    "features_shape": [896, 9, 2560],
+    "split_counts": {"train": 512, "val": 128, "test": 256},
+    "cache_contract_valid": true
+  },
+  "model_execution": {
+    "source_model_loaded": false,
+    "receiver_model_loaded": false,
+    "gpu_invoked": false
+  }
+}

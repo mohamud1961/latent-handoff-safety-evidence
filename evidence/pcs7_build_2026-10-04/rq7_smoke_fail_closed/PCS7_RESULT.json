@@ -1,0 +1,7 @@
+{
+  "classification": "STOP_GATE_FAILED",
+  "error": "missing RQ7_CHOICE.json: evidence/rq7_gpu_smoke_2026-10-04/real-model-gpu-smoke/RQ7_CHOICE.json",
+  "protocol": "pcs7_silent_v1",
+  "qualification_claim": false,
+  "stage": "rq7_choice_verification"
+}

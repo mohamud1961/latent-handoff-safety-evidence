@@ -1,0 +1,18 @@
+{
+  "bridge_sha256": "87de8fb8a70d62aea0a2545faeb3c5b12890832dfd24d1b64e0b4a84cea8a771",
+  "cache_sha256": "42f419d69f5ebda6270ecbd335b2e8de72123cf757d0ebc2327c1620bd8c048f",
+  "models_loaded": false,
+  "pcs2b_runner_sha256": "29c47aa64ef482e0654052df223dc1b9596c0a23bfbb93ddb5d5959562b8949c",
+  "profile": "modal-account-B",
+  "protocol_sha256": "ef18f9b819dcb6bf2513dd776951cd5efbf01b5dba7cb4af80fb2836d78ec018",
+  "reason": null,
+  "schema": "s2_gate_v1",
+  "sealed_evaluation_started": false,
+  "split_counts_frozen": {
+    "test": 256,
+    "train": 512,
+    "val": 128
+  },
+  "status": "INPUTS_VERIFIED_BEFORE_MODELS",
+  "training_started": false
+}

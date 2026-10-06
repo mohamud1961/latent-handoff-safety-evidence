@@ -1,0 +1,40 @@
+{
+  "mode": "synthetic_cpu_not_model_validation",
+  "seed": 20261003,
+  "synthetic_split_sizes": {
+    "train": 16,
+    "val": 8,
+    "test": 8
+  },
+  "capacities_declared": [
+    1,
+    4,
+    16
+  ],
+  "payload_balance_per_bit": [
+    16,
+    16,
+    16,
+    16
+  ],
+  "d_pca_rank": 15,
+  "d_pca_retained_variance": 1.0000000000000002,
+  "d_quant_bits": 4,
+  "d_noise_sigma_fraction": 0.1,
+  "norm_budget_max_relative_rms": 0.10000001639127731,
+  "objective": {
+    "total": 0.7157804369926453,
+    "bce": 0.7153888940811157,
+    "kl": 0.0015661775832995772,
+    "encoder_and_decoder_backpropagated": true,
+    "synthetic_receiver_frozen": true
+  },
+  "beta_selection": {
+    "status": "selected",
+    "beta": 0.2,
+    "validation_fidelity_drop": 0.01,
+    "max_validation_drop": 0.02
+  },
+  "synthetic_monitor_auroc": 1.0,
+  "frozen_transform_and_objective_checks": true
+}

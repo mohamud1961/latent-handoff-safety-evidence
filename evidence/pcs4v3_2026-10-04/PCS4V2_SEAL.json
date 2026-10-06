@@ -1,0 +1,27 @@
+{
+  "label": "EXPLORATORY",
+  "written_utc": "2026-10-04T15:44:22Z",
+  "written_before_probe_instantiation": true,
+  "bridge_sha256": {
+    "neural_F": "0f52e442a827cc974bb93591676759258b3eb495cc3c3426096dd2dc0e6934ea",
+    "neural_T": "5c3fe19ac05c28dc8ab5ffc478d1cda67115ebcf916824670ee2f01f27182860",
+    "ti_F": "76f38d354a0c21b7fc9b01b709b31bbc2a601c9f1565d452ab21b1298459f79f",
+    "ti_T": "e1853187b247f6a9bc1ee6a87c999d4dba1bab1bc64a93074b54b51a303fa455"
+  },
+  "probe_domain": "PCS4V2_PROBE_V1|",
+  "probe_seed_hash": "cfac45431264ba8f58e764e033966ea7e2906d3333f14e44a35eab09dffa6ae3",
+  "deviation_record_sha256": "42151e0f40b3708ce008429996d5f3eda54fecd4b931db069b1d2625c4d2a7b9",
+  "v3_freeze_sha256": "97e9023e117f3e2d64265c3c1fa681cad39645c0ccdf887e2bd22a5ec0b8099d",
+  "arm_f_objective": "restart_surprisal_weighted",
+  "features_sha256": "5a3648d1f563133159ac935833bc6ac76afd3595e69e7bb75c54e2435dc523a2",
+  "code_shas": {
+    "/root/orch.py": "f6774d8283b3067a6a9da54566d303aef9bac2aa7ad38d8848ef4c32cd67a285",
+    "/root/stage_b.py": "ca78b7086ad011c6759d8528a2e1ea85537450c9a4154136a7f2dc6c51403317",
+    "/root/stage_c.py": "32947d2cb80aa106a3230b66daacd3214ac32abb0c601cb1b48ab8ce0949ba59",
+    "/root/adapt.py": "7f9abccb66126380d465c63d292bd5880d6073b37ba824b614c3fbf9262eceb9",
+    "/root/GATE.json": "1c9eec29a37837293fad392a8045dda10a7ed54aa442d377314902f074df35e1",
+    "/root/STAGE_A.json": "f70d1ad0d61488f9f258299701f6ddb22f36c0808e6cf49374455a3069af294f",
+    "/root/DEVIATION.md": "42151e0f40b3708ce008429996d5f3eda54fecd4b931db069b1d2625c4d2a7b9",
+    "/root/FREEZE_V3.md": "97e9023e117f3e2d64265c3c1fa681cad39645c0ccdf887e2bd22a5ec0b8099d"
+  }
+}

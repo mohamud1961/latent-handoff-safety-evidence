@@ -1,0 +1,65 @@
+{
+  "mode": "synthetic_cpu_not_model_validation",
+  "seeds": {
+    "source_data_seed": 20261004,
+    "filter_init_seed": 0,
+    "probe_init_seed": 0,
+    "random_filter_seed": 0,
+    "bootstrap_seed": 0,
+    "bootstrap_resamples": 10000
+  },
+  "split_counts": {
+    "train": 48,
+    "val": 16,
+    "test": 16
+  },
+  "filters_exercised": [
+    "F-LEACE",
+    "F-train",
+    "F-rand",
+    "none"
+  ],
+  "leace_rank": 8,
+  "random_control_rank": 8,
+  "ridge_probe_test_accuracy": 0.3125,
+  "mlp_probe_test_accuracy": 0.0625,
+  "f_train": {
+    "best_epoch": 2,
+    "validation_selection": "lowest_retained_selector_ce_when_c_probe_balanced_accuracy_le_0.20_else_lowest_task_ce_minus_adversary_ce",
+    "selection_fallback_used": false,
+    "selection_fallback_reason": null,
+    "selection_threshold_c_probe_balanced_accuracy": 0.2,
+    "selected_retained_selector_cross_entropy": 37.53157043457031,
+    "selected_adversary_cross_entropy": 2.3877177238464355,
+    "selected_fallback_task_ce_minus_adversary_ce": 37.29279866218567,
+    "selected_validation_c_probe_balanced_accuracy": 0.0,
+    "adversary_validation_accuracy": 0.0,
+    "adversary_validation_balanced_accuracy": 0.0,
+    "adversary_validation_n_classes_present": 7,
+    "epoch_validation": [
+      {
+        "epoch": 1,
+        "retained_selector_cross_entropy": 40.41574478149414,
+        "adversary_cross_entropy": 2.399646520614624,
+        "c_probe_validation_balanced_accuracy": 0.0,
+        "fallback_task_ce_minus_adversary_ce": 40.17578012943268,
+        "eligible_for_primary_selection": true
+      },
+      {
+        "epoch": 2,
+        "retained_selector_cross_entropy": 37.53157043457031,
+        "adversary_cross_entropy": 2.3877177238464355,
+        "c_probe_validation_balanced_accuracy": 0.0,
+        "fallback_task_ce_minus_adversary_ce": 37.29279866218567,
+        "eligible_for_primary_selection": true
+      }
+    ]
+  },
+  "synthetic_decoder_shape": [
+    16,
+    2,
+    3
+  ],
+  "synthetic_metric_records": 384,
+  "finite_shape_and_rank_checks": true
+}

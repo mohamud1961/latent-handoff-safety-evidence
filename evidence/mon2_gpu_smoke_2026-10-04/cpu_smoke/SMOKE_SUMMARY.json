@@ -1,0 +1,22 @@
+{
+  "auroc": 1.0,
+  "classification": "SMOKE_ONLY_NOT_SCIENTIFIC_RESULT",
+  "firewall_calibration": {
+    "allowed_false_alarms": 1,
+    "calibration_fpr": 0.0,
+    "false_alarms": 0,
+    "max_clean_fpr": 0.05,
+    "n_clean_calibration": 20,
+    "threshold": 0.5000000000000001,
+    "tie_policy": "strictly_above_cutoff_score"
+  },
+  "note": "CPU-only fixture path; does not load A, B, or the PCS2b bridge.",
+  "paired_clusters": 12,
+  "provider_or_model_started": false,
+  "synthetic_records": 24,
+  "template_split_counts": {
+    "test": 300,
+    "train": 720,
+    "val": 180
+  }
+}

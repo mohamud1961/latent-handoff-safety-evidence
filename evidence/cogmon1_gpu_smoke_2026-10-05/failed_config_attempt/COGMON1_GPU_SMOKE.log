@@ -1,0 +1,16 @@
+$ /usr/local/bin/python /root/scripts/cogmon1.py --out-dir /artifacts/cogmon1-gpu-smoke-4ac30b322cff --gpu-smoke
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.32s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.69s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.93s/it]
+Traceback (most recent call last):
+  File "/root/scripts/cogmon1.py", line 851, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/root/scripts/cogmon1.py", line 846, in main
+    result = run_real(args)
+             ^^^^^^^^^^^^^^
+  File "/root/scripts/cogmon1.py", line 680, in run_real
+    bundle, handoff, w1_choice, features, runner, tokenizer, model, bridge, receiver_provenance = _load_runtime(
+                                                                                                  ^^^^^^^^^^^^^^
+  File "/root/scripts/cogmon1.py", line 314, in _load_runtime
+    config = runner.Config(**checkpoint["config"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Config.__init__() got an unexpected keyword argument 'c_dropout'

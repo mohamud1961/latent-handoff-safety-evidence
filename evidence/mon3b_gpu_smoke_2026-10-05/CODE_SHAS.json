@@ -1,0 +1,17 @@
+{
+  "files": {
+    "mon2_contract.py": "0739d832525fad3241d90c914b891359646027a55b6fc810b7984c889250f36e",
+    "mon3_unauthorised_intent.py": "b41e80e660339b7208b03f304c9fa3d9832e58914657522ba96379ee91517f2b",
+    "mon3b_routine_intent.py": "8145c988d8e0c0e4624806bee473e98fc5b0da187d1092bb41a5e80b9e902bce"
+  },
+  "models": {
+    "A": [
+      "Qwen/Qwen3-4B",
+      "1cfa9a7208912126459214e8b04321603b3df60c"
+    ],
+    "B": [
+      "Qwen/Qwen3-1.7B",
+      "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+    ]
+  }
+}

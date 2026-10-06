@@ -1,0 +1,121 @@
+{
+  "modal_launched": false,
+  "model_loaded": false,
+  "note": "Synthetic CPU helper-path evidence only; does not validate generation, model inference, checkpoints, gates on PCS3c data, bridge training, or any scientific outcome.",
+  "parser": {
+    "belief": [
+      1,
+      2,
+      3
+    ],
+    "marker_char": 5
+  },
+  "schema": "pcs3c_smoke_v1",
+  "scientific_use": false,
+  "sealed_test_data_opened": false,
+  "source_gate_checks": {
+    "checkpoint_rate_ge_98_given_parse": true,
+    "each_register_decodability_ge_70": true,
+    "parse_rate_ge_90": true,
+    "receiver_exact_A_state_oracle": true,
+    "strong_control_coverage_ge1_ge_90": true,
+    "strong_control_coverage_ge3_ge_70": true,
+    "train_val_triple_accuracy_ge_80": true
+  },
+  "status": "PASS_SYNTHETIC_ONLY",
+  "synthetic_classification": "PCS3C_POSITIVE",
+  "synthetic_control_coverage": {
+    "by_selector": {
+      "a": {
+        "ge1": 1.0,
+        "ge3": 1.0
+      },
+      "b": {
+        "ge1": 1.0,
+        "ge3": 1.0
+      },
+      "c": {
+        "ge1": 1.0,
+        "ge3": 1.0
+      }
+    },
+    "n_state_selector_pairs": 192,
+    "n_states": 64,
+    "overall_ge1": 1.0,
+    "overall_ge3": 1.0,
+    "split": "synthetic"
+  },
+  "synthetic_criteria": {
+    "each_selector_fidelity_ge_60": true,
+    "neural_beats_zero_and_random": true,
+    "neural_minus_restart_ge_30": true,
+    "neural_minus_strong_wrong_ge_30_and_ci_gt_0": true,
+    "overall_fidelity_ge_70": true,
+    "source_wrong_directional_if_at_least_10_states": true
+  },
+  "synthetic_exact_mcnemar_vs_wrong": {
+    "1": {
+      "correct_only": 12,
+      "method": "exact two-sided conditional binomial McNemar",
+      "n_discordant": 12,
+      "n_pairs": 12,
+      "p_two_sided": 0.00048828125,
+      "wrong_only": 0
+    },
+    "2": {
+      "correct_only": 12,
+      "method": "exact two-sided conditional binomial McNemar",
+      "n_discordant": 12,
+      "n_pairs": 12,
+      "p_two_sided": 0.00048828125,
+      "wrong_only": 0
+    },
+    "3": {
+      "correct_only": 12,
+      "method": "exact two-sided conditional binomial McNemar",
+      "n_discordant": 12,
+      "n_pairs": 12,
+      "p_two_sided": 0.00048828125,
+      "wrong_only": 0
+    }
+  },
+  "synthetic_metrics": {
+    "matched_n_records": 12,
+    "matched_neural_fidelity": 1.0,
+    "matched_row_neural_minus_mean_strong_wrong": 1.0,
+    "mean_strong_wrong_fidelity": 0.0,
+    "n_records": 12,
+    "n_states": 4,
+    "neural_fidelity": 1.0,
+    "neural_fidelity_by_selector": {
+      "a": 1.0,
+      "b": 1.0,
+      "c": 1.0
+    },
+    "neural_minus_restart": 1.0,
+    "neural_minus_strong_wrong": 1.0,
+    "neural_minus_strong_wrong_estimand": "mean over source episodes of the episode's mean selector-level (neural fidelity minus mean available strong-wrong fidelity); episodes/rows without a strong-wrong partner are excluded from this causal contrast but remain in overall neural fidelity",
+    "neural_objective_accuracy": 0.6666666666666666,
+    "neural_source_wrong_fidelity": 1.0,
+    "partial_fidelity": 0.0,
+    "private_trace_text_fidelity": 1.0,
+    "random_fidelity": 0.0,
+    "restart_fidelity": 0.0,
+    "source_wrong_coordinate_records": 4,
+    "source_wrong_coordinate_records_with_controls": 4,
+    "source_wrong_states": 4,
+    "text_oracle_fidelity": 1.0,
+    "token_identity_fidelity": 1.0,
+    "wrong_source_wrong_fidelity": 0.0,
+    "zero_fidelity": 0.0
+  },
+  "synthetic_state_cluster_bootstrap": {
+    "cluster_unit": "source episode id",
+    "lower_95": 1.0,
+    "n_clusters": 4,
+    "point": 1.0,
+    "resamples": 1000,
+    "seed": 20261005,
+    "upper_95": 1.0
+  }
+}

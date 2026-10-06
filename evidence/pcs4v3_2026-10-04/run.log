@@ -1,0 +1,853 @@
+
+$ python /root/adapt.py --features /artifacts/pcs4v2-multipos-2aedd7129e4e/PCS4V2_MULTIPOS_FEATURES.pt --gate /root/GATE.json --stage-a /root/STAGE_A.json --arm neural --out-dir /artifacts/pcs4v3-multipos-v3-f6774d8283b3/src_neural
+ADAPTED neural (896, 90, 2560) passing 17
+
+$ python /root/adapt.py --features /artifacts/pcs4v2-multipos-2aedd7129e4e/PCS4V2_MULTIPOS_FEATURES.pt --gate /root/GATE.json --stage-a /root/STAGE_A.json --arm token_identity --out-dir /artifacts/pcs4v3-multipos-v3-f6774d8283b3/src_ti
+ADAPTED token_identity (896, 10, 30) passing 17
+
+$ python /root/stage_b.py --source-cache /artifacts/pcs4v3-multipos-v3-f6774d8283b3/src_neural/PCS4V2_SOURCE_CACHE.pt --stage-a /artifacts/pcs4v3-multipos-v3-f6774d8283b3/src_neural/PCS4V2_STAGE_A.json --out-dir /artifacts/pcs4v3-multipos-v3-f6774d8283b3/bridges_neural --exploratory-override --f-epochs 40 --t-epochs 40 --weighted
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.62s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  2.96s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.36s/it]
+TRACE_TARGET_STATS {"fraction_truncated": 0.0, "max_target_tokens": 384, "max_tokens": 285, "mean_tokens": 285.0, "median_tokens": 285.0, "n": 896, "p95_tokens": 285.0}
+RESTART_WEIGHT_STATS {"n": 640, "mean_surprisal": 0.5110285331029445, "mean_frac_tokens_positive_weight": 0.16454326985403894, "mean_total_weight": 146.15416041612625}
+ARM_F 1 train 1.5987649411836173 val 0.36135414405725896
+ARM_F 2 train 0.2627162834396586 val 0.23055395320989192
+ARM_F 3 train 0.20234394996077754 val 0.2039624258177355
+ARM_F 4 train 0.16688543622149155 val 0.1886805867543444
+ARM_F 5 train 0.15473615415976383 val 0.16656381904613227
+ARM_F 6 train 0.14660570122941863 val 0.18857602786738425
+ARM_F 7 train 0.14077347025158815 val 0.18855459662154317
+ARM_F 8 train 0.14065994197153486 val 0.17378348158672452
+ARM_F 9 train 0.14082821289775893 val 0.16317009122576565
+ARM_F 10 train 0.1365890788147226 val 0.16358798160217702
+ARM_F 11 train 0.13242445218202192 val 0.16581124323420227
+ARM_F 12 train 0.13198280430515297 val 0.15632015734445304
+ARM_F 13 train 0.12713331865961663 val 0.1310800421924796
+ARM_F 14 train 0.11022376719483873 val 0.12191502554924227
+ARM_F 15 train 0.09526930258289212 val 0.11248263763263822
+ARM_F 16 train 0.08382762000474031 val 0.10414013828267343
+ARM_F 17 train 0.07992960510637204 val 0.10869172227103263
+ARM_F 18 train 0.07388570248213 val 0.12984427774790674
+ARM_F 19 train 0.07647228042606002 val 0.10814673578715883
+ARM_F 20 train 0.06889120896266832 val 0.0986176297737984
+ARM_F 21 train 0.06481091392197413 val 0.10308954895299394
+ARM_F 22 train 0.0643550636227701 val 0.09532334033247025
+ARM_F 23 train 0.06334948001176599 val 0.09396927342822892
+ARM_F 24 train 0.0577341905728872 val 0.11367052112473175
+ARM_F 25 train 0.05560654320879621 val 0.09561834835039917
+ARM_F 26 train 0.056118681071438914 val 0.1333968187973369
+ARM_F 27 train 0.05149075207464193 val 0.11202290513028856
+ARM_F 28 train 0.048397548908724275 val 0.11992489047406707
+ARM_F 29 train 0.04217093478428069 val 0.1398743776489937
+ARM_F 30 train 0.04177186475317285 val 0.14569945668336004
+ARM_F 31 train 0.040852090116459294 val 0.13188697120858706
+ARM_F 32 train 0.03567149337027331 val 0.16803369929402834
+ARM_F 33 train 0.03968814049312641 val 0.19160485866450472
+ARM_F 34 train 0.03575932134640425 val 0.14228324750183674
+ARM_F 35 train 0.029716919122165564 val 0.14950057691930851
+ARM_F 36 train 0.030015817880666873 val 0.18996329691799474
+ARM_F 37 train 0.02769417620686454 val 0.16788596485457674
+ARM_F 38 train 0.029664858731166532 val 0.2030346876999829
+ARM_F 39 train 0.03324860736870505 val 0.1932381758779229
+ARM_F 40 train 0.02739022861999274 val 0.2142351463335217
+ARM_T 1 train 2.3378576673567295 val_acc 0.2890625
+ARM_T 2 train 2.2451678290963173 val_acc 0.1640625
+ARM_T 3 train 2.2083334550261497 val_acc 0.2890625
+ARM_T 4 train 2.219433829188347 val_acc 0.2890625
+ARM_T 5 train 2.1892178282141685 val_acc 0.15625
+ARM_T 6 train 2.2395186349749565 val_acc 0.1953125
+ARM_T 7 train 2.3211792446672916 val_acc 0.2890625
+ARM_T 8 train 2.1204496435821056 val_acc 0.328125
+ARM_T 9 train 2.0970140546560287 val_acc 0.2890625
+ARM_T 10 train 2.0214200541377068 val_acc 0.3671875
+ARM_T 11 train 1.991255421191454 val_acc 0.3828125
+ARM_T 12 train 1.8341592848300934 val_acc 0.3828125
+ARM_T 13 train 1.7962119206786156 val_acc 0.3984375
+ARM_T 14 train 1.686099074780941 val_acc 0.4375
+ARM_T 15 train 1.644567996263504 val_acc 0.40625
+ARM_T 16 train 1.5750110819935799 val_acc 0.421875
+ARM_T 17 train 1.5956070125102997 val_acc 0.4296875
+ARM_T 18 train 1.4603744074702263 val_acc 0.390625
+ARM_T 19 train 1.4696210734546185 val_acc 0.390625
+ARM_T 20 train 1.4083799198269844 val_acc 0.453125
+ARM_T 21 train 1.2930093258619308 val_acc 0.4375
+ARM_T 22 train 1.192837793380022 val_acc 0.5625
+ARM_T 23 train 1.4445154629647732 val_acc 0.359375
+ARM_T 24 train 1.205607434734702 val_acc 0.5078125
+ARM_T 25 train 1.1822293382138014 val_acc 0.421875
+ARM_T 26 train 1.2021796591579914 val_acc 0.4765625
+ARM_T 27 train 1.0381480539217591 val_acc 0.5390625
+ARM_T 28 train 1.0676290765404701 val_acc 0.53125
+ARM_T 29 train 1.1165704810991883 val_acc 0.4453125
+ARM_T 30 train 0.9476872198283672 val_acc 0.5078125
+ARM_T 31 train 0.9751693150028586 val_acc 0.3984375
+ARM_T 32 train 0.9058051947504282 val_acc 0.4296875
+ARM_T 33 train 0.8127309791743755 val_acc 0.5390625
+ARM_T 34 train 0.8758532935753465 val_acc 0.5
+ARM_T 35 train 0.7412356957793236 val_acc 0.5234375
+ARM_T 36 train 0.6652520559728146 val_acc 0.6015625
+ARM_T 37 train 0.558524186257273 val_acc 0.46875
+ARM_T 38 train 0.5926149096339941 val_acc 0.515625
+ARM_T 39 train 0.5430749366059899 val_acc 0.5078125
+ARM_T 40 train 0.4251152854412794 val_acc 0.5546875
+{
+  "config": {
+    "seed": 20261004,
+    "c_dim": 16,
+    "k_slots": 4,
+    "source_proj": 128,
+    "hidden": 512,
+    "f_epochs": 40,
+    "t_epochs": 40,
+    "f_batch": 4,
+    "t_batch": 16,
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "max_trace_target_tokens": 384,
+    "out_dir": "/artifacts/pcs4v3-multipos-v3-f6774d8283b3/bridges_neural"
+  },
+  "receiver_model": "Qwen/Qwen3-1.7B",
+  "source_cache_payload": {
+    "config": {
+      "seed": 20261004,
+      "pool_n": 896,
+      "train_n": 512,
+      "val_n": 128,
+      "test_n": 256,
+      "depth": 8,
+      "max_trace_tokens": 420,
+      "source_batch": 8,
+      "receiver_batch": 32,
+      "out_dir": "/kaggle/working"
+    },
+    "source_model": "Qwen/Qwen3-4B",
+    "receiver_model": "Qwen/Qwen3-1.7B",
+    "source_layers": [
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36
+    ],
+    "source_gates": {
+      "pool_parse_rate": 1.0,
+      "pool_checkpoint_marker_rate": 1.0,
+      "pool_complete_parse_and_checkpoint_rate": 1.0,
+      "selected_n": 896,
+      "source_belief_accuracy_all_coordinates": 0.9693700396825397,
+      "final_strict_triple_accuracy": 0.8895089285714286,
+      "mistake_instances_all_selected": 741,
+      "mistake_episodes_all_selected": 132
+    },
+    "decodability": {
+      "n_properties": 27,
+      "passing_ge_80": 17,
+      "passing_properties": [
+        "s0_a",
+        "s0_b",
+        "s0_c",
+        "s1_a",
+        "s1_b",
+        "s1_c",
+        "s2_a",
+        "s2_b",
+        "s2_c",
+        "s3_a",
+        "s3_b",
+        "s3_c",
+        "s4_c",
+        "s5_c",
+        "s6_c",
+        "s7_c",
+        "s8_c"
+      ],
+      "map": {
+        "s0_a": {
+          "val_accuracy": 0.9921875,
+          "lambda": 0.001
+        },
+        "s0_b": {
+          "val_accuracy": 0.9453125,
+          "lambda": 0.001
+        },
+        "s0_c": {
+          "val_accuracy": 1.0,
+          "lambda": 0.1
+        },
+        "s1_a": {
+          "val_accuracy": 0.9609375,
+          "lambda": 0.001
+        },
+        "s1_b": {
+          "val_accuracy": 0.9453125,
+          "lambda": 0.001
+        },
+        "s1_c": {
+          "val_accuracy": 0.9921875,
+          "lambda": 0.001
+        },
+        "s2_a": {
+          "val_accuracy": 0.9609375,
+          "lambda": 0.001
+        },
+        "s2_b": {
+          "val_accuracy": 0.859375,
+          "lambda": 0.001
+        },
+        "s2_c": {
+          "val_accuracy": 0.984375,
+          "lambda": 0.001
+        },
+        "s3_a": {
+          "val_accuracy": 0.9609375,
+          "lambda": 0.001
+        },
+        "s3_b": {
+          "val_accuracy": 0.859375,
+          "lambda": 0.001
+        },
+        "s3_c": {
+          "val_accuracy": 0.9921875,
+          "lambda": 0.001
+        },
+        "s4_a": {
+          "val_accuracy": 0.7265625,
+          "lambda": 0.01
+        },
+        "s4_b": {
+          "val_accuracy": 0.640625,
+          "lambda": 0.001
+        },
+        "s4_c": {
+          "val_accuracy": 0.96875,
+          "lambda": 0.001
+        },
+        "s5_a": {
+          "val_accuracy": 0.609375,
+          "lambda": 0.001
+        },
+        "s5_b": {
+          "val_accuracy": 0.6328125,
+          "lambda": 0.001
+        },
+        "s5_c": {
+          "val_accuracy": 0.984375,
+          "lambda": 0.001
+        },
+        "s6_a": {
+          "val_accuracy": 0.578125,
+          "lambda": 0.001
+        },
+        "s6_b": {
+          "val_accuracy": 0.578125,
+          "lambda": 0.001
+        },
+        "s6_c": {
+          "val_accuracy": 0.9609375,
+          "lambda": 0.001
+        },
+        "s7_a": {
+          "val_accuracy": 0.515625,
+          "lambda": 0.01
+        },
+        "s7_b": {
+          "val_accuracy": 0.5546875,
+          "lambda": 0.1
+        },
+        "s7_c": {
+          "val_accuracy": 0.9921875,
+          "lambda": 0.001
+        },
+        "s8_a": {
+          "val_accuracy": 0.484375,
+          "lambda": 0.001
+        },
+        "s8_b": {
+          "val_accuracy": 0.5078125,
+          "lambda": 0.01
+        },
+        "s8_c": {
+          "val_accuracy": 1.0,
+          "lambda": 0.001
+        }
+      },
+      "sealed_test_mistake_instances_on_passing_properties": 98,
+      "sealed_test_mistake_episodes_on_passing_properties": 24,
+      "multipos_map_source": "concatenated"
+    },
+    "receiver_probe_gate": {
+      "equality": {
+        "n": 256,
+        "accuracy": 0.9296875
+      },
+      "shift_plus_1": {
+        "n": 256,
+        "accuracy": 0.8125
+      }
+    },
+    "stage_a_pass": false,
+    "multipos_arm": "neural"
+  },
+  "strict_stage_a_gate": {
+    "passes": true,
+    "checks": {
+      "pool_parse_rate_ge_90": true,
+      "checkpoint_rate_ge_98": true,
+      "final_triple_ge_80": true,
+      "passing_coordinates_ge_18": false,
+      "each_register_ge_5": false,
+      "all_final_coordinates_ge_80": false,
+      "mistake_instances_ge_25": true,
+      "mistake_episodes_ge_10": true
+    },
+    "passing_coordinates": [
+      "s0_a",
+      "s0_b",
+      "s0_c",
+      "s1_a",
+      "s1_b",
+      "s1_c",
+      "s2_a",
+      "s2_b",
+      "s2_c",
+      "s3_a",
+      "s3_b",
+      "s3_c",
+      "s4_c",
+      "s5_c",
+      "s6_c",
+      "s7_c",
+      "s8_c"
+    ],
+    "passing_coordinate_count": 17,
+    "passing_by_register": {
+      "a": 4,
+      "b": 4,
+      "c": 9
+    },
+    "final_coordinate_val_accuracy": {
+      "a": 0.484375,
+      "b": 0.5078125,
+      "c": 1.0
+    },
+    "overridden_checks": {
+      "passing_coordinates_ge_18": false,
+      "each_register_ge_5": false,
+      "all_final_coordinates_ge_80": false
+    },
+    "passes_original": false,
+    "label": "EXPLORATORY"
+  },
+  "trace_target_stats": {
+    "n": 896,
+    "mean_tokens": 285.0,
+    "median_tokens": 285.0,
+    "p95_tokens": 285.0,
+    "max_tokens": 285,
+    "fraction_truncated": 0.0,
+    "max_target_tokens": 384
+  },
+  "handoff_order": "instruction_context -> PCS -> query_or_generation",
+  "arm_f": {
+    "best_epoch": 22,
+    "best_val_loss": 0.09396927342822892
+  },
+  "arm_t": {
+    "best_epoch": 35,
+    "best_val_accuracy": 0.6015625
+  },
+  "arm_f_objective": "restart_surprisal_weighted",
+  "restart_weight_stats": {
+    "n": 640,
+    "mean_surprisal": 0.5110285331029445,
+    "mean_frac_tokens_positive_weight": 0.16454326985403894,
+    "mean_total_weight": 146.15416041612625
+  },
+  "sealed_probe_status": "NOT_REVEALED"
+}
+
+$ python /root/stage_b.py --source-cache /artifacts/pcs4v3-multipos-v3-f6774d8283b3/src_ti/PCS4V2_SOURCE_CACHE.pt --stage-a /artifacts/pcs4v3-multipos-v3-f6774d8283b3/src_ti/PCS4V2_STAGE_A.json --out-dir /artifacts/pcs4v3-multipos-v3-f6774d8283b3/bridges_ti --exploratory-override --f-epochs 40 --t-epochs 40 --weighted
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.59s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.61s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.91s/it]
+TRACE_TARGET_STATS {"fraction_truncated": 0.0, "max_target_tokens": 384, "max_tokens": 285, "mean_tokens": 285.0, "median_tokens": 285.0, "n": 896, "p95_tokens": 285.0}
+RESTART_WEIGHT_STATS {"n": 640, "mean_surprisal": 0.5110285331029445, "mean_frac_tokens_positive_weight": 0.16454326985403894, "mean_total_weight": 146.15416041612625}
+ARM_F 1 train 2.639592733059544 val 0.29848192096687853
+ARM_F 2 train 0.21607258429867215 val 0.20977396378293633
+ARM_F 3 train 0.17330327141098678 val 0.19439999805763364
+ARM_F 4 train 0.1501567508385051 val 0.17569913482293487
+ARM_F 5 train 0.13682829261233564 val 0.18578382884152234
+ARM_F 6 train 0.1261125273158541 val 0.18382689042482525
+ARM_F 7 train 0.11162111414887477 val 0.1856349492445588
+ARM_F 8 train 0.10585025417094585 val 0.18977780942805111
+ARM_F 9 train 0.10178939759498462 val 0.2026063489029184
+ARM_F 10 train 0.08611859192751581 val 0.18871145765297115
+ARM_F 11 train 0.07413195365552383 val 0.22665700339712203
+ARM_F 12 train 0.07368222123477608 val 0.2696083662449382
+ARM_F 13 train 0.06771552593818342 val 0.25806187838315964
+ARM_F 14 train 0.050372872988191375 val 0.35558887606021017
+ARM_F 15 train 0.04126190495617266 val 0.3144205182325095
+ARM_F 16 train 0.03557631394210148 val 0.3508104440988973
+ARM_F 17 train 0.03757338089599216 val 0.42414616438327357
+ARM_F 18 train 0.03289002697852084 val 0.3148639863356948
+ARM_F 19 train 0.030077986922606215 val 0.39904296887107193
+ARM_F 20 train 0.03553278989147657 val 0.36839404178317636
+ARM_F 21 train 0.022100066792290818 val 0.45818635169416666
+ARM_F 22 train 0.025314705219216194 val 0.36749900598078966
+ARM_F 23 train 0.024343250051970244 val 0.40115196991246194
+ARM_F 24 train 0.02111983174154375 val 0.49263646302279085
+ARM_F 25 train 0.01764011064585702 val 0.5256536031374708
+ARM_F 26 train 0.01100147051397471 val 0.5288908244110644
+ARM_F 27 train 0.011887107204529457 val 0.5204045737627894
+ARM_F 28 train 0.010869583897374469 val 0.4104433567263186
+ARM_F 29 train 0.00834175538193449 val 0.4545422582887113
+ARM_F 30 train 0.010854520379439236 val 0.49233334127347916
+ARM_F 31 train 0.006829209552165594 val 0.5074766878969967
+ARM_F 32 train 0.006342736866770338 val 0.5395663171075284
+ARM_F 33 train 0.009854331131236904 val 0.5788073977455497
+ARM_F 34 train 0.0072769019931229195 val 0.5234414497390389
+ARM_F 35 train 0.023851521940628118 val 0.49981256388127804
+ARM_F 36 train 0.02928720353429526 val 0.5149486375739798
+ARM_F 37 train 0.013540413697000986 val 0.4999749918933958
+ARM_F 38 train 0.010905793716574408 val 0.5813325532944873
+ARM_F 39 train 0.013792829405701923 val 0.5318075136747211
+ARM_F 40 train 0.018964494178135283 val 0.5117638525553048
+ARM_T 1 train 2.0520792342722416 val_acc 0.515625
+ARM_T 2 train 1.2317431513220072 val_acc 0.78125
+ARM_T 3 train 0.532811734592542 val_acc 0.9296875
+ARM_T 4 train 0.18666638275317382 val_acc 0.9765625
+ARM_T 5 train 0.08645259825243556 val_acc 0.9921875
+ARM_T 6 train 0.03914997570518608 val_acc 0.9921875
+ARM_T 7 train 0.028855781664788083 val_acc 0.9921875
+ARM_T 8 train 0.01608219774425379 val_acc 0.9921875
+ARM_T 9 train 0.027598807323556684 val_acc 0.9921875
+ARM_T 10 train 0.034255685135804015 val_acc 0.9921875
+ARM_T 11 train 0.008254537112634353 val_acc 0.9921875
+ARM_T 12 train 0.02779199451435943 val_acc 0.9921875
+ARM_T 13 train 0.01729742153497682 val_acc 1.0
+ARM_T 14 train 0.004780946942673836 val_acc 1.0
+ARM_T 15 train 0.00010023210131748783 val_acc 1.0
+ARM_T 16 train 8.113326691727707e-05 val_acc 1.0
+ARM_T 17 train 7.298469034822119e-05 val_acc 1.0
+ARM_T 18 train 6.971331771410405e-05 val_acc 1.0
+ARM_T 19 train 6.710711909363454e-05 val_acc 1.0
+ARM_T 20 train 6.352586024149787e-05 val_acc 1.0
+ARM_T 21 train 6.144660937934532e-05 val_acc 1.0
+ARM_T 22 train 6.013421523221041e-05 val_acc 1.0
+ARM_T 23 train 5.882318964722799e-05 val_acc 1.0
+ARM_T 24 train 5.834548966276998e-05 val_acc 1.0
+ARM_T 25 train 5.770324469267507e-05 val_acc 1.0
+ARM_T 26 train 5.7121484587696614e-05 val_acc 1.0
+ARM_T 27 train 5.6476929330528947e-05 val_acc 1.0
+ARM_T 28 train 5.606908160871171e-05 val_acc 1.0
+ARM_T 29 train 5.57345500737938e-05 val_acc 1.0
+ARM_T 30 train 5.5341582935852784e-05 val_acc 1.0
+ARM_T 31 train 5.499190172031376e-05 val_acc 1.0
+ARM_T 32 train 5.452376876746712e-05 val_acc 1.0
+ARM_T 33 train 5.386870611800987e-05 val_acc 1.0
+ARM_T 34 train 5.348345240463459e-05 val_acc 1.0
+ARM_T 35 train 5.314033410286356e-05 val_acc 1.0
+ARM_T 36 train 5.3224381758809614e-05 val_acc 1.0
+ARM_T 37 train 5.28553794651998e-05 val_acc 1.0
+ARM_T 38 train 5.2895425483256986e-05 val_acc 1.0
+ARM_T 39 train 5.2763650785436766e-05 val_acc 1.0
+ARM_T 40 train 5.286400408976988e-05 val_acc 1.0
+{
+  "config": {
+    "seed": 20261004,
+    "c_dim": 16,
+    "k_slots": 4,
+    "source_proj": 128,
+    "hidden": 512,
+    "f_epochs": 40,
+    "t_epochs": 40,
+    "f_batch": 4,
+    "t_batch": 16,
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "max_trace_target_tokens": 384,
+    "out_dir": "/artifacts/pcs4v3-multipos-v3-f6774d8283b3/bridges_ti"
+  },
+  "receiver_model": "Qwen/Qwen3-1.7B",
+  "source_cache_payload": {
+    "config": {
+      "seed": 20261004,
+      "pool_n": 896,
+      "train_n": 512,
+      "val_n": 128,
+      "test_n": 256,
+      "depth": 8,
+      "max_trace_tokens": 420,
+      "source_batch": 8,
+      "receiver_batch": 32,
+      "out_dir": "/kaggle/working"
+    },
+    "source_model": "Qwen/Qwen3-4B",
+    "receiver_model": "Qwen/Qwen3-1.7B",
+    "source_layers": [
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36
+    ],
+    "source_gates": {
+      "pool_parse_rate": 1.0,
+      "pool_checkpoint_marker_rate": 1.0,
+      "pool_complete_parse_and_checkpoint_rate": 1.0,
+      "selected_n": 896,
+      "source_belief_accuracy_all_coordinates": 0.9693700396825397,
+      "final_strict_triple_accuracy": 0.8895089285714286,
+      "mistake_instances_all_selected": 741,
+      "mistake_episodes_all_selected": 132
+    },
+    "decodability": {
+      "n_properties": 27,
+      "passing_ge_80": 17,
+      "passing_properties": [
+        "s0_a",
+        "s0_b",
+        "s0_c",
+        "s1_a",
+        "s1_b",
+        "s1_c",
+        "s2_a",
+        "s2_b",
+        "s2_c",
+        "s3_a",
+        "s3_b",
+        "s3_c",
+        "s4_c",
+        "s5_c",
+        "s6_c",
+        "s7_c",
+        "s8_c"
+      ],
+      "map": {
+        "s0_a": {
+          "val_accuracy": 0.9921875,
+          "lambda": 0.001
+        },
+        "s0_b": {
+          "val_accuracy": 0.9453125,
+          "lambda": 0.001
+        },
+        "s0_c": {
+          "val_accuracy": 1.0,
+          "lambda": 0.1
+        },
+        "s1_a": {
+          "val_accuracy": 0.9609375,
+          "lambda": 0.001
+        },
+        "s1_b": {
+          "val_accuracy": 0.9453125,
+          "lambda": 0.001
+        },
+        "s1_c": {
+          "val_accuracy": 0.9921875,
+          "lambda": 0.001
+        },
+        "s2_a": {
+          "val_accuracy": 0.9609375,
+          "lambda": 0.001
+        },
+        "s2_b": {
+          "val_accuracy": 0.859375,
+          "lambda": 0.001
+        },
+        "s2_c": {
+          "val_accuracy": 0.984375,
+          "lambda": 0.001
+        },
+        "s3_a": {
+          "val_accuracy": 0.9609375,
+          "lambda": 0.001
+        },
+        "s3_b": {
+          "val_accuracy": 0.859375,
+          "lambda": 0.001
+        },
+        "s3_c": {
+          "val_accuracy": 0.9921875,
+          "lambda": 0.001
+        },
+        "s4_a": {
+          "val_accuracy": 0.7265625,
+          "lambda": 0.01
+        },
+        "s4_b": {
+          "val_accuracy": 0.640625,
+          "lambda": 0.001
+        },
+        "s4_c": {
+          "val_accuracy": 0.96875,
+          "lambda": 0.001
+        },
+        "s5_a": {
+          "val_accuracy": 0.609375,
+          "lambda": 0.001
+        },
+        "s5_b": {
+          "val_accuracy": 0.6328125,
+          "lambda": 0.001
+        },
+        "s5_c": {
+          "val_accuracy": 0.984375,
+          "lambda": 0.001
+        },
+        "s6_a": {
+          "val_accuracy": 0.578125,
+          "lambda": 0.001
+        },
+        "s6_b": {
+          "val_accuracy": 0.578125,
+          "lambda": 0.001
+        },
+        "s6_c": {
+          "val_accuracy": 0.9609375,
+          "lambda": 0.001
+        },
+        "s7_a": {
+          "val_accuracy": 0.515625,
+          "lambda": 0.01
+        },
+        "s7_b": {
+          "val_accuracy": 0.5546875,
+          "lambda": 0.1
+        },
+        "s7_c": {
+          "val_accuracy": 0.9921875,
+          "lambda": 0.001
+        },
+        "s8_a": {
+          "val_accuracy": 0.484375,
+          "lambda": 0.001
+        },
+        "s8_b": {
+          "val_accuracy": 0.5078125,
+          "lambda": 0.01
+        },
+        "s8_c": {
+          "val_accuracy": 1.0,
+          "lambda": 0.001
+        }
+      },
+      "sealed_test_mistake_instances_on_passing_properties": 98,
+      "sealed_test_mistake_episodes_on_passing_properties": 24,
+      "multipos_map_source": "concatenated"
+    },
+    "receiver_probe_gate": {
+      "equality": {
+        "n": 256,
+        "accuracy": 0.9296875
+      },
+      "shift_plus_1": {
+        "n": 256,
+        "accuracy": 0.8125
+      }
+    },
+    "stage_a_pass": false,
+    "multipos_arm": "token_identity"
+  },
+  "strict_stage_a_gate": {
+    "passes": true,
+    "checks": {
+      "pool_parse_rate_ge_90": true,
+      "checkpoint_rate_ge_98": true,
+      "final_triple_ge_80": true,
+      "passing_coordinates_ge_18": false,
+      "each_register_ge_5": false,
+      "all_final_coordinates_ge_80": false,
+      "mistake_instances_ge_25": true,
+      "mistake_episodes_ge_10": true
+    },
+    "passing_coordinates": [
+      "s0_a",
+      "s0_b",
+      "s0_c",
+      "s1_a",
+      "s1_b",
+      "s1_c",
+      "s2_a",
+      "s2_b",
+      "s2_c",
+      "s3_a",
+      "s3_b",
+      "s3_c",
+      "s4_c",
+      "s5_c",
+      "s6_c",
+      "s7_c",
+      "s8_c"
+    ],
+    "passing_coordinate_count": 17,
+    "passing_by_register": {
+      "a": 4,
+      "b": 4,
+      "c": 9
+    },
+    "final_coordinate_val_accuracy": {
+      "a": 0.484375,
+      "b": 0.5078125,
+      "c": 1.0
+    },
+    "overridden_checks": {
+      "passing_coordinates_ge_18": false,
+      "each_register_ge_5": false,
+      "all_final_coordinates_ge_80": false
+    },
+    "passes_original": false,
+    "label": "EXPLORATORY"
+  },
+  "trace_target_stats": {
+    "n": 896,
+    "mean_tokens": 285.0,
+    "median_tokens": 285.0,
+    "p95_tokens": 285.0,
+    "max_tokens": 285,
+    "fraction_truncated": 0.0,
+    "max_target_tokens": 384
+  },
+  "handoff_order": "instruction_context -> PCS -> query_or_generation",
+  "arm_f": {
+    "best_epoch": 3,
+    "best_val_loss": 0.17569913482293487
+  },
+  "arm_t": {
+    "best_epoch": 12,
+    "best_val_accuracy": 1.0
+  },
+  "arm_f_objective": "restart_surprisal_weighted",
+  "restart_weight_stats": {
+    "n": 640,
+    "mean_surprisal": 0.5110285331029445,
+    "mean_frac_tokens_positive_weight": 0.16454326985403894,
+    "mean_total_weight": 146.15416041612625
+  },
+  "sealed_probe_status": "NOT_REVEALED"
+}
+
+$ python /root/stage_c.py --source-dir /artifacts/pcs4v3-multipos-v3-f6774d8283b3/src_neural --bridge-dir /artifacts/pcs4v3-multipos-v3-f6774d8283b3/bridges_neural --ti-source-dir /artifacts/pcs4v3-multipos-v3-f6774d8283b3/src_ti --ti-bridge-dir /artifacts/pcs4v3-multipos-v3-f6774d8283b3/bridges_ti --seal-file /artifacts/pcs4v3-multipos-v3-f6774d8283b3/PCS4V2_SEAL.json --out-dir /artifacts/pcs4v3-multipos-v3-f6774d8283b3/stage_c --exploratory-override
+SEAL_VERIFIED {"neural_F": "0f52e442a827cc974bb93591676759258b3eb495cc3c3426096dd2dc0e6934ea", "neural_T": "5c3fe19ac05c28dc8ab5ffc478d1cda67115ebcf916824670ee2f01f27182860", "ti_F": "76f38d354a0c21b7fc9b01b709b31bbc2a601c9f1565d452ab21b1298459f79f", "ti_T": "e1853187b247f6a9bc1ee6a87c999d4dba1bab1bc64a93074b54b51a303fa455"}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.98s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.59s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.95s/it]
+{
+  "source_model": "Qwen/Qwen3-4B",
+  "receiver_model": "Qwen/Qwen3-1.7B",
+  "arm_f_sha256": "0f52e442a827cc974bb93591676759258b3eb495cc3c3426096dd2dc0e6934ea",
+  "probe_seed_derivation_hash": "cfac45431264ba8f58e764e033966ea7e2906d3333f14e44a35eab09dffa6ae3",
+  "probe_seed_u64": 14964411816219032207,
+  "strict_stage_a_gate": {
+    "passes": true,
+    "checks": {
+      "parse": true,
+      "checkpoint": true,
+      "final_triple": true,
+      "n_passing": false,
+      "per_register": false,
+      "final_coords": false,
+      "mistake_instances": true,
+      "mistake_episodes": true
+    },
+    "passing": [
+      "s0_a",
+      "s0_b",
+      "s0_c",
+      "s1_a",
+      "s1_b",
+      "s1_c",
+      "s2_a",
+      "s2_b",
+      "s2_c",
+      "s3_a",
+      "s3_b",
+      "s3_c",
+      "s4_c",
+      "s5_c",
+      "s6_c",
+      "s7_c",
+      "s8_c"
+    ],
+    "per_register": {
+      "a": 4,
+      "b": 4,
+      "c": 9
+    },
+    "finals": {
+      "a": 0.484375,
+      "b": 0.5078125,
+      "c": 1.0
+    },
+    "overridden_checks": {
+      "n_passing": false,
+      "per_register": false,
+      "final_coords": false
+    },
+    "passes_original": false,
+    "label": "EXPLORATORY"
+  },
+  "seal": {
+    "label": "EXPLORATORY",
+    "written_utc": "2026-10-04T15:44:22Z",
+    "written_before_probe_instantiation": true,
+    "bridge_sha256": {
+      "neural_F": "0f52e442a827cc974bb93591676759258b3eb495cc3c3426096dd2dc0e6934ea",
+      "neural_T": "5c3fe19ac05c28dc8ab5ffc478d1cda67115ebcf916824670ee2f01f27182860",
+      "ti_F": "76f38d354a0c21b7fc9b01b709b31bbc2a601c9f1565d452ab21b1298459f79f",
+      "ti_T": "e1853187b247f6a9bc1ee6a87c999d4dba1bab1bc64a93074b54b51a303fa455"
+    },
+    "probe_domain": "PCS4V2_PROBE_V1|",
+    "probe_seed_hash": "cfac45431264ba8f58e764e033966ea7e2906d3333f14e44a35eab09dffa6ae3",
+    "deviation_record_sha256": "42151e0f40b3708ce008429996d5f3eda54fecd4b931db069b1d2625c4d2a7b9",
+    "v3_freeze_sha256": "97e9023e117f3e2d64265c3c1fa681cad39645c0ccdf887e2bd22a5ec0b8099d",
+    "arm_f_objective": "restart_surprisal_weighted",
+    "features_sha256": "5a3648d1f563133159ac935833bc6ac76afd3595e69e7bb75c54e2435dc523a2",
+    "code_shas": {
+      "/root/orch.py": "f6774d8283b3067a6a9da54566d303aef9bac2aa7ad38d8848ef4c32cd67a285",
+      "/root/stage_b.py": "ca78b7086ad011c6759d8528a2e1ea85537450c9a4154136a7f2dc6c51403317",
+      "/root/stage_c.py": "32947d2cb80aa106a3230b66daacd3214ac32abb0c601cb1b48ab8ce0949ba59",
+      "/root/adapt.py": "7f9abccb66126380d465c63d292bd5880d6073b37ba824b614c3fbf9262eceb9",
+      "/root/GATE.json": "1c9eec29a37837293fad392a8045dda10a7ed54aa442d377314902f074df35e1",
+      "/root/STAGE_A.json": "f70d1ad0d61488f9f258299701f6ddb22f36c0808e6cf49374455a3069af294f",
+      "/root/DEVIATION.md": "42151e0f40b3708ce008429996d5f3eda54fecd4b931db069b1d2625c4d2a7b9",
+      "/root/FREEZE_V3.md": "97e9023e117f3e2d64265c3c1fa681cad39645c0ccdf887e2bd22a5ec0b8099d"
+    }
+  },
+  "receiver_probe_gate": {
+    "equality": {
+      "n": 256,
+      "accuracy": 0.9296875
+    },
+    "shift_plus_1": {
+      "n": 256,
+      "accuracy": 0.8125
+    }
+  },
+  "probe_meta": {
+    "equality_enabled": true,
+    "plus1_enabled": true,
+    "n_derived_candidates": 14,
+    "derived_candidates": [
+      "s1_a",
+      "s1_b",
+      "s1_c",
+      "s2_a",
+      "s2_b",
+      "s2_c",
+      "s3_a",
+      "s3_b",
+      "s3_c",
+      "s4_c",
+      "s5_c",
+      "s6_c",
+      "s7_c",
+      "s8_c"
+    ]
+  },
+  "n_records": 1378
+}

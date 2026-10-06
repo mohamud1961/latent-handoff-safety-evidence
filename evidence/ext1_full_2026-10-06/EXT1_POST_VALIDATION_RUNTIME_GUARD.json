@@ -1,0 +1,17 @@
+{
+  "contingency_multiplier": 1.25,
+  "direct_seconds_per_example_basis": 0.04136990429411762,
+  "expected_full_sender_cache_builds": 1666,
+  "observed_elapsed_seconds": 817.188619669,
+  "projected_remaining_hours": 6.874600808991257,
+  "projected_remaining_seconds": 24748.562912368525,
+  "remaining_primary_direct_examples": 18900,
+  "remaining_sender_cache_builds": 1456,
+  "remaining_thinking_crosscheck_calls": 400,
+  "remaining_time_guard_passed": true,
+  "remaining_time_guard_seconds": 37800,
+  "sender_seconds_per_build_basis": 2.620446031,
+  "smoke_full_runtime_hours": 7.136230117360742,
+  "stage": "after_validation_or_runtime_checkpoint",
+  "thinking_seconds_per_call_basis": 36.762724293999995
+}

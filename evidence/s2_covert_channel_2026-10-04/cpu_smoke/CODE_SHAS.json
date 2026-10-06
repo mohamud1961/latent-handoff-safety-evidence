@@ -1,0 +1,13 @@
+{
+  "model_custody": {
+    "local_files_only": true,
+    "receiver_model": "Qwen/Qwen3-1.7B",
+    "receiver_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "receiver_tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "source_model": "Qwen/Qwen3-4B",
+    "source_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "source_tokenizer_revision": "1cfa9a7208912126459214e8b04321603b3df60c"
+  },
+  "pcs2b_preanswer_bridge.py": "29c47aa64ef482e0654052df223dc1b9596c0a23bfbb93ddb5d5959562b8949c",
+  "s2_covert_channel.py": "f9cfa01df2a084984d55f19008cc08c94a370cb1f7986f6c609c19b249911860"
+}

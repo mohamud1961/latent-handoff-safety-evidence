@@ -1,0 +1,213 @@
+ARM neural (1099, 36, 2560) n_test 459
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [00:15<00:15, 15.53s/it]Fetching 2 files: 100%|██████████| 2/2 [00:16<00:00,  8.21s/it]Fetching 2 files: 100%|██████████| 2/2 [00:16<00:00,  8.21s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.70s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  1.73s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.02s/it]
+PCS3 epoch 1 train 2.360935904085636 val 2.2472330927848816
+PCS3 epoch 2 train 2.2332090958952904 val 2.248061954975128
+PCS3 epoch 3 train 2.225422702729702 val 2.243924856185913
+PCS3 epoch 4 train 2.2283563539385796 val 2.2216712534427643
+PCS3 epoch 5 train 2.223267190158367 val 2.219781458377838
+PCS3 epoch 6 train 2.1906050592660904 val 2.119418054819107
+PCS3 epoch 7 train 2.0584663338959217 val 2.033987507224083
+PCS3 epoch 8 train 1.9833825156092644 val 1.9850883781909943
+PCS3 epoch 9 train 1.959287140518427 val 1.9804993867874146
+PCS3 epoch 10 train 1.9225251823663712 val 1.9757985174655914
+{
+  "arm": "neural",
+  "summary": {
+    "n_records": 1377,
+    "n_states": 459,
+    "coverage": {
+      "a": {
+        "ge1": 0.9455337690631809,
+        "ge3": 0.7320261437908496
+      },
+      "b": {
+        "ge1": 0.954248366013072,
+        "ge3": 0.7015250544662309
+      },
+      "c": {
+        "ge1": 0.9586056644880174,
+        "ge3": 0.7450980392156863
+      }
+    },
+    "pcs_fidelity": 0.28903413217138707,
+    "pcs_objective": 0.28685548293391433,
+    "restart_fidelity": 0.13798111837327523,
+    "restart_objective": 0.1336238198983297,
+    "oracle_fidelity": 1.0,
+    "oracle_objective": 0.9854756717501816,
+    "partial_fidelity": 0.20334059549745825,
+    "partial_objective": 0.2018881626724764,
+    "text_fidelity": 0.9789397240377633,
+    "text_objective": 0.9644153957879448,
+    "zero_fidelity": 0.07116920842411038,
+    "zero_objective": 0.07116920842411038,
+    "random_fidelity": 0.0878721859114016,
+    "random_objective": 0.09005083514887437,
+    "wrong_mean_record_fidelity": 0.19461382113821138,
+    "wrong_pair_fidelity_diagnostic": 0.19776760160274756,
+    "pcs_minus_wrong": 0.09442031103317569,
+    "pcs_minus_restart": 0.15105301379811184,
+    "state_specific_cluster_boot": [
+      0.09501331396756234,
+      0.07455821834906803,
+      0.11534737351730816
+    ],
+    "by_selector": {
+      "a": {
+        "n": 459,
+        "pcs_fidelity": 0.2984749455337691,
+        "restart_fidelity": 0.12854030501089325,
+        "oracle_fidelity": 1.0
+      },
+      "b": {
+        "n": 459,
+        "pcs_fidelity": 0.3093681917211329,
+        "restart_fidelity": 0.13507625272331156,
+        "oracle_fidelity": 1.0
+      },
+      "c": {
+        "n": 459,
+        "pcs_fidelity": 0.25925925925925924,
+        "restart_fidelity": 0.1503267973856209,
+        "oracle_fidelity": 1.0
+      }
+    },
+    "source_wrong_records": 20,
+    "source_wrong_states": 13,
+    "pcs_follow_A_on_source_wrong": 0.3,
+    "pcs_objective_on_source_wrong": 0.15,
+    "wrong_follow_A_on_source_wrong": 0.21052631578947367,
+    "excess_source_wrong_fidelity": 0.08947368421052632
+  },
+  "frozen_checks": {
+    "source_gate": true,
+    "receiver_oracle_gate": true,
+    "strong_control_ge1_coverage": true,
+    "strong_control_ge3_coverage": true,
+    "pcs_fidelity_ge70": false,
+    "each_selector_ge60": false,
+    "state_specific_ge30": false,
+    "state_specific_ci_gt0": true,
+    "pcs_minus_restart_ge30": false,
+    "pcs_beats_zero": true,
+    "pcs_beats_random": true,
+    "source_wrong_directional_if_n_ge10": true
+  },
+  "classification": "PCS3_MULTIPOS_NO_POSITIVE_CLAIM_NEURAL",
+  "receiver_preflight": {
+    "overall": 1.0,
+    "by_selector": {
+      "a": 1.0,
+      "b": 1.0,
+      "c": 1.0
+    },
+    "passed": true
+  }
+}
+ARM token_identity (1099, 4, 10) n_test 459
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.10s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.07s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.22s/it]
+PCS3 epoch 1 train 2.4125754199922085 val 2.0883596390485764
+PCS3 epoch 2 train 1.963187325745821 val 1.8181296288967133
+PCS3 epoch 3 train 1.6242104209959507 val 1.4063533246517181
+PCS3 epoch 4 train 1.2986102011054754 val 1.2472931891679764
+PCS3 epoch 5 train 1.101491253823042 val 1.0576390102505684
+PCS3 epoch 6 train 1.0057969763875008 val 0.995399534702301
+PCS3 epoch 7 train 0.9493199866265059 val 0.9543720409274101
+PCS3 epoch 8 train 0.9055895525962114 val 0.9613339155912399
+PCS3 epoch 9 train 0.8708035536110401 val 0.9141341894865036
+PCS3 epoch 10 train 0.843821607530117 val 0.8723478391766548
+{
+  "arm": "token_identity",
+  "summary": {
+    "n_records": 1377,
+    "n_states": 459,
+    "coverage": {
+      "a": {
+        "ge1": 0.9455337690631809,
+        "ge3": 0.7320261437908496
+      },
+      "b": {
+        "ge1": 0.954248366013072,
+        "ge3": 0.7015250544662309
+      },
+      "c": {
+        "ge1": 0.9586056644880174,
+        "ge3": 0.7450980392156863
+      }
+    },
+    "pcs_fidelity": 0.5374001452432825,
+    "pcs_objective": 0.5301379811183733,
+    "restart_fidelity": 0.13798111837327523,
+    "restart_objective": 0.1336238198983297,
+    "oracle_fidelity": 1.0,
+    "oracle_objective": 0.9854756717501816,
+    "partial_fidelity": 0.20334059549745825,
+    "partial_objective": 0.2018881626724764,
+    "text_fidelity": 0.9789397240377633,
+    "text_objective": 0.9644153957879448,
+    "zero_fidelity": 0.07116920842411038,
+    "zero_objective": 0.07116920842411038,
+    "random_fidelity": 0.08714596949891068,
+    "random_objective": 0.08932461873638345,
+    "wrong_mean_record_fidelity": 0.10340447154471544,
+    "wrong_pair_fidelity_diagnostic": 0.10618202633085289,
+    "pcs_minus_wrong": 0.43399567369856706,
+    "pcs_minus_restart": 0.3994190268700073,
+    "state_specific_cluster_boot": [
+      0.4382110869038974,
+      0.41515371580731053,
+      0.4612079399661099
+    ],
+    "by_selector": {
+      "a": {
+        "n": 459,
+        "pcs_fidelity": 0.5272331154684096,
+        "restart_fidelity": 0.12854030501089325,
+        "oracle_fidelity": 1.0
+      },
+      "b": {
+        "n": 459,
+        "pcs_fidelity": 0.48366013071895425,
+        "restart_fidelity": 0.13507625272331156,
+        "oracle_fidelity": 1.0
+      },
+      "c": {
+        "n": 459,
+        "pcs_fidelity": 0.6013071895424836,
+        "restart_fidelity": 0.1503267973856209,
+        "oracle_fidelity": 1.0
+      }
+    },
+    "source_wrong_records": 20,
+    "source_wrong_states": 13,
+    "pcs_follow_A_on_source_wrong": 0.55,
+    "pcs_objective_on_source_wrong": 0.05,
+    "wrong_follow_A_on_source_wrong": 0.05263157894736842,
+    "excess_source_wrong_fidelity": 0.4973684210526316
+  },
+  "frozen_checks": {
+    "source_gate": true,
+    "receiver_oracle_gate": true,
+    "strong_control_ge1_coverage": true,
+    "strong_control_ge3_coverage": true,
+    "pcs_fidelity_ge70": false,
+    "each_selector_ge60": false,
+    "state_specific_ge30": true,
+    "state_specific_ci_gt0": true,
+    "pcs_minus_restart_ge30": true,
+    "pcs_beats_zero": true,
+    "pcs_beats_random": true,
+    "source_wrong_directional_if_n_ge10": true
+  },
+  "classification": "PCS3_MULTIPOS_NO_POSITIVE_CLAIM_TOKEN_IDENTITY",
+  "receiver_preflight": {
+    "overall": 1.0,
+    "by_selector": {
+      "a": 1.0,
+      "b": 1.0,
+      "c": 1.0
+    },
+    "passed": true
+  }
+}

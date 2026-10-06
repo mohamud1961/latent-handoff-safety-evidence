@@ -1,0 +1,17 @@
+{
+  "arm": "S-UP",
+  "assumed_usd_per_gpu_hour": 1.95,
+  "gpu": "L40S",
+  "peak_gpu_memory_gib": 8.55,
+  "smoke": false,
+  "stages": {
+    "eval": {
+      "gpu_hours": 0.08188812100777776,
+      "seconds": 294.8,
+      "usd_assumed": 0.15968183596516664
+    }
+  },
+  "total_gpu_hours": 0.08651558776444444,
+  "total_seconds": 311.5,
+  "total_usd_assumed": 0.16870539614066665
+}

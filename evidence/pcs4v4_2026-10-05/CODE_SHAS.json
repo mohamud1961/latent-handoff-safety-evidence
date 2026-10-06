@@ -1,0 +1,33 @@
+{
+  "files": {
+    "/root/modal_pcs4v4_contrastive.py": "fab7f74fd9d6bb74534acc6d00425d908d34ee634474c8ff7a9ad9a86daf9264",
+    "/root/pcs4v2_stage_b_train_bridges.py": "7c9b96fc5e8ee3e800f535c3860ab7f39f3bf3227a05932722806d0956f3c02f",
+    "/root/pcs4v2_stage_c.py": "7d67de4338e593bf8819b95743521089016d2a8e2c65a59d932c5d3e2018468b",
+    "/root/pcs4v4_contract.py": "181fec51075d901816014848f68e77b1b439ac7ca50b940ee0c32dcd1ddcd74e",
+    "/root/pcs4v4_gpu_smoke.py": "8d1ef0a940b8c60c42a835e1c557f406744641ecc9eaf468f61ff36054397993",
+    "/root/pcs4v4_reduce.py": "2b0dc5d78242479a593474c06b709f191e0f5d01cfe39b26635f22e4531fbc2a",
+    "/root/PCS4V2_MULTIPOS_GATE.json": "1c9eec29a37837293fad392a8045dda10a7ed54aa442d377314902f074df35e1",
+    "/root/PCS4V2_BASE_STAGE_A.json": "f70d1ad0d61488f9f258299701f6ddb22f36c0808e6cf49374455a3069af294f",
+    "/root/PCS4V3_SEAL.json": "42dcc4c4a0b9ef65c2b6172263ef8616a1bb6c55d48e809a16840a46aabc06e0",
+    "/root/02_PCS4V4_CONTINGENCY_FREEZE.md": "7e237f3a9da1023c42fcbfad37d7f627fe72606d85ce815286db346321247fec",
+    "/root/04_PCS6_REASONING_CONTINUATION_FREEZE.md": "d4bbfd637d8fd5c35aeca5c23da9354d002986ec0db38eddedd60bb27a917e1c",
+    "/root/05_BUILD_SPEC_FOR_IMPLEMENTER.md": "0a892adeda8fbdb89532010510e0e6dafbb7c968afb917bb20c0f16d995e9c3a",
+    "/root/PCS4V3_INFORMATION_WEIGHTED_OBJECTIVE_FREEZE_2026-10-04.md": "97e9023e117f3e2d64265c3c1fa681cad39645c0ccdf887e2bd22a5ec0b8099d",
+    "/root/PCS4V3_RESULT.md": "7feb02402eeba4c44c9fa0f12f679bc0bf97d2bd7a8285cbc5aeefa3650dcea6",
+    "/root/RESOLUTIONS_1_OPUS.md": "3de67dd567cbf3bd2d45b88d677c0c0755cd1027929418c0b934611b4947e61c"
+  },
+  "model_revisions": {
+    "A": {
+      "repo_id": "Qwen/Qwen3-4B",
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "tokenizer_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "role": "source feature/cache provenance"
+    },
+    "B": {
+      "repo_id": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "role": "Stage B training and Stage C receiver"
+    }
+  }
+}

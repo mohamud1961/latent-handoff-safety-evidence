@@ -1,0 +1,47 @@
+{
+  "bridges": {
+    "neural": {
+      "arm": "neural",
+      "best_epoch_zero_based": 38,
+      "best_validation_loss": 1.03570456802845,
+      "checkpoint_path": "/artifacts/pcs3c-confirm-003cdc273016/neural/PCS3_BRIDGE.pt",
+      "checkpoint_sha256": "317b1ff3f234d503e402c7e0715c81ffdc9bd99ca385d61291a995b2819970cd",
+      "probe_seed": 0,
+      "probe_seed_commitment_sha256": "8edddcb62b94895cdd7514cb33fbaeffb859d026fc0dc7d0e241ecc5ce45383e",
+      "receiver_preflight": {
+        "by_selector": {
+          "a": 1.0,
+          "b": 1.0,
+          "c": 1.0
+        },
+        "overall": 1.0,
+        "passed": true
+      },
+      "w1_config": "W1-b"
+    },
+    "token_identity": {
+      "arm": "token_identity",
+      "best_epoch_zero_based": 32,
+      "best_validation_loss": 0.004184573350357823,
+      "checkpoint_path": "/artifacts/pcs3c-confirm-003cdc273016/token_identity/PCS3_BRIDGE.pt",
+      "checkpoint_sha256": "f889ff7d15dd9eca737549774fe55a0d9b9d91bb2bde8f52da340ee59230e7df",
+      "probe_seed": 0,
+      "probe_seed_commitment_sha256": "45e0b9411fbc34df5e144ce3fb50659a1ba53a7f79a34844cf0f040c0d3ccdc4",
+      "receiver_preflight": {
+        "by_selector": {
+          "a": 1.0,
+          "b": 1.0,
+          "c": 1.0
+        },
+        "overall": 1.0,
+        "passed": true
+      },
+      "w1_config": "W1-b"
+    }
+  },
+  "probe_seed": 0,
+  "probe_seed_commitment_formula": "sha256(bridge_sha256_hex || ASCII('PCS3c'))",
+  "schema": "pcs3c_bridge_seal_v1",
+  "w1_choice_sha256": "d85909b93dea9f42e89dc98eb8f048344ae82723ebca6e70d9429ca7b9e60937",
+  "written_before_test_evaluation": true
+}

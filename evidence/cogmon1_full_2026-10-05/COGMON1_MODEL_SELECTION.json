@@ -1,0 +1,134 @@
+{
+  "p_only": {
+    "chosen_C": 0.1,
+    "metric": "accuracy",
+    "validation_grid": [
+      {
+        "C": 0.01,
+        "validation_score": 0.23697916666666666
+      },
+      {
+        "C": 0.1,
+        "validation_score": 0.23958333333333334
+      },
+      {
+        "C": 1.0,
+        "validation_score": 0.20052083333333334
+      },
+      {
+        "C": 10.0,
+        "validation_score": 0.1875
+      },
+      {
+        "C": 100.0,
+        "validation_score": 0.171875
+      }
+    ]
+  },
+  "predict": {
+    "chosen_C": 0.01,
+    "metric": "accuracy",
+    "validation_grid": [
+      {
+        "C": 0.01,
+        "validation_score": 0.5052083333333334
+      },
+      {
+        "C": 0.1,
+        "validation_score": 0.4895833333333333
+      },
+      {
+        "C": 1.0,
+        "validation_score": 0.484375
+      },
+      {
+        "C": 10.0,
+        "validation_score": 0.4609375
+      },
+      {
+        "C": 100.0,
+        "validation_score": 0.4609375
+      }
+    ]
+  },
+  "read": {
+    "a": {
+      "chosen_C": 0.1,
+      "metric": "balanced_accuracy",
+      "validation_grid": [
+        {
+          "C": 0.01,
+          "validation_score": 0.577362098685628
+        },
+        {
+          "C": 0.1,
+          "validation_score": 0.6237906701141994
+        },
+        {
+          "C": 1.0,
+          "validation_score": 0.6142668605903899
+        },
+        {
+          "C": 10.0,
+          "validation_score": 0.6095749838396898
+        },
+        {
+          "C": 100.0,
+          "validation_score": 0.6036926308985132
+        }
+      ]
+    },
+    "b": {
+      "chosen_C": 1.0,
+      "metric": "balanced_accuracy",
+      "validation_grid": [
+        {
+          "C": 0.01,
+          "validation_score": 0.5158427318295739
+        },
+        {
+          "C": 0.1,
+          "validation_score": 0.5625689223057644
+        },
+        {
+          "C": 1.0,
+          "validation_score": 0.5818003341687552
+        },
+        {
+          "C": 10.0,
+          "validation_score": 0.5649498746867168
+        },
+        {
+          "C": 100.0,
+          "validation_score": 0.5583890281258702
+        }
+      ]
+    },
+    "c": {
+      "chosen_C": 100.0,
+      "metric": "balanced_accuracy",
+      "validation_grid": [
+        {
+          "C": 0.01,
+          "validation_score": 0.6566666666666667
+        },
+        {
+          "C": 0.1,
+          "validation_score": 0.62
+        },
+        {
+          "C": 1.0,
+          "validation_score": 0.6747222222222222
+        },
+        {
+          "C": 10.0,
+          "validation_score": 0.6719444444444445
+        },
+        {
+          "C": 100.0,
+          "validation_score": 0.6875
+        }
+      ]
+    }
+  }
+}

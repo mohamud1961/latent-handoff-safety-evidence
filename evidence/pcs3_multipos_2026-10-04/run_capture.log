@@ -1,0 +1,154 @@
+LOCATE 0 / 896
+LOCATE 200 / 896
+LOCATE 400 / 896
+LOCATE 600 / 896
+LOCATE 800 / 896
+RECON {
+ "experiment": "pcs3",
+ "n_items": 896,
+ "checkpoint_reconstruction_match_rate": 1.0,
+ "n_checkpoint_match": 896,
+ "located_rate": 1.0,
+ "n_located": 896,
+ "exclusion_reasons": {},
+ "located_and_ckpt_match": 896,
+ "positions": [
+  "last_assign_a",
+  "last_assign_b",
+  "last_assign_c",
+  "checkpoint"
+ ],
+ "private_trace_text_match_rate": 1.0,
+ "decode_roundtrip_rate": 1.0,
+ "first_mismatches_id_newlen_origlen": []
+}
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:05<00:10,  5.20s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:10<00:05,  5.22s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:10<00:00,  2.90s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:10<00:00,  3.52s/it]
+CAPTURE 8 / 896
+CAPTURE 168 / 896
+CAPTURE 328 / 896
+CAPTURE 488 / 896
+CAPTURE 648 / 896
+CAPTURE 808 / 896
+SAVED /artifacts/pcs3-multipos-2aedd7129e4e/PCS3_MULTIPOS_FEATURES.pt (896, 4, 9, 2560)
+GATE {
+ "per_position": {
+  "last_assign_a": {
+   "a": {
+    "lambda": 0.01,
+    "val_accuracy": 0.953125
+   },
+   "b": {
+    "lambda": 0.001,
+    "val_accuracy": 0.1640625
+   },
+   "c": {
+    "lambda": 10.0,
+    "val_accuracy": 0.1875
+   }
+  },
+  "last_assign_b": {
+   "a": {
+    "lambda": 100.0,
+    "val_accuracy": 0.1875
+   },
+   "b": {
+    "lambda": 0.1,
+    "val_accuracy": 0.9375
+   },
+   "c": {
+    "lambda": 10.0,
+    "val_accuracy": 0.1953125
+   }
+  },
+  "last_assign_c": {
+   "a": {
+    "lambda": 1.0,
+    "val_accuracy": 0.203125
+   },
+   "b": {
+    "lambda": 0.001,
+    "val_accuracy": 0.234375
+   },
+   "c": {
+    "lambda": 0.0001,
+    "val_accuracy": 0.9921875
+   }
+  },
+  "checkpoint": {
+   "a": {
+    "lambda": 0.01,
+    "val_accuracy": 0.3515625
+   },
+   "b": {
+    "lambda": 0.001,
+    "val_accuracy": 0.3671875
+   },
+   "c": {
+    "lambda": 0.1,
+    "val_accuracy": 0.4375
+   }
+  }
+ },
+ "concatenated": {
+  "a": {
+   "lambda": 0.0001,
+   "val_accuracy": 0.8359375
+  },
+  "b": {
+   "lambda": 0.0001,
+   "val_accuracy": 0.8203125
+  },
+  "c": {
+   "lambda": 0.0001,
+   "val_accuracy": 0.875
+  }
+ },
+ "control_coverage_original_test_pool": {
+  "overall_ge1": 0.8450520833333334,
+  "overall_ge3": 0.5013020833333334,
+  "by_selector": {
+   "a": {
+    "ge1": 0.8359375,
+    "ge3": 0.46875
+   },
+   "b": {
+    "ge1": 0.828125,
+    "ge3": 0.5390625
+   },
+   "c": {
+    "ge1": 0.87109375,
+    "ge3": 0.49609375
+   }
+  }
+ },
+ "gate": {
+  "each_register_ge_70_concatenated": true,
+  "coverage_ge1_ge_90": false,
+  "coverage_ge3_ge_70": false,
+  "located_rate_ge_90": true
+ },
+ "decodability_gate_pass": true,
+ "full_gate_pass": false,
+ "reconstruction": {
+  "experiment": "pcs3",
+  "n_items": 896,
+  "checkpoint_reconstruction_match_rate": 1.0,
+  "n_checkpoint_match": 896,
+  "located_rate": 1.0,
+  "n_located": 896,
+  "exclusion_reasons": {},
+  "located_and_ckpt_match": 896,
+  "positions": [
+   "last_assign_a",
+   "last_assign_b",
+   "last_assign_c",
+   "checkpoint"
+  ],
+  "private_trace_text_match_rate": 1.0,
+  "decode_roundtrip_rate": 1.0,
+  "first_mismatches_id_newlen_origlen": [],
+  "n_used": 896,
+  "used_rate": 1.0
+ },
+ "seconds": 98.7985429763794
+}

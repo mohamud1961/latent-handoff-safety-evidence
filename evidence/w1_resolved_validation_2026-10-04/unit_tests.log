@@ -1,0 +1,9 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.8, pytest-8.3.5, pluggy-1.6.0
+rootdir: <local>/Downloads/pcs-wt-codex-mon2
+configfile: pyproject.toml
+collected 17 items
+
+tests/test_w1_writer_sweep.py .................                          [100%]
+
+============================== 17 passed in 1.73s ==============================

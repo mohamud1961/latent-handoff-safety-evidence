@@ -1,0 +1,38 @@
+{
+  "files": {
+    "PCS2B_PREANSWER_STATE_REALIZATION_FREEZE_2026-10-03.md": null,
+    "PCS4V3_INFORMATION_WEIGHTED_OBJECTIVE_FREEZE_2026-10-04.md": null,
+    "design_L2_L4/02_PCS4V4_CONTINGENCY_FREEZE.md": null,
+    "design_L2_L4/05_BUILD_SPEC_FOR_IMPLEMENTER.md": null,
+    "design_L2_L4/09_PCS7_SILENT_COGNITION_FREEZE.md": "8dfdf664087e2e781802319ef4c8bf45f3de4a10a6262513f1124319c804043b",
+    "design_L2_L4/BUILD_QUESTIONS.md": null,
+    "design_L2_L4/RESOLUTIONS_1_OPUS.md": "3de67dd567cbf3bd2d45b88d677c0c0755cd1027929418c0b934611b4947e61c",
+    "design_L2_L4/RQ7_AMENDMENT_1B_PROMPT_OPUS.md": "9b1d556d211b4696cab1ee2d9970f8a57277e3df3cacd2b49bf4b119209ce4e2",
+    "design_L2_L4/RQ7_AMENDMENT_1_READOUT_OPUS.md": null,
+    "evidence/c2c_pcs1_2026-10/pcs1_pilot_v2/pcs1_pilot.ipynb": null,
+    "evidence/pcs4v3_2026-10-04/RESULT.md": null,
+    "evidence/pcs4v4_build_2026-10-04/reducer_smoke_summary.json": null,
+    "scripts/modal_pcs7_silent.py": null,
+    "scripts/modal_rq7_qualification.py": null,
+    "scripts/pcs2b_corrected_bridge.py": null,
+    "scripts/pcs7_silent.py": "a8d12d8c78b73aeb994b6a2262093cbbdc7efcdaac15d9fc0973930d82c8eb01",
+    "scripts/rq7_qualification.py": "0b49742adbbf8d5d1b7c5c6edc81587c78347db7c2a2f90998c5308815b74cee"
+  },
+  "model_and_tokenizer_revisions": {
+    "A": {
+      "id": "Qwen/Qwen3-4B",
+      "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "tokenizer_revision": "1cfa9a7208912126459214e8b04321603b3df60c"
+    },
+    "B": {
+      "id": "Qwen/Qwen3-1.7B",
+      "model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+    }
+  },
+  "runtime_rq7_choice": {
+    "path": "/artifacts/pcs7b-gpu-smoke-8708a83dc9ab/qual/RQ7B_CHOICE.json",
+    "selected_cell": "P1_private_lookup",
+    "sha256": "2f0a093a2974ddeabb16112a96df1d0bb4c34941f0a45fd7bd46b2f1922a80cc"
+  }
+}

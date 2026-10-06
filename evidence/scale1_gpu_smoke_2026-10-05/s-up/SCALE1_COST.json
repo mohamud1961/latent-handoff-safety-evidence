@@ -1,0 +1,37 @@
+{
+  "arm": "S-UP",
+  "assumed_usd_per_gpu_hour": 1.95,
+  "gpu": "L40S",
+  "peak_gpu_memory_gib": 17.08,
+  "smoke": true,
+  "stages": {
+    "capture": {
+      "gpu_hours": 0.00032886404333333356,
+      "seconds": 1.2,
+      "usd_assumed": 0.0006412848845000005
+    },
+    "eval": {
+      "gpu_hours": 0.002520741311944445,
+      "seconds": 9.1,
+      "usd_assumed": 0.004915445558291668
+    },
+    "generation": {
+      "gpu_hours": 0.011919180309444444,
+      "seconds": 42.9,
+      "usd_assumed": 0.023242401603416663
+    },
+    "receiver_preflight": {
+      "gpu_hours": 0.004803436148333333,
+      "seconds": 17.3,
+      "usd_assumed": 0.009366700489249999
+    },
+    "training": {
+      "gpu_hours": 0.002360089928055555,
+      "seconds": 8.5,
+      "usd_assumed": 0.004602175359708332
+    }
+  },
+  "total_gpu_hours": 0.028293387623888888,
+  "total_seconds": 101.9,
+  "total_usd_assumed": 0.05517210586658333
+}

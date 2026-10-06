@@ -1,0 +1,26 @@
+{
+  "init_a": {
+    "reg": "a",
+    "n_permutations": 500,
+    "observed_balanced_accuracy": 0.43611874465697553,
+    "null_mean": 0.09986160867539716,
+    "null_sd": 0.019121208947105655,
+    "null_p95": 0.13142738706265691,
+    "null_p99": 0.14755856331840206,
+    "max_null": 0.16457738921812148,
+    "empirical_p_ge_observed": 0.001996007984031936,
+    "procedure": "permute all labels, redo validation lambda selection, evaluate permuted test labels"
+  },
+  "init_b": {
+    "reg": "b",
+    "n_permutations": 500,
+    "observed_balanced_accuracy": 0.2604544670990357,
+    "null_mean": 0.09951309469271839,
+    "null_sd": 0.019320374690474786,
+    "null_p95": 0.13133465844103925,
+    "null_p99": 0.14337550972740035,
+    "max_null": 0.15824937201502537,
+    "empirical_p_ge_observed": 0.001996007984031936,
+    "procedure": "permute all labels, redo validation lambda selection, evaluate permuted test labels"
+  }
+}

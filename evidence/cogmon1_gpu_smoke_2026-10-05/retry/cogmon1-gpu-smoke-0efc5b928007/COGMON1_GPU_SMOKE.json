@@ -1,0 +1,18 @@
+{
+  "answer_range_valid": true,
+  "asset_hashes_verified": {
+    "bridge_sha256": "317b1ff3f234d503e402c7e0715c81ffdc9bd99ca385d61291a995b2819970cd",
+    "handoff_sha256": "90e479c5cb40992ac6a8f32ec63dac6d0f4c3e0d44939ba002a3dda5127c2880",
+    "source_bundle_sha256": "23d098530252c59bc9b8d7039731213f2c55cac288c18e32670a7bd601d18999",
+    "w1_choice_sha256": "d85909b93dea9f42e89dc98eb8f048344ae82723ebca6e70d9429ca7b9e60937"
+  },
+  "confirmatory_result_emitted": false,
+  "elapsed_seconds": 16.477208852767944,
+  "gpu_name": "NVIDIA L4",
+  "heldout_test_used": false,
+  "queries": 18,
+  "schema": "cogmon1_gpu_smoke_v1",
+  "status": "PASS",
+  "synthetic": false,
+  "train_states": 6
+}

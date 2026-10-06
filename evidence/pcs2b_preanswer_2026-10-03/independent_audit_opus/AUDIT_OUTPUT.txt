@@ -1,0 +1,73 @@
+== custody
+  OK  pcs2b_results.json
+  OK  pcs2b_source_cache.pt
+  OK  pcs2b_bridge.pt
+  OK  pcs2b_preanswer_bridge.py
+
+== split integrity
+  train/val: shared ids 0, shared problem texts 0
+  test/train: shared ids 0, shared problem texts 0
+  test/val: shared ids 0, shared problem texts 0
+  records 2304, states 256, all test-split: True
+  m values: [1, 2, 3, 4, 5, 6, 7, 8, 9]; held-out flags consistent: True
+
+== record consistency vs source cache
+  mismatched rows: 0
+  source checkpoint ends immediately before the answer token for every test state: True
+
+== ALL (n=2304 rows, 256 states); state-cluster bootstrap
+  restart  fidelity 12.98% [11.59, 14.50]   objective 13.06%
+  oracle   fidelity 76.35% [73.70, 78.99]   objective 72.44%
+  text     fidelity 26.61% [23.35, 29.99]   objective 25.82%
+  pcs      fidelity 87.41% [85.46, 89.41]   objective 82.73%
+  wrong0   fidelity 2.17% [1.52, 2.86]   objective 3.39%
+  wrong1   fidelity 2.73% [1.91, 3.60]   objective 3.56%
+  wrong2   fidelity 1.95% [1.30, 2.69]   objective 3.21%
+  zero     fidelity 12.07% [10.98, 13.19]   objective 12.20%
+  random   fidelity 11.81% [10.63, 13.02]   objective 12.02%
+  readback fidelity 100.00%
+  Delta_specific (pcs - mean wrong): +85.13 pts [+83.23, +87.05]
+  pcs - exact-state text oracle: +11.07 pts [+8.81, +13.37]
+
+== HELD-OUT m=5..9 (n=1280 rows, 256 states); state-cluster bootstrap
+  restart  fidelity 14.22% [12.34, 16.17]   objective 14.22%
+  oracle   fidelity 69.53% [66.25, 72.73]   objective 66.25%
+  text     fidelity 25.62% [21.95, 29.45]   objective 24.77%
+  pcs      fidelity 77.34% [73.83, 80.94]   objective 73.59%
+  wrong0   fidelity 3.91% [2.73, 5.16]   objective 5.16%
+  wrong1   fidelity 4.92% [3.44, 6.48]   objective 5.78%
+  wrong2   fidelity 3.52% [2.34, 4.84]   objective 4.84%
+  zero     fidelity 13.28% [11.56, 15.00]   objective 12.97%
+  random   fidelity 12.66% [11.09, 14.30]   objective 12.66%
+  readback fidelity 100.00%
+  Delta_specific (pcs - mean wrong): +73.23 pts [+69.82, +76.69]
+  pcs - exact-state text oracle: +7.81 pts [+4.77, +10.94]
+
+== wrong-state controls: does B follow the PARTNER's belief?
+  wrong0: partner same variable 100.0%, mean |length diff| 3.6 tokens, B follows partner's belief 85.46%
+  wrong1: partner same variable 100.0%, mean |length diff| 3.7 tokens, B follows partner's belief 84.51%
+  wrong2: partner same variable 100.0%, mean |length diff| 3.7 tokens, B follows partner's belief 86.33%
+
+== source-mistake fidelity (A wrong)
+  states with wrong A belief: 15, rows 135
+  pcs      follows A's wrong belief 84.44% [74.81, 93.33]   hits truth 4.44%
+  oracle   follows A's wrong belief 70.37% [59.26, 80.74]   hits truth 3.70%
+  wrong0   follows A's wrong belief 0.74% [0.00, 2.22]   hits truth 21.48%
+  restart  follows A's wrong belief 16.30% [9.63, 25.19]   hits truth 17.78%
+
+== where is A's belief decodable? (linear probe per source layer, train->test)
+  layer  4: held-out probe accuracy 89.5%
+  layer  8: held-out probe accuracy 82.4%
+  layer 12: held-out probe accuracy 73.8%
+  layer 16: held-out probe accuracy 87.1%
+  layer 20: held-out probe accuracy 73.0%
+  layer 24: held-out probe accuracy 100.0%
+  layer 28: held-out probe accuracy 100.0%
+  layer 32: held-out probe accuracy 100.0%
+  layer 36: held-out probe accuracy 100.0%
+
+== was A's belief already written in its private trace before 'Final:'?
+  explicit '{v} = {belief}' before Final line: 24/256 = 9.4%
+  belief digit appears in last 80 chars before Final: 256/256
+  last '= <digit>' result in the trace before 'Final:' equals A's belief: 253/256 = 98.8%
+  example trace tail: ' 2  \nb = 3  \nc = 6  \nc = (2 * 6) % 10 = 2  \na = (2 + 3) % 10 = 5  \na = (5 * 2) % 10 = 0  \nb = (0 * 2) % 10 = 0  \na = (0 * 0) % 10 = 0  \nb = (0 + 8) % 10 = 8  \n\n'

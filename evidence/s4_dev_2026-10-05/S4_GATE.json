@@ -1,0 +1,83 @@
+{
+  "schema": "s4_dev_pretraining_gate_v1",
+  "status": "PASS",
+  "training_started": true,
+  "checks": [
+    {
+      "name": "resolved_protocol_models_and_profile",
+      "passed": true,
+      "detail": {
+        "protocol_sha256": "b43d4bed50bd916b6e3fcc8c882821f0126fafd3d70f5453f6ff6147369612b1",
+        "profile": "modal-account-A",
+        "models": {
+          "source": {
+            "model_id": "Qwen/Qwen3-4B",
+            "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+            "tokenizer_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+            "loaded_by_s4": false
+          },
+          "receiver": {
+            "model_id": "Qwen/Qwen3-1.7B",
+            "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+            "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+            "loaded_by_s4": true
+          }
+        }
+      }
+    },
+    {
+      "name": "pinned_pcs3b_bridge_and_multiposition_capture_inputs",
+      "passed": true,
+      "detail": {
+        "bridge_sha256": "575ea8df9262e17aa11d7d32d2a13a4da9fa13075041b8ed65b79cd4f79952bf",
+        "features_sha256": "ea51473126045f3d898f0de4ddc50a63198585d7e5819de277a6aa26bfbb7bc0",
+        "extra_test_features_sha256": "4f8bfac52505180983e0ecca817a29acf38e26940d056cffb5206afb44fa4a2a",
+        "feature_shape": [
+          1099,
+          36,
+          2560
+        ],
+        "generation_capture": "reused pinned PCS3 multiposition source capture; no S4 regeneration"
+      }
+    },
+    {
+      "name": "pcs3_source_decodability_and_enlarged_wrong_state_coverage",
+      "passed": true,
+      "detail": {
+        "sha256": {
+          "multipos_manifest_sha256": "4842fc381c6788a091a76bfb6bd90993f942f72c59f99e59ee0fac8c017f8352",
+          "multipos_source_gate_sha256": "22cdbf25f1a6200e0fa5423ee33d077e93a1904afa9e344218124c1d3a52d645",
+          "multipos_enlarged_coverage_sha256": "d847b59cd53e8f161398fbfbfd1114ebfdc224428b81f1cd81fc2d8719fcf4fe",
+          "pcs3b_neural_result_sha256": "51665850d9878480331ef0c7218dfdfe79cb90af20e3471502a39fc6206f0226"
+        },
+        "multipos_decodability_gate_pass": true,
+        "multipos_original_full_gate_pass": false,
+        "multipos_enlarged_coverage_gate_pass": true,
+        "pcs3b_source_gate_pass": true,
+        "pcs3b_receiver_oracle_gate_pass": true,
+        "pcs3b_classification": "PCS3_MULTIPOS_NO_POSITIVE_CLAIM_NEURAL",
+        "pcs3b_development_near_miss_allowed": true,
+        "test_pool_size": 459
+      }
+    },
+    {
+      "name": "frozen_pcs3b_split_pool",
+      "passed": true,
+      "detail": {
+        "train": 512,
+        "val": 128,
+        "test": 459
+      }
+    },
+    {
+      "name": "pcs3b_bridge_architecture_and_modal_l4",
+      "passed": true,
+      "detail": {
+        "c_dim": 16,
+        "k_slots": 4,
+        "epochs": 40,
+        "cuda_device": "NVIDIA L4"
+      }
+    }
+  ]
+}

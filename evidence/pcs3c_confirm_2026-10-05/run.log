@@ -1,0 +1,23 @@
+/root/pcs3c_repo/scripts/pcs3_multipos_bridge.py:37: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  dg = torch.tensor(digs)  # [N,4]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|#####     | 1/2 [00:04<00:04,  4.40s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:05<00:00,  2.26s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:05<00:00,  2.58s/it]
+PCS3C_EVAL_ONLY_EVALUATED arm=neural rows=2877
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|#####     | 1/2 [00:03<00:03,  3.05s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:03<00:00,  1.60s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:03<00:00,  1.82s/it]
+PCS3C_EVAL_ONLY_EVALUATED arm=token_identity rows=2877
+{
+  "bridge_seal_path": "/artifacts/pcs3c-eval-only-f1394f83c8ec/PCS3C_BRIDGE_SEAL.json",
+  "chosen_config": "W1-b",
+  "classification": "PCS3C_NULL",
+  "completion_path": "/artifacts/pcs3c-eval-only-f1394f83c8ec/CAP1_PCS3C_HANDOFF.json",
+  "completion_sha256": "90e479c5cb40992ac6a8f32ec63dac6d0f4c3e0d44939ba002a3dda5127c2880",
+  "downstream_inputs_path": "/artifacts/pcs3c-eval-only-f1394f83c8ec/PCS3C_DOWNSTREAM_INPUTS.json",
+  "elapsed_seconds": 2992.9210662841797,
+  "model_loaded": true,
+  "n_test_states": 959,
+  "result_path": "/artifacts/pcs3c-eval-only-f1394f83c8ec/PCS3C_RESULT.json",
+  "result_sha256": "9cc8035ee0e18a7496ad7223ef3c669006c55e67ab53a0f3c8752109868f813f",
+  "schema": "pcs3c_executor_result_v1",
+  "scientific_data_opened": true,
+  "status": "COMPLETE",
+  "w1_choice_sha256": "d85909b93dea9f42e89dc98eb8f048344ae82723ebca6e70d9429ca7b9e60937"
+}

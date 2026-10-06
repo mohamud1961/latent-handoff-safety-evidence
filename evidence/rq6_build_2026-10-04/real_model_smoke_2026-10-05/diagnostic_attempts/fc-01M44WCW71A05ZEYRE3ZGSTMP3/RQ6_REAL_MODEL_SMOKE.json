@@ -1,0 +1,57 @@
+{
+  "evidence_kind": "pinned_real_model_smoke_not_qualification",
+  "gsm8k_a_answer_parsed": true,
+  "gsm8k_a_diagnostics": {
+    "answer_marker_lexemes": [
+      "180"
+    ],
+    "answer_marker_line_count": 1,
+    "generated_token_count": 287,
+    "generation_token_limit": 768,
+    "hit_generation_token_limit": false,
+    "output_character_count": 897,
+    "output_preview_clipped": false,
+    "output_text_preview": "We are given the following information:\n\n- Peter has twice as many socks as Jack.\n- Peter has half as many dishes as Jack.\n- Jack collected twice as many dishes as socks in the store.\n- Jack collected 60 dishes.\n\nFirst, let's find how many socks Jack has.\n\nJack has twice as many dishes as socks.  \nLet the number of socks Jack has be $ x $.  \nThen the number of dishes Jack has is $ 2x $.\n\nWe are told Jack has 60 dishes.  \nSo, $ 2x = 60 $  \nSolving for $ x $:  \n$ x = 30 $\n\nSo, Jack has 30 socks and 60 dishes.\n\nNow, Peter has twice as many socks as Jack:  \nPeter's socks = $ 2 \\times 30 = 60 $\n\nPeter has half as many dishes as Jack:  \nPeter's dishes = $ \\frac{1}{2} \\times 60 = 30 $\n\nNow, total socks = Jack's socks + Peter's socks = $ 30 + 60 = 90 $  \nTotal dishes = Jack's dishes + Peter's dishes = $ 60 + 30 = 90 $\n\nTotal number of socks and dishes together = $ 90 + 90 = 180 $\n\nAnswer: 180"
+  },
+  "gsm8k_checkpoint_available": true,
+  "gsm8k_dataset_manifest_sha256": "f158f9727acfd9361c2240abcdc2c367f76201609b1e9ed2dee1cd68fd1fc1d9",
+  "gsm8k_selected_test_n": 500,
+  "gsm8k_selected_train_n": 3000,
+  "local_files_only": true,
+  "modal_timeout_seconds": 600,
+  "models_loaded": [
+    "Qwen/Qwen3-4B",
+    "Qwen/Qwen3-1.7B"
+  ],
+  "protocol_sha256": "6abfa7ee974f1a463a935aa6738a7d54899575ca198431e87c2e1c406327aeaf",
+  "receiver_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "schema": "rq6_real_model_smoke_v2",
+  "seconds": 88.381045298,
+  "six_a_hidden_capture_finite": true,
+  "six_a_receiver_arm": "oracle_state",
+  "six_a_receiver_diagnostics": {
+    "answer_marker_lexemes": [],
+    "answer_marker_line_count": 0,
+    "generated_token_count": 72,
+    "generation_token_limit": 120,
+    "hit_generation_token_limit": false,
+    "output_character_count": 167,
+    "output_preview_clipped": false,
+    "output_text_preview": "STATE s9: a=6, b=2, c=2  \nSTATE s10: a=6, b=2, c=2  \nSTATE s11: a=6, b=2, c=2  \n\nFINAL_SUMMARY: The state after updates 9 through 11 is the same as the supplied state.",
+    "trace_final_summary_marker_count": 1,
+    "trace_parse_errors": [],
+    "trace_parse_ok": true,
+    "trace_parsed_state_steps": [
+      9,
+      10,
+      11
+    ]
+  },
+  "six_a_receiver_generated": true,
+  "six_a_receiver_parse_ok": true,
+  "six_a_source_generated_and_parsed": true,
+  "six_a_u_checkpoint_positions_located": true,
+  "six_a_w_checkpoint_positions_located": true,
+  "smoke_only_no_qualification_gate": true,
+  "source_revision": "1cfa9a7208912126459214e8b04321603b3df60c"
+}

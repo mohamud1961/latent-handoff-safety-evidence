@@ -1,0 +1,170 @@
+{
+  "config": {
+    "seed": 20261004,
+    "pool_n": 896,
+    "train_n": 512,
+    "val_n": 128,
+    "test_n": 256,
+    "depth": 8,
+    "max_trace_tokens": 420,
+    "source_batch": 8,
+    "receiver_batch": 32,
+    "out_dir": "/kaggle/working"
+  },
+  "source_model": "Qwen/Qwen3-4B",
+  "receiver_model": "Qwen/Qwen3-1.7B",
+  "source_layers": [
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    36
+  ],
+  "source_gates": {
+    "pool_parse_rate": 1.0,
+    "pool_checkpoint_marker_rate": 1.0,
+    "pool_complete_parse_and_checkpoint_rate": 1.0,
+    "selected_n": 896,
+    "source_belief_accuracy_all_coordinates": 0.9693700396825397,
+    "final_strict_triple_accuracy": 0.8895089285714286,
+    "mistake_instances_all_selected": 741,
+    "mistake_episodes_all_selected": 132
+  },
+  "decodability": {
+    "n_properties": 27,
+    "passing_ge_80": 4,
+    "passing_properties": [
+      "s7_c",
+      "s8_a",
+      "s8_b",
+      "s8_c"
+    ],
+    "map": {
+      "s0_a": {
+        "val_accuracy": 0.703125,
+        "lambda": 0.001
+      },
+      "s0_b": {
+        "val_accuracy": 0.46875,
+        "lambda": 0.01
+      },
+      "s0_c": {
+        "val_accuracy": 0.7890625,
+        "lambda": 0.001
+      },
+      "s1_a": {
+        "val_accuracy": 0.5390625,
+        "lambda": 0.001
+      },
+      "s1_b": {
+        "val_accuracy": 0.453125,
+        "lambda": 0.01
+      },
+      "s1_c": {
+        "val_accuracy": 0.7734375,
+        "lambda": 0.001
+      },
+      "s2_a": {
+        "val_accuracy": 0.5390625,
+        "lambda": 0.001
+      },
+      "s2_b": {
+        "val_accuracy": 0.28125,
+        "lambda": 0.01
+      },
+      "s2_c": {
+        "val_accuracy": 0.765625,
+        "lambda": 0.001
+      },
+      "s3_a": {
+        "val_accuracy": 0.5390625,
+        "lambda": 0.001
+      },
+      "s3_b": {
+        "val_accuracy": 0.28125,
+        "lambda": 0.01
+      },
+      "s3_c": {
+        "val_accuracy": 0.4453125,
+        "lambda": 0.001
+      },
+      "s4_a": {
+        "val_accuracy": 0.4296875,
+        "lambda": 0.001
+      },
+      "s4_b": {
+        "val_accuracy": 0.359375,
+        "lambda": 0.001
+      },
+      "s4_c": {
+        "val_accuracy": 0.5390625,
+        "lambda": 0.1
+      },
+      "s5_a": {
+        "val_accuracy": 0.4609375,
+        "lambda": 0.01
+      },
+      "s5_b": {
+        "val_accuracy": 0.5078125,
+        "lambda": 0.1
+      },
+      "s5_c": {
+        "val_accuracy": 0.6328125,
+        "lambda": 0.1
+      },
+      "s6_a": {
+        "val_accuracy": 0.6015625,
+        "lambda": 0.01
+      },
+      "s6_b": {
+        "val_accuracy": 0.5234375,
+        "lambda": 0.01
+      },
+      "s6_c": {
+        "val_accuracy": 0.71875,
+        "lambda": 0.001
+      },
+      "s7_a": {
+        "val_accuracy": 0.6875,
+        "lambda": 0.001
+      },
+      "s7_b": {
+        "val_accuracy": 0.65625,
+        "lambda": 0.001
+      },
+      "s7_c": {
+        "val_accuracy": 0.8515625,
+        "lambda": 0.001
+      },
+      "s8_a": {
+        "val_accuracy": 0.84375,
+        "lambda": 0.01
+      },
+      "s8_b": {
+        "val_accuracy": 0.9765625,
+        "lambda": 0.01
+      },
+      "s8_c": {
+        "val_accuracy": 1.0,
+        "lambda": 0.001
+      }
+    },
+    "sealed_test_mistake_instances_on_passing_properties": 63,
+    "sealed_test_mistake_episodes_on_passing_properties": 31
+  },
+  "receiver_probe_gate": {
+    "equality": {
+      "n": 256,
+      "accuracy": 0.9296875
+    },
+    "shift_plus_1": {
+      "n": 256,
+      "accuracy": 0.8125
+    }
+  },
+  "stage_a_pass": false
+}

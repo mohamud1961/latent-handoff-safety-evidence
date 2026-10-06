@@ -1,0 +1,19 @@
+{
+  "experiment": "pcs3",
+  "n_items": 896,
+  "checkpoint_reconstruction_match_rate": 1.0,
+  "n_checkpoint_match": 896,
+  "located_rate": 1.0,
+  "n_located": 896,
+  "exclusion_reasons": {},
+  "located_and_ckpt_match": 896,
+  "positions": [
+    "last_assign_a",
+    "last_assign_b",
+    "last_assign_c",
+    "checkpoint"
+  ],
+  "private_trace_text_match_rate": 1.0,
+  "decode_roundtrip_rate": 1.0,
+  "first_mismatches_id_newlen_origlen": []
+}
