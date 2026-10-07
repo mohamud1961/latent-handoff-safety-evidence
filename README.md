@@ -23,6 +23,18 @@ The evidence behind a BlueDot Rapid Grant application. The question: when AI mod
 - Results are sealed with SHA-256 checksums (`evidence/*/SHA256SUMS.txt`). See `SCRUB_MANIFEST.md` for the 16 files changed by publication scrubbing.
 - **Failures are kept.**
 
+## Why this matters: AI systems are becoming stateful
+
+Most AI agents today carry continuity between steps as text. Each step, the model rebuilds its internal state from a written record, and anything not written down is lost. That is changing:
+- deployed systems already store internal state (prompt caching);
+- research systems pass it directly between agents (LatentMAS, C2C).
+
+As more of an agent's working state is carried forward or shared as internal representations rather than text, the part humans can read shrinks. Making such systems safe needs two things this project studies:
+1. translating and inspecting state across models;
+2. monitoring and authorising what carried state is allowed to influence.
+
+My own longer-term interest in persistent cognitive state is part of why I take this seriously. In line with my application, I am building the safety layer before pushing that capability further.
+
 ## Claim → design → code → evidence
 
 | Claim (plain English) | Design (pre-registered) | Code | Sealed evidence |
