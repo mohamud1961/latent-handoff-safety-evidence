@@ -1,0 +1,115 @@
+{
+  "amendment": "design_L2_L4/PILOT1_AMENDMENT_1_FILE_NAME_READOUT_OPUS.md",
+  "status": "POST-HOC",
+  "targets": {
+    "file_name@k0": {
+      "n_test": 611,
+      "n_name_classes": 27,
+      "chance_uniform_over_listing": 0.10673469556448278,
+      "listing_mask": {
+        "LATENT": 0.3486088379705401,
+        "TEXT": 0.32733224222585927,
+        "STACK": 0.3044189852700491,
+        "LATENT-minus-TEXT": {
+          "point": 0.021276595744680826,
+          "ci95": [
+            -0.0191402870813397,
+            0.0640189993968445
+          ]
+        },
+        "STACK-minus-TEXT": {
+          "point": -0.022913256955810146,
+          "ci95": [
+            -0.06370048986887804,
+            0.018771331058020424
+          ]
+        }
+      },
+      "listing_minus_already_read": {
+        "LATENT": 0.41734860883797054,
+        "TEXT": 0.40098199672667756,
+        "STACK": 0.37970540098199673,
+        "LATENT-minus-TEXT": {
+          "point": 0.016366612111292977,
+          "ci95": [
+            -0.03104396100379125,
+            0.06210329358748941
+          ]
+        },
+        "STACK-minus-TEXT": {
+          "point": -0.021276595744680826,
+          "ci95": [
+            -0.06799710985108531,
+            0.02248792437804046
+          ]
+        }
+      }
+    },
+    "file_name@k2": {
+      "n_test": 611,
+      "n_name_classes": 27,
+      "chance_uniform_over_listing": 0.10673469556448278,
+      "listing_mask": {
+        "LATENT": 0.8265139116202946,
+        "TEXT": 0.3322422258592471,
+        "STACK": 0.7021276595744681,
+        "LATENT-minus-TEXT": {
+          "point": 0.4942716857610475,
+          "ci95": [
+            0.454228858677568,
+            0.5331375502008031
+          ]
+        },
+        "STACK-minus-TEXT": {
+          "point": 0.369885433715221,
+          "ci95": [
+            0.32663316582914576,
+            0.41186954977205253
+          ]
+        }
+      },
+      "listing_minus_already_read": {
+        "LATENT": 0.8248772504091653,
+        "TEXT": 0.40098199672667756,
+        "STACK": 0.7152209492635024,
+        "LATENT-minus-TEXT": {
+          "point": 0.4238952536824877,
+          "ci95": [
+            0.37672947303921567,
+            0.46689462110105656
+          ]
+        },
+        "STACK-minus-TEXT": {
+          "point": 0.3142389525368249,
+          "ci95": [
+            0.2674181114909497,
+            0.35961270075966173
+          ]
+        }
+      }
+    }
+  },
+  "prefetch_tier1_name_readout": {
+    "threshold_from_val": 0.520133,
+    "val": {
+      "n_turns": 525,
+      "n_prefetched": 147,
+      "wrong_prefetch_rate": 0.047619047619047616,
+      "coverage_of_read_only_calls": 0.356234096692112,
+      "coverage_list_dir": 0.9519230769230769,
+      "coverage_read_file": 0.14186851211072665,
+      "n_read_only_calls": 393,
+      "special_file_prefetches_would_be_blocked": 6
+    },
+    "test": {
+      "n_turns": 994,
+      "n_prefetched": 210,
+      "wrong_prefetch_rate": 0.0761904761904762,
+      "coverage_of_read_only_calls": 0.25097024579560157,
+      "coverage_list_dir": 0.9753086419753086,
+      "coverage_read_file": 0.058919803600654665,
+      "n_read_only_calls": 773,
+      "special_file_prefetches_would_be_blocked": 15
+    }
+  }
+}

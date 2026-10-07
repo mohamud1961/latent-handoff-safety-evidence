@@ -1,0 +1,247 @@
+{
+  "plan": "design_L2_L4/PILOT0_ACTION_FROM_STATE_PLAN_OPUS.md",
+  "status": "EXPLORATORY",
+  "targets": {
+    "T1_first_tool": {
+      "classes": [
+        "delete_file",
+        "list_dir",
+        "read_file",
+        "write_file"
+      ],
+      "C_latent": 0.01,
+      "C_text": 10.0,
+      "train_class_counts": {
+        "delete_file": 556,
+        "list_dir": 1335,
+        "read_file": 585,
+        "write_file": 404
+      },
+      "test": {
+        "n": 1199,
+        "majority_class_acc": 0.46205170975813176,
+        "LATENT": {
+          "acc": 0.9616346955796498,
+          "macro_f1": 0.9499362132296967
+        },
+        "TEXT": {
+          "acc": 0.9124270225187656,
+          "macro_f1": 0.894515950192004
+        },
+        "STACK": {
+          "acc": 0.9641367806505421,
+          "macro_f1": 0.9513977544300913
+        },
+        "STACK-minus-TEXT_acc": {
+          "point": 0.05170975813177647,
+          "ci95": [
+            0.038365304420350244,
+            0.06583470600500424
+          ]
+        },
+        "LATENT-minus-TEXT_acc": {
+          "point": 0.04920767306088414,
+          "ci95": [
+            0.03500000000000003,
+            0.06422018348623848
+          ]
+        }
+      },
+      "testU": {
+        "n": 800,
+        "majority_class_acc": 0.5075,
+        "LATENT": {
+          "acc": 0.9025,
+          "macro_f1": 0.8335108621252256
+        },
+        "TEXT": {
+          "acc": 0.8525,
+          "macro_f1": 0.8096685388785949
+        },
+        "STACK": {
+          "acc": 0.92625,
+          "macro_f1": 0.8749559595284596
+        },
+        "STACK-minus-TEXT_acc": {
+          "point": 0.07374999999999998,
+          "ci95": [
+            0.053749999999999964,
+            0.09625000000000006
+          ]
+        },
+        "LATENT-minus-TEXT_acc": {
+          "point": 0.04999999999999993,
+          "ci95": [
+            0.02621875,
+            0.07625000000000004
+          ]
+        }
+      }
+    },
+    "T2_second_tool": {
+      "classes": [
+        "delete_file",
+        "finish",
+        "http_post",
+        "list_dir",
+        "read_file",
+        "write_file"
+      ],
+      "C_latent": 1.0,
+      "C_text": 10.0,
+      "train_class_counts": {
+        "delete_file": 425,
+        "finish": 483,
+        "http_post": 181,
+        "list_dir": 138,
+        "read_file": 1375,
+        "write_file": 276
+      },
+      "test": {
+        "n": 1198,
+        "majority_class_acc": 0.48414023372287146,
+        "LATENT": {
+          "acc": 0.9465776293823038,
+          "macro_f1": 0.9255303058842771
+        },
+        "TEXT": {
+          "acc": 0.9407345575959933,
+          "macro_f1": 0.917018511209275
+        },
+        "STACK": {
+          "acc": 0.9590984974958264,
+          "macro_f1": 0.9395563283309404
+        },
+        "STACK-minus-TEXT_acc": {
+          "point": 0.018363939899833093,
+          "ci95": [
+            0.0075249264465511,
+            0.02924037728099518
+          ]
+        },
+        "LATENT-minus-TEXT_acc": {
+          "point": 0.005843071786310494,
+          "ci95": [
+            -0.0075125208681134925,
+            0.019214703425229688
+          ]
+        }
+      },
+      "testU": {
+        "n": 800,
+        "majority_class_acc": 0.5075,
+        "LATENT": {
+          "acc": 0.65125,
+          "macro_f1": 0.4471295336615972
+        },
+        "TEXT": {
+          "acc": 0.7225,
+          "macro_f1": 0.4875308541125121
+        },
+        "STACK": {
+          "acc": 0.7525,
+          "macro_f1": 0.48320912995387033
+        },
+        "STACK-minus-TEXT_acc": {
+          "point": 0.029999999999999916,
+          "ci95": [
+            0.011250000000000093,
+            0.04875000000000007
+          ]
+        },
+        "LATENT-minus-TEXT_acc": {
+          "point": -0.07125000000000004,
+          "ci95": [
+            -0.09750000000000003,
+            -0.043749999999999956
+          ]
+        }
+      }
+    },
+    "T3_first_is_read_only": {
+      "classes": [
+        "False",
+        "True"
+      ],
+      "C_latent": 10.0,
+      "C_text": 10.0,
+      "train_class_counts": {
+        "False": 960,
+        "True": 1920
+      },
+      "test": {
+        "n": 1199,
+        "majority_class_acc": 0.6622185154295246,
+        "LATENT": {
+          "acc": 0.9749791492910759,
+          "macro_f1": 0.9725151292866312
+        },
+        "TEXT": {
+          "acc": 0.950792326939116,
+          "macro_f1": 0.9432144471193018
+        },
+        "STACK": {
+          "acc": 0.9766472060050042,
+          "macro_f1": 0.9741745899873842
+        },
+        "STACK-minus-TEXT_acc": {
+          "point": 0.025854879065888237,
+          "ci95": [
+            0.012500000000000067,
+            0.03923205342237057
+          ]
+        },
+        "LATENT-minus-TEXT_acc": {
+          "point": 0.024186822351959902,
+          "ci95": [
+            0.00917431192660556,
+            0.03836690698110307
+          ]
+        }
+      },
+      "testU": {
+        "n": 800,
+        "majority_class_acc": 0.74875,
+        "LATENT": {
+          "acc": 0.91375,
+          "macro_f1": 0.8961935764133753
+        },
+        "TEXT": {
+          "acc": 0.88125,
+          "macro_f1": 0.8613621894558648
+        },
+        "STACK": {
+          "acc": 0.93375,
+          "macro_f1": 0.9186141369547483
+        },
+        "STACK-minus-TEXT_acc": {
+          "point": 0.05249999999999999,
+          "ci95": [
+            0.03249999999999997,
+            0.07374999999999998
+          ]
+        },
+        "LATENT-minus-TEXT_acc": {
+          "point": 0.03249999999999997,
+          "ci95": [
+            0.011249999999999982,
+            0.05500000000000005
+          ]
+        }
+      }
+    }
+  },
+  "T4_list_dir_prefetch_STACK": {
+    "threshold_from_val": 0.045895365992112594,
+    "test": {
+      "true_list_dir_caught": 1.0,
+      "wrong_prefetch_rate": 0.07820299500831947,
+      "n_true_list_dir": 554
+    },
+    "testU": {
+      "true_list_dir_caught": 1.0,
+      "wrong_prefetch_rate": 0.17647058823529413,
+      "n_true_list_dir": 406
+    }
+  }
+}

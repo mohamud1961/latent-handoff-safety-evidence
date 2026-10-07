@@ -49,3 +49,38 @@ The evidence behind a BlueDot Rapid Grant application. The question: when AI mod
 **Amendments** are in `design_L2_L4/*AMENDMENT*`, each with a date and reason. Two were applied after a gate (MON3b format threshold; EXT1 gate clarification), and both are disclosed in their results.
 
 Every number in the claim map can be checked against the raw records in `evidence/` (JSON/JSONL). The bootstrap and McNemar statistics can be recomputed with `analysis/mon2_contract.py`.
+
+---
+
+## Results added after submission (7 October 2026)
+
+These results were produced **after** the BlueDot application was submitted on 6 October 2026. Every claim above is unchanged. Both pilots are **exploratory**: each analysis plan was committed before computing, and they are labelled post-hoc where that applies. They extend the early-warning result from *whether* a model will act to *which specific action* it is about to take, which is grant Gate 1 territory.
+
+| Result (plain English) | Plan | Analysis code | Evidence |
+|---|---|---|---|
+| **Pilot 0:** before writing anything, the model's internal state predicts its first tool at **96.2%**, against **91.2%** from the full visible prompt (+4.9 [3.5, 6.4]). The second tool, two steps ahead, is not readable beyond text on held-out actions (−7.1). | `design_L2_L4/PILOT0_ACTION_FROM_STATE_PLAN_OPUS.md` | `analysis/pilot0_action_from_state.py` | `evidence/pilot0_action_from_state_2026-10-07/` |
+| **Pilot 1 (live, multi-turn agent loop, 1,200 tasks):** before each call, internal state predicts the next tool at **98.2%**, against **85.5%** from the whole visible conversation (+12.7 [10.1, 15.1]). | `design_L2_L4/PILOT1_LIVE_PREFETCH_PLAN_OPUS.md` | `analysis/pilot1_analyse.py` | `evidence/pilot1_live_prefetch_2026-10-07/` |
+| *Post-hoc:* **which file** it will read is not readable before output (35% vs 33% text). Once the model has written `read_file(`, it is readable at 83% (vs 33%). The tool is decided first; the file is chosen while writing. | `design_L2_L4/PILOT1_AMENDMENT_1_FILE_NAME_READOUT_OPUS.md` | `analysis/pilot1_analyse_names.py` | `evidence/pilot1_live_prefetch_2026-10-07/amendment1/` |
+
+**Limits:**
+- one model (Qwen3-4B), one synthetic file-assistant task family;
+- in Pilot 1, 10% of turns were excluded because the model invented tools;
+- no real latency was measured.
+
+**Read-only prefetch from internal state** worked for argument-free calls (97.5% of `list_dir` calls) but not yet for file reads, and its wrong-prefetch rate exceeded the 5% target on test (7.6%). Speculative execution from internal state should therefore stay limited to read-only actions behind a permission check, with writes always requiring an explicit call.
+
+The Pilot 1 raw turn records are in the evidence folder. The 252 MB feature tensor is available on request.
+
+### What this could lead to (to be tested, not yet shown)
+
+- **Earlier, more specific safety checks.** A harness could see *which* action an agent is about to take, such as a network upload or a read of a credentials file, before the call is written. It could then pause, ask for approval or block it. Today's text and output monitors only see the action once it has been written.
+- **Knowing where to put the checks.** The results suggest the type of action is decided before output, and its target is chosen while the call is being written. Checks could be placed at each stage, rather than only at the end.
+- **Oversight when there is no transcript.** In systems where models pass internal state to each other directly (latent communication), there may be no readable text to monitor. These results suggest internal state can still reveal intended actions, which is the premise of the funded work.
+- **Faster agents, safely.** For harmless read-only actions, results could be fetched while the model is still deciding, behind a permission check. Writes always wait for an explicit call.
+
+**What would have to hold first (the funded gates):**
+- the signal must hold on other models and real tasks;
+- it must survive a model trained to hide it (Gate 3);
+- it must work at fixed, low false-alarm rates;
+- it must add value beyond ordinary permissions and sandboxing (Gate 4).
+

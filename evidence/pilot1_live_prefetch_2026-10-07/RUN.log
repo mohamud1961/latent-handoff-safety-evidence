@@ -1,0 +1,518 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:05<00:10,  5.15s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:10<00:05,  5.18s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:10<00:00,  2.87s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:10<00:00,  3.49s/it]
+MON3_GEN 16/16
+PILOT1 turns=16 active=1199 t=26s
+MON3_GEN 16/16
+PILOT1 turns=32 active=1198 t=32s
+MON3_GEN 16/16
+PILOT1 turns=48 active=1196 t=38s
+MON3_GEN 16/16
+PILOT1 turns=64 active=1194 t=43s
+MON3_GEN 16/16
+PILOT1 turns=80 active=1190 t=49s
+MON3_GEN 16/16
+PILOT1 turns=96 active=1187 t=55s
+MON3_GEN 16/16
+PILOT1 turns=112 active=1186 t=60s
+MON3_GEN 16/16
+PILOT1 turns=128 active=1186 t=66s
+MON3_GEN 16/16
+PILOT1 turns=144 active=1180 t=72s
+MON3_GEN 16/16
+PILOT1 turns=160 active=1179 t=78s
+MON3_GEN 16/16
+PILOT1 turns=176 active=1178 t=84s
+MON3_GEN 16/16
+PILOT1 turns=192 active=1173 t=89s
+MON3_GEN 16/16
+PILOT1 turns=208 active=1170 t=95s
+MON3_GEN 16/16
+PILOT1 turns=224 active=1166 t=101s
+MON3_GEN 16/16
+PILOT1 turns=240 active=1165 t=106s
+MON3_GEN 16/16
+PILOT1 turns=256 active=1162 t=112s
+MON3_GEN 16/16
+PILOT1 turns=272 active=1158 t=117s
+MON3_GEN 16/16
+PILOT1 turns=288 active=1156 t=123s
+MON3_GEN 16/16
+PILOT1 turns=304 active=1154 t=129s
+MON3_GEN 16/16
+PILOT1 turns=320 active=1148 t=135s
+MON3_GEN 16/16
+PILOT1 turns=336 active=1147 t=141s
+MON3_GEN 16/16
+PILOT1 turns=352 active=1140 t=147s
+MON3_GEN 16/16
+PILOT1 turns=368 active=1136 t=153s
+MON3_GEN 16/16
+PILOT1 turns=384 active=1133 t=159s
+MON3_GEN 16/16
+PILOT1 turns=400 active=1131 t=164s
+MON3_GEN 16/16
+PILOT1 turns=416 active=1130 t=170s
+MON3_GEN 16/16
+PILOT1 turns=432 active=1127 t=176s
+MON3_GEN 16/16
+PILOT1 turns=448 active=1125 t=181s
+MON3_GEN 16/16
+PILOT1 turns=464 active=1121 t=187s
+MON3_GEN 16/16
+PILOT1 turns=480 active=1120 t=193s
+MON3_GEN 16/16
+PILOT1 turns=496 active=1116 t=199s
+MON3_GEN 16/16
+PILOT1 turns=512 active=1110 t=205s
+MON3_GEN 16/16
+PILOT1 turns=528 active=1109 t=211s
+MON3_GEN 16/16
+PILOT1 turns=544 active=1104 t=216s
+MON3_GEN 16/16
+PILOT1 turns=560 active=1103 t=222s
+MON3_GEN 16/16
+PILOT1 turns=576 active=1101 t=228s
+MON3_GEN 16/16
+PILOT1 turns=592 active=1096 t=234s
+MON3_GEN 16/16
+PILOT1 turns=608 active=1096 t=240s
+MON3_GEN 16/16
+PILOT1 turns=624 active=1095 t=246s
+MON3_GEN 16/16
+PILOT1 turns=640 active=1092 t=251s
+MON3_GEN 16/16
+PILOT1 turns=656 active=1088 t=257s
+MON3_GEN 16/16
+PILOT1 turns=672 active=1084 t=263s
+MON3_GEN 16/16
+PILOT1 turns=688 active=1083 t=269s
+MON3_GEN 16/16
+PILOT1 turns=704 active=1082 t=275s
+MON3_GEN 16/16
+PILOT1 turns=720 active=1080 t=281s
+MON3_GEN 16/16
+PILOT1 turns=736 active=1076 t=287s
+MON3_GEN 16/16
+PILOT1 turns=752 active=1073 t=293s
+MON3_GEN 16/16
+PILOT1 turns=768 active=1071 t=298s
+MON3_GEN 16/16
+PILOT1 turns=784 active=1070 t=304s
+MON3_GEN 16/16
+PILOT1 turns=800 active=1067 t=310s
+MON3_GEN 16/16
+PILOT1 turns=816 active=1065 t=316s
+MON3_GEN 16/16
+PILOT1 turns=832 active=1059 t=321s
+MON3_GEN 16/16
+PILOT1 turns=848 active=1055 t=327s
+MON3_GEN 16/16
+PILOT1 turns=864 active=1053 t=332s
+MON3_GEN 16/16
+PILOT1 turns=880 active=1051 t=338s
+MON3_GEN 16/16
+PILOT1 turns=896 active=1047 t=344s
+MON3_GEN 16/16
+PILOT1 turns=912 active=1044 t=350s
+MON3_GEN 16/16
+PILOT1 turns=928 active=1040 t=356s
+MON3_GEN 16/16
+PILOT1 turns=944 active=1036 t=362s
+MON3_GEN 16/16
+PILOT1 turns=960 active=1034 t=368s
+MON3_GEN 16/16
+PILOT1 turns=976 active=1033 t=374s
+MON3_GEN 16/16
+PILOT1 turns=992 active=1030 t=380s
+MON3_GEN 16/16
+PILOT1 turns=1008 active=1023 t=386s
+MON3_GEN 16/16
+PILOT1 turns=1024 active=1022 t=392s
+MON3_GEN 16/16
+PILOT1 turns=1040 active=1021 t=398s
+MON3_GEN 16/16
+PILOT1 turns=1056 active=1020 t=404s
+MON3_GEN 16/16
+PILOT1 turns=1072 active=1018 t=410s
+MON3_GEN 16/16
+PILOT1 turns=1088 active=1018 t=416s
+MON3_GEN 16/16
+PILOT1 turns=1104 active=1018 t=421s
+MON3_GEN 16/16
+PILOT1 turns=1120 active=1016 t=427s
+MON3_GEN 16/16
+PILOT1 turns=1136 active=1012 t=432s
+MON3_GEN 16/16
+PILOT1 turns=1152 active=1010 t=438s
+MON3_GEN 16/16
+PILOT1 turns=1168 active=1008 t=444s
+MON3_GEN 16/16
+PILOT1 turns=1184 active=1005 t=450s
+MON3_GEN 16/16
+PILOT1 turns=1200 active=1003 t=456s
+MON3_GEN 16/16
+PILOT1 turns=1216 active=1000 t=461s
+MON3_GEN 16/16
+PILOT1 turns=1232 active=999 t=465s
+MON3_GEN 16/16
+PILOT1 turns=1248 active=992 t=469s
+MON3_GEN 16/16
+PILOT1 turns=1264 active=987 t=474s
+MON3_GEN 16/16
+PILOT1 turns=1280 active=984 t=479s
+MON3_GEN 16/16
+PILOT1 turns=1296 active=978 t=485s
+MON3_GEN 16/16
+PILOT1 turns=1312 active=975 t=492s
+MON3_GEN 16/16
+PILOT1 turns=1328 active=973 t=496s
+MON3_GEN 16/16
+PILOT1 turns=1344 active=970 t=500s
+MON3_GEN 16/16
+PILOT1 turns=1360 active=964 t=507s
+MON3_GEN 16/16
+PILOT1 turns=1376 active=958 t=511s
+MON3_GEN 16/16
+PILOT1 turns=1392 active=957 t=514s
+MON3_GEN 16/16
+PILOT1 turns=1408 active=951 t=519s
+MON3_GEN 16/16
+PILOT1 turns=1424 active=944 t=523s
+MON3_GEN 16/16
+PILOT1 turns=1440 active=941 t=527s
+MON3_GEN 16/16
+PILOT1 turns=1456 active=936 t=531s
+MON3_GEN 16/16
+PILOT1 turns=1472 active=936 t=535s
+MON3_GEN 16/16
+PILOT1 turns=1488 active=929 t=538s
+MON3_GEN 16/16
+PILOT1 turns=1504 active=923 t=544s
+MON3_GEN 16/16
+PILOT1 turns=1520 active=918 t=549s
+MON3_GEN 16/16
+PILOT1 turns=1536 active=914 t=554s
+MON3_GEN 16/16
+PILOT1 turns=1552 active=909 t=558s
+MON3_GEN 16/16
+PILOT1 turns=1568 active=905 t=563s
+MON3_GEN 16/16
+PILOT1 turns=1584 active=900 t=568s
+MON3_GEN 16/16
+PILOT1 turns=1600 active=892 t=571s
+MON3_GEN 16/16
+PILOT1 turns=1616 active=890 t=576s
+MON3_GEN 16/16
+PILOT1 turns=1632 active=886 t=580s
+MON3_GEN 16/16
+PILOT1 turns=1648 active=880 t=584s
+MON3_GEN 16/16
+PILOT1 turns=1664 active=875 t=591s
+MON3_GEN 16/16
+PILOT1 turns=1680 active=872 t=595s
+MON3_GEN 16/16
+PILOT1 turns=1696 active=868 t=600s
+MON3_GEN 16/16
+PILOT1 turns=1712 active=865 t=604s
+MON3_GEN 16/16
+PILOT1 turns=1728 active=861 t=610s
+MON3_GEN 16/16
+PILOT1 turns=1744 active=856 t=614s
+MON3_GEN 16/16
+PILOT1 turns=1760 active=851 t=617s
+MON3_GEN 16/16
+PILOT1 turns=1776 active=847 t=621s
+MON3_GEN 16/16
+PILOT1 turns=1792 active=840 t=626s
+MON3_GEN 16/16
+PILOT1 turns=1808 active=835 t=629s
+MON3_GEN 16/16
+PILOT1 turns=1824 active=830 t=633s
+MON3_GEN 16/16
+PILOT1 turns=1840 active=824 t=637s
+MON3_GEN 16/16
+PILOT1 turns=1856 active=820 t=641s
+MON3_GEN 16/16
+PILOT1 turns=1872 active=815 t=645s
+MON3_GEN 16/16
+PILOT1 turns=1888 active=811 t=649s
+MON3_GEN 16/16
+PILOT1 turns=1904 active=808 t=656s
+MON3_GEN 16/16
+PILOT1 turns=1920 active=801 t=663s
+MON3_GEN 16/16
+PILOT1 turns=1936 active=799 t=668s
+MON3_GEN 16/16
+PILOT1 turns=1952 active=794 t=672s
+MON3_GEN 16/16
+PILOT1 turns=1968 active=787 t=675s
+MON3_GEN 16/16
+PILOT1 turns=1984 active=782 t=680s
+MON3_GEN 16/16
+PILOT1 turns=2000 active=778 t=684s
+MON3_GEN 16/16
+PILOT1 turns=2016 active=774 t=691s
+MON3_GEN 16/16
+PILOT1 turns=2032 active=770 t=695s
+MON3_GEN 16/16
+PILOT1 turns=2048 active=766 t=700s
+MON3_GEN 16/16
+PILOT1 turns=2064 active=761 t=707s
+MON3_GEN 16/16
+PILOT1 turns=2080 active=755 t=714s
+MON3_GEN 16/16
+PILOT1 turns=2096 active=752 t=718s
+MON3_GEN 16/16
+PILOT1 turns=2112 active=748 t=725s
+MON3_GEN 16/16
+PILOT1 turns=2128 active=742 t=729s
+MON3_GEN 16/16
+PILOT1 turns=2144 active=736 t=733s
+MON3_GEN 16/16
+PILOT1 turns=2160 active=729 t=737s
+MON3_GEN 16/16
+PILOT1 turns=2176 active=724 t=744s
+MON3_GEN 16/16
+PILOT1 turns=2192 active=721 t=747s
+MON3_GEN 11/11
+PILOT1 turns=2203 active=718 t=750s
+MON3_GEN 16/16
+PILOT1 turns=2219 active=711 t=756s
+MON3_GEN 16/16
+PILOT1 turns=2235 active=703 t=762s
+MON3_GEN 16/16
+PILOT1 turns=2251 active=693 t=768s
+MON3_GEN 16/16
+PILOT1 turns=2267 active=682 t=775s
+MON3_GEN 16/16
+PILOT1 turns=2283 active=671 t=781s
+MON3_GEN 16/16
+PILOT1 turns=2299 active=663 t=787s
+MON3_GEN 16/16
+PILOT1 turns=2315 active=655 t=793s
+MON3_GEN 16/16
+PILOT1 turns=2331 active=643 t=800s
+MON3_GEN 16/16
+PILOT1 turns=2347 active=631 t=806s
+MON3_GEN 16/16
+PILOT1 turns=2363 active=620 t=813s
+MON3_GEN 16/16
+PILOT1 turns=2379 active=614 t=819s
+MON3_GEN 16/16
+PILOT1 turns=2395 active=603 t=825s
+MON3_GEN 16/16
+PILOT1 turns=2411 active=592 t=831s
+MON3_GEN 16/16
+PILOT1 turns=2427 active=584 t=838s
+MON3_GEN 16/16
+PILOT1 turns=2443 active=576 t=845s
+MON3_GEN 16/16
+PILOT1 turns=2459 active=568 t=852s
+MON3_GEN 16/16
+PILOT1 turns=2475 active=560 t=857s
+MON3_GEN 16/16
+PILOT1 turns=2491 active=551 t=864s
+MON3_GEN 16/16
+PILOT1 turns=2507 active=542 t=870s
+MON3_GEN 16/16
+PILOT1 turns=2523 active=534 t=877s
+MON3_GEN 16/16
+PILOT1 turns=2539 active=523 t=883s
+MON3_GEN 16/16
+PILOT1 turns=2555 active=511 t=889s
+MON3_GEN 16/16
+PILOT1 turns=2571 active=498 t=895s
+MON3_GEN 16/16
+PILOT1 turns=2587 active=487 t=901s
+MON3_GEN 16/16
+PILOT1 turns=2603 active=478 t=907s
+MON3_GEN 16/16
+PILOT1 turns=2619 active=469 t=913s
+MON3_GEN 16/16
+PILOT1 turns=2635 active=459 t=919s
+MON3_GEN 16/16
+PILOT1 turns=2651 active=453 t=926s
+MON3_GEN 16/16
+PILOT1 turns=2667 active=444 t=933s
+MON3_GEN 16/16
+PILOT1 turns=2683 active=433 t=941s
+MON3_GEN 16/16
+PILOT1 turns=2699 active=421 t=947s
+MON3_GEN 16/16
+PILOT1 turns=2715 active=412 t=953s
+MON3_GEN 16/16
+PILOT1 turns=2731 active=402 t=959s
+MON3_GEN 16/16
+PILOT1 turns=2747 active=390 t=966s
+MON3_GEN 16/16
+PILOT1 turns=2763 active=384 t=972s
+MON3_GEN 16/16
+PILOT1 turns=2779 active=372 t=978s
+MON3_GEN 16/16
+PILOT1 turns=2795 active=365 t=984s
+MON3_GEN 16/16
+PILOT1 turns=2811 active=355 t=990s
+MON3_GEN 16/16
+PILOT1 turns=2827 active=344 t=996s
+MON3_GEN 16/16
+PILOT1 turns=2843 active=334 t=1003s
+MON3_GEN 16/16
+PILOT1 turns=2859 active=326 t=1009s
+MON3_GEN 16/16
+PILOT1 turns=2875 active=316 t=1016s
+MON3_GEN 16/16
+PILOT1 turns=2891 active=307 t=1022s
+MON3_GEN 16/16
+PILOT1 turns=2907 active=299 t=1027s
+MON3_GEN 14/14
+PILOT1 turns=2921 active=288 t=1033s
+MON3_GEN 16/16
+PILOT1 turns=2937 active=287 t=1039s
+MON3_GEN 16/16
+PILOT1 turns=2953 active=282 t=1045s
+MON3_GEN 16/16
+PILOT1 turns=2969 active=279 t=1051s
+MON3_GEN 16/16
+PILOT1 turns=2985 active=275 t=1058s
+MON3_GEN 16/16
+PILOT1 turns=3001 active=272 t=1065s
+MON3_GEN 16/16
+PILOT1 turns=3017 active=271 t=1071s
+MON3_GEN 16/16
+PILOT1 turns=3033 active=266 t=1078s
+MON3_GEN 16/16
+PILOT1 turns=3049 active=264 t=1084s
+MON3_GEN 16/16
+PILOT1 turns=3065 active=260 t=1090s
+MON3_GEN 16/16
+PILOT1 turns=3081 active=259 t=1096s
+MON3_GEN 16/16
+PILOT1 turns=3097 active=258 t=1102s
+MON3_GEN 16/16
+PILOT1 turns=3113 active=256 t=1109s
+MON3_GEN 16/16
+PILOT1 turns=3129 active=252 t=1116s
+MON3_GEN 16/16
+PILOT1 turns=3145 active=249 t=1123s
+MON3_GEN 16/16
+PILOT1 turns=3161 active=247 t=1129s
+MON3_GEN 16/16
+PILOT1 turns=3177 active=244 t=1135s
+MON3_GEN 16/16
+PILOT1 turns=3193 active=243 t=1141s
+MON3_GEN 16/16
+PILOT1 turns=3209 active=238 t=1148s
+MON3_GEN 16/16
+PILOT1 turns=3225 active=238 t=1152s
+MON3_GEN 16/16
+PILOT1 turns=3241 active=236 t=1156s
+MON3_GEN 16/16
+PILOT1 turns=3257 active=236 t=1161s
+MON3_GEN 16/16
+PILOT1 turns=3273 active=236 t=1165s
+MON3_GEN 16/16
+PILOT1 turns=3289 active=235 t=1169s
+MON3_GEN 16/16
+PILOT1 turns=3305 active=235 t=1173s
+MON3_GEN 16/16
+PILOT1 turns=3321 active=235 t=1178s
+MON3_GEN 16/16
+PILOT1 turns=3337 active=235 t=1182s
+MON3_GEN 16/16
+PILOT1 turns=3353 active=233 t=1186s
+MON3_GEN 16/16
+PILOT1 turns=3369 active=233 t=1191s
+MON3_GEN 16/16
+PILOT1 turns=3385 active=233 t=1195s
+MON3_GEN 16/16
+PILOT1 turns=3401 active=233 t=1199s
+MON3_GEN 16/16
+PILOT1 turns=3417 active=232 t=1203s
+MON3_GEN 16/16
+PILOT1 turns=3433 active=232 t=1207s
+MON3_GEN 14/14
+PILOT1 turns=3447 active=232 t=1211s
+MON3_GEN 16/16
+PILOT1 turns=3463 active=232 t=1216s
+MON3_GEN 16/16
+PILOT1 turns=3479 active=232 t=1220s
+MON3_GEN 16/16
+PILOT1 turns=3495 active=229 t=1225s
+MON3_GEN 16/16
+PILOT1 turns=3511 active=228 t=1230s
+MON3_GEN 16/16
+PILOT1 turns=3527 active=228 t=1234s
+MON3_GEN 16/16
+PILOT1 turns=3543 active=227 t=1239s
+MON3_GEN 16/16
+PILOT1 turns=3559 active=227 t=1243s
+MON3_GEN 16/16
+PILOT1 turns=3575 active=226 t=1248s
+MON3_GEN 16/16
+PILOT1 turns=3591 active=225 t=1252s
+MON3_GEN 16/16
+PILOT1 turns=3607 active=224 t=1257s
+MON3_GEN 16/16
+PILOT1 turns=3623 active=224 t=1262s
+MON3_GEN 16/16
+PILOT1 turns=3639 active=223 t=1266s
+MON3_GEN 16/16
+PILOT1 turns=3655 active=222 t=1271s
+MON3_GEN 16/16
+PILOT1 turns=3671 active=222 t=1276s
+MON3_GEN 8/8
+PILOT1 turns=3679 active=222 t=1278s
+MON3_GEN 16/16
+PILOT1 turns=3695 active=221 t=1283s
+MON3_GEN 16/16
+PILOT1 turns=3711 active=220 t=1288s
+MON3_GEN 16/16
+PILOT1 turns=3727 active=220 t=1294s
+MON3_GEN 16/16
+PILOT1 turns=3743 active=218 t=1299s
+MON3_GEN 16/16
+PILOT1 turns=3759 active=216 t=1304s
+MON3_GEN 16/16
+PILOT1 turns=3775 active=212 t=1308s
+MON3_GEN 16/16
+PILOT1 turns=3791 active=212 t=1313s
+MON3_GEN 16/16
+PILOT1 turns=3807 active=211 t=1318s
+MON3_GEN 16/16
+PILOT1 turns=3823 active=209 t=1323s
+MON3_GEN 16/16
+PILOT1 turns=3839 active=205 t=1328s
+MON3_GEN 16/16
+PILOT1 turns=3855 active=201 t=1334s
+MON3_GEN 16/16
+PILOT1 turns=3871 active=198 t=1339s
+MON3_GEN 16/16
+PILOT1 turns=3887 active=197 t=1344s
+MON3_GEN 14/14
+PILOT1 turns=3901 active=196 t=1348s
+MON3_GEN 16/16
+PILOT1 turns=3917 active=180 t=1353s
+MON3_GEN 16/16
+PILOT1 turns=3933 active=164 t=1358s
+MON3_GEN 16/16
+PILOT1 turns=3949 active=148 t=1364s
+MON3_GEN 16/16
+PILOT1 turns=3965 active=132 t=1369s
+MON3_GEN 16/16
+PILOT1 turns=3981 active=116 t=1374s
+MON3_GEN 16/16
+PILOT1 turns=3997 active=100 t=1380s
+MON3_GEN 16/16
+PILOT1 turns=4013 active=84 t=1385s
+MON3_GEN 16/16
+PILOT1 turns=4029 active=68 t=1390s
+MON3_GEN 16/16
+PILOT1 turns=4045 active=52 t=1395s
+MON3_GEN 16/16
+PILOT1 turns=4061 active=36 t=1401s
+MON3_GEN 16/16
+PILOT1 turns=4077 active=20 t=1407s
+MON3_GEN 16/16
+PILOT1 turns=4093 active=4 t=1412s
+MON3_GEN 4/4
+PILOT1 turns=4097 active=0 t=1413s
+PILOT1_SUMMARY {"n_tasks": 1200, "n_turns": 4097, "status": {"finished": 614, "max_turns": 164, "invalid_line": 422}, "tools": {"read_file": 2196, "list_dir": 629, "write_file": 118, "null": 422, "delete_file": 118, "finish": 614}, "seconds": 1414.0, "seconds_per_task": 1.18, "seed": 20261107, "model": "Qwen/Qwen3-4B", "revision": "1cfa9a7208912126459214e8b04321603b3df60c", "plan": "PILOT1_LIVE_PREFETCH_PLAN_OPUS.md"}
